@@ -1,7 +1,6 @@
 \documentclass[openany, a4paper, 12pt]{report}
 \usepackage{subfiles}
 \usepackage{../../common/style}
-
  
 \begin{document}
 
@@ -12,37 +11,38 @@
 		\bfseries
 		\vskip2cm
 		\includegraphics[width=9cm]{../../common/images/logo.png} \\
-		\Large Titolo Capitolato\\
 		\vfill
-		\Huge Titolo Documento\\
-		\Large Versione x.x in data xx-xx-xxxx\\
+		\Huge{NORME DI PROGETTO}\\
 		\vfill
-		\large Gruppo 353\\
+		\Large Versione 0.0.1 in data 26-11-2017\\
+		\large Gruppo 353 - Progetto Marvin\\
 		\vfill
-	\normalsize Informazioni sul documento\\
-\begin{table}[htbp]
-	\centering
-	\renewcommand\arraystretch{1.2}
-	\begin{tabular}{r|l}
-		\hline
-		\textbf{Responsabili}	& Elena Mattiazzo\\
-								& Valentina Marcon\\
-								& Mirco Cailotto\\
-		
-		\textbf{Redazione} 		& Riccardo E. Giorato\\
-								& Gianluca Marraffa\\
-		
-		\textbf{Verifica} 		& Parwinder Singh\\
-								& Davide Stocco\\
-						
-		\textbf{Stato} 			& In corso\\
-		\textbf{Uso}			& Esterno\\
-		\textbf{Destinato a}   	& Tullio Vardanega\\
-		
-						
-		\textbf{Email di contatto}	& 353swe@gmail.com
-	\end{tabular}
-\end{table}
+		\normalsize Informazioni sul documento\\
+		\begin{table}[htbp]
+			\centering
+			\renewcommand\arraystretch{1.2}
+			\begin{tabular}{r|l}
+				\hline
+				\textbf{Responsabili}	& Elena Mattiazzo\\
+										& Valentina Marcon\\
+										& Mirco Cailotto\\
+										& Riccardo E. Giorato\\
+										& Gianluca Marraffa\\
+										& Parwinder Singh\\
+										& Davide Stocco\\
+				
+				\textbf{Redazione} 	& \\
+				\textbf{Verifica} 	& \\	
+				
+				\textbf{Stato} 			& In corso\\
+				\textbf{Uso}			& Interno\\
+				\textbf{Destinato a}   	& Gruppo 353\\
+				& Prof. Tullio Vardanega\\
+				& Prof. Riccardo Cardin\\
+				
+				\textbf{Email di contatto}	& 353swe@gmail.com
+			\end{tabular}
+		\end{table}
 		\vfill
 	}    
 \end{titlepage}
@@ -51,6 +51,9 @@
 \tableofcontents
 \newpage
 \pagenumbering{arabic}
-%\subfile{Capitolo1}
+\subfile{introduzione}
+\subfile{processi_primari}
+\subfile{processi_di_supporto}
+\subfile{processi_organizzativi}
  
 \end{document}

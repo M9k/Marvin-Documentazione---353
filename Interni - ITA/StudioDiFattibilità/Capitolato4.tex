@@ -1,0 +1,23 @@
+\documentclass[main.tex]{subfiles}
+\begin{document}
+\chapter{Capitolato 4 - ECoRe}
+\section{Descrizione generale}
+Il capitolato C4 propone lo sviluppo di un servizio in grado di suggerire a un utente aziendale contenuti utili al suo lavoro.
+\section{Obiettivo finale}
+L'obiettivo finale è la realizzazione di un servizio proattivo in grado di suggerire all'utente che accede a contenuti aziendali (tramite vari punti d'accesso come email, documentale, ecc...) altri contenuti di interesse che potrebbero essere utili nello svolgimento del proprio lavoro. Tale utilità sarà stabilita sulla base del comportamento dell'utente stesso.
+\section{Tecnologie richieste}
+\begin{itemize}
+	\item \textbf{Apache SoIR}, piattaforma di ricerca basata su Lucene
+	\item \textbf{Elasticsearch}, server di ricerca basato su Lucene, con supporto ad architetture distribuite
+	\item \textbf{Apache Mahout}, librerie per l'apprendimento automatico, soprattutto per collaborative filtering, clustering e classification
+	\item \textbf{Esposizione dei servizi in modalità HTTPS}
+	\item \textbf{Identity and Access Management Keycloack}, per rendere sicuri i servizi di autenticazione degli utenti
+	\item \textbf{Apache Nutch}, motore di ricerca open source altamente estensibile
+	\item Si possono utilizzare anche librerie  sviluppate dalla proponente secondo licenza
+\end{itemize}
+\section{Valutazione finale}
+Il capitolato non è stato ben accolto dai membri del gruppo, a causa di una complessità elevata e una dichiarazione non specifica degli obiettivi. Piuttosto nebuloso il campo d'azione del software, soprattutto l'interazione con il sistema operativo e l'antivirus, la sensazione è quella di dover interagire a basso livello per ottenere i dati necessari per effettuare la ricerca.\\
+Un punto negativo, in particolare, è emerso: la necessità di interazione con molti software e sistemi operativi diversi, che rende lo sviluppo di questo software un'attività molto onerosa.\\
+Molto interessante però l'idea di fondo, che utilizza l' intelligenza artificiale e rende il trovare il suggerimento giusto una sfida.
+
+\end{document}

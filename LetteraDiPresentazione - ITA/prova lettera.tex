@@ -1,0 +1,81 @@
+\documentclass[openany, a4paper, 12pt]{letter}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[italian]{babel}
+\graphicspath{{images/}{./images/}}
+%\usepackage{lipsum}
+%\usepackage{tabularx}
+%\usepackage{hyperref} 
+\usepackage{fancyhdr}
+\fancypagestyle{plain}{
+	\fancyhf{}
+	\fancyhead[L]{\includegraphics[width=2cm]{../common/images/logo.png}}
+	\fancyhead[R]{\leftmark}
+	\fancyfoot[L]{353swe@gmail.com}
+	\fancyfoot[R]{\thepage}
+	\renewcommand{\headrulewidth}{0.4pt}
+	\renewcommand{\footrulewidth}{0.4pt}
+}
+\pagestyle{plain}
+\makeatletter
+\let\ps@empty\ps@plain
+\let\ps@firstpage\ps@plain
+\makeatother
+\setlength{\headheight}{65pt} 
+
+
+\address{Via Trieste, 63\\ 35131 Padova (PD)}
+
+\begin{document}
+	\begin{letter}{Alla cortese attenzione del Committente:\\
+			\smallskip
+			Prof. Tullio Vardanega\\
+			Prof. Riccardo Cardin\\
+			\medskip
+			Universita degli Studi di Padova \\
+			Dipartimento di Matematica\\
+			Via Trieste, 62, 35131 Padova (PD)}
+			\opening{Egregio Prof. Tullio Vardanega, \\
+				Egregio Prof. Riccardo Cardin,}
+			Con la presente, il gruppo 353 intende comunicarVi ufficialmente l’impegno alla realizzazione del
+			prodotto da Voi commissionato, denominato: \\
+			\begin{center}
+			\emph{\textbf{Marvin: dimostratore di Uniweb su Ethereum}}\medskip \\
+			\end{center}
+			proposto da Red Babel.\medskip\\
+			Allegati alla presente, potrete trovare i seguenti documenti che illustrano in dettaglio analisi del
+			prodotto, di pianificazione e relativi criteri a garanzia della qualita: 
+			\begin{itemize}
+				\item Analisi dei Requisiti v 1.0.0.
+				\item Glossario v 1.0.0.
+				\item Piano di Progetto v 1.0.0.
+				\item Piano di Qualifica v 1.0.0.
+				\item Verbale Esterno ********%TODO.
+				\item Norme di Progetto v 1.0.0.
+				\item Studio di Fattibilita v 1.0.0.
+				\end{itemize}
+			gruppo 353 ha stimato di consegnare il prodotto richiesto entro il giorno ********,
+			con relativo collaudo, salvo ulteriori accordi, per il giorno ************. Il preventivo di costo
+			fissato è pari a ****** e, come descritto all’interno del documento Piano di Progetto v 1.0.0.%TODO.
+			\medskip \\
+			Si riportano di seguito i nomi dei componenti del gruppo:\\
+			\begin{center}
+				\begin{tabular}{|l r|}
+					Mirco Cailotto & 1123521\\
+					Riccardo Emanuele Giorato & 1122158\\
+					Valentina Marcon & 1122461\\
+					Gianluca Marraffa & 1121080\\
+					Elena Mattiazzo & 1122273\\
+					Parwinder Singh & 1073318\\
+					Davide Stocco & 1097631\\
+				\end{tabular}
+			\end{center}
+		Rimaniamo a Vostra completa disposizione per qualsiasi chiarimento in merito ai documenti presentati.
+		\begin{flushleft}
+		Cordiali saluti,\\
+		\includegraphics[width=3cm]{../common/images/signature}\\
+		Nome Cognome\\ %TODO
+		Responsabile di Progetto
+		\end{flushleft}
+		\end{letter}
+	\end{document}

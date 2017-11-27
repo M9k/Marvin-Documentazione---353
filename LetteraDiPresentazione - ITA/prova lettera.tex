@@ -7,27 +7,26 @@
 %\usepackage{tabularx}
 %\usepackage{hyperref} 
 \usepackage{fancyhdr}
-\fancypagestyle{plain}{
+
+\pagestyle{fancy}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\fancypagestyle{firstpage}{
 	\fancyhf{}
-	\fancyhead[L]{\includegraphics[width=2cm]{../common/images/logo.png}}
-	\fancyhead[R]{\leftmark}
-	\fancyfoot[L]{353swe@gmail.com}
-	\fancyfoot[R]{\thepage}
+	\fancyhead[L]{\includegraphics[width=4cm]{../common/images/logo.png}}
+	\fancyfoot[C]{\thepage}
 	\renewcommand{\headrulewidth}{0.4pt}
 	\renewcommand{\footrulewidth}{0.4pt}
 }
-\pagestyle{plain}
-\makeatletter
-\let\ps@empty\ps@plain
-\let\ps@firstpage\ps@plain
-\makeatother
-\setlength{\headheight}{65pt} 
 
+\setlength{\headheight}{50pt} 
+\address{Via Trieste, 63 35131 Padova (PD)\\Email: 353swe@gmail.com}
 
-\address{Via Trieste, 63\\ 35131 Padova (PD)}
-
-\begin{document}
-	\begin{letter}{Alla cortese attenzione del Committente:\\
+\begin{document}	
+	\begin{letter}{
+			Alla cortese attenzione del Committente:\\
 			\smallskip
 			Prof. Tullio Vardanega\\
 			Prof. Riccardo Cardin\\
@@ -54,7 +53,11 @@
 				\item Norme di Progetto v 1.0.0.
 				\item Studio di Fattibilità v 1.0.0.
 				\end{itemize}
-			gruppo 353 ha stimato di consegnare il prodotto richiesto entro il giorno ********,
+			
+			\thispagestyle{firstpage}
+			\newpage
+			
+			Il gruppo 353 ha stimato di consegnare il prodotto richiesto entro il giorno ********,
 			con relativo collaudo, salvo ulteriori accordi, per il giorno ************. Il preventivo di costo
 			fissato è pari a ****** e, come descritto all'interno del documento Piano di Progetto v 1.0.0.%TODO.
 			\medskip \\

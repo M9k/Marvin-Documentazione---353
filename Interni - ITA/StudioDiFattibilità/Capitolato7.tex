@@ -1,0 +1,21 @@
+\documentclass[main.tex]{subfiles}
+\begin{document}
+\chapter{Capitolato 7 - OpenAPM}
+\section{Descrizione generale}
+Il capitolato C7 propone la realizzazione di un sistema di APM (Application Performance Managment) che consenta il monitoraggio non invasivo delle prestazioni di un'applicazione web. In particolare il prodotto finale s'impegna ad analizzare il comportamento del web server e dell'applicativo in relazione alle varie richieste effettuate dall'utente, in modo da individuare le componenti critiche del sistema e avvisare tempestivamente gli sviluppatori in caso di problemi.\\
+Il software dovrà inoltre offrire una dashboard che riassuma lo stato dell'applicazione nel tempo, consentendo a chi di dovere di analizzare pregi e difetti del sistema in analisi.
+\section{Obiettivo finale}
+L'obiettivo finale del proponente è quello di definire un punto di riferimento open source nel campo degli APM, permettendo a gruppi di Developers e Operations il monitoraggio delle applicazioni in modo gratuito e poco complesso.\\
+L'obiettivo finale del prodotto si concentra sul monitoraggio di una specifica applicazione Java. Il team di sviluppo dovrà concentrarsi sull'integrazione di un agent che giri in modo non invasivo (non intaccando performance e non richiedendo modifiche all'applicazione) sul server analizzato, raccogliendo i dati prodotti (TRACE) sia dall'applicazione Java che dal server web. Questi TRACE dovranno poi essere memorizzati in un database orientato ai Big Data e, una volta elaborati dal server, dovranno essere mostrati su una dashboard interattiva per permetterne l'analisi umana. Oltre alla dashboard il sistema dovrà rilevare in tempo reale problematiche relative al server e, tramite un sistema di notifiche, avvertire i responsabili in modo tempestivo.
+\section{Tecnologie richieste}
+\begin{itemize}
+	\item \textbf{StageMonitor}, soluzione APM open source: utilizzata come spunto per sviluppo/integrazione dell'agent.
+	\item \textbf{ElasticSearch}, repository Big Data: offre strumenti per immagazzinare ed elaborare grandi mole di dati garantendo ottime prestazioni.
+	\item \textbf{Java}, storico linguaggio di programmazione orientato agli oggetti: data la natura dell'applicazione da analizzare, sarà necessario avere una panoramica dei risultati prodotti dalla JVM.
+	\item \textbf{Apache/Nginx}, i più popolari tra i web server: molto probabilmente l'applicazione Java si interfaccerà con uno di questi due servizi, sarà imperativo conoscere funzionamento e output (log) di questi sistemi. 
+	\item \textbf{Kibana}, interfaccia utente sviluppata per l'analisi dei big data: utilizzata per la visualizzazione dei dati elaborati.
+	\item \textbf{D3.js}, libreria Javascript per lo sviluppo di plugin Kibana.
+\end{itemize}
+\section{Valutazione finale}
+Il gruppo ha rilevato reazioni discordanti su questo capitolato: la parte Agent è risultata stimolante e concreta (in virtù dello scopo del progetto e delle tecnologie utilizzate) mentre la parte Server e Dashboard si è rivelata confusa e poco chiara: organizzare le informazioni provenienti da una grande mole di dati, soprattutto non possedendo una visione completa dei contenuti da mostrare, potrebbe rivelarsi un'operazione lunga e complessa, togliendo energie e impegno alla parte di monitoraggio, giudicata molto più interessante.  
+\end{document}

@@ -20,6 +20,17 @@
 
 \pagestyle{plain}
 \setlength{\headheight}{50pt} 
+
+
+% Ridefinizione colore dei link (del menù ed esterni)
+\hypersetup {
+	linkcolor = {black},
+  	urlcolor = {blue},
+  	menucolor = {black},
+  	colorlinks = true,
+}
+
+% Comandi per i nomi 
 \newcommand{\Valentina}{Valentina Marcon}
 \newcommand{\Mirco}{Mirco Cailotto}
 \newcommand{\Riccardo}{Riccardo E. Giorato}
@@ -27,3 +38,6 @@
 \newcommand{\Parwinder}{Parwinder Singh}
 \newcommand{\Elena}{Elena Mattiazzo}
 \newcommand{\Gianluca}{Gianluca Marraffa}
+
+% Comandi di stile
+\newcommand{\Glossario}[1]{{#1}\textsubscript{G}} 		% scrivendo \Glossario{termine} il termine viene marcato come da glossario (con il pedice G)

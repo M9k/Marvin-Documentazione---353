@@ -1,0 +1,237 @@
+\documentclass[../processi_primari.tex]{subfiles}
+
+\begin{document}	
+\subsubsection{Solidity}
+In questa sotto-sezione vengono elencate le norme tratte dalla \textbf{documentazione officiale di Solidity}\footnote{\href{http://solidity.readthedocs.io/en/develop/style-guide.html}{http://solidity.readthedocs.io/en/develop/style-guide.html}}.
+
+\paragraph*{Identazione: }
+vanno utilizzati quattro (4) spazi per ogni livello di indentazione.
+
+\paragraph*{Spazi: }
+è vietato l'utilizzo di tabulazioni, che devono essere necessariamente sostituite da spazi. Al fine di assicurare il rispetto di questa regola si consiglia di configurare adeguatamente il proprio editor o IDE.
+
+\paragraph*{Linee vuote 1: }
+devono essere lasciate due (2) linee vuote tra la dichiarazione di più smart contract.\\
+
+\begin{minipage}{6cm}
+{\begin{center}SI\end{center}}
+\begin{Verbatim}[frame=single]
+contract A {
+...
+}
+
+
+contract B {
+...
+}
+
+
+contract C {
+...
+}
+\end{Verbatim}
+\end{minipage}
+\hfill
+\begin{minipage}{6cm}
+{\begin{center}NO\end{center}}
+\begin{Verbatim}[frame=single]
+contract A {
+...
+}
+contract B {
+...
+}
+
+contract C {
+...
+}
+
+
+
+\end{Verbatim}
+\end{minipage}
+
+\paragraph{Linee vuote 2: }
+le linee vuote possono essere omesse tra le dichiarazioni di funzioni in linea.\\
+
+\begin{minipage}{6cm}
+{\begin{center}SI\end{center}}
+\begin{Verbatim}[frame=single]
+contract A {
+	function spam();
+	function ham();
+}
+
+
+contract B is A {
+	function spam() {
+	...
+	}
+	
+	function ham() {
+	...
+	}
+}
+\end{Verbatim}
+\end{minipage}
+\hfill
+\begin{minipage}{6cm}
+{\begin{center}NO\end{center}}
+\begin{Verbatim}[frame=single]
+contract A {
+	function spam() {
+	...
+	}
+	function ham() {
+	...
+	}
+}
+
+
+
+
+
+
+
+\end{Verbatim}
+\end{minipage}
+
+\paragraph*{Codifica dei codici sorgenti: }
+i codici sorgente devono essere codificati in UTF-8.
+
+\paragraph*{Imports: }
+tutte le dichiarazioni di import vanno fatte all'inizio del file.\\
+
+\begin{minipage}{6cm}
+{\begin{center}SI\end{center}}
+\begin{Verbatim}[frame=single]
+import "owned";
+
+
+contract A {
+...
+}
+
+
+contract B is owned {
+...
+}
+\end{Verbatim}
+\end{minipage}
+\hfill
+\begin{minipage}{6cm}
+{\begin{center}NO\end{center}}
+\begin{Verbatim}[frame=single]
+contract A {
+...
+}
+
+
+import "owned";
+
+
+contract B is owned {
+...
+}
+\end{Verbatim}
+\end{minipage}
+
+\paragraph*{Ordine delle funzioni: }
+All'interno di un contratto l'ordine è fondamentale per identificare meglio quali funzioni è possibile chiamare e per trovare più velocemente le definizioni del costruttore e di eventuali funzioni di fallback.\\
+
+Le funzioni devono essere ragruppate secondo la loro visibilità e ordinate in questo modo:
+\begin{itemize}
+	\item costruttore
+	\item funzioni di fallback (se esistono)
+	\item esterne
+	\item pubbliche
+	\item interne
+	\item private
+\end{itemize}
+In ogni gruppo le funzioni costanti vanno dichiarate per ultime.\\
+
+\begin{minipage}{6.5cm}
+{\begin{center}SI\end{center}}
+\begin{Verbatim}[frame=single]
+contract A {
+	function A() {
+	...
+	}
+	
+	function() {
+	...
+	}
+	
+	// External functions
+	// ...
+	
+	// External functions 
+	// that are constant
+	// ...
+	
+	// Public functions
+	// ...
+	
+	// Internal functions
+	// ...
+	
+	// Private functions
+	// ...
+}
+\end{Verbatim}
+\end{minipage}
+\hfill
+\begin{minipage}{6.5cm}
+{\begin{center}NO\end{center}}
+\begin{Verbatim}[frame=single]
+contract A {
+
+	// External functions
+	// ...
+	
+	// Private functions
+	// ...
+	
+	// Public functions
+	// ...
+	
+	function A() {
+	...
+	}
+	
+	function() {
+	...
+	}
+	
+	// Internal functions
+	// ...
+}
+
+
+
+\end{Verbatim}
+\end{minipage}
+
+\paragraph*{Spazi bianco nelle espressioni: }
+non vanno messi spazi bianchi nelle seguenti situazioni:
+
+\begin{itemize}
+	\item immediatamente dopo l'apertura o la chiusura di una parentesi tonda, quadrata o graffa con un'espressione di una singola riga
+\end{itemize}
+\centering{
+\begin{minipage}{9.5cm}
+{\begin{center}SI\end{center}}
+\begin{Verbatim}[frame=single]
+spam(ham[1], Coin({name: "ham"}));
+\end{Verbatim}
+\end{minipage}
+\paragraph{}
+\begin{minipage}{9.5cm}
+{\begin{center}NO\end{center}}
+\begin{Verbatim}[frame=single]
+spam( ham[ 1 ], Coin( { name: "ham" } ) );
+\end{Verbatim}
+\end{minipage}
+}
+
+\end{document}

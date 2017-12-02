@@ -1,90 +1,89 @@
-\documentclass[../processi_primari.tex]{subfiles}
+\documentclass[../ProcessiPrimari.tex]{subfiles}
 
 \begin{document}	
 \subsubsection{Solidity}
 In questa sotto-sezione vengono elencate le norme tratte dalla \textbf{documentazione officiale di Solidity}\footnote{\href{http://solidity.readthedocs.io/en/develop/style-guide.html}{http://solidity.readthedocs.io/en/develop/style-guide.html}}.
-
 \paragraph*{Identazione: }
 vanno utilizzati quattro (4) spazi per ogni livello di indentazione.
-
 \paragraph*{Spazi: }
 è vietato l'utilizzo di tabulazioni, che devono essere necessariamente sostituite da spazi. Al fine di assicurare il rispetto di questa regola si consiglia di configurare adeguatamente il proprio editor o IDE.
-
 \paragraph*{Linee vuote 1: }
-devono essere lasciate due (2) linee vuote tra la dichiarazione di più smart contract.\\
-
+devono essere lasciate due (2) linee vuote tra la dichiarazione di più smart contract.
+\begin{center}{
 \begin{minipage}{6cm}
 {\begin{center}SI\end{center}}
 \begin{Verbatim}[frame=single]
 contract A {
-...
+    ...
 }
 
 
 contract B {
-...
+    ...
 }
 
 
 contract C {
-...
+    ...
 }
 \end{Verbatim}
 \end{minipage}
-\hfill
+\hfil
 \begin{minipage}{6cm}
 {\begin{center}NO\end{center}}
 \begin{Verbatim}[frame=single]
 contract A {
-...
+    ...
 }
 contract B {
-...
+    ...
 }
 
 contract C {
-...
+    ...
 }
 
 
 
 \end{Verbatim}
 \end{minipage}
+}
+\end{center}
 
 \paragraph{Linee vuote 2: }
-le linee vuote possono essere omesse tra le dichiarazioni di funzioni in linea.\\
-
+le linee vuote possono essere omesse tra le dichiarazioni di funzioni in linea.\\\\\\
+\begin{center}{
 \begin{minipage}{6cm}
 {\begin{center}SI\end{center}}
 \begin{Verbatim}[frame=single]
 contract A {
-	function spam();
-	function ham();
-}
+    function spam();
+    function ham();
+    }
 
 
 contract B is A {
-	function spam() {
-	...
-	}
-	
-	function ham() {
-	...
-	}
+    function spam() {
+        ...
+    }
+
+    function ham() {
+        ...
+    }
 }
 \end{Verbatim}
 \end{minipage}
-\hfill
+\hfil
 \begin{minipage}{6cm}
 {\begin{center}NO\end{center}}
 \begin{Verbatim}[frame=single]
 contract A {
-	function spam() {
-	...
-	}
-	function ham() {
-	...
-	}
+    function spam() {
+        ...
+    }
+    function ham() {
+        ...
+    }
 }
 
 
@@ -95,13 +94,16 @@ contract A {
 
 \end{Verbatim}
 \end{minipage}
+}
+\end{center}
 
 \paragraph*{Codifica dei codici sorgenti: }
 i codici sorgente devono essere codificati in UTF-8.
 
 \paragraph*{Imports: }
-tutte le dichiarazioni di import vanno fatte all'inizio del file.\\
+tutte le dichiarazioni di import vanno fatte all'inizio del file.
 
+\begin{center}{
 \begin{minipage}{6cm}
 {\begin{center}SI\end{center}}
 \begin{Verbatim}[frame=single]
@@ -109,21 +111,21 @@ import "owned";
 
 
 contract A {
-...
+    ...
 }
 
 
 contract B is owned {
-...
+    ...
 }
 \end{Verbatim}
 \end{minipage}
-\hfill
+\hfil
 \begin{minipage}{6cm}
 {\begin{center}NO\end{center}}
 \begin{Verbatim}[frame=single]
 contract A {
-...
+    ...
 }
 
 
@@ -131,94 +133,96 @@ import "owned";
 
 
 contract B is owned {
-...
+    ...
 }
 \end{Verbatim}
 \end{minipage}
-
+}
+\end{center}
 \paragraph*{Ordine delle funzioni: }
 All'interno di un contratto l'ordine è fondamentale per identificare meglio quali funzioni è possibile chiamare e per trovare più velocemente le definizioni del costruttore e di eventuali funzioni di fallback.\\
-
-Le funzioni devono essere ragruppate secondo la loro visibilità e ordinate in questo modo:
-\begin{itemize}
-	\item costruttore
-	\item funzioni di fallback (se esistono)
-	\item esterne
-	\item pubbliche
-	\item interne
-	\item private
-\end{itemize}
-In ogni gruppo le funzioni costanti vanno dichiarate per ultime.\\
-
-\begin{minipage}{6.5cm}
+Le funzioni devono essere raggruppate secondo la loro visibilità e ordinate in questo modo:
+\begin{enumerate}
+\item costruttore
+\item funzioni di fallback (se esistono)
+\item esterne
+\item pubbliche
+\item interne
+\item private
+\end{enumerate}
+In ogni gruppo le funzioni costanti vanno dichiarate per ultime.
+\begin{center}{
+\begin{minipage}{6cm}
 {\begin{center}SI\end{center}}
 \begin{Verbatim}[frame=single]
 contract A {
-	function A() {
-	...
-	}
-	
-	function() {
-	...
-	}
-	
-	// External functions
-	// ...
-	
-	// External functions 
-	// that are constant
-	// ...
-	
-	// Public functions
-	// ...
-	
-	// Internal functions
-	// ...
-	
-	// Private functions
-	// ...
+    function A() {
+        ...
+    }
+
+    function() {
+        ...
+    }
+
+    // External functions
+    // ...
+
+    // External functions 
+    // that are constant
+    // ...
+
+    // Public functions
+    // ...
+
+    // Internal functions
+    // ...
+
+    // Private functions
+    // ...
 }
 \end{Verbatim}
 \end{minipage}
 \hfill
-\begin{minipage}{6.5cm}
+\begin{minipage}{6cm}
 {\begin{center}NO\end{center}}
 \begin{Verbatim}[frame=single]
 contract A {
 
-	// External functions
-	// ...
-	
-	// Private functions
-	// ...
-	
-	// Public functions
-	// ...
-	
-	function A() {
-	...
-	}
-	
-	function() {
-	...
-	}
-	
-	// Internal functions
-	// ...
+    // External functions
+    // ...
+
+    // Private functions
+    // ...
+
+    // Public functions
+    // ...
+
+    function A() {
+        ...
+    }
+
+    function() {
+        ...
+    }
+
+    // Internal functions
+    // ...
 }
 
 
 
 \end{Verbatim}
 \end{minipage}
+}
+\end{center}
 
-\paragraph*{Spazi bianco nelle espressioni: }
+\paragraph*{Spazi bianchi nelle espressioni: }
 non vanno messi spazi bianchi nelle seguenti situazioni:
 
 \begin{itemize}
-	\item immediatamente dopo l'apertura o la chiusura di una parentesi tonda, quadrata o graffa con un'espressione di una singola riga
+\item immediatamente dopo l'apertura o la chiusura di una parentesi tonda, quadrata o graffa con un'espressione di una singola riga
 \end{itemize}
-\centering{
+\begin{center}{
 \begin{minipage}{9.5cm}
 {\begin{center}SI\end{center}}
 \begin{Verbatim}[frame=single]
@@ -232,6 +236,529 @@ spam(ham[1], Coin({name: "ham"}));
 spam( ham[ 1 ], Coin( { name: "ham" } ) );
 \end{Verbatim}
 \end{minipage}
+\paragraph{}
+\begin{minipage}{9.5cm}
+{\begin{center}ECCEZIONE\end{center}}
+\begin{Verbatim}[frame=single]
+function singleLine() { spam(); }
+\end{Verbatim}
+\end{minipage}
+}
+\end{center}
+\begin{itemize}
+\item immediatamente prima di una virgola o di un punto e virgola
+\end{itemize}
+\begin{center}{
+\begin{minipage}{8.5cm}
+{\begin{center}SI\end{center}}
+\begin{Verbatim}[frame=single]
+function spam(uint i, Coin coin);
+\end{Verbatim}
+\end{minipage}
+\paragraph{}
+\begin{minipage}{8.5cm}
+{\begin{center}NO\end{center}}
+\begin{Verbatim}[frame=single]
+function spam(uint i , Coin coin) ;
+\end{Verbatim}
+\end{minipage}
+}
+\end{center}
+\begin{itemize}
+\item prima o dopo un'assegnazione o con altri operatori per permettere l'allineamento con altre istruzioni 
+\end{itemize}
+\begin{center}{
+\begin{minipage}{5cm}
+{\begin{center}SI\end{center}}
+\begin{Verbatim}[frame=single]
+x = 1;
+y = 2;
+long_variable = 3;
+\end{Verbatim}
+\end{minipage}
+\hfil
+\begin{minipage}{5cm}
+{\begin{center}NO\end{center}}
+\begin{Verbatim}[frame=single]
+x             = 1;
+y             = 2;
+long_variable = 3;
+\end{Verbatim}
+\end{minipage}
+}
+\end{center}
+
+\begin{itemize}
+\item nella dichiarazione di funzioni fallback
+\end{itemize}
+\begin{center}{
+\begin{minipage}{5cm}
+{\begin{center}SI\end{center}}
+\begin{Verbatim}[frame=single]
+function() {
+    ...
+}
+\end{Verbatim}
+\end{minipage}
+\hfil
+\begin{minipage}{5cm}
+{\begin{center}NO\end{center}}
+\begin{Verbatim}[frame=single]
+function () {
+    ...
+}
+\end{Verbatim}
+\end{minipage}
+}
+\end{center}
+
+\paragraph*{Strutture di controllo: }
+le parentesi graffe che denotano l'apertura di un contratto, una libreria o una funzione devono:
+
+\begin{itemize}
+\item essere aperte nella stessa riga della dichiarazione e precedute da uno spazio bianco
+\item chiuse nello stesso livello di indentazione della dichiarazione iniziale
+\end{itemize}
+\begin{center}{
+\begin{minipage}{5.5cm}
+{\begin{center}SI\end{center}}
+\begin{Verbatim}[frame=single]
+contract Coin {
+    struct Bank {
+        address owner;
+        uint balance;
+    }
 }
 
+\end{Verbatim}
+\end{minipage}
+\hfil
+\begin{minipage}{5.5cm}
+{\begin{center}NO\end{center}}
+\begin{Verbatim}[frame=single]
+contract Coin
+{
+    struct Bank {
+        address owner;
+        uint balance;
+    }
+}
+\end{Verbatim}
+\end{minipage}
+}
+\end{center}
+Le stesse regole valgono per strutture di controllo come \texttt{if}, \texttt{else}, \texttt{while} e \texttt{for}.\\
+Inoltre, deve essere messo un singolo spazio tra la dichiarazione della struttura di controllo \texttt{if}, \texttt{while} e \texttt{for} e la condizione e anche tra quest'ultima e l'apertura della parentesi graffa.
+\begin{center}{
+\begin{minipage}{6cm}
+{\begin{center}SI\end{center}}
+\begin{Verbatim}[frame=single]
+if (...) {
+    ...
+}
+
+for (...) {
+    ...
+}
+
+
+
+\end{Verbatim}
+\end{minipage}
+\hfil
+\begin{minipage}{6cm}
+{\begin{center}NO\end{center}}
+\begin{Verbatim}[frame=single]
+if (...)
+{
+    ...
+}
+
+while(...){
+}
+
+for (...) {
+    ...;}
+\end{Verbatim}
+\end{minipage}
+}
+\end{center}
+Per le strutture di controllo che nel corpo hanno una singola istruzione è possibile omettere le parentesi graffe solo se l'istruzione è contenuta in una singola linea.
+\begin{center}{
+\begin{minipage}{6cm}
+{\begin{center}SI\end{center}}
+\begin{Verbatim}[frame=single]
+if (x < 10)
+    x += 1;
+
+
+
+\end{Verbatim}
+\end{minipage}
+\hfil
+\begin{minipage}{6cm}
+{\begin{center}NO\end{center}}
+\begin{Verbatim}[frame=single]
+if (x < 10)
+    someArray.push(Coin({
+        name: 'spam',
+        value: 42
+    }));
+\end{Verbatim}
+\end{minipage}
+}
+\end{center}
+\`{E} consentita una sola eccezione: nei blocchi di \texttt{if} che contengono clausole di \texttt{else} o \texttt{else if}, l'\texttt{else} deve stare nella stessa linea della chiusura del blocco \texttt{if}.
+\begin{center}{
+\begin{minipage}{6cm}
+{\begin{center}SI\end{center}}
+\begin{Verbatim}[frame=single]
+if (x < 3) {
+    x += 1;
+} else if (x > 7) {
+    x -= 1;
+} else {
+    x = 5;
+}
+
+
+if (x < 3)
+    x += 1;
+else
+    x -= 1;
+\end{Verbatim}
+\end{minipage}
+\hfil
+\begin{minipage}{6cm}
+{\begin{center}NO\end{center}}
+\begin{Verbatim}[frame=single]
+if (x < 3) {
+    x += 1;
+}
+else {
+    x -= 1;
+}
+
+
+
+
+
+
+
+\end{Verbatim}
+\end{minipage}
+}
+\end{center}
+\paragraph*{Dichiarazione di funzioni:}
+Per dichirazioni brevi, la dichiarazione della funzione va lasciato uno spazio bianco prima dell'apertura della graffa sulla stessa linea. La graffa che chiude il corpo della funzione va chiusa allo stesso livello di indentazione della dichiarazione iniziale.
+\begin{center}{
+\begin{minipage}{14cm}
+{\begin{center}SI\end{center}}
+\begin{Verbatim}[frame=single]
+function increment(uint x) returns (uint) {
+    return x + 1;
+}
+
+function increment(uint x) public onlyowner returns (uint) {
+    return x + 1;
+}
+\end{Verbatim}
+\end{minipage}
+\paragraph{}
+\begin{minipage}{10cm}
+{\begin{center}NO\end{center}}
+\begin{Verbatim}[frame=single]
+function increment(uint x) returns (uint)
+{
+    return x + 1;
+}
+
+function increment(uint x) returns (uint){
+    return x + 1;
+}
+
+function increment(uint x) returns (uint) {
+    return x + 1;
+}
+
+function increment(uint x) returns (uint) {
+    return x + 1;}
+\end{Verbatim}
+\end{minipage}
+}
+\end{center}
+La visibilità di una funzione va dichiarata prima di altri modificatori.
+\begin{center}{
+\begin{minipage}{8cm}
+{\begin{center}SI\end{center}}
+\begin{Verbatim}[frame=single]
+function kill() public onlyowner {
+    selfdestruct(owner);
+}
+\end{Verbatim}
+\end{minipage}
+\paragraph{}
+\begin{minipage}{8cm}
+{\begin{center}NO\end{center}}
+\begin{Verbatim}[frame=single]
+function kill() onlyowner public {
+    selfdestruct(owner);
+}
+\end{Verbatim}
+\end{minipage}
+}
+\end{center}
+Per dichiarazioni lunghe, ogni argomento va dichiarato in una linea allo stesso livello di indentazione del corpo della funzione. La parentesi di chiusura della dichiarazione degli argomenti va collocata allo stesso livello di indentazione della dichiarazione della funzione.
+\begin{center}{
+\begin{minipage}{10cm}
+{\begin{center}SI\end{center}}
+\begin{Verbatim}[frame=single]
+function thisFunctionHasLotsOfArguments(
+    address a,
+    address b,
+    address c,
+    address d,
+    address e,
+    address f
+) {
+    doSomething();
+}
+\end{Verbatim}
+\end{minipage}
+\paragraph{}
+\begin{minipage}{14cm}
+{\begin{center}NO\end{center}}
+\begin{Verbatim}[frame=single]
+function thisFunctionHasLotsOfArguments(address a, address b, 
+    address c, address d, address e, address f) {
+    doSomething();
+}
+
+function thisFunctionHasLotsOfArguments(address a,
+                                        address b,
+                                        address c,
+                                        address d,
+                                        address e,
+                                        address f) {
+    doSomething();
+}
+
+function thisFunctionHasLotsOfArguments(
+    address a,
+    address b,
+    address c,
+    address d,
+    address e,
+    address f) {
+    doSomething();
+}
+\end{Verbatim}
+\end{minipage}
+}
+\end{center}
+Se una lunga dichiarazione ha molti modificatori, ciascuno di essi deve essere collocato in una linea.
+\begin{center}{
+\begin{minipage}{14cm}
+{\begin{center}SI\end{center}}
+\begin{Verbatim}[frame=single]
+function thisFunctionNameIsReallyLong(address x, address y)
+    public
+    onlyowner
+    priced
+    returns (address)
+{
+    doSomething();
+}
+
+function thisFunctionNameIsReallyLong(
+    address x,
+    address y,
+    address z
+)
+    public
+    onlyowner
+    priced
+    returns (address)
+{
+    doSomething();
+}
+\end{Verbatim}
+\end{minipage}
+\paragraph{}
+\begin{minipage}{14cm}
+{\begin{center}NO\end{center}}
+\begin{Verbatim}[frame=single]
+function thisFunctionNameIsReallyLong(address x, address y)
+                                      public
+                                      onlyowner
+                                      priced
+                                      returns (address) {
+    doSomething();
+}
+
+function thisFunctionNameIsReallyLong(address x, address y)
+    public onlyowner priced returns (address)
+{
+    doSomething();
+}
+
+function thisFunctionNameIsReallyLong(address x, address y)
+    public
+    onlyowner
+    priced
+    returns (address) {
+    doSomething();
+}
+\end{Verbatim}
+\end{minipage}
+}
+\end{center}
+Per costruttori o per contratti estesi che richiedono degli argomenti i costruttori di base vanno dichiarati uno per linea.
+\begin{center}{
+\begin{minipage}{14.5cm}
+{\begin{center}SI\end{center}}
+\begin{Verbatim}[frame=single]
+contract A is B, C {
+    function A(uint param1, uint param2, uint param3, uint param4)
+        B(param1)
+        C(param2, param3)
+    {
+        // do something with param4
+    }
+}
+\end{Verbatim}
+\end{minipage}
+\paragraph{}
+\begin{minipage}{14.5cm}
+{\begin{center}NO\end{center}}
+\begin{Verbatim}[frame=single]
+contract A is B, C {
+    function A(uint param1, uint param2, uint param3, uint param4)
+    B(param1)
+    C(param2, param3)
+    {
+        // do something with param4
+    }
+}
+
+contract A is B, C {
+    function A(uint param1, uint param2, uint param3, uint param4)
+        B(param1)
+        C(param2, param3) {
+       // do something with param4
+    }
+}
+\end{Verbatim}
+\end{minipage}
+}
+\end{center}
+\`{E} possibile dichiarare funzioni in una sola linea solo se possiedono una singola istruzione.
+\begin{center}{
+\begin{minipage}{10cm}
+\begin{Verbatim}[frame=single]
+function shortFunction() { doSomething(); }
+\end{Verbatim}
+\end{minipage}
+}
+\end{center}
+\paragraph*{Dichiarazione di variabili: }
+Nella dichiarazione di array non devono essere messi spazi tra il tipo e le parentesi quadrate.
+\begin{center}{
+\begin{minipage}{3cm}
+{\begin{center}SI\end{center}}
+\begin{Verbatim}[frame=single]
+uint[] x;
+\end{Verbatim}
+\end{minipage}
+\hfil
+\begin{minipage}{3cm}
+{\begin{center}NO\end{center}}
+\begin{Verbatim}[frame=single]
+uint [] x;
+\end{Verbatim}
+\end{minipage}
+}
+\end{center}
+Dichiarare stringhe solo utilizzando i doppi apici.
+\begin{center}{
+\begin{minipage}{10cm}
+{\begin{center}SI\end{center}}
+\begin{Verbatim}[frame=single]
+str = "foo";
+str = "Hamlet says, 'To be or not to be...'";
+\end{Verbatim}
+\end{minipage}
+\paragraph{}
+\begin{minipage}{15cm}
+{\begin{center}NO\end{center}}
+\begin{Verbatim}[frame=single]
+str = 'bar';
+str = '"Be yourself; everyone else is already taken." -Oscar Wilde';
+\end{Verbatim}
+\end{minipage}
+}
+\end{center}
+\paragraph*{Operatori}
+Lasciare uno spazio tra un operatore e una variabile.
+\begin{center}{
+\begin{minipage}{5cm}
+{\begin{center}SI\end{center}}
+\begin{Verbatim}[frame=single]
+x = 3;
+x = 100 / 10;
+x += 3 + 4;
+x |= y && z;
+\end{Verbatim}
+\end{minipage}
+\hfil
+\begin{minipage}{5cm}
+{\begin{center}NO\end{center}}
+\begin{Verbatim}[frame=single]
+x=3;
+x = 100/10;
+x += 3+4;
+x |= y&&z;
+\end{Verbatim}
+\end{minipage}
+}
+\end{center}
+Per una maggiore leggibilità e comprensione del codice la norma ha come eccezione gli operatori con maggiore priorità in istruzioni composte da più operazioni.
+\begin{center}{
+\begin{minipage}{5cm}
+{\begin{center}SI\end{center}}
+\begin{Verbatim}[frame=single]
+x = 2**3 + 5;
+x = 2*y + 3*z;
+x = (a+b) * (a-b);
+\end{Verbatim}
+\end{minipage}
+\hfil
+\begin{minipage}{5cm}
+{\begin{center}NO\end{center}}
+\begin{Verbatim}[frame=single]
+x = 2** 3 + 5;
+x = y+z;
+x +=1;
+\end{Verbatim}
+\end{minipage}
+}
+\end{center}
+\paragraph*{Convenzioni per i nomi: }
+\begin{itemize}
+	\item Contratti e librerie: seguono il \texttt{CapWords} style.\\
+		\textbf{es.} \texttt{SimpleToken}, \texttt{SmartBank}, \texttt{CertificateHashRepository}, \texttt{Player};
+	\item Eventi: seguono il \texttt{CapWords} style.\\
+	\textbf{es.} \texttt{Deposit}, \texttt{Transfer}, \texttt{Approval}, \texttt{BeforeTransfer}, \texttt{AfterTransfer};
+	\item Funzioni: seguono il \texttt{mixedCase} style.\\
+	\textbf{es.} \texttt{getBalance}, \texttt{transfer}, \texttt{verifyOwner}, \texttt{addMember}, \texttt{changeOwner};
+	\item Argomenti di funzioni: seguono il \texttt{mixedCase} style.\\
+	\textbf{es.} \texttt{initialSupply}, \texttt{account}, \texttt{recipientAddress}, \texttt{senderAddress}, \texttt{newOwner};
+	\item Variabili locali: seguono il \texttt{mixedCase} style.\\
+	\textbf{es.} \texttt{totalSupply}, \texttt{remainingSupply}, \texttt{balanceOf}, \texttt{creatorAddress}, \texttt{isPreSale};
+	%TODO costanti con underscore
+	\item Costanti: seguono il %CAPITAL_CASE_WITH_UNDERSCORE style.\\
+	\textbf{es.} %MAX_BLOCKS, TOKEN_NAME, TOKEN_TICKET;
+	\item Modificatori: seguono il \texttt{mixedCase} style.\\
+	\textbf{es.} \texttt{onlyBy}, \texttt{onlyAfter}, \texttt{onlyDuringThePreSale};
+\end{itemize}
 \end{document}

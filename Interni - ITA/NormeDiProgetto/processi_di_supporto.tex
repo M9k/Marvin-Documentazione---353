@@ -1,26 +1,176 @@
 \documentclass[NormeDiProgetto.tex]{subfiles}
 
 \begin{document}
-
-\chapter{Processi di supporto}
-
-\section{Processi di documentazione}
-\subsection{Descrizione}
-\subsection{Separazione documenti interni ed esterni}
-\subsection{Nomenclatura documenti}
-\subsection{Ciclo di vita documentazione}
-\subsection{Documenti presenti}
-\subsection{Norme tipografiche}
-\subsection{Struttura documentazione}
-\subsection{Strumenti a supporto della documentazione}
-
-\section{Processi di versionamento}
-\subsection{Comandi basilari}
-\subsection{Codice per la versione}
-
-\section{Processo di verifica}
-\subsection{Analisi statica}
-\subsection{Analisi dinamica}
-\subsection{Strumenti per la verifica del software}
-
+	
+	\chapter{Processi di supporto}
+	
+	\section{Processi di documentazione}
+	\subsection{Descrizione}
+	Questo capitolo descrive le scelte e i principi che sono stati scelti per la
+	stesura, verifica e approvazione riguardante la documentazione ufficiale.
+	Tali norme sono tassative per tutti i documenti formali.
+	Tali documenti sono elencati successivamente nella sotto-sezione "Documenti correnti".
+	
+	\subsection{Ciclo di vita documentazione}
+	Ogni documento formale deve passare gli stadi di "Sviluppo", "Verifica" e "Approvato".
+	\begin{itemize}
+		\item \textbf{Sviluppo:} inizia con la creazione del documento e termina concludendo scrittura. In questa fase i Redattori aggiungo le parti assegnate tramite task/ticket? %:TODO quale dei due?
+		Il passaggio alla fase di Verifica è automatizzato col termine della checklist di azioni pre\textunderscore verifica;
+		%:TODO oppure con approvazione del Responsabile?
+		
+		\item \textbf{Verifica:} il documento entra nella fase di verifica i Verificatori effettueranno le procedure di controllo dello stesso elencate sezione %:TODO 
+		Al termine del controllo in caso positivo il documento entra automaticamente in fase di Approvato altrimenti consegnano i loro riscontri al Responsabile di Progetto che provvederà ad assegnare nuovamente il documento in fase di Sviluppo;
+		
+		\item \textbf{Approvato:} l'approvazione di un documento coincide con il superamento positivo da parte di un Verificatore dello stadio di Verifica e diventa una versione ufficiale.
+	\end{itemize}
+	
+	\subsection{Separazione documenti interni ed esterni}
+	Ogni documento formale dovrà essere classificato come documento Interno
+	oppure Esterno con le seguenti differenze:
+	\begin{itemize}
+		\item \textbf{Interno:} ha utilizzo interno al gruppo 353, redatto in lingua Italiana;
+		\item \textbf{Esterno:} verrà condiviso con la Proponente e i Committenti in lingua Inglese.
+	\end{itemize}
+	Un documento formale farà sempre parte di una delle due categorie elencate.
+	
+	\subsection{Nomenclatura documenti}
+	Tutti i documenti formali tranne “...” seguiranno questo sistema di nomenclatura:
+	Esempio: NomeDocumento\textunderscore vX.Y.Z
+	
+	\begin{itemize}
+		\item\textbf{ NomeDocumento:} indica il nome del documento senza spazi;
+		\item \textbf{vX.Y.Z:} indica il numero di versionamento con X,Y e Z numeri interi e non negativi.	
+	\end{itemize}
+	Di seguito la spiegazione che assumono le versione del documento:
+	\begin{itemize}
+		\item \textbf{X:} rappresenta il numero di pubblicazioni formali del documento, ogni qual volta il documento verrà pubblicato il valore di Y e Z verrà azzerato;
+		\item \textbf{Y:} rappresenta il numero di verifiche superate positivamente, se negativamente il valore non va incrementato, qualora sia superata viene incrementato di uno e si azzera il valore della Z;
+		\item \textbf{Z:} rappresenta il numero di modifiche effettuate effettuate al documento durante il suo sviluppo.	
+	\end{itemize}
+	
+	Formato dei file: ogni documento si trova nel formato .text durante il suo ciclo di vita.
+	Dopo lo stato di “Approvato” per il documento viene quindi creato un PDF contenente la versione approvata dal Responsabile.
+	
+	\subsection{Documenti correnti}
+	Qui di seguito si presentano i documenti formali in ordine alfabetico e la loro classificazione tra Interno od Esterno:
+	\begin{itemize}
+		\item \textbf{Analisi dei Requisiti:} utilizzo Esterno, sigla(AR)
+		Lo scopo del documento è di analizzare ed esporre i requisiti del progetto. Il documento conterrà l'analisi di tutti i casi d'uso relativi al prodotto in sviluppo e i diagrammi di interazione con l'utente previsti dal prodottofinale;
+		
+		\item \textbf{Glossario:}
+		utilizzo Esterno ;
+		
+		\item \textbf{Norme di Progetto:}
+		utilizzo Interno ;
+		
+		\item \textbf{Piano di Progetto:}
+		utilizzo Esterno ;
+		
+		\item \textbf{Piano di Qualifica:}	utilizzo Esterno ;
+		
+		\item \textbf{Studio di Fattibilità:}	utilizzo Interno .
+		
+	\end{itemize}
+	
+	\subsection{Norme tipografiche}
+	
+	\subsection{Struttura documentazione}
+	E' stato creato un template di documento riutilizzabile con tutti i documenti ufficiali per garantire facilità di sviluppo maggiore.
+	
+	\subsection{Glossario}
+	Il glossario è un documento unico per tutti i documenti, esso conterrà tutte le definizioni, in ordine lessicografico
+	crescente dei termini inerenti al tema del progetto o che possono essere fraintesi. I termini che dovranno essere
+	inseriti nel glossario saranno contrassegnati da una \textit{G} pedice all’interno dei documenti. Prima di inserire un nuovo termine bisognerà assicurarsi che non sia già presente.
+	Il comando LATEX da utilizzare per contrassegnare un termine da glossario all’interno dei documenti è gloss, mentre l’inserimento di una nuova parola all’interno del glossario è glossDef.
+	La scelta di creare un comando apposito per un operazione “elementare” è scaturita dall’agevolazione che porta
+	alla stesura della documentazione: avendo un modo univoco di riconoscere i termini all’interno del glossario, è
+	possibile automatizzare il controllo delle parole da glossario all’interno dei documenti.
+	
+	
+	\subsection{Strumenti a supporto della documentazione} %TODO sono da lasciare qui o da mettere su strumenti usati per la verifica nei PROCESSI DI VERIFICA?
+	La stesura dei documenti deve essere effettuata utilizzando il linguaggio di markup LATEX utilizzando l'ambiente TeXstudio con dizionario italiano ed inglese installati.
+	
+	
+	\section{Processi di versionamento}
+	
+	\subsection{Descrizione}
+	Per le parti versionabili del progetto e per i documenti ufficiali si è scelto l'utilizzo della tecnologia Git, usando il servizio di hosting di repository di GitHub.
+	La condivisione dei documenti informali e delle parti non versionabili è invece effettuata tramite l'uso di una cartella Google Drive condivisa.
+	
+	\subsection{Struttura delle repository}
+	E' stata realizzata solo una repository durante la fase di RR ossia quella relativa alla documentazione come "Documentazione353", si prevede inoltre di creare ulteriori repository per suddividere lo sviluppo e la codifica dell'applicazione del progetto. \\\\
+	I file interni al repository "Documentazione353" sono organizzati secondo questa struttura:
+	\begin{itemize}
+		\item \textbf{Esterni - ENG}
+				\begin{itemize}
+				\item \textbf{AnalisiDeiRequisiti}
+				\item \textbf{Glossario}
+				\item \textbf{PianoDiProgetto}
+				\item \textbf{PianoDiQualifica}
+			\end{itemize}
+		\item \textbf{Esterni - ENG}
+				\begin{itemize}
+					\item \textbf{NormeDiProgetto}
+					\item \textbf{Glossario}
+					\item \textbf{StudioDiFattibilita}
+					\item \textbf{Verbali}
+				\end{itemize}		
+	\end{itemize}	
+	All'interno di ogni cartella è stato definito sempre un main.tex e il file diariomodifiche.tex per poi suddividere le sottosezioni del documento descritte nel file main.tex in ulteriori file .tex.\\
+	Nella root della repository è stato messo invece un file .bat che controlla errori in tutti i main e se non ci sono errori compila tutti i documenti in formato pdf.
+	
+	\subsection{Ciclo di vita branch}
+	Per sfruttare il parallelismo nello sviluppo di uno stesso documento sono stati creati appositamente dei branch denominati con il nome dei membri del gruppo, i documenti baseline invece saranno contenuti solamente nel master branch.\\
+	Il merge col master avviene quindi solamente quando un documento si trova in stato di "Approvato".
+	
+	\subsection{Aggiornamento della repository}
+	Per l’aggiornamento del repository è previsto il seguente sottoprocesso motivato dalla sezione precedente "ciclo di vita":
+	\begin{itemize}
+		\item verificare di trovarsi sul branch personale con "git branch"(quella selezionata ha presenta asterisco *) e in caso cambiare branch con "git checkout"
+		\item dare il comando git pull. Nel caso in cui si verifichino dei conflitti:
+		\begin{itemize}
+			\item dare il comando "git stash" per accantonare momentaneamente	le modifiche apportate;
+			\item dare il comando "git pull";
+			\item dare il comando "git stash apply" per ripristinare le modifiche.
+		\end{itemize}	In questo modo il repository locale risulta aggiornato rispetto il repository remoto;
+	
+		\item dare il comando "git add \textasteriskcentered" , che aggiungerà i file modificati e quelli nuovi;
+		\item dare il comando "git commit", e successivamente riassumere le modifiche effettuate, in caso aggiungere messaggio esteso oltre al titolo;
+		\item dare il comando "git push".
+	\end{itemize}
+	
+	\section{Processo di verifica}
+	\subsection{Analisi statica}
+	\subsection{Analisi dinamica}
+	\subsection{Metriche}
+	
+	\subsection{Verifica Documentazione}
+	\subsection{Verifica Diagrammi Casi d'uso}
+	\subsection{Strumenti usati per la verifica}
+	
+	
+	
+	
+	Il comando IL (Indice di Leggibilita) ha tre argomenti, nell'ordine:
+	1) numero lettere
+	2) numero frasi
+	3) numero parole
+	\makeatletter
+	\newcommand{\IL}[3]{{%
+			\dimendef\lettere 256 \lettere=#1\p@ 
+			\dimendef\frasi 258   \frasi  =#2\p@ 
+			\dimendef\parole 260  \parole =#3\p@ 
+			\dimendef\lp 262
+			\dimendef\fr 264
+			\fr=\dimexpr \p@*\frasi/\parole\relax 
+			\lp=\dimexpr \lettere*\p@/\parole\relax 
+			\strip@pt\dimexpr 89\p@ -10\lp +300\fr  \relax
+	}}
+	\section{Indice di leggibilit\`a}
+	\IL{676}{287}{36}\\
+	\IL{676}{287}{367}\\
+	\IL{144}{1}{26}
+	
+	
+	
 \end{document}

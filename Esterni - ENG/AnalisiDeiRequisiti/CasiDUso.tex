@@ -8,9 +8,9 @@
 \begin{enumerate}
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=0.6\linewidth]{attoriPrincipali.jpg}
+		\includegraphics[width=0.8\linewidth]{attoriPrincipali.jpg}
 		\caption{Gerarchia attori primari}
-		\label{fig:attoriprincipali}
+		\label{fig:Gerarchia attori primari}
 	\end{figure}
 	
 	\item \textbf{Utente generico}\\
@@ -46,9 +46,9 @@
 %TODO controllare posizione immagine
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.6\linewidth]{UC.jpg}
+	\includegraphics[width=0.8\linewidth]{UC.jpg}
 	\caption{Casi d'uso basilari}
-	\label{fig:UC}
+	\label{fig:Casi d'uso basilari}
 \end{figure}
 
 %   -------------------------------------------------------------------------------------
@@ -84,9 +84,72 @@
 	\item \textbf{Precondizione:} Il sistema è raggiungibile e funzionante e l'utente desidera aprire la guida;\\
 	\item \textbf{Postcondizione:} L'utente ha avuto delle nozioni riguardanti l'accesso al sistema.\\
 \end{itemize}
-\subsection{UC1.1}
-\subsection{UC1.2}
-\subsection{UC1.2.1}
-\subsection{UC2}
+\subsection{UC2 - Login}
+\begin{itemize}
+	\item \textbf{Attori primari} Utente non autenticato;\\
+	\item \textbf{Scopo e descrizione:} L'utente richiede il login al sistema attraverso il plugin MetaMask;\\
+	\item \textbf{Scenario principale:} L'utente non ancora riconosciuto dal sistema effettua il login;\\
+	\item \textbf{Precondizione:} L'utente non è stato riconosciuto dal sistema;\\
+	\item \textbf{Postcondizione:} L'utente viene riconosciuto da parte del sistema e viene reindirizzato in base alla sua tipologia.\\
+\end{itemize}
+
+%TODO controllare posizione immagine
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1.0\linewidth]{UC2.jpg}
+	\caption{UC2 - Login}
+	\label{fig:UC2 - Login}
+\end{figure}
+
+\subsection{UC2.1 - Login automatico}
+\begin{itemize}
+\item \textbf{Attori primari} Utente non autenticato;\\
+\item \textbf{Attori secondari:} MetaMask;\\
+\item \textbf{Scopo e descrizione:} L'utente attende il login da parte del sistema senza effettuare nessuna operazione aggiuntiva;\\
+\item \textbf{Scenario principale:} L'utente non ancora riconosciuto dal sistema richiede il login;\\
+\item \textbf{Estensioni:}\\
+\begin{enumerate}
+	\item Se l'utente non ha a disposizione una chiave viene avvisato con un errore a riguardo [UC2.2];
+	\item Se l'utente ha a disposizione una chiave malformata viene avvisato con un errore a riguardo [UC2.3];
+	\item Se l'utente ha a disposizione una chiave non registrata viene avvisato con un errore a riguardo [UC2.4];
+\end{enumerate}
+\item \textbf{Precondizione:} L'utente ha richiesto al sistema di venire riconosciuto;\\
+\item \textbf{Postcondizione:} L'utente viene riconosciuto da parte del sistema.\\
+\end{itemize}
+\subsection{UC2.2 - Visualizzazione messaggio di errore riguardo a chiave assente}
+\begin{itemize}
+	\item \textbf{Attori primari:} Utente non autenticato;\\
+	\item \textbf{Scopo e descrizione:} L'utente viene avvisato del fatto che non ha fornito nessuna chiave al sistema;\\
+	\item \textbf{Scenario principale:} L'utente richiede al sistema di effettuare il login ma non è in grado di fornire una chiave;\\
+	\item \textbf{Precondizione:} L'utente richiede il login senza fornire una chiave;\\
+	\item \textbf{Postcondizione:} L'utente viene avvisato attraverso un messaggio d'errore del motivo per il quale il login non è andato a buon fine.\\
+\end{itemize}
+\subsection{UC2.3 - Visualizzazione messaggio di errore riguardo a chiave malformata}
+\begin{itemize}
+	\item \textbf{Attori primari:} Utente non autenticato;\\
+	\item \textbf{Scopo e descrizione:} L'utente viene avvisato del fatto che ha fornito una chiave malformata, quindi con lunghezza invalida o contenente caratteri non permessi;\\
+	\item \textbf{Scenario principale:} L'utente richiede al sistema di effettuare il login ma la sua chiave risulta malformata;\\
+	\item \textbf{Precondizione:} L'utente richiede il login utilizzando una chiave malformata;\\
+	\item \textbf{Postcondizione:} L'utente viene avvisato attraverso un messaggio d'errore del motivo per il quale il login non è andato a buon fine.\\
+\end{itemize}
+\subsection{UC2.4 - Visualizzazione messaggio di errore riguardo a chiave non registrata}
+\begin{itemize}
+	\item \textbf{Attori primari:} Utente non autenticato;\\
+	\item \textbf{Scopo e descrizione:} L'utente viene avvisato del fatto che ha fornito una chiave non registrata nel sistema;\\
+	\item \textbf{Scenario principale:} L'utente richiede al sistema di effettuare il login ma la sua chiave non è ancora stata registrata;\\
+	\item \textbf{Precondizione:} L'utente richiede il login utilizzando una chiave non registrata;\\
+	\item \textbf{Postcondizione:} L'utente viene avvisato attraverso un messaggio d'errore del motivo per il quale il login non è andato a buon fine.\\
+\end{itemize}
+
+\subsection{UC3 - Registrazione}
+
+\subsection{UC4 - Logout}
+
+\subsection{UC5 - Amministrazione}
+
+\subsection{UC6 - Gestione aspetti relativi ai corsi}
+
+\subsection{UC7 - Gestione aspetti relativi allo studente}
+
 
 \end{document}

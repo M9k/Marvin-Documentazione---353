@@ -1,7 +1,332 @@
 \documentclass[../processi_primari.tex]{subfiles}
 
-\begin{document}
+\begin{document}	
+	\subsubsection{JavaScript}
+	In questa sotto-sezione vengono elencate le norme tratte dal \textbf{Airbnb JavaScript Style Guide}\footnote{\href{https://github.com/airbnb/javascript}{https://github.com/airbnb/javascript}}.
 	
-\subsubsection{Javascript}
+	\paragraph*{Identazione 1: }
+	Vanno utilizzati due (2) spazi per ogni livello di indentazione.
 	
+	\begin{minipage}{6cm}
+		{\begin{center}SI\end{center}}
+		\begin{Verbatim}[frame=single]
+function() {
+..let name;
+}
+		\end{Verbatim}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{6cm}
+		{\begin{center}NO\end{center}}
+		\begin{Verbatim}[frame=single]
+function() {
+....let name;
+}
+		\end{Verbatim}
+	\end{minipage}
+	
+	\paragraph*{Identazione 2: }
+	Bisogna mettere uno (1) spazio prima della graffa principale.
+		
+	\begin{minipage}{6cm}
+		{\begin{center}SI\end{center}}
+		\begin{Verbatim}[frame=single]
+function() {
+..let name;
+}
+		\end{Verbatim}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{6cm}
+		{\begin{center}NO\end{center}}
+		\begin{Verbatim}[frame=single]
+function(){
+..let name;
+}
+		\end{Verbatim}
+	\end{minipage}	\paragraph*{Identazione 3: }
+Va inserito uno (1) spazio prima della parentesi di apertura degli statement di controllo (`if`, `while` etc.). \\
+Non va inserito alcun spazio prima della lista degli argomenti nelle chiamate di funzioni e nelle dichiarazioni.\\
+
+
+\begin{minipage}{6cm}
+{\begin{center}SI\end{center}}
+\begin{Verbatim}[frame=single]
+function fight() {
+  console.log('353');
+}
+\end{Verbatim}
+\end{minipage}
+\hfill
+\begin{minipage}{6cm}
+{\begin{center}NO\end{center}}
+\begin{Verbatim}[frame=single]
+function fight () {
+  console.log ('353');
+}
+\end{Verbatim}
+\end{minipage}
+
+
+\paragraph*{Spazi: }
+E' vietato l'utilizzo di tabulazioni, che devono essere necessariamente sostituite da spazi. Al fine di assicurare il rispetto di questa regola si consiglia di configurare adeguatamente il proprio editor o IDE.
+\paragraph*{Linee vuote: }
+bisogona lasciare una riga vuota dopo blocchi e prima di un nuovo statement.
+
+\begin{minipage}{6cm}
+	{\begin{center}SI\end{center}}
+	\begin{Verbatim}[frame=single]
+if (foo) {
+  return bar;
+}
+
+return baz;
+	
+//oppure 
+	
+var obj = {
+  foo: function() {
+  },
+	
+  bar: function() {
+  }
+};
+\end{Verbatim}
+\end{minipage}
+\hfill
+\begin{minipage}{6cm}
+	{\begin{center}NO\end{center}}
+	\begin{Verbatim}[frame=single]
+if (foo) {
+  return bar;
+ }
+return baz;
+	
+//oppure
+	
+var obj = {
+  foo: function() {
+  },
+  bar: function() {
+  }
+};
+return obj;
+	
+	\end{Verbatim}
+\end{minipage}
+\paragraph{Parentesizzazione 1:} I blocchi di codice multi-riga vanno racchiusi tra parentesi
+graffe. I blocchi di codice con una sola riga possono essere scritti senza parentesi, però vanno scritti sulla stessa riga.\\
+\\
+\begin{minipage}{6cm}
+{\begin{center}SI\end{center}}
+\begin{Verbatim}[frame=single]
+if (test) return false;
+
+if (test) {
+  return false;
+}
+
+function() {
+  return false;
+}
+\end{Verbatim}
+\end{minipage}
+\hfill
+\begin{minipage}{7cm}
+	{\begin{center}NO\end{center}}
+	\begin{Verbatim}[frame=single]
+if (test)
+  return false;
+  
+function() { return false; }
+
+
+
+
+  
+	\end{Verbatim}
+\end{minipage}
+\paragraph{Parentesizzazione 2:} Le parantesi graffe iniziano nella stessa riga del codice, non in quella sottostante.\\
+
+\begin{minipage}{6cm}
+	{\begin{center}SI\end{center}}
+	\begin{Verbatim}[frame=single]
+if (test) {
+  \\..
+  if(test2) {
+  \\..
+    if(test3) {
+	  \\..
+    }
+  }
+}
+
+	\end{Verbatim}
+\end{minipage}
+\hfill
+\begin{minipage}{6cm}
+	{\begin{center}NO\end{center}}
+	\begin{Verbatim}[frame=single]
+if (test) 
+{
+  if(test2)
+  {
+    if(test3)
+    {
+      ...
+    }
+  }
+}
+	\end{Verbatim}
+\end{minipage}	
+\paragraph{Parentesizzazione 3:} In caso di blocchi multi-riga con if e else, bisogna mettere else nella stessa riga della parentesi graffa che chiude il blocco if.\\
+
+\begin{minipage}{6cm}
+	{\begin{center}SI\end{center}}
+	\begin{Verbatim}[frame=single]
+if (test) {
+  thing1();
+  thing2();
+} else {
+  thing3();
+}
+	
+	\end{Verbatim}
+\end{minipage}
+\hfill
+\begin{minipage}{6cm}
+	{\begin{center}NO\end{center}}
+	\begin{Verbatim}[frame=single]
+if (test) {
+  thing1();
+  thing2();
+}
+  else {
+  thing3();
+}
+	\end{Verbatim}
+\end{minipage}
+
+\paragraph{Commenti:}Utilizzare // per commenti da una riga. Inserire i commenti di questo tipo su una nuova riga sopra il soggetto del commento. Inoltre bisogna lasciare una riga vuota prima del commento.
+
+
+\begin{minipage}{6cm}
+	{\begin{center}SI\end{center}}
+	\begin{Verbatim}[frame=single]
+// comment
+var active = true;
+
+function getType() {
+  console.log('353');
+
+  // comment
+  var type = this._type;
+
+  return type;
+}
+	\end{Verbatim}
+\end{minipage}
+\hfill
+\begin{minipage}{6.5cm}
+	{\begin{center}NO\end{center}}
+	\begin{Verbatim}[frame=single]
+var active = true; // comment
+
+function getType() {
+  console.log('353');
+  // comment
+  var type = this._type;
+
+  return type;
+}
+
+
+	\end{Verbatim}
+\end{minipage}
+
+\paragraph{Variabili 1:}Una variabile deve sempre essere dichiarata usando var o let. Altrimenti tutte le variabili dichiarate saranno variabili globali. Bisogna sempre evitare di inquinare lo spazio di nomi globale. 
+\begin{center}{\begin{minipage}{9.5cm}
+{\begin{center}SI\end{center}}
+\begin{Verbatim}[frame=single]
+superPower = new SuperPower();
+\end{Verbatim}
+\end{minipage}
+\paragraph{}
+\begin{minipage}{9.5cm}
+{\begin{center}NO\end{center}}
+\begin{Verbatim}[frame=single]
+var superPower = new SuperPower();
+\end{Verbatim}
+\end{minipage}
+}
+\end{center}
+
+
+\paragraph{Variabili 2:}Utilizzare una sola dichiarazione var o let per ogni variabile. È più facile aggiungere dichiarazioni di variabili in questa maniera, e non c'è il rischio di scambiare una ";" con una ",". Inoltre, le variabili non assegnate vanno sempre dichiarate per ultimo. \\
+
+
+\begin{minipage}{6cm}
+	{\begin{center}SI\end{center}}
+	\begin{Verbatim}[frame=single]
+var objects = getItems();
+var cond = true;
+var stranger = 'things';
+var notAssign;
+	\end{Verbatim}
+\end{minipage}
+\hfill
+\begin{minipage}{6.5cm}
+	{\begin{center}NO\end{center}}
+	\begin{Verbatim}[frame=single]
+var objects = getItems(),
+	cond = true,
+	notAssign,
+	stranger = 'things';
+	\end{Verbatim}
+\end{minipage}
+\end{document}
+
+
+\paragraph{Variabili 3:}Le variabili vanno assegnate o dichiarate solo quando si ha la necessità di usarle. In modo da evitare operazioni inutili. \\
+
+
+\begin{minipage}{6cm}
+	{\begin{center}SI\end{center}}
+	\begin{Verbatim}[frame=single]
+function cName(hasName) {
+  if (hasName === 'test') {
+    return false;
+  }
+
+  const name = getName();
+
+  if (name === 'test') {
+    this.setName('');
+    return false;
+  }
+
+  return name;
+}
+	\end{Verbatim}
+\end{minipage}
+\hfill
+\begin{minipage}{6cm}
+	{\begin{center}NO\end{center}}
+	\begin{Verbatim}[frame=single]
+function cName(hasName) {
+  const name = getName();
+
+  if (hasName === 'test') {
+    return false;
+  }
+
+  if (name === 'test') {
+    this.setName('');
+    return false;
+  }
+
+  return name;
+}	
+\end{Verbatim}
+\end{minipage}
 \end{document}

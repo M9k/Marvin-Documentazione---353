@@ -37,8 +37,8 @@
 	\item \textbf{MetaMask}\\
 	Plugin del browser MetaMask per interfacciarsi ad una rete Ethereum.\\
 	
-	\item \textbf{Ufficio immatricolazioni universitario}\\
-	Entità fisica che consente l'immatricolazione.\\
+	\item \textbf{Ufficio Universitario}\\
+	Entità fisica che consente l'immatricolazione e la registrazione dei professori.\\
 \end{enumerate}
 
 \section{Elenco dei casi d'uso}
@@ -90,7 +90,7 @@
 	\item \textbf{Scopo e descrizione:} L'utente richiede il login al sistema attraverso il plugin MetaMask;\\
 	\item \textbf{Scenario principale:} L'utente non ancora riconosciuto dal sistema effettua il login;\\
 	\item \textbf{Precondizione:} L'utente non è stato riconosciuto dal sistema;\\
-	\item \textbf{Postcondizione:} L'utente viene riconosciuto da parte del sistema e viene reindirizzato in base alla sua tipologia.\\
+	\item \textbf{Postcondizione:} L'utente viene riconosciuto da parte del sistema.\\
 \end{itemize}
 
 %TODO controllare posizione immagine
@@ -120,25 +120,25 @@
 \begin{itemize}
 	\item \textbf{Attori primari:} Utente non autenticato;\\
 	\item \textbf{Scopo e descrizione:} L'utente viene avvisato del fatto che non ha fornito nessuna chiave al sistema;\\
-	\item \textbf{Scenario principale:} L'utente richiede al sistema di effettuare il login ma non è in grado di fornire una chiave;\\
+	\item \textbf{Scenario principale:} L'utente visualizza l'errore relativo all'assenza di una chiave per accedere al sistema;\\
 	\item \textbf{Precondizione:} L'utente richiede il login senza fornire una chiave;\\
-	\item \textbf{Postcondizione:} L'utente viene avvisato attraverso un messaggio d'errore del motivo per il quale il login non è andato a buon fine.\\
+	\item \textbf{Postcondizione:} L'utente è consapevole di dover fornire una chiave. \\
 \end{itemize}
 \subsection{UC2.3 - Visualizzazione messaggio di errore riguardo a chiave malformata}
 \begin{itemize}
 	\item \textbf{Attori primari:} Utente non autenticato;\\
 	\item \textbf{Scopo e descrizione:} L'utente viene avvisato del fatto che ha fornito una chiave malformata, quindi con lunghezza invalida o contenente caratteri non permessi;\\
-	\item \textbf{Scenario principale:} L'utente richiede al sistema di effettuare il login ma la sua chiave risulta malformata;\\
+	\item \textbf{Scenario principale:} L'utente visualizza il messaggio d'errore relativo alla chiave malformata;\\
 	\item \textbf{Precondizione:} L'utente richiede il login utilizzando una chiave malformata;\\
-	\item \textbf{Postcondizione:} L'utente viene avvisato attraverso un messaggio d'errore del motivo per il quale il login non è andato a buon fine.\\
+	\item \textbf{Postcondizione:} L'utente è consapevole di cambiare la chiave o sistemare quella fornita.\\
 \end{itemize}
 \subsection{UC2.4 - Visualizzazione messaggio di errore riguardo a chiave non registrata}
 \begin{itemize}
 	\item \textbf{Attori primari:} Utente non autenticato;\\
 	\item \textbf{Scopo e descrizione:} L'utente viene avvisato del fatto che ha fornito una chiave non registrata nel sistema;\\
-	\item \textbf{Scenario principale:} L'utente richiede al sistema di effettuare il login ma la sua chiave non è ancora stata registrata;\\
+	\item \textbf{Scenario principale:} L'utente viene informato che la sua chiave non risulta registrata, suggerendone la registrazione;\\
 	\item \textbf{Precondizione:} L'utente richiede il login utilizzando una chiave non registrata;\\
-	\item \textbf{Postcondizione:} L'utente viene avvisato attraverso un messaggio d'errore del motivo per il quale il login non è andato a buon fine.\\
+	\item \textbf{Postcondizione:} L'utente è consapevole di dover effettuare la registrazione per accedere al sistema.\\
 \end{itemize}
 
 \subsection{UC3 - Registrazione}

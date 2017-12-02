@@ -6,13 +6,19 @@
 \usepackage{titlesec}
 \usepackage{tabularx}
 \usepackage{hyperref} 
+\usepackage{geometry}
 \usepackage{fancyhdr}
-\fancypagestyle{plain}{
+
+\pagestyle{fancy}
+\renewcommand{\chaptermark}[1]{ \markboth{#1}{} }
+\renewcommand{\sectionmark}[1]{ \markright{#1} }
+
 \fancyhf{}
 \fancyhead[L]{\includegraphics[width=2cm]{../../common/images/logo.png}}
 \fancyhead[R]{\leftmark}
-\fancyfoot[L]{353swe@gmail.com}
 \fancyfoot[R]{\thepage}
+
+\fancypagestyle{plain}{
 \renewcommand{\headrulewidth}{0.4pt}
 \renewcommand{\footrulewidth}{0.4pt}
 }

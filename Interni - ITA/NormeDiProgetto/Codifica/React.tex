@@ -1,7 +1,114 @@
 \documentclass[../ProcessiPrimari.tex]{subfiles}
 
-\begin{document}
-	
-\subsubsection{React}
-	
+\begin{document}	
+	\subsubsection{React}
+	React deve seguire tutte le norme viste sopra per il linguaggio di programmazione Javascript. In seguito sono elencate norme aggiuntive di JSX tratte dal \textbf{Airbnb React/JSX Style Guide}\footnote{\href{https://github.com/airbnb/javascript/tree/master/react}{https://github.com/airbnb/javascript/tree/master/react}}, da usare solo quando si codifica con React/JSX. 
+
+	\paragraph*{Indentazione 1: }
+	va inserito sempre uno (1) spazio nei tag di chiusura.	
+	\begin{center}{	
+			\begin{minipage}{3cm}
+				{\begin{center}SI\end{center}}
+				\begin{Verbatim}[frame=single]
+<Foo />
+				\end{Verbatim}
+			\end{minipage}
+			\hfil
+			\begin{minipage}{3cm}
+				{\begin{center}NO\end{center}}
+				\begin{Verbatim}[frame=single]
+<Foo/>
+				\end{Verbatim}
+			\end{minipage}
+		}
+	\end{center}	
+	\paragraph*{Proprietà 1: }
+utilizzare sempre camelCase per i nomi delle proprietà di un tag. 
+	\begin{center}{
+			\begin{minipage}{6cm}
+				{\begin{center}SI\end{center}}
+				\begin{Verbatim}[frame=single]
+<Foo
+  userName="hello"
+  phoneNumber={12345678}
+/>
+				\end{Verbatim}
+			\end{minipage}
+			\hfil
+			\begin{minipage}{6cm}
+				{\begin{center}NO\end{center}}
+				\begin{Verbatim}[frame=single]
+<Foo
+  UserName="hello"
+  phone_number={12345678}
+/>
+				\end{Verbatim}
+			\end{minipage}
+		}
+	\end{center}
+	\paragraph*{Proprietà 2: }
+omettere il valore di una proprietà quando il valore è implicitamente vero(true).  
+
+\begin{center}{
+		\begin{minipage}{6cm}
+			{\begin{center}SI\end{center}}
+			\begin{Verbatim}[frame=single]
+<Foo
+  hidden
+/>
+			\end{Verbatim}
+		\end{minipage}
+		\hfil
+		\begin{minipage}{5cm}
+			{\begin{center}NO\end{center}}
+			\begin{Verbatim}[frame=single]
+<Foo
+  hidden={true}
+/>
+			\end{Verbatim}
+		\end{minipage}
+	}
+	\end{center}	
+	\paragraph*{I tag 1: }
+chiudere tutti i tag che non hanno i tag figli o altro contenuto senza il tag di chiusura.  
+
+\begin{center}{\begin{minipage}{8cm}
+			{\begin{center}SI\end{center}}
+			\begin{Verbatim}[frame=single]
+<Foo variant="stuff" />
+			\end{Verbatim}
+		\end{minipage}
+		\vskip 1em
+		\begin{minipage}{8cm}
+			{\begin{center}NO\end{center}}
+			\begin{Verbatim}[frame=single]
+<Foo variant="stuff"></Foo>			
+			\end{Verbatim}
+		\end{minipage}
+	}
+\end{center}	
+	\paragraph*{I tag 2: }
+vietato chiudere un tag con più di una proprietà sulla stessa riga. 
+
+\begin{center}{
+		\begin{minipage}{6cm}
+			{\begin{center}SI\end{center}}
+			\begin{Verbatim}[frame=single]
+<Foo
+  bar="bar"
+  baz="baz"
+/>
+			\end{Verbatim}
+		\end{minipage}
+		\hfil
+		\begin{minipage}{5cm}
+			{\begin{center}NO\end{center}}
+			\begin{Verbatim}[frame=single]
+<Foo
+  bar="bar"
+  baz="baz" />
+			\end{Verbatim}
+		\end{minipage}
+	}
+\end{center}
 \end{document}

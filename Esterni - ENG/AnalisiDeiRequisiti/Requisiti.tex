@@ -20,7 +20,7 @@ I requisiti vengono classificati ed assegnati loro un identificativo univoco sec
 \subsection{Requisiti funzionali}
 
 \label{table:Tabella requisiti funzionali}
-\begin{longtable}[H]{|l|l|l|l|}
+\begin{longtable}[H]{|p{2.5cm}|p{2.5cm}|p{5cm}|p{2cm}|}
 	\hline
 	\rowcolor[HTML]{38FFF8} 
 	\textbf{Identificatore} & \textbf{Importanza} & \textbf{Descrizione} & \textbf{Fonti} \\ \hline
@@ -36,39 +36,58 @@ I requisiti vengono classificati ed assegnati loro un identificativo univoco sec
 \subsection{Requisiti di qualità}
 
 \label{table:Tabella requisiti di qualita'} %TODO: cercare un modo di inserire à nei label
-\begin{longtable}[H]{|l|l|l|l|}
+%TODO: concordare notazione dei verbali
+\begin{longtable}[H]{|p{2.5cm}|p{2.5cm}|p{5cm}|p{2cm}|}
 	\hline
 	\rowcolor[HTML]{38FFF8} 
 	\textbf{Identificatore} & \textbf{Importanza} & \textbf{Descrizione} & \textbf{Fonti} \\ \hline
 	\endhead
-	&  &  &  \\ \hline
-	&  &  &  \\ \hline
-	&  &  &  \\ \hline
-	&  &  &  \\ \hline
-	&  &  &  \\ \hline
+	R0Q1 & Obbligatorio & La progettazione e il codice devono seguire le norme e le metriche riportate nei documenti allegati X e Y & Interno \\ \hline %TODO: indicare allegati
+	R0Q2 & Obbligatorio & L'approccio di scrittura di JavaScript deve essere promise Centric Approach & Capitolato \\ \hline
+	R0Q2.1 & Obbligatorio & L'applicativo non deve fare uso di callback & VE171122 \\ \hline
+	R0Q3 & Obbligatorio & Il codice deve attenersi al Airbnb Javascript style guide & Capitolato \\ \hline
+	R0Q4 & Obbligatorio & Lo sviluppo deve essere supportato dall'utilizzo del tool ESLint & Capitolato \\ \hline
+	R0Q5 & Obbligatorio & Dovrà essere fornito un manuale utente in lingua inglese che tratterà l'uso da parte di studenti e professori & VE171122 \\ \hline
+	R0Q6 & Obbligatorio & Dovrà essere fornito un manuale di deploy e di utilizzo da parte degli amministratori in lingua inglese & VE171122 \\ \hline
+	R0Q7 & Obbligatorio & Il codice sorgente deve essere pubblicato sulla piattaforma GitHub, BitBucket o GitLab & Capitolato \\ \hline
 	\caption{Tabella dei requisiti di qualità}
 \end{longtable}
 
 \subsection{Requisiti di vincolo}
 
 \label{table:Tabella requisiti di vincolo}
-\begin{longtable}[H]{|l|l|l|l|}
+
+\begin{longtable}[H]{|p{2.5cm}|p{2.5cm}|p{5cm}|p{2cm}|}
 	\hline
 	\rowcolor[HTML]{38FFF8} 
 	\textbf{Identificatore} & \textbf{Importanza} & \textbf{Descrizione} & \textbf{Fonti} \\ \hline
 	\endhead
-	&  &  &  \\ \hline
-	&  &  &  \\ \hline
-	&  &  &  \\ \hline
-	&  &  &  \\ \hline
-	&  &  &  \\ \hline
+	R0V1 & Obbligatorio & L'applicativo dovrà essere sviluppato attraverso l'uso di tecnologie web & Capitolato \\ \hline
+	R0V1.1 & Obbligatorio & L'applicativo dovrà essere sviluppato con Node.js & Capitolato \\ \hline
+	R0V1.2 & Obbligatorio & L'applicativo dovrà essere sviluppato con JavaScript 8 (ES8) & Capitolato \\ \hline
+	R0V1.3 & Obbligatorio & L'applicativo dovrà essere sviluppato con il boilerplate Redux Minimal & Capitolato \\ \hline
+	R0V1.4 & Obbligatorio & L'applicativo dovrà essere sviluppato utilizzando React & Capitolato \\ \hline
+	R0V1.5 & Obbligatorio & L'applicativo dovrà essere sviluppato utilizzando Redux & Capitolato \\ \hline
+	R0V1.6 & Obbligatorio & Il deploy del sito andrà eseguito utilizzando Surge.sh & Capitolato \\ \hline
+	R0V1.7 & Desiderabile & È desiderabile l'utilizzo di SCSS in sostituzione a CSS & Capitolato \\ \hline
+	R0V2 & Obbligatorio & Gli smart contract dovranno essere scritti in linguaggio Solidity & Capitolato \\ \hline
+	R0V3 & Obbligatorio & La connessione alla rete Ethereum deve avvernire tramite MetaMask & Capitolato \\ \hline
+	R0V3.1 & Obbligatorio & I test riguartandi gli smart contract dovranno essere eseguiti in una rete locale ed almeno in una rete pubblica & Capitolato \\ \hline
+	R0V3.2 & Obbligatorio & Il deploy degli smart contract dovrà avvenire su rete locale testrpc e rete di test Ropsten & Capitolato \\ \hline
+	R2V3.4 & Opzionale & È apprezzabile un deploy finale sulla rete principale di Ethereum & Capitolato \\ \hline
+	R0V4 & Obbligatorio & Lo sviluppo degli smart contract dovrà avvenire utilizzando il framework Truffle & Capitolato \\ \hline
+	R0V5 & Obbligatorio & L'applicativo deve essere accessibile ed utilizzabile dal browser Mozilla Firefox a partire dalla versione X & Interno \\ \hline %TODO: definire versione
+	R0V6 & Obbligatorio & L'applicativo deve essere accessibile ed utilizzabile dal browser Google Chrome a partire dalla versione X & Interno \\ \hline %TODO: definire versione
+	R0V7 & Obbligatorio & L'applicativo deve essere accessibile ed utilizzabile dal browser Microsoft Internet Explorer a partire dalla versione X e dal browser Microsoft EDGE & Interno \\ \hline %TODO: definire versione
+	R1V8 & Desiderabile & L'applicativo deve essere accessibile ed utilizzabile da un browser mobile, per le versioni supportate fare riferimento alle controparti PC di Firefox e Chrome & Capitolato \\ \hline %TODO: discuterne
+	R1V9 & Desiderabile & All'utente senza MetaMask deve essere fornito un tutorial base di accesso al sito & Interno \\ \hline %TODO: discuterne
 	\caption{Tabella dei requisiti di vincolo}
 \end{longtable}
 
 \subsection{Requisiti prestazionali}
 
 \label{table:Tabella requisiti prestazionali}
-\begin{longtable}[H]{|l|l|l|l|}
+\begin{longtable}[H]{|p{2.5cm}|p{2.5cm}|p{5cm}|p{2cm}|}
 	\hline
 	\rowcolor[HTML]{38FFF8} 
 	\textbf{Identificatore} & \textbf{Importanza} & \textbf{Descrizione} & \textbf{Fonti} \\ \hline
@@ -85,7 +104,7 @@ I requisiti vengono classificati ed assegnati loro un identificativo univoco sec
 \subsection{Tracciamento fonti-requisiti}
 
 \label{table:Tabella di tracciamento fonti-requisiti}
-\begin{longtable}[H]{|l|l|l|l|}
+\begin{longtable}[H]{|p{5cm}|p{8cm}|}
 	\hline
 	\rowcolor[HTML]{38FFF8} 
 	\textbf{Fonte} & \textbf{Requisiti} \\ \hline
@@ -101,7 +120,7 @@ I requisiti vengono classificati ed assegnati loro un identificativo univoco sec
 \subsection{Tracciamento requisiti-fonti}
 
 \label{table:Tabella di tracciamento requisiti-fonti}
-\begin{longtable}[H]{|l|l|l|l|}
+\begin{longtable}[H]{|p{5cm}|p{8cm}|}
 	\hline
 	\rowcolor[HTML]{38FFF8} 
 	\textbf{Requisito} & \textbf{Fonti} \\ \hline

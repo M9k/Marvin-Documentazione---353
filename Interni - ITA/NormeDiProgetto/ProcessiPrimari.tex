@@ -17,37 +17,21 @@ All'inizio verrano elencate delle norme generali a cui i Programmatori devono at
 Ogni norma è rappresentata da un paragrafo. Ciascuna ha un titolo, una breve descrizione e, se necessario, un esempio che illustra i modi accettati o meno. Alcune di esse includono inoltre una lista di possibili eccezioni d'uso. L'uso di norme e convenzioni è fondamentale per permettere la generazione di codice leggibile e uniforme, agevolare le fasi di manutenzione, verifica e validazione e migliorare la qualità del prodotto.
 
 \paragraph*{Convenzioni per i nomi: }
-\begin{itemize}
-	\item nomi da evitare perchè facilmente confondibili con i numeri \texttt{1} e \texttt{0}:
-	\begin{itemize}
-		\item \texttt{l} (lettera minuscola elle);
-		\item \texttt{O} (lettera maiuscola o);
-		\item \texttt{I} (lettera maiuscola i).
-	\end{itemize}
-	\item tutti i nomi devono essere \textbf{unici} ed \textbf{esplicativi} al fine di evitare al più possibile ambiguità e comprensione.
-\end{itemize}
-Per i vari linguaggi verranno successivamente descritte altre norme per nomi di variabili, funzioni e altro facendo riferimento ai seguenti stili:
-\begin{itemize}
-	\item \texttt{lowercase};
-%TODO cercare qualcosa per risolvere underscore
-%	\item lower_case_with_underscores
-	\item \texttt{UPPERCASE}
-%	\item UPPER_CASE_WITH_UNDERSCORES
-	\item \texttt{CapitalizedWords} (o \texttt{CapWords})
-	\item \texttt{mixedCase}
-%	\item Capitalized_Words_With_Underscores
-	
-	
-\end{itemize}
 
-\paragraph*{Convenzioni per la documentazione: }
 \begin{itemize}
-	\item tutti i nomi e i commenti al codice per la documentazione vanno scritti in \textbf{inglese};
-	\item è possibile utilizzare in un commento la keyword \textbf{TODO} per indicare codice temporaneo e soluzioni a breve termine o evidentemente migliorabili;
-	\item ogni file contenente codice deve avere la seguente \textbf{intestazione} contenuta in un commento e posta all'inizio del file stesso:
+\item nomi da evitare perchè facilmente confondibili con i numeri \texttt{1} e \texttt{0}:
+\begin{itemize}
+\item \texttt{l} (lettera minuscola elle);
+\item \texttt{O} (lettera maiuscola o);
+\item \texttt{I} (lettera maiuscola i).
+\end{itemize}
+\item tutti i nomi devono essere \textbf{unici} ed \textbf{esplicativi} al fine di evitare al più possibile ambiguità e comprensione.
+\item tutti i nomi e i commenti al codice per la documentazione vanno scritti in \textbf{inglese};
+\item è possibile utilizzare in un commento la keyword \textbf{TODO} per indicare codice temporaneo e soluzioni a breve termine o evidentemente migliorabili;
+\item ogni file contenente codice deve avere la seguente \textbf{intestazione} contenuta in un commento e posta all'inizio del file stesso:
 \begin{center}{
-\begin{minipage}{12cm}
-\begin{Verbatim}[frame=single]
+	\begin{minipage}{12cm}
+		\begin{Verbatim}[frame=single]
 File : nome file
 Version : versione file
 Type : tipo file
@@ -61,19 +45,31 @@ Advice : lista avvertenze e limitazioni
 
 Changelog :
 Autore || Data || breve descrizione delle modifiche
-\end{Verbatim}
-\end{minipage}
+		\end{Verbatim}
+	\end{minipage}
 }
 \end{center}
-	\item La \textbf{versione} del codice viene inserita all’interno dell’intestazione del file e rispetta il
-	seguente formalismo:
-	\begin{center}{\textbf{X.Y}}\end{center}	
-	\begin{itemize}
-		\item \textbf{X}: è l’indice di versione principale, un incremento di tale indice rappresenta un avanzamento della versione stabile, che porta il valore dell’indice Y ad essere azzerato;
-		\item \textbf{Y}: è l’indice di modifica parziale, un incremento di tale indice rappresenta una verifica o una modifica rilevante, come per esempio la rimozione o l’aggiunta di una istruzione.
-	\end{itemize}
-	La versione \textit{1.0} deve rappresentare la prima versione del file completo e stabile, cioè quando le sue funzionalità obbligatorie sono state definite e si considerano funzionanti. Solo dalla versione \textit{1.0} è possibile testare il file, con degli appositi test definiti, per	verificarne l’effettivo funzionamento.
+\item La \textbf{versione} del codice viene inserita all’interno dell’intestazione del file e rispetta il
+seguente formalismo:
+\begin{center}{\textbf{X.Y}}\end{center}	
+\begin{itemize}
+\item \textbf{X}: è l’indice di versione principale, un incremento di tale indice rappresenta un avanzamento della versione stabile, che porta il valore dell’indice Y ad essere azzerato;
+\item \textbf{Y}: è l’indice di modifica parziale, un incremento di tale indice rappresenta una verifica o una modifica rilevante, come per esempio la rimozione o l’aggiunta di una istruzione.
 \end{itemize}
+La versione \textit{1.0} deve rappresentare la prima versione del file completo e stabile, cioè quando le sue funzionalità obbligatorie sono state definite e si considerano funzionanti. Solo dalla versione \textit{1.0} è possibile testare il file, con degli appositi test definiti, per	verificarne l’effettivo funzionamento.
+\end{itemize}
+Per i vari linguaggi verranno successivamente descritte altre norme per nomi di variabili, funzioni e altro per ogni linguaggio facendo riferimento ai seguenti stili:
+\begin{itemize}
+	\item \texttt{lowercase};
+	\item \texttt{lower\_case\_with\_underscores};
+	\item \texttt{UPPERCASE};
+	\item \texttt{UPPER\_CASE\_WITH\_UNDERSCORES};
+	\item \texttt{CapitalizedWords} (o \texttt{CapWords});
+	\item \texttt{mixedCase};
+	\item \texttt{Capitalized\_Words\_With\_Underscores}.
+\end{itemize}
+
+\paragraph*{Convenzioni per la documentazione: }
 
 
 \subfile{Codifica/Javascript.tex}

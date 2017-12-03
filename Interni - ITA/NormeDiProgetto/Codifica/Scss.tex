@@ -3,5 +3,163 @@
 \begin{document}
 	
 \subsubsection{Scss}
+In questa sotto-sezione vengono elencate le norme tratte dalla \textbf{Airbnb\\ CSS/Scss Stylegiude}\footnote{\href{https://github.com/airbnb/css}{https://github.com/airbnb/css}}.
+\paragraph*{Formattazione:}
+\begin{itemize}
+	\item utilizzare due (2) spazi per ogni livello di indentazione;
+	\item per i nomi delle classi utilizzare la \texttt{lower-case-with-dashes};
+	\item non usare selettori ID;
+	\item in caso di selettori multipli per una regola, mettere ogni selettore in una linea singola;
+	\item lasciare uno spazio prima dell'apertura della parentesi graffa di una regola;
+	\item nelle proprietà lasciare uno spazi dopo e non prima i due punti;
+	\item chiudere la parentesi graffa di una regola in una nuova linea;
+	\item lasciare una linea vuota tra una dichiarazione e l'altra;
+\end{itemize}
+\begin{center}{
+\begin{minipage}{6cm}
+{\begin{center}SI\end{center}}
+\begin{Verbatim}[frame=single]
+.avatar {
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.one,
+.selector,
+.per-line {
+  // ...
+}
+\end{Verbatim}
+\end{minipage}
+\hfil
+\begin{minipage}{7cm}
+{\begin{center}NO\end{center}}
+\begin{Verbatim}[frame=single]
+.avatar{
+     border-radius:50%;
+     border:2px solid white; }
+.no, .nope, .not_good {
+     // ...
+}
+#lol-no {
+  // ...
+}
+
+\end{Verbatim}
+\end{minipage}
+}
+\end{center}
+\paragraph*{BEM:}
+utilizzare la notazione BEM (Block-Element-Modifier) come convenzione per i nomi delle classi.
+\begin{center}{
+\begin{minipage}{13.5cm}
+\begin{Verbatim}[frame=single]
+// ListingCard.jsx
+function ListingCard() {
+  return (
+    <article class="ListingCard ListingCard--featured">
+
+      <h1 class="ListingCard__title">Adorable Mission</h1>
+
+      <div class="ListingCard__content">
+        <p>Vestibulum id ligula porta euismod semper.</p>
+      </div>
+
+    </article>
+  );
+}
+\end{Verbatim}
+\end{minipage}
+}
+\end{center}
+\begin{center}{
+\begin{minipage}{13.5cm}
+\begin{Verbatim}[frame=single]
+/* ListingCard.css */
+.ListingCard { }
+.ListingCard--featured { }
+.ListingCard__title { }
+.ListingCard__content { }
+\end{Verbatim}
+\end{minipage}
+}
+\end{center}
+In questo esempio:
+\begin{itemize}
+	\item \texttt{.ListingCard} è il `blocco` e rappresenta il livello più alto del componente;
+	\item \texttt{.ListingCard\_\_title} è un `elemento` e rappresenta un discendente di \texttt{.ListingCard};
+	\item \texttt{.ListingCard--featured} è un `modificatore` e rappresenta un diverso stato o una variante del blocco \texttt{.ListingCard};
+\end{itemize}
+\paragraph*{Commenti:}
+\begin{itemize}
+	\item non usare commenti di blocco;
+	\item fare commenti in linee a se stanti.
+\end{itemize}
+\paragraph*{Ordine di dichiarazione delle proprietà:}
+\begin{enumerate}
+	\item proprietà
+\begin{center}{
+\begin{minipage}{5cm}
+\begin{Verbatim}[frame=single]
+.btn-green {
+  background: green;
+  font-weight: bold;
+  // ...
+}
+\end{Verbatim}
+\end{minipage}
+}
+\end{center}
+	\item dichiarazioni di \texttt{@include}: vanno raggruppate sotto alla dichiarazione delle proprietà standard
+\begin{center}{
+\begin{minipage}{10cm}
+\begin{Verbatim}[frame=single]
+.btn-green {
+  background: green;
+  font-weight: bold;
+  @include transition(background 0.5s ease);
+  // ...
+}
+\end{Verbatim}
+\end{minipage}
+}
+\end{center}
+\item selettori nidificati: vanno dichiarati dopo tutte le altre dichiarazioni e deve essere lasciata una linea vuota prima della loro dichiarazione
+\begin{center}{
+\begin{minipage}{10cm}
+\begin{Verbatim}[frame=single]
+.btn {
+  background: green;
+  font-weight: bold;
+  @include transition(background 0.5s ease);
+
+  .icon {
+    margin-right: 10px;
+  }
+}
+\end{Verbatim}
+\end{minipage}
+}
+\end{center}
+\end{enumerate}
+\paragraph*{Extend: }
+la direttiva \texttt{@extend} non va utilizzata perché ha un comportamento poco intuitivo e pericoloso, specialmente quando usato in selettori nidificati.
+\paragraph*{Selettori annidati: }
+non utilizzare più di tre livelli di annidamento
+\begin{center}{
+\begin{minipage}{5cm}
+\begin{Verbatim}[frame=single]
+.page-container {
+  .content {
+    .profile {
+      // STOP!
+    }
+  }
+}
+\end{Verbatim}
+\end{minipage}
+}
+\end{center}
+
 	
 \end{document}

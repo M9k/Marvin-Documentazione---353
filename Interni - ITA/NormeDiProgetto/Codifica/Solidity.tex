@@ -140,7 +140,7 @@ contract B is owned {
 }
 \end{center}
 \paragraph*{Ordine delle funzioni: }
-All'interno di un contratto l'ordine è fondamentale per identificare meglio quali funzioni è possibile chiamare e per trovare più velocemente le definizioni del costruttore e di eventuali funzioni di fallback.\\
+all'interno di un contratto l'ordine è fondamentale per identificare meglio quali funzioni è possibile chiamare e per trovare più velocemente le definizioni del costruttore e di eventuali funzioni di fallback.\\
 Le funzioni devono essere raggruppate secondo la loro visibilità e ordinate in questo modo:
 \begin{enumerate}
 \item costruttore
@@ -229,14 +229,14 @@ non vanno messi spazi bianchi nelle seguenti situazioni:
 spam(ham[1], Coin({name: "ham"}));
 \end{Verbatim}
 \end{minipage}
-\paragraph{}
+\vskip 1em
 \begin{minipage}{9.5cm}
 {\begin{center}NO\end{center}}
 \begin{Verbatim}[frame=single]
 spam( ham[ 1 ], Coin( { name: "ham" } ) );
 \end{Verbatim}
 \end{minipage}
-\paragraph{}
+\vskip 1em
 \begin{minipage}{9.5cm}
 {\begin{center}ECCEZIONE\end{center}}
 \begin{Verbatim}[frame=single]
@@ -255,7 +255,7 @@ function singleLine() { spam(); }
 function spam(uint i, Coin coin);
 \end{Verbatim}
 \end{minipage}
-\paragraph{}
+\vskip 1em
 \begin{minipage}{8.5cm}
 {\begin{center}NO\end{center}}
 \begin{Verbatim}[frame=single]
@@ -450,7 +450,7 @@ else {
 }
 \end{center}
 \paragraph*{Dichiarazione di funzioni:}
-Per dichirazioni brevi, la dichiarazione della funzione va lasciato uno spazio bianco prima dell'apertura della graffa sulla stessa linea. La graffa che chiude il corpo della funzione va chiusa allo stesso livello di indentazione della dichiarazione iniziale.
+per dichirazioni brevi, la dichiarazione della funzione va lasciato uno spazio bianco prima dell'apertura della graffa sulla stessa linea. La graffa che chiude il corpo della funzione va chiusa allo stesso livello di indentazione della dichiarazione iniziale.
 \begin{center}{
 \begin{minipage}{14cm}
 {\begin{center}SI\end{center}}
@@ -464,7 +464,7 @@ function increment(uint x) public onlyowner returns (uint) {
 }
 \end{Verbatim}
 \end{minipage}
-\paragraph{}
+\vskip 1em
 \begin{minipage}{10cm}
 {\begin{center}NO\end{center}}
 \begin{Verbatim}[frame=single]
@@ -497,7 +497,7 @@ function kill() public onlyowner {
 }
 \end{Verbatim}
 \end{minipage}
-\paragraph{}
+\vskip 1em
 \begin{minipage}{8cm}
 {\begin{center}NO\end{center}}
 \begin{Verbatim}[frame=single]
@@ -525,7 +525,7 @@ function thisFunctionHasLotsOfArguments(
 }
 \end{Verbatim}
 \end{minipage}
-\paragraph{}
+\vskip 1em
 \begin{minipage}{14cm}
 {\begin{center}NO\end{center}}
 \begin{Verbatim}[frame=single]
@@ -584,7 +584,7 @@ function thisFunctionNameIsReallyLong(
 }
 \end{Verbatim}
 \end{minipage}
-\paragraph{}
+\vskip 1em
 \begin{minipage}{14cm}
 {\begin{center}NO\end{center}}
 \begin{Verbatim}[frame=single]
@@ -628,7 +628,7 @@ contract A is B, C {
 }
 \end{Verbatim}
 \end{minipage}
-\paragraph{}
+\vskip 1em
 \begin{minipage}{14.5cm}
 {\begin{center}NO\end{center}}
 \begin{Verbatim}[frame=single]
@@ -662,7 +662,7 @@ function shortFunction() { doSomething(); }
 }
 \end{center}
 \paragraph*{Dichiarazione di variabili: }
-Nella dichiarazione di array non devono essere messi spazi tra il tipo e le parentesi quadrate.
+nella dichiarazione di array non devono essere messi spazi tra il tipo e le parentesi quadrate.
 \begin{center}{
 \begin{minipage}{3cm}
 {\begin{center}SI\end{center}}
@@ -688,18 +688,18 @@ str = "foo";
 str = "Hamlet says, 'To be or not to be...'";
 \end{Verbatim}
 \end{minipage}
-\paragraph{}
-\begin{minipage}{15cm}
+\vskip 1em
+\begin{minipage}{13.5cm}
 {\begin{center}NO\end{center}}
 \begin{Verbatim}[frame=single]
 str = 'bar';
-str = '"Be yourself; everyone else is already taken." -Oscar Wilde';
+str = '"Be yourself; everyone else is already taken." -O.W.';
 \end{Verbatim}
 \end{minipage}
 }
 \end{center}
-\paragraph*{Operatori}
-Lasciare uno spazio tra un operatore e una variabile.
+\paragraph*{Operatori: }
+lasciare uno spazio tra un operatore e una variabile.
 \begin{center}{
 \begin{minipage}{5cm}
 {\begin{center}SI\end{center}}
@@ -745,20 +745,19 @@ x +=1;
 \end{center}
 \paragraph*{Convenzioni per i nomi: }
 \begin{itemize}
-	\item Contratti e librerie: seguono il \texttt{CapWords} style.\\
-		\textbf{es.} \texttt{SimpleToken}, \texttt{SmartBank}, \texttt{CertificateHashRepository}, \texttt{Player};
-	\item Eventi: seguono il \texttt{CapWords} style.\\
+	\item contratti e librerie: seguono il \texttt{CapWords} style.\\
+	\textbf{es.} \texttt{SimpleToken}, \texttt{SmartBank}, \texttt{CertificateHashRepository}, \texttt{Player};
+	\item eventi: seguono il \texttt{CapWords} style.\\
 	\textbf{es.} \texttt{Deposit}, \texttt{Transfer}, \texttt{Approval}, \texttt{BeforeTransfer}, \texttt{AfterTransfer};
-	\item Funzioni: seguono il \texttt{mixedCase} style.\\
+	\item funzioni: seguono il \texttt{mixedCase} style.\\
 	\textbf{es.} \texttt{getBalance}, \texttt{transfer}, \texttt{verifyOwner}, \texttt{addMember}, \texttt{changeOwner};
-	\item Argomenti di funzioni: seguono il \texttt{mixedCase} style.\\
+	\item argomenti di funzioni: seguono il \texttt{mixedCase} style.\\
 	\textbf{es.} \texttt{initialSupply}, \texttt{account}, \texttt{recipientAddress}, \texttt{senderAddress}, \texttt{newOwner};
-	\item Variabili locali: seguono il \texttt{mixedCase} style.\\
+	\item variabili locali: seguono il \texttt{mixedCase} style.\\
 	\textbf{es.} \texttt{totalSupply}, \texttt{remainingSupply}, \texttt{balanceOf}, \texttt{creatorAddress}, \texttt{isPreSale};
-	%TODO costanti con underscore
-	\item Costanti: seguono il %CAPITAL_CASE_WITH_UNDERSCORE style.\\
-	\textbf{es.} %MAX_BLOCKS, TOKEN_NAME, TOKEN_TICKET;
-	\item Modificatori: seguono il \texttt{mixedCase} style.\\
+	\item costanti: seguono il \texttt{CAPITAL\_CASE\_WITH\_UNDERSCORE} style.\\
+	\textbf{es.} \texttt{MAX\_BLOCKS}, \texttt{TOKEN\_NAME}, \texttt{TOKE\_TICKET};
+	\item modificatori: seguono il \texttt{mixedCase} style.\\
 	\textbf{es.} \texttt{onlyBy}, \texttt{onlyAfter}, \texttt{onlyDuringThePreSale};
 \end{itemize}
 \end{document}

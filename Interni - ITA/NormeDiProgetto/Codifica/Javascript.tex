@@ -269,14 +269,14 @@ function getType() {
 \begin{center}{\begin{minipage}{8cm}
 {\begin{center}SI\end{center}}
 \begin{Verbatim}[frame=single]
-superPower = new SuperPower();
+var superPower = new SuperPower();
 \end{Verbatim}
 \end{minipage}
 \vskip 1em
 \begin{minipage}{8cm}
 {\begin{center}NO\end{center}}
 \begin{Verbatim}[frame=single]
-var superPower = new SuperPower();
+superPower = new SuperPower();
 \end{Verbatim}
 \end{minipage}
 }
@@ -350,5 +350,73 @@ function cName(hasName) {
 \end{Verbatim}
 \end{minipage}
 }
+\end{center}
+\paragraph{Nomi 1:}vietato utilizzare nomi delle variabili o delle funzioni con una singola lettera.
+\begin{center}{
+		\begin{minipage}{4.5cm}
+			{\begin{center}SI\end{center}}
+			\begin{Verbatim}[frame=single]
+function query() {
+  // ...
+}
+			\end{Verbatim}
+		\end{minipage}
+		\hfil
+		\begin{minipage}{4.5cm}
+			{\begin{center}NO\end{center}}
+			\begin{Verbatim}[frame=single]
+function q() {
+  // ...
+}
+		\end{Verbatim}
+		\end{minipage}
+	}
+\end{center}
+	\paragraph*{Nomi 2: }
+utilizzare camelCase per i nomi delle variabili, funzioni e delle istanze. Inoltre è vietato usare le sottolineature nei nomi.
+\begin{center}{\begin{minipage}{8cm}
+			{\begin{center}SI\end{center}}
+			\begin{Verbatim}[frame=single]
+const thisIsMyObject = {};
+var myVar = "Hello";
+function thisIsMyFunction() {}
+		\end{Verbatim}
+	\end{minipage}
+\vskip 1em
+\begin{minipage}{8cm}
+{\begin{center}NO\end{center}}
+\begin{Verbatim}[frame=single]
+const OBJEcttsssss = {};
+const this_is_my_object = {};
+var _myVar_= "Hello";
+function c() {}
+\end{Verbatim}
+\end{minipage}
+}
+\end{center}
+\paragraph{Nomi 3:}utilizzare PascalCase per i nomi delle classi.
+\begin{center}{
+		\begin{minipage}{6.5cm}
+			{\begin{center}SI\end{center}}
+			\begin{Verbatim}[frame=single]
+class User {
+  constructor(options) {
+    this.name = options.name;
+  }
+}
+			\end{Verbatim}
+		\end{minipage}
+		\hfil
+		\begin{minipage}{6.5cm}
+			{\begin{center}NO\end{center}}
+			\begin{Verbatim}[frame=single]
+class user {
+  constructor(options) {
+    this.name = options.name;
+  }
+}
+			\end{Verbatim}
+		\end{minipage}
+	}
 \end{center}
 \end{document}

@@ -51,7 +51,7 @@ contract C {
 \end{center}
 
 \paragraph{Linee vuote 2: }
-le linee vuote possono essere omesse tra le dichiarazioni di funzioni in linea.\\\\\\
+le linee vuote possono essere omesse tra le dichiarazioni di funzioni in linea.
 \begin{center}{
 \begin{minipage}{6cm}
 {\begin{center}SI\end{center}}
@@ -101,7 +101,7 @@ contract A {
 i codici sorgente devono essere codificati in UTF-8.
 
 \paragraph*{Imports: }
-tutte le dichiarazioni di import vanno fatte all'inizio del file.
+tutte le dichiarazioni di \texttt{import} vanno fatte all'inizio del file.
 
 \begin{center}{
 \begin{minipage}{6cm}
@@ -141,7 +141,7 @@ contract B is owned {
 \end{center}
 \paragraph*{Ordine delle funzioni: }
 all'interno di un contratto l'ordine è fondamentale per identificare meglio quali funzioni è possibile chiamare e per trovare più velocemente le definizioni del costruttore e di eventuali funzioni di fallback.\\
-Le funzioni devono essere raggruppate secondo la loro visibilità e ordinate in questo modo:
+Le funzioni devono essere raggruppate secondo la loro visibilità e ordinate nel seguente modo:
 \begin{enumerate}
 \item costruttore
 \item funzioni di fallback (se esistono)
@@ -316,8 +316,8 @@ function () {
 le parentesi graffe che denotano l'apertura di un contratto, una libreria o una funzione devono:
 
 \begin{itemize}
-\item essere aperte nella stessa riga della dichiarazione e precedute da uno spazio bianco
-\item chiuse nello stesso livello di indentazione della dichiarazione iniziale
+\item essere aperte nella stessa riga della dichiarazione e precedute da uno spazio bianco;
+\item chiuse nello stesso livello di indentazione della dichiarazione iniziale.
 \end{itemize}
 \begin{center}{
 \begin{minipage}{5.5cm}
@@ -347,7 +347,7 @@ contract Coin
 \end{minipage}
 }
 \end{center}
-Le stesse regole valgono per strutture di controllo come \texttt{if}, \texttt{else}, \texttt{while} e \texttt{for}.\\
+Le stesse regole valgono anche per strutture di controllo come \texttt{if}, \texttt{else}, \texttt{while} e \texttt{for}.\\
 Inoltre, deve essere messo un singolo spazio tra la dichiarazione della struttura di controllo \texttt{if}, \texttt{while} e \texttt{for} e la condizione e anche tra quest'ultima e l'apertura della parentesi graffa.
 \begin{center}{
 \begin{minipage}{6cm}
@@ -450,7 +450,7 @@ else {
 }
 \end{center}
 \paragraph*{Dichiarazione di funzioni:}
-per dichirazioni brevi, la dichiarazione della funzione va lasciato uno spazio bianco prima dell'apertura della graffa sulla stessa linea. La graffa che chiude il corpo della funzione va chiusa allo stesso livello di indentazione della dichiarazione iniziale.
+per dichiarazioni brevi, la dichiarazione della funzione va lasciato uno spazio bianco prima dell'apertura della graffa sulla stessa linea. La graffa che chiude il corpo della funzione va chiusa allo stesso livello di indentazione della dichiarazione iniziale.
 \begin{center}{
 \begin{minipage}{14cm}
 {\begin{center}SI\end{center}}
@@ -613,7 +613,7 @@ function thisFunctionNameIsReallyLong(address x, address y)
 \end{minipage}
 }
 \end{center}
-Per costruttori o per contratti estesi che richiedono degli argomenti i costruttori di base vanno dichiarati uno per linea.
+Per costruttori o per contratti estesi che richiedono degli argomenti, i costruttori di base vanno dichiarati uno per linea.
 \begin{center}{
 \begin{minipage}{14.5cm}
 {\begin{center}SI\end{center}}
@@ -679,7 +679,7 @@ uint [] x;
 \end{minipage}
 }
 \end{center}
-Dichiarare stringhe solo utilizzando i doppi apici.
+Le stringhe vanno dichiarate solo utilizzando i doppi apici.
 \begin{center}{
 \begin{minipage}{10cm}
 {\begin{center}SI\end{center}}

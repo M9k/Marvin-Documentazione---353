@@ -58,6 +58,7 @@ I requisiti vengono classificati ed assegnati loro un identificativo univoco sec
 	R0F5.1 & Obbligatorio & Uno studente può iscriversi ad un esame opzionale & Capitolato \\ \hline
 	R0F6 & Obbligatorio & L'utente può effettuare il login & Interno \\ \hline
 	R0F7 & Obbligatorio & L'utente può effettuare il logout & Interno \\ \hline
+	R1F8 & Desiderabile & L'utente può leggere una breve guida sull'uso di MetaMask e sul pagamento delle operazioni & Interno \\ \hline %TODO: discuterne
 	\caption{Tabella dei requisiti funzionali}
 \end{longtable}
 
@@ -108,13 +109,16 @@ I requisiti vengono classificati ed assegnati loro un identificativo univoco sec
 	R0V6 & Obbligatorio & L'applicativo deve essere accessibile ed utilizzabile dal browser Google Chrome a partire dalla versione X & Interno \\ \hline %TODO: definire versione
 	R0V7 & Obbligatorio & L'applicativo deve essere accessibile ed utilizzabile dal browser Microsoft Internet Explorer a partire dalla versione X e dal browser Microsoft EDGE & Interno \\ \hline %TODO: definire versione
 	R1V8 & Desiderabile & L'applicativo deve essere accessibile ed utilizzabile da un browser mobile, per le versioni supportate fare riferimento alle controparti PC di Firefox e Chrome & Capitolato \\ \hline %TODO: discuterne
-	R1V9 & Desiderabile & All'utente senza MetaMask deve essere fornito un tutorial base di accesso al sito & Interno \\ \hline %TODO: discuterne
-	R0V10 & Obbligatorio & Un utente non deve poter compiere azioni sul sistema senza aver fatto l'accesso ad esso & Capitolato \\ \hline
+	R0V9 & Obbligatorio & Un utente non deve poter compiere azioni sul sistema senza aver fatto l'accesso ad esso & Capitolato \\ \hline
 	\caption{Tabella dei requisiti di vincolo}
 \end{longtable}
 
 \subsection{Requisiti prestazionali}
 
+Non sono stati individuati requisiti prestazionali, in quanto la maggior parte delle attività, per essere concluse, necessitano di una interazione con una rete Ethereum, e quindi non risultano costanti o prevedibili con precisione.\\
+Qualsiasi operazione effettuata in una rete Ethereum reale ha un tempo di soddisfacimento casuale influenzato dal carico della rete nel momento della richiesta e, nel caso di operazioni che vanno a modificare lo stato di un contratto, del quantitativo di Ether pagati per ogni unità di Gas.\\
+ 
+\begin{comment}
 \label{table:Tabella requisiti prestazionali}
 \begin{longtable}[H]{|p{2.5cm}|p{2.5cm}|p{5cm}|p{2cm}|}
 	\hline
@@ -128,7 +132,7 @@ I requisiti vengono classificati ed assegnati loro un identificativo univoco sec
 	&  &  &  \\ \hline
 	\caption{Tabella dei requisiti prestazionali}
 \end{longtable}
-
+\end{comment}
 \section{Tracciamento}
 \subsection{Tracciamento fonti-requisiti}
 

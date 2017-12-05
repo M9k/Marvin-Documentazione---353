@@ -140,7 +140,81 @@
 \end{itemize}
 
 \subsection{UC3 - Registrazione}
-
+\begin{itemize}
+	\item \textbf{Attori primari:} Utente non autenticato;\\
+	\item \textbf{Scopo e descrizione:} L'utente compila i campi richiesti per registrarsi nel sistema;\\
+	\item \textbf{Scenario principale:}
+	\begin{enumerate}
+		\item L'utente inserisce il suo nome[UC3.1];
+		\item L'utente inserisce il suo cognome [UC3.2];
+		\item L'utente seleziona la sua categoria [UC3.3]
+		\item L'utente seleziona il corso desiderato [UC3.4]
+	\end{enumerate}
+	\item \textbf{Estensioni:}
+	\begin{enumerate}
+		\item Se l'utente non compila uno dei campi viene mostrato un messaggio che suggerisce la compilazione del campo mancante [UC3.5]
+	\end{enumerate}
+	\item \textbf{Precondizione:} L'utente è entrato nel sistema e ha scelto di registrarsi;\\
+	\item \textbf{Postcondizione:} La registrazione è andata a buon fine e la chiave dell'utente è stata salvata nel sistema.\\
+\end{itemize}
+\subsection{UC3.1 - Inserimento nome}
+\begin{itemize}
+	\item \textbf{Attori Primari:} Utente non autenticato;
+	\item \textbf{Scopo e Descrizione} Il sistema offre l'interfaccia per inserire il nome dell'utente;
+	\item \textbf{Scenario principale:} L'utente fornisce tramite un dispositivo di input il suo nome;
+	\item \textbf{Precondizione:} Il sistema offre un campo per la compilazione del nome e rimane in attesa dell'input;
+	\item \textbf{Postcondizione:} L'utente ha inserito nome nel campo fornito dal sistema;
+\end{itemize}	
+\subsection{UC3.2 - Inserimento cognome}
+\begin{itemize}
+	\item \textbf{Attori Primari:} Utente non autenticato;
+	\item \textbf{Scopo e Descrizione} Il sistema offre l'interfaccia per inserire il cognome dell'utente;
+	\item \textbf{Scenario principale:} L'utente fornisce tramite un dispositivo di input il suo cognome;
+	\item \textbf{Precondizione:} Il sistema offre un campo per la compilazione del cognome e rimane in attesa dell'input.;
+	\item \textbf{Postcondizione:} L'utente ha inserito il suo cognome nel campo fornito dal sistema;
+\end{itemize}
+\subsection{UC3.3 - Selezione categoria}
+\begin{itemize}
+	\item \textbf{Attori Primari:} Utente non autenticato;
+	\item \textbf{Scopo e Descrizione} Il sistema offre l'interfaccia per selezionare la categoria di registrazione (studente o professore);
+	\item \textbf{Scenario principale:} L'utente seleziona tramite un dispositivo di input la sua categoria;
+	\item \textbf{Precondizione:} Il sistema offre un campo per la selezione della categoria e rimane in attesa dell'input;
+	\item \textbf{Postcondizione:} L'utente ha selezionato la sua categoria nel campo fornito dal sistema;
+\end{itemize}
+\subsection{UC3.4 - Selezione corso}
+\begin{itemize}
+	\item \textbf{Attori Primari:} Utente non autenticato;
+	\item \textbf{Scopo e Descrizione} Il sistema offre l'interfaccia per selezionare il corso di laurea desiderato;
+	\item \textbf{Scenario principale:} L'utente seleziona tramite un dispositivo di input il corso di laurea scelto;
+	\item \textbf{Inclusioni:}
+	\begin{enumerate}
+		\item Ricerca corso di laurea [UC8]
+	\end{enumerate}
+	\item \textbf{Precondizione:} L'utente ha selezionato la registrazione come studente e ll sistema offre un campo per la selezione del corso di laurea e rimane in attesa dell'input;
+	\item \textbf{Postcondizione:} L'utente ha selezionato il suo corso di laurea nel campo fornito dal sistema;
+\end{itemize}
+\subsection{UC3.5 - Visualizzazione errore campo non compilato}
+\begin{itemize}
+	\item \textbf{Attori Primari:} Utente non autenticato;
+	\item \textbf{Scopo e Descrizione} Il sistema avvisa l'utente che non ha compilato tutti i campi necessari per la registrazione al sistema;
+	\item \textbf{Scenario principale:} Il sistema mostra un messaggio d'errore all'utente che indica di compilare i campi mancanti;
+	\item \textbf{Precondizione:} L'utente tenta di registrarsi senza compilare tutti i campi;
+	\item \textbf{Postcondizione:} L'utente è consapevole di non aver compilato tutti i campi;
+\end{itemize}
+\subsection{UC8 - Ricerca corso di laurea}
+\begin{itemize}
+	\item \textbf{Attori:} Utente non autenticato, Studente, Professore, Amministratore;
+	\item \textbf{Scopo e Descrizione} L'utente ricerca un corso di laurea e se esiste il sistema lo mostra;
+	\item \textbf {Scenario principale:}
+	\begin{enumerate}
+		\item Il sistema mostra un campo per inserire parole chiave;
+		\item L'utente inserisce le parole chiave per ricercare un corso;
+		\item Il sistema cerca nel modello di dati persistente dei corsi adeguati ai parametri di ricerca.
+		\item Il sistema mostra la lista (anche vuota) dei corsi trovati.
+	\end{enumerate}
+	\item \textbf{Precondizione:} L'utente ha richiesto la ricerca di un corso di laurea;
+	\item \textbf{Postcondizione:} Il sistema ha mostrato i corsi individuati nella sua ricerca.
+\end{itemize}
 \subsection{UC4 - Logout}
 
 \subsection{UC5 - Amministrazione}

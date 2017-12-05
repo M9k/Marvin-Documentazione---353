@@ -33,14 +33,13 @@ Di seguito vengono elencati i documenti forniti alla Proponente Red Babbel e ai 
 \end{itemize}
 \section{Sviluppo}
 \subsection{Analisi dei Requisiti}
-L'obbiettivo dell'analisi dei requisiti è quello di individuare ed elencare tutti i requisiti del capitolato proposto. I requisti
-possono essere estrapolati da più fonti:
+L'obbiettivo dell'analisi dei requisiti è quello di individuare ed elencare tutti i requisiti del capitolato proposto. I requisti possono essere estrapolati da più fonti:
 \begin{itemize}
 	\item capitolato d’appalto;
 	\item verbali di riunioni interne o esterne;
 	\item casi d’uso.
 \end{itemize}
-Il risultato di quest'analisi sarà il documento \textit{Analisi dei requisiti v 0.1.0} redatto dai Analisti al
+Il risultato di quest'analisi sarà il documento \textit{Analisi dei requisiti v 0.1.0} redatto dagli Analisti al
 fine di:
 \begin{itemize}
 \item descrivere lo scopo del lavoro;
@@ -57,45 +56,43 @@ Ogni requisito dovrà
 essere meno ambiguo possibile e rispettare le seguenti norme.
 
 \paragraph{Requisiti:}Ogni requisito è identificato da un codice, costruito come descritto di seguito:\\ \\
-\textbf{\centerline{R(Requisito)[Importanza][Classificazione][Identificativo]}}\\
+\textbf{\centerline{R[Importanza][Classificazione][Identificativo]}}\\
 \begin{itemize}
-\item la prima lettera è l'abbreviazione di requisito;
-\item il secondo valore indica l'importanza. Assume il valore:
+\item la prima lettera (R) è l'abbreviazione di requisito;
+\item il secondo valore indica l'\textbf{importanza}. Assume il valore:
 	\begin{itemize}
 			\item zero (0) se si tratta di un requisito obbligatorio, il cui soddisfacimento
 			dovrà necessariamente avvenire per garantire le funzioni base del
 			sistema;
 			\item uno (1) se si tratta di un requisito desiderabile, cioè un requisito il cui
 			soddisfacimento può dare maggiore completezza al sistema ma il
-			non soddisfarlo non pregiudica alcuna funzione di base;
+			non soddisfarlo non pregiudica alcuna funzione di base;
 			\item due (2) se si tratta di un requisito opzionale;
 	\end{itemize}
 
-\item la terza lettera indica la classificazione. Assume valore F se si tratta di un Requisito funzionale, Q se di qualità, P se prestazionale e V se di vincolo;
-\item l'ultimo numero indica il numero progressivo.
+\item la terza lettera indica la \textbf{classificazione}. Assume valore F se si tratta di un Requisito funzionale, Q se di qualità, P se prestazionale e V se di vincolo;
+\item l'\textbf{identificativo} indica invece un numero progressivo.
 \end{itemize}
-\paragraph{Casi d'uso:} gli Analisti hanno anche il compito di
-identificare i casi d’uso, elencandoli con un grado di precisione che va dal
-generico verso il dettaglio. Ogni caso d’uso
-è descritto dalla seguente struttura:\\
+\paragraph{Casi d'uso:} gli Analisti hanno anche il compito di identificare i casi d’uso, elencandoli con un grado di precisione che va dal generico verso il dettaglio. Ogni caso d’uso è descritto dalla seguente struttura:\\
 \begin{itemize}
-	\item Codice identificativo e il nome: ogni caso d'uso è indetificato da una serie di cifre separate dal punto. L'ultima cifra indica il numero di figlio, la penultima cifra indica il numero del padre e UC è l'abbreviazione di Use Case(casi d'uso in inglese). Questa cifre è seguita dopo il trattino(-) dal nome del caso d'uso ; \\\\
+	\item \textbf{Codice identificativo e nome:} ogni caso d'uso è identificato da una serie di cifre separate dal punto. L'ultima cifra indica il numero di figlio, la penultima cifra indica il numero del padre e UC è l'abbreviazione di Use Case(casi d'uso in inglese). Questa cifre è seguita dopo il trattino(-) dal nome del caso d'uso: \\\\
 	\centerline{\textbf{UC[Codice padre].[Codice figlio]-Nome}}
-	\item Attori: indica gli attori principali (ad esempio l’utente generico) e
+	\item \textbf{Attori:} indica gli attori principali (ad esempio l’utente generico) e
 	secondari (ad esempio ufficio universitario) del caso d’uso;
-	\item Scopo e descrizione: riporta una breve descrizione del caso d’uso;
-	\item Scenario Principale: rappresenta il flusso degli eventi come lista
+	\item \textbf{Scopo e descrizione:} riporta una breve descrizione del caso d’uso;
+	\item \textbf{Scenario principale:} rappresenta il flusso degli eventi come lista
 	numerata, specificando per ciascun evento: titolo, descrizione, attori
 	coinvolti e casi d’uso generati;
-	\item Precondizione: specifica le condizioni che sono identificate come vere
+	\item \textbf{Precondizione:} specifica le condizioni che sono identificate come vere
 	prima del verificarsi degli eventi del caso d’uso;
-	\item Postcondizione: specifica le condizioni che sono identificate come
-	vere dopo il verificarsi degli eventi del caso d’uso;
-	\item Inclusioni(se ci sono): usate per non descrivere pi`u volte lo stesso flusso di eventi,
+	\item \textbf{Postcondizione:} specifica le condizioni che sono identificate come
+	vere dopo il verificarsi degli eventi del caso d’uso;
+	\item \textbf{Inclusioni (se presenti):} usate per non descrivere pi`u volte lo stesso flusso di eventi,
 	inserendo il comportamento comune in un caso d’uso a parte;
-	\item Estensioni(se ci sono): descrivono i casi d’uso che non fanno parte del flusso
+	\item \textbf{Estensioni (se presenti):} descrivono i casi d’uso che non fanno parte del flusso
 	principale degli eventi, allo stesso modo di quanto descritto in “Scenario
 	principale”.
+\end{itemize}
 \subsection{Codifica}
 In questa sotto-sezione vengono elencate le norme alle quali i Programmatori devono attenersi durante l'attività di programmazione e implementazione.\\
 All'inizio verrano elencate delle norme generali a cui i Programmatori devono attenersi con qualsiasi linguaggio di programmazione utilizzato, mentre di seguito verranno elencate delle norme specifiche per i linguaggi Javascript, React, Solidity e Scss.\\
@@ -135,8 +132,8 @@ File : nome file
 Version : versione file
 Type : tipo file
 Date : data di creazione
-Author : nome autore /i
-E- mail : email autore /i
+Author : nome autore/i
+E- mail : email autore/i
 
 License : tipo licenza
 

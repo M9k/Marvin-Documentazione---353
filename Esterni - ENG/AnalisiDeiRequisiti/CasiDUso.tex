@@ -45,7 +45,7 @@
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\linewidth]{UC.jpg}
+	\includegraphics[width=0.8\linewidth]{UC.jpg} %TODO: cambiare relativa ai corsi a relativa agli esami
 	\caption{Casi d'uso basilari}
 	\label{fig:Casi d'uso basilari}
 \end{figure}
@@ -145,9 +145,132 @@
 
 \subsection{UC5 - Amministrazione}
 
-\subsection{UC6 - Gestione aspetti relativi ai corsi}
+\subsection{UC6 - Gestione aspetti relativi agli esami}
+\begin{itemize}
+	\item \textbf{Attori primari:} Professore;\\
+	\item \textbf{Scopo e descrizione:} L'utente è già riconosciuto dal sistema come professore e sceglie di utilizzare una funzionalità messa a sua disposizione da parte del sistema;\\
+	\item \textbf{Precondizione:} Il professore già riconosciuto dal sistema desidera effettuare delle operazioni relative agli esami a lui assegnati;\\
+	\item \textbf{Postcondizione:} Il professore ha visualizzato le operazioni messe a disposizione dal sistema e sceglie quale effettuare.\\
+\end{itemize}
+
+%TODO grafico UC6
+
+\subsection{UC6.1 - Visualizzazione lista degli esami}
+\begin{itemize}
+	\item \textbf{Attori primari:} Professore;\\
+	\item \textbf{Scopo e descrizione:} Il professore visualizza una lista di tutti gli esami ai quali è assegnato;\\
+	\item \textbf{Scenario principale:} Il professore richiede al sistema la lista degli esami di sua competenza per poterla consultare;\\
+	\item \textbf{Precondizione:} L'utente è già riconosciuto dal sistema come professore e richiede la visualizzazione della lista degli esami di sua competenza;\\
+	\item \textbf{Postcondizione:} Il professore ottiene la lista degli esami ai quali è assegnato per poterla consultare.\\
+\end{itemize}
+
+\subsection{UC6.2 - Visualizzazione lista degli studenti}
+\begin{itemize}
+	\item \textbf{Attori primari:} Professore;\\
+	\item \textbf{Scopo e descrizione:} Il professore visualizza una lista di tutti gli studenti iscritti ad un esame a lui assegnato;\\
+	\item \textbf{Scenario principale:} Il professore richiede al sistema la lista degli studenti iscritti ad un esami di sua competenza per poterla consultare;\\
+	\item \textbf{Flusso principale degli eventi:}\\
+	\begin{enumerate}
+		\item Il professore visualizza la lista degli esami di sua competenza [UC6.1];
+		\item Il professore, una volta individuato l'esame al quale è interessato, ne richiede la lista degli studenti registrati;
+		\item Il professore consulta la lista degli studenti dell'esame richiesto;
+	\end{enumerate}
+	\item \textbf{Precondizione:} L'utente è già riconosciuto dal sistema come professore e richiede la visualizzazione della lista degli studenti iscritti a un determinato esame di sua competenza;\\
+	\item \textbf{Postcondizione:} Il professore ottiene la lista degli studenti iscritti all'esame richiesto per poterla consultare.\\
+	%TODO discutere: nessuna estensione, ha la possibilità di richiederlo solo ai suoi corsi, e se manomette il JS comunque non accede a informazioni segrete
+\end{itemize}
+
+\subsection{UC6.3 - Registrazione valutazione di un esame}
+\begin{itemize}
+	\item \textbf{Attori primari:} Professore;\\
+	\item \textbf{Scopo e descrizione:} Il professore inserisce nel sistema una valutazione;\\
+	\item \textbf{Flusso principale degli eventi:}\\
+	\begin{enumerate}
+		\item Il professore visualizza la lista degli esami di sua competenza [UC6.1];
+		\item Il professore, una volta individuato l'esame al quale è interessato, ne richiede la lista degli studenti registrati [UC6.2];
+		\item Il professore consulta la lista degli studenti ed individua la persona alla quale deve inserire la valutazione;
+		\item Il professore inserisce la valutazione allo studente;
+	\end{enumerate}
+	\item \textbf{Precondizione:} Il professore possiede una valutazione da assegnare a uno studente riguardante un determinato esame e desidera registrarlo;\\
+	\item \textbf{Postcondizione:} Il voto è stato inserito nella blockchain universitaria.\\
+%TODO discutere: nessuna estensione, vede solamente gli studenti dei suoi corsi, non può assegnare voti a studenti a caso di corsi a caso, se cerca di forzarlo modificando il js verrà bloccato dal contratto
+\end{itemize}
+
 
 \subsection{UC7 - Gestione aspetti relativi allo studente}
+\begin{itemize}
+	\item \textbf{Attori primari:} Studente;\\
+	\item \textbf{Scopo e descrizione:} L'utente è già riconosciuto dal sistema come studente e sceglie di utilizzare una funzionalità messa a sua disposizione da parte del sistema;\\
+	\item \textbf{Precondizione:} Lo studente già riconosciuto dal sistema desidera effettuare delle operazioni relative alla scelta di esami opzionali o alla visione delle valutazioni;\\
+	\item \textbf{Postcondizione:} Lo studente ha visualizzato le operazioni messe a disposizione dal sistema e sceglie quale effettuare.\\
+\end{itemize}
 
+\subsection{UC7.1 - Visualizzazione delle informazione degli esami ai quali è iscritto}
+\begin{itemize}
+	\item \textbf{Attori primari:} Studente;\\
+	\item \textbf{Scopo e descrizione:} Lo studente visualizza una lista di tutti gli esami ai quali è iscritto;\\
+	\item \textbf{Scenario principale:} Lo studente richiede al sistema la lista degli esami ai quali è iscritto per poterla consultare;\\
+	\item \textbf{Precondizione:} L'utente è già riconosciuto dal sistema come studente e richiede la visualizzazione della lista degli esami ai quali è iscritto ed le relative informazioni;\\
+	\item \textbf{Postcondizione:} Lo studente ottiene la lista per poterla consultare.\\
+\end{itemize}
+
+\subsection{UC7.1.1 - Visualizzazione dei crediti degli esami ai quali è iscritto}
+\begin{itemize}
+\item \textbf{Attori primari:} Studente;\\
+\item \textbf{Scopo e descrizione:} Lo studente visualizza il numero di crediti per ogni esame al quale è iscritto;\\
+\item \textbf{Scenario principale:} Lo studente richiede al sistema il numero di crediti degli esami ai quali è iscritto per consultarli;\\
+\item \textbf{Precondizione:} L'utente è già riconosciuto dal sistema come studente e richiede il numero di crediti per ogni esame ai quale è iscritto;\\
+\item \textbf{Postcondizione:} Lo studente ottiene le informazioni richieste.\\
+\end{itemize}
+
+\subsection{UC7.1.2 - Visualizzazione della obbligatorietà degli esami ai quali è iscritto}
+\begin{itemize}
+	\item \textbf{Attori primari:} Studente;\\
+	\item \textbf{Scopo e descrizione:} Lo studente visualizza il numero di crediti di per ogni esame al quale è iscritto;\\
+	\item \textbf{Scenario principale:} Lo studente richiede al sistema il numero di crediti degli esami ai quali è iscritto per consultarli;\\
+	\item \textbf{Precondizione:} L'utente è già riconosciuto dal sistema come studente e richiede il numero di crediti per ogni esame ai quale è iscritto;\\
+	\item \textbf{Postcondizione:} Lo studente ottiene le informazioni richieste.\\
+\end{itemize}
+
+\subsection{UC7.1.3 - Visualizzazione delle valutazioni degli esami ai quali è iscritto}
+\begin{itemize}
+	\item \textbf{Attori primari:} Studente;\\
+	\item \textbf{Scopo e descrizione:} Lo studente visualizza la valutazione, in formato numerico con l'indicazione di averlo superato se il voto è superiore a 18, per ogni esame al quale è iscritto;\\
+	\item \textbf{Scenario principale:} Lo studente richiede al sistema le informazioni riguardanti le valutazioni degli esami ai quali è iscritto per consultarle;\\
+	\item \textbf{Precondizione:} L'utente è già riconosciuto dal sistema come studente e richiede le informazioni riguardanti le valutazioni degli esami ai quali è iscritto;\\
+	\item \textbf{Postcondizione:} Lo studente ottiene le informazioni richieste.\\
+\end{itemize}
+
+\subsection{UC7.2 - Visualizzazione degli esami opzionali e dei loro crediti}
+\begin{itemize}
+	\item \textbf{Attori primari:} Studente;\\
+	\item \textbf{Scopo e descrizione:} Lo studente visualizza una lista di tutti gli esami opzionali ai quali ha possibilità di iscriversi ed i relativi crediti;\\
+	\item \textbf{Scenario principale:} Lo studente richiede al sistema la lista di tutti gli esami opzionali ai quali ha possibilità di iscriversi per poterla consultare con i relativi crediti;\\
+	\item \textbf{Precondizione:} L'utente è già riconosciuto dal sistema come studente e richiede la visualizzazione della lista di tutti gli esami opzionali ai quali ha possibilità di iscriversi;\\
+	\item \textbf{Postcondizione:} Lo studente ottiene la lista per poterla consultare.\\
+\end{itemize}
+
+\subsection{UC7.3 - Registrazione ad un esame opzionale}
+\begin{itemize}
+	\item \textbf{Attori primari:} Studente;\\
+	\item \textbf{Scopo e descrizione:} Lo studente si iscrive a un determinato esame opzionale;\\
+	\item \textbf{Flusso principale degli eventi:}\\
+	\begin{enumerate}
+		\item Lo studente visualizza la lista degli esami opzionali [UC7.2];
+		\item Lo studente individua l'esame al quale è interessato iscriversi;
+		\item Lo studente compie l'operazione di iscrizione;
+	\end{enumerate}
+	\item \textbf{Precondizione:} Lo studente ha individuato l'esame opzionale al quale desidera iscriversi;\\
+	\item \textbf{Postcondizione:} Lo studente inserisce nella blockchain universitaria l'iscrizione all'esame.\\
+\end{itemize}
+
+\subsection{UC7.4 - Visualizzazione delle informazioni relative ai crediti}
+\begin{itemize}
+	\item \textbf{Attori primari:} Studente;\\
+	\item \textbf{Scopo e descrizione:} Lo studente visualizza un riepilogo del numero dei crediti che possiede e dell'obiettivo per poter conseguire la laurea;\\
+	\item \textbf{Scenario principale:} Lo studente richiede al sistema le informazioni riguardanti i suoi crediti;\\
+	\item \textbf{Precondizione:} L'utente è già riconosciuto dal sistema come studente e richiede la visualizzazione delle informazioni relative ai suoi crediti;\\
+	\item \textbf{Postcondizione:} Lo studente ottiene le informazioni richieste per poterle consultare.\\
+\end{itemize}
 
 \end{document}

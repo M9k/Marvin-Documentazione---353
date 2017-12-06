@@ -9,17 +9,17 @@
 	Questo capitolo descrive le scelte e i principi che sono stati scelti per la
 	stesura, verifica e approvazione riguardante la documentazione ufficiale.
 	Tali norme sono tassative per tutti i documenti formali.
-	Tali documenti sono elencati successivamente nella sotto-sezione "Documenti correnti".
+	Tali documenti sono elencati successivamente nella sotto-sezione "Documenti correnti". %TODO sezione
 	
 	\subsection{Ciclo di vita documentazione}
 	Ogni documento formale deve passare gli stadi di "Sviluppo", "Verifica" e "Approvato".
 	\begin{itemize}
 		\item \textbf{Sviluppo:} inizia con la creazione del documento e termina concludendo la scrittura. In questa fase i Redattori aggiungono le parti assegnate tramite task/ticket? %:TODO quale dei due?
-		Il passaggio alla fase di Verifica è automatizzato col termine della checklist online di azioni pre\textunderscore verifica;
-		%:TODO oppure con approvazione del Responsabile?
+		Il passaggio alla fase di Verifica è automatizzato col termine della lista di controllo disponibile online segnalata al Responsabile;
 		
-		\item \textbf{Verifica:} il documento entra nella fase di verifica i Verificatori effettueranno le procedure di controllo dello stesso elencate sezione %TODO 
-		Al termine del controllo in caso positivo il documento entra automaticamente in fase di Approvato altrimenti consegnano i loro riscontri al Responsabile di Progetto che provvederà ad assegnare nuovamente il documento in fase di Sviluppo;
+		\item \textbf{Verifica:} il documento entra nella fase di verifica dopo l'assegnazione da parte del Responsabile.
+		I Verificatori effettueranno le procedure di controllo dello stesso elencate nella sezione %TODO processi di verifica
+		Al termine del controllo in caso positivo il documento entra automaticamente in fase di Approvato altrimenti consegnano i loro riscontri al Responsabile di Progetto che provvederà ad assegnare nuovamente il documento in fase di Sviluppo ad un Redattore;
 		
 		\item \textbf{Approvato:} l'approvazione di un documento coincide con il superamento positivo da parte di un Verificatore dello stadio di Verifica e diventa una versione ufficiale.
 	\end{itemize}
@@ -34,8 +34,8 @@
 	Un documento formale farà sempre parte di una delle due categorie elencate.
 	
 	\subsection{Nomenclatura documenti}
-	Tutti i documenti formali tranne “...” seguiranno questo sistema di nomenclatura come l'esempio seguente: \underline{\textbf{NomeDocumento\textunderscore vX.Y.Z}}
-	
+	Tutti i documenti formali tranne “...” seguiranno questo sistema di nomenclatura come l'esempio seguente: \textbf{NomeDocumento\textunderscore vX.Y.Z}
+
 	\begin{itemize}
 		\item\textbf{ NomeDocumento:} indica il nome del documento senza spazi;
 		\item \textbf{vX.Y.Z:} indica il numero di versionamento con X,Y e Z numeri interi e non negativi.	
@@ -60,20 +60,20 @@
 		Documento per raccogliere le definizioni dei termini o concetti che saranno usati nei documenti formali per facilitarne la comprensione.
 		
 		\item \textbf{Norme di Progetto:}
-		utilizzo Interno, sigla (NP) \\
+		utilizzo Interno, sigla (NdP) \\
 		Documento per mostrare le direttive e gli standard utilizzati all'interno del gruppo di lavoro 353
 		per lo sviluppo del progetto.
 		
 		\item \textbf{Piano di Progetto:}
-		utilizzo Esterno, sigla (NP) \\
+		utilizzo Esterno, sigla (PdP) \\
 		Documento per l'analisi e la pianificazione della gestione delle risorse di tempo e delle risorse umane.
 		
 		\item \textbf{Piano di Qualifica:}
-		utilizzo Esterno, sigla (NP) \\
+		utilizzo Esterno, sigla (PdQ) \\
 		Documento per descrivere gli standard e gli obiettivi di qualità che il gruppo vorrà raggiungere per garantire la qualità di prodotto e di processo.
 		
 		\item \textbf{Studio di Fattibilità:}
-		utilizzo Interno, sigla (NP) \\
+		utilizzo Interno, sigla (SdF) \\
 		Documento per indicare le riflessioni, punti di forza e caratteristiche sfavorevoli per ogni capitolato che ha portato alla scelta finale del gruppo, 
 		
 	\end{itemize}
@@ -82,42 +82,104 @@
 	\subsubsection{Struttura dei documenti}
 		Ogni documento è realizzato a partire da una disposizione prestabilita che dovrà essere conforme per ogni documento ufficiale ad eccezione dei verbali:
 		\begin{itemize}
-			\item Frontespizio
-			\item Informazioni sul documento
-			\item Diario delle modifiche
-			\item Indice delle sezioni
-			\item Indice delle tabelle %TODO mettiamo questi indici?
-			\item Indice delle figure? %TODO mettiamo questi indici?
-			\item Introduzione 
-			\item Contenuto
+			\item \textbf{Frontespizio:} questa sezione si troverà nella prima pagina di ogni documento e conterrà:
+			\begin{itemize}
+				\item logo del gruppo
+				\item titolo documento
+				\item versione del documento con ultima data modifica
+				\item nome del gruppo e del progetto
+			\end{itemize}
+			
+			\item \textbf{Informazioni sul documento:} conterrà la lista di responsabili,
+			redattori, verificatori del documento e infine lo stato e la tipologia di uso vedi sotto sezione {Separazione documenti interni ed esterni}
+			
+			\item \textbf{Diario delle modifiche:}
+			Questo diario sarà presente nella seconda pagina del documento sotto forma di tabella in ordine di versione decrescente con righe composte da: versione, data, descrizione modifiche, autore, ruolo
+			
+			\item \textbf{Indice delle sezioni:}
+			L'indice delle sezioni conterrà l'indice di tutti gli argomenti trattati nel documento con la seguente struttura: titolo argomento e numero pagina
+			
+			\item \textbf{Indice delle tabelle:} %TODO mettiamo questi indici?
+			Sezione contenente l'indice delle tabelle con struttura identica alle sezioni. 
+			
+			\item \textbf{Indice delle figure:} %TODO mettiamo questi indici?
+			Sezione contenente l'indice delle figure con struttura identica alle sezioni. 
+			
+			\item \textbf{Introduzione:}
+			%mettiamo una sezione del genere?
+			scopo del documento, info glossario e riferimenti utili?
+			 
+			\item \textbf{Contenuto del documento:} il resto del documento è occupato dal contenuto.
+			
+			
 		\end{itemize}
 		
 	\subsubsection{Norme tipografiche}
 		\begin{itemize}
-			\item Intestazione ogni pagina
-			\item Piè pagina
-			\item Virgolette
-			\item Parentesi
-			\item Punteggiatura 
-			\item Numeri
-			\item Stile del testo 
-			\item Elenchi
-			\item Note a Piè pagina
-			\item Formati: Date Orari URI sigle
-			\item Ruoli/Fasi/Revisioni di Progetto
-			\item Nomi: gruppo, propri, progetto, file, documento
-			\item Componenti grafiche: immagini e tabelle
+			\item \textbf{Intestazione} ogni pagina dopo frontespizio presenterà sulla sinistra il logo del gruppo e a destra una sigla con codice capitolo? %TODO Non ricordo cosa?
+			
+			\item \textbf{Piè pagina:} a sinistra numero della pagina 
+			
+			\item \textbf{Virgolette:} alte singole ' ' per singolo carattere, alte doppie " " per racchiudere stringhe mentre quelle basse '<<' '>>' per racchiudere citazioni.
+			 
+			\item \textbf{Parentesi:} tonde per descrivere esempi o fornire sinonimi o precisazioni mentre quelle quadre sono usate per rappresentare uno standard ISO oppure uno stato relativo a un ticket;
+			
+			\item \textbf{Punteggiatura:} ogni segno di punteggiatura deve essere seguito da uno spazio e non avere spazi precedenti al segno stesso;
+
+			\item \textbf{Stile del testo:} 
+			\begin{itemize}
+				\item Corsivo: %Questi stili quando?
+				\item Grassetto:
+				\item Sottolineato:
+				\item Glossario %TODO QUI O SOTTO?
+			\end{itemize}
+		
+			\item \textbf{Elenchi:} ogni elenco avrà la prima parola di ogni elemento maiuscola seguita da : seguiti dalla descrizione dell'elemento, mentre al termine dell'elemento si metteranno sempre il ; tranne per l'ultimo elemento della lista per cui si userà il ".";
+			 
+			\item \textbf{Note a Piè pagina:} seguono le seguenti regole: 
+			\begin{itemize}
+				\item numerazione progressiva all'interno del documento
+				\item devono essere scritte solo una volta
+				\item il primo carattere di ogni nota deve essere maiuscolo. Fanno eccezione i casi in cui la parola sia un acronimo.
+			\end{itemize}
+			 
+			\item \textbf{Formati:}
+			\begin{itemize}
+				\item date: scritte con lo standard DD-MM-YYYY dove YYYY indica l'anno, MM il mese e DD il giorno grazie al comando \textbackslash nData;
+				\item grassetto: lo stile grassetto va utilizzato per i titoli, titoli elementi di un elenco; 
+				\item URI: lo stile utilizzato per un URI è il corsivo di colore blu come colore link standard web utilizzabile col comando personalizzato latex \textbackslash nURI;
+				
+				\item glossario: %TODO QUI O SOTTO?
+			\end{itemize}
+			
+			\item \textbf{Ruoli/Fasi/Revisioni di Progetto} %TODO Comandi
+			
+			\item \textbf{Nomi:} sono stati realizzati dei comandi personalizzati per poter richiamare la visualizzazione dei seguenti nomi:
+			\begin{itemize}
+				\item nome gruppo: \textbackslash gruppo visualizza "\gruppo"
+				\item nomi propri: \textbackslash NomeProprioPersona 
+				\item nome progetto: \textbackslash progetto visualizza "\progetto"
+				\item nome di un file: \textbackslash nFile
+				\item nome di un documento: \textbackslash nDoc
+				\item percorso cartelle: \textbackslash nPath
+			\end{itemize}
+		
+			\item \textbf{Componenti grafiche:}
+			 \begin{itemize}
+			 	\item immagini: formati ammessi sono PNG e PDF 
+			 	\item tabelle: devono rispettare lo stile del template realizzato %TODO serve un template di tabella
+			 	%TODO per immagini e tabelle servono placeholder e descrizione breve?
+			 \end{itemize}
+			
 		\end{itemize}
 	
 	\subsection{Struttura documentazione}
-	E' stato creato un template di documento riutilizzabile con tutti i documenti ufficiali per garantire una facilità di sviluppo maggiore.
+	E' stato creato un template di documento riutilizzabile con tutti i documenti ufficiali per garantire una facilità di sviluppo maggiore basato sulle norme di documentazione elencate nella sezione precedente inoltre è stata scritta una pagina di showcase per facilitare il mantenimento corretto delle strutture dei documenti.
 	
 	\subsection{Gestione termini Glossario}
-	Il glossario è un documento unico per tutti i documenti, esso conterrà tutte le definizioni, in ordine lessicografico crescente dei termini inerenti al tema del progetto o che possono essere fraintesi. I termini che dovranno essere inseriti nel glossario saranno contrassegnati da una \textit{G} pedice all’interno dei documenti. \\
-	Prima di inserire un nuovo termine bisognerà assicurarsi che non sia già presente. \\
-	Il comando LATEX da utilizzare per contrassegnare un termine da glossario all’interno dei documenti è gloss, mentre l’inserimento di una nuova parola all’interno del glossario è glossDef.
+	Il glossario è un documento unico per tutti i documenti, esso conterrà tutte le definizioni, in ordine lessicografico crescente dei termini inerenti al tema del progetto o che possono essere fraintesi. I termini che dovranno essere inseriti nel glossario saranno contrassegnati da una \citGloss{} pedice all’interno dei documenti. Prima di inserire un nuovo termine bisognerà assicurarsi che non sia già presente. \\
+	Il comando LATEX da utilizzare per contrassegnare un termine da glossario all’interno dei documenti è \textbackslash glossario, mentre l’inserimento di una nuova parola all’interno del glossario è glossDef. %TODO che comandi vogliamo usare per il dizionario?
 	La scelta di creare un comando apposito per un operazione “elementare” è scaturita dall’agevolazione che porta alla stesura della documentazione: avendo un modo univoco di riconoscere i termini all’interno del glossario, è possibile automatizzare il controllo delle parole da glossario all’interno dei documenti.
-	
 	
 	\subsection{Strumenti a supporto della documentazione} %TODO sono da lasciare qui o da mettere su strumenti usati per la verifica nei PROCESSI DI VERIFICA?
 	La stesura dei documenti deve essere effettuata utilizzando il linguaggio di markup LATEX utilizzando l'ambiente TeXstudio con dizionario italiano ed inglese installati.
@@ -156,9 +218,9 @@
 	Il merge col master avviene quindi solamente quando un documento si trova in stato di "Approvato".
 	
 	\subsection{Aggiornamento della repository}
-	Per l’aggiornamento del repository è previsto il seguente sottoprocesso motivato dalla sezione precedente "ciclo di vita":
+	Per l’aggiornamento del repository è previsto il seguente sotto processo motivato dalla sezione precedente "ciclo di vita":
 	\begin{itemize}
-		\item verificare di trovarsi sul branch personale con "git branch"(quella selezionata ha presenta asterisco *) e in caso cambiare branch con "git checkout"
+		\item verificare di trovarsi sul branch personale con "git branch"(quella selezionata presenta un asterisco *) e in caso cambiare branch con "git checkout"
 		\item dare il comando git pull. Nel caso in cui si verifichino dei conflitti:
 		\begin{itemize}
 			\item dare il comando "git stash" per accantonare momentaneamente	le modifiche apportate;
@@ -181,24 +243,44 @@
 	L'analisi statica è una tecnica di analisi applicabile sia alla documentazione che al codice e permette di effettuare la verifica di quanto prodotto individuando errori ed anomalie.\\
 	Essa può essere svolta in due modi diversi ma complementari tra di loro in quanto per utilizzare inspection bisogna prima aver effettuato walkthrough.
 		\begin{itemize}
-			\item Inspection:
-			\item Walkthrough:
+			\item \textbf{Walkthrough:} tecnica applicata quando non si sanno le tipologie di errori o di problemi che si stanno cercando quindi prevede una lettura da cima a fondo del codice o documento per trovare anomalie di qualsiasi tipo.			
+			\item \textbf{Inspection:} tecnica da applicare quando si ha idea della problematica che si sta cercando e si attua leggendo in modo mirato il documento/codice sulla base di una lista di errori precedentemente stilata.
 		\end{itemize}
+	Sono stati utilizzati degli strumenti e sotto processi per velocizzare e rendere più veloci queste analisi con utilizzo di funzioni integrate nell'editor TexStudio oltre all'utilizzo di un sistema di checklist online personale per garantire esecuzione di ogni controllo da parte del Verificatore.
 	
 	\subsection{Analisi dinamica}
-	
+	Il processo di analisi dinamica consiste nella realizzazione ed esecuzione di una serie ti test sul codice del software. 
 	
 	\subsection{Metriche}
+	\begin{itemize}
+		\item \textbf{metriche per processi:} ogni processo dovrà avere uno standard di qualità elevato definito come unione di:
+		\begin{itemize}
+			\item tempo: richiesto per completamento
+			\item risorse: uomo o software richieste
+			\item occorrenze: ossia il numero di volte in cui si presenterà un particolare evento come il numero di difetti di una caratteristica di prodotto. 
+		\end{itemize} 
+		
+		\item \textbf{metriche per i documenti:} per la verifica dei documenti è stata scelto l'indice di leggibilità secondo l'indice Gulpease che viene calcolato tramite funzione Latex.\\I risultati sono compresi tra 0 e 100 con 100 leggbilità massima e 0 più bassa e si è scelto di tenere un livello sempre compreso tra ;%TODO o funzione esterna si fixa il prototipo alla fine di questo documento? 
+		 
+		\item \textbf{metriche per il software:} al fine di perseguire gli obiettivi qualitati prefissati nel PianoDiQualifica è doveroso definire delle metriche come copertura del codice tramite test automatici; %TODO riferimenti a sucessive revisioni?
+		\item \textbf{metriche per i feedback di miglioramento:} i feedback gestiti come spiegato nelle sezione successive presentano un indice di occorrenze che viene incrementato automaticante ad ogni nuova segnalazione identica. 
+	\end{itemize}
 	
-	\subsection{Verifica Documentazione}
 	\subsection{Verifica Diagrammi UML}
-	I Verificatori devono controllare tutti i diagrammi UML
-	\subsection{Strumenti usati per la verifica del codice software}
+	I Verificatori devono controllare tutti i diagrammi UML prodotti rispettino lo standard UML e che siano corretti semanticamente.
+	
+	
+	\subsection{Strumenti usati per la verifica}
+	\begin{itemize}
+		\item \textbf{software:} verranno usati per la verifica mocha e enzyme per React, Jest per verifica Redux mentre per i contratti solidity useremo Truffle test; %TODO sono corrette queste info? Ho un dubbio su Jest siccome non presente sul redux-minimal che loro hanno detto di usare
+		\item \textbf{documenti:} Strumenti di controllo di Texstudio insieme a script python o bat eseguiti in locale dal verificatore per controllare Glossario ed errori ortografici;
+		\item \textbf{gestione processi e feedback:} è stato scelto di utilizzare il sistema integrato di ISSUE presente su Github per permettere un dialogo maggiore per ogni singola issue. 
+	\end{itemize}
 	
 	
 	
-	
-	Il comando IL (Indice di Leggibilita) ha tre argomenti, nell'ordine:
+	%TODO Testing funzione per produrre indice di leggibilità Gulpease?!
+	Il comando IL (Indice di Leggibilità) ha tre argomenti, nell'ordine:
 	1) numero lettere
 	2) numero frasi
 	3) numero parole

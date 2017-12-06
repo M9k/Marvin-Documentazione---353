@@ -329,6 +329,78 @@
 	\item \textbf{Precondizione:} L'utente tenta di inserire un anno accademico vuoto; 
 	\item \textbf{Postcondizione:} L'utente è consapevole di aver provato ad inserire un anno accademico vuoto.
 \end{itemize}
+\subsection{UC5.4 - Gestione Corsi di Laurea}
+\begin{itemize}
+	\item \textbf{Attori primari:} Amministratore;
+	\item \textbf{Scopo e descrizione:} L'utente è in grado di eseguire operazioni sui corsi di laurea;
+	\item \textbf{Scenario principale:} L'utente visualizza una lista di operazioni eseguibili sui corsi di laurea e ne sceglie una;
+	\item \textbf{Precondizione:} L'utente ha scelto di gestire i corsi di laurea; 
+	\item \textbf{Postcondizione:} L'utente è a conoscenza delle possibili operazioni da eseguire sui corsi di laurea e ne ha scelta una.
+\end{itemize}
+\subsection{UC5.4.1 - Visualizzazione lista completa dei corsi}
+\begin{itemize}
+	\item \textbf{Attori primari:} Amministratore;
+	\item \textbf{Scopo e descrizione:} Vengono mostrati tutti i corsi di laurea presenti nel sistema;
+	\item \textbf{Scenario principale:} L'utente visualizza tutti i corsi di laurea presenti nel sistema;
+	\item \textbf{Precondizione:} L'utente ha richiesto la visualizzazione di tutti i corsi di laurea; 
+	\item \textbf{Postcondizione:} L'utente ottiene la lista.
+\end{itemize}
+\subsection{UC5.4.2 - Visualizzazione lista corsi di laurea per anno accademico}
+\begin{itemize}
+	\item \textbf{Attori primari:} Amministratore;
+	\item \textbf{Scopo e descrizione:} Vengono visualizzati i corsi di laurea relativi ad un determinato anno accademico;
+	\item \textbf{Scenario principale:}
+	\begin{enumerate}
+		\item L'utente seleziona un anno accademico
+		\item Il sistema mostra la lista di corsi di laurea associati all'anno accademico
+	\end{enumerate};
+	\item \textbf{Precondizione:} L'utente ha visualizzato una lista di anni accademici [UC5.3.2] e vuole visualizzare i corsi di laurea all'interno di uno di essi; 
+	\item \textbf{Postcondizione:} L'utente ottiene la lista desiderata.
+\end{itemize}
+\subsection{UC5.4.3 - Crea un esame nel corso}
+\begin{itemize}
+	\item \textbf{Attori primari:} Amministratore;
+	\item \textbf{Scopo e descrizione:} L'utente crea ed assegna un esame all'interno di un corso di laurea;
+	\item \textbf{Scenario principale:} L'utente inserisce i dati necessari per la creazione dell'esame;
+	\item \textbf{Estensioni:}
+	\begin{enumerate}
+		\item Se l'utente non compila tutti i campi viene visualizzato un messaggio d'errore [UC5.4.4]
+	\end{enumerate}
+	\item \textbf{Precondizione:} L'utente ha ottenuto una lista di corsi di laurea per anno accademico [UC5.4.2] e ne ha selezionato uno, volendo creare un esame al su interno; 
+	\item \textbf{Postcondizione:} L'esame viene inserito nel sistema e associato al corso di laurea selezionato.
+\end{itemize}
+\subsection{UC5.4.4 - Visualizzazione errore campi non compilati nella creazione dell'esame}
+\begin{itemize}
+	\item \textbf{Attori primari:} Amministratore;
+	\item \textbf{Scopo e descrizione:} Viene mostrato un messaggio d'errore relativo alla mancata compilazione dei campi associati all'esame;
+	\item \textbf{Scenario principale:} L'utente visualizza il messaggio d'errore;
+	\item \textbf{Precondizione:} L'utente tenta di creare un esame senza compilare tutti i campi obbligatori; 
+	\item \textbf{Postcondizione:} L'utente è a conoscenza di non aver compilato tutti i campi necessari.
+\end{itemize}
+\subsection{UC5.4.7 - Visualizzazione lista esami per corso}
+\begin{itemize}
+	\item \textbf{Attori primari:} Amministratore;
+	\item \textbf{Scopo e descrizione:} Vengono visualizzati gli esami relativi ad un determinato corso di laurea;
+	\item \textbf{Scenario principale:}
+	\begin{enumerate}
+		\item L'utente seleziona un corso di laurea
+		\item Il sistema mostra la lista di esami associati al corso selezionato
+	\end{enumerate};
+	\item \textbf{Precondizione:} L'utente ha visualizzato una lista di corsi di laurea [UC5.4.1 o UC5.4.2] e vuole visualizzare gli esami all'interno di uno di essi; 
+	\item \textbf{Postcondizione:} L'utente ottiene la lista desiderata.
+\end{itemize}
+\subsection{UC5.4.8 - Visualizzazione lista esami}
+\begin{itemize}
+	\item \textbf{Attori primari:} Amministratore;
+	\item \textbf{Scopo e descrizione:} Vengono visualizzati gli esami all'interno del sistema;
+	\item \textbf{Scenario principale:} l'utente visualizza la lista di tutti gli esami presenti nel sistema;
+	\item \textbf{Precondizione:} L'utente vuole vedere tutti gli esami presenti nel sistema; 
+	\item \textbf{Postcondizione:} L'utente ottiene la lista desiderata.
+\end{itemize}
+%TODO: Assegna esame a corso, rimuovi esame da corso, UC5.4.3 nello specifico //Gianluca
+%TODO: UC per gestione professori, aspetto di avere conferme da red babel per non fare lavoro inutile //Gianluca
+%TODO: Diagrammi UC 4* e 5.X*
+
 \subsection{UC6 - Gestione aspetti relativi agli esami}
 \begin{itemize}
 	\item \textbf{Attori primari:} Professore;\\

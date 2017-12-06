@@ -32,20 +32,25 @@ I requisiti vengono classificati ed assegnati loro un identificativo univoco sec
 	%TODO: Discussione -> R2F1.3 & Opzionale & L'amministratore può bloccare l'accesso di studenti morosi & Interno \\ \hline
 	R0F2 & Obbligatorio & L'amministratore può gestire i professori & Interno \\ \hline
 	R0F2.1 & Obbligatorio & L'amministratore può ottenere una lista di tutti i professori & Interno \\ \hline
-	R0F2.2 & Obbligatorio & L'amministratore può confermare la registrazione di un professore & Interno \\ \hline
+	R0F2.2(1) & Obbligatorio & L'amministratore può confermare la registrazione di un professore & Interno \\ \hline
+	%TODO: Capire quale dei due tramite red babel
+	R0F2.2(2) & Obbligatorio & L'amministratore può registrare un professore & Capitolato \\ \hline
+	R0F2.3 & Obbligatorio & L'amministratore può assegnare più esami ad un determinato professore & Capitolato \\ \hline
 	%TODO: Discussione -> 	R2F2.3 & Opzionale & L'amministratore può bloccare l'accesso a determinati professori & Interno \\ \hline
-	R0F3 & Obbligatorio & L'amministratore può gestire i corsi dei vari corsi accademici per ogni anno accademico & Capitolato \\ \hline %TODO: chiedese se è quello che vogliono
+	R0F3 & Obbligatorio & L'amministratore può gestire gli anni accademici & Capitolato \\ \hline %TODO: chiedese se è quello che vogliono
 	R0F3.1 & Obbligatorio & L'amministratore può aggiungere un anno accademico & Capitolato \\ \hline
 	R0F3.2 & Obbligatorio & L'amministratore può ottenere una lista di gli anni accademici & Interno \\ \hline
 	R0F3.3 & Obbligatorio & L'amministratore può aggiungere dei corsi di laurea ad ogni anno accademico & Capitolato \\ \hline
-	R0F3.3.1 & Obbligatorio & L'amministratore può assegnare un numero di crediti da raggiungere per un determinato corso di laurea & Interno \\ \hline
-	R0F3.4 & Obbligatorio & L'amministratore può ottenere una lista di tutti i corsi di laurea dato un anno accademico & Interno \\ \hline
-	R0F3.5 & Obbligatorio & L'amministratore può aggiungere degli esami ad ogni corso di laurea & Capitolato \\ \hline
-	R0F3.5.1 & Obbligatorio & L'amministratore può sceglie l'obbligatorietà di un esame & Interno \\ \hline
-	R0F3.5.2 & Obbligatorio & L'amministratore può indicare il numero di crediti di un esame & Interno \\ \hline
-	R0F3.6 & Obbligatorio & L'amministratore può ottenere una lista di tutti gli esami dato il corso di laurea & Interno \\ \hline
-	R0F3.7 & Obbligatorio & L'amministratore può assegnare un professore ad ogni esame & -------- \\ \hline %TODO: chiedere
-	R0F3.8 & Obbligatorio & L'amministratore può ottenere l'informazione di quale professore è assegnato a un determinato esame & Interno \\ \hline
+	R2F3.4 & Opzionale & L'amministratore può rimuovere corsi di laurea da ogni anno accademico & Interni \\ \hline
+	R0F3.5 & Obbligatorio & L'amministratore può gestire i corsi di laurea relativi agli anni accademici & Capitolato \\ \hline
+	R0F3.5.1 & Obbligatorio & L'amministratore può creare un nuovo corso di laurea a partire da un anno accademico & Capitolato \\ \hline
+	R0F3.5.2 & Obbligatorio & L'amministratore può ottenere una lista di tutti i corsi di laurea dato un anno accademico & Interno \\ \hline
+	R0F3.5.3 & Obbligatorio & L'amministratore può creare nuovi esami & Capitolato \\ \hline
+	R0F3.5.4 & Obbligatorio & L'amministratore può aggiungere degli esami ad ogni corso di laurea & Capitolato \\ \hline
+	R0F3.5.5 & Opzionale & L'amministratore può rimuovere degli esami da un corso di laurea & Interno \\ \hline
+	R0F3.5.6 & Obbligatorio & L'amministratore può ottenere una lista di tutti gli esami dato il corso di laurea & Interno \\ \hline
+	R0F3.5.6.1 & Obbligatorio & L'amministratore può ottenere l'informazione di quale professore è assegnato a un determinato esame & Interno \\ \hline
+	R0F3.5.6.2  & Obbligatorio & L'amministratore può associare ad un esame il relativo professore & Interno \\ \hline
 	R0F4 & Obbligatorio & Un professore può gestire gli esami a lui assegnati & Capitolato \\ \hline
 	R0F4.1 & Obbligatorio & Un professore può ottenere la lista di tutti gli esami a lui assegnati & Capitolato \\ \hline
 	R0F4.2 & Obbligatorio & Un professore può ottenere la lista di tutti gli studenti associati a un determinato esame & Capitolato \\ \hline

@@ -61,13 +61,13 @@
 	\item \textbf{Scopo e descrizione:} ;\\
 	\item \textbf{Scenario principale:} ;\\
 	\item \textbf{Scenario alternativo:} ;\\
-	\item \textbf{Flusso principale degli eventi:}\\
+	\item \textbf{Flusso principale degli eventi:};\\
 	\begin{enumerate}
 		\item L'utente... ;
 		\item L'utente... ;
 	\end{enumerate}
 	\item \textbf{Estensioni:}\\
-	\begin{enumerate}
+		\begin{enumerate}
 		\item Se l'utente... ;[UCX.X.X]
 	\end{enumerate}
 	\item \textbf{Precondizione:} ;\\
@@ -138,7 +138,7 @@
 	\item \textbf{Precondizione:} L'utente richiede il login utilizzando una chiave non registrata;\\
 	\item \textbf{Postcondizione:} L'utente è consapevole di dover effettuare la registrazione per accedere al sistema.\\
 \end{itemize}
-%TODO Grafico UC3 + Discussione inclusione
+%TODO Grafico UC3
 \subsection{UC3 - Registrazione}
 \begin{itemize}
 	\item \textbf{Attori primari:} Utente non autenticato;\\
@@ -186,11 +186,7 @@
 	\item \textbf{Attori Primari:} Utente non autenticato;
 	\item \textbf{Scopo e Descrizione} Il sistema offre l'interfaccia per selezionare il corso di laurea desiderato;
 	\item \textbf{Scenario principale:} L'utente seleziona tramite un dispositivo di input il corso di laurea scelto;
-	\item \textbf{Inclusioni:}
-	\begin{enumerate}
-		\item Ricerca corso di laurea [UC8]
-	\end{enumerate}
-	\item \textbf{Precondizione:} L'utente ha selezionato la registrazione come studente e ll sistema offre un campo per la selezione del corso di laurea e rimane in attesa dell'input;
+	\item \textbf{Precondizione:} L'utente ha selezionato la registrazione come studente, il sistema offre un campo per la selezione del corso di laurea e rimane in attesa dell'input;
 	\item \textbf{Postcondizione:} L'utente ha selezionato il suo corso di laurea nel campo fornito dal sistema;
 \end{itemize}
 \subsection{UC3.5 - Visualizzazione errore campo non compilato}
@@ -201,23 +197,24 @@
 	\item \textbf{Precondizione:} L'utente tenta di registrarsi senza compilare tutti i campi;
 	\item \textbf{Postcondizione:} L'utente è consapevole di non aver compilato tutti i campi;
 \end{itemize}
-\subsection{UC8 - Ricerca corso di laurea}
-\begin{itemize}
-	\item \textbf{Attori:} Utente non autenticato, Studente, Professore, Amministratore;
-	\item \textbf{Scopo e Descrizione} L'utente ricerca un corso di laurea e se esiste il sistema lo mostra;
-	\item \textbf {Scenario principale:}
-	\begin{enumerate}
-		\item Il sistema mostra un campo per inserire parole chiave;
-		\item L'utente inserisce le parole chiave per ricercare un corso;
-		\item Il sistema cerca nel modello di dati persistente dei corsi adeguati ai parametri di ricerca.
-		\item Il sistema mostra la lista (anche vuota) dei corsi trovati.
-	\end{enumerate}
-	\item \textbf{Precondizione:} L'utente ha richiesto la ricerca di un corso di laurea;
-	\item \textbf{Postcondizione:} Il sistema ha mostrato i corsi individuati nella sua ricerca.
-\end{itemize}
 \subsection{UC4 - Logout}
-
+\begin{itemize}
+	\item \textbf{Attori primari:} Utente Autenticato;
+	\item \textbf{Attori secondari:} Metamask;
+	\item \textbf{Scopo e descrizione:} L'utente effettua il logout dal sistema tramite il plugin Metamask;
+	\item \textbf{Scenario principale:} L'utente autenticato richiede il logout dal sistema;
+	\item \textbf{Precondizione:} L'utente è autenticato e vuole effettuare il logout;
+	\item \textbf{Postcondizione:} L'utente non è più riconosciuto dal sistema.
+\end{itemize}
 \subsection{UC5 - Amministrazione}
+\begin{itemize}
+	\item \textbf{Attori primari:} Amministratore;
+	\item \textbf{Scopo e descrizione:} L'amministratore è nella sua area personale e ottiene una lista di azioni da compiere;
+	\item \textbf{Scenario principale:} L'utente visualizza le azioni che può compiere e ne sceglie una; 
+	\item \textbf{Precondizione:} L'utente è riconosciuto dal sistema come amministratore e vuole eseguire delle operazioni; 
+	\item \textbf{Postcondizione:} L'utente è a conoscenza delle azioni che può eseguire e ne ha scelta una.
+\end{itemize}
+
 
 \subsection{UC6 - Gestione aspetti relativi agli esami}
 \begin{itemize}

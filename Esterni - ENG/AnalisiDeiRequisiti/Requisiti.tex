@@ -114,7 +114,7 @@ I requisiti vengono classificati ed assegnati loro un identificativo univoco sec
 	R0V3 & Obbligatorio & La connessione alla rete Ethereum deve avvernire tramite MetaMask & Capitolato \\ \hline
 	R0V3.1 & Obbligatorio & I test riguartandi gli smart contract dovranno essere eseguiti in una rete locale ed almeno in una rete pubblica & Capitolato \\ \hline
 	R0V3.2 & Obbligatorio & Il deploy degli smart contract dovrà avvenire su rete locale testrpc e rete di test Ropsten & Capitolato \\ \hline
-	R2V3.4 & Opzionale & È apprezzabile un deploy finale sulla rete principale di Ethereum & Capitolato \\ \hline
+	R2V3.3 & Opzionale & È apprezzabile un deploy finale sulla rete principale di Ethereum & Capitolato \\ \hline
 	R0V4 & Obbligatorio & Lo sviluppo degli smart contract dovrà avvenire utilizzando il framework Truffle & Capitolato \\ \hline
 	R0V5 & Obbligatorio & L'applicativo deve essere accessibile ed utilizzabile dal browser Mozilla Firefox a partire dalla versione X & Interno \\ \hline %TODO: definire versione
 	R0V6 & Obbligatorio & L'applicativo deve essere accessibile ed utilizzabile dal browser Google Chrome a partire dalla versione X & Interno \\ \hline %TODO: definire versione
@@ -150,33 +150,107 @@ Qualsiasi operazione effettuata in una rete Ethereum reale ha un tempo di soddis
 \subsection{Tracciamento fonti-requisiti}
 
 \label{table:Tabella di tracciamento fonti-requisiti}
-\begin{longtable}[H]{|p{8cm}|p{5cm}|}
+\begin{longtable}[H]{|p{2cm}|p{5cm}|p{5cm}|}
 	\hline
 	\rowcolor[HTML]{38FFF8} 
-	\textbf{Fonte} & \textbf{Requisiti} \\ \hline
+	\textbf{Fonte} & \textbf{Nome fonte} & \textbf{Requisiti} \\ \hline
 	\endhead
-	Interno & prova \\
-	& prova \\
-	& prova \\ \hline
-	Capitolato & prova \\
-	& prova \\
-	& prova \\ \hline
-	Verbale VEXXXXX & prova \\
-	& prova \\
-	& prova \\ \hline
-	&  \\ \hline
-	&  \\ \hline
-	&  \\ \hline
-	&  \\ \hline
-	UC7 - Gestione aspetti relativi allo studente &  \\ \hline
-	UC7.1 - Visualizzazione lista degli esami & R0F5.1 \\ \hline
-	UC7.1.1 - Visualizzazione dei crediti degli esami ai quali è iscritto & R0F5.1.1 \\ \hline
-	UC7.1.2 - Visualizzazione della obbligatorietà degli esami ai quali è iscritto & R0F5.1.2 \\ \hline
-	UC7.1.3 - Visualizzazione delle valutazioni degli esami ai quali è iscritto	& R0F5.1.3 \\ \hline
-	UC7.2 - Visualizzazione degli esami opzionali e dei loro crediti &  \\ \hline
-	UC7.3 - Registrazione ad un esame opzionale &  \\ \hline
-	UC7.4 - Visualizzazione delle informazioni relative ai crediti & R0F5.1.4 \\ \hline
-	&  \\ \hline
+	Capitolato & & R0F3 \\
+	& & R0F3.1 \\
+	& & R0F3.3 \\
+	& & R0F3.5 \\
+	& & R0F4 \\
+	& & R0F4.1 \\
+	& & R0F4.2 \\
+	& & R0F4.3 \\
+	& & R0F5 \\
+	& & R0F5.1 \\
+	& & R0F5.2 \\
+	& & R0F5.2.1 \\
+	& & R0F5.2.2 \\
+	& & R0F9 \\
+	& & R0Q2 \\
+	& & R0Q3 \\
+	& & R0Q4 \\
+	& & R0Q7 \\
+	& & R0Q8 \\
+	& & R0V1 \\
+	& & R0V1.1 \\
+	& & R0V1.2 \\
+	& & R0V1.3 \\
+	& & R0V1.4 \\
+	& & R0V1.5 \\
+	& & R0V1.6 \\
+	& & R0V1.7 \\
+	& & R0V2 \\
+	& & R0V3 \\
+	& & R0V3.1 \\
+	& & R0V3.2 \\
+	& & R2V3.3 \\
+	& & R0V4 \\
+	& & R1V8 \\
+	& & R0V9 \\
+	& & R0V10 \\
+	& & R0V11 \\ \hline
+	
+	Interno & & R0F1 \\
+	& & R0F1.1 \\
+	& & R0F1.2 \\
+	& & R0F1.2.1 \\
+	& & R0F2 \\
+	& & R0F2.1 \\
+	& & R0F2.2 \\
+	& & R0F3.2 \\
+	& & R0F3.3.1 \\
+	& & R0F3.4 \\
+	& & R0F3.5.1 \\
+	& & R0F3.5.2 \\
+	& & R0F3.6 \\ %TODO: e 3.7?
+	& & R0F3.8 \\
+	& & R0F5.1.1 \\
+	& & R0F5.1.2 \\
+	& & R0F5.1.3 \\
+	& & R0F5.1.4 \\
+	& & R0F5.1.5 \\
+	& & R0F6 \\
+	& & R0F7 \\
+	& & R1F8 \\
+	& & R0Q1 \\
+	& & R0V5 \\
+	& & R0V6 \\
+	& & R0V7 \\ \hline
+	
+	VE171122 & Verbale & R0Q2.1 \\
+	& & R0Q5 \\
+	& & R0Q6 \\ \hline
+	
+	UC1 & Breve guida &  \\ \hline
+	UC2 & Login &  \\ \hline
+	UC2.1 & Login automatico &  \\ \hline
+	UC2.2 & Visualizzazione messaggio di errore riguardo a chiave assente &  \\ \hline
+	UC2.3 & Visualizzazione messaggio di errore riguardo a chiave malformata &  \\ \hline
+	UC2.4 & Visualizzazione messaggio di errore riguardo a chiave non registrata &  \\ \hline
+	UC3 & Registrazione &  \\ \hline %TODO
+	UC &  &  \\ \hline
+	UC &  &  \\ \hline
+	UC &  &  \\ \hline
+	UC &  &  \\ \hline
+	UC &  &  \\ \hline
+	UC &  &  \\ \hline
+	UC &  &  \\ \hline
+	UC &  &  \\ \hline
+	UC6 & Gestione aspetti relativi agli esami &  \\ \hline
+	UC6.1 & Visualizzazione lista degli esami &  \\ \hline
+	UC6.2 & Visualizzazione lista degli studenti &  \\ \hline
+	UC6.3 & Registrazione valutazione di un esame &  \\ \hline
+	UC7 & Gestione aspetti relativi allo studente &  \\ \hline
+	UC7.1 & Visualizzazione lista degli esami & R0F5.1 \\ \hline
+	UC7.1.1 & Visualizzazione dei crediti degli esami ai quali è iscritto & R0F5.1.1 \\ \hline
+	UC7.1.2 & Visualizzazione della obbligatorietà degli esami ai quali è iscritto & R0F5.1.2 \\ \hline
+	UC7.1.3 & Visualizzazione delle valutazioni degli esami ai quali è iscritto	& R0F5.1.3 \\ \hline
+	UC7.2 & Visualizzazione degli esami opzionali e dei loro crediti &  \\ \hline
+	UC7.3 & Registrazione ad un esame opzionale &  \\ \hline
+	UC7.4 & Visualizzazione delle informazioni relative ai crediti & R0F5.1.4 \\ \hline
 	\caption{Tabella di tracciamento fonti-requisiti}
 \end{longtable}
 

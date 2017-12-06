@@ -214,6 +214,55 @@
 	\item \textbf{Precondizione:} L'utente è riconosciuto dal sistema come amministratore e vuole eseguire delle operazioni; 
 	\item \textbf{Postcondizione:} L'utente è a conoscenza delle azioni che può eseguire e ne ha scelta una.
 \end{itemize}
+\subsection{UC5.1 - Gestione Studenti}
+\begin{itemize}
+	\item \textbf{Attori primari:} Amministratore;
+	\item \textbf{Scopo e descrizione:} L'utente è in grado di eseguire operazioni sugli studenti all'interno dell'ateneo;
+	\item \textbf{Scenario principale:} L'utente visualizza una lista di operazioni eseguibili sugli studenti e sceglie quale fare;
+	\item \textbf{Precondizione:} L'utente ha scelto di gestire gli studenti; 
+	\item \textbf{Postcondizione:}L'utente è a conoscenza delle operazioni che può eseguire sugli studenti e decide di effettuarne una.
+\end{itemize}
+\subsection{UC5.1.1 - Visualizzazione lista di studenti}
+\begin{itemize}
+	\item \textbf{Attori primari:} Amministratore;
+	\item \textbf{Scopo e descrizione:} L'utente visualizza una lista di tutti gli studenti registrati nel sistema;
+	\item \textbf{Scenario principale:} L'utente richiede al sistema una lista di studenti per poterli gestire;
+	\item \textbf{Precondizione:} L'utente è nell'area di gestione studenti e richiede una lista di tutti gli studenti; 
+	\item \textbf{Postcondizione:} L'utente ottiene la lista.
+\end{itemize}
+\subsection{UC5.1.2 - Visualizzazione lista di studenti non approvati}
+\begin{itemize}
+	\item \textbf{Attori primari:} Amministratore;
+	\item \textbf{Scopo e descrizione:} L'utente visualizza una lista di tutti gli studenti ancora non approvati;
+	\item \textbf{Scenario principale:} L'utente richiede al sistema una lista di studenti non approvati per poterli gestire;
+	\item \textbf{Precondizione:}L'utente è nell'area di gestione studenti e richiede una lista di studenti non approvati; 
+	\item \textbf{Postcondizione:} L'utente ottiene la lista.
+\end{itemize}
+\subsection{UC5.1.3 - Approvazione Studente}
+\begin{itemize}
+	\item \textbf{Attori primari:} Amministratore;
+	\item \textbf{Scopo e descrizione:} L'utente approva la registrazione dello studente;
+	\item \textbf{Scenario principale:}
+	\begin{enumerate}
+		\item L'utente seleziona uno studente non ancora approvato;
+		\item L'utente lo approva
+	\end{enumerate}
+	\item \textbf{Precondizione:} L'utente ha richiesto una lista di studenti non approvati; 
+	\item \textbf{Postcondizione:} Lo studente selezionato viene approvato e il suo stato viene aggiornato nel sistema.
+\end{itemize}
+\subsection{UC5.1.4 - Cambio corso di laurea}
+\begin{itemize}
+	\item \textbf{Attori primari:} Amministratore;
+	\item \textbf{Scopo e descrizione:} L'utente cambia il corso di laurea a cui è associato uno studente;
+	\item \textbf{Scenario principale:}
+	\begin{enumerate}
+		\item L'utente seleziona uno studente con o senza corso di laurea;
+		\item L'utente seleziona un corso di laurea e lo associa allo studente
+	\end{enumerate}
+	\item \textbf{Precondizione:} L'utente ha richiesto una lista completa di studenti e vuole cambiare il corso di laurea ad uno di questi; 
+	\item \textbf{Postcondizione:} Allo studente selezionato viene associato il nuovo corso di laurea nel sistema.
+\end{itemize}
+
 
 
 \subsection{UC6 - Gestione aspetti relativi agli esami}

@@ -262,9 +262,73 @@
 	\item \textbf{Precondizione:} L'utente ha richiesto una lista completa di studenti e vuole cambiare il corso di laurea ad uno di questi; 
 	\item \textbf{Postcondizione:} Allo studente selezionato viene associato il nuovo corso di laurea nel sistema.
 \end{itemize}
-
-
-
+\subsection{UC5.3 - Gestione Anni Accademici}
+\begin{itemize}
+	\item \textbf{Attori primari:} Amministratore;
+	\item \textbf{Scopo e descrizione:} L'utente è in grado di eseguire operazioni sugli anni accademici dell'ateneo;
+	\item \textbf{Scenario principale:} L'utente visualizza una lista di operazioni eseguibili sugli anni accademici e ne sceglie una;
+	\item \textbf{Precondizione:} L'utente ha scelto di gestire gli anni accademeici; 
+	\item \textbf{Postcondizione:} L'utente è a conoscenza delle possibili operazioni da eseguire sugli anni accademici e ne ha scelta una.
+\end{itemize}
+\subsection{UC5.3.1 - Aggiunta Anno Accademico}
+\begin{itemize}
+	\item \textbf{Attori primari:} Amministratore;
+	\item \textbf{Scopo e descrizione:} L'utente aggiunge un anno accademico nel sistema;
+	\item \textbf{Scenario principale:} L'utente inserisce il numero dell'anno da aggiungere in un campo fornito dal sistema;
+	\item \textbf{Estensioni:}
+	\begin{enumerate}
+		\item Se l'utente inserisce un'anno non numerico viene mostrato un messaggio d'errore relativo alla malformazione dell'anno;[UC5.1.4]
+		\item Se l'utente inserisce un'anno già presente nel sistema viene mostrato un messaggio d'errore relativo alla non univocità dell'anno.[UC5.1.5]
+		\item Se l'utente lascia il campo vuoto l'utente viene avvisato con un relativo messaggio d'errore.[UC5.1.6]
+	\end{enumerate}
+	\item \textbf{Precondizione:} L'utente ha scelto di aggiungere un anno accademico; 
+	\item \textbf{Postcondizione:} L'anno accademico creato viene inserito nel sistema.
+\end{itemize}
+\subsection{UC5.3.2 - Visualizzazione lista di tutti gli anni accademici}
+\begin{itemize}
+	\item \textbf{Attori primari:} Amministratore;
+	\item \textbf{Scopo e descrizione:} L'utente visualizza una lista di tutti gli anni accademici presenti nel sistema;
+	\item \textbf{Scenario principale:} L'utente richiede la lista di tutti gli anni del sistema;
+	\item \textbf{Precondizione:} L'utente p nell'area di gestione Anni Accademici e vuole ottenere la lista di tutti gli anni presenti nel sistema; 
+	\item \textbf{Postcondizione:} L'utente ottiene la lista.
+\end{itemize}
+\subsection{UC5.3.3 - Aggiunta di un corso di laurea ad un anno accademico}
+\begin{itemize}
+	\item \textbf{Attori primari:} Amministratore;
+	\item \textbf{Scopo e descrizione:} L'utente aggiunge un corso di laurea già presente nel sistema all'interno dell'anno accademico;
+	\item \textbf{Scenario principale:}
+	\begin{enumerate}
+		\item L'utente seleziona l'anno accademico;
+		\item L'utente ottiene una lista di corsi di laurea; [UC 5.4.1]
+		\item L'utente seleziona il corso di laurea e lo inserisce all'interno dell'anno accademico.
+	\end{enumerate}
+	\item \textbf{Precondizione:} L'utente vuole aggiungere un corso di laurea all'anno accademico è ha ottenuto una lista degli anni accademici presenti nel sistema; 
+	\item \textbf{Postcondizione:} Il corso di laurea è stato correlato con l'anno accademico e il loro stato è stato aggiornato nel sistema.
+\end{itemize}
+\subsection{UC5.3.4 - Visualizzazione messaggio anno malformato}
+\begin{itemize}
+	\item \textbf{Attori primari:} Amministratore;
+	\item \textbf{Scopo e descrizione:} L'utente visualizza un messaggio che lo informa che l'anno inserito non è numerico;
+	\item \textbf{Scenario principale:} Il sistema mostra all'utente un messaggio d'errore relativo alla malformazione dell'anno inserito;
+	\item \textbf{Precondizione:} L'utente prova a creare un nuovo anno accademico inserendo un'anno non numerico; 
+	\item \textbf{Postcondizione:} L'utente è consapevole di aver provato ad inserire un anno non numerico.
+\end{itemize}
+\subsection{UC5.3.5 - Visualizzazione messaggio di anno accademico già presente}
+\begin{itemize}
+	\item \textbf{Attori primari:} Amministratore;
+	\item \textbf{Scopo e descrizione:} L'utente visualizza un messaggio che indica che un anno accademico come quello inserito è già presente nel sistema;
+	\item \textbf{Scenario principale:} Il sistema mostra all'utente un messaggio d'errore relativo alla non univocità dell'anno accademico inserito;
+	\item \textbf{Precondizione:} L'utente tenta di inserire un anno accademico già presente nel sistema; 
+	\item \textbf{Postcondizione:} L'utente è consapevole di aver provato ad inserire un anno accademico già presente nel sistema.
+\end{itemize}
+\subsection{UC5.3.6 - Visualizzazione messaggio anno non compilato}
+\begin{itemize}
+	\item \textbf{Attori primari:} Amministratore;
+	\item \textbf{Scopo e descrizione:} L'utente visualizza un messaggio che lo avvisa aver lasciato vuoto il campo dell'anno accademico;
+	\item \textbf{Scenario principale:} Il sistema mostra un messaggio d'errore relativo alla non compilazione dell'anno accademico;
+	\item \textbf{Precondizione:} L'utente tenta di inserire un anno accademico vuoto; 
+	\item \textbf{Postcondizione:} L'utente è consapevole di aver provato ad inserire un anno accademico vuoto.
+\end{itemize}
 \subsection{UC6 - Gestione aspetti relativi agli esami}
 \begin{itemize}
 	\item \textbf{Attori primari:} Professore;\\

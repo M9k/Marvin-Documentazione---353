@@ -33,7 +33,7 @@ I requisiti vengono classificati ed assegnati loro un identificativo univoco sec
 	R0F2 & Obbligatorio & L'amministratore può gestire i professori & Interno \\ \hline
 	R0F2.1 & Obbligatorio & L'amministratore può ottenere una lista di tutti i professori & Interno \\ \hline
 	R0F2.2 & Obbligatorio & L'amministratore può confermare la registrazione di un professore & Interno \\ \hline
-	%TODO: Discussione -> R2F2.3 & Opzionale & L'amministratore può bloccare l'accesso a determinati professori & Interno \\ \hline
+	%TODO: Discussione -> 	R2F2.3 & Opzionale & L'amministratore può bloccare l'accesso a determinati professori & Interno \\ \hline
 	R0F3 & Obbligatorio & L'amministratore può gestire i corsi dei vari corsi accademici per ogni anno accademico & Capitolato \\ \hline %TODO: chiedese se è quello che vogliono
 	R0F3.1 & Obbligatorio & L'amministratore può aggiungere un anno accademico & Capitolato \\ \hline
 	R0F3.2 & Obbligatorio & L'amministratore può ottenere una lista di gli anni accademici & Interno \\ \hline
@@ -78,12 +78,13 @@ I requisiti vengono classificati ed assegnati loro un identificativo univoco sec
 	\endhead
 	R0Q1 & Obbligatorio & La progettazione e il codice devono seguire le norme e le metriche riportate nei documenti allegati X e Y & Interno \\ \hline %TODO: indicare allegati
 	R0Q2 & Obbligatorio & L'approccio di scrittura di JavaScript deve essere promise Centric Approach & Capitolato \\ \hline
-	R0Q2.1 & Obbligatorio & L'applicativo non deve fare uso di callback & VE171122 \\ \hline
-	R0Q3 & Obbligatorio & Il codice deve attenersi al Airbnb Javascript style guide & Capitolato \\ \hline
+	R0Q2.1 & Obbligatorio & L'applicativo non deve fare uso di callback in presenza di alternative alle ultime & VE171122 \\ \hline
+	R0Q3 & Obbligatorio & Il codice Javascript deve attenersi al Airbnb Javascript style guide & Capitolato \\ \hline
 	R0Q4 & Obbligatorio & Lo sviluppo deve essere supportato dall'utilizzo del tool ESLint & Capitolato \\ \hline
 	R0Q5 & Obbligatorio & Dovrà essere fornito un manuale utente in lingua inglese che tratterà l'uso da parte di studenti e professori & VE171122 \\ \hline
 	R0Q6 & Obbligatorio & Dovrà essere fornito un manuale di deploy e di utilizzo da parte degli amministratori in lingua inglese & VE171122 \\ \hline
 	R0Q7 & Obbligatorio & Il codice sorgente deve essere pubblicato sulla piattaforma GitHub, BitBucket o GitLab & Capitolato \\ \hline
+	R0Q8 & Obbligatorio & Il codice deve attenersi il più possibile alle guide linea de "App a 12 Fattori" & Capitolato \\ \hline
 	\caption{Tabella dei requisiti di qualità}
 \end{longtable}
 
@@ -115,6 +116,8 @@ I requisiti vengono classificati ed assegnati loro un identificativo univoco sec
 	R0V7 & Obbligatorio & L'applicativo deve essere accessibile ed utilizzabile dal browser Microsoft Internet Explorer a partire dalla versione X e dal browser Microsoft EDGE & Interno \\ \hline %TODO: definire versione
 	R1V8 & Desiderabile & L'applicativo deve essere accessibile ed utilizzabile da un browser mobile, per le versioni supportate fare riferimento alle controparti PC di Firefox e Chrome & Capitolato \\ \hline %TODO: discuterne
 	R0V9 & Obbligatorio & Un utente non deve poter compiere azioni sul sistema senza aver fatto l'accesso ad esso & Capitolato \\ \hline
+	R0V10 & Obbligatorio & L'applicazione dei principi de "App a 12 Fattori" deve essere documentata & Capitolato \\ \hline
+	R0V11 & Obbligatorio & Il codice sorgente deve essere pubblicato con licenza MIT & Capitolato \\ \hline
 	\caption{Tabella dei requisiti di vincolo}
 \end{longtable}
 

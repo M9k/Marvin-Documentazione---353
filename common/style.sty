@@ -5,7 +5,7 @@
 \usepackage{lipsum}
 \usepackage{titlesec}
 \usepackage{tabularx}
-\usepackage{hyperref} 
+\usepackage{hyperref}
 \usepackage{geometry}
 \usepackage{fancyhdr}
 
@@ -25,7 +25,7 @@
 \titleformat{\chapter}{\bfseries\huge}{\thechapter.}{20pt}{\huge}
 
 \pagestyle{plain}
-\setlength{\headheight}{50pt} 
+\setlength{\headheight}{50pt}
 
 
 % Ridefinizione colore dei link (del menù ed esterni)
@@ -36,7 +36,13 @@
   	colorlinks = true,
 }
 
-% Comandi per i nomi 
+% commands for group name or email to
+\newcommand{\gruppo}{\textit{353}}
+\newcommand{\mail}[1]{\href{mailto:#1}{\texttt{#1}}}
+\newcommand{\mailleaf}{\mail{353swe@gmail.com}}
+\newcommand{\progetto}{\textit{Marvin}}
+
+% commands for team members name
 \newcommand{\Valentina}{Valentina Marcon}
 \newcommand{\Mirco}{Mirco Cailotto}
 \newcommand{\Riccardo}{Riccardo E. Giorato}
@@ -45,5 +51,55 @@
 \newcommand{\Elena}{Elena Mattiazzo}
 \newcommand{\Gianluca}{Gianluca Marraffa}
 
-% Comandi di stile
-\newcommand{\Glossario}[1]{{#1}\textsubscript{G}} 		% scrivendo \Glossario{termine} il termine viene marcato come da glossario (con il pedice G)
+%Proponente, committente, competitor
+\newcommand{\Proponente}{Red Babel}
+\newcommand{\Vardanega}{Prof. Tullio Vardanega}
+\newcommand{\Cardin}{Prof. Riccardo Cardin}
+
+
+% commands for roles and name of documents
+\newcommand{\responsabilediprogetto}{\textit{Responsabile di progetto}}
+
+\newcommand{\amministratore}{\textit{Amministratore}}
+\newcommand{\amministratori}{\textit{Amministratori}}
+
+\newcommand{\analista}{\textit{Analista}}
+\newcommand{\analisti}{\textit{Analisti}}
+
+\newcommand{\progettista}{\textit{Progettista}}
+\newcommand{\progettisti}{\textit{Progettisti}}
+
+\newcommand{\programmatore}{\textit{Programmatore}}
+\newcommand{\programmatori}{\textit{Programmatori}}
+
+\newcommand{\verificatore}{\textit{Verificatore}}
+\newcommand{\verificatori}{\textit{Verificatori}}
+
+\newcommand{\pianodiprogetto}{\textit{Piano di progetto}}
+\newcommand{\pianodiqualifica}{\textit{Piano di qualifica}}
+\newcommand{\normediprogetto}{\textit{Norme di progetto}}
+\newcommand{\studiodifattibilita}{\textit{Studio di fattibilità}}
+\newcommand{\analisideirequisiti}{\textit{Analisi dei requisiti}}
+\newcommand{\specificatecnica}{\textit{Specifica tecnica}}
+\newcommand{\definizionediprodotto}{\textit{Definizione di prodotto}}
+\newcommand{\manualeutente}{\textit{Manuale utente}}
+\newcommand{\manualesviluppatore}{\textit{Manuale sviluppatore}}
+\newcommand{\glossario}{\textit{Glossario}}
+
+
+% Comandi per citare definizione e parola riportata su Glossario
+\newcommand{\citGloss}[1]{{#1}\textsubscript{G}} 		% scrivendo \citGloss{termine} il termine viene marcato come da glossario (con il pedice G)
+
+\newcommand{\defGloss}[2]{{#1:}\\#2} %TODO sistemo stile voce glossario e rendo controlli automatici
+
+% document glossary explanation
+\newcommand{\glossExpl}{
+	\section{Glossario}
+	All'interno del documento sono presenti termini che presentano significati ambigui a seconda del contesto. Per evitare questa ambiguità è stato creato un documento di nome Glossario che conterrà tali termini con il loro significati specifico. Per segnalare che un termine del testo è presente all'interno del \textit{Glossario v 1.0.0} verrà aggiunta una \citGloss{} a pedice a fianco del termine.
+}
+
+\newcommand{\nData}[3]{#1-#2-#3} % GG MM AAAA
+\newcommand{\nURI}[1]{{\color{blue}\url{#1}}}
+\newcommand{\nPath}[1]{\texttt{#1}}
+\newcommand{\nDoc}[1]{\textit{“#1”}}
+\newcommand{\nFile}[1]{\texttt{“#1”}}

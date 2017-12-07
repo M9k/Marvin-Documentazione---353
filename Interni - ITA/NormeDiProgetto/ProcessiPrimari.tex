@@ -1,24 +1,189 @@
 \documentclass[NormeDiProgetto.tex]{subfiles}
-
 \begin{document}
-
 \chapter{Processi primari}
-
 \section{Fornitura}
+In questa sezione vengono tratta le norme che i membri del gruppo 353 sono tenuti a rispettare al fine di proporsi e diventare fornitori nei confronti della Proponente Red Babbel e dei Committenti Prof. Tullio Vardanega e Prof. Riccardo Cardin nell'ambito della progettazione, sviluppo e consegna del prodotto Marvin.
 \subsection{Studio di fattibilità}
+In seguito alla presentazione ufficiale dei \textbf{Capitolati d'appalto} avvenuta Venerdì 10 novembre 2017 alle ore 10.30 presso l'aula 1C150 di Torre Archimede è stata convocata una riunione interna al gruppo per discutere in merito alla varie proposte presentate. Una volta stabilita la scelta del capitolato per il quale proporsi come fornitori, gli analisti hanno condotto un'ulteriore e approfondita attività di analisi dei rischi e delle opportunità culminata con la stesura del documento \textit{Studio di Fattibilità v 1.0.0}. Tale documento include le motivazioni che hanno portato il gruppo 353 a proporsi come fornitore per il prodotto indicato e riporta per ciascun capitolato:
+\begin{itemize}
+	\item \textbf{descrizione generale:} una sintesi del prodotto da sviluppare secondo quanto stabilito dal capitolato d'appalto;
+	\item \textbf{obbiettivo finale:} rappresenta il Dominio Applicativo, cioè l'ambito di utilizzo del prodotto da sviluppare;
+	\item \textbf{tecnologie richieste:} rappresenta il Dominio Tecnologico richiesto dal capitolato, raggruppando le tecnologie da impiegare nello sviluppo del progetto;
+	\item \textbf{valutazione finale:} racchiude le motivazioni, i rischi, le criticità evidenziate per le quali il capitolato in questione è stato respinto o accettato.
+\end{itemize}
 \subsection[Rapporti di fornitura con la Proponente Red Babel]{Rapporti di fornitura con la Proponente \\ Red Babel}
+Durante l'intero progetto si intende instaurare con la Proponente Reb Babbel e con i referenti Alessandro Maccagnan e Milo Ertola un profondo e quanto più costante rapporto al fine di:
+\begin{itemize}
+	\item determinare bisogni;
+	\item stabilire scelte volte alla realizzazione e realizzazione del prodotto (vincoli sui requisiti);
+	\item stabilire scelte volte alla definizione ed esecuzione di processi (vincoli di progetto);
+	\item stimare i costi;
+	\item accordarsi circa la qualifica di prodotto.
+\end{itemize}
 \subsection{Documentazione fornita}
-
+Di seguito vengono elencati i documenti forniti alla Proponente Red Babbel e ai Committenti Prof. Tullio Vardanega e Prof. Riccardo Cardin al fine di assicurare la massima trasparenza circa le attività di:
+\begin{itemize}
+	\item \textbf{pianifica, consegna e completamento:} descritte all'interno del \textit{Piano di Progetto v 1.0.0};
+	\item \textbf{analisi:} analisi dei requisiti e dei casi d'uso del gruppo vengono descritte all'interno del documento \textit{Analisi dei Requisiti v 1.0.0};
+	\item \textbf{verifica e validazione:} descritte all'interno del \textit{Piano di Qualifica v	1.0.0};
+	\item \textbf{garanzia della qualità dei processi e di prodotto:} descritte e definite nel sopra citato \textit{Piano di Qualifica v 1.0.0}.
+\end{itemize}
 \section{Sviluppo}
 \subsection{Analisi dei Requisiti}
+L'obbiettivo dell'analisi dei requisiti è quello di individuare ed elencare tutti i requisiti del capitolato. I requisti possono essere estrapolati da più fonti:
+\begin{itemize}
+	\item capitolato d’appalto;
+	\item verbali di riunioni esterne;
+	\item casi d’uso.
+\end{itemize}
+Il risultato di quest'analisi sarà il documento \textit{Analisi dei requisiti v 0.1.0} redatto dagli Analisti al
+fine di:
+\begin{itemize}
+\item descrivere lo scopo del lavoro;
+\item fornire ai Progettisti riferimenti precisi ed affidabili;
+\item fissare le funzionalità e i requisiti concordati col cliente;
+\item fornire una base per raffinamenti successivi al fine di garantire un
+miglioramento continuo del prodotto e del processo di sviluppo;
+\item facilitare le revisioni del codice;
+\item fornire ai Verificatori riferimenti per l’attività di test circa i casi d’uso
+principali e alternativi;
+\item stimare i costi.
+\end{itemize}
+Ogni requisito dovrà
+essere meno ambiguo possibile e rispettare le seguenti norme.
+
+\paragraph{Requisiti:}Ogni requisito è identificato da un codice, costruito come descritto di seguito:\\ \\
+\textbf{\centerline{R[Importanza][Classificazione][Identificativo]}}\\
+\begin{itemize}
+\item la prima lettera (R) è l'abbreviazione di requisito;
+\item il secondo valore indica l'\textbf{importanza}. Assume il valore:
+	\begin{itemize}
+			\item zero (0) se si tratta di un requisito obbligatorio, il cui soddisfacimento
+			dovrà necessariamente avvenire per garantire le funzioni base del
+			sistema;
+			\item uno (1) se si tratta di un requisito desiderabile, cioè un requisito il cui
+			soddisfacimento può dare maggiore completezza al sistema ma il
+			non soddisfarlo non pregiudica alcuna funzione di base;
+			\item due (2) se si tratta di un requisito opzionale;
+	\end{itemize}
+
+\item la terza lettera indica la \textbf{classificazione}. Assume valore F se si tratta di un Requisito funzionale, Q se di qualità, P se prestazionale e V se di vincolo;
+\item l'\textbf{identificativo} indica invece un numero progressivo.
+\end{itemize}
+\paragraph{Casi d'uso:} gli Analisti hanno anche il compito di identificare i casi d’uso, elencandoli con un grado di precisione che va dal generico verso il dettaglio. Ogni caso d’uso è descritto dalla seguente struttura:\\
+\begin{itemize}
+	\item \textbf{Codice identificativo e nome:} ogni caso d'uso è identificato da una serie di cifre separate dal punto. L'ultima cifra indica il numero di figlio, la penultima cifra indica il numero del padre e UC è l'abbreviazione di Use Case(casi d'uso in inglese). Queste cifre sono seguite dopo il trattino(-) dal nome del caso d'uso: \\\\
+	\centerline{\textbf{UC[Codice padre].[Codice figlio]-Nome}}
+	\item \textbf{Attori:} indica gli attori principali (ad esempio l’utente generico) e
+	secondari (ad esempio ufficio universitario) del caso d’uso;
+	\item \textbf{Scopo e descrizione:} riporta una breve descrizione del caso d’uso;
+	\item \textbf{Scenario principale:} rappresenta il flusso degli eventi come lista
+	numerata, specificando per ciascun evento: titolo, descrizione, attori
+	coinvolti e casi d’uso generati;
+	\item \textbf{Precondizione:} specifica le condizioni che sono identificate come vere
+	prima del verificarsi degli eventi del caso d’uso;
+	\item \textbf{Postcondizione:} specifica le condizioni che sono identificate come
+	vere dopo il verificarsi degli eventi del caso d’uso;
+	\item \textbf{Inclusioni (se presenti):} usate per non descrivere più volte lo stesso flusso di eventi,
+	inserendo il comportamento comune in un caso d’uso a parte;
+	\item \textbf{Estensioni (se presenti):} descrivono i casi d’uso che non fanno parte del flusso
+	principale degli eventi, allo stesso modo di quanto descritto in “Scenario
+	principale”.
+\end{itemize}
+\paragraph{Tracciamento:}Il gruppo 353 ha deciso di utilizzare il software \textbf{Trender} per il tracciamento dei requisiti. 
 \subsection{Codifica}
 In questa sotto-sezione vengono elencate le norme alle quali i Programmatori devono attenersi durante l'attività di programmazione e implementazione.\\
+All'inizio verranno elencate delle norme generali a cui i Programmatori devono attenersi con qualsiasi linguaggio di programmazione utilizzato, mentre di seguito verranno elencate delle norme specifiche per i linguaggi Javascript, React, Solidity e Scss.\\
 Ogni norma è rappresentata da un paragrafo. Ciascuna ha un titolo, una breve descrizione e, se necessario, un esempio che illustra i modi accettati o meno. Alcune di esse includono inoltre una lista di possibili eccezioni d'uso. L'uso di norme e convenzioni è fondamentale per permettere la generazione di codice leggibile e uniforme, agevolare le fasi di manutenzione, verifica e validazione e migliorare la qualità del prodotto.
+
+\paragraph*{Convenzioni per i nomi: }
+\begin{itemize}
+	\item nomi da evitare perché facilmente confondibili con i numeri \texttt{1} e \texttt{0}:
+	\begin{itemize}
+		\item \texttt{l} (lettera minuscola elle);
+		\item \texttt{O} (lettera maiuscola o);
+		\item \texttt{I} (lettera maiuscola i).
+	\end{itemize}
+	\item tutti i nomi devono essere \textbf{unici} ed \textbf{esplicativi} al fine di evitare al più possibile ambiguità e comprensione.
+\end{itemize}
+Per i vari linguaggi verranno successivamente descritte altre norme per nomi di variabili, funzioni e altro facendo riferimento ai seguenti stili:
+\begin{itemize}
+	\item \texttt{lowercase};
+	\item \texttt{lower\_case\_with\_underscores}
+	\item \texttt{UPPERCASE}
+	\item \texttt{UPPER\_CASE\_WITH\_UNDERSCORES}
+	\item \texttt{CapitalizedWords} (o \texttt{CapWords})
+	\item \texttt{mixedCase}
+	\item \texttt{Capitalized\_Words\_With\_Underscores}
+	\item \texttt{lower-case-with-dashes}	
+\end{itemize}
+
+\paragraph*{Convenzioni per la documentazione: }
+\begin{itemize}
+	\item tutti i nomi e i commenti al codice per la documentazione vanno scritti in \textbf{inglese};
+	\item è possibile utilizzare in un commento la keyword \textbf{TODO} per indicare codice temporaneo e soluzioni a breve termine o evidentemente migliorabili;
+	\item ogni file contenente codice deve avere la seguente \textbf{intestazione} contenuta in un commento e posta all'inizio del file stesso:
+\begin{center}{
+\begin{minipage}{12cm}
+\begin{Verbatim}[frame=single]
+File : nome file
+Version : versione file
+Type : tipo file
+Date : data di creazione
+Author : nome autore/i
+E- mail : email autore/i
+
+License : tipo licenza
+
+Advice : lista avvertenze e limitazioni
+
+Changelog :
+Autore || Data || breve descrizione delle modifiche
+\end{Verbatim}
+\end{minipage}
+}
+\end{center}
+	\item La \textbf{versione} del codice viene inserita all’interno dell’intestazione del file e rispetta il
+	seguente formalismo:
+	\begin{center}{\textbf{X.Y}}\end{center}	
+	\begin{itemize}
+		\item \textbf{X}: è l’indice di versione principale, un incremento di tale indice rappresenta un avanzamento della versione stabile, che porta il valore dell’indice Y ad essere azzerato;
+		\item \textbf{Y}: è l’indice di modifica parziale, un incremento di tale indice rappresenta una verifica o una modifica rilevante, come per esempio la rimozione o l’aggiunta di una istruzione.
+	\end{itemize}
+	La versione \textit{1.0} deve rappresentare la prima versione del file completo e stabile, cioè quando le sue funzionalità obbligatorie sono state definite e si considerano funzionanti. Solo dalla versione \textit{1.0} è possibile testare il file, con degli appositi test definiti, per	verificarne l’effettivo funzionamento.
+\end{itemize}
+
+
 \subfile{Codifica/Javascript.tex}
 \subfile{Codifica/React.tex}
 \subfile{Codifica/Solidity.tex}
 \subfile{Codifica/Scss.tex}
 
 \subsection{Progettazione}
-
+L’attività di Progettazione consiste nel descrivere una soluzione del problema
+che sia soddisfacente per tutti gli stakeholders. Essa serve a garantire che
+il prodotto sviluppato soddisfi le proprietà e i bisogni specificati nell’attività
+di analisi. La progettazione permette di:
+\begin{itemize}
+	\item Garantire la qualità di prodotto sviluppato, perseguendo la \textit{correttezza
+		per costruzione};
+	\item Organizzare e ripartire compiti implementativi, riducendo la
+	complessità del problema originale fino alle singole componenti
+	facilitandone la codifica da parte dei singoli Programmatori;
+	\item Ottimizzare l’uso di risorse.
+\end{itemize}
+\`{E} compito dei Progettisti svolgere tale attività, definendo l’architettura logica
+del prodotto identificando componenti chiare, riusabili e coese rimanendo nei
+costi fissati. L’architettura definita dovrà:
+\begin{itemize}
+	\item soddisfare i requisiti definiti nel documento \textit{Analisi dei Requisiti} e adattarsi facilmente nel caso essi evolvano o se ne aggiungano di nuovi; 
+	\item essere comprensibile, modulare e robusta riuscendo a gestire situazioni erronee improvvise;
+	\item essere affidabile, cioè svolgere ai suoi compiti quando viene usata;
+	\item essere sicura rispetto ad intrusioni e malfunzionamenti;
+	\item essere disponibile, riducendo i tempi di manutenzione;
+	\item avere componenti semplici, coese nel raggiungere gli obiettivi, incapsulate e con scarse dipendenze tra loro.
+\end{itemize}
+Al fine di rendere più chiare le scelte progettuali adottate e
+ridurre le possibili ambiguità, sarà necessario fare largo uso di vari tipi di diagrammi 
+\textbf{UML 2.0} e i \textbf{design pattern} (adattati per i linguaggi di programmazione elencati sopra).
 \end{document}

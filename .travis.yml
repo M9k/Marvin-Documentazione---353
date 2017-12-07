@@ -4,11 +4,4 @@ before_install:
 - "sudo apt-get update && sudo apt-get install --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra texlive-latex-recommended texlive-lang-italian dvipng"
 script:
 - mkdir _build
-
-- cd "Esterni - ENG/AnalisiDeiRequisiti"
-- pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build AnalisiDeiRequisiti.tex
-- cd "../.."
-
-- cd "LetteraDiPresentazione - ITA"
-- pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build LetteraDiPresentazione.tex
-- cd "../.."
+- build.sh

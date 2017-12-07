@@ -1,7 +1,8 @@
 sudo: required
 dist: trusty
 before_install:
+- chmod +x build.sh
 - "sudo apt-get update && sudo apt-get install --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra texlive-latex-recommended texlive-lang-italian dvipng"
 script:
 - mkdir _build
-- build.sh
+- sh ./build.sh

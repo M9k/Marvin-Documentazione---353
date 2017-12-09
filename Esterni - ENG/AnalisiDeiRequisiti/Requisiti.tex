@@ -304,16 +304,89 @@ Qualsiasi operazione effettuata in una rete Ethereum reale ha un tempo di soddis
 \subsection{Tracciamento requisiti-fonti}
 
 \label{table:Tabella di tracciamento requisiti-fonti}
-\begin{longtable}[H]{|p{5cm}|p{8cm}|}
+\begin{longtable}[H]{|p{2cm}|p{5cm}|p{5cm}|}
 	\hline
 	\rowcolor[HTML]{38FFF8} 
-	\textbf{Requisito} & \textbf{Fonti} \\ \hline
+	\textbf{Requisito} & \textbf{Descrizione requisito} & \textbf{Fonti} \\ \hline
+	% REGEX for Notepad++
+	% (.*)&(.*)&(.*)&(.*)      --->       \1& \3&  \\\\ \\hline
 	\endhead
-	&  \\ \hline
-	&  \\ \hline
-	&  \\ \hline
-	&  \\ \hline
-	&  \\ \hline
+	R0F1 &  L'amministratore può gestire gli studenti &  \\ \hline
+	R0F1.1 &  L'amministratore può ottenere una lista di tutti gli studenti &  \\ \hline
+	R0F1.2 &  L'amministratore può confermare la registrazione di uno studente &  \\ \hline
+	R0F1.2.1 &  L'amministratore può assegnare un corso di laurea ad uno studente &  \\ \hline
+	R0F2 &  L'amministratore può gestire i professori &  \\ \hline
+	R0F2.1 &  L'amministratore può ottenere una lista di tutti i professori &  \\ \hline
+	R0F2.1 &  L'amministratore può confermare la registrazione di un professore &  \\ \hline
+	R0F2.3 &  L'amministratore può assegnare più esami ad un determinato professore &  \\ \hline
+	R0F3 &  L'amministratore può gestire gli anni accademici &  \\ \hline
+	R0F3.1 &  L'amministratore può aggiungere un anno accademico &  \\ \hline
+	R0F3.2 &  L'amministratore può ottenere una lista di gli anni accademici &  \\ \hline
+	R0F3.3 &  L'amministratore può aggiungere dei corsi di laurea ad ogni anno accademico &  \\ \hline
+	R2F3.4 &  L'amministratore può rimuovere corsi di laurea da ogni anno accademico &  \\ \hline
+	R0F3.5 &  L'amministratore può gestire i corsi di laurea relativi agli anni accademici &  \\ \hline
+	R0F3.5.1 &  L'amministratore può creare un nuovo corso di laurea a partire da un anno accademico &  \\ \hline
+	R0F3.5.2 &  L'amministratore può ottenere una lista di tutti i corsi di laurea dato un anno accademico &  \\ \hline
+	R0F3.5.3 &  L'amministratore può creare nuovi esami &  \\ \hline
+	R0F3.5.4 &  L'amministratore può aggiungere degli esami ad ogni corso di laurea &  \\ \hline
+	R0F3.5.5 &  L'amministratore può rimuovere degli esami da un corso di laurea &  \\ \hline
+	R0F3.5.6 &  L'amministratore può ottenere una lista di tutti gli esami dato il corso di laurea &  \\ \hline
+	R0F3.5.6.1 &  L'amministratore può ottenere l'informazione di quale professore è assegnato a un determinato esame &  \\ \hline
+	R0F3.5.6.2  &  L'amministratore può associare ad un esame il relativo professore &  \\ \hline
+	R0F4 &  Un professore può gestire gli esami a lui assegnati &  \\ \hline
+	R0F4.1 &  Un professore può ottenere la lista di tutti gli esami a lui assegnati &  \\ \hline
+	R0F4.2 &  Un professore può ottenere la lista di tutti gli studenti associati a un determinato esame &  \\ \hline
+	R0F4.3 &  Un professore può registrare un esito ad un dato esame ad un dato studente registrato a quell'esame &  \\ \hline
+	R0F5 &  Uno studente può gestire l'iscrizione agli esami &  \\ \hline
+	R0F5.1 &  Uno studente può vedere l'elenco degli esami ai quali è iscritto &  \\ \hline
+	R0F5.1.1 &  Uno studente può ottenere il numero di crediti assegnati agli esame &  \\ \hline
+	R0F5.1.2 &  Uno studente può ottenere l'obbligatorietà degli esame &  \\ \hline
+	R0F5.1.3 &  Uno studente può ottenere lo stato di superamento degli esame &  \\ \hline
+	R0F5.1.4 &  Uno studente può ottenere il totale dei suoi crediti &  \\ \hline
+	R0F5.1.5 &  Uno studente può ottenere il numero di crediti da raggiungere per la laurea &  \\ \hline
+	R0F5.2 &  Uno studente può ottenere l'elenco degli esami opzionali &  \\ \hline
+	R0F5.2.1 &  Uno studente può ottenere il numero di crediti degli esami opzionali &  \\ \hline
+	R0F5.2.2 &  Uno studente può iscriversi ad un esame opzionale &  \\ \hline
+	R0F6 &  L'utente può effettuare il login &  \\ \hline
+	R0F6.1 &  Il login deve avvenire tramite il controllo delle chiavi, senza ulteriori azioni da parte dell'utente &  \\ \hline
+	R0F7 &  L'utente può effettuare il logout &  \\ \hline
+	R0F8 &  L'utente non ancora registrato può registrarsi &  \\ \hline
+	R0F8.1 &  La registrazione necessita di nome, cognome, categoria (studente o professore) e selezione del corso di laura se si tratta di uno studente &  \\ \hline
+	R1F9 &  L'utente può leggere una breve guida sull'uso di MetaMask e sul pagamento delle operazioni &  \\ \hline
+	R0F10 &  L'utente deve poter vedere preventivamente il costo in Gas, Ether e Euro dell'operazione che sta per eseguire &  \\ \hline
+	R0F11 &  L'università deve poter gestire gli amministratori &  \\ \hline
+	R0F11.1 &  L'università deve poter aggiungere amministratori &  \\ \hline
+	R0F11.2 &  L'università deve poter rimuovere amministratori &  \\ \hline
+	R0F11.3 &  L'università deve poter ottenere la lista di tutti gli amministratori &  \\ \hline
+	R0Q1 &  La progettazione e il codice devono seguire le norme e le metriche riportate nei documenti allegati X e Y &  \\ \hline
+	R0Q2 &  L'approccio di scrittura di JavaScript deve essere promise Centric Approach &  \\ \hline
+	R0Q2.1 &  L'applicativo non deve fare uso di callback in presenza di alternative alle ultime &  \\ \hline
+	R0Q3 &  Il codice Javascript deve attenersi al Airbnb Javascript style guide &  \\ \hline
+	R0Q4 &  Lo sviluppo deve essere supportato dall'utilizzo del tool ESLint &  \\ \hline
+	R0Q5 &  Dovrà essere fornito un manuale utente in lingua inglese che tratterà l'uso da parte di studenti e professori &  \\ \hline
+	R0Q6 &  Dovrà essere fornito un manuale di deploy e di utilizzo da parte degli amministratori in lingua inglese &  \\ \hline
+	R0Q7 &  Il codice sorgente deve essere pubblicato sulla piattaforma GitHub, BitBucket o GitLab &  \\ \hline
+	R0Q8 &  Il codice deve attenersi il più possibile alle guide linea de "App a 12 Fattori" &  \\ \hline
+	R0V1 &  L'applicativo dovrà essere sviluppato attraverso l'uso di tecnologie web &  \\ \hline
+	R0V1.1 &  L'applicativo dovrà essere sviluppato con Node.js &  \\ \hline
+	R0V1.2 &  L'applicativo dovrà essere sviluppato con JavaScript 8 (ES8) &  \\ \hline
+	R0V1.3 &  L'applicativo dovrà essere sviluppato con il boilerplate Redux Minimal &  \\ \hline
+	R0V1.4 &  L'applicativo dovrà essere sviluppato utilizzando React &  \\ \hline
+	R0V1.5 &  L'applicativo dovrà essere sviluppato utilizzando Redux &  \\ \hline
+	R0V1.6 &  Il deploy del sito andrà eseguito utilizzando Surge.sh &  \\ \hline
+	R0V1.7 &  È desiderabile l'utilizzo di SCSS in sostituzione a CSS &  \\ \hline
+	R0V2 &  Gli smart contract dovranno essere scritti in linguaggio Solidity &  \\ \hline
+	R0V3 &  La connessione alla rete Ethereum deve avvernire tramite MetaMask &  \\ \hline
+	R0V3.1 &  I test riguartandi gli smart contract dovranno essere eseguiti in una rete locale ed almeno in una rete pubblica &  \\ \hline
+	R0V3.2 &  Il deploy degli smart contract dovrà avvenire su rete locale testrpc e rete di test Ropsten &  \\ \hline
+	R2V3.3 &  È apprezzabile un deploy finale sulla rete principale di Ethereum &  \\ \hline
+	R0V4 &  Lo sviluppo degli smart contract dovrà avvenire utilizzando il framework Truffle &  \\ \hline
+	R0V5 &  L'applicativo deve essere accessibile ed utilizzabile dal browser Mozilla Firefox a partire dalla versione X &  \\ \hline
+	R0V6 &  L'applicativo deve essere accessibile ed utilizzabile dal browser Google Chrome a partire dalla versione X &  \\ \hline
+	R1V7 &  L'applicativo deve essere accessibile ed utilizzabile da un browser mobile, per le versioni supportate fare riferimento alle controparti PC di Firefox e Chrome &  \\ \hline
+	R0V8 &  Un utente non deve poter compiere azioni sul sistema senza aver fatto l'accesso ad esso &  \\ \hline
+	R0V9 &  L'applicazione dei principi de "App a 12 Fattori" deve essere documentata &  \\ \hline
+	R0V10 &  Il codice sorgente deve essere pubblicato con licenza MIT &  \\ \hline
 	\caption{Tabella di tracciamento requisiti-fonti}
 \end{longtable}
 

@@ -64,13 +64,15 @@ I requisiti vengono classificati ed assegnati loro un identificativo univoco sec
 	R0F5.2.1 & Obbligatorio & Uno studente può ottenere il numero di crediti degli esami opzionali & Capitolato \\ \hline
 	R0F5.2.2 & Obbligatorio & Uno studente può iscriversi ad un esame opzionale & Capitolato \\ \hline
 	R0F6 & Obbligatorio & L'utente può effettuare il login & Interno \\ \hline
-	R0F7 & Obbligatorio & L'utente può effettuare il logout & Interno \\ \hline
-	R1F8 & Desiderabile & L'utente può leggere una breve guida sull'uso di MetaMask e sul pagamento delle operazioni & Interno \\ \hline	
-	R0F9 & Obbligatorio & L'utente deve poter vedere preventivamente il costo in Gas, Ether e Euro dell'operazione che sta per eseguire & Capitolato \\ \hline	
-	R0F10 & Obbligatorio & L'università deve poter gestire gli amministratori & VE171209 \\ \hline %TODO: controllare se il nome del verbale coindice
-	R0F10.1 & Obbligatorio & L'università deve poter aggiungere amministratori & VE171209 \\ \hline %TODO: controllare se il nome del verbale coindice
-	R0F10.2 & Obbligatorio & L'università deve poter rimuovere amministratori & VE171209 \\ \hline %TODO: controllare se il nome del verbale coindice
-	R0F10.3 & Obbligatorio & L'università deve poter ottenere la lista di tutti gli amministratori & Interno \\ \hline 
+	R0F6.1 & Obbligatorio & Il login deve avvenire tramite il controllo delle chiavi, senza ulteriori azioni da parte dell'utente & Interno \\ \hline
+	R0F7 & Obbligatorio & L'utente può effettuare il logout & Interno \\ \hline	R0F8 & Obbligatorio & L'utente non ancora registrato può registrarsi & Capitolato \\ \hline
+	R0F8.1 & Obbligatorio & La registrazione necessita di nome, cognome, categoria (studente o professore) e selezione del corso di laura se si tratta di uno studente & Capitolato \\ \hline
+	R1F9 & Desiderabile & L'utente può leggere una breve guida sull'uso di MetaMask e sul pagamento delle operazioni & Interno \\ \hline	
+	R0F10 & Obbligatorio & L'utente deve poter vedere preventivamente il costo in Gas, Ether e Euro dell'operazione che sta per eseguire & Capitolato \\ \hline	
+	R0F11 & Obbligatorio & L'università deve poter gestire gli amministratori & VE171209 \\ \hline %TODO: controllare se il nome del verbale coindice
+	R0F11.1 & Obbligatorio & L'università deve poter aggiungere amministratori & VE171209 \\ \hline %TODO: controllare se il nome del verbale coindice
+	R0F11.2 & Obbligatorio & L'università deve poter rimuovere amministratori & VE171209 \\ \hline %TODO: controllare se il nome del verbale coindice
+	R0F11.3 & Obbligatorio & L'università deve poter ottenere la lista di tutti gli amministratori & Interno \\ \hline 
 	\caption{Tabella dei requisiti funzionali}
 \end{longtable}
 
@@ -156,7 +158,6 @@ Qualsiasi operazione effettuata in una rete Ethereum reale ha un tempo di soddis
 	\rowcolor[HTML]{38FFF8} 
 	\textbf{Fonte} & \textbf{Nome fonte} & \textbf{Requisiti} \\ \hline
 	\endhead
-	DA RICONTROLLARE!
 	Capitolato & & R0F3 \\
 	& & R0F3.1 \\
 	& & R0F3.3 \\
@@ -208,7 +209,7 @@ Qualsiasi operazione effettuata in una rete Ethereum reale ha un tempo di soddis
 	& & R0F3.5.1 \\
 	& & R0F3.5.2 \\
 	& & R0F3.6 \\
-	%TODO: per 3.7 bisogna chiedere come intendono tutta questa cosa
+	& & R0F3.7 \\
 	& & R0F3.8 \\
 	& & R0F5.1.1 \\
 	& & R0F5.1.2 \\
@@ -227,33 +228,76 @@ Qualsiasi operazione effettuata in una rete Ethereum reale ha un tempo di soddis
 	& & R0Q5 \\
 	& & R0Q6 \\ \hline
 	
-	UC1 & Breve guida &  \\ \hline
-	UC2 & Login &  \\ \hline
-	UC2.1 & Login automatico &  \\ \hline
-	UC2.2 & Visualizzazione messaggio di errore riguardo a chiave assente &  \\ \hline
-	UC2.3 & Visualizzazione messaggio di errore riguardo a chiave malformata &  \\ \hline
-	UC2.4 & Visualizzazione messaggio di errore riguardo a chiave non registrata &  \\ \hline
-	UC3 & Registrazione &  \\ \hline %TODO
-	UC &  &  \\ \hline
-	UC &  &  \\ \hline
-	UC &  &  \\ \hline
-	UC &  &  \\ \hline
-	UC &  &  \\ \hline
-	UC &  &  \\ \hline
-	UC &  &  \\ \hline
-	UC &  &  \\ \hline
-	UC6 & Gestione aspetti relativi agli esami &  \\ \hline
-	UC6.1 & Visualizzazione lista degli esami &  \\ \hline
-	UC6.2 & Visualizzazione lista degli studenti &  \\ \hline
-	UC6.3 & Registrazione valutazione di un esame &  \\ \hline
-	UC7 & Gestione aspetti relativi allo studente &  \\ \hline
+	VE171209 & Verbale & R0F10.1 \\
+	& & R0F10.2 \\
+	& & R0F10.3 \\
+	
+	UC1 & Breve guida & R1F9 \\ \hline
+	UC2 & Login & R0F6 \\ \hline
+	UC2.1 & Login automatico & R0F6.1 \\ \hline
+	UC2.2 & Visualizzazione messaggio di errore riguardo a chiave assente & R0F6.1 \\ \hline
+	UC2.3 & Visualizzazione messaggio di errore riguardo a chiave malformata & R0F6.1 \\ \hline
+	UC2.4 & Visualizzazione messaggio di errore riguardo a chiave non registrata & R0F6.1 \\ \hline
+	UC3 & Registrazione & R0F8 \\ \hline %TODO
+	UC3.1 & Inserimento nome & R0F8.1 \\ \hline
+	UC3.2 & Inserimento cognome & R0F8.1 \\ \hline
+	UC3.3 & Selezione categoria & R0F8.1 \\ \hline
+	UC3.4 & Selezione corso & R0F8.1 \\ \hline
+	UC3.5 & Visualizzazione errore campo non compilato & R0F8.1 \\ \hline
+	UC3.6 & Visualizzazione errore utente già registrato & R0F8.1 \\ \hline
+	UC4 & Logout & R0F7 \\ \hline
+	
+	%-----------------------------------------------------
+	%TODO: Gianluca quando li hai aggiustati finisci qui
+	%-----------------------------------------------------
+	UC5 & Amministrazione &  \\ \hline
+	UC5.1 & Gestione Studenti &  \\ \hline
+	UC5.1.1 & Visualizzazione lista di studenti &  \\ \hline
+	UC5.1.2 & Visualizzazione lista di studenti non approvati &  \\ \hline
+	UC5.1.3 & Approvazione Studente &  \\ \hline
+	%UC5.1.4 & Cambio corso di laurea &  \\ \hline %TODO: da discutere
+	UC5.2 & Gestione Anni Accademici &  \\ \hline
+	UC5.2.1 & Aggiunta Anno Accademico &  \\ \hline
+	UC5.2.2 & Visualizzazione lista di tutti gli anni accademici &  \\ \hline
+	UC5.2.3 & Aggiunta di un corso di laurea ad un anno accademico &  \\ \hline
+	UC5.2.4 & Visualizzazione messaggio anno malformato &  \\ \hline
+	UC5.2.5 & Visualizzazione messaggio di anno accademico già presente &  \\ \hline
+	UC5.2.6 & Visualizzazione messaggio anno non compilato &  \\ \hline
+	UC5.3 & Gestione Corsi di Laurea &  \\ \hline
+	UC5.3.1 & Visualizzazione lista completa dei corsi &  \\ \hline
+	UC5.3.2 & Visualizzazione lista corsi di laurea per anno accademico &  \\ \hline
+	UC5.3.3 & Crea un esame nel corso &  \\ \hline
+	UC5.3.4 & Visualizzazione errore campi non compilati nella creazione dell'esame &  \\ \hline
+	UC5.3.5 &  &  \\ \hline
+	UC5.3.6 &  &  \\ \hline
+	UC5.3.7 &  &  \\ \hline
+	UC5.3.8 &  &  \\ \hline
+	%-----------------------------------------------------
+	%-----------------------------------------------------
+	%-----------------------------------------------------
+	
+	UC6 & Gestione aspetti relativi agli esami & R0F4 \\ \hline
+	UC6.1 & Visualizzazione lista degli esami & R0F4.1 \\ \hline
+	UC6.2 & Visualizzazione lista degli studenti & R0F4.2  \\ \hline
+	UC6.3 & Registrazione valutazione di un esame & R0F4.3 \\ \hline
+	UC7 & Gestione aspetti relativi allo studente & R0F5 \\ \hline
 	UC7.1 & Visualizzazione lista degli esami & R0F5.1 \\ \hline
 	UC7.1.1 & Visualizzazione dei crediti degli esami ai quali è iscritto & R0F5.1.1 \\ \hline
 	UC7.1.2 & Visualizzazione della obbligatorietà degli esami ai quali è iscritto & R0F5.1.2 \\ \hline
 	UC7.1.3 & Visualizzazione delle valutazioni degli esami ai quali è iscritto	& R0F5.1.3 \\ \hline
-	UC7.2 & Visualizzazione degli esami opzionali e dei loro crediti &  \\ \hline
-	UC7.3 & Registrazione ad un esame opzionale &  \\ \hline
+	UC7.2 & Visualizzazione degli esami opzionali e dei loro crediti & R0F5.2 \\ \hline
+	UC7.3 & Registrazione ad un esame opzionale & R0F5.2.2 \\ \hline
 	UC7.4 & Visualizzazione delle informazioni relative ai crediti & R0F5.1.4 \\ \hline
+	& & R0F5.2.1 \\ \hline
+	UC8 & Gestione degli amministratori & R0F11 \\ \hline
+	UC8.1 & Aggiunta di un amministratore & R0F11.1 \\ \hline
+	UC8.1.1 & Inserimento chiave pubblica & R0F11.1 \\ \hline
+	UC8.1.2 & Visualizzazione messaggio di errore riguardo a chiave mal formata & R0F11.1 \\ \hline
+	UC8.1.3 & Visualizzazione messaggio di errore riguardo a chiave già registrata & R0F11.1 \\ \hline
+	UC8.2 & Visualizzazione lista degli amministratori & R0F11.3 \\ \hline
+	UC8.3 & Rimozione amministratore & R0F11.2 \\ \hline
+	UC9 & Visualizzazione quantità di Gas, Ether e costo delle operazioni & R0F10 \\ \hline
+
 	\caption{Tabella di tracciamento fonti-requisiti}
 \end{longtable}
 

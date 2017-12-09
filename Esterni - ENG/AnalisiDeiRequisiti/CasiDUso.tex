@@ -23,13 +23,16 @@
 	 Ci si riferisce ad un utente generico con chiave valida ed autenticato nel sistema tramite la procedura di login.\\
 	
 	\item \textbf{Amministratore}\\
-	Ci si riferisce ad un utente autenticato nel sistema nel ruolo di amministratore\\
+	Ci si riferisce ad un utente autenticato nel sistema nel ruolo di amministratore, ha i permessi per gestire i professori.\\
 	
 	\item \textbf{Professore}\\
 	Ci si riferisce ad un utente autenticato nel sistema nel ruolo di professore.\\
 	
 	\item \textbf{Studente}\\
-	Ci si riferisce ad un utente autenticato nel sistema nel ruolo di studente\\	
+	Ci si riferisce ad un utente autenticato nel sistema nel ruolo di studente.\\
+		
+	\item \textbf{Università}\\
+	Ci si riferisce ad un utente autenticato nel sistema nel ruolo di fondatore e rappresentante dell'università, ha i permessi per gestire gli amministratori.\\	
 \end{enumerate}
 
 \subsection{Attori secondari}
@@ -155,6 +158,7 @@
 	\item \textbf{Estensioni:}
 	\begin{enumerate}
 		\item Se l'utente non compila uno dei campi viene mostrato un messaggio che suggerisce la compilazione del campo mancante [UC3.5]
+		\item Se l'utente ha una chiave pubblica già registrata in un altro ruolo all'interno dell'università gli viene impedita la registrazione [UC3.6]
 	\end{enumerate}
 	\item \textbf{Precondizione:} L'utente è entrato nel sistema e ha scelto di registrarsi;\\
 	\item \textbf{Postcondizione:} La registrazione è andata a buon fine e la chiave dell'utente è stata salvata nel sistema.\\
@@ -198,6 +202,14 @@
 	\item \textbf{Scenario principale:} Il sistema mostra un messaggio d'errore all'utente che indica di compilare i campi mancanti;
 	\item \textbf{Precondizione:} L'utente tenta di registrarsi senza compilare tutti i campi;
 	\item \textbf{Postcondizione:} L'utente è consapevole di non aver compilato tutti i campi;
+\end{itemize}
+\subsection{UC3.5 - Visualizzazione errore utente già registrato}
+\begin{itemize}
+	\item \textbf{Attori Primari:} Utente non autenticato;
+	\item \textbf{Scopo e Descrizione} Il sistema avvisa l'utente che la sua chiave è già presente nel sistema e che non può procedere alla registrazione;
+	\item \textbf{Scenario principale:} Il sistema mostra un messaggio d'errore all'utente che indica che sta tentando di effettuare una registrazione utilizzando una chiave già presente nell'università;
+	\item \textbf{Precondizione:} L'utente tenta di registrarsi utilizzando una chiave già registrata;
+	\item \textbf{Postcondizione:} L'utente è consapevole di star utilizzando una chiave che corrisponde ad un account precedentemente registrato nel sistema;
 \end{itemize}
 \subsection{UC4 - Logout}
 \begin{itemize}
@@ -549,6 +561,70 @@
 	\item \textbf{Scenario principale:} Lo studente richiede al sistema le informazioni riguardanti i suoi crediti;\\
 	\item \textbf{Precondizione:} L'utente è già riconosciuto dal sistema come studente e richiede la visualizzazione delle informazioni relative ai suoi crediti;\\
 	\item \textbf{Postcondizione:} Lo studente ottiene le informazioni richieste per poterle consultare.\\
+\end{itemize}
+\subsection{UC8 - Gestione degli amministratori}
+\begin{itemize}
+	\item \textbf{Attori primari:} Università;\\
+	\item \textbf{Scopo e descrizione:} L'utente è già riconosciuto dal sistema come rappresentante dell'università e sceglie di utilizzare una funzionalità messa a sua disposizione da parte del sistema;\\
+	\item \textbf{Precondizione:} L'utente che rappresenta l'università già riconosciuto dal sistema desidera effettuare delle operazioni relative alla aggiunta o alla rimozione di amministratori;\\
+	\item \textbf{Postcondizione:} L'utente che rappresenta l'università ha visualizzato le operazioni messe a disposizione dal sistema e sceglie quale effettuare.\\
+\end{itemize}
+\subsection{UC8.1 - Aggiunta di un amministratore}
+\begin{itemize}
+	\item \textbf{Attori primari:} Università;\\
+	\item \textbf{Scopo e descrizione:} L'utente che rappresenta l'università aggiunge un nuovo amministratore nel sistema;
+	\item \textbf{Precondizione:} L'utente che rappresenta l'università ha scelto di aggiungere un nuovo amministratore; 
+	\item \textbf{Postcondizione:} Il nuovo amministratore è stato inserito nel sistema.
+\end{itemize}
+\subsection{UC8.1.1 - Inserimento chiave pubblica}
+\begin{itemize}
+	\item \textbf{Attori primari:} Università;\\
+	\item \textbf{Scopo e Descrizione} Il sistema offre l'interfaccia per inserire la chiave pubblica del nuovo amministratore;
+	\item \textbf{Scenario principale:} L'utente che rappresenta l'università fornisce tramite un dispositivo di input il suo nome;	\begin{enumerate}
+		\item Se la chiave pubblica è mal formata l'utente viene avvisato con un relativo messaggio d'errore.[UC8.1.2]
+		\item Se la chiave pubblica è già registrata nel sistema in un altro ruolo l'utente viene avvisato un relativo messaggio d'errore.[UC8.1.3]
+	\end{enumerate}
+	\item \textbf{Precondizione:} Il sistema offre un campo per la compilazione della chiave pubblica del nuovo amministratore e rimane in attesa dell'input;
+	\item \textbf{Postcondizione:} L'utente che rappresenta l'università ha inserito la chiave pubblica del nuovo amministratore nel campo fornito dal sistema;
+\end{itemize}
+\subsection{UC8.1.2 - Visualizzazione messaggio di errore riguardo a chiave mal formata}
+\begin{itemize}
+	\item \textbf{Attori primari:} Università;\\
+	\item \textbf{Scopo e descrizione:} L'utente viene avvisato del fatto che ha fornito una chiave ma formata, ad esempio di lunghezza invalida oppure non in caratteri esadecimali;\\
+	\item \textbf{Scenario principale:} L'utente viene informato che la sua chiave risulta mal formata, invitandolo a ricontrollarla;\\
+	\item \textbf{Precondizione:} L'utente cerca di registrare nel sistema una chiave mal formata;\\
+	\item \textbf{Postcondizione:} L'utente è consapevole di aver tentato l'inserimento di una chiave mal formata.\\
+\end{itemize}
+\subsection{UC8.1.3 - Visualizzazione messaggio di errore riguardo a chiave già registrata}
+\begin{itemize}
+	\item \textbf{Attori primari:} Università;\\
+	\item \textbf{Scopo e descrizione:} L'utente viene avvisato del fatto che ha fornito una chiave già registrata in un altro ruolo all'interno dell'università;\\
+	\item \textbf{Scenario principale:} L'utente viene informato che la sua chiave risulta già registrata;\\
+	\item \textbf{Precondizione:} L'utente cerca di registrare nel sistema una chiave precedentemente registrata in un altro ruolo;\\
+	\item \textbf{Postcondizione:} L'utente è consapevole di aver tentato l'inserimento di una chiave già registrata nell'università in un altro ruolo.\\
+\end{itemize}
+
+
+\subsection{UC8.2 - Visualizzazione lista degli amministratori}
+	\begin{itemize}
+	\item \textbf{Attori primari:} Università;\\
+	\item \textbf{Scopo e descrizione:} L'utente che rappresenta l'università visualizza una lista di tutti gli amministratori;\\
+	\item \textbf{Scenario principale:} L'utente che rappresenta l'università richiede al sistema la lista degli amministratori per poterla consultare;\\
+	\item \textbf{Precondizione:} L'utente che rappresenta l'università è già riconosciuto dal sistema come tale e richiede la visualizzazione della lista degli amministratori;\\
+	\item \textbf{Postcondizione:} L'utente che rappresenta l'università ottiene la lista degli amministratori per poterla consultare.\\
+	\end{itemize}
+\subsection{UC8.3 - Rimozione amministratore}
+\begin{itemize}
+	\item \textbf{Attori primari:} Università;\\
+	\item \textbf{Scopo e descrizione:} L'utente che rappresenta l'università rimuove dal sistema un amministratore;\\
+	\item \textbf{Flusso principale degli eventi:}\\
+	\begin{enumerate}
+		\item L'utente che rappresenta l'università  visualizza la lista degli amministratori [UC8.2];
+		\item L'utente che rappresenta l'università, una volta ottenuta la lista degli amministratori, individua quale desidera rimuovere\\
+		\item L'utente che rappresenta l'università richiede al sistema l'eliminazione dell'amministratore;
+	\end{enumerate}
+	\item \textbf{Precondizione:} L'utente che rappresenta l'università desidera eliminare un amministratore dal sistema;\\
+	\item \textbf{Postcondizione:} L'amministratore indicato viene rimosso dal ruolo nell'università e non può più autenticarsi come tale.\\
 \end{itemize}
 
 \end{document}

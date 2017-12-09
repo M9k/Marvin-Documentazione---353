@@ -32,12 +32,10 @@ I requisiti vengono classificati ed assegnati loro un identificativo univoco sec
 	%TODO: Discussione -> R2F1.3 & Opzionale & L'amministratore può bloccare l'accesso di studenti morosi & Interno \\ \hline
 	R0F2 & Obbligatorio & L'amministratore può gestire i professori & Interno \\ \hline
 	R0F2.1 & Obbligatorio & L'amministratore può ottenere una lista di tutti i professori & Interno \\ \hline
-	R0F2.2(1) & Obbligatorio & L'amministratore può confermare la registrazione di un professore & Interno \\ \hline
-	%TODO: Capire quale dei due tramite red babel
-	R0F2.2(2) & Obbligatorio & L'amministratore può registrare un professore & Capitolato \\ \hline
+	R0F2.1 & Obbligatorio & L'amministratore può confermare la registrazione di un professore & Interno \\ \hline
 	R0F2.3 & Obbligatorio & L'amministratore può assegnare più esami ad un determinato professore & Capitolato \\ \hline
 	%TODO: Discussione -> 	R2F2.3 & Opzionale & L'amministratore può bloccare l'accesso a determinati professori & Interno \\ \hline
-	R0F3 & Obbligatorio & L'amministratore può gestire gli anni accademici & Capitolato \\ \hline %TODO: chiedese se è quello che vogliono
+	R0F3 & Obbligatorio & L'amministratore può gestire gli anni accademici & Capitolato \\ \hline
 	R0F3.1 & Obbligatorio & L'amministratore può aggiungere un anno accademico & Capitolato \\ \hline
 	R0F3.2 & Obbligatorio & L'amministratore può ottenere una lista di gli anni accademici & Interno \\ \hline
 	R0F3.3 & Obbligatorio & L'amministratore può aggiungere dei corsi di laurea ad ogni anno accademico & Capitolato \\ \hline
@@ -67,8 +65,12 @@ I requisiti vengono classificati ed assegnati loro un identificativo univoco sec
 	R0F5.2.2 & Obbligatorio & Uno studente può iscriversi ad un esame opzionale & Capitolato \\ \hline
 	R0F6 & Obbligatorio & L'utente può effettuare il login & Interno \\ \hline
 	R0F7 & Obbligatorio & L'utente può effettuare il logout & Interno \\ \hline
-	R1F8 & Desiderabile & L'utente può leggere una breve guida sull'uso di MetaMask e sul pagamento delle operazioni & Interno \\ \hline %TODO: discuterne
+	R1F8 & Desiderabile & L'utente può leggere una breve guida sull'uso di MetaMask e sul pagamento delle operazioni & Interno \\ \hline	
 	R0F9 & Obbligatorio & L'utente deve poter vedere preventivamente il costo in Gas, Ether e Euro dell'operazione che sta per eseguire & Capitolato \\ \hline	
+	R0F10 & Obbligatorio & L'università deve poter gestire gli amministratori & VE171209 \\ \hline %TODO: controllare se il nome del verbale coindice
+	R0F10.1 & Obbligatorio & L'università deve poter aggiungere amministratori & VE171209 \\ \hline %TODO: controllare se il nome del verbale coindice
+	R0F10.2 & Obbligatorio & L'università deve poter rimuovere amministratori & VE171209 \\ \hline %TODO: controllare se il nome del verbale coindice
+	R0F10.3 & Obbligatorio & L'università deve poter ottenere la lista di tutti gli amministratori & Interno \\ \hline 
 	\caption{Tabella dei requisiti funzionali}
 \end{longtable}
 
@@ -87,7 +89,7 @@ I requisiti vengono classificati ed assegnati loro un identificativo univoco sec
 	R0Q3 & Obbligatorio & Il codice Javascript deve attenersi al Airbnb Javascript style guide & Capitolato \\ \hline
 	R0Q4 & Obbligatorio & Lo sviluppo deve essere supportato dall'utilizzo del tool ESLint & Capitolato \\ \hline
 	R0Q5 & Obbligatorio & Dovrà essere fornito un manuale utente in lingua inglese che tratterà l'uso da parte di studenti e professori & VE171122 \\ \hline
-	R0Q6 & Obbligatorio & Dovrà essere fornito un manuale di deploy e di utilizzo da parte degli amministratori in lingua inglese & VE171122 \\ \hline
+	R0Q6 & Obbligatorio & Dovrà essere fornito un manuale di deploy e di utilizzo da parte degli amministratori in lingua inglese & VE171122 \\ \hline %TODO controllare sigla del verbale
 	R0Q7 & Obbligatorio & Il codice sorgente deve essere pubblicato sulla piattaforma GitHub, BitBucket o GitLab & Capitolato \\ \hline
 	R0Q8 & Obbligatorio & Il codice deve attenersi il più possibile alle guide linea de "App a 12 Fattori" & Capitolato \\ \hline
 	\caption{Tabella dei requisiti di qualità}
@@ -118,11 +120,10 @@ I requisiti vengono classificati ed assegnati loro un identificativo univoco sec
 	R0V4 & Obbligatorio & Lo sviluppo degli smart contract dovrà avvenire utilizzando il framework Truffle & Capitolato \\ \hline
 	R0V5 & Obbligatorio & L'applicativo deve essere accessibile ed utilizzabile dal browser Mozilla Firefox a partire dalla versione X & Interno \\ \hline %TODO: definire versione
 	R0V6 & Obbligatorio & L'applicativo deve essere accessibile ed utilizzabile dal browser Google Chrome a partire dalla versione X & Interno \\ \hline %TODO: definire versione
-	R0V7 & Obbligatorio & L'applicativo deve essere accessibile ed utilizzabile dal browser Microsoft Internet Explorer a partire dalla versione X e dal browser Microsoft EDGE & Interno \\ \hline %TODO: definire versione
-	R1V8 & Desiderabile & L'applicativo deve essere accessibile ed utilizzabile da un browser mobile, per le versioni supportate fare riferimento alle controparti PC di Firefox e Chrome & Capitolato \\ \hline %TODO: discuterne
-	R0V9 & Obbligatorio & Un utente non deve poter compiere azioni sul sistema senza aver fatto l'accesso ad esso & Capitolato \\ \hline
-	R0V10 & Obbligatorio & L'applicazione dei principi de "App a 12 Fattori" deve essere documentata & Capitolato \\ \hline
-	R0V11 & Obbligatorio & Il codice sorgente deve essere pubblicato con licenza MIT & Capitolato \\ \hline
+	R1V7 & Desiderabile & L'applicativo deve essere accessibile ed utilizzabile da un browser mobile, per le versioni supportate fare riferimento alle controparti PC di Firefox e Chrome & Capitolato \\ \hline
+	R0V8 & Obbligatorio & Un utente non deve poter compiere azioni sul sistema senza aver fatto l'accesso ad esso & Capitolato \\ \hline
+	R0V9 & Obbligatorio & L'applicazione dei principi de "App a 12 Fattori" deve essere documentata & Capitolato \\ \hline
+	R0V10 & Obbligatorio & Il codice sorgente deve essere pubblicato con licenza MIT & Capitolato \\ \hline
 	\caption{Tabella dei requisiti di vincolo}
 \end{longtable}
 
@@ -155,6 +156,7 @@ Qualsiasi operazione effettuata in una rete Ethereum reale ha un tempo di soddis
 	\rowcolor[HTML]{38FFF8} 
 	\textbf{Fonte} & \textbf{Nome fonte} & \textbf{Requisiti} \\ \hline
 	\endhead
+	DA RICONTROLLARE!
 	Capitolato & & R0F3 \\
 	& & R0F3.1 \\
 	& & R0F3.3 \\

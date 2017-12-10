@@ -44,6 +44,7 @@ cd 'LetteraDiPresentazione - ITA'
 pdflatex -interaction=nonstopmode -halt-on-error LetteraDiPresentazione.tex
 cd ..
 
+
 # 'Esterni - ENG/AnalisiDeiRequisiti.pdf'
 # 'Esterni - ENG/GlossarioEST.pdf'
 # 'Esterni - ENG/PianoDiProgetto.pdf'

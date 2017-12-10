@@ -3,7 +3,7 @@
 \begin{document}
 	
 \subsubsection{Scss}
-In questa sotto-sezione vengono elencate le norme tratte dalla \textbf{Airbnb\\ CSS/Scss Styleguide}\footnote{\href{https://github.com/airbnb/css}{https://github.com/airbnb/css}}.
+In questa sotto-sezione vengono elencate le norme tratte dalla \textbf{Airbnb\\ CSS/Scss Styleguide}\footnote{\nURI{https://github.com/airbnb/css}}.
 \paragraph*{Formattazione:}
 \begin{itemize}
 	\item utilizzare due (2) spazi per ogni livello di indentazione;
@@ -101,7 +101,7 @@ In questo esempio:
 \end{itemize}
 \paragraph*{Ordine di dichiarazione delle proprietà:}
 \begin{enumerate}
-	\item proprietà standard: vanno dichiarate per prime e in ordine alfabetico;
+	\item \textbf{proprietà standard:} vanno dichiarate per prime e in ordine alfabetico;
 \begin{center}{
 \begin{minipage}{5cm}
 \begin{Verbatim}[frame=single]
@@ -114,7 +114,7 @@ In questo esempio:
 \end{minipage}
 }
 \end{center}
-	\item dichiarazioni di \texttt{@include}: vanno raggruppate sotto alla dichiarazione delle proprietà standard
+	\item \textbf{dichiarazioni di \texttt{@include}:} vanno raggruppate sotto alla dichiarazione delle proprietà standard
 \begin{center}{
 \begin{minipage}{10cm}
 \begin{Verbatim}[frame=single]
@@ -128,7 +128,7 @@ In questo esempio:
 \end{minipage}
 }
 \end{center}
-\item selettori nidificati: vanno dichiarati dopo tutte le altre dichiarazioni e deve essere lasciata una linea vuota prima della loro dichiarazione
+\item \textbf{selettori nidificati:} vanno dichiarati dopo tutte le altre dichiarazioni e deve essere lasciata una linea vuota prima della loro dichiarazione
 \begin{center}{
 \begin{minipage}{10cm}
 \begin{Verbatim}[frame=single]
@@ -146,7 +146,7 @@ In questo esempio:
 }
 \end{center}
 \end{enumerate}
-\paragraph*{Extend: }
+\paragraph*{Extend:}
 la direttiva \texttt{@extend} non va utilizzata perché ha un comportamento poco intuitivo e pericoloso, specialmente quando usato in selettori nidificati.
 \paragraph*{Selettori annidati: }
 non utilizzare più di tre livelli di annidamento

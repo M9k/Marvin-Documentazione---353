@@ -25,16 +25,14 @@ I requisiti vengono classificati ed assegnati loro un identificativo univoco sec
 	\rowcolor[HTML]{38FFF8} 
 	\textbf{Identificatore} & \textbf{Importanza} & \textbf{Descrizione} & \textbf{Fonti} \\ \hline
 	\endhead
-	R0F1 & Obbligatorio & L'amministratore può gestire gli studenti & Interno \\ \hline
-	R0F1.1 & Obbligatorio & L'amministratore può ottenere una lista di tutti gli studenti & Interno \\ \hline
-	R0F1.2 & Obbligatorio & L'amministratore può confermare la registrazione di uno studente & Interno \\ \hline
-	R0F1.2.1 & Obbligatorio & L'amministratore può assegnare un corso di laurea ad uno studente & Interno \\ \hline
-	%TODO: Discussione -> R2F1.3 & Opzionale & L'amministratore può bloccare l'accesso di studenti morosi & Interno \\ \hline
+	R0F1 & Obbligatorio & L'amministratore può gestire gli utenti & Interno \\ \hline
+	R0F1.1 & Obbligatorio & L'amministratore può ottenere una lista di tutti gli utenti non abilitati & Interno \\ \hline
+	R0F1.2 & Obbligatorio & L'amministratore può abilitare un utente & Interno \\ \hline
+	R0F1.3 & Obbligatorio & L'amministratore può disabilitare un utente & Interno \\ \hline
+	R0F1.4 & Obbligatorio & L'amministratore può ottenere una lista di tutti gli studenti & Interno \\ \hline
 	R0F2 & Obbligatorio & L'amministratore può gestire i professori & Interno \\ \hline
 	R0F2.1 & Obbligatorio & L'amministratore può ottenere una lista di tutti i professori & Interno \\ \hline
-	R0F2.1 & Obbligatorio & L'amministratore può confermare la registrazione di un professore & Interno \\ \hline
-	R0F2.3 & Obbligatorio & L'amministratore può assegnare più esami ad un determinato professore & Capitolato \\ \hline
-	%TODO: Discussione -> 	R2F2.3 & Opzionale & L'amministratore può bloccare l'accesso a determinati professori & Interno \\ \hline
+	R0F2.2 & Obbligatorio & L'amministratore può assegnare più esami ad un determinato professore & Capitolato \\ \hline
 	R0F3 & Obbligatorio & L'amministratore può gestire gli anni accademici & Capitolato \\ \hline
 	R0F3.1 & Obbligatorio & L'amministratore può aggiungere un anno accademico & Capitolato \\ \hline
 	R0F3.2 & Obbligatorio & L'amministratore può ottenere una lista di gli anni accademici & Interno \\ \hline
@@ -250,28 +248,33 @@ Qualsiasi operazione effettuata in una rete Ethereum reale ha un tempo di soddis
 	%-----------------------------------------------------
 	%TODO: Gianluca quando li hai aggiustati finisci qui
 	%-----------------------------------------------------
-	UC5 & Amministrazione &  \\ \hline
-	UC5.1 & Gestione Studenti &  \\ \hline
-	UC5.1.1 & Visualizzazione lista di studenti &  \\ \hline
-	UC5.1.2 & Visualizzazione lista di studenti non approvati &  \\ \hline
-	UC5.1.3 & Approvazione Studente &  \\ \hline
-	%UC5.1.4 & Cambio corso di laurea &  \\ \hline %TODO: da discutere
-	UC5.2 & Gestione Anni Accademici &  \\ \hline
-	UC5.2.1 & Aggiunta Anno Accademico &  \\ \hline
-	UC5.2.2 & Visualizzazione lista di tutti gli anni accademici &  \\ \hline
-	UC5.2.3 & Aggiunta di un corso di laurea ad un anno accademico &  \\ \hline
-	UC5.2.4 & Visualizzazione messaggio anno malformato &  \\ \hline
-	UC5.2.5 & Visualizzazione messaggio di anno accademico già presente &  \\ \hline
-	UC5.2.6 & Visualizzazione messaggio anno non compilato &  \\ \hline
-	UC5.3 & Gestione Corsi di Laurea &  \\ \hline
-	UC5.3.1 & Visualizzazione lista completa dei corsi &  \\ \hline
-	UC5.3.2 & Visualizzazione lista corsi di laurea per anno accademico &  \\ \hline
-	UC5.3.3 & Crea un esame nel corso &  \\ \hline
-	UC5.3.4 & Visualizzazione errore campi non compilati nella creazione dell'esame &  \\ \hline
-	UC5.3.5 &  &  \\ \hline
-	UC5.3.6 &  &  \\ \hline
-	UC5.3.7 &  &  \\ \hline
-	UC5.3.8 &  &  \\ \hline
+	UC5 & Amministrazione &  R0F1, R0F2, R0F3 \\ \hline
+	UC5.1 & Gestione Utenti &  R0F1 \\ \hline
+	UC5.1.1 & Visualizzazione lista di studenti & R0F1.4 \\ \hline
+	UC5.1.2 & Visualizzazione lista di professori &  R0F2.1\\ \hline
+	UC5.1.3 & Visualizzazione di utenti non abilitati & R0F1.1 \\ \hline
+	UC5.1.4 & Abilitazione Utente & R0F1.2 \\  \hline 
+	UC5.1.5 & Disabilitazione Utente & R0F1.3 \\ \hline
+	UC5.2 & Gestione Anni Accademici &  R0F3 \\ \hline
+	UC5.2.1 & Aggiunta Anno Accademico &  R0F3.1 \\ \hline
+	UC5.2.2 & Visualizzazione lista di tutti gli anni accademici & R0F3.2 \\ \hline
+	UC5.2.3 & Aggiunta di un corso di laurea ad un anno accademico & R0F3.3 \\ \hline
+	UC5.2.4 & Visualizzazione messaggio anno malformato & R0F3.1 \\ \hline
+	UC5.2.5 & Visualizzazione messaggio di anno accademico già presente & R0F3.1 \\ \hline
+	UC5.2.6 & Visualizzazione messaggio anno non compilato &  R0F3.1 \\ \hline
+	UC5.3 & Gestione Corsi di Laurea &  R0F3.5 \\  \hline
+	UC5.3.1 & Creazione corso di laurea &  R0F3.5.1 \\ \hline
+	UC5.3.2 & Visualizzazione errore mancata compilazione campi & R0F3.5.1 \\ \hline
+	UC5.3.3 & Visualizzazione lista completa dei corsi &  R0F3.5.2 \\ \hline
+	UC5.3.4 & Visualizzazione lista corsi di laurea per anno accademico & R0F3.5.2  \\ \hline
+	UC5.3.5 & Crea un esame nel corso &  R0F3.5.3\\ \hline
+	UC5.3.6 & Visualizzazione errore campi non compilati nella creazione dell'esame & R0F3.5.3  \\ \hline
+	UC5.3.7 & Visualizzazione lista esami per corso di laurea & R0F3.5.6 \\ \hline
+	UC5.3.8 & Visualizzazione lista esami &  R0F3.5.6 \\ \hline
+	UC5.3.9 & Aggiunta esame a corso &  R0F3.5.4 \\ \hline
+	UC5.3.10 & Rimozione esame a corso &  R0F3.5.5 \\ \hline
+	UC5.3.11 & Associa professore a esame & R0F3.5.6.2 \\ \hline
+	%TODO: Aggiunta UC per requisito R0F3.5.6.1 e R2F3.4
 	%-----------------------------------------------------
 	%-----------------------------------------------------
 	%-----------------------------------------------------

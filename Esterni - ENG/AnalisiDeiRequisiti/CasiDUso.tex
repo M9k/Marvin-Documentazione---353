@@ -491,6 +491,20 @@
 	\item \textbf{Precondizione:} L'utente ha ottenuto una lista di esami [UC5.3.7 o UC5.3.8] ne ha selezionato uno e vuole associarci un professore; 
 	\item \textbf{Postcondizione:} Il professore selezionato viene associato all'esame e il loro stato aggiornato nel sistema.
 \end{itemize}
+\subsection{UC5.3.12 - Rimozione corso di laurea da anno accademico}
+\begin{itemize}
+	\item \textbf{Attori primari:} Amministratore;
+	\item \textbf{Scopo e descrizione:} L'amministratore rimuove l'associazione tra un corso di laurea e l'anno accademico a lui associato;
+	\item \textbf{Scenario principale:}
+	\begin{enumerate}
+		\item L'utente ottiene una lista degli anni accademici [UC5.2.2];
+		\item L'utente seleziona un anno accademico;
+		\item L'utente rimuove l'associazione;
+	\end{enumerate}
+	\item \textbf{Precondizione:} L'utente vuole rimuovere un corso di laurea da un determinato anno accademico; 
+	\item \textbf{Postcondizione:} L'associazione tra anno accademico e il corso di laurea scelto è stata rimossa dal sistema.
+\end{itemize}
+
 
 \subsection{UC6 - Gestione aspetti relativi agli esami}
 \begin{itemize}

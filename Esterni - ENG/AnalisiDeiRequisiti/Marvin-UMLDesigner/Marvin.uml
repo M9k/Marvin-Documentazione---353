@@ -2,7 +2,7 @@
 <uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_8oaEINO2EeeqiP5Ban4ZWQ" name="Marvin">
   <packagedElement xmi:type="uml:Model" xmi:id="_JV5DYNO3EeeqiP5Ban4ZWQ" name="Casi d'uso">
     <packagedElement xmi:type="uml:Package" xmi:id="_HFVWANO3EeeqiP5Ban4ZWQ" name="UC componenti">
-      <packagedElement xmi:type="uml:Component" xmi:id="_cqvYMNO3EeeqiP5Ban4ZWQ" name="Marvin" useCase="_TyPmoNdeEeezH47GVDuBIg _ml2JkNyCEeeh6Z7P8Wq9Wg">
+      <packagedElement xmi:type="uml:Component" xmi:id="_cqvYMNO3EeeqiP5Ban4ZWQ" name="Marvin" useCase="_TyPmoNdeEeezH47GVDuBIg _ml2JkNyCEeeh6Z7P8Wq9Wg _wASbcN6KEeeoYNTeb3S4ug">
         <eAnnotations xmi:id="_ADfZANO5EeeqiP5Ban4ZWQ"/>
         <ownedUseCase xmi:id="_Re8uUNdeEeezH47GVDuBIg" name="UC1 - Breve guida"/>
         <ownedUseCase xmi:id="_VOoFENdeEeezH47GVDuBIg" name="UC5 - Amministrazione"/>
@@ -12,6 +12,7 @@
         <ownedUseCase xmi:id="_brWQ4NdeEeezH47GVDuBIg" name="UC7 - Gestione aspetti relativi allo studente"/>
         <packagedElement xmi:type="uml:UseCase" xmi:id="_TyPmoNdeEeezH47GVDuBIg" name="UC2 - Login" subject="_cqvYMNO3EeeqiP5Ban4ZWQ"/>
         <packagedElement xmi:type="uml:UseCase" xmi:id="_ml2JkNyCEeeh6Z7P8Wq9Wg" name="UC8 - Gestione degli amministratori" subject="_cqvYMNO3EeeqiP5Ban4ZWQ"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_wASbcN6KEeeoYNTeb3S4ug" name="UC9 - Visualizzazione quantità di Gas, Ether e costo delle operazioni" subject="_cqvYMNO3EeeqiP5Ban4ZWQ"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_buIwkNO4EeeqiP5Ban4ZWQ" memberEnd="_buLM0NO4EeeqiP5Ban4ZWQ _buLM0dO4EeeqiP5Ban4ZWQ">
         <ownedEnd xmi:id="_buLM0NO4EeeqiP5Ban4ZWQ" association="_buIwkNO4EeeqiP5Ban4ZWQ"/>
@@ -88,10 +89,6 @@
         <ownedEnd xmi:id="_vS77gddeEeezH47GVDuBIg" type="_fPiQMNO3EeeqiP5Ban4ZWQ" association="_vS77gNdeEeezH47GVDuBIg"/>
         <ownedEnd xmi:id="_vS77gtdeEeezH47GVDuBIg" association="_vS77gNdeEeezH47GVDuBIg"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_v6sfENdeEeezH47GVDuBIg" memberEnd="_v6sfEddeEeezH47GVDuBIg _v6sfEtdeEeezH47GVDuBIg">
-        <ownedEnd xmi:id="_v6sfEddeEeezH47GVDuBIg" type="_fPiQMNO3EeeqiP5Ban4ZWQ" association="_v6sfENdeEeezH47GVDuBIg"/>
-        <ownedEnd xmi:id="_v6sfEtdeEeezH47GVDuBIg" type="_Re8uUNdeEeezH47GVDuBIg" association="_v6sfENdeEeezH47GVDuBIg"/>
-      </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_wcPF4NdeEeezH47GVDuBIg" memberEnd="_wcPF4ddeEeezH47GVDuBIg _wcPF4tdeEeezH47GVDuBIg">
         <ownedEnd xmi:id="_wcPF4ddeEeezH47GVDuBIg" type="_YOD8ENO4EeeqiP5Ban4ZWQ" association="_wcPF4NdeEeezH47GVDuBIg"/>
         <ownedEnd xmi:id="_wcPF4tdeEeezH47GVDuBIg" type="_TyPmoNdeEeezH47GVDuBIg" association="_wcPF4NdeEeezH47GVDuBIg"/>
@@ -103,6 +100,102 @@
       <packagedElement xmi:type="uml:Association" xmi:id="_5CRuoNdeEeezH47GVDuBIg" memberEnd="_5CRuoddeEeezH47GVDuBIg _5CRuotdeEeezH47GVDuBIg">
         <ownedEnd xmi:id="_5CRuoddeEeezH47GVDuBIg" type="_TyPmoNdeEeezH47GVDuBIg" association="_5CRuoNdeEeezH47GVDuBIg"/>
         <ownedEnd xmi:id="_5CRuotdeEeezH47GVDuBIg" association="_5CRuoNdeEeezH47GVDuBIg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_zZ8e4N6KEeeoYNTeb3S4ug" memberEnd="_zZ8e4d6KEeeoYNTeb3S4ug _zZ9F8N6KEeeoYNTeb3S4ug">
+        <ownedEnd xmi:id="_zZ8e4d6KEeeoYNTeb3S4ug" type="_fPiQMNO3EeeqiP5Ban4ZWQ" association="_zZ8e4N6KEeeoYNTeb3S4ug"/>
+        <ownedEnd xmi:id="_zZ9F8N6KEeeoYNTeb3S4ug" type="_Re8uUNdeEeezH47GVDuBIg" association="_zZ8e4N6KEeeoYNTeb3S4ug"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_1KVecN6KEeeoYNTeb3S4ug" memberEnd="_1KVecd6KEeeoYNTeb3S4ug _1KVect6KEeeoYNTeb3S4ug">
+        <ownedEnd xmi:id="_1KVecd6KEeeoYNTeb3S4ug" type="_fPiQMNO3EeeqiP5Ban4ZWQ" association="_1KVecN6KEeeoYNTeb3S4ug"/>
+        <ownedEnd xmi:id="_1KVect6KEeeoYNTeb3S4ug" type="_wASbcN6KEeeoYNTeb3S4ug" association="_1KVecN6KEeeoYNTeb3S4ug"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_DttoUN6LEeeoYNTeb3S4ug" memberEnd="_DttoUd6LEeeoYNTeb3S4ug _DtuPYN6LEeeoYNTeb3S4ug">
+        <ownedEnd xmi:id="_DttoUd6LEeeoYNTeb3S4ug" type="_wASbcN6KEeeoYNTeb3S4ug" association="_DttoUN6LEeeoYNTeb3S4ug"/>
+        <ownedEnd xmi:id="_DtuPYN6LEeeoYNTeb3S4ug" type="_BxDHUN6LEeeoYNTeb3S4ug" association="_DttoUN6LEeeoYNTeb3S4ug"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_EPitkN6MEeeoYNTeb3S4ug" memberEnd="_EPitkd6MEeeoYNTeb3S4ug _EPitkt6MEeeoYNTeb3S4ug">
+        <ownedEnd xmi:id="_EPitkd6MEeeoYNTeb3S4ug" type="_WdMxANdeEeezH47GVDuBIg" association="_EPitkN6MEeeoYNTeb3S4ug"/>
+        <ownedEnd xmi:id="_EPitkt6MEeeoYNTeb3S4ug" type="_BxDHUN6LEeeoYNTeb3S4ug" association="_EPitkN6MEeeoYNTeb3S4ug"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_GknukN6MEeeoYNTeb3S4ug" memberEnd="_GkoVoN6MEeeoYNTeb3S4ug _GkoVod6MEeeoYNTeb3S4ug">
+        <ownedEnd xmi:id="_GkoVoN6MEeeoYNTeb3S4ug" type="_VqvZUNdeEeezH47GVDuBIg" association="_GknukN6MEeeoYNTeb3S4ug"/>
+        <ownedEnd xmi:id="_GkoVod6MEeeoYNTeb3S4ug" type="_BxDHUN6LEeeoYNTeb3S4ug" association="_GknukN6MEeeoYNTeb3S4ug"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_kUiOQNyCEeeh6Z7P8Wq9Wg" name="Università">
+        <eAnnotations xmi:id="_kVAvYNyCEeeh6Z7P8Wq9Wg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_kVAvYdyCEeeh6Z7P8Wq9Wg" key="Human"/>
+        </eAnnotations>
+        <generalization xmi:id="_wT8mkNyCEeeh6Z7P8Wq9Wg" general="_eOdYQNO4EeeqiP5Ban4ZWQ"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_2V6wENyCEeeh6Z7P8Wq9Wg" name="Professore">
+        <eAnnotations xmi:id="_2V6wEdyCEeeh6Z7P8Wq9Wg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_2V6wEtyCEeeh6Z7P8Wq9Wg" key="Human"/>
+        </eAnnotations>
+        <generalization xmi:id="_KN94kNyDEeeh6Z7P8Wq9Wg" general="_2WwdkNyCEeeh6Z7P8Wq9Wg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_2WewwNyCEeeh6Z7P8Wq9Wg" name="Università">
+        <eAnnotations xmi:id="_2WewwdyCEeeh6Z7P8Wq9Wg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_2WewwtyCEeeh6Z7P8Wq9Wg" key="Human"/>
+        </eAnnotations>
+        <generalization xmi:id="_NP1uINyDEeeh6Z7P8Wq9Wg" general="_2WwdkNyCEeeh6Z7P8Wq9Wg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_2WkQUNyCEeeh6Z7P8Wq9Wg" name="Amministratore">
+        <eAnnotations xmi:id="_2WkQUdyCEeeh6Z7P8Wq9Wg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_2WkQUtyCEeeh6Z7P8Wq9Wg" key="Human"/>
+        </eAnnotations>
+        <generalization xmi:id="_Igcm0NyDEeeh6Z7P8Wq9Wg" general="_2WwdkNyCEeeh6Z7P8Wq9Wg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_2Wn6sNyCEeeh6Z7P8Wq9Wg" name="Utente generico">
+        <eAnnotations xmi:id="_2Wn6sdyCEeeh6Z7P8Wq9Wg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_2Wn6styCEeeh6Z7P8Wq9Wg" key="Human"/>
+        </eAnnotations>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_2WsMINyCEeeh6Z7P8Wq9Wg" name="Utente non autenticato">
+        <eAnnotations xmi:id="_2WsMIdyCEeeh6Z7P8Wq9Wg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_2WsMItyCEeeh6Z7P8Wq9Wg" key="Human"/>
+        </eAnnotations>
+        <generalization xmi:id="_CmYcINyDEeeh6Z7P8Wq9Wg" general="_2Wn6sNyCEeeh6Z7P8Wq9Wg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_2WwdkNyCEeeh6Z7P8Wq9Wg" name="Utente autenticato">
+        <eAnnotations xmi:id="_2WwdkdyCEeeh6Z7P8Wq9Wg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_2WwdktyCEeeh6Z7P8Wq9Wg" key="Human"/>
+        </eAnnotations>
+        <generalization xmi:id="_CJIfcNyDEeeh6Z7P8Wq9Wg" general="_2Wn6sNyCEeeh6Z7P8Wq9Wg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_2Wzg4NyCEeeh6Z7P8Wq9Wg" name="Studente">
+        <eAnnotations xmi:id="_2Wzg4dyCEeeh6Z7P8Wq9Wg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_2Wzg4tyCEeeh6Z7P8Wq9Wg" key="Human"/>
+        </eAnnotations>
+        <generalization xmi:id="_LkDhwNyDEeeh6Z7P8Wq9Wg" general="_2WwdkNyCEeeh6Z7P8Wq9Wg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_iwM4QNyDEeepgZHwvTg7cg" memberEnd="_iwP7kNyDEeepgZHwvTg7cg _iwP7kdyDEeepgZHwvTg7cg">
+        <ownedEnd xmi:id="_iwP7kNyDEeepgZHwvTg7cg" type="_kUiOQNyCEeeh6Z7P8Wq9Wg" association="_iwM4QNyDEeepgZHwvTg7cg"/>
+        <ownedEnd xmi:id="_iwP7kdyDEeepgZHwvTg7cg" type="_ml2JkNyCEeeh6Z7P8Wq9Wg" association="_iwM4QNyDEeepgZHwvTg7cg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_BxDHUN6LEeeoYNTeb3S4ug" name="Metamask">
+        <eAnnotations xmi:id="_BxEVcN6LEeeoYNTeb3S4ug" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_BxE8gN6LEeeoYNTeb3S4ug" key="Human"/>
+        </eAnnotations>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_C0zN4N6MEeeoYNTeb3S4ug" memberEnd="_C0z08N6MEeeoYNTeb3S4ug _C0z08d6MEeeoYNTeb3S4ug">
+        <ownedEnd xmi:id="_C0z08N6MEeeoYNTeb3S4ug" type="_BxDHUN6LEeeoYNTeb3S4ug" association="_C0zN4N6MEeeoYNTeb3S4ug"/>
+        <ownedEnd xmi:id="_C0z08d6MEeeoYNTeb3S4ug" type="_TyPmoNdeEeezH47GVDuBIg" association="_C0zN4N6MEeeoYNTeb3S4ug"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_FbcgAN6MEeeoYNTeb3S4ug" memberEnd="_FbcgAd6MEeeoYNTeb3S4ug _FbcgAt6MEeeoYNTeb3S4ug">
+        <ownedEnd xmi:id="_FbcgAd6MEeeoYNTeb3S4ug" type="_BxDHUN6LEeeoYNTeb3S4ug" association="_FbcgAN6MEeeoYNTeb3S4ug"/>
+        <ownedEnd xmi:id="_FbcgAt6MEeeoYNTeb3S4ug" type="_VOoFENdeEeezH47GVDuBIg" association="_FbcgAN6MEeeoYNTeb3S4ug"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_HGqrsN6MEeeoYNTeb3S4ug" memberEnd="_HGqrsd6MEeeoYNTeb3S4ug _HGrSwN6MEeeoYNTeb3S4ug">
+        <ownedEnd xmi:id="_HGqrsd6MEeeoYNTeb3S4ug" type="_BxDHUN6LEeeoYNTeb3S4ug" association="_HGqrsN6MEeeoYNTeb3S4ug"/>
+        <ownedEnd xmi:id="_HGrSwN6MEeeoYNTeb3S4ug" type="_brWQ4NdeEeezH47GVDuBIg" association="_HGqrsN6MEeeoYNTeb3S4ug"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_H1WWoN6MEeeoYNTeb3S4ug" memberEnd="_H1WWod6MEeeoYNTeb3S4ug _H1WWot6MEeeoYNTeb3S4ug">
+        <ownedEnd xmi:id="_H1WWod6MEeeoYNTeb3S4ug" type="_BxDHUN6LEeeoYNTeb3S4ug" association="_H1WWoN6MEeeoYNTeb3S4ug"/>
+        <ownedEnd xmi:id="_H1WWot6MEeeoYNTeb3S4ug" type="_ml2JkNyCEeeh6Z7P8Wq9Wg" association="_H1WWoN6MEeeoYNTeb3S4ug"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_7AXLwN6MEeeoYNTeb3S4ug" memberEnd="_7AXLwd6MEeeoYNTeb3S4ug _7AXLwt6MEeeoYNTeb3S4ug">
+        <ownedEnd xmi:id="_7AXLwd6MEeeoYNTeb3S4ug" type="_WdMxANdeEeezH47GVDuBIg" association="_7AXLwN6MEeeoYNTeb3S4ug"/>
+        <ownedEnd xmi:id="_7AXLwt6MEeeoYNTeb3S4ug" type="_5oSlkN6MEeeoYNTeb3S4ug" association="_7AXLwN6MEeeoYNTeb3S4ug"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_vQ5WUNdtEeea54gTi5Qyaw" name="UC2 componenti">
@@ -218,56 +311,59 @@
         <ownedEnd xmi:id="_CLoGcdqZEeeqSNzUEDEsQg" type="_TPE10NqYEeeqSNzUEDEsQg" association="_CLnfYNqZEeeqSNzUEDEsQg"/>
       </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:Actor" xmi:id="_kUiOQNyCEeeh6Z7P8Wq9Wg" name="Università">
-      <eAnnotations xmi:id="_kVAvYNyCEeeh6Z7P8Wq9Wg" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <details xmi:id="_kVAvYdyCEeeh6Z7P8Wq9Wg" key="Human"/>
-      </eAnnotations>
-      <generalization xmi:id="_wT8mkNyCEeeh6Z7P8Wq9Wg" general="_eOdYQNO4EeeqiP5Ban4ZWQ"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_ctFagN6MEeeoYNTeb3S4ug" name="UC8">
+      <packagedElement xmi:type="uml:Actor" xmi:id="_hzkzMN6MEeeoYNTeb3S4ug" name="Università">
+        <eAnnotations xmi:id="_hzkzMd6MEeeoYNTeb3S4ug" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_hzkzMt6MEeeoYNTeb3S4ug" key="Human"/>
+        </eAnnotations>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Component" xmi:id="_kw4R0N6MEeeoYNTeb3S4ug" name="UC8 - Gestione degli amministratori" useCase="_wjyCsN6NEeeoYNTeb3S4ug _xfh5QN6NEeeoYNTeb3S4ug _xzNDMN6NEeeoYNTeb3S4ug">
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_wjyCsN6NEeeoYNTeb3S4ug" name="UC8.1 - Aggiunta di un amministratore" subject="_kw4R0N6MEeeoYNTeb3S4ug"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_xfh5QN6NEeeoYNTeb3S4ug" name="UC8.2 - Visualizzazione lista degli amministratori" subject="_kw4R0N6MEeeoYNTeb3S4ug"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_xzNDMN6NEeeoYNTeb3S4ug" name="UC8.3 - Rimozione amministratore" subject="_kw4R0N6MEeeoYNTeb3S4ug"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_5oSlkN6MEeeoYNTeb3S4ug" name="Ufficio Universitario">
+        <eAnnotations xmi:id="_5oSlkd6MEeeoYNTeb3S4ug" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_5oSlkt6MEeeoYNTeb3S4ug" key="Human"/>
+        </eAnnotations>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_JqlIAN6OEeeoYNTeb3S4ug" memberEnd="_JqlIAd6OEeeoYNTeb3S4ug _JqlIAt6OEeeoYNTeb3S4ug">
+        <ownedEnd xmi:id="_JqlIAd6OEeeoYNTeb3S4ug" type="_wjyCsN6NEeeoYNTeb3S4ug" association="_JqlIAN6OEeeoYNTeb3S4ug"/>
+        <ownedEnd xmi:id="_JqlIAt6OEeeoYNTeb3S4ug" type="_hzkzMN6MEeeoYNTeb3S4ug" association="_JqlIAN6OEeeoYNTeb3S4ug"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_KYq9EN6OEeeoYNTeb3S4ug" memberEnd="_KYq9Ed6OEeeoYNTeb3S4ug _KYq9Et6OEeeoYNTeb3S4ug">
+        <ownedEnd xmi:id="_KYq9Ed6OEeeoYNTeb3S4ug" type="_xfh5QN6NEeeoYNTeb3S4ug" association="_KYq9EN6OEeeoYNTeb3S4ug"/>
+        <ownedEnd xmi:id="_KYq9Et6OEeeoYNTeb3S4ug" type="_hzkzMN6MEeeoYNTeb3S4ug" association="_KYq9EN6OEeeoYNTeb3S4ug"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_LHYdMN6OEeeoYNTeb3S4ug" memberEnd="_LHYdMd6OEeeoYNTeb3S4ug _LHZEQN6OEeeoYNTeb3S4ug">
+        <ownedEnd xmi:id="_LHYdMd6OEeeoYNTeb3S4ug" type="_xzNDMN6NEeeoYNTeb3S4ug" association="_LHYdMN6OEeeoYNTeb3S4ug"/>
+        <ownedEnd xmi:id="_LHZEQN6OEeeoYNTeb3S4ug" type="_hzkzMN6MEeeoYNTeb3S4ug" association="_LHYdMN6OEeeoYNTeb3S4ug"/>
+      </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:Actor" xmi:id="_2V6wENyCEeeh6Z7P8Wq9Wg" name="Professore">
-      <eAnnotations xmi:id="_2V6wEdyCEeeh6Z7P8Wq9Wg" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <details xmi:id="_2V6wEtyCEeeh6Z7P8Wq9Wg" key="Human"/>
-      </eAnnotations>
-      <generalization xmi:id="_KN94kNyDEeeh6Z7P8Wq9Wg" general="_2WwdkNyCEeeh6Z7P8Wq9Wg"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Actor" xmi:id="_2WewwNyCEeeh6Z7P8Wq9Wg" name="Università">
-      <eAnnotations xmi:id="_2WewwdyCEeeh6Z7P8Wq9Wg" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <details xmi:id="_2WewwtyCEeeh6Z7P8Wq9Wg" key="Human"/>
-      </eAnnotations>
-      <generalization xmi:id="_NP1uINyDEeeh6Z7P8Wq9Wg" general="_2WwdkNyCEeeh6Z7P8Wq9Wg"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Actor" xmi:id="_2WkQUNyCEeeh6Z7P8Wq9Wg" name="Amministratore">
-      <eAnnotations xmi:id="_2WkQUdyCEeeh6Z7P8Wq9Wg" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <details xmi:id="_2WkQUtyCEeeh6Z7P8Wq9Wg" key="Human"/>
-      </eAnnotations>
-      <generalization xmi:id="_Igcm0NyDEeeh6Z7P8Wq9Wg" general="_2WwdkNyCEeeh6Z7P8Wq9Wg"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Actor" xmi:id="_2Wn6sNyCEeeh6Z7P8Wq9Wg" name="Utente generico">
-      <eAnnotations xmi:id="_2Wn6sdyCEeeh6Z7P8Wq9Wg" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <details xmi:id="_2Wn6styCEeeh6Z7P8Wq9Wg" key="Human"/>
-      </eAnnotations>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Actor" xmi:id="_2WsMINyCEeeh6Z7P8Wq9Wg" name="Utente non autenticato">
-      <eAnnotations xmi:id="_2WsMIdyCEeeh6Z7P8Wq9Wg" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <details xmi:id="_2WsMItyCEeeh6Z7P8Wq9Wg" key="Human"/>
-      </eAnnotations>
-      <generalization xmi:id="_CmYcINyDEeeh6Z7P8Wq9Wg" general="_2Wn6sNyCEeeh6Z7P8Wq9Wg"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Actor" xmi:id="_2WwdkNyCEeeh6Z7P8Wq9Wg" name="Utente autenticato">
-      <eAnnotations xmi:id="_2WwdkdyCEeeh6Z7P8Wq9Wg" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <details xmi:id="_2WwdktyCEeeh6Z7P8Wq9Wg" key="Human"/>
-      </eAnnotations>
-      <generalization xmi:id="_CJIfcNyDEeeh6Z7P8Wq9Wg" general="_2Wn6sNyCEeeh6Z7P8Wq9Wg"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Actor" xmi:id="_2Wzg4NyCEeeh6Z7P8Wq9Wg" name="Studente">
-      <eAnnotations xmi:id="_2Wzg4dyCEeeh6Z7P8Wq9Wg" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <details xmi:id="_2Wzg4tyCEeeh6Z7P8Wq9Wg" key="Human"/>
-      </eAnnotations>
-      <generalization xmi:id="_LkDhwNyDEeeh6Z7P8Wq9Wg" general="_2WwdkNyCEeeh6Z7P8Wq9Wg"/>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_iwM4QNyDEeepgZHwvTg7cg" memberEnd="_iwP7kNyDEeepgZHwvTg7cg _iwP7kdyDEeepgZHwvTg7cg">
-      <ownedEnd xmi:id="_iwP7kNyDEeepgZHwvTg7cg" type="_kUiOQNyCEeeh6Z7P8Wq9Wg" association="_iwM4QNyDEeepgZHwvTg7cg"/>
-      <ownedEnd xmi:id="_iwP7kdyDEeepgZHwvTg7cg" type="_ml2JkNyCEeeh6Z7P8Wq9Wg" association="_iwM4QNyDEeepgZHwvTg7cg"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_ekYTUN6MEeeoYNTeb3S4ug" name="UC8.1">
+      <packagedElement xmi:type="uml:Component" xmi:id="_4rq6YN6OEeeoYNTeb3S4ug" name="UC8.1 - Aggiunta di un amministratore" useCase="_9J8cgN6OEeeoYNTeb3S4ug _-svsAN6OEeeoYNTeb3S4ug __DEhUN6OEeeoYNTeb3S4ug">
+        <nestedClassifier xmi:type="uml:Actor" xmi:id="_7IErYN6OEeeoYNTeb3S4ug" name="Università">
+          <eAnnotations xmi:id="_7IErYd6OEeeoYNTeb3S4ug" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_7IErYt6OEeeoYNTeb3S4ug" key="Human"/>
+          </eAnnotations>
+        </nestedClassifier>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_9J8cgN6OEeeoYNTeb3S4ug" name="UC8.1.1 - Inserimento chiave pubblica" subject="_4rq6YN6OEeeoYNTeb3S4ug"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_-svsAN6OEeeoYNTeb3S4ug" name="UC8.1.2 - Visualizzazione messaggio di errore riguardo a chiave mal formata" subject="_4rq6YN6OEeeoYNTeb3S4ug">
+          <extend xmi:id="_ZiUAQN6PEeeoYNTeb3S4ug" extendedCase="_9J8cgN6OEeeoYNTeb3S4ug"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="__DEhUN6OEeeoYNTeb3S4ug" name="UC8.1.3 - Visualizzazione messaggio di errore riguardo a chiave già registrata" subject="_4rq6YN6OEeeoYNTeb3S4ug">
+          <extend xmi:id="_Y8R7AN6PEeeoYNTeb3S4ug" extendedCase="_9J8cgN6OEeeoYNTeb3S4ug"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Actor" xmi:id="_7cVrMN6OEeeoYNTeb3S4ug" name="Università">
+        <eAnnotations xmi:id="_7cVrMd6OEeeoYNTeb3S4ug" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_7cVrMt6OEeeoYNTeb3S4ug" key="Human"/>
+        </eAnnotations>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_UH60IN6PEeeoYNTeb3S4ug" memberEnd="_UH60Id6PEeeoYNTeb3S4ug _UH7bMN6PEeeoYNTeb3S4ug">
+        <ownedEnd xmi:id="_UH60Id6PEeeoYNTeb3S4ug" type="_9J8cgN6OEeeoYNTeb3S4ug" association="_UH60IN6PEeeoYNTeb3S4ug"/>
+        <ownedEnd xmi:id="_UH7bMN6PEeeoYNTeb3S4ug" type="_7cVrMN6OEeeoYNTeb3S4ug" association="_UH60IN6PEeeoYNTeb3S4ug"/>
+      </packagedElement>
     </packagedElement>
   </packagedElement>
 </uml:Model>

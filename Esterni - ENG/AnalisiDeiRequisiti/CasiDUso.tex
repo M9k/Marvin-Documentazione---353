@@ -22,6 +22,9 @@
 	\item \textbf{Utente autenticato}\\
 	 Ci si riferisce ad un utente generico con chiave valida ed autenticato nel sistema tramite la procedura di login.\\
 	
+	\item \textbf{Utente in attesa di abilitazione} \\
+	Ci si riferisce ad un utente in attesa di abilitazione quando l'utente ha passato la fase di registrazione ma non è ancora stato abilitato ai servizi dal personale amministrativo.
+	
 	\item \textbf{Amministratore}\\
 	Ci si riferisce ad un utente autenticato nel sistema nel ruolo di amministratore, ha i permessi per gestire i professori.\\
 	
@@ -142,6 +145,14 @@
 	\item \textbf{Scenario principale:} L'utente viene informato che la sua chiave non risulta registrata, suggerendone la registrazione;\\
 	\item \textbf{Precondizione:} L'utente richiede il login utilizzando una chiave non registrata;\\
 	\item \textbf{Postcondizione:} L'utente è consapevole di dover effettuare la registrazione per accedere al sistema.\\
+\end{itemize}
+\subsection{UC2.5 - Visualizzazione schermata informativa account non abilitato}
+\begin{itemize}
+	\item \textbf{Attori primari:} Utente in attesa di abilitazione;
+	\item \textbf{Scopo e descrizione:} L'utente viene informato che la sua chiave non è ancora stata abilitata all'uso dei servizi;
+	\item \textbf{Scenario principale:} Il sistema mostra una schermata informativa per avvisare l'utente che il suo account è in attesa di essere approvato	;
+	\item \textbf{Precondizione:} L'utente tenta di accedere al sistema senza che il suo account sia stato abilitato; 
+	\item \textbf{Postcondizione:} L'utente è consapevole di aspettare l'abilitazione del suo account per accedere al sistema.
 \end{itemize}
 %TODO Grafico UC3
 \subsection{UC3 - Registrazione}

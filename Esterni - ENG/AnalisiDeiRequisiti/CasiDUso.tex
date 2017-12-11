@@ -91,6 +91,7 @@
 \subsection{UC2 - Login}
 \begin{itemize}
 	\item \textbf{Attori primari} Utente non autenticato;\\
+	\item \textbf{Attori secondari:} Metamask;
 	\item \textbf{Scopo e descrizione:} L'utente richiede il login al sistema attraverso il plugin MetaMask;\\
 	\item \textbf{Scenario principale:} L'utente non ancora riconosciuto dal sistema effettua il login;\\
 	\item \textbf{Precondizione:} L'utente non è stato riconosciuto dal sistema;\\
@@ -156,7 +157,8 @@
 \subsection{UC3 - Registrazione}
 \begin{itemize}
 	\item \textbf{Attori primari:} Utente non autenticato;\\
-	\item \textbf{Scopo e descrizione:} L'utente compila i campi richiesti per registrarsi nel sistema;\\
+	\item \textbf{Attori secondari:} Metamask, Ufficio Universitario;
+	\item \textbf{Scopo e descrizione:} L'utente non autenticato compila i campi richiesti per registrarsi nel sistema, successivamente si dovrà presentare all'ufficio universitario con i documenti per l'identificazione;\\
 	\item \textbf{Scenario principale:}
 	\begin{enumerate}
 		\item L'utente inserisce il suo nome[UC3.1];
@@ -223,7 +225,6 @@
 \subsection{UC4 - Logout}
 \begin{itemize}
 	\item \textbf{Attori primari:} Utente Autenticato;
-	\item \textbf{Attori secondari:} Metamask;
 	\item \textbf{Scopo e descrizione:} L'utente effettua il logout dal sistema tramite il plugin Metamask;
 	\item \textbf{Scenario principale:} L'utente autenticato richiede il logout dal sistema;
 	\item \textbf{Precondizione:} L'utente è autenticato e vuole effettuare il logout;
@@ -232,6 +233,7 @@
 \subsection{UC5 - Amministrazione}
 \begin{itemize}
 	\item \textbf{Attori primari:} Amministratore;
+	\item \textbf{Attori secondari:} Metamask;
 	\item \textbf{Scopo e descrizione:} L'amministratore è nella sua area personale e ottiene una lista di azioni da compiere;
 	\item \textbf{Scenario principale:} L'utente visualizza le azioni che può compiere e ne sceglie una; 
 	\item \textbf{Precondizione:} L'utente è riconosciuto dal sistema come amministratore e vuole eseguire delle operazioni; 
@@ -492,6 +494,7 @@
 \subsection{UC7 - Gestione aspetti relativi allo studente}
 \begin{itemize}
 	\item \textbf{Attori primari:} Studente;\\
+	\item \textbf{Attori secondari:} Metamask;
 	\item \textbf{Scopo e descrizione:} L'utente è già riconosciuto dal sistema come studente e sceglie di utilizzare una funzionalità messa a sua disposizione da parte del sistema;\\
 	\item \textbf{Precondizione:} Lo studente già riconosciuto dal sistema desidera effettuare delle operazioni relative alla scelta di esami opzionali o alla visione delle valutazioni;\\
 	\item \textbf{Postcondizione:} Lo studente ha visualizzato le operazioni messe a disposizione dal sistema e sceglie quale effettuare.\\
@@ -582,10 +585,19 @@
 \subsection{UC8 - Gestione degli amministratori}
 \begin{itemize}
 	\item \textbf{Attori primari:} Università;\\
+	\item \textbf{Attori secondari:} Metamask;
 	\item \textbf{Scopo e descrizione:} L'utente è già riconosciuto dal sistema come rappresentante dell'università e sceglie di utilizzare una funzionalità messa a sua disposizione da parte del sistema;\\
 	\item \textbf{Precondizione:} L'utente che rappresenta l'università già riconosciuto dal sistema desidera effettuare delle operazioni relative alla aggiunta o alla rimozione di amministratori;\\
 	\item \textbf{Postcondizione:} L'utente che rappresenta l'università ha visualizzato le operazioni messe a disposizione dal sistema e sceglie quale effettuare.\\
 \end{itemize}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\linewidth]{UC8.jpg}
+	\caption{UC8 - Gestione degli amministratori}
+	\label{fig:UC8 - Gestione degli amministratori}
+\end{figure}
+
 \subsection{UC8.1 - Aggiunta di un amministratore}
 \begin{itemize}
 	\item \textbf{Attori primari:} Università;\\
@@ -593,6 +605,14 @@
 	\item \textbf{Precondizione:} L'utente che rappresenta l'università ha scelto di aggiungere un nuovo amministratore; 
 	\item \textbf{Postcondizione:} Il nuovo amministratore è stato inserito nel sistema.
 \end{itemize}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\linewidth]{UC8_1.jpg}
+	\caption{UC8.1 - Aggiunta di un amministratore}
+	\label{fig:UC8.1 - Aggiunta di un amministratore}
+\end{figure}
+
 \subsection{UC8.1.1 - Inserimento chiave pubblica}
 \begin{itemize}
 	\item \textbf{Attori primari:} Università;\\
@@ -646,8 +666,11 @@
 
 \subsection{UC9 - Visualizzazione quantità di Gas, Ether e costo delle operazioni}
 \begin{itemize}
-	%TODO
-	\item TODO
+	\item \textbf{Attori primari:} Utente generico;\\
+	\item \textbf{Attori secondari:} MetaMask;\\
+	\item \textbf{Scopo e descrizione:} L'utente generico può vedere quanto Gas, Ether ed euro andrà ad utilizzare per svolgere determinate azioni;\\
+	\item \textbf{Precondizione:} L'utente generico desidera e richiede al sistema i costi delle operazioni;\\
+	\item \textbf{Postcondizione:} Il sistema fornisce all'utente generico le informazioni da lui richieste e l'utente generico acquisisce l'informazione.\\
 \end{itemize}
 
 \end{document}

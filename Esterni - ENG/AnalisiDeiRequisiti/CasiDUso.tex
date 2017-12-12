@@ -153,7 +153,6 @@
 	\item \textbf{Precondizione:} L'utente tenta di accedere al sistema senza che il suo account sia stato abilitato; 
 	\item \textbf{Postcondizione:} L'utente è consapevole di aspettare l'abilitazione del suo account per accedere al sistema.
 \end{itemize}
-%TODO Grafico UC3
 \subsection{UC3 - Registrazione}
 \begin{itemize}
 	\item \textbf{Attori primari:} Utente non autenticato;\\
@@ -174,6 +173,15 @@
 	\item \textbf{Precondizione:} L'utente è entrato nel sistema e ha scelto di registrarsi;\\
 	\item \textbf{Postcondizione:} La registrazione è andata a buon fine e la chiave dell'utente è stata salvata nel sistema.\\
 \end{itemize}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\linewidth]{UC3.jpg}
+	\caption{UC3 - Registrazione}
+	\label{fig:UC3 - Registrazione}
+\end{figure}
+
+
 \subsection{UC3.1 - Inserimento nome}
 \begin{itemize}
 	\item \textbf{Attori Primari:} Utente non autenticato;
@@ -230,6 +238,7 @@
 	\item \textbf{Precondizione:} L'utente è autenticato e vuole effettuare il logout;
 	\item \textbf{Postcondizione:} L'utente non è più riconosciuto dal sistema.
 \end{itemize}
+
 \subsection{UC5 - Amministrazione}
 \begin{itemize}
 	\item \textbf{Attori primari:} Amministratore;
@@ -239,6 +248,14 @@
 	\item \textbf{Precondizione:} L'utente è riconosciuto dal sistema come amministratore e vuole eseguire delle operazioni; 
 	\item \textbf{Postcondizione:} L'utente è a conoscenza delle azioni che può eseguire e ne ha scelta una.
 \end{itemize}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\linewidth]{UC5.jpg}
+	\caption{UC5 - Amministrazione}
+	\label{fig:UC5 - Amministrazione}
+\end{figure}
+
 \subsection{UC5.1 - Gestione Utenti}
 \begin{itemize}
 	\item \textbf{Attori primari:} Amministratore;
@@ -247,6 +264,14 @@
 	\item \textbf{Precondizione:} L'utente ha scelto di gestire gli studenti; 
 	\item \textbf{Postcondizione:}L'utente è a conoscenza delle operazioni che può eseguire sugli studenti e decide di effettuarne una.
 \end{itemize}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\linewidth]{UC5_1.jpg}
+	\caption{UC5.1 - Gestione Utenti}
+	\label{fig:UC5.1 - Gestione Utenti}
+\end{figure}
+
 \subsection{UC5.1.1 - Visualizzazione lista di studenti}
 \begin{itemize}
 	\item \textbf{Attori primari:} Amministratore;
@@ -303,6 +328,14 @@
 	\item \textbf{Precondizione:} L'utente ha scelto di gestire gli anni accademeici; 
 	\item \textbf{Postcondizione:} L'utente è a conoscenza delle possibili operazioni da eseguire sugli anni accademici e ne ha scelta una.
 \end{itemize}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\linewidth]{UC5_2.jpg}
+	\caption{UC5.2 - Gestione Anni Accademici}
+	\label{fig:UC5.2 - Gestione Anni Accademici}
+\end{figure}
+
 \subsection{UC5.2.1 - Aggiunta Anno Accademico}
 \begin{itemize}
 	\item \textbf{Attori primari:} Amministratore;
@@ -370,6 +403,14 @@
 	\item \textbf{Precondizione:} L'utente ha scelto di gestire i corsi di laurea; 
 	\item \textbf{Postcondizione:} L'utente è a conoscenza delle possibili operazioni da eseguire sui corsi di laurea e ne ha scelta una.
 \end{itemize}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\linewidth]{UC5_3.jpg}
+	\caption{UC5.3 - Gestione Corsi di laurea}
+	\label{fig:UC5.3 - Gestione Corsi di laurea}
+\end{figure}
+
 \subsection{UC5.3.1 - Creazione corso di laurea}
 \begin{itemize}
 	\item \textbf{Attori primari:} Amministratore;

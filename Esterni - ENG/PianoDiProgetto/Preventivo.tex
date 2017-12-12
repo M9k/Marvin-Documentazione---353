@@ -1,7 +1,7 @@
 \documentclass[PianoDiProgetto.tex]{subfiles}
 
 \begin{document}
-\chapter{Preventivo iniziale}
+\chapter{Suddivisione risorse e preventivo}
 \section{Analisi}
 \subsection{Prospetto Orario}
 Nel periodo di Analisi la distribuzione oraria è la seguente:
@@ -72,10 +72,8 @@ Il seguente grafico dà una rappresentazione visiva della distribuzione dei ruol
 \end{figure} 
 \clearpage
 \section{Consolidamento dei requisiti}
-
 \subsection{Prospetto Orario}
-Nel periodo di Consolidamento dei requisiti la distribuzione oraria è la
-seguente:
+Nel periodo di Consolidamento dei requisiti la distribuzione oraria è la seguente:
 \begin{center}
 
 \begin{table}[htbp]
@@ -106,6 +104,7 @@ seguente:
 Il seguente grafico dà una rappresentazione visiva della suddivisione oraria:
 
 \begin{figure}[h]
+	\centering
 	\includegraphics[width=14.5cm]{images/prospettoOrario/consolidamento.png}
 	\label{fig:foo}
 	\caption{Grafico suddivisione oraria del periodo di Consolidamento dei requisiti}
@@ -140,9 +139,10 @@ Nel periodo di Analisi la distribuzione delle ore tra i differenti ruoli è la s
 \end{center}
 Il seguente grafico dà una rappresentazione visiva della distribuzione dei ruoli:
 \begin{figure}[h]
-\includegraphics[width=12.5cm]{images/prospettoEconomico/consolidamento.png}
-\label{fig:foo}
-\caption{Grafico suddivisione dei ruoli del periodo di Consolidamento dei requisiti}
+	\centering
+	\includegraphics[width=12.5cm]{images/prospettoEconomico/consolidamento.png}
+	\label{fig:foo}
+	\caption{Grafico suddivisione dei ruoli del periodo di Consolidamento dei requisiti}
 \end{figure} 
 \clearpage
 \section{Progettazione architetturale}
@@ -175,6 +175,7 @@ Nel periodo di Progettazione architetturale la distribuzione oraria è la seguen
 \end{center}
 Il seguente grafico dà una rappresentazione visiva della suddivisione oraria:
 \begin{figure}[h]
+	\centering
 	\includegraphics[width=12.5cm]{images/prospettoOrario/progArch.png}
 	\label{fig:foo}
 	\caption{Grafico suddivisione oraria del periodo di Progettazione architetturale}
@@ -209,9 +210,10 @@ Nel periodo di Progettazione architetturale la distribuzione delle ore tra i dif
 \end{center}
 Il seguente grafico dà una rappresentazione visiva della distribuzione dei ruoli:
 \begin{figure}[h]
-	\includegraphics[width=12.5cm]{images/prospettoEconomico/progArch.png}
+	\centering
+	\includegraphics[width=11cm]{images/prospettoEconomico/progArch.png}
 	\label{fig:foo}
-	\caption{Grafico suddivisione oraria del periodo di Progettazione architetturale}
+	\caption{Grafico suddivisione dei ruoli del periodo di Progettazione architetturale}
 \end{figure} 
 \newpage
 \section{Progettazione di dettaglio e codifica}
@@ -244,6 +246,7 @@ Nel periodo di Progettazione di dettaglio e codifica la distribuzione oraria è 
 \end{center}
 Il seguente grafico dà una rappresentazione visiva della suddivisione oraria:
 \begin{figure}[h]
+	\centering
 	\includegraphics[width=10.5cm]{images/prospettoOrario/progCod.png}
 	\label{fig:foo}
 	\caption{Grafico suddivisione oraria del periodo di Progettazione di dettaglio e codifica}
@@ -277,6 +280,7 @@ Nel periodo di Progettazione di dettaglio e codifica la distribuzione delle ore 
 \end{center}
 Il seguente grafico dà una rappresentazione visiva della distribuzione dei ruoli:
 \begin{figure}[h]
+	\centering
 	\includegraphics[width=12.5cm]{images/prospettoEconomico/progCod.png}
 	\label{fig:foo}
 	\caption{Grafico suddivisione dei ruoli del periodo di Progettazione di dettaglio e codifica}
@@ -313,13 +317,15 @@ Nel periodo di Validazione e collaudo la distribuzione oraria è la seguente:
 \end{center}
 Il seguente grafico dà una rappresentazione visiva della suddivisione oraria:
 \begin{figure}[h]
+	\centering
 	\includegraphics[width=10.5cm]{images/prospettoOrario/valCol.png}
 	\label{fig:foo}
 	\caption{Grafico suddivisione oraria del periodo di Validazione e collaudo}
 \end{figure} 
 \newpage
 \subsection{Prospetto Economico}
-Nel periodo di Validazione e collaudo la distribuzione delle ore tra i differenti ruoli è la seguente:\begin{center}
+Nel periodo di Validazione e collaudo la distribuzione delle ore tra i differenti ruoli è la seguente:
+\begin{center}
 	\begin{table}[htbp]
 		\centering
 		\renewcommand\arraystretch{1.5}
@@ -346,14 +352,86 @@ Nel periodo di Validazione e collaudo la distribuzione delle ore tra i different
 \end{center}
 Il seguente grafico dà una rappresentazione visiva della distribuzione dei ruoli:
 \begin{figure}[h]
+	\centering
 	\includegraphics[width=12.5cm]{images/prospettoEconomico/valCol.png}
 	\label{fig:foo}
 	\caption{Grafico suddivisione dei ruoli del periodo di Validazione e collaudo}
 \end{figure} 
 \clearpage
-\section{Totale}
+\section{Totale ore rendicontate}
+\subsection{Totale suddivisione ore rendicontate}
+Di seguito sono riportate il totale delle sole ore rendicontate nel preventivo a carico del committente:
+\begin{center}
+	\begin{table}[htbp]
+		\centering
+		\renewcommand\arraystretch{1.5}
+		\begin{tabularx}{\textwidth}{p{4cm}|p{1cm}|p{1cm}|p{1cm}|p{1cm}|p{1cm}|p{1cm}|p{2cm}}
+			\hline
+			\textbf{Nome} & \textbf{Re} & \textbf{Ad} & \textbf{An} & \textbf{Pj} & \textbf{Pr} & \textbf{Ve} & \textbf{Totale} \\
+			\hline
+			\Davide & 4 & 13 & 10 & 18 & 15 & 42 & \textbf{102} \\
+			\hline
+			\Elena & \ & 8 & \ & 35 & 26 & 33 & \textbf{102} \\
+			\hline
+			\Gianluca & 4 & 5 & \ & 48 & 12 & 33 & \textbf{102} \\
+			\hline
+			\Mirco & 10 & 6 & \ & 39 & 27 & 20 & \textbf{102} \\
+			\hline
+			\Parwinder & 6 & 7 & \ & 25 & 32 & 32 & \textbf{102} \\
+			\hline
+			\Riccardo & 8 & 5 & \ & 53 & 19 & 17 & \textbf{102} \\
+			\hline
+			\Valentina & 2 & 12 & 10 & 46 & 24 & 8 & \textbf{102} \\
+			\hline
+		\end{tabularx}
+	\end{table}
+\end{center}
+Il seguente grafico dà una rappresentazione visiva della suddivisione oraria:\\
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=10.5cm]{images/prospettoOrario/totRen.png}
+	\label{fig:foo}
+	\caption{Grafico suddivisione oraria totale delle ore rendicontate}
+\end{figure} 
+\clearpage
+\subsection{Totale del prospetto economico rendicontato}
+Di seguite è riportato il totale delle ore dei diversi ruoli del progetto contando solo le ore rendicontate nel preventivo a carico del committente cioè dei periodi di Progettazione architetturale, Progettazione di dettaglio e codifica e il periodo di Validazione e collaudo:
+\begin{center}
+	\begin{table}[htbp]
+		\centering
+		\renewcommand\arraystretch{1.5}
+		\begin{tabularx}{\textwidth}{p{5cm}|p{4cm}|p{4cm}}
+			\hline
+			\textbf{Ruolo} & \textbf{Ore} & \textbf{Costo in \euro} \\
+			\hline
+			Responsabile & 34 & 1.020,00 \\
+			\hline
+			Amministratore & 56 & 1.120,00 \\
+			\hline
+			Analista & 20 & 500,00 \\
+			\hline
+			Progettista & 264 & 5.808,00 \\
+			\hline
+			Programmatore & 155 & 2.325,00 \\
+			\hline
+			Verificatore & 185 & 2.775,00 \\
+			\hline
+			\textbf{Totale} & \textbf{910} & \textbf{13.548,00}\\
+			\hline
+		\end{tabularx}
+	\end{table} 
+\end{center}
+Il seguente grafico dà una rappresentazione visiva della distribuzione dei ruoli:
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=10.5cm]{images/prospettoEconomico/totRen.png}
+	\label{fig:foo}
+	\caption{Grafico suddivisione dei ruoli totale delle ore rendicontate}
+\end{figure} 
+\clearpage
+\section{Totale ore con investimento}
 \subsection{Totale suddivisione ore con investimento}
-Di seguito sono riportate il totale delle ore del progetto contando le ore di investimento e delle ore rendicontate a carico del committente:
+Di seguito sono riportate il totale delle ore del progetto contando le ore di investimento e delle ore rendicontate nel preventivo a carico del committente:
 \begin{center}
 \begin{table}[htbp]
 	\centering
@@ -379,17 +457,49 @@ Di seguito sono riportate il totale delle ore del progetto contando le ore di in
 	\end{tabularx}
 \end{table}
 \end{center}
-Il seguente grafico dà una rappresentazione visiva della suddivisione oraria:\\
+Il seguente grafico dà una rappresentazione visiva della suddivisione oraria:
 \begin{figure}[h]
+	\centering
 	\includegraphics[width=10.5cm]{images/prospettoOrario/totale.png}
 	\label{fig:foo}
 	\caption{Grafico suddivisione oraria totale delle ore di investimento e rendicontate}
 \end{figure} 
-\newpage
-\subsection{Totale ore con investimento}
-\subsection{Totale suddivisione ore rendicontate}
-\subsection{Totale ore rendicontate}
-
+\clearpage
+\subsection{Totale del prospetto economico con investimento}
+Di seguito è riportato il totale delle ore dei diversi ruoli del progetto contando le ore di investimento e delle ore rendicontate nel preventivo a carico del committente:
+\begin{center}
+	\begin{table}[htbp]
+		\centering
+		\renewcommand\arraystretch{1.5}
+		\begin{tabularx}{\textwidth}{p{5cm}|p{4cm}|p{4cm}}
+			\hline
+			\textbf{Ruolo} & \textbf{Ore} & \textbf{Costo in \euro} \\
+			\hline
+			Responsabile & 62 & 1.860,00 \\
+			\hline
+			Amministratore & 81 & 1.620,00 \\
+			\hline
+			Analista & 121 & 3.025 \\
+			\hline
+			Progettista & 264 & 5.808,00 \\
+			\hline
+			Programmatore & 155 & 2.325,00 \\
+			\hline
+			Verificatore & 227 & 3.405,00 \\
+			\hline
+			\textbf{Totale} & \textbf{910} & \textbf{18.043,00}\\
+			\hline
+		\end{tabularx}
+	\end{table} 
+\end{center}
+Il seguente grafico dà una rappresentazione visiva della distribuzione dei ruoli:
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=10.5cm]{images/prospettoEconomico/totInv.png}
+	\label{fig:foo}
+	\caption{Grafico suddivisione totale dei ruoli delle ore di investimento e rendicontate}
+\end{figure} 
+\clearpage
 \section{Conclusione}
 
 \end{document}

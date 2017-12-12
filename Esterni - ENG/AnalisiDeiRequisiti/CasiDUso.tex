@@ -165,11 +165,6 @@
 		\item L'utente seleziona la sua categoria [UC3.3]
 		\item L'utente seleziona il corso desiderato [UC3.4]
 	\end{enumerate}
-	\item \textbf{Estensioni:}
-	\begin{enumerate}
-		\item Se l'utente non compila uno dei campi viene mostrato un messaggio che suggerisce la compilazione del campo mancante [UC3.5]
-		\item Se l'utente ha una chiave pubblica già registrata  all'interno del sistema gli viene impedita la registrazione [UC3.6]
-	\end{enumerate}
 	\item \textbf{Precondizione:} L'utente è entrato nel sistema e ha scelto di registrarsi;\\
 	\item \textbf{Postcondizione:} La registrazione è andata a buon fine e la chiave dell'utente è stata salvata nel sistema.\\
 \end{itemize}
@@ -187,15 +182,26 @@
 	\item \textbf{Attori Primari:} Utente non autenticato;
 	\item \textbf{Scopo e Descrizione} Il sistema offre l'interfaccia per inserire il nome dell'utente;
 	\item \textbf{Scenario principale:} L'utente fornisce tramite un dispositivo di input il suo nome;
-	\item \textbf{Precondizione:} Il sistema offre un campo per la compilazione del nome e rimane in attesa dell'input;
-	\item \textbf{Postcondizione:} L'utente ha inserito nome nel campo fornito dal sistema;
+	\item \textbf{Estensioni:}
+		\begin{enumerate}
+			\item Se l'utente non ha un chiave viene avvisato tramite un messaggio d'errore. [UC3.7]
+			\item Se l'utente non ha una chiave dal formato non corretto viene avvisato tramite messaggio d'errore; [UC3.8]
+			\item Se la chiave fornita dall'utente è già presente nel sistema l'utente viene avvisato tramite un messaggio d'errore; [UC3.6]
+			\item Se l'utente non compila il campo viene avvisato con un messaggio d'errore; [UC3.5]
+		\end{enumerate}
+	\item \textbf{Precondizione:} L'utente vuole inserire il proprio nome e far controllare che la chiave da lui fornita sia presente e valida;
+	\item \textbf{Postcondizione:} L'utente ha inserito il proprio nome nel campo fornito dal sistema e controllato la validità della sua chiave;
 \end{itemize}	
 \subsection{UC3.2 - Inserimento cognome}
 \begin{itemize}
 	\item \textbf{Attori Primari:} Utente non autenticato;
 	\item \textbf{Scopo e Descrizione} Il sistema offre l'interfaccia per inserire il cognome dell'utente;
 	\item \textbf{Scenario principale:} L'utente fornisce tramite un dispositivo di input il suo cognome;
-	\item \textbf{Precondizione:} Il sistema offre un campo per la compilazione del cognome e rimane in attesa dell'input.;
+	\item \textbf{Estensioni:}
+		\begin{enumerate}
+				\item Se l'utente non compila il campo viene avvisato dal sistema; [UC3.5]
+		\end{enumerate}		
+	\item \textbf{Precondizione:} L'utente vuole inserire il proprio cognome;
 	\item \textbf{Postcondizione:} L'utente ha inserito il suo cognome nel campo fornito dal sistema;
 \end{itemize}
 \subsection{UC3.3 - Selezione categoria}
@@ -203,8 +209,8 @@
 	\item \textbf{Attori Primari:} Utente non autenticato;
 	\item \textbf{Scopo e Descrizione} Il sistema offre l'interfaccia per selezionare la categoria di registrazione (studente o professore);
 	\item \textbf{Scenario principale:} L'utente seleziona tramite un dispositivo di input la sua categoria;
-	\item \textbf{Precondizione:} Il sistema offre un campo per la selezione della categoria e rimane in attesa dell'input;
-	\item \textbf{Postcondizione:} L'utente ha selezionato la sua categoria nel campo fornito dal sistema;
+	\item \textbf{Precondizione:} L'utente vuole inserire la sua categoria di registrazione;
+	\item \textbf{Postcondizione:} L'utente ha selezionato la sua categoria nel campo fornito dal sistema, se la categoria scelta è quella del professore l'utente terminal la procedura di registrazione;
 \end{itemize}
 \subsection{UC3.4 - Selezione corso}
 \begin{itemize}
@@ -212,15 +218,15 @@
 	\item \textbf{Scopo e Descrizione} Il sistema offre l'interfaccia per selezionare il corso di laurea desiderato;
 	\item \textbf{Scenario principale:} L'utente seleziona tramite un dispositivo di input il corso di laurea scelto;
 	\item \textbf{Precondizione:} L'utente ha selezionato la registrazione come studente, il sistema offre un campo per la selezione del corso di laurea e rimane in attesa dell'input;
-	\item \textbf{Postcondizione:} L'utente ha selezionato il suo corso di laurea nel campo fornito dal sistema;
+	\item \textbf{Postcondizione:} L'utente ha selezionato il suo corso di laurea nel campo fornito dal sistema e termina la procedura di registrazione;
 \end{itemize}
 \subsection{UC3.5 - Visualizzazione errore campo non compilato}
 \begin{itemize}
 	\item \textbf{Attori Primari:} Utente non autenticato;
-	\item \textbf{Scopo e Descrizione} Il sistema avvisa l'utente che non ha compilato tutti i campi necessari per la registrazione al sistema;
-	\item \textbf{Scenario principale:} Il sistema mostra un messaggio d'errore all'utente che indica di compilare i campi mancanti;
-	\item \textbf{Precondizione:} L'utente tenta di registrarsi senza compilare tutti i campi;
-	\item \textbf{Postcondizione:} L'utente è consapevole di non aver compilato tutti i campi;
+	\item \textbf{Scopo e Descrizione} Il sistema avvisa l'utente che non ha compilato il campo selezionato;
+	\item \textbf{Scenario principale:} Il sistema mostra un messaggio d'errore all'utente che indica la mancata compilazione del campo selezionato;
+	\item \textbf{Precondizione:} L'utente non compila il campo selezionato;
+	\item \textbf{Postcondizione:} L'utente è consapevole di non aver compilato il campo selezionato;
 \end{itemize}
 \subsection{UC3.6 - Visualizzazione errore utente già registrato}
 \begin{itemize}
@@ -229,6 +235,22 @@
 	\item \textbf{Scenario principale:} Il sistema mostra un messaggio d'errore all'utente che indica che sta tentando di effettuare una registrazione utilizzando una chiave già presente nell'università;
 	\item \textbf{Precondizione:} L'utente tenta di registrarsi utilizzando una chiave già registrata;
 	\item \textbf{Postcondizione:} L'utente è consapevole di star utilizzando una chiave che corrisponde ad un account precedentemente registrato nel sistema;
+\end{itemize}
+\subsection{UC3.7 - Visualizzazione errore chiave non presente}
+\begin{itemize}
+	\item \textbf{Attori Primari:} Utente non autenticato;
+	\item \textbf{Scopo e Descrizione} Il sistema avvisa l'utente che non ha fornito una chiave e quindi non può procedere alla registrazione;
+	\item \textbf{Scenario principale:} Il sistema mostra un messaggio d'errore all'utente indicandogli l'assenza della chiave;
+	\item \textbf{Precondizione:} L'utente tenta di registrarsi senza fornire una chiave;
+	\item \textbf{Postcondizione:} L'utente è consapevole di non possedere una chiave;
+\end{itemize}
+\subsection{UC3.8 - Visualizzazione errore chiave malformata}
+\begin{itemize}
+	\item \textbf{Attori Primari:} Utente non autenticato;
+	\item \textbf{Scopo e Descrizione} Il sistema avvisa l'utente che ha fornito una chiave malformata e quindi non può procedere alla registrazione;
+	\item \textbf{Scenario principale:} Il sistema mostra un messaggio d'errore all'utente indicandogli che la sua chiave è malformata;
+	\item \textbf{Precondizione:} L'utente tenta di registrarsi fornendo una chiave malformata;
+	\item \textbf{Postcondizione:} L'utente è consapevole di possedere una chiave malformata;
 \end{itemize}
 \subsection{UC4 - Logout}
 \begin{itemize}

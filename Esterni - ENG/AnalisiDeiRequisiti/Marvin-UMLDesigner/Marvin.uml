@@ -314,7 +314,7 @@
         <ownedUseCase xmi:id="_x4bZRtdtEeea54gTi5Qyaw" name="UC3 Registrazione"/>
         <ownedUseCase xmi:id="_x4bZR9dtEeea54gTi5Qyaw" name="UC7 Gestione aspetti relativi allo studente"/>
         <packagedElement xmi:type="uml:UseCase" xmi:id="_x4bZSNdtEeea54gTi5Qyaw" name="UC2 Login" subject="_x4bZQNdtEeea54gTi5Qyaw"/>
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_2OKqcNdtEeea54gTi5Qyaw" name="UC2.1 - Login automatico" subject="_x4bZQNdtEeea54gTi5Qyaw"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_2OKqcNdtEeea54gTi5Qyaw" name="UC2.1 - Login automatico&#xD;&#xA;-------------------------------&#xD;&#xA;Extension points:&#xD;&#xA;-Errore chiave non registrata&#xD;&#xA;-Errore chiave malformata&#xD;&#xA;-Errore chiave assente" subject="_x4bZQNdtEeea54gTi5Qyaw"/>
         <packagedElement xmi:type="uml:UseCase" xmi:id="_3KvncNdtEeea54gTi5Qyaw" name="UC2.2 - Visualizzazione messaggio di errore riguardo a chiave assente" subject="_x4bZQNdtEeea54gTi5Qyaw">
           <extend xmi:id="__JV1sNdtEeea54gTi5Qyaw" extendedCase="_2OKqcNdtEeea54gTi5Qyaw"/>
         </packagedElement>
@@ -453,7 +453,11 @@
             <details xmi:id="_7IErYt6OEeeoYNTeb3S4ug" key="Human"/>
           </eAnnotations>
         </nestedClassifier>
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_9J8cgN6OEeeoYNTeb3S4ug" name="UC8.1.1 - Inserimento chiave pubblica" subject="_4rq6YN6OEeeoYNTeb3S4ug"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_9J8cgN6OEeeoYNTeb3S4ug" name="UC8.1.1 - Inserimento chiave pubblica&#xD;&#xA;-------------------------------&#xD;&#xA;Extension points:&#xD;&#xA;-Errore chiave malformata&#xD;&#xA;-Errore registrazione&#xD;&#xA;chiave già presente" subject="_4rq6YN6OEeeoYNTeb3S4ug">
+          <ownedComment xmi:id="_ngpkUN9IEeeasfLQQqBTMg" annotatedElement="_9J8cgN6OEeeoYNTeb3S4ug">
+            <body></body>
+          </ownedComment>
+        </packagedElement>
         <packagedElement xmi:type="uml:UseCase" xmi:id="_-svsAN6OEeeoYNTeb3S4ug" name="UC8.1.2 - Visualizzazione messaggio di errore riguardo a chiave mal formata" subject="_4rq6YN6OEeeoYNTeb3S4ug">
           <extend xmi:id="_ZiUAQN6PEeeoYNTeb3S4ug" extendedCase="_9J8cgN6OEeeoYNTeb3S4ug"/>
         </packagedElement>

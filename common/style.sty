@@ -95,15 +95,15 @@
 
 
 % Comandi per citare definizione e parola riportata su Glossario
-\newcommand{\citGloss}[1]{ #1\ped{G}} 		% scrivendo \citGloss{termine} il termine viene marcato come da glossario (con il pedice G). Se il termine non è presente nel glossario dà errore.
-\newcommand{\citaGloss}[1]{\glsadd{#1} #1\ped{G}}
+\newcommand{\citGloss}[1]{ \glsadd{#1} #1\ped{G}} 		% scrivendo \citGloss{termine} il termine viene marcato come da glossario (con il pedice G). Se il termine non è presente nel glossario dà errore.
+
 
 %\addtocontents{toc}{\protect\newpage}	TRICK per mandare a pagina nuova il capitolo seguente
 
 % document glossary explanation
 \newcommand{\glossExpl}{
 	\section{Glossario}
-	All'interno del documento sono presenti termini che presentano significati ambigui a seconda del contesto. Per evitare questa ambiguità è stato creato un documento di nome Glossario che conterrà tali termini con il loro significati specifico. Per segnalare che un termine del testo è presente all'interno del \g \vruno{} verrà aggiunta una \citGloss{} a pedice a fianco del termine.
+	All'interno del documento sono presenti termini che presentano significati ambigui a seconda del contesto. Per evitare questa ambiguità è stato creato un documento di nome Glossario che conterrà tali termini con il loro significati specifico. Per segnalare che un termine del testo è presente all'interno del \g \vruno{} verrà aggiunta una G a pedice a fianco del termine.
 }
 
 \newcommand{\nData}[3]{#1-#2-#3} % GG MM AAAA

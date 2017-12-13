@@ -2,8 +2,11 @@
 \usepackage{subfiles}
 \usepackage{../../common/style}
 \fancyfoot[L]{Glossario}
+\loadglsentries{Definizioni.tex}
+\glossarystyle{listhypergroup}
 
- 
+\glsaddall
+
 \begin{document}
 
 \begin{titlepage}
@@ -15,8 +18,8 @@
 		\includegraphics[width=9cm]{../../common/images/logo.png} \\
 		\Large Titolo Capitolato\\
 		\vfill
-		\Huge Titolo Documento\\
-		\Large Versione x.x in data xx-xx-xxxx\\
+		\Huge Glossario\\
+		\Large Versione 0.0.1 in data 10-12-2017\\
 		\vfill
 		\large Gruppo 353\\
 		\vfill
@@ -38,10 +41,11 @@
 						
 		\textbf{Stato} 			& In corso\\
 		\textbf{Uso}			& Esterno\\
-		\textbf{Destinato a}   	& Tullio Vardanega\\
-		
+		\textbf{Destinato a}   	& Gruppo 353\\
+								& \Vardanega\\
+								& \Cardin\\
 						
-		\textbf{Email di contatto}	& 353swe@gmail.com
+		\textbf{Email di contatto}	& \mailleaf
 	\end{tabular}
 \end{table}
 		\vfill
@@ -49,9 +53,8 @@
 \end{titlepage}
 \pagenumbering{roman}
 \subfile{diariomodifiche}
-\tableofcontents
-\newpage
 \pagenumbering{arabic}
-%\subfile{Capitolo1}
+
+\printglossaries
  
 \end{document}

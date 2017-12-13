@@ -95,8 +95,8 @@
 
 
 % Comandi per citare definizione e parola riportata su Glossario
-\newcommand{\citGloss}[1]{\glsadd{#1} #1\ped{G}} 		% scrivendo \citGloss{termine} il termine viene marcato come da glossario (con il pedice G). Se il termine non è presente nel glossario dà errore.
-
+\newcommand{\citGloss}[1]{ #1\ped{G}} 		% scrivendo \citGloss{termine} il termine viene marcato come da glossario (con il pedice G). Se il termine non è presente nel glossario dà errore.
+\newcommand{\citaGloss}[1]{\glsadd{#1} #1\ped{G}}
 
 %\addtocontents{toc}{\protect\newpage}	TRICK per mandare a pagina nuova il capitolo seguente
 

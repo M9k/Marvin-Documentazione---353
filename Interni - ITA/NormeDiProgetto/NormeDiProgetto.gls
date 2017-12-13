@@ -1,0 +1,6 @@
+\glossarysection[\glossarytoctitle]{\glossarytitle}\glossarypreamble
+\begin{theglossary}\glossaryheader
+\glsgroupheading{S}\relax \glsresetentrylist %
+\glossentry{Slack}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{43}}}%
+\end{theglossary}\glossarypostamble

@@ -275,7 +275,7 @@
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_RcbwIN9REeeVgP8NQIMk7g" memberEnd="_RcbwId9REeeVgP8NQIMk7g _RcbwIt9REeeVgP8NQIMk7g">
         <ownedEnd xmi:id="_RcbwId9REeeVgP8NQIMk7g" type="_hrGeQNO4EeeqiP5Ban4ZWQ" association="_RcbwIN9REeeVgP8NQIMk7g"/>
-        <ownedEnd xmi:id="_RcbwIt9REeeVgP8NQIMk7g" type="_amk2YN9PEeeVgP8NQIMk7g" association="_RcbwIN9REeeVgP8NQIMk7g"/>
+        <ownedEnd xmi:id="_RcbwIt9REeeVgP8NQIMk7g" association="_RcbwIN9REeeVgP8NQIMk7g"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_Uh6TUN9REeeVgP8NQIMk7g" memberEnd="_Uh6TUd9REeeVgP8NQIMk7g _Uh66YN9REeeVgP8NQIMk7g">
         <ownedEnd xmi:id="_Uh6TUd9REeeVgP8NQIMk7g" type="_hrGeQNO4EeeqiP5Ban4ZWQ" association="_Uh6TUN9REeeVgP8NQIMk7g"/>
@@ -287,7 +287,7 @@
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_YbPVUN9REeeVgP8NQIMk7g" memberEnd="_YbPVUd9REeeVgP8NQIMk7g _YbPVUt9REeeVgP8NQIMk7g">
         <ownedEnd xmi:id="_YbPVUd9REeeVgP8NQIMk7g" type="_hrGeQNO4EeeqiP5Ban4ZWQ" association="_YbPVUN9REeeVgP8NQIMk7g"/>
-        <ownedEnd xmi:id="_YbPVUt9REeeVgP8NQIMk7g" type="_b7NuEN9PEeeVgP8NQIMk7g" association="_YbPVUN9REeeVgP8NQIMk7g"/>
+        <ownedEnd xmi:id="_YbPVUt9REeeVgP8NQIMk7g" association="_YbPVUN9REeeVgP8NQIMk7g"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_ZFCgQN9REeeVgP8NQIMk7g" memberEnd="_ZFCgQd9REeeVgP8NQIMk7g _ZFCgQt9REeeVgP8NQIMk7g">
         <ownedEnd xmi:id="_ZFCgQd9REeeVgP8NQIMk7g" type="_hrGeQNO4EeeqiP5Ban4ZWQ" association="_ZFCgQN9REeeVgP8NQIMk7g"/>
@@ -510,17 +510,15 @@
         <extend xmi:id="_tFwysN9IEeeVgP8NQIMk7g" extendedCase="_dyBi4N9IEeeVgP8NQIMk7g"/>
       </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:Component" xmi:id="_MSZmIN9PEeeVgP8NQIMk7g" name="UC5.3 - Gestione corsi di laurea" useCase="_XuBU4N9PEeeVgP8NQIMk7g _YHjPMN9PEeeVgP8NQIMk7g _YkmXkN9PEeeVgP8NQIMk7g _ZV21YN9PEeeVgP8NQIMk7g _Z9QzoN9PEeeVgP8NQIMk7g _amk2YN9PEeeVgP8NQIMk7g _bJO3gN9PEeeVgP8NQIMk7g _bpo14N9PEeeVgP8NQIMk7g _b7NuEN9PEeeVgP8NQIMk7g _cSb7QN9PEeeVgP8NQIMk7g _dOQDQN9PEeeVgP8NQIMk7g _doYagN9PEeeVgP8NQIMk7g _d7uNQN9PEeeVgP8NQIMk7g">
+    <packagedElement xmi:type="uml:Component" xmi:id="_MSZmIN9PEeeVgP8NQIMk7g" name="UC5.3 - Gestione corsi di laurea" useCase="_XuBU4N9PEeeVgP8NQIMk7g _YHjPMN9PEeeVgP8NQIMk7g _YkmXkN9PEeeVgP8NQIMk7g _ZV21YN9PEeeVgP8NQIMk7g _Z9QzoN9PEeeVgP8NQIMk7g _bJO3gN9PEeeVgP8NQIMk7g _bpo14N9PEeeVgP8NQIMk7g _cSb7QN9PEeeVgP8NQIMk7g _dOQDQN9PEeeVgP8NQIMk7g _doYagN9PEeeVgP8NQIMk7g _d7uNQN9PEeeVgP8NQIMk7g">
       <packagedElement xmi:type="uml:UseCase" xmi:id="_XuBU4N9PEeeVgP8NQIMk7g" name="UC5.3.3 - Visualizzazione lista completa dei corsi" subject="_MSZmIN9PEeeVgP8NQIMk7g"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_YHjPMN9PEeeVgP8NQIMk7g" name="UC5.3.4 - Visualizzazione corsi per anno accademico" subject="_MSZmIN9PEeeVgP8NQIMk7g"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_YkmXkN9PEeeVgP8NQIMk7g" name="UC5.3.7 - Visualizzazione lista esami per corso" subject="_MSZmIN9PEeeVgP8NQIMk7g"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_ZV21YN9PEeeVgP8NQIMk7g" name="UC5.3.8 - Visualizzazione lista esami" subject="_MSZmIN9PEeeVgP8NQIMk7g"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_Z9QzoN9PEeeVgP8NQIMk7g" name="UC5.3.9 - Aggiunta esame a corso" subject="_MSZmIN9PEeeVgP8NQIMk7g"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_amk2YN9PEeeVgP8NQIMk7g" name="UC5.3.10 - Rimozione esame a corso" subject="_MSZmIN9PEeeVgP8NQIMk7g"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_bJO3gN9PEeeVgP8NQIMk7g" name="UC5.3.1 - Creazione corso di laurea&#xA;-------------------------------&#xA;Extension points:&#xA;-Visualizzazione errore mancata compilazione campi" subject="_MSZmIN9PEeeVgP8NQIMk7g"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_bpo14N9PEeeVgP8NQIMk7g" name="UC5.3.11 - Associa professore a esame" subject="_MSZmIN9PEeeVgP8NQIMk7g"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_b7NuEN9PEeeVgP8NQIMk7g" name="UC5.3.12 - Rimozione corso di laurea da anno accademico" subject="_MSZmIN9PEeeVgP8NQIMk7g"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_cSb7QN9PEeeVgP8NQIMk7g" name="UC5.3.13 - Visualizzazione dettagli esame" subject="_MSZmIN9PEeeVgP8NQIMk7g"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_bpo14N9PEeeVgP8NQIMk7g" name="UC5.3.10 - Associa professore a esame" subject="_MSZmIN9PEeeVgP8NQIMk7g"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_cSb7QN9PEeeVgP8NQIMk7g" name="UC5.3.1 - Visualizzazione dettagli esame" subject="_MSZmIN9PEeeVgP8NQIMk7g"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_dOQDQN9PEeeVgP8NQIMk7g" name="UC5.3.2 - Visualizzazione errore mancata compilazione campi" subject="_MSZmIN9PEeeVgP8NQIMk7g">
         <extend xmi:id="_6ZRWgN9QEeeVgP8NQIMk7g" extendedCase="_bJO3gN9PEeeVgP8NQIMk7g"/>
       </packagedElement>

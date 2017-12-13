@@ -4,7 +4,7 @@
 	
 	\chapter{Processi di supporto}
 	
-	\section{Processi di documentazione}
+	\section{Documentazione}
 	\subsection{Descrizione}
 	Questo capitolo descrive le scelte e i principi che sono stati scelti per la
 	stesura, verifica e approvazione riguardante la documentazione ufficiale.
@@ -128,9 +128,9 @@
 
 			\item \textbf{Stile del testo:} 
 			\begin{itemize}
-				\item Corsivo: %Questi stili quando?
-				\item Grassetto:
-				\item Sottolineato:
+				\item Corsivo: Per dare enfasi ad una parola, un concetto o per indicare il nome di un tool/tecnologia;
+				\item Grassetto: Per i titoli, sottotitoli ed elementi di elenchi e liste;
+				\item Sottolineato: Per indicare dei collegamenti ipertestuali.
 				\item Glossario %TODO QUI O SOTTO?
 			\end{itemize}
 		
@@ -184,14 +184,33 @@
 	\subsection{Strumenti a supporto della documentazione} %TODO sono da lasciare qui o da mettere su strumenti usati per la verifica nei PROCESSI DI VERIFICA?
 	La stesura dei documenti deve essere effettuata utilizzando il linguaggio di markup \LaTeX  utilizzando l'ambiente TeXstudio con dizionario italiano ed inglese installati.
 	
-	
-	\section{Processi di versionamento}
-	
+	\section{Qualità}
 	\subsection{Descrizione}
+	\subsection{Metriche}
+	\begin{itemize}
+		\item \textbf{metriche per processi:} ogni processo dovrà avere uno standard di qualità elevato definito come unione di:
+		\begin{itemize}
+			\item tempo: richiesto per completamento
+			\item risorse: uomo o software richieste
+			\item occorrenze: ossia il numero di volte in cui si presenterà un particolare evento come il numero di difetti di una caratteristica di prodotto. 
+		\end{itemize} 
+		
+		\item \textbf{metriche per i documenti:} per la verifica dei documenti è stata scelto l'indice di leggibilità secondo l'indice Gulpease che viene calcolato tramite funzione Latex.\\I risultati sono compresi tra 0 e 100 con 100 leggibilità massima e 0 più bassa e si è scelto di tenere un livello sempre compreso tra ;%TODO o funzione esterna si fixa il prototipo alla fine di questo documento? 
+		
+		\item \textbf{metriche per il software:} al fine di perseguire gli obiettivi qualitati prefissati nel PianoDiQualifica è doveroso definire delle metriche come copertura del codice tramite test automatici; %TODO riferimenti a sucessive revisioni?
+		\item \textbf{metriche per i feedback di miglioramento:} i feedback gestiti come spiegato nelle sezione successive presentano un indice di occorrenze che viene incrementato automaticante ad ogni nuova segnalazione identica. 
+	\end{itemize}
+
+	
+	\section{Configurazione}
+	
+	\subsection{Controllo di versione}
+	
+	\subsubsection{Descrizione}
 	Per le parti versionabili del progetto e per i documenti ufficiali si è scelto l'utilizzo della tecnologia Git, usando il servizio di hosting di repository di GitHub.
 	La condivisione dei documenti informali e delle parti non versionabili è invece effettuata tramite l'uso di una cartella Google Drive condivisa.
 	
-	\subsection{Struttura delle repository}
+	\subsubsection{Struttura delle repository}
 	E' stata realizzata solo una repository durante la fase di RR ossia quella relativa alla documentazione come "Documentazione353", si prevede inoltre di creare ulteriori repository per suddividere lo sviluppo e la codifica dell'applicazione del progetto. \\\\
 	I file interni al repository "Documentazione353" sono organizzati secondo questa struttura:
 	\begin{itemize}
@@ -213,11 +232,11 @@
 	All'interno di ogni cartella è stato definito sempre un main.tex e il file diariomodifiche.tex per poi suddividere le sottosezioni del documento descritte nel file main.tex in ulteriori file .tex.\\
 	Nella root della repository è stato messo invece un file .bat che controlla errori in tutti i main e se non ci sono errori compila tutti i documenti in formato pdf.
 	
-	\subsection{Ciclo di vita branch}
+	\subsubsection{Ciclo di vita branch}
 	Per sfruttare il parallelismo nello sviluppo di uno stesso documento sono stati creati appositamente dei branch denominati con il nome dei membri del gruppo, i documenti baseline invece saranno contenuti solamente nel master branch.\\
 	Il merge col master avviene quindi solamente quando un documento si trova in stato di "Approvato".
 	
-	\subsection{Aggiornamento della repository}
+	\subsubsection{Aggiornamento della repository}
 	Per l’aggiornamento della repository è previsto il seguente sotto processo motivato dalla sezione precedente "ciclo di vita":
 	\begin{itemize}
 		\item verificare di trovarsi sul branch personale con "git branch"(quella selezionata presenta un asterisco *) e in caso cambiare branch con "git checkout"
@@ -233,7 +252,7 @@
 		\item dare il comando "git push".
 	\end{itemize}
 	
-	\section{Processo di verifica}
+	\section{Verifica}
 	
 	\subsection{Descrizione}
 	Un processo fondamentale per il proseguimento e l'evoluzione di un progetto è la verifica su ogni sottoprodotto del progetto che porta alla creazione di un singolo prodotto.\\
@@ -251,20 +270,6 @@
 	\subsection{Analisi dinamica}
 	Il processo di analisi dinamica consiste nella realizzazione ed esecuzione di una serie ti test sul codice del software. 
 	
-	\subsection{Metriche}
-	\begin{itemize}
-		\item \textbf{metriche per processi:} ogni processo dovrà avere uno standard di qualità elevato definito come unione di:
-		\begin{itemize}
-			\item tempo: richiesto per completamento
-			\item risorse: uomo o software richieste
-			\item occorrenze: ossia il numero di volte in cui si presenterà un particolare evento come il numero di difetti di una caratteristica di prodotto. 
-		\end{itemize} 
-		
-		\item \textbf{metriche per i documenti:} per la verifica dei documenti è stata scelto l'indice di leggibilità secondo l'indice Gulpease che viene calcolato tramite funzione Latex.\\I risultati sono compresi tra 0 e 100 con 100 leggibilità massima e 0 più bassa e si è scelto di tenere un livello sempre compreso tra ;%TODO o funzione esterna si fixa il prototipo alla fine di questo documento? 
-		 
-		\item \textbf{metriche per il software:} al fine di perseguire gli obiettivi qualitati prefissati nel PianoDiQualifica è doveroso definire delle metriche come copertura del codice tramite test automatici; %TODO riferimenti a sucessive revisioni?
-		\item \textbf{metriche per i feedback di miglioramento:} i feedback gestiti come spiegato nelle sezione successive presentano un indice di occorrenze che viene incrementato automaticante ad ogni nuova segnalazione identica. 
-	\end{itemize}
 	
 	\subsection{Verifica Diagrammi UML}
 	I Verificatori devono controllare tutti i diagrammi UML prodotti rispettino lo standard UML e che siano corretti semanticamente.
@@ -296,7 +301,7 @@
 			\lp=\dimexpr \lettere*\p@/\parole\relax 
 			\strip@pt\dimexpr 89\p@ -10\lp +300\fr  \relax
 	}}
-	\section{Indice di leggibilit\`a}
+	\section{Validazione} %TODO tutto
 	\IL{676}{287}{36}\\
 	\IL{676}{287}{367}\\
 	\IL{144}{1}{26}

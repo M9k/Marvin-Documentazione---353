@@ -8,6 +8,7 @@
 \usepackage{hyperref}
 \usepackage{geometry}
 \usepackage{fancyhdr}
+\usepackage[nonumberlist]{glossaries}
 
 \pagestyle{fancy}
 \renewcommand{\chaptermark}[1]{ \markboth{#1}{} }
@@ -94,9 +95,8 @@
 
 
 % Comandi per citare definizione e parola riportata su Glossario
-\newcommand{\citGloss}[1]{{#1}\textsubscript{G}} 		% scrivendo \citGloss{termine} il termine viene marcato come da glossario (con il pedice G)
+\newcommand{\citGloss}[1]{\glsadd{#1} #1\ped{G}} 		% scrivendo \citGloss{termine} il termine viene marcato come da glossario (con il pedice G). Se il termine non è presente nel glossario dà errore.
 
-\newcommand{\defGloss}[2]{{#1:}\\#2} %TODO sistemo stile voce glossario e rendo controlli automatici
 
 %\addtocontents{toc}{\protect\newpage}	TRICK per mandare a pagina nuova il capitolo seguente
 

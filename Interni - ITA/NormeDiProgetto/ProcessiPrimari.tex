@@ -14,23 +14,6 @@ Una volta stabilita la scelta del capitolato per il quale proporsi come fornitor
 	\item \textbf{Valutazione finale:} racchiude le motivazioni, i rischi, le criticità evidenziate per le quali il capitolato in questione è stato respinto o accettato.
 \end{itemize}
 
-\subsection{Rapporti di fornitura con la Proponente \Proponente}
-Durante l'intero progetto si intende instaurare con la Proponente \Proponente{} e con i referenti Alessandro Maccagnan e Milo Ertola un profondo e quanto più costante rapporto al fine di:
-\begin{itemize}
-	\item determinare bisogni;
-	\item stabilire scelte volte alla realizzazione e realizzazione del prodotto (vincoli sui requisiti);
-	\item stabilire scelte volte alla definizione ed esecuzione di processi (vincoli di progetto);
-	\item stimare i costi;
-	\item accordarsi circa la qualifica di prodotto.
-\end{itemize}
-\subsection{Documentazione fornita}
-Di seguito vengono elencati i documenti forniti alla Proponente Red Babel e ai Committenti \Vardanega{} e \Cardin{} al fine di assicurare la massima trasparenza circa le attività di:
-\begin{itemize}
-	\item \textbf{pianifica, consegna e completamento:} descritte all'interno del \pdp \vruno;
-	\item \textbf{analisi:} analisi dei requisiti e dei casi d'uso del gruppo vengono descritte all'interno del documento \adr \vruno;
-	\item \textbf{verifica e validazione:} descritte all'interno del \pdq \vruno;
-	\item \textbf{garanzia della qualità dei processi e di prodotto:} descritte e definite nel sopra citato \pdq \vruno.
-\end{itemize}
 \section{Sviluppo}
 \subsection{Analisi dei Requisiti}
 L'obbiettivo dell'analisi dei requisiti è quello di individuare ed elencare tutti i \citGloss{requisiti} del capitolato. I requisiti possono essere estrapolati da più fonti:
@@ -39,7 +22,7 @@ L'obbiettivo dell'analisi dei requisiti è quello di individuare ed elencare tut
 	\item \textbf{Verbali di riunioni esterne};
 	\item \textbf{Casi d’uso}.
 \end{itemize}
-Il risultato di quest'analisi sarà il documento \adr \vruno{} redatto dagli Analisti,dopo essere stato verificato, al fine di:
+Il risultato di quest'analisi sarà il documento \adr \vruno{} redatto dagli \anali,dopo essere stato verificato, al fine di:
 \begin{itemize}
 \item descrivere l'obiettivo del lavoro del gruppo;
 \item fornire ai Progettisti riferimenti precisi ed affidabili;
@@ -52,25 +35,27 @@ miglioramento continuo del prodotto e del processo di sviluppo;
 \end{itemize}
 Ogni requisito dovrà essere meno ambiguo possibile e rispettare le seguenti norme.
 
-\paragraph{Requisiti:}Ogni requisito è identificato da un codice, costruito come descritto di seguito:\\ \\
+\subsubsection{Classificazione dei requisiti}
+Ogni requisito è identificato da un codice, costruito come descritto di seguito:\\ \\
 \textbf{\centerline{R[Importanza][Classificazione][Identificativo]}}\\
-\begin{itemize}
-\item la prima lettera (R) è l'abbreviazione di requisito;
-\item il secondo valore indica l'\textbf{importanza}. Assume il valore:
 	\begin{itemize}
-			\item \textbf{Zero (0):} indica un requisito obbligatorio, il cui soddisfacimento
-			dovrà necessariamente avvenire per garantire le funzioni base del
-			sistema;
-			\item \textbf{Uno (1):} se si tratta di un requisito desiderabile, cioè un requisito il cui
-			soddisfacimento può dare maggiore completezza al sistema ma il
-			non soddisfarlo non pregiudica alcuna funzione di base;
-			\item \textbf{Due (2):} indica un requisito opzionale;
+	\item la prima lettera (R) è l'abbreviazione di requisito;
+	\item il secondo valore indica l'\textbf{importanza}. Assume il valore:
+		\begin{itemize}
+				\item \textbf{Zero (0):} indica un requisito obbligatorio, il cui soddisfacimento
+				dovrà necessariamente avvenire per garantire le funzioni base del
+				sistema;
+				\item \textbf{Uno (1):} se si tratta di un requisito desiderabile, cioè un requisito il cui
+				soddisfacimento può dare maggiore completezza al sistema ma il
+				non soddisfarlo non pregiudica alcuna funzione di base;
+				\item \textbf{Due (2):} indica un requisito opzionale;
+		\end{itemize}
+	
+	\item la terza lettera indica la \textbf{classificazione}. Assume valore F se si tratta di un Requisito funzionale, Q se di qualità, P se prestazionale e V se di vincolo;
+	\item l'\textbf{identificativo} indica invece un numero progressivo.
 	\end{itemize}
 
-\item la terza lettera indica la \textbf{classificazione}. Assume valore F se si tratta di un Requisito funzionale, Q se di qualità, P se prestazionale e V se di vincolo;
-\item l'\textbf{identificativo} indica invece un numero progressivo.
-\end{itemize}
-\paragraph{Casi d'uso:} gli Analisti hanno anche il compito di identificare i casi d’uso, elencandoli con un grado di precisione che va dal generico verso il dettaglio. Ogni caso d’uso è descritto dalla seguente struttura:\\
+\subsubsection{Classificazione casi d'uso} gli \anali{} hanno anche il compito di identificare i casi d’uso, elencandoli con un grado di precisione che va dal generico verso il dettaglio. Ogni caso d’uso è descritto dalla seguente struttura:\\
 \begin{itemize}
 	\item \textbf{Codice identificativo e nome:} ogni caso d'uso è identificato da una serie di cifre separate dal punto. L'ultima cifra indica il numero di figlio, la penultima cifra indica il numero del padre e UC è l'abbreviazione di Use Case(casi d'uso in inglese). Queste cifre sono seguite dopo il trattino(-) dal nome del caso d'uso: \\\\
 	\centerline{\textbf{UC[Codice padre].[Codice figlio]-Nome}}
@@ -90,23 +75,13 @@ Ogni requisito dovrà essere meno ambiguo possibile e rispettare le seguenti nor
 	principale degli eventi, allo stesso modo di quanto descritto in “Scenario
 	principale”.
 \end{itemize}
-\paragraph{Tracciamento:} il gruppo 353 ha deciso di utilizzare il software \textbf{Trender} per il tracciamento dei requisiti. 
-
 
 \subsection{Progettazione}
+
+\subsubsection{Scopo}
 L’attività di Progettazione consiste nel descrivere una soluzione del problema
-che sia soddisfacente per tutti gli stakeholders. Essa serve a garantire che
-il prodotto sviluppato soddisfi le proprietà e i bisogni specificati nell’attività
-di analisi. La progettazione permette di:
-\begin{itemize}
-	\item Garantire la qualità di prodotto sviluppato, perseguendo la \textit{correttezza
-		per costruzione};
-	\item Organizzare e ripartire compiti implementativi, riducendo la
-	complessità del problema originale fino alle singole componenti
-	facilitandone la codifica da parte dei singoli Programmatori;
-	\item Ottimizzare l’uso di risorse.
-\end{itemize}
-\`{E} compito dei Progettisti svolgere tale attività, definendo l’architettura logica
+che sia soddisfacente per tutti gli stakeholders.
+\`{E} compito dei \progi svolgere tale attività, definendo l’architettura logica
 del prodotto identificando componenti chiare, riusabili e coese rimanendo nei
 costi fissati. L’architettura definita dovrà:
 \begin{itemize}
@@ -117,14 +92,30 @@ costi fissati. L’architettura definita dovrà:
 	\item essere disponibile, riducendo i tempi di manutenzione;
 	\item avere componenti semplici, coese nel raggiungere gli obiettivi, incapsulate e con scarse dipendenze tra loro.
 \end{itemize}
+
+\subsubsection{Diagrammi}
 Al fine di rendere più chiare le scelte progettuali adottate e
 ridurre le possibili ambiguità, sarà necessario fare largo uso di vari tipi di diagrammi 
-\textbf{UML 2.0} e i \textbf{design pattern} (adattati per i linguaggi di programmazione elencati sopra).
+\textbf{UML 2.0} realizzando i seguenti tipi:
+\begin{itemize}
+	\item Diagrammi dei casi d'uso
+	%TODO item ecc
+\end{itemize}
 
+\subsubsection{Obiettivi della progettazione}
+Essa serve a garantire che il prodotto sviluppato soddisfi le proprietà e i bisogni specificati nell’attività di analisi ponendo i seguenti obiettivi:
+\begin{itemize}
+	\item Garantire la qualità di prodotto sviluppato, perseguendo la \textit{correttezza
+		per costruzione};
+	\item Organizzare e ripartire compiti implementativi, riducendo la
+	complessità del problema originale fino alle singole componenti
+	facilitandone la codifica da parte dei singoli Programmatori;
+	\item Ottimizzare l’uso di risorse.
+\end{itemize}
 
 \subsection{Codifica}
-In questa sotto-sezione vengono elencate le norme alle quali i Programmatori devono attenersi durante l'attività di programmazione e implementazione.\\
-All'inizio verranno elencate delle norme generali a cui i Programmatori devono attenersi con qualsiasi linguaggio di programmazione utilizzato, mentre di seguito verranno elencate delle norme specifiche per i linguaggi Javascript, React, Solidity e Scss.\\
+In questa sotto-sezione vengono elencate le norme alle quali i \progri devono attenersi durante l'attività di programmazione e implementazione.\\
+All'inizio verranno elencate delle norme generali a cui i \progri devono attenersi con qualsiasi linguaggio di programmazione utilizzato, mentre di seguito verranno elencate delle norme specifiche per i linguaggi Javascript, React, Solidity e Scss.\\
 Ogni norma è rappresentata da un paragrafo. Ciascuna ha un titolo, una breve descrizione e, se necessario, un esempio che illustra i modi accettati o meno. Alcune di esse includono inoltre una lista di possibili eccezioni d'uso. L'uso di norme e convenzioni è fondamentale per permettere la generazione di codice leggibile e uniforme, agevolare le fasi di manutenzione, verifica e validazione e migliorare la qualità del prodotto.
 
 \paragraph*{Convenzioni per i nomi: }
@@ -194,16 +185,22 @@ Autore || Data || breve descrizione delle modifiche
 \subsection{Procedure}
 
 \subsubsection{Tracciamento componenti-requisiti}
+%TODO inventato da Mirco e Gianluca
 
 \subsection{Strumenti}
 \begin{itemize}
-	\item Tracciamento requisiti
-	\item Creazione diagrammi UML
-	\item Tracciamento dei test
-	\item Scrittura del codice
-	\item Esecuzione dei test
-	\item Continuos Integration
-	\item Analisi statica del codice 	
+	\item \textbf{Tracciamento requisiti:} il gruppo 353 ha deciso di utilizzare il software \textbf{Trender}\footnote{\nURI{https://github.com/campagna91/Trender}} installato su server remoto condiviso;
+	\item \textbf{Creazione diagrammi UML:} {UML Designer}\footnote{\nURI{http://www.umldesigner.org/}} ;
+	\item \textbf{Scrittura del codice:} Webstorm by Jetbrains\footnote{\nURI{https://www.jetbrains.com/webstorm/}}; 
+	\item \textbf{Toolkit sviluppo:} si utilizzano i pacchetti installabili tramite nodejs con gestione package npm per risolvere dipendenze delle librerie e tool richiesti; %TODO npm e node giusto?
+	\item \textbf{Tracciamento dei test:} Codecov\footnote{\nURI{https://codecov.io/}}; %TODO Sonarcube?
+	\item \textbf{Esecuzione dei test:}
+	\begin{itemize}
+		\item React: Mocha\footnote{\nURI{https://github.com/mochajs/mocha}} e Enzyme\footnote{\nURI{https://github.com/airbnb/enzyme}};
+		\item Redux: Jest\footnote{\nURI{https://facebook.github.io/jest/}};
+		\item Web3/Truffle: Mocha e Chai\footnote{\nURI{http://chaijs.com/}}.
+	\end{itemize}
+	\item \textbf{Continuos Integration:} Travis\footnote{\nURI{http://travis-ci.com/}}. 	
 \end{itemize}
 
 \end{document}

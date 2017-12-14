@@ -1,20 +1,18 @@
 \documentclass[StudioDiFattibilità.tex]{subfiles}
-\newgeometry{margin=3cm}
-\begin{document}
 
-\huge \bfseries Diario delle modifiche\\
-\begin{table}[htbp]
-	\centering
-	\renewcommand\arraystretch{1.2}
+\begin{DiarioModifiche}
 
-	\begin{tabularx}{\textwidth}{p{1.6cm}|p{2cm}|p{4cm}|p{3cm}|p{2cm}}
-		\hline
-		\textbf{Versione} & \textbf{Data} & \textbf{Descrizione} & \textbf{Autore} & \textbf{Ruolo}\\
-		\hline
-		0.1.0 & 04-12-2017 & Verifica Capitolati 1,2,5,6 & \Gianluca & Verificatore \\
-		
-		\hline
-		0.1.0 & 03-12-2017 & Verifica Capitolati 3,4,7,8 & \Davide & Verificatore \\
+		\nModifica{0.1.1}
+		{\nData{4}{12}{2017}}
+		{Verifica Capitolati 1,2,5,6}
+		{\Gianluca}
+		{\vere}
+	
+		\nModifica{0.1.0}
+		{\nData{3}{12}{2017}}
+		{Verifica Capitolati 3,4,7,8}
+		{\Davide}
+		{\vere}
 		
 		\hline
 		0.0.9 & 30-11-2017 & Stesura introduzione & \Elena & Analista\\
@@ -42,10 +40,10 @@
 		
 		\hline
 		0.0.1 & 25-11-2017 & Creazione scheletro del documento & \Valentina & Analista \\
-		\hline
+		
 	
+		\hline
+
 	\end{tabularx}
 
-\end{table}
-\restoregeometry
-\end{document}
+\end{DiarioModifiche}

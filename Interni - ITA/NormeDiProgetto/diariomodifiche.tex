@@ -1,16 +1,6 @@
 \documentclass[NormeDiProgetto.tex]{subfiles}
-\newgeometry{margin=3cm}
-\begin{document}
-	
-	\huge \bfseries Diario delle modifiche\\
-	\begin{table}[htbp]
-		\centering
-		\renewcommand\arraystretch{1.2}
-		
-		\begin{tabularx}{\textwidth}{p{2cm}|p{2cm}|p{4cm}|p{2cm}|p{2cm}}
-			
-			\hline
-			\textbf{Versione} & \textbf{Data} & \textbf{Descrizione} & \textbf{Autore} & \textbf{Ruolo}\\
+
+\begin{DiarioModifiche}
 	
 			\nModifica{0.1.2}
 			{\nData{12}{12}{2017}}
@@ -30,17 +20,23 @@
 			{\Davide}
 			{\veri}
 			
-			\hline
-			0.0.2 & 04-12-2017 & Stesura introduzione, fornitura e stile di codifica per Solidity e Scss & \Elena & Analista \\
+			\nModifica{0.0.2}
+			{\nData{4}{12}{2017}}
+			{Stesura introduzione, fornitura e stile di codifica per Solidity e Scss}
+			{\Elena}
+			{\alista}
 			
-			\hline
-			0.0.1 & 26-11-2017 & Creazione scheletro del documento & \Elena & Analista \\
+			\nModifica{0.0.1}
+			{\nData{26}{11}{2017}}
+			{Creazione scheletro del documento}
+			{\Elena}
+			{\alista}
 			
 	
 			\hline
 			
 		\end{tabularx}
+
+\end{DiarioModifiche}
+
 		
-	\end{table}
-\restoregeometry
-\end{document}

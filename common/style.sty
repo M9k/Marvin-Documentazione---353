@@ -8,9 +8,11 @@
 \usepackage{hyperref}
 \usepackage{geometry}
 \usepackage{fancyhdr}
+\usepackage{booktabs}
+\usepackage[table,xcdraw]{xcolor}
 \usepackage[nonumberlist]{glossaries}
-
 \pagestyle{fancy}
+
 \renewcommand{\chaptermark}[1]{ \markboth{#1}{} }
 \renewcommand{\sectionmark}[1]{ \markright{#1} }
 
@@ -59,22 +61,22 @@
 
 
 % commands for roles and name of documents
-\newcommand{\respdiprog}{\textit{Responsabile di progetto}}
+\newcommand{\respdiprog}{Responsabile di progetto}
 
-\newcommand{\amme}{\textit{Amministratore}}
-\newcommand{\ammi}{\textit{Amministratori}}
+\newcommand{\amme}{Amministratore}
+\newcommand{\ammi}{Amministratori}
 
-\newcommand{\anala}{\textit{Analista}}
-\newcommand{\anali}{\textit{Analisti}}
+\newcommand{\alista}{Analista}
+\newcommand{\alisti}{Analisti}
 
-\newcommand{\proga}{\textit{Progettista}}
-\newcommand{\progi}{\textit{Progettisti}}
+\newcommand{\proga}{Progettista}
+\newcommand{\progi}{Progettisti}
 
-\newcommand{\progre}{\textit{Programmatore}}
-\newcommand{\progri}{\textit{Programmatori}}
+\newcommand{\progre}{Programmatore}
+\newcommand{\progri}{Programmatori}
 
-\newcommand{\vere}{\textit{Verificatore}}
-\newcommand{\veri}{\textit{Verificatori}}
+\newcommand{\vere}{Verificatore}
+\newcommand{\veri}{Verificatori}
 
 \newcommand{\pdp}{\textit{Piano di progetto}}
 \newcommand{\pdq}{\textit{Piano di qualifica}}
@@ -105,12 +107,43 @@
 	\section{Glossario}
 	All'interno del documento sono presenti termini che presentano significati ambigui a seconda del contesto. Per evitare questa ambiguità è stato creato un documento di nome Glossario che conterrà tali termini con il loro significati specifico. Per segnalare che un termine del testo è presente all'interno del \g \vruno{} verrà aggiunta una G a pedice a fianco del termine.
 }
+% product objective
+\newcommand{\scopoProdotto}{
+	\section{Scopo del prodotto}
+	Lo scopo del prodotto è quello di realizzare una piattaforma web chiamata \progetto\ che simuli le funzionalità di base per studenti, docenti e università di Uniweb. L'applicativo al posto del database dovrà utilizzare la rete Ethereum interagendo con degli smart contract.
+}
+
 
 \newcommand{\nData}[3]{#1-#2-#3} % GG MM AAAA
 \newcommand{\nURI}[1]{{\color{blue}\url{#1}}}
 \newcommand{\nPath}[1]{\texttt{#1}}
 \newcommand{\nDoc}[1]{\textit{“#1”}}
 \newcommand{\nFile}[1]{\texttt{“#1”}}
+
+% document diario delle modifiche enviroment
+\newenvironment{DiarioModifiche}{
+
+\newgeometry{margin=3cm}
+\begin{document}
+	
+	\huge \bfseries Diario delle modifiche\\
+	\begin{table}[htbp]
+		\centering
+		\renewcommand\arraystretch{1.2}
+		
+		\begin{tabularx}{\textwidth}{p{2cm}|p{2cm}|p{4cm}|p{2cm}|p{2cm}}
+			
+			\hline
+			\textbf{Versione} & \textbf{Data} & \textbf{Descrizione} & \textbf{Autore} & \textbf{Ruolo}\\
+}
+{
+
+	\end{table}
+\restoregeometry
+\end{document}
+
+}%end DiarioModifiche
+
 \newcommand{\nModifica}[5]{ %aggiuta modifica al diario
 	\hline {#1} & {#2} & {#3} & {#4} & {#5} \\
 }

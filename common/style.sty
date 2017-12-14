@@ -22,8 +22,8 @@
 \fancyfoot[R]{\thepage}
 
 \fancypagestyle{plain}{
-\renewcommand{\headrulewidth}{0.4pt}
-\renewcommand{\footrulewidth}{0.4pt}
+	\renewcommand{\headrulewidth}{0.4pt}
+	\renewcommand{\footrulewidth}{0.4pt}
 }
 \titleformat{\chapter}{\bfseries\huge}{\thechapter.}{20pt}{\huge}
 
@@ -34,9 +34,9 @@
 % Ridefinizione colore dei link (del menù ed esterni)
 \hypersetup {
 	linkcolor = {black},
-  	urlcolor = {blue},
-  	menucolor = {black},
-  	colorlinks = true,
+	urlcolor = {blue},
+	menucolor = {black},
+	colorlinks = true,
 }
 
 % commands for group name or email to
@@ -88,6 +88,7 @@
 \newcommand{\mut}{\textit{Manuale utente}}
 \newcommand{\ms}{\textit{Manuale sviluppatore}}
 \newcommand{\g}{\textit{Glossario}}
+\newcommand{\lettera}{\textit{Lettera di presentazione}}
 
 %versione documenti
 \newcommand{\vruno}{\textit{ v 1.0.0}} %revisione uno RR
@@ -120,30 +121,38 @@
 \newcommand{\nDoc}[1]{\textit{“#1”}}
 \newcommand{\nFile}[1]{\texttt{“#1”}}
 
+\newcommand{\nImg}[3]{%img source & caption & width
+	\begin{figure}[ht]	
+		\includegraphics[width= #3cm]{#1}
+		\label{fig:foo}
+		\caption{#2}		
+	\end{figure}			
+}
+
 % document diario delle modifiche enviroment
 \newenvironment{DiarioModifiche}{
-
-\newgeometry{margin=3cm}
-\begin{document}
 	
-	\huge \bfseries Diario delle modifiche\\
-	\begin{table}[htbp]
-		\centering
-		\renewcommand\arraystretch{1.2}
+	\newgeometry{margin=3cm}
+	\begin{document}
 		
-		\begin{tabularx}{\textwidth}{p{2cm}|p{2cm}|p{4cm}|p{2cm}|p{2cm}}
+		\huge \bfseries Diario delle modifiche\\
+		\begin{table}[htbp]
+			\centering
+			\renewcommand\arraystretch{1.2}
 			
-			\hline
-			\textbf{Versione} & \textbf{Data} & \textbf{Descrizione} & \textbf{Autore} & \textbf{Ruolo}\\
-}
-{
-
-	\end{table}
-\restoregeometry
-\end{document}
-
-}%end DiarioModifiche
-
-\newcommand{\nModifica}[5]{ %aggiuta modifica al diario
-	\hline {#1} & {#2} & {#3} & {#4} & {#5} \\
-}
+			\begin{tabularx}{\textwidth}{p{2cm}|p{2cm}|p{4cm}|p{2cm}|p{2cm}}
+				
+				\hline
+				\textbf{Versione} & \textbf{Data} & \textbf{Descrizione} & \textbf{Autore} & \textbf{Ruolo}\\
+			}
+			{
+				
+			\end{table}
+			\restoregeometry
+		\end{document}
+		
+	}%end DiarioModifiche
+	
+	\newcommand{\nModifica}[5]{ %aggiuta modifica al diario
+		\hline {#1} & {#2} & {#3} & {#4} & {#5} \\
+	}

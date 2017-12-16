@@ -26,7 +26,7 @@ Il risultato di quest'analisi sarà il documento \adr \vruno{} redatto dagli \al
 \begin{itemize}
 \item Descrivere l'obiettivo del lavoro del gruppo;
 \item Fornire ai Progettisti riferimenti precisi ed affidabili;
-\item Fissare le funzionalità e i requisiti concordati col cliente;
+\item Fissare le funzionalità e i \citGloss{requisiti} concordati col cliente;
 \item Fornire una base per raffinamenti successivi al fine di garantire un
 miglioramento continuo del prodotto e del processo di sviluppo;
 \item Facilitare le revisioni del codice;
@@ -85,7 +85,7 @@ che sia soddisfacente per tutti gli stakeholders.
 del prodotto identificando componenti chiare, riusabili e coese rimanendo nei
 costi fissati. L’architettura definita dovrà:
 \begin{itemize}
-	\item Soddisfare i requisiti definiti nel documento \adr{} e adattarsi facilmente nel caso essi evolvano o se ne aggiungano di nuovi; 
+	\item Soddisfare i \citGloss{requisiti} definiti nel documento \adr{} e adattarsi facilmente nel caso essi evolvano o se ne aggiungano di nuovi; 
 	\item Essere comprensibile, modulare e robusta riuscendo a gestire situazioni erronee improvvise;
 	\item Essere affidabile, cioè avere una elevata capacità di rispettare le specifiche nel tempo;
 	\item Essere sicura rispetto ad intrusioni e malfunzionamenti;
@@ -187,13 +187,13 @@ Autore || Data || breve descrizione delle modifiche
 
 %TODO non posso controllarlo io, visto che lo ho scritto -Mirco
 \subsubsection{Tracciamento componenti-requisiti}
-	Si è scelto di utilizzare il software Trender per il tracciamento automatizzato di tutte le informazioni ricavate dall'analisi dei requisiti.\\
+	Si è scelto di utilizzare il software Trender per il tracciamento automatizzato di tutte le informazioni ricavate dall'analisi dei \citGloss{requisiti}.\\
 	Il database MySQL che garantisce la persistenza e l'accesso ai dati si trova in remoto, in modo tale da rendere sempre disponibile a tutti le informazioni che esso contiene.\\
 	Qualsiasi componente del gruppo, utilizzando la parte front-end dell'applicazione scritta in PHP e JavaScript, può accedervi utilizzando l'account comune predisposto.\\
 	Una volta effettuato l'accesso si ha a disposizione le funzionalità di modifica e di esportazione in codice LaTeX dei dati presenti.\\
 %	Trender consente di mantenere il tracciamento di:\\
 %	\begin{itemize}
-%		\item Requisiti;
+%		\item \citGloss{requisiti};
 %		\item Casi d'uso;
 %		\item Attori;
 %		\item Verbali;

@@ -3,18 +3,18 @@
 \begin{document}
 	
 \subsubsection{SCSS}
-In questa sotto-sezione vengono elencate le norme tratte dalla \textbf{Airbnb\\ CSS/Scss Styleguide}\footnote{\nURI{https://github.com/airbnb/css}} tramite plugin Webstorm scss-lint\footnote{\nURI{https://plugins.jetbrains.com/plugin/7530-scss-lint}} utilizzando la corretta configurazione \footnote{\nURI{https://github.com/airbnb/css/blob/master/.scss-lint.yml}}.
+In questa sotto-sezione vengono elencate le norme tratte dalla \textbf{Airbnb\\ CSS/Scss Styleguide}\footnote{\nURI{https://github.com/airbnb/css}}, il cui utilizzo viene supportato tramite plugin Webstorm scss-lint\footnote{\nURI{https://plugins.jetbrains.com/plugin/7530-scss-lint}} utilizzando la corretta configurazione\footnote{\nURI{https://github.com/airbnb/css/blob/master/.scss-lint.yml}} ed il tool scss-lint\footnote{\nURI{https://github.com/brigade/scss-lint}}.
 \paragraph*{Formattazione:}
 \begin{itemize}
-	\item utilizzare due (2) spazi per ogni livello di indentazione;
-	\item per i nomi delle classi utilizzare la \texttt{lower-case-with-dashes};
-	\item non usare selettori ID;
-	\item in caso di selettori multipli per una regola, mettere ogni selettore in una linea singola;
-	\item lasciare uno spazio prima dell'apertura della parentesi graffa di una regola;
-	\item nelle proprietà lasciare uno spazio dopo e non prima i due punti;
-	\item chiudere la parentesi graffa di una regola in una nuova linea;
-	\item lasciare una linea vuota tra una dichiarazione e l'altra.
-	\item dichiarare le classi raggruppate per tipologia e in ordine alfabetico.
+	\item Utilizzare due (2) spazi per ogni livello di indentazione;
+	\item Per i nomi delle classi utilizzare la \texttt{lower-case-with-dashes};
+	\item Non usare selettori ID;
+	\item In caso di selettori multipli per una singola regola, inserire ogni selettore in una linea singola;
+	\item Lasciare uno spazio prima dell'apertura della parentesi graffa di una regola;
+	\item Nelle proprietà lasciare uno spazio dopo e non prima i due punti;
+	\item Chiudere la parentesi graffa di una regola in una nuova linea;
+	\item Lasciare una linea vuota tra una dichiarazione e l'altra;
+	\item Dichiarare le classi raggruppate per tipologia e in ordine alfabetico.
 \end{itemize}
 \begin{center}{
 \begin{minipage}{6cm}
@@ -96,12 +96,12 @@ In questo esempio:
 \end{itemize}
 \paragraph*{Commenti:}
 \begin{itemize}
-	\item non usare commenti di blocco;
-	\item fare commenti in linee a se stanti, non in linee contenenti anche codice.
+	\item Non usare commenti di blocco;
+	\item Fare commenti in linee a se stanti, non in linee contenenti anche codice.
 \end{itemize}
 \paragraph*{Ordine di dichiarazione delle proprietà:}
 \begin{enumerate}
-	\item \textbf{proprietà standard:} vanno dichiarate per prime e in ordine alfabetico;
+	\item \textbf{Proprietà standard:} vanno dichiarate per prime e in ordine alfabetico;
 \begin{center}{
 \begin{minipage}{5cm}
 \begin{Verbatim}[frame=single]
@@ -114,7 +114,7 @@ In questo esempio:
 \end{minipage}
 }
 \end{center}
-	\item \textbf{dichiarazioni di \texttt{@include}:} vanno raggruppate sotto alla dichiarazione delle proprietà standard
+	\item \textbf{Dichiarazioni di \texttt{@include}:} vanno raggruppate sotto alla dichiarazione delle proprietà standard
 \begin{center}{
 \begin{minipage}{10cm}
 \begin{Verbatim}[frame=single]
@@ -128,7 +128,7 @@ In questo esempio:
 \end{minipage}
 }
 \end{center}
-\item \textbf{selettori nidificati:} vanno dichiarati dopo tutte le altre dichiarazioni e deve essere lasciata una linea vuota prima della loro dichiarazione
+\item \textbf{Selettori nidificati:} vanno dichiarati dopo tutte le altre dichiarazioni e deve essere lasciata una linea vuota prima della loro dichiarazione
 \begin{center}{
 \begin{minipage}{10cm}
 \begin{Verbatim}[frame=single]
@@ -147,7 +147,7 @@ In questo esempio:
 \end{center}
 \end{enumerate}
 \paragraph*{Extend:}
-la direttiva \texttt{@extend} non va utilizzata perché ha un comportamento poco intuitivo e pericoloso, specialmente quando usato in selettori nidificati.
+la direttiva \texttt{@extend} non va utilizzata perché ha un comportamento poco intuitivo e pericoloso, specialmente quando usata in selettori nidificati.
 \paragraph*{Selettori annidati: }
 non utilizzare più di tre livelli di annidamento
 \begin{center}{

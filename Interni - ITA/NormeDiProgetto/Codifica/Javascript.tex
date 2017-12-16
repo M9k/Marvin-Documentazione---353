@@ -2,7 +2,7 @@
 
 \begin{document}	
 	\subsubsection{JavaScript}
-	In questa sotto-sezione vengono elencate le norme tratte dal \textbf{Airbnb JavaScript Style Guide}\footnote{\nURI{https://github.com/airbnb/javascript}}, le norme sono implementate direttamente nell'IDE Webstorm tramite questa guida\footnote{\nURI{https://goo.gl/kJLfbY}}.
+	In questa sotto-sezione vengono elencate le norme tratte dal \textbf{Airbnb JavaScript Style Guide}\footnote{\nURI{https://github.com/airbnb/javascript}}; il controllo delle norme è implementato direttamente all'interno dell'IDE Webstorm tramite una apposita procedura seguita da tutti i membri del team\footnote{\nURI{https://github.com/doasync/eslint-config-airbnb-standard}}.
 	
 	\paragraph*{Indentazione 1: }
 	vanno utilizzati due (2) spazi per ogni livello di indentazione.
@@ -126,7 +126,7 @@ return obj;
 }
 \end{center}
 \paragraph{Parentesizzazione 1:}i blocchi di codice multi-riga vanno racchiusi tra parentesi graffe.
-I blocchi di codice con una sola riga possono essere scritti senza parentesi, però vanno scritti sulla stessa riga.\\
+I blocchi di codice con una sola riga possono essere scritti senza parentesi, ma devono essere scritti sulla stessa riga.\\
 \begin{center}{
 \begin{minipage}{6.5cm}
 {\begin{center}SI\end{center}}
@@ -159,7 +159,7 @@ function() { return false; }
 \end{minipage}
 }
 \end{center}
-\paragraph{Parentesizzazione 2:} le parantesi graffe iniziano nella stessa riga del codice, non in quella sottostante.
+\paragraph{Parentesizzazione 2:} le parantesi graffe devono iniziare nella stessa riga del codice, non in quella sottostante.
 
 \begin{center}{
 \begin{minipage}{6cm}
@@ -195,7 +195,7 @@ if (test)
 \end{minipage}
 }
 \end{center}	
-\paragraph{Parentesizzazione 3:} in caso di blocchi multi-riga con \texttt{if} e \texttt{else}, bisogna mettere \texttt{else} nella stessa riga della parentesi graffa che chiude il blocco \texttt{if}.
+\paragraph{Parentesizzazione 3:} in caso di blocchi multi-riga con \texttt{if} e \texttt{else}, è necessario mettere \texttt{else} nella stessa riga della parentesi graffa che chiude il blocco \texttt{if}.
 
 \begin{center}{
 \begin{minipage}{6cm}
@@ -226,7 +226,7 @@ if (test) {
 }
 \end{center}
 
-\paragraph{Commenti:} utilizzare \texttt{//} per commenti da una riga. Inserire i commenti di questo tipo su una nuova riga sopra il soggetto del commento. Inoltre bisogna lasciare una riga vuota prima del commento.
+\paragraph{Commenti:} utilizzare \texttt{//} per una singola riga di commento, la quale deve essere inserita su una nuova riga sopra il soggetto del commento. Inoltre bisogna lasciare la riga precedente al commento vuota.
 
 \begin{center}{
 \begin{minipage}{6cm}
@@ -265,7 +265,7 @@ function getType() {
 }
 \end{center}
 
-\paragraph{Variabili 1:}una variabile deve sempre essere dichiarata usando \texttt{var} o \texttt{let}. Altrimenti tutte le variabili dichiarate saranno variabili globali. Bisogna sempre evitare di inquinare lo spazio di nomi globale. 
+\paragraph{Variabili 1:}una variabile deve sempre essere dichiarata usando \texttt{var} o \texttt{let}. In caso contrario le variabili dichiarate avranno una visibilità globale, pratica da evitare assolutamente per non inquinare lo spazio dei nomi.
 \begin{center}{\begin{minipage}{8cm}
 {\begin{center}SI\end{center}}
 \begin{Verbatim}[frame=single]
@@ -283,7 +283,7 @@ superPower = new SuperPower();
 \end{center}
 
 
-\paragraph{Variabili 2:}utilizzare una sola dichiarazione \texttt{var} o \texttt{let} per ogni variabile. È più facile aggiungere dichiarazioni di variabili in questa maniera, e non c'è il rischio di scambiare un \texttt{";"} con una \texttt{",}". Inoltre, le variabili non assegnate vanno sempre dichiarate per ultime.
+\paragraph{Variabili 2:}utilizzare una sola dichiarazione \texttt{var} o \texttt{let} per ogni variabile. È più facile aggiungere dichiarazioni di variabili in questa maniera e non si corre il rischio di scambiare un punto e virgola \texttt{";"} con una virgola \texttt{",}". Inoltre, le variabili non inizializzate immediatamente vanno sempre dichiarate per ultime.
 
 \begin{center}{
 \begin{minipage}{6cm}
@@ -308,7 +308,7 @@ var objects = getItems(),
 }
 \end{center}
 
-\paragraph{Variabili 3:}le variabili vanno assegnate o dichiarate solo quando si ha la necessità di usarle. In modo da evitare operazioni inutili.
+\paragraph{Variabili 3:}le variabili vanno assegnate o dichiarate solo quando si ha la necessità di usarle, in modo da evitare operazioni inutili.
 \begin{center}{
 \begin{minipage}{6cm}
 	{\begin{center}SI\end{center}}
@@ -373,7 +373,7 @@ function q() {
 	}
 \end{center}
 	\paragraph*{Nomi 2: }
-utilizzare lo stile \texttt{mixedCase} per i nomi delle variabili, funzioni e delle istanze. Inoltre è vietato usare gli underscore nei nomi.
+utilizzare lo stile \texttt{mixedCase} per i nomi delle variabili, delle funzioni e delle istanze. Da evitare l'utilizzo degli underscore nei nomi.
 \begin{center}{\begin{minipage}{8cm}
 			{\begin{center}SI\end{center}}
 			\begin{Verbatim}[frame=single]

@@ -4,9 +4,7 @@ notifications:
   email: false
 before_install:
 - chmod +x build.sh
-- chmod +x newbuild.sh
 - "sudo apt-get update && sudo apt-get install --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra texlive-latex-recommended texlive-lang-italian dvipng latex-xcolor texlive-full"
 script:
 - mkdir _build
-- sh ./build.sh
-- ./newbuild.sh
+- ./build.sh

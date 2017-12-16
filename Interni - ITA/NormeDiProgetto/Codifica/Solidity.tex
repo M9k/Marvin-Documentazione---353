@@ -2,7 +2,7 @@ r\documentclass[../ProcessiPrimari.tex]{subfiles}
 
 \begin{document}	
 \subsubsection{Solidity}
-In questa sotto-sezione vengono elencate le norme tratte dalla \textbf{documentazione officiale di Solidity}\footnote{\nURI{http://solidity.readthedocs.io/en/develop/style-guide.html}} applicata tramite plugin\footnote{\nURI{https://github.com/intellij-solidity/intellij-solidity}} in sviluppo per supportare Solidity.
+In questa sotto-sezione vengono elencate le norme tratte dalla \textbf{documentazione officiale di Solidity}\footnote{\nURI{http://solidity.readthedocs.io/en/develop/style-guide.html}}, la cui applicazione viene favorita tramite l'utilizzo di determinati plugin\footnote{\nURI{https://github.com/intellij-solidity/intellij-solidity}} di supporto.
 \paragraph*{Identazione: }
 vanno utilizzati quattro (4) spazi per ogni livello di indentazione.
 \paragraph*{Spazi: }
@@ -101,7 +101,7 @@ contract A {
 i codici sorgente devono essere codificati in UTF-8.
 
 \paragraph*{Imports: }
-tutte le dichiarazioni di \texttt{import} vanno fatte all'inizio del file.
+tutte le dichiarazioni di \texttt{import} devono essere effettuate solamente all'inizio del file.
 
 \begin{center}{
 \begin{minipage}{6cm}
@@ -140,7 +140,7 @@ contract B is owned {
 }
 \end{center}
 \paragraph*{Ordine delle funzioni: }
-all'interno di un contratto l'ordine è fondamentale per identificare meglio quali funzioni è possibile chiamare e per trovare più velocemente le definizioni del costruttore e di eventuali funzioni di fallback.\\
+all'interno di un contratto l'ordine è fondamentale per identificare meglio quali funzionalità sono disponibili e per ricercare più velocemente le definizioni del costruttore e di eventuali funzioni di fallback.\\
 Le funzioni devono essere raggruppate secondo la loro visibilità e ordinate nel seguente modo:
 \begin{enumerate}
 \item costruttore
@@ -450,7 +450,7 @@ else {
 }
 \end{center}
 \paragraph*{Dichiarazione di funzioni:}
-per dichiarazioni brevi, la dichiarazione della funzione va lasciato uno spazio bianco prima dell'apertura della graffa sulla stessa linea. La graffa che chiude il corpo della funzione va chiusa allo stesso livello di indentazione della dichiarazione iniziale.
+per dichiarazioni brevi, la dichiarazione della funzione va lasciato uno spazio bianco prima dell'apertura della graffa sulla stessa linea. La graffa che chiude il corpo della funzione va chiusa allo stesso livello di indentazione della dichiarazione iniziale. %TODO: riformulare la frase togliendo le ripetizioni
 \begin{center}{
 \begin{minipage}{14cm}
 {\begin{center}SI\end{center}}

@@ -2,7 +2,7 @@
 \begin{document}
 \chapter{Processi primari}
 \section{Fornitura}
-In questa sezione vengono tratta le norme che i membri del gruppo 353 sono tenuti a rispettare al fine di proporsi e diventare fornitori nei confronti della Proponente Red Babel e dei Committenti \Vardanega{} e \Cardin{} nell'ambito della progettazione, sviluppo e consegna del prodotto \progetto.
+In questa sezione vengono tratta le norme che i membri del gruppo 353 sono tenuti a rispettare al fine di proporsi e diventare fornitori nei confronti della Proponente Red Babel e dei Committenti \Vardanega{} e \Cardin{} nell'ambito della progettazione, sviluppo e consegna del prodotto \progetto{}.
 
 \subsection{Studio di fattibilità}
 In seguito alla presentazione ufficiale dei \textbf{Capitolati d'appalto} avvenuta Venerdì 10 novembre 2017 alle ore 10.30 presso l'aula 1C150 di Torre Archimede è stata convocata una riunione interna al gruppo per discutere in merito alla varie proposte presentate.\\
@@ -22,16 +22,16 @@ L'obbiettivo dell'analisi dei requisiti è quello di individuare ed elencare tut
 	\item \textbf{Verbali di riunioni esterne};
 	\item \textbf{Casi d’uso}.
 \end{itemize}
-Il risultato di quest'analisi sarà il documento \adr \vruno{} redatto dagli \alisti,dopo essere stato verificato, al fine di:
+Il risultato di quest'analisi sarà il documento \adr \vruno{} redatto dagli \alisti{}, dopo essere stato verificato, al fine di:
 \begin{itemize}
-\item descrivere l'obiettivo del lavoro del gruppo;
-\item fornire ai Progettisti riferimenti precisi ed affidabili;
-\item fissare le funzionalità e i requisiti concordati col cliente;
-\item fornire una base per raffinamenti successivi al fine di garantire un
+\item Descrivere l'obiettivo del lavoro del gruppo;
+\item Fornire ai Progettisti riferimenti precisi ed affidabili;
+\item Fissare le funzionalità e i requisiti concordati col cliente;
+\item Fornire una base per raffinamenti successivi al fine di garantire un
 miglioramento continuo del prodotto e del processo di sviluppo;
-\item facilitare le revisioni del codice;
-\item fornire ai Verificatori riferimenti per l’attività di test circa i casi d’uso principali e alternativi;
-\item stimare i costi.
+\item Facilitare le revisioni del codice;
+\item Fornire ai Verificatori riferimenti per l’attività di test circa i casi d’uso principali e alternativi;
+\item Stimare i costi.
 \end{itemize}
 Ogni requisito dovrà essere meno ambiguo possibile e rispettare le seguenti norme.
 
@@ -39,8 +39,8 @@ Ogni requisito dovrà essere meno ambiguo possibile e rispettare le seguenti nor
 Ogni requisito è identificato da un codice, costruito come descritto di seguito:\\ \\
 \textbf{\centerline{R[Importanza][Classificazione][Identificativo]}}\\
 	\begin{itemize}
-	\item la prima lettera (R) è l'abbreviazione di requisito;
-	\item il secondo valore indica l'\textbf{importanza}. Assume il valore:
+	\item La prima lettera (R) è l'abbreviazione di requisito;
+	\item Il secondo valore indica l'\textbf{importanza}. Assume il valore:
 		\begin{itemize}
 				\item \textbf{Zero (0):} indica un requisito obbligatorio, il cui soddisfacimento
 				dovrà necessariamente avvenire per garantire le funzioni base del
@@ -51,20 +51,20 @@ Ogni requisito è identificato da un codice, costruito come descritto di seguito
 				\item \textbf{Due (2):} indica un requisito opzionale;
 		\end{itemize}
 	
-	\item la terza lettera indica la \textbf{classificazione}. Assume valore F se si tratta di un Requisito funzionale, Q se di qualità, P se prestazionale e V se di vincolo;
-	\item l'\textbf{identificativo} indica invece un numero progressivo.
+	\item La terza lettera indica la \textbf{classificazione}. Assume valore F se si tratta di un Requisito funzionale, Q se di qualità, P se prestazionale e V se di vincolo;
+	\item L'\textbf{identificativo} indica invece un numero progressivo.
 	\end{itemize}
 
 \subsubsection{Classificazione casi d'uso} gli \alisti{} hanno anche il compito di identificare i casi d’uso, elencandoli con un grado di precisione che va dal generico verso il dettaglio. Ogni caso d’uso è descritto dalla seguente struttura:\\
 \begin{itemize}
-	\item \textbf{Codice identificativo e nome:} ogni caso d'uso è identificato da una serie di cifre separate dal punto. L'ultima cifra indica il numero di figlio, la penultima cifra indica il numero del padre e UC è l'abbreviazione di Use Case(casi d'uso in inglese). Queste cifre sono seguite dopo il trattino(-) dal nome del caso d'uso: \\\\
-	\centerline{\textbf{UC[Codice padre].[Codice figlio]-Nome}}
+	\item \textbf{Codice identificativo e nome:} ogni caso d'uso è identificato da una serie di cifre separate dal punto. L'ultima cifra indica il numero del figlio, la penultima cifra indica il numero del padre e UC è l'abbreviazione di Use Case (caso d'uso in inglese). Queste cifre sono seguite dopo il trattino (-) dal nome del caso d'uso: \\\\
+	\centerline{\textbf{UC[Codice padre].[Codice figlio] - Nome}}
 	\item \textbf{Attori:} indica gli attori principali (ad esempio l’utente generico) e
 	secondari (ad esempio ufficio universitario) del caso d’uso;
 	\item \textbf{Scopo e descrizione:} riporta una breve descrizione del caso d’uso;
 	\item \textbf{Scenario principale:} rappresenta il flusso degli eventi come lista
 	numerata, specificando per ciascun evento: titolo, descrizione, attori
-	coinvolti e casi d’uso generati;
+	coinvolti e casi d’uso generati; %TODO Gianluca che ne pensi? -Mirco
 	\item \textbf{Precondizione:} specifica le condizioni che sono identificate come vere
 	prima del verificarsi degli eventi del caso d’uso;
 	\item \textbf{Postcondizione:} specifica le condizioni che sono identificate come
@@ -73,7 +73,7 @@ Ogni requisito è identificato da un codice, costruito come descritto di seguito
 	inserendo il comportamento comune in un caso d’uso a parte;
 	\item \textbf{Estensioni (se presenti):} descrivono i casi d’uso che non fanno parte del flusso
 	principale degli eventi, allo stesso modo di quanto descritto in “Scenario
-	principale”.
+	principale”. %TODO Rivedere qui in base al todo sopra
 \end{itemize}
 
 \subsection{Progettazione}
@@ -81,52 +81,53 @@ Ogni requisito è identificato da un codice, costruito come descritto di seguito
 \subsubsection{Scopo}
 L’attività di Progettazione consiste nel descrivere una soluzione del problema
 che sia soddisfacente per tutti gli stakeholders.
-\`{E} compito dei \progi svolgere tale attività, definendo l’architettura logica
+\`{E} compito dei \progi{} svolgere tale attività, definendo l’architettura logica
 del prodotto identificando componenti chiare, riusabili e coese rimanendo nei
 costi fissati. L’architettura definita dovrà:
 \begin{itemize}
-	\item soddisfare i requisiti definiti nel documento \adr e adattarsi facilmente nel caso essi evolvano o se ne aggiungano di nuovi; 
-	\item essere comprensibile, modulare e robusta riuscendo a gestire situazioni erronee improvvise;
-	\item essere affidabile, cioè svolgere ai suoi compiti quando viene usata;
-	\item essere sicura rispetto ad intrusioni e malfunzionamenti;
-	\item essere disponibile, riducendo i tempi di manutenzione;
-	\item avere componenti semplici, coese nel raggiungere gli obiettivi, incapsulate e con scarse dipendenze tra loro.
+	\item Soddisfare i requisiti definiti nel documento \adr{} e adattarsi facilmente nel caso essi evolvano o se ne aggiungano di nuovi; 
+	\item Essere comprensibile, modulare e robusta riuscendo a gestire situazioni erronee improvvise;
+	\item Essere affidabile, cioè avere una elevata capacità di rispettare le specifiche nel tempo;
+	\item Essere sicura rispetto ad intrusioni e malfunzionamenti;
+	\item Avere una elevata disponibilità, riducendo al minimo i tempi di manutenzione;
+	\item Avere componenti semplici, coesi nel raggiungere gli obiettivi, incapsulati e con scarse dipendenze tra loro.
 \end{itemize}
 
 \subsubsection{Diagrammi}
 Al fine di rendere più chiare le scelte progettuali adottate e
 ridurre le possibili ambiguità, sarà necessario fare largo uso di vari tipi di diagrammi 
-\textbf{UML 2.0} realizzando i seguenti tipi:
+\textbf{UML 2.0}, realizzandone secondo le seguenti rappresentazioni:
 \begin{itemize}
-	\item Diagrammi dei casi d'uso (USE CASE)
+	\item Diagrammi dei casi d'uso, dedicati alla descrizione delle funzioni offerte dal sistema.
 	%TODO aggiungere definizione
 \end{itemize}
 
 \subsubsection{Obiettivi della progettazione}
-Essa serve a garantire che il prodotto sviluppato soddisfi le proprietà e i bisogni specificati nell’attività di analisi ponendo i seguenti obiettivi:
+Essa serve a garantire che il prodotto sviluppato soddisfi le proprietà e i bisogni specificati nell'attività di analisi ponendo i seguenti obiettivi:
 \begin{itemize}
 	\item Garantire la qualità di prodotto sviluppato, perseguendo la \textit{correttezza
 		per costruzione};
 	\item Organizzare e ripartire compiti implementativi, riducendo la
 	complessità del problema originale fino alle singole componenti
-	facilitandone la codifica da parte dei singoli Programmatori;
+	facilitandone la codifica da parte dei singoli \progri{};
 	\item Ottimizzare l’uso di risorse.
 \end{itemize}
 
 \subsection{Codifica}
-In questa sotto-sezione vengono elencate le norme alle quali i \progri devono attenersi durante l'attività di programmazione e implementazione.\\
-All'inizio verranno elencate delle norme generali a cui i \progri devono attenersi con qualsiasi linguaggio di programmazione utilizzato, mentre di seguito verranno elencate delle norme specifiche per i linguaggi Javascript, React, Solidity e Scss.\\
-Ogni norma è rappresentata da un paragrafo. Ciascuna ha un titolo, una breve descrizione e, se necessario, un esempio che illustra i modi accettati o meno. Alcune di esse includono inoltre una lista di possibili eccezioni d'uso. L'uso di norme e convenzioni è fondamentale per permettere la generazione di codice leggibile e uniforme, agevolare le fasi di manutenzione, verifica e validazione e migliorare la qualità del prodotto.
+In questa sotto-sezione vengono elencate le norme alle quali i \progri{} devono attenersi durante l'attività di programmazione e implementazione.\\
+All'inizio verranno elencate delle norme generali a cui i \progri{} devono attenersi con qualsiasi linguaggio di programmazione utilizzato, mentre di seguito verranno elencate delle norme specifiche per i linguaggi JavaScript, JavaScript Syntax eXtension, Solidity e SCSS.\\
+Ogni norma è rappresentata da un paragrafo; ciascuna ha un titolo, una breve descrizione e, se necessario, un esempio che illustri le convenzioni da applicare. Alcune di esse includono inoltre una lista di possibili eccezioni d'uso.\\
+L'uso di norme e convenzioni è fondamentale per permettere la generazione di codice leggibile e uniforme, agevolando così le fasi di manutenzione, verifica e validazione e migliorando la qualità del prodotto.
 
 \paragraph*{Convenzioni per i nomi: }
 \begin{itemize}
-	\item nomi da evitare perché facilmente confondibili con i numeri \texttt{1} e \texttt{0}:
+	\item Alcuni nomi sono da evitare in quanto facilmente confondibili con i numeri \texttt{1} e \texttt{0}, elencati di seguito:
 	\begin{itemize}
 		\item \texttt{l} (lettera minuscola elle);
 		\item \texttt{O} (lettera maiuscola o);
 		\item \texttt{I} (lettera maiuscola i).
 	\end{itemize}
-	\item tutti i nomi devono essere \textbf{unici} ed \textbf{esplicativi} al fine di evitare al più possibile ambiguità e comprensione.
+	\item Tutti i nomi devono essere \textbf{unici} ed \textbf{esplicativi} al fine di evitare al più possibile ambiguità e comprensione.
 \end{itemize}
 Per i vari linguaggi verranno successivamente descritte altre norme per nomi di variabili, funzioni e altro facendo riferimento ai seguenti stili:
 \begin{itemize}
@@ -142,9 +143,9 @@ Per i vari linguaggi verranno successivamente descritte altre norme per nomi di 
 
 \paragraph*{Convenzioni per la documentazione: }
 \begin{itemize}
-	\item tutti i nomi e i commenti al codice per la documentazione vanno scritti in \textbf{inglese};
-	\item è possibile utilizzare in un commento la keyword \textbf{TODO} per indicare codice temporaneo e soluzioni a breve termine o evidentemente migliorabili;
-	\item ogni file contenente codice deve avere la seguente \textbf{intestazione} contenuta in un commento e posta all'inizio del file stesso:
+	\item Tutti i nomi e i commenti al codice per la documentazione vanno scritti in \textbf{inglese};
+	\item \`{E} possibile utilizzare in un commento la keyword \textbf{TODO} per indicare codice temporaneo e soluzioni a breve termine o evidentemente migliorabili;
+	\item Ogni file contenente codice deve avere la seguente \textbf{intestazione} contenuta in un commento e posta all'inizio del file stesso:
 \begin{center}{
 \begin{minipage}{12cm}
 \begin{Verbatim}[frame=single]
@@ -172,7 +173,7 @@ Autore || Data || breve descrizione delle modifiche
 		\item \textbf{X}: è l’indice di versione principale, un incremento di tale indice rappresenta un avanzamento della versione stabile, che porta il valore dell’indice Y ad essere azzerato;
 		\item \textbf{Y}: è l’indice di modifica parziale, un incremento di tale indice rappresenta una verifica o una modifica rilevante, come per esempio la rimozione o l’aggiunta di una istruzione.
 	\end{itemize}
-	La versione \textit{1.0} deve rappresentare la prima versione del file completo e stabile, cioè quando le sue funzionalità obbligatorie sono state definite e si considerano funzionanti. Solo dalla versione \textit{1.0} è possibile testare il file, con degli appositi test definiti, per	verificarne l’effettivo funzionamento.
+	La versione \textit{1.0} deve rappresentare la prima versione del file completo e stabile, cioè quando le sue funzionalità obbligatorie sono state definite e si considerano funzionanti. Solo dalla versione \textit{1.0} è possibile testare il file, con degli appositi test predefiniti, per	verificarne l’effettivo funzionamento. %TODO funzionamento?
 \end{itemize}
 
 

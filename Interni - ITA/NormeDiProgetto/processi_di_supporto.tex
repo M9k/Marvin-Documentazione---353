@@ -58,7 +58,7 @@
 	Qui di seguito si presentano i documenti formali in ordine alfabetico e la loro classificazione tra Interno od Esterno:
 	\begin{itemize}
 		\item \textbf{Analisi dei Requisiti:} utilizzo Esterno, sigla(AR) \\
-		 Documento per esporre e scomporre i requisiti del progetto contenente casi d'uso relativi al prodotto e diagrammi di interazione con l'utente. Viene scritto dagli Analisti dopo aver analizzato il capitolato e interagendo con il Proponente in riunioni esterne;
+		 Documento per esporre e scomporre i \citGloss{requisiti} del progetto contenente casi d'uso relativi al prodotto e diagrammi di interazione con l'utente. Viene scritto dagli Analisti dopo aver analizzato il capitolato e interagendo con il Proponente in riunioni esterne;
 		
 		\item \textbf{Glossario:}
 		utilizzo Esterno, sigla (GL) \\
@@ -217,12 +217,12 @@
 	\subsection{Controllo di versione}
 	
 	\subsubsection{Descrizione}
-	Per le parti versionabili del progetto e per i documenti ufficiali si è scelto l'utilizzo della tecnologia Git, usando il servizio di hosting di repository di GitHub.
+	Per le parti versionabili del progetto e per i documenti ufficiali si è scelto l'utilizzo della tecnologia Git, usando il servizio di hosting di \citGloss{repository} di GitHub.
 	La condivisione dei documenti informali e delle parti non versionabili è invece effettuata tramite l'uso di una cartella Google Drive condivisa.
 	
 	\subsubsection{Struttura delle repository}
-	E' stata realizzata solo una repository durante la fase di RR ossia quella relativa alla documentazione denominata "Documentazione 353", si prevede inoltre di creare ulteriori repository per suddividere lo sviluppo e la codifica dell'applicazione del progetto. \\\\
-	I file interni al repository "Documentazione 353" sono organizzati secondo questa struttura:
+	E' stata realizzata solo una \citGloss{repository} durante la fase di RR ossia quella relativa alla documentazione denominata "Documentazione 353", si prevede inoltre di creare ulteriori \citGloss{repository} per suddividere lo sviluppo e la codifica dell'applicazione del progetto. \\\\
+	I file interni al \citGloss{repository} "Documentazione 353" sono organizzati secondo questa struttura:
 	\begin{itemize}
 		\item \textbf{Esterni - ENG}
 				\begin{itemize}
@@ -240,14 +240,14 @@
 				\end{itemize}		
 	\end{itemize}	
 	All'interno di ogni cartella è stato definito un file LaTex principale che assume il nome del documento stesso ed il file diariomodifiche.tex per mantenere traccia delle modifiche effettuate.\\
-	Nella root della repository è stato messo invece un file .sh gestito tramite Travis CI che controlla automaticamente gli errori in tutti i documenti presenti e compila un log con i risultati ottenuti.
+	Nella root della \citGloss{repository} è stato messo invece un file .sh gestito tramite Travis CI che controlla automaticamente gli errori in tutti i documenti presenti e compila un log con i risultati ottenuti.
 	
 	\subsubsection{Ciclo di vita dei branch}
 	Per sfruttare il parallelismo nello sviluppo di uno stesso documento sono stati creati appositamente dei branch denominati con il nome del membro o dei membri del gruppo che devono lavorare su una determinata parte, mentre i documenti baseline saranno invece contenuti solamente nel master branch.\\
 	Il merge col master avviene quindi solamente quando un documento si trova in stato di "Approvato".
 	
 	\subsubsection{Aggiornamento della repository}
-	Per l’aggiornamento della repository è previsto il seguente sotto processo motivato dalla sezione precedente "ciclo di vita":
+	Per l’aggiornamento della \citGloss{repository} è previsto il seguente sotto processo motivato dalla sezione precedente "ciclo di vita":
 	\begin{itemize}
 		\item Verificare di trovarsi sul branch personale con "git branch"(quella selezionata presenta un asterisco *) e in caso di riscontro negativo cambiare branch con "git checkout"
 		\item Dare il comando "git pull". Nel caso in cui si verifichino dei conflitti:
@@ -256,7 +256,7 @@
 			\item Dare il comando "git pull" per ottenere ed applicare i commit mancanti;
 			\item Dare il comando "git stash apply" per ripristinare le modifiche.
 		\end{itemize}
-		In questo modo il repository locale risulta aggiornato rispetto il repository remoto, mantenendo le modifiche personali apportate;
+		In questo modo il \citGloss{repository} locale risulta aggiornato rispetto il \citGloss{repository} remoto, mantenendo le modifiche personali apportate;
 	
 		\item Dare il comando "git add \textasteriskcentered" , che aggiungerà i file modificati e quelli nuovi;
 		\item Dare il comando "git commit" e successivamente riassumere le modifiche effettuate, in caso sia utile si può aggiungere un messaggio esteso di descrizione;
@@ -288,7 +288,7 @@
 	\subsection{Strumenti usati per la verifica}
 	\begin{itemize}
 		\item \textbf{Software:} verranno usati per la verifica Mocha ed Enzyme per React, Jest per la verifica di Redux mentre per i contratti Solidity useremo Mocha e Chai; %TODO sono corrette queste info? Ho un dubbio su Jest siccome non presente sul redux-minimal che loro hanno detto di usare -Verifica(Davide): siccome è redux a consigliare JEst per i test, non vedo perchè debba essere sbagliato. potremmo chidere a Red B?
-		\item \textbf{Documenti:} Per il controllo dei documenti prodotti utilizzeremo le funzionalità di Texstudio assieme a script bash eseguiti automaticamente da un bot per controllare che non ci siano errori nei file LaTex, per assicurarsi che il Glossario non presenti mancanze o duplicati e verificare l'assenza di errori ortografici;
+		\item \textbf{Documenti:} Per il controllo dei documenti prodotti utilizzeremo le funzionalità di Texstudio assieme a script bash eseguiti automaticamente da un \citGloss{Bot} per controllare che non ci siano errori nei file LaTex, per assicurarsi che il Glossario non presenti mancanze o duplicati e verificare l'assenza di errori ortografici;
 		\item \textbf{Gestione processi e feedback:} è stato scelto di utilizzare il sistema integrato di issues presente su Github per permettere un dialogo maggiore per ogni singola issue. 
 	\end{itemize}
 	

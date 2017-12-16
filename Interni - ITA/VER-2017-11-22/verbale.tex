@@ -1,0 +1,55 @@
+\documentclass[VER-2017-11-22.tex]{subfiles}
+
+\begin{document}
+
+\chapter{Informazioni sulla riunione} 
+\begin{itemize}
+	\item \textbf{Motivo della riunione:} La riunione del \nData{22}{11}{2017} è stata svolta utilizzando il canale di comunicazione \citGloss{Slack}, e si è discusso principalmente su chiarimenti in merito all'implementazione del progetto e allo stile da seguire per la scrittura del codice. La Proponente ha esposto alcune precisazioni sui requisiti e indicato le parti sulle quali concentrare maggior impegno.
+	\item \textbf{Luogo e data:} Padova-Amsterdam \nData{22}{11}{2017};
+	\item \textbf{Ora di inizio:} 11:00;
+	\item \textbf{Ora di fine:} 11:30;
+	\item \textbf{Partecipanti:}
+	\begin{itemize}
+	\item Proponente:
+	\begin{itemize}
+		\item Alessandro Maccagnan;
+		\item Milo Ertola;
+	\end{itemize}
+	\item Membri del gruppo \gruppo:
+	\begin{itemize}
+		\item \Davide;
+		\item \Elena;
+		\item \Gianluca;
+		\item \Mirco;
+		\item \Parwinder;
+		\item \Riccardo;
+		\item \Valentina.
+	\end{itemize}
+	\end{itemize}
+\end{itemize}
+
+\chapter{Ordine del giorno}
+Di seguito sono riportati i punti di cui il gruppo \gruppo\ necessitava di chiarimento insieme alla Proponente e l'ordine del giorno:
+\begin{enumerate}
+	\item Lingua da utilizzare per scrivere la documentazione;
+	\item Login;
+	\item Registrazione studente;
+	\item Solidity e UML;
+	\item Significato di "promise centric approach" all'interno del progetto;
+	\item Promise e callback in Redux sagas;
+	\item Arc.js.
+\end{enumerate}
+\chapter{Resoconto}
+I punti sono stati trattati dalla Proponente nello stesso ordine in cui sono stati proposti.
+\begin{enumerate}
+	\item \textbf{Lingua da utilizzare:} La documentazione interna deve essere scritta in italiano. Quella esterna in inglese. Per esterna si intende la documentazione che verrà letta da chi userà il nostro prodotto finito. Ad esempio, le informazioni presenti nella repository in GitHub devono essere in inglese, come i commenti al codice e il codice stesso;
+	\item \textbf{Login:} Il login può essere implementato in modo trasparente attraverso Metamask? L’utente, nel momento di accesso al sito, sottopone il suo indirizzo pubblico ad un'analisi e, senza necessità di ulteriori login con email o password, accede alla sua area privata. In caso di errori (indirizzo non registrato, Metamask non installato o bloccato da password) verranno presentate all'utente delle informazioni su come procedere.\\	
+	L'identità in Ethereum si prova avendo una coppia di chiavi pubbliche/private. Ogni volta che si parla con la rete Ethereum (qualsiasi rete) le transazioni sottomesse devono essere firmate con la propria chiave. Questa procedura non e' linearmente fattibile per un utente da browser. Quindi viene utilizzato Metamask, il quale compie due azioni: gestisce le chiavi e mette a disposizione delle pagine web un oggetto Web3. Questo oggetto si occupa di firmare le transazioni con le chiavi gestite da Metamask. Viene fornito un tutorial che spiega l'esecuzione a questo indirizzo: \href{http://truffleframework.com/docs/advanced/truffle-with-metamask}{http://truffleframework.com/docs/advanced/truffle-with-metamask} ;
+	\item \textbf{Registrazione di uno studente:} \`{E} stata proposta alla Proponente una registrazione implementata in due fasi: la prima fase nel quale l’utente immette il suo nome e cognome nel sistema, che vengono inseriti assieme alla sua chiave pubblica in una lista “pending”. Per essere confermato lo studente deve poi presentarsi all’università con i documenti e accertare la propria chiave, evitando così registrazioni fasulle.\\	
+	La proposta viene accettata, ponendo attenzione alla sua implementazione;
+	\item \textbf{Solidity e UML:} UML e' uno strumento che viene usato con profitto in un insieme specifico di casi e industrie. Riguardo Solidity, non sembra esistere nessuno standard e chiarificazioni devono essere chieste ai Professori Vardanega e Cardin. I Proponenti non hanno particolare interesse nell'indagare la parte UML. Inoltre, viene spiegato che la documentazione non fornisce alcun valore alla Proponente. Per necessità di spiegare, chiarire o formalizzare un concetto per poter proseguire nell'implementazione del progetto è caldamente suggerita la creazione di un prototipo;
+	\item \textbf{Promise centric approach:} Viene chiaramente richiesto di non usare le callbacks;
+	\item \textbf{Callbacks:} Non devono essere usate le callbacks a meno di casi specifici (in node.js ci sono alcuni casi in cui non si può fare a meno delle callback), ma solo promesse;
+	\item \textbf{Arc.js:} \'{E} stato chiesto alla Proponente se era possibile utilizzare Arc.js come base di partenza front-end per permette uno sviluppo con basi aggiornate rispetto a Redux-minimal La Proponente ha risposto che .Arc.js usa concetti (Atomic design) troppo articolati per lo scopo del progetto. La scelta di uno starter kit minimale e' stata presa specificatamente per far utilizzare le  componenti principali dell'architettura react (React + Redux + integrazione tra le 2), ma senza troppe complicazioni, non necessarie in questo progetto specifico.
+\end{enumerate}
+\end{document}

@@ -1,10 +1,10 @@
-\documentclass[RaccoltaVerbali.tex]{subfiles}
+\documentclass[VER-2017-12-08.tex]{subfiles}
 \begin{document}
-\chapter{Verbale Esterno del 08-12-2017}
-\section{Informazioni sulla riunione}
-\paragraph{Motivo della riunione}
-La riunione è stata effettuata utilizzando Skype ed è servita a conoscere il Proponente Milo Ertola di persona. Sono stati chiariti alcuni dubbi sia da parte del gruppo 353 che dalla Proponente. Sono stati presentati e discussi i casi d'uso e i requisiti fin'ora individuati.
+
+\chapter{Informazioni sulla riunione}
 \begin{itemize}
+	\item \textbf{Motivo della riunione:} La riunione è stata effettuata utilizzando Skype ed è servita a conoscere il Proponente Milo Ertola di persona. Sono stati chiariti alcuni dubbi sia da parte del gruppo 353 che dalla Proponente. Sono stati presentati e discussi i casi d'uso e i requisiti fin'ora individuati.
+
 	\item \textbf{Luogo e data:} Padova-Amsterdam 08-12-2107;
 	\item \textbf{Ora di inizio:} 13:00;
 	\item \textbf{Ora di fine:} 13:30;
@@ -27,19 +27,20 @@ La riunione è stata effettuata utilizzando Skype ed è servita a conoscere il P
 		\end{itemize}
 	\end{itemize}
 \end{itemize}
-\section{Ordine del giorno}	
+\chapter{Ordine del giorno}	
+Di seguito sono riportati i punti dell'ordine del giorno che sono stati discussi insieme alla Proponente:
 \begin{enumerate}
 	\item Macro contratto; 
 	\item Lingua dell'applicazione;
 	\item Registrazione utente;
 	\item Il personale amministrativo deve essere unico o devono esserci molteplici amministratori;
 	\item La corrispondenza tra  "corso" e corso di laurea ed "esame" e corso singolo;
-	\item Esami opzionali
-	\item Università aggiunge un professore o il professore effettua la registrazione e l'università l'approva.
+	\item Esami opzionali;
+	\item Registrazione di un professore.
 \end{enumerate}
-\section{Resoconto}
+\chapter{Resoconto}
 \begin{enumerate}
-	\item \textbf{Macro contratto:} L'incontro si è aperto con il gruppo 353 che espone l'idea di utilizzare un macro contratto, la quale è stata sconsigliata dalla Proponente perché più complessa da gestire e meno sicura. L'idea migliore è quella di implementare dei contratti modulari, in cui ogni contratto gestisce le azioni solo di quel modulo.\\
+	\item \textbf{Macro contratto:} L'incontro si è aperto con il gruppo \gruppo\ che espone l'idea di utilizzare un macro contratto, la quale è stata sconsigliata dalla Proponente perché più complessa da gestire e meno sicura. L'idea migliore è quella di implementare dei contratti modulari, in cui ogni contratto gestisce le azioni solo di quel modulo.\\
 	\'{E} stato poi spiegato il funzionamento di React-Redux: React si occupa della visualizzazione mentre Redux dello stato del componente. Viene introdotto il concetto di immutabilità, cioè un oggetto non deve essere modificato, ma è necessario fare la copia di esso e poi modificarlo.\\
 	Questo principio si ritrova anche nella blockchain, dove ogni blocco non viene mai modificato e lo stato finale è derivato dalla composizione di tutti i blocchi. Non viene mai persa un'informazione, ma viene sempre aggiunta.
 	\item \textbf{Lingua:} E' stato chiarito che la lingua dell'interfaccia grafica deve essere sviluppata in inglese. Inoltre, anche i documenti che possono essere letti all'esterno del corso, le informazioni presenti nella repository GitHub, i commenti al codice devono essere in inglese;
@@ -49,7 +50,9 @@ La riunione è stata effettuata utilizzando Skype ed è servita a conoscere il P
 	\item \textbf{Esami opzionali:} Gli esami opzionali richiesti nel capitolato corrispondono agli esami a scelta necessari per raggiungere i crediti sufficienti per la laurea;
 	\item \textbf{Registrazione professori:} Come già spiegato prima, è lasciata al gruppo la scelta implementativa, tenendo sempre a mente sicurezza e modularità.
 \end{enumerate}
-Particolari raccomandazioni sono state fatte riguardo alla scrittura di codice in JavaScript: è stato richiesto l'utilizzo di linking (?) fin da subito, per facilitare la navigazione nel codice.\\
-Un consiglio dato al gruppo riguarda la creazione di prototipi: se è in dubbio la validità di un'idea oppure se il dubbio riguarda la scelta tra più idee, è stato raccomandata la creazione di un prototipo, affermando che risolve velocemente i dubbi senza una perdita importante di tempo.
-
+\section{Argomenti discussi ma assenti dall'ordine del giorno}
+\begin{itemize}
+	\item Particolari raccomandazioni sono state fatte riguardo alla scrittura di codice in JavaScript: è stato richiesto l'utilizzo del linting fin da subito, per facilitare la navigazione nel codice;
+	\item Un consiglio dato al gruppo riguarda la creazione di prototipi: se è in dubbio la validità di un'idea oppure se il dubbio riguarda la scelta tra più idee, è stato raccomandata la creazione di un prototipo, affermando che risolve velocemente i dubbi senza una perdita importante di tempo.
+\end{itemize}
 \end{document}

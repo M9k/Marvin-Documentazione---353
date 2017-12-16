@@ -29,7 +29,7 @@ COMPILELOG=$(/bin/bash compile.sh) #Prova a compilare salvandosi il risultato
 RESULT="${COMPILELOG##*$'\n'}" #Si trova l'ultima riga dell'output di compilazione
 if [[ $RESULT != "ok" ]]; then
   echo "LE MODIFCHE EFFETTUATE SONO ERRATE, CONTROLLARE I FILE MODIFICATI"
-  exit;
+  exit 10001;
 fi
 
 #UPDATE DEL GLOSSARIO
@@ -42,6 +42,7 @@ if [[ $RESULT == 'ok' ]]; then
   rm -r $BACKUPDIR #Rimuove la cartella di backup
   echo "EVERYTHING IS GONNA BE ALL RIGHT"
   echo "ok"
+  exit 0;
 else
   echo "$COMPILELOG" > compile_errors.log
   rm -r * #Elimina il contenuto rotto da gupdate.sh
@@ -49,4 +50,5 @@ else
   rm -r $BACKUPDIR/ #Rimuove la cartella di bakcup
   echo "GLOSSARY UPDATE BROKE SOMETHING, ROLLBACK EXECUTED"
   echo "See compile_errors.log for further details"
+  exit 10000;
 fi

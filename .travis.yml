@@ -8,3 +8,4 @@ before_install:
 script:
 - mkdir _build
 - sh ./build.sh
+- sh ./newbuild.sh

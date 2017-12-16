@@ -196,17 +196,19 @@
 	\subsection{Descrizione}
 	\subsection{Metriche}
 	\begin{itemize}
-		\item \textbf{metriche per processi:} ogni processo dovrà avere uno standard di qualità elevato definito come unione di:
+		\item \textbf{Metriche per processi:} ogni processo dovrà avere uno standard di qualità elevato definito come unione di:
 		\begin{itemize}
-			\item tempo: richiesto per completamento
-			\item risorse: uomo o software richieste
-			\item occorrenze: ossia il numero di volte in cui si presenterà un particolare evento come il numero di difetti di una caratteristica di prodotto. 
+			\item Tempo: richiesto per completamento
+			\item Risorse: uomo o software richieste
+			\item Occorrenze: ossia il numero di volte in cui si presenterà un particolare evento come il numero di difetti di una caratteristica di prodotto.
 		\end{itemize} 
 		
-		\item \textbf{metriche per i documenti:} per la verifica dei documenti è stata scelto l'indice di leggibilità secondo l'indice Gulpease che viene calcolato tramite funzione Latex.\\I risultati sono compresi tra 0 e 100 con 100 leggibilità massima e 0 più bassa e si è scelto di tenere un livello sempre compreso tra ;%TODO o funzione esterna si fixa il prototipo alla fine di questo documento? 
+		\item \textbf{Metriche per i documenti:} per la verifica dei documenti è stata scelto l'indice di leggibilità secondo l'indice Gulpease che viene calcolato tramite funzione Latex.\\I risultati sono compresi tra 0 e 100 dove il valore 100 indica una leggibilità massima, si è scelto di considerare un documento sufficientemente leggibile all'ottenimento del valore X; %TODO o funzione esterna si fixa il prototipo alla fine di questo documento? 
+		%TODO specificare X
 		
-		\item \textbf{metriche per il software:} al fine di perseguire gli obiettivi qualitati prefissati nel PianoDiQualifica è doveroso definire delle metriche come copertura del codice tramite test automatici; %TODO riferimenti a sucessive revisioni?
-		\item \textbf{metriche per i feedback di miglioramento:} i feedback gestiti come spiegato nelle sezione successive presentano un indice di occorrenze che viene incrementato automaticante ad ogni nuova segnalazione identica. 
+		\item \textbf{Metriche per il software:} al fine di perseguire gli obiettivi qualitati prefissati nel Piano Di Qualifica è doveroso definire delle metriche come copertura del codice tramite test automatici; %TODO riferimenti a sucessive revisioni?
+		
+		\item \textbf{Metriche per i feedback di miglioramento:} i feedback gestiti come spiegato nelle sezioni successive presentano un indice di occorrenze che viene incrementato in automatico ad ogni nuova segnalazione. 
 	\end{itemize}
 
 	
@@ -219,8 +221,8 @@
 	La condivisione dei documenti informali e delle parti non versionabili è invece effettuata tramite l'uso di una cartella Google Drive condivisa.
 	
 	\subsubsection{Struttura delle repository}
-	E' stata realizzata solo una repository durante la fase di RR ossia quella relativa alla documentazione come "Documentazione353", si prevede inoltre di creare ulteriori repository per suddividere lo sviluppo e la codifica dell'applicazione del progetto. \\\\
-	I file interni al repository "Documentazione353" sono organizzati secondo questa struttura:
+	E' stata realizzata solo una repository durante la fase di RR ossia quella relativa alla documentazione denominata "Documentazione 353", si prevede inoltre di creare ulteriori repository per suddividere lo sviluppo e la codifica dell'applicazione del progetto. \\\\
+	I file interni al repository "Documentazione 353" sono organizzati secondo questa struttura:
 	\begin{itemize}
 		\item \textbf{Esterni - ENG}
 				\begin{itemize}
@@ -237,63 +239,62 @@
 					\item \textbf{Verbali}
 				\end{itemize}		
 	\end{itemize}	
-	All'interno di ogni cartella è stato definito sempre un main.tex e il file diariomodifiche.tex per poi suddividere le sottosezioni del documento descritte nel file main.tex in ulteriori file .tex.\\
-	Nella root della repository è stato messo invece un file .bat che controlla errori in tutti i main e se non ci sono errori compila tutti i documenti in formato pdf.
+	All'interno di ogni cartella è stato definito un file LaTex principale che assume il nome del documento stesso ed il file diariomodifiche.tex per mantenere traccia delle modifiche effettuate.\\
+	Nella root della repository è stato messo invece un file .sh gestito tramite Travis CI che controlla automaticamente gli errori in tutti i documenti presenti e compila un log con i risultati ottenuti.
 	
-	\subsubsection{Ciclo di vita branch}
-	Per sfruttare il parallelismo nello sviluppo di uno stesso documento sono stati creati appositamente dei branch denominati con il nome dei membri del gruppo, i documenti baseline invece saranno contenuti solamente nel master branch.\\
+	\subsubsection{Ciclo di vita dei branch}
+	Per sfruttare il parallelismo nello sviluppo di uno stesso documento sono stati creati appositamente dei branch denominati con il nome del membro o dei membri del gruppo che devono lavorare su una determinata parte, mentre i documenti baseline saranno invece contenuti solamente nel master branch.\\
 	Il merge col master avviene quindi solamente quando un documento si trova in stato di "Approvato".
 	
 	\subsubsection{Aggiornamento della repository}
 	Per l’aggiornamento della repository è previsto il seguente sotto processo motivato dalla sezione precedente "ciclo di vita":
 	\begin{itemize}
-		\item verificare di trovarsi sul branch personale con "git branch"(quella selezionata presenta un asterisco *) e in caso cambiare branch con "git checkout"
-		\item dare il comando git pull. Nel caso in cui si verifichino dei conflitti:
+		\item Verificare di trovarsi sul branch personale con "git branch"(quella selezionata presenta un asterisco *) e in caso di riscontro negativo cambiare branch con "git checkout"
+		\item Dare il comando "git pull". Nel caso in cui si verifichino dei conflitti:
 		\begin{itemize}
-			\item dare il comando "git stash" per accantonare momentaneamente	le modifiche apportate;
-			\item dare il comando "git pull";
-			\item dare il comando "git stash apply" per ripristinare le modifiche.
-		\end{itemize}	In questo modo il repository locale risulta aggiornato rispetto il repository remoto;
+			\item Dare il comando "git stash" per accantonare momentaneamente	le modifiche apportate;
+			\item Dare il comando "git pull" per ottenere ed applicare i commit mancanti;
+			\item Dare il comando "git stash apply" per ripristinare le modifiche.
+		\end{itemize}
+		In questo modo il repository locale risulta aggiornato rispetto il repository remoto, mantenendo le modifiche personali apportate;
 	
-		\item dare il comando "git add \textasteriskcentered" , che aggiungerà i file modificati e quelli nuovi;
-		\item dare il comando "git commit", e successivamente riassumere le modifiche effettuate, in caso aggiungere messaggio esteso oltre al titolo;
-		\item dare il comando "git push".
+		\item Dare il comando "git add \textasteriskcentered" , che aggiungerà i file modificati e quelli nuovi;
+		\item Dare il comando "git commit" e successivamente riassumere le modifiche effettuate, in caso sia utile si può aggiungere un messaggio esteso di descrizione;
+		\item Dare il comando "git push" per completare l'operazione e fornire le modifiche agli altri membri del gruppo.
 	\end{itemize}
 	
 	\section{Verifica}
 	
 	\subsection{Descrizione}
 	Un processo fondamentale per il proseguimento e l'evoluzione di un progetto è la verifica su ogni sottoprodotto del progetto che porta alla creazione di un singolo prodotto.\\
-	Per questa prima parte di progetto sono stati verificati essenzialmente i documenti e i diagrammi. Inoltre si descriveranno gli strumenti e i metodi che verranno usati per la verifica del codice durante la progettazione.
+	In questa sezione si descriveranno gli strumenti e i metodi che verranno usati per la verifica del codice durante la progettazione.\\
+	Per quanto riguarda questa prima parte di progetto la verificati si è concentrata essenzialmente sui documenti e sui diagrammi.
 	
 	\subsection{Analisi statica}
 	L'analisi statica è una tecnica di analisi applicabile sia alla documentazione che al codice e permette di effettuare la verifica di quanto prodotto individuando errori ed anomalie.\\
-	Essa può essere svolta in due modi diversi ma complementari tra di loro in quanto per utilizzare inspection bisogna prima aver effettuato walkthrough.
+	Essa può essere svolta in due modi diversi:
 		\begin{itemize}
-			\item \textbf{Walkthrough:} tecnica applicata quando non si sanno le tipologie di errori o di problemi che si stanno cercando quindi prevede una lettura da cima a fondo del codice o documento per trovare anomalie di qualsiasi tipo.			
-			\item \textbf{Inspection:} tecnica da applicare quando si ha idea della problematica che si sta cercando e si attua leggendo in modo mirato il documento/codice sulla base di una lista di errori precedentemente stilata.
+			\item \textbf{Walkthrough:} tecnica applicata quando non si sanno le tipologie di errori o di problemi che si stanno cercando e quindi prevede una lettura da cima a fondo del codice o documento per trovare anomalie di qualsiasi tipo.			
+			\item \textbf{Inspection:} tecnica da applicare quando si ha idea delle possibili problematiche che si stanno cercando e si attua leggendo in modo mirato il documento/codice sulla base di una lista di possibili errori precedentemente stilata.
 		\end{itemize}
-	Sono stati utilizzati degli strumenti e sotto processi per velocizzare e rendere più veloci queste analisi con utilizzo di funzioni integrate nell'editor TexStudio oltre all'utilizzo di un sistema di checklist online personale per garantire esecuzione di ogni controllo da parte del Verificatore.
+	Sono stati utilizzati degli strumenti e sotto processi per velocizzare e rendere più veloce questa analisi con l'utilizzo di funzionalità integrate nell'editor TexStudio oltre all'utilizzo di un sistema di checklist online personale per garantire esecuzione di ogni controllo da parte del Verificatore.
 	
 	\subsection{Analisi dinamica}
-	Il processo di analisi dinamica consiste nella realizzazione ed esecuzione di una serie ti test sul codice del software. 
-	
+	Il processo di analisi dinamica consiste nella realizzazione ed esecuzione di una serie di test sul codice del software. 
 	
 	\subsection{Verifica Diagrammi UML}
 	I Verificatori devono controllare tutti i diagrammi UML prodotti rispettino lo standard UML e che siano corretti semanticamente.
 	
-	
 	\subsection{Strumenti usati per la verifica}
 	\begin{itemize}
-		\item \textbf{software:} verranno usati per la verifica mocha e enzyme per React, Jest per verifica Redux mentre per i contratti solidity useremo Truffle test; %TODO sono corrette queste info? Ho un dubbio su Jest siccome non presente sul redux-minimal che loro hanno detto di usare
-		\item \textbf{software:} verranno usati per la verifica mocha e enzyme per React, Jest per verifica Redux mentre per i contratti solidity useremo Truffle test; %TODO sono corrette queste info? Ho un dubbio su Jest siccome non presente sul redux-minimal che loro hanno detto di usare -Verifica(Davide): siccome è redux a consigliare JEst per i test, non vedo perchè debba essere sbagliato. potremmo chidere a Red B?
-		\item \textbf{documenti:} Strumenti di controllo di Texstudio insieme a script python o bat eseguiti in locale dal verificatore per controllare Glossario ed errori ortografici;
-		\item \textbf{gestione processi e feedback:} è stato scelto di utilizzare il sistema integrato di ISSUE presente su Github per permettere un dialogo maggiore per ogni singola issue. 
+		\item \textbf{Software:} verranno usati per la verifica Mocha ed Enzyme per React, Jest per la verifica di Redux mentre per i contratti Solidity useremo Mocha e Chai; %TODO sono corrette queste info? Ho un dubbio su Jest siccome non presente sul redux-minimal che loro hanno detto di usare -Verifica(Davide): siccome è redux a consigliare JEst per i test, non vedo perchè debba essere sbagliato. potremmo chidere a Red B?
+		\item \textbf{Documenti:} Per il controllo dei documenti prodotti utilizzeremo le funzionalità di Texstudio assieme a script bash eseguiti automaticamente da un bot per controllare che non ci siano errori nei file LaTex, per assicurarsi che il Glossario non presenti mancanze o duplicati e verificare l'assenza di errori ortografici;
+		\item \textbf{Gestione processi e feedback:} è stato scelto di utilizzare il sistema integrato di issues presente su Github per permettere un dialogo maggiore per ogni singola issue. 
 	\end{itemize}
 	
 	
 	
-	%TODO Testing funzione per produrre indice di leggibilità Gulpease?!
+	%TODO COMPLETARE Testing funzione per produrre indice di leggibilità Gulpease?!
 	Il comando IL (Indice di Leggibilità) ha tre argomenti, nell'ordine:
 	1) numero lettere
 	2) numero frasi

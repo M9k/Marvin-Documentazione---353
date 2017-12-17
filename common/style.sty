@@ -9,7 +9,38 @@
 \usepackage{geometry}
 \usepackage{fancyhdr}
 \usepackage{booktabs}
-\usepackage[table,xcdraw]{xcolor}
+
+
+
+%per lettere accentate
+\usepackage[utf8x]{inputenc}
+\usepackage[italian]{babel}
+\usepackage{color}
+\usepackage{ifthen}
+\usepackage[titletoc]{appendix}
+\usepackage{eurosym}
+\usepackage{float}
+\usepackage[table]{xcolor}
+\usepackage{longtable}
+\usepackage{tabu}
+\usepackage{hypcap}
+\usepackage{multirow}
+\usepackage{breakurl}
+\usepackage{hhline}
+\usepackage{caption}
+\usepackage{enumitem}
+\definecolor{tableHeader}{RGB}{211, 47, 47}
+\definecolor{tableLineOne}{RGB}{245, 245, 245}
+\definecolor{tableLineTwo}{RGB}{224, 224, 224}
+
+\newcommand{\tableHeaderStyle}{
+    \rowfont{\leavevmode\color{white}\bfseries}
+    \rowcolor{tableHeader}
+}
+
+
+
+
 \usepackage[nonumberlist]{glossaries}
 \pagestyle{fancy}
 

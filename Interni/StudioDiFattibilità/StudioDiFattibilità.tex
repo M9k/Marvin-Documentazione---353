@@ -1,0 +1,70 @@
+\documentclass[openany, a4paper, 12pt]{report}
+\usepackage{subfiles}
+\usepackage{../../common/style}
+\usepackage{geometry}
+\fancyfoot[L]{Studio di Fattibilità}
+\loadglsentries{"./../../Esterni/Glossario/Definizioni.tex"}
+ 
+\begin{document}
+
+\begin{titlepage}
+	\centering
+	\vfill
+	{
+		\bfseries
+		\vskip2cm
+		\includegraphics[width=9cm]{../../common/images/logo.png} \\
+		\vfill
+		\Huge{STUDIO DI FATTIBILITÀ}\\
+		\vfill
+		\Large Versione 0.1.1 in data 04-12-2017\\
+		\large Gruppo 353 - Progetto \progetto \\
+		\vfill
+	\normalsize Informazioni sul documento\\
+\begin{table}[htbp]
+	\centering
+	\renewcommand\arraystretch{1.2}
+	\begin{tabular}{r|l}
+		\hline
+		\textbf{Responsabile}	& \\
+		
+		\textbf{Redazione} 		& \Davide\\
+								& \Elena\\
+								& \Gianluca\\
+								& \Mirco\\
+								& \Parwinder\\
+								& \Riccardo\\
+								& \Valentina\\
+								
+		\textbf{Verifica} 		& \\		
+							
+		\textbf{Stato} 			& In corso\\
+		
+		\textbf{Uso}			& Interno\\
+		
+		\textbf{Destinato a}   	& Gruppo 353\\
+								& Prof. Tullio Vardanega\\
+								& Prof. Riccardo Cardin\\
+		
+				\textbf{Email di contatto}	& \mailleaf
+	\end{tabular}
+\end{table}
+		\vfill
+	}    
+\end{titlepage}
+\pagenumbering{roman}
+\subfile{diariomodifiche}
+\tableofcontents
+\newpage
+\pagenumbering{arabic}
+\subfile{introduzione}
+\subfile{Capitolato6}
+\subfile{Capitolato1}
+\subfile{Capitolato2}
+\subfile{Capitolato3}
+\subfile{Capitolato4}
+\subfile{Capitolato5}
+\subfile{Capitolato7}
+\subfile{Capitolato8}
+ 
+\end{document}

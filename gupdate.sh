@@ -13,7 +13,7 @@ USAGE
   glossario relativo
 FUNZIONAMENTO
 #Variabili di configurazione
-GLOSSARYDIR="Esterni - ENG/Glossario"
+GLOSSARYDIR="Esterni/Glossario"
 GLOSSARYENTRY="newglossaryentry"
 PICKCOMMAND="^[^%]$GLOSSARYENTRY" #"^[^%] -> evita di prendere righe commentate
 PICKREGEX="$PICKCOMMAND{.*}"

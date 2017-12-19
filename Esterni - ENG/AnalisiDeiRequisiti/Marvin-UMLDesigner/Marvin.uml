@@ -197,9 +197,109 @@
         <ownedEnd xmi:id="_7AXLwd6MEeeoYNTeb3S4ug" type="_WdMxANdeEeezH47GVDuBIg" association="_7AXLwN6MEeeoYNTeb3S4ug"/>
         <ownedEnd xmi:id="_7AXLwt6MEeeoYNTeb3S4ug" type="_5oSlkN6MEeeoYNTeb3S4ug" association="_7AXLwN6MEeeoYNTeb3S4ug"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_lZMP8N9FEeeVgP8NQIMk7g" memberEnd="_lZM3AN9FEeeVgP8NQIMk7g _lZM3Ad9FEeeVgP8NQIMk7g">
+        <ownedEnd xmi:id="_lZM3AN9FEeeVgP8NQIMk7g" type="_YOD8ENO4EeeqiP5Ban4ZWQ" association="_lZMP8N9FEeeVgP8NQIMk7g"/>
+        <ownedEnd xmi:id="_lZM3Ad9FEeeVgP8NQIMk7g" type="_JJKv4N9FEeeVgP8NQIMk7g" association="_lZMP8N9FEeeVgP8NQIMk7g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_mGjFMN9FEeeVgP8NQIMk7g" memberEnd="_mGjsQN9FEeeVgP8NQIMk7g _mGlhcN9FEeeVgP8NQIMk7g">
+        <ownedEnd xmi:id="_mGjsQN9FEeeVgP8NQIMk7g" type="_YOD8ENO4EeeqiP5Ban4ZWQ" association="_mGjFMN9FEeeVgP8NQIMk7g"/>
+        <ownedEnd xmi:id="_mGlhcN9FEeeVgP8NQIMk7g" type="_L5CPcN9FEeeVgP8NQIMk7g" association="_mGjFMN9FEeeVgP8NQIMk7g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_mr6cEN9FEeeVgP8NQIMk7g" memberEnd="_mr6cEd9FEeeVgP8NQIMk7g _mr7DIN9FEeeVgP8NQIMk7g">
+        <ownedEnd xmi:id="_mr6cEd9FEeeVgP8NQIMk7g" type="_YOD8ENO4EeeqiP5Ban4ZWQ" association="_mr6cEN9FEeeVgP8NQIMk7g"/>
+        <ownedEnd xmi:id="_mr7DIN9FEeeVgP8NQIMk7g" type="_RRsWMN9FEeeVgP8NQIMk7g" association="_mr6cEN9FEeeVgP8NQIMk7g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_nfvswN9FEeeVgP8NQIMk7g" memberEnd="_nfvswd9FEeeVgP8NQIMk7g _nfwT0N9FEeeVgP8NQIMk7g">
+        <ownedEnd xmi:id="_nfvswd9FEeeVgP8NQIMk7g" type="_YOD8ENO4EeeqiP5Ban4ZWQ" association="_nfvswN9FEeeVgP8NQIMk7g"/>
+        <ownedEnd xmi:id="_nfwT0N9FEeeVgP8NQIMk7g" type="_Uwk34N9FEeeVgP8NQIMk7g" association="_nfvswN9FEeeVgP8NQIMk7g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_1AnbUN9GEeeVgP8NQIMk7g" memberEnd="_1AnbUd9GEeeVgP8NQIMk7g _1AoCYN9GEeeVgP8NQIMk7g">
+        <ownedEnd xmi:id="_1AnbUd9GEeeVgP8NQIMk7g" type="_hrGeQNO4EeeqiP5Ban4ZWQ" association="_1AnbUN9GEeeVgP8NQIMk7g"/>
+        <ownedEnd xmi:id="_1AoCYN9GEeeVgP8NQIMk7g" type="_qElLkN9GEeeVgP8NQIMk7g" association="_1AnbUN9GEeeVgP8NQIMk7g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_2L2fYN9GEeeVgP8NQIMk7g" memberEnd="_2L2fYd9GEeeVgP8NQIMk7g _2L3GcN9GEeeVgP8NQIMk7g">
+        <ownedEnd xmi:id="_2L2fYd9GEeeVgP8NQIMk7g" type="_hrGeQNO4EeeqiP5Ban4ZWQ" association="_2L2fYN9GEeeVgP8NQIMk7g"/>
+        <ownedEnd xmi:id="_2L3GcN9GEeeVgP8NQIMk7g" type="_s6zx0N9GEeeVgP8NQIMk7g" association="_2L2fYN9GEeeVgP8NQIMk7g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_2s8aQN9GEeeVgP8NQIMk7g" memberEnd="_2s8aQd9GEeeVgP8NQIMk7g _2s9BUN9GEeeVgP8NQIMk7g">
+        <ownedEnd xmi:id="_2s8aQd9GEeeVgP8NQIMk7g" type="_hrGeQNO4EeeqiP5Ban4ZWQ" association="_2s8aQN9GEeeVgP8NQIMk7g"/>
+        <ownedEnd xmi:id="_2s9BUN9GEeeVgP8NQIMk7g" type="_xsh0YN9GEeeVgP8NQIMk7g" association="_2s8aQN9GEeeVgP8NQIMk7g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_DpQDMN9IEeeVgP8NQIMk7g" memberEnd="_DpQDMd9IEeeVgP8NQIMk7g _DpQDMt9IEeeVgP8NQIMk7g">
+        <ownedEnd xmi:id="_DpQDMd9IEeeVgP8NQIMk7g" type="_hrGeQNO4EeeqiP5Ban4ZWQ" association="_DpQDMN9IEeeVgP8NQIMk7g"/>
+        <ownedEnd xmi:id="_DpQDMt9IEeeVgP8NQIMk7g" type="_cnuvcN9HEeeVgP8NQIMk7g" association="_DpQDMN9IEeeVgP8NQIMk7g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_EJC9kN9IEeeVgP8NQIMk7g" memberEnd="_EJDkoN9IEeeVgP8NQIMk7g _EJDkod9IEeeVgP8NQIMk7g">
+        <ownedEnd xmi:id="_EJDkoN9IEeeVgP8NQIMk7g" type="_hrGeQNO4EeeqiP5Ban4ZWQ" association="_EJC9kN9IEeeVgP8NQIMk7g"/>
+        <ownedEnd xmi:id="_EJDkod9IEeeVgP8NQIMk7g" type="_h_Z-wN9HEeeVgP8NQIMk7g" association="_EJC9kN9IEeeVgP8NQIMk7g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_En_jYN9IEeeVgP8NQIMk7g" memberEnd="_En_jYd9IEeeVgP8NQIMk7g _EoAKcN9IEeeVgP8NQIMk7g">
+        <ownedEnd xmi:id="_En_jYd9IEeeVgP8NQIMk7g" type="_hrGeQNO4EeeqiP5Ban4ZWQ" association="_En_jYN9IEeeVgP8NQIMk7g"/>
+        <ownedEnd xmi:id="_EoAKcN9IEeeVgP8NQIMk7g" type="_oWjHAN9HEeeVgP8NQIMk7g" association="_En_jYN9IEeeVgP8NQIMk7g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_FJg8EN9IEeeVgP8NQIMk7g" memberEnd="_FJhjIN9IEeeVgP8NQIMk7g _FJhjId9IEeeVgP8NQIMk7g">
+        <ownedEnd xmi:id="_FJhjIN9IEeeVgP8NQIMk7g" type="_hrGeQNO4EeeqiP5Ban4ZWQ" association="_FJg8EN9IEeeVgP8NQIMk7g"/>
+        <ownedEnd xmi:id="_FJhjId9IEeeVgP8NQIMk7g" type="_58XuMN9HEeeVgP8NQIMk7g" association="_FJg8EN9IEeeVgP8NQIMk7g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_MAvSkN9IEeeVgP8NQIMk7g" memberEnd="_MAvSkd9IEeeVgP8NQIMk7g _MAv5oN9IEeeVgP8NQIMk7g">
+        <ownedEnd xmi:id="_MAvSkd9IEeeVgP8NQIMk7g" type="_hrGeQNO4EeeqiP5Ban4ZWQ" association="_MAvSkN9IEeeVgP8NQIMk7g"/>
+        <ownedEnd xmi:id="_MAv5oN9IEeeVgP8NQIMk7g" type="__21hgN9HEeeVgP8NQIMk7g" association="_MAvSkN9IEeeVgP8NQIMk7g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_mzJlIN9IEeeVgP8NQIMk7g" memberEnd="_mzJlId9IEeeVgP8NQIMk7g _mzKMMN9IEeeVgP8NQIMk7g">
+        <ownedEnd xmi:id="_mzJlId9IEeeVgP8NQIMk7g" type="_hrGeQNO4EeeqiP5Ban4ZWQ" association="_mzJlIN9IEeeVgP8NQIMk7g"/>
+        <ownedEnd xmi:id="_mzKMMN9IEeeVgP8NQIMk7g" type="_a5sq4N9IEeeVgP8NQIMk7g" association="_mzJlIN9IEeeVgP8NQIMk7g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_pNQ3IN9IEeeVgP8NQIMk7g" memberEnd="_pNQ3Id9IEeeVgP8NQIMk7g _pNQ3It9IEeeVgP8NQIMk7g">
+        <ownedEnd xmi:id="_pNQ3Id9IEeeVgP8NQIMk7g" type="_hrGeQNO4EeeqiP5Ban4ZWQ" association="_pNQ3IN9IEeeVgP8NQIMk7g"/>
+        <ownedEnd xmi:id="_pNQ3It9IEeeVgP8NQIMk7g" type="_esQ9kN9IEeeVgP8NQIMk7g" association="_pNQ3IN9IEeeVgP8NQIMk7g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_GRi-UN9MEeeVgP8NQIMk7g" memberEnd="_GRi-Ud9MEeeVgP8NQIMk7g _GRi-Ut9MEeeVgP8NQIMk7g">
+        <ownedEnd xmi:id="_GRi-Ud9MEeeVgP8NQIMk7g" type="_hrGeQNO4EeeqiP5Ban4ZWQ" association="_GRi-UN9MEeeVgP8NQIMk7g"/>
+        <ownedEnd xmi:id="_GRi-Ut9MEeeVgP8NQIMk7g" type="_dyBi4N9IEeeVgP8NQIMk7g" association="_GRi-UN9MEeeVgP8NQIMk7g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_OAplwN9REeeVgP8NQIMk7g" memberEnd="_OAplwd9REeeVgP8NQIMk7g _OAqM0N9REeeVgP8NQIMk7g">
+        <ownedEnd xmi:id="_OAplwd9REeeVgP8NQIMk7g" type="_hrGeQNO4EeeqiP5Ban4ZWQ" association="_OAplwN9REeeVgP8NQIMk7g"/>
+        <ownedEnd xmi:id="_OAqM0N9REeeVgP8NQIMk7g" type="_XuBU4N9PEeeVgP8NQIMk7g" association="_OAplwN9REeeVgP8NQIMk7g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_O254UN9REeeVgP8NQIMk7g" memberEnd="_O254Ud9REeeVgP8NQIMk7g _O26fYN9REeeVgP8NQIMk7g">
+        <ownedEnd xmi:id="_O254Ud9REeeVgP8NQIMk7g" type="_hrGeQNO4EeeqiP5Ban4ZWQ" association="_O254UN9REeeVgP8NQIMk7g"/>
+        <ownedEnd xmi:id="_O26fYN9REeeVgP8NQIMk7g" type="_YHjPMN9PEeeVgP8NQIMk7g" association="_O254UN9REeeVgP8NQIMk7g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_Pg7FsN9REeeVgP8NQIMk7g" memberEnd="_Pg7swN9REeeVgP8NQIMk7g _Pg7swd9REeeVgP8NQIMk7g">
+        <ownedEnd xmi:id="_Pg7swN9REeeVgP8NQIMk7g" type="_hrGeQNO4EeeqiP5Ban4ZWQ" association="_Pg7FsN9REeeVgP8NQIMk7g"/>
+        <ownedEnd xmi:id="_Pg7swd9REeeVgP8NQIMk7g" type="_ZV21YN9PEeeVgP8NQIMk7g" association="_Pg7FsN9REeeVgP8NQIMk7g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_QFyGQN9REeeVgP8NQIMk7g" memberEnd="_QFytUN9REeeVgP8NQIMk7g _QFytUd9REeeVgP8NQIMk7g">
+        <ownedEnd xmi:id="_QFytUN9REeeVgP8NQIMk7g" type="_hrGeQNO4EeeqiP5Ban4ZWQ" association="_QFyGQN9REeeVgP8NQIMk7g"/>
+        <ownedEnd xmi:id="_QFytUd9REeeVgP8NQIMk7g" type="_Z9QzoN9PEeeVgP8NQIMk7g" association="_QFyGQN9REeeVgP8NQIMk7g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_RcbwIN9REeeVgP8NQIMk7g" memberEnd="_RcbwId9REeeVgP8NQIMk7g _RcbwIt9REeeVgP8NQIMk7g">
+        <ownedEnd xmi:id="_RcbwId9REeeVgP8NQIMk7g" type="_hrGeQNO4EeeqiP5Ban4ZWQ" association="_RcbwIN9REeeVgP8NQIMk7g"/>
+        <ownedEnd xmi:id="_RcbwIt9REeeVgP8NQIMk7g" association="_RcbwIN9REeeVgP8NQIMk7g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_Uh6TUN9REeeVgP8NQIMk7g" memberEnd="_Uh6TUd9REeeVgP8NQIMk7g _Uh66YN9REeeVgP8NQIMk7g">
+        <ownedEnd xmi:id="_Uh6TUd9REeeVgP8NQIMk7g" type="_hrGeQNO4EeeqiP5Ban4ZWQ" association="_Uh6TUN9REeeVgP8NQIMk7g"/>
+        <ownedEnd xmi:id="_Uh66YN9REeeVgP8NQIMk7g" type="_bJO3gN9PEeeVgP8NQIMk7g" association="_Uh6TUN9REeeVgP8NQIMk7g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_Xr4U8N9REeeVgP8NQIMk7g" memberEnd="_Xr4U8d9REeeVgP8NQIMk7g _Xr4U8t9REeeVgP8NQIMk7g">
+        <ownedEnd xmi:id="_Xr4U8d9REeeVgP8NQIMk7g" type="_hrGeQNO4EeeqiP5Ban4ZWQ" association="_Xr4U8N9REeeVgP8NQIMk7g"/>
+        <ownedEnd xmi:id="_Xr4U8t9REeeVgP8NQIMk7g" type="_bpo14N9PEeeVgP8NQIMk7g" association="_Xr4U8N9REeeVgP8NQIMk7g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_YbPVUN9REeeVgP8NQIMk7g" memberEnd="_YbPVUd9REeeVgP8NQIMk7g _YbPVUt9REeeVgP8NQIMk7g">
+        <ownedEnd xmi:id="_YbPVUd9REeeVgP8NQIMk7g" type="_hrGeQNO4EeeqiP5Ban4ZWQ" association="_YbPVUN9REeeVgP8NQIMk7g"/>
+        <ownedEnd xmi:id="_YbPVUt9REeeVgP8NQIMk7g" association="_YbPVUN9REeeVgP8NQIMk7g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_ZFCgQN9REeeVgP8NQIMk7g" memberEnd="_ZFCgQd9REeeVgP8NQIMk7g _ZFCgQt9REeeVgP8NQIMk7g">
+        <ownedEnd xmi:id="_ZFCgQd9REeeVgP8NQIMk7g" type="_hrGeQNO4EeeqiP5Ban4ZWQ" association="_ZFCgQN9REeeVgP8NQIMk7g"/>
+        <ownedEnd xmi:id="_ZFCgQt9REeeVgP8NQIMk7g" type="_cSb7QN9PEeeVgP8NQIMk7g" association="_ZFCgQN9REeeVgP8NQIMk7g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_ZypNIN9REeeVgP8NQIMk7g" memberEnd="_ZypNId9REeeVgP8NQIMk7g _ZypNIt9REeeVgP8NQIMk7g">
+        <ownedEnd xmi:id="_ZypNId9REeeVgP8NQIMk7g" type="_hrGeQNO4EeeqiP5Ban4ZWQ" association="_ZypNIN9REeeVgP8NQIMk7g"/>
+        <ownedEnd xmi:id="_ZypNIt9REeeVgP8NQIMk7g" type="_doYagN9PEeeVgP8NQIMk7g" association="_ZypNIN9REeeVgP8NQIMk7g"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_vQ5WUNdtEeea54gTi5Qyaw" name="UC2 componenti">
-      <packagedElement xmi:type="uml:Component" xmi:id="_x4bZQNdtEeea54gTi5Qyaw" name="UC2 - Login" useCase="_x4bZSNdtEeea54gTi5Qyaw _2OKqcNdtEeea54gTi5Qyaw _3KvncNdtEeea54gTi5Qyaw _3YfvkNdtEeea54gTi5Qyaw _3k7CANdtEeea54gTi5Qyaw _rJOj0OHVEeesHJdalhjjtg">
+      <packagedElement xmi:type="uml:Component" xmi:id="_x4bZQNdtEeea54gTi5Qyaw" name="UC2 - Login" useCase="_x4bZSNdtEeea54gTi5Qyaw _2OKqcNdtEeea54gTi5Qyaw _3KvncNdtEeea54gTi5Qyaw _3YfvkNdtEeea54gTi5Qyaw _3k7CANdtEeea54gTi5Qyaw">
         <eAnnotations xmi:id="_x4bZQddtEeea54gTi5Qyaw"/>
         <ownedUseCase xmi:id="_x4bZQtdtEeea54gTi5Qyaw" name="UC1 Breve guida"/>
         <ownedUseCase xmi:id="_x4bZQ9dtEeea54gTi5Qyaw" name="UC5 Amministrazione"/>
@@ -208,7 +308,7 @@
         <ownedUseCase xmi:id="_x4bZRtdtEeea54gTi5Qyaw" name="UC3 Registrazione"/>
         <ownedUseCase xmi:id="_x4bZR9dtEeea54gTi5Qyaw" name="UC7 Gestione aspetti relativi allo studente"/>
         <packagedElement xmi:type="uml:UseCase" xmi:id="_x4bZSNdtEeea54gTi5Qyaw" name="UC2 Login" subject="_x4bZQNdtEeea54gTi5Qyaw"/>
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_2OKqcNdtEeea54gTi5Qyaw" name="UC2.1 - Login automatico&#xD;&#xA;-------------------------------&#xD;&#xA;Extension points:&#xD;&#xA;-Errore chiave non registrata&#xD;&#xA;-Errore chiave malformata&#xD;&#xA;-Errore chiave assente&#xD;&#xA;-Errore chiave non abilitata" subject="_x4bZQNdtEeea54gTi5Qyaw"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_2OKqcNdtEeea54gTi5Qyaw" name="UC2.1 - Login automatico" subject="_x4bZQNdtEeea54gTi5Qyaw"/>
         <packagedElement xmi:type="uml:UseCase" xmi:id="_3KvncNdtEeea54gTi5Qyaw" name="UC2.2 - Visualizzazione messaggio di errore riguardo a chiave assente" subject="_x4bZQNdtEeea54gTi5Qyaw">
           <extend xmi:id="__JV1sNdtEeea54gTi5Qyaw" extendedCase="_2OKqcNdtEeea54gTi5Qyaw"/>
         </packagedElement>
@@ -217,9 +317,6 @@
         </packagedElement>
         <packagedElement xmi:type="uml:UseCase" xmi:id="_3k7CANdtEeea54gTi5Qyaw" name="UC2.4 - Visualizzazione messaggio di errore riguardo a chiave non registrata" subject="_x4bZQNdtEeea54gTi5Qyaw">
           <extend xmi:id="_ASVeENduEeea54gTi5Qyaw" extendedCase="_2OKqcNdtEeea54gTi5Qyaw"/>
-        </packagedElement>
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_rJOj0OHVEeesHJdalhjjtg" name=" UC2.5 - Visualizzazione schermata informativa account non abilitato" subject="_x4bZQNdtEeea54gTi5Qyaw">
-          <extend xmi:id="_0aVi0OHVEeesHJdalhjjtg" extendedCase="_2OKqcNdtEeea54gTi5Qyaw"/>
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Actor" xmi:id="_x4cnYNdtEeea54gTi5Qyaw" name="Utente non autenticato">
@@ -350,11 +447,7 @@
             <details xmi:id="_7IErYt6OEeeoYNTeb3S4ug" key="Human"/>
           </eAnnotations>
         </nestedClassifier>
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_9J8cgN6OEeeoYNTeb3S4ug" name="UC8.1.1 - Inserimento chiave pubblica&#xD;&#xA;-------------------------------&#xD;&#xA;Extension points:&#xD;&#xA;-Errore chiave malformata&#xD;&#xA;-Errore registrazione&#xD;&#xA;chiave già presente" subject="_4rq6YN6OEeeoYNTeb3S4ug">
-          <ownedComment xmi:id="_ngpkUN9IEeeasfLQQqBTMg" annotatedElement="_9J8cgN6OEeeoYNTeb3S4ug">
-            <body></body>
-          </ownedComment>
-        </packagedElement>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_9J8cgN6OEeeoYNTeb3S4ug" name="UC8.1.1 - Inserimento chiave pubblica" subject="_4rq6YN6OEeeoYNTeb3S4ug"/>
         <packagedElement xmi:type="uml:UseCase" xmi:id="_-svsAN6OEeeoYNTeb3S4ug" name="UC8.1.2 - Visualizzazione messaggio di errore riguardo a chiave mal formata" subject="_4rq6YN6OEeeoYNTeb3S4ug">
           <extend xmi:id="_ZiUAQN6PEeeoYNTeb3S4ug" extendedCase="_9J8cgN6OEeeoYNTeb3S4ug"/>
         </packagedElement>
@@ -370,6 +463,68 @@
       <packagedElement xmi:type="uml:Association" xmi:id="_UH60IN6PEeeoYNTeb3S4ug" memberEnd="_UH60Id6PEeeoYNTeb3S4ug _UH7bMN6PEeeoYNTeb3S4ug">
         <ownedEnd xmi:id="_UH60Id6PEeeoYNTeb3S4ug" type="_9J8cgN6OEeeoYNTeb3S4ug" association="_UH60IN6PEeeoYNTeb3S4ug"/>
         <ownedEnd xmi:id="_UH7bMN6PEeeoYNTeb3S4ug" type="_7cVrMN6OEeeoYNTeb3S4ug" association="_UH60IN6PEeeoYNTeb3S4ug"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_yDOIAN9EEeeVgP8NQIMk7g" name="UC3 - Registrazione" useCase="_JJKv4N9FEeeVgP8NQIMk7g _L5CPcN9FEeeVgP8NQIMk7g _RRsWMN9FEeeVgP8NQIMk7g _Uwk34N9FEeeVgP8NQIMk7g _O3xkkN9dEeeVgP8NQIMk7g _PKP0oN9dEeeVgP8NQIMk7g _P0DmoN9dEeeVgP8NQIMk7g _QE5fAN9dEeeVgP8NQIMk7g">
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_JJKv4N9FEeeVgP8NQIMk7g" name="UC3.1 - Inserimento nome&#xA;-------------------------------&#xA;Extension points:&#xA;-Visualizzazione errore campo non compilato&#xA;-Visualizzazione errore utente già registrato&#xA;-Visualizzazione errore chiave non presente&#xA;-Visualizzazione errore chiave malformata" subject="_yDOIAN9EEeeVgP8NQIMk7g"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_L5CPcN9FEeeVgP8NQIMk7g" name="UC3.2 - Inserimento Cognome&#xA;-------------------------------&#xA;Exetension ponts:&#xA;-Visualizzazione erroe campo non compilato" subject="_yDOIAN9EEeeVgP8NQIMk7g"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_RRsWMN9FEeeVgP8NQIMk7g" name="UC3.3 - Selezione Categoria" subject="_yDOIAN9EEeeVgP8NQIMk7g"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_Uwk34N9FEeeVgP8NQIMk7g" name="UC3.4 - Selezione corso di laurea" subject="_yDOIAN9EEeeVgP8NQIMk7g"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_O3xkkN9dEeeVgP8NQIMk7g" name="UC3.5 - Visualizzazione errore campo non compilato" subject="_yDOIAN9EEeeVgP8NQIMk7g">
+        <extend xmi:id="_lFj1YN9dEeeVgP8NQIMk7g" extendedCase="_JJKv4N9FEeeVgP8NQIMk7g"/>
+        <extend xmi:id="_oLRpIN9dEeeVgP8NQIMk7g" extendedCase="_L5CPcN9FEeeVgP8NQIMk7g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_PKP0oN9dEeeVgP8NQIMk7g" name="UC3.6 - Visualizzazione errore utente già registrato" subject="_yDOIAN9EEeeVgP8NQIMk7g">
+        <extend xmi:id="_mOfzYN9dEeeVgP8NQIMk7g" extendedCase="_JJKv4N9FEeeVgP8NQIMk7g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_P0DmoN9dEeeVgP8NQIMk7g" name="UC3.7 - Visualizzazione errore chiave mancante" subject="_yDOIAN9EEeeVgP8NQIMk7g">
+        <extend xmi:id="_l1wjQN9dEeeVgP8NQIMk7g" extendedCase="_JJKv4N9FEeeVgP8NQIMk7g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_QE5fAN9dEeeVgP8NQIMk7g" name="UC3.8 - Visualizzazione errore chiave malformata" subject="_yDOIAN9EEeeVgP8NQIMk7g">
+        <extend xmi:id="_lcRsQN9dEeeVgP8NQIMk7g" extendedCase="_JJKv4N9FEeeVgP8NQIMk7g"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_mTVHgN9GEeeVgP8NQIMk7g" name="UC5 - Amministrazione" useCase="_qElLkN9GEeeVgP8NQIMk7g _s6zx0N9GEeeVgP8NQIMk7g _xsh0YN9GEeeVgP8NQIMk7g">
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_qElLkN9GEeeVgP8NQIMk7g" name="UC5.1 - Gestione Utenti" subject="_mTVHgN9GEeeVgP8NQIMk7g"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_s6zx0N9GEeeVgP8NQIMk7g" name="UC5.2 - Gestione Anni Accademici" subject="_mTVHgN9GEeeVgP8NQIMk7g"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_xsh0YN9GEeeVgP8NQIMk7g" name="UC5.3 - Gestione corsi di laurea" subject="_mTVHgN9GEeeVgP8NQIMk7g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_UvJCkN9HEeeVgP8NQIMk7g" name="UC5.1 - Gestione Utenti" useCase="_cnuvcN9HEeeVgP8NQIMk7g _h_Z-wN9HEeeVgP8NQIMk7g _oWjHAN9HEeeVgP8NQIMk7g _58XuMN9HEeeVgP8NQIMk7g __21hgN9HEeeVgP8NQIMk7g">
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_cnuvcN9HEeeVgP8NQIMk7g" name="UC5.1.1 - Visualizzazione lista di studenti" subject="_UvJCkN9HEeeVgP8NQIMk7g"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_h_Z-wN9HEeeVgP8NQIMk7g" name="UC 5.1.2 - Visualizzazione lista di professori" subject="_UvJCkN9HEeeVgP8NQIMk7g"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_oWjHAN9HEeeVgP8NQIMk7g" name="UC5.1.3 - Visualizzazione lista di utenti in attesa" subject="_UvJCkN9HEeeVgP8NQIMk7g"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_58XuMN9HEeeVgP8NQIMk7g" name="UC5.1.4 - Abilitazione Utenti" subject="_UvJCkN9HEeeVgP8NQIMk7g"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="__21hgN9HEeeVgP8NQIMk7g" name="UC5.1.5 - Disabilitazione Utente" subject="_UvJCkN9HEeeVgP8NQIMk7g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_UE1r4N9IEeeVgP8NQIMk7g" name="UC5.2 - Gestione anni accademici" useCase="_a5sq4N9IEeeVgP8NQIMk7g _dyBi4N9IEeeVgP8NQIMk7g _esQ9kN9IEeeVgP8NQIMk7g _gAF88N9IEeeVgP8NQIMk7g _h3lqEN9IEeeVgP8NQIMk7g _k_AuAN9IEeeVgP8NQIMk7g">
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_a5sq4N9IEeeVgP8NQIMk7g" name="UC5.2.2 - Visualizzazione lista anni accademici" subject="_UE1r4N9IEeeVgP8NQIMk7g"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_dyBi4N9IEeeVgP8NQIMk7g" name="UC5.2.1 - Aggiunta anno accademico &#xA;-------------------------------&#xA;Extension points:&#xA;-Visualizzazione messaggio anno malformato&#xA;-Visualizzazione messaggio di anno accademico già presente&#xA;-Visualizzazione messaggio anno non compilato" subject="_UE1r4N9IEeeVgP8NQIMk7g"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_esQ9kN9IEeeVgP8NQIMk7g" name="UC5.2.3 - Aggiunta di un corso di laure ad un anno accademico" subject="_UE1r4N9IEeeVgP8NQIMk7g"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_gAF88N9IEeeVgP8NQIMk7g" name="UC5.2.4 - Visualizzazione errore anno malformato" subject="_UE1r4N9IEeeVgP8NQIMk7g">
+        <extend xmi:id="_rwfo4N9IEeeVgP8NQIMk7g" extendedCase="_dyBi4N9IEeeVgP8NQIMk7g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_h3lqEN9IEeeVgP8NQIMk7g" name="UC5.2.5 - Visualizzazione messaggio di anno accademico già presente" subject="_UE1r4N9IEeeVgP8NQIMk7g">
+        <extend xmi:id="_Jf-pMN9MEeeVgP8NQIMk7g" extendedCase="_dyBi4N9IEeeVgP8NQIMk7g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_k_AuAN9IEeeVgP8NQIMk7g" name="UC5.2.6 - Visualizzazione messaggio anno non compilato" subject="_UE1r4N9IEeeVgP8NQIMk7g">
+        <extend xmi:id="_tFwysN9IEeeVgP8NQIMk7g" extendedCase="_dyBi4N9IEeeVgP8NQIMk7g"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_MSZmIN9PEeeVgP8NQIMk7g" name="UC5.3 - Gestione corsi di laurea" useCase="_XuBU4N9PEeeVgP8NQIMk7g _YHjPMN9PEeeVgP8NQIMk7g _YkmXkN9PEeeVgP8NQIMk7g _ZV21YN9PEeeVgP8NQIMk7g _Z9QzoN9PEeeVgP8NQIMk7g _bJO3gN9PEeeVgP8NQIMk7g _bpo14N9PEeeVgP8NQIMk7g _cSb7QN9PEeeVgP8NQIMk7g _dOQDQN9PEeeVgP8NQIMk7g _doYagN9PEeeVgP8NQIMk7g _d7uNQN9PEeeVgP8NQIMk7g">
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_XuBU4N9PEeeVgP8NQIMk7g" name="UC5.3.3 - Visualizzazione lista completa dei corsi" subject="_MSZmIN9PEeeVgP8NQIMk7g"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_YHjPMN9PEeeVgP8NQIMk7g" name="UC5.3.4 - Visualizzazione corsi per anno accademico" subject="_MSZmIN9PEeeVgP8NQIMk7g"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_YkmXkN9PEeeVgP8NQIMk7g" name="UC5.3.7 - Visualizzazione lista esami per corso" subject="_MSZmIN9PEeeVgP8NQIMk7g"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_ZV21YN9PEeeVgP8NQIMk7g" name="UC5.3.8 - Visualizzazione lista esami" subject="_MSZmIN9PEeeVgP8NQIMk7g"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_Z9QzoN9PEeeVgP8NQIMk7g" name="UC5.3.9 - Aggiunta esame a corso" subject="_MSZmIN9PEeeVgP8NQIMk7g"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_bJO3gN9PEeeVgP8NQIMk7g" name="UC5.3.1 - Creazione corso di laurea&#xA;-------------------------------&#xA;Extension points:&#xA;-Visualizzazione errore mancata compilazione campi" subject="_MSZmIN9PEeeVgP8NQIMk7g"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_bpo14N9PEeeVgP8NQIMk7g" name="UC5.3.10 - Associa professore a esame" subject="_MSZmIN9PEeeVgP8NQIMk7g"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_cSb7QN9PEeeVgP8NQIMk7g" name="UC5.3.1 - Visualizzazione dettagli esame" subject="_MSZmIN9PEeeVgP8NQIMk7g"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_dOQDQN9PEeeVgP8NQIMk7g" name="UC5.3.2 - Visualizzazione errore mancata compilazione campi" subject="_MSZmIN9PEeeVgP8NQIMk7g">
+        <extend xmi:id="_6ZRWgN9QEeeVgP8NQIMk7g" extendedCase="_bJO3gN9PEeeVgP8NQIMk7g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_doYagN9PEeeVgP8NQIMk7g" name="UC5.3.5 - Crea un esame nel corso&#xA;-------------------------------&#xA;Extension points:&#xA;-Visualizzazione errore campi non compilati" subject="_MSZmIN9PEeeVgP8NQIMk7g"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_d7uNQN9PEeeVgP8NQIMk7g" name="UC5.3.6 - Visualizzazione errore campi non compilati" subject="_MSZmIN9PEeeVgP8NQIMk7g">
+        <extend xmi:id="_5YG0cN9QEeeVgP8NQIMk7g" extendedCase="_doYagN9PEeeVgP8NQIMk7g"/>
       </packagedElement>
     </packagedElement>
   </packagedElement>

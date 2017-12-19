@@ -55,7 +55,7 @@
 	Dopo lo stato di “Approvato” per il documento viene quindi creato un PDF contenente la versione approvata dal Responsabile.
 	
 	\subsection{Documenti correnti}
-	Qui di seguito si presentano i documenti formali in ordine alfabetico e la loro classificazione tra Interno od Esterno:
+	Qui di seguito si presentano i documenti formali in ordine alfabetico, classificati per appartenenza(Interno ed Esterno):
 	\begin{itemize}
 		\item \textbf{Analisi dei Requisiti:} utilizzo Esterno, sigla(AR) \\
 		 Documento per esporre e scomporre i \citGloss{requisiti} del progetto contenente casi d'uso relativi al prodotto e diagrammi di interazione con l'utente. Viene scritto dagli Analisti dopo aver analizzato il capitolato e interagendo con il Proponente in riunioni esterne;
@@ -85,7 +85,7 @@
 	
 	\subsection{Norme}
 	\subsubsection{Struttura dei documenti}
-		Ogni documento è realizzato a partire da una disposizione prestabilita che dovrà essere conforme per ogni documento ufficiale ad eccezione dei verbali: %TODO perché ad accezzione dei verbali?
+		Ogni documento è realizzato a partire da una disposizione prestabilita che dovrà essere conforme per ogni documento ufficiale ad eccezione dei verbali: %TODO perché ad accezione dei verbali?
 		\begin{itemize}
 			\item \textbf{Frontespizio:} questa sezione si troverà nella prima pagina di ogni documento e conterrà:
 			\begin{itemize}
@@ -206,7 +206,7 @@
 		\item \textbf{Metriche per i documenti:} per la verifica dei documenti è stata scelto l'indice di leggibilità secondo l'indice Gulpease che viene calcolato tramite funzione Latex.\\I risultati sono compresi tra 0 e 100 dove il valore 100 indica una leggibilità massima, si è scelto di considerare un documento sufficientemente leggibile all'ottenimento del valore X; %TODO o funzione esterna si fixa il prototipo alla fine di questo documento? 
 		%TODO specificare X
 		
-		\item \textbf{Metriche per il software:} al fine di perseguire gli obiettivi qualitati prefissati nel Piano Di Qualifica è doveroso definire delle metriche come copertura del codice tramite test automatici; %TODO riferimenti a sucessive revisioni?
+		\item \textbf{Metriche per il software:} al fine di perseguire gli obiettivi qualitativi prefissati nel Piano Di Qualifica è doveroso definire delle metriche come copertura del codice tramite test automatici; %TODO riferimenti a successive revisioni?
 		
 		\item \textbf{Metriche per i feedback di miglioramento:} i feedback gestiti come spiegato nelle sezioni successive presentano un indice di occorrenze che viene incrementato in automatico ad ogni nuova segnalazione. 
 	\end{itemize}
@@ -248,7 +248,7 @@
 	Il merge col master avviene quindi solamente quando un documento si trova in stato di "Approvato".
 	
 	\subsubsection{Aggiornamento della repository}
-	Per l’aggiornamento della \citGloss{repository} è previsto il seguente sotto processo motivato dalla sezione precedente "ciclo di vita":
+	Per l'aggiornamento della \citGloss{repository} è previsto il seguente sotto processo motivato dalla sezione precedente "ciclo di vita":
 	\begin{itemize}
 		\item Verificare di trovarsi sul branch personale con "git branch"(quella selezionata presenta un asterisco *) e in caso di riscontro negativo cambiare branch con "git checkout"
 		\item Dare il comando "git pull". Nel caso in cui si verifichino dei conflitti:
@@ -288,7 +288,7 @@
 	
 	\subsection{Strumenti usati per la verifica}
 	\begin{itemize}
-		\item \textbf{Software:} verranno usati per la verifica Mocha ed Enzyme per React, Jest per la verifica di Redux mentre per i contratti Solidity useremo Mocha e Chai; %TODO sono corrette queste info? Ho un dubbio su Jest siccome non presente sul redux-minimal che loro hanno detto di usare -Verifica(Davide): siccome è redux a consigliare JEst per i test, non vedo perchè debba essere sbagliato. potremmo chidere a Red B?
+		\item \textbf{Software:} verranno usati per la verifica Mocha ed Enzyme per React, Jest per la verifica di Redux mentre per i contratti Solidity useremo Mocha e Chai; %TODO sono corrette queste info? Ho un dubbio su Jest siccome non presente sul redux-minimal che loro hanno detto di usare -Verifica(Davide): siccome è redux a consigliare JEst per i test, non vedo perché debba essere sbagliato. potremmo chiedere a Red B?
 		\item \textbf{Documenti:} Per il controllo dei documenti prodotti utilizzeremo le funzionalità di Texstudio assieme a script bash eseguiti automaticamente da un \citGloss{Bot} per controllare che non ci siano errori nei file LaTex, per assicurarsi che il Glossario non presenti mancanze o duplicati e verificare l'assenza di errori ortografici;
 		\item \textbf{Gestione processi e feedback:} è stato scelto di utilizzare il sistema integrato di issues presente su \citGloss{GitHub} per permettere un dialogo maggiore per ogni singola issue. 
 	\end{itemize}

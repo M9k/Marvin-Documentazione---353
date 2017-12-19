@@ -492,7 +492,7 @@
     <packagedElement xmi:type="uml:Component" xmi:id="_UvJCkN9HEeeVgP8NQIMk7g" name="UC5.1 - Gestione Utenti" useCase="_cnuvcN9HEeeVgP8NQIMk7g _h_Z-wN9HEeeVgP8NQIMk7g _oWjHAN9HEeeVgP8NQIMk7g _58XuMN9HEeeVgP8NQIMk7g __21hgN9HEeeVgP8NQIMk7g">
       <packagedElement xmi:type="uml:UseCase" xmi:id="_cnuvcN9HEeeVgP8NQIMk7g" name="UC5.1.1 - Visualizzazione lista di studenti" subject="_UvJCkN9HEeeVgP8NQIMk7g"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_h_Z-wN9HEeeVgP8NQIMk7g" name="UC 5.1.2 - Visualizzazione lista di professori" subject="_UvJCkN9HEeeVgP8NQIMk7g"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_oWjHAN9HEeeVgP8NQIMk7g" name="UC5.1.3 - Visualizzazione lista di utenti in attesa" subject="_UvJCkN9HEeeVgP8NQIMk7g"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_oWjHAN9HEeeVgP8NQIMk7g" name="UC5.1.3 - Visualizzazione lista di utenti in attesa di abilitazione" subject="_UvJCkN9HEeeVgP8NQIMk7g"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_58XuMN9HEeeVgP8NQIMk7g" name="UC5.1.4 - Abilitazione Utenti" subject="_UvJCkN9HEeeVgP8NQIMk7g"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="__21hgN9HEeeVgP8NQIMk7g" name="UC5.1.5 - Rimozione Utente" subject="_UvJCkN9HEeeVgP8NQIMk7g"/>
     </packagedElement>

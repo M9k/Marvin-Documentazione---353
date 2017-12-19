@@ -162,8 +162,8 @@
 	\begin{enumerate}
 		\item L'utente inserisce il suo nome [UC3.1];
 		\item L'utente inserisce il suo cognome [UC3.2];
-		\item L'utente seleziona la sua categoria [UC3.3]
-		\item L'utente seleziona il corso desiderato [UC3.4]
+		\item L'utente seleziona la sua categoria [UC3.3];
+		\item L'utente seleziona il corso desiderato [UC3.4].
 	\end{enumerate}
 	\item \textbf{Precondizione:} L'utente è entrato nel sistema e ha scelto di registrarsi;\\
 	\item \textbf{Postcondizione:} La registrazione è andata a buon fine e la chiave dell'utente è stata salvata nel sistema.\\
@@ -184,10 +184,10 @@
 	\item \textbf{Scenario principale:} L'utente fornisce tramite un dispositivo di input il suo nome;
 	\item \textbf{Estensioni:}
 		\begin{enumerate}
-			\item Se l'utente non ha un chiave viene avvisato tramite un messaggio d'errore. [UC3.7]
-			\item Se l'utente non ha una chiave dal formato non corretto viene avvisato tramite messaggio d'errore; [UC3.8]
-			\item Se la chiave fornita dall'utente è già presente nel sistema l'utente viene avvisato tramite un messaggio d'errore; [UC3.6]
-			\item Se l'utente non compila il campo viene avvisato con un messaggio d'errore; [UC3.5]
+			\item Se l'utente non ha un chiave viene avvisato tramite un messaggio d'errore [UC3.7];
+			\item Se l'utente non ha una chiave dal formato non corretto viene avvisato tramite messaggio d'errore [UC3.8];
+			\item Se la chiave fornita dall'utente è già presente nel sistema l'utente viene avvisato tramite un messaggio d'errore [UC3.6];
+			\item Se l'utente non compila il campo viene avvisato con un messaggio d'errore [UC3.5].
 		\end{enumerate}
 	\item \textbf{Precondizione:} L'utente vuole inserire il proprio nome per poter proseguire con la procedura di registrazione;
 	\item \textbf{Postcondizione:} L'utente ha inserito il proprio nome nel campo fornito dal sistema e la validità della sua chiave è stata controllata;
@@ -199,7 +199,7 @@
 	\item \textbf{Scenario principale:} L'utente fornisce tramite un dispositivo di input il suo cognome;
 	\item \textbf{Estensioni:}
 		\begin{enumerate}
-				\item Se l'utente non compila il campo viene avvisato dal sistema; [UC3.5]
+				\item Se l'utente non compila il campo viene avvisato dal sistema [UC3.5].
 		\end{enumerate}		
 	\item \textbf{Precondizione:} L'utente vuole inserire il proprio cognome;
 	\item \textbf{Postcondizione:} L'utente ha inserito il suo cognome nel campo fornito dal sistema;
@@ -310,7 +310,7 @@
 	\item \textbf{Precondizione:} L'amministratore è nell'area di gestione utenti e richiede una lista di tutti i professori; 
 	\item \textbf{Postcondizione:} L'amministratore ottiene la lista.
 \end{itemize}
-\subsection{UC5.1.3 - Visualizzazione lista di utenti in attesa abilitati}
+\subsection{UC5.1.3 - Visualizzazione lista di utenti in attesa di abilitazione}
 \begin{itemize}
 	\item \textbf{Attori primari:} Amministratore;
 	\item \textbf{Scopo e descrizione:} L'amministratore visualizza una lista di tutti gli studenti ancora non abilitati;
@@ -324,8 +324,8 @@
 	\item \textbf{Scopo e descrizione:} L'amministratore abilita la registrazione di un utente;
 	\item \textbf{Scenario principale:}
 	\begin{enumerate}
-		\item L'amministratore seleziona un utente non ancora abilitato;
-		\item L'amministratore lo abilita
+		\item L'amministratore visualizza la lista degli utenti in attesa di abilitazione [UC5.1.3];
+		\item L'amministratore lo abilita [UC5.1.4].
 	\end{enumerate}
 	\item \textbf{Precondizione:} L'amministratore ha richiesto una lista di utenti non abilitati; 
 	\item \textbf{Postcondizione:} L'amministratore selezionato viene abilitato e il suo stato viene aggiornato nel sistema.
@@ -336,8 +336,8 @@
 	\item \textbf{Scopo e descrizione:} L'amministratore rimuove dal sistema un utente non ancora abilitato o già abilitato;
 	\item \textbf{Scenario principale:}
 	\begin{enumerate}
-		\item L'amministratore seleziona un utente abilitato o in attesa di abilitazione;
-		\item L'amministratore rimuove l'utente selezionato
+		\item L'amministratore visualizza gli utenti abilitati o in attesa di abilitazione e ne seleziona uno [UC5.1.1 o UC5.1.2 o UC5.3];
+		\item L'amministratore rimuove l'utente selezionato [UC5.1.5].
 	\end{enumerate}
 	\item \textbf{Precondizione:} L'amministratore ha richiesto una lista di studenti o professori; 
 	\item \textbf{Postcondizione:} L'utente selezionato viene rimosso dal sistema.
@@ -365,9 +365,9 @@
 	\item \textbf{Scenario principale:} L'amministratore inserisce il numero dell'anno da aggiungere in un campo fornito dal sistema;
 	\item \textbf{Estensioni:}
 	\begin{enumerate}
-		\item Se l'amministratore inserisce un'anno non numerico viene mostrato un messaggio d'errore relativo alla malformazione dell'anno;[UC5.1.4]
-		\item Se l'amministratore inserisce un'anno già presente nel sistema viene mostrato un messaggio d'errore relativo alla non univocità dell'anno.[UC5.1.5]
-		\item Se l'amministratore lascia il campo vuoto l'utente viene avvisato con un relativo messaggio d'errore.[UC5.1.6]
+		\item Se l'amministratore inserisce un'anno non numerico viene mostrato un messaggio d'errore relativo alla malformazione dell'anno [UC5.1.4];
+		\item Se l'amministratore inserisce un'anno già presente nel sistema viene mostrato un messaggio d'errore relativo alla non univocità dell'anno [UC5.1.5];
+		\item Se l'amministratore lascia il campo vuoto l'utente viene avvisato con un relativo messaggio d'errore [UC5.1.6].
 	\end{enumerate}
 	\item \textbf{Precondizione:} L'amministratore ha scelto di aggiungere un anno accademico; 
 	\item \textbf{Postcondizione:} L'anno accademico creato viene inserito nel sistema.
@@ -386,9 +386,9 @@
 	\item \textbf{Scopo e descrizione:} L'amministratore aggiunge un corso di laurea già presente nel sistema all'interno dell'anno accademico;
 	\item \textbf{Scenario principale:}
 	\begin{enumerate}
-		\item L'amministratore seleziona l'anno accademico;
-		\item L'amministratore ottiene una lista di corsi di laurea; [UC 5.3.1]
-		\item L'amministratore seleziona il corso di laurea e lo inserisce all'interno dell'anno accademico.
+		\item L'amministratore visualizza la lista degli anni accademici e identifica quello di suo interesse [UC5.2.2];
+		\item L'amministratore ottiene una lista dei corsi di laurea [UC 5.3.3];
+		\item L'amministratore seleziona il corso di laurea e lo inserisce all'interno dell'anno accademico desiderato [5.2.3].
 	\end{enumerate}
 	\item \textbf{Precondizione:} L'amministratore vuole aggiungere un corso di laurea all'anno accademico è ha ottenuto una lista degli anni accademici presenti nel sistema; 
 	\item \textbf{Postcondizione:} Il corso di laurea è stato correlato con l'anno accademico e il loro stato è stato aggiornato nel sistema.
@@ -439,13 +439,12 @@
 	\item \textbf{Scopo e descrizione:} L'amministratore crea un nuovo corso di laurea associato ad un anno accademico;
 	\item \textbf{Scenario principale:}
 		\begin{enumerate}
-			\item L'amministratore ottiene una lista degli anni accademici [UC5.2.2];
-			\item L'amministratore seleziona un anno accademico;
-			\item L'amministratore inserisce di dati relativi al corso di laurea;
+			\item L'amministratore ottiene una lista degli anni accademici e seleziona quello di suo interesse [UC5.2.2];
+			\item L'amministratore inserisce di dati relativi al corso di laurea [5.3.1].
 		\end{enumerate}
 	\item \textbf{Estensioni:}
 		\begin{enumerate}
-			\item Se l'amministratore non inserisce tutti i campi viene avvisato dal sistema [UC5.3.2];
+			\item Se l'amministratore non inserisce tutti i campi viene avvisato dal sistema [UC5.3.2].
 		\end{enumerate}
 	\item \textbf{Precondizione:} L'amministratore vuole inserire un nuovo corso di laurea associato ad un anno accademico; 
 	\item \textbf{Postcondizione:} Il corso di laurea è stato creato ed inserito nel sistema.
@@ -471,8 +470,8 @@
 	\item \textbf{Scopo e descrizione:} Vengono visualizzati i corsi di laurea relativi ad un determinato anno accademico;
 	\item \textbf{Scenario principale:}
 	\begin{enumerate}
-		\item L'amministratore seleziona un anno accademico
-		\item Il sistema mostra la lista di corsi di laurea associati all'anno accademico
+		\item L'amministratore ottiene una lista degli anni accademici e seleziona quello di suo interesse [UC5.2.2];
+		\item Il sistema mostra la lista di corsi di laurea associati all'anno accademico [UC5.3.4].
 	\end{enumerate};
 	\item \textbf{Precondizione:} L'amministratore ha visualizzato una lista di anni accademici [UC5.2.2] e vuole visualizzare i corsi di laurea all'interno di uno di essi; 
 	\item \textbf{Postcondizione:} L'amministratore ottiene la lista desiderata.
@@ -484,9 +483,9 @@
 	\item \textbf{Scenario principale:} L'amministratore inserisce i dati necessari per la creazione dell'esame;
 	\item \textbf{Estensioni:}
 	\begin{enumerate}
-		\item Se l'amministratore non compila tutti i campi viene visualizzato un messaggio d'errore [UC5.3.4]
+		\item Se l'amministratore non compila tutti i campi viene visualizzato un messaggio d'errore [UC5.3.4].
 	\end{enumerate}
-	\item \textbf{Precondizione:} L'amministratore ha ottenuto una lista di corsi di laurea per anno accademico [UC5.3.2] e ne ha selezionato uno, volendo creare un esame al su interno; 
+	\item \textbf{Precondizione:} L'amministratore ha ottenuto una lista di corsi di laurea per anno accademico [UC5.3.3] e ne ha selezionato uno, volendo creare un esame al su interno; 
 	\item \textbf{Postcondizione:} L'esame viene inserito nel sistema e associato al corso di laurea selezionato.
 \end{itemize}
 \subsection{UC5.3.6 - Visualizzazione errore campi non compilati nella creazione dell'esame}
@@ -503,10 +502,10 @@
 	\item \textbf{Scopo e descrizione:} Vengono visualizzati gli esami relativi ad un determinato corso di laurea;
 	\item \textbf{Scenario principale:}
 	\begin{enumerate}
-		\item L'amministratore seleziona un corso di laurea
+		\item L'amministratore ottiene una lista dei corsi di laurea e seleziona quello di suo interesse [UC5.3.3 o UC5.3.4];
 		\item Il sistema mostra la lista di esami associati al corso selezionato
 	\end{enumerate};
-	\item \textbf{Precondizione:} L'amministratore ha visualizzato una lista di corsi di laurea [UC5.3.1 o UC5.3.2] e vuole visualizzare gli esami all'interno di uno di essi; 
+	\item \textbf{Precondizione:} L'amministratore ha visualizzato una lista di corsi di laurea [UC5.3.3 o UC5.3.4] e vuole visualizzare gli esami all'interno di uno di essi; 
 	\item \textbf{Postcondizione:} L'amministratore ottiene la lista desiderata.
 \end{itemize}
 \subsection{UC5.3.8 - Visualizzazione lista esami}
@@ -523,15 +522,15 @@
 	\item \textbf{Scopo e descrizione:} L'amministratore aggiunge un esame ad un determinato corso di laurea;
 	\item \textbf{Scenario principale:}
 		\begin{enumerate}
-			\item L'amministratore seleziona il corso di laurea;
-			\item L'amministratore ottiene una lista di esami [UC5.3.8];
-			\item L'amministratore seleziona l'esame e lo inserisce all'interno del corso selezionato;
+			\item L'amministratore ottiene una lista dei corsi di laurea e seleziona quello di suo interesse [UC5.3.3 o UC5.3.4];
+			\item L'amministratore ottiene una lista degli esami [UC5.3.7 o UC5.3.8];
+			\item L'amministratore seleziona l'esame e lo inserisce all'interno del corso selezionato [UC5.3.9].
 		\end{enumerate}
 	\item \textbf{Precondizione:} L'amministratore vuole aggiungere un esame ad un corso di laurea e ha ottenuto una lista di corsi di laurea presenti nel sistema [UC5.3.3 o UC5.3.4]; 
 	\item \textbf{Postcondizione:} L'esame è stato aggiunto al corso di laurea e il loro stato aggiornato nel sistema.
 \end{itemize}
 \begin{comment}
-\subsection{UC5.3.10 - Rimozione esame da un corso}
+subsection{UC5.3.10 - Rimozione esame da un corso}
 \begin{itemize}
 	\item \textbf{Attori primari:} Amministratore;
 	\item \textbf{Scopo e descrizione:} L'amministratore rimuove un esame da un corso di laurea;
@@ -549,15 +548,15 @@
 	\item \textbf{Scopo e descrizione:} L'amministratore associa ad un esame un professore;
 	\item \textbf{Scenario principale:};
 	\begin{enumerate}
-		\item L'amministratore ottiene una lista di professori [UC5.1.2];
-		\item L'amministratore seleziona un professore;
-		\item L'amministratore associa all'esame il professore selezionato;
+		\item L'amministratore ottiene una lista degli esami [UC5.3.7 o UC5.3.8];
+		\item L'amministratore ottiene una lista dei professori e seleziona quello di suo interesse [UC5.1.2];
+		\item L'amministratore associa all'esame il professore selezionato [UC5.3.10].
 	\end{enumerate}
-	\item \textbf{Precondizione:} L'amministratore ha ottenuto una lista di esami [UC5.3.7 o UC5.3.8] ne ha selezionato uno e vuole associarci un professore; 
+	\item \textbf{Precondizione:} L'amministratore ha ottenuto una lista di esami [UC5.3.7 o UC5.3.8], ne ha selezionato uno e vuole associarci un professore; 
 	\item \textbf{Postcondizione:} Il professore selezionato viene associato all'esame e il loro stato aggiornato nel sistema.
 \end{itemize}
 \begin{comment}
-\subsection{UC5.3.11 - Rimozione corso di laurea da anno accademico}
+subsection{UC5.3.11 - Rimozione corso di laurea da anno accademico}
 \begin{itemize}
 	\item \textbf{Attori primari:} Amministratore;
 	\item \textbf{Scopo e descrizione:} L'amministratore rimuove l'associazione tra un corso di laurea e l'anno accademico a lui associato;
@@ -577,8 +576,8 @@
 	\item \textbf{Scopo e descrizione:} L'amministratore visualizza i dati relativi ad uno specifico esame, come crediti e professore associato;
 	\item \textbf{Scenario principale:}
 		\begin{enumerate}
-			\item L'amministratore seleziona un esame dalla lista;
-			\item Il sistema mostra una schermata informativa contenente i dati relativi al numero di crediti dell'esame e il professore associato ad esso;
+			\item L'amministratore ottiene una lista degli esami e seleziona quello di suo interesse [UC5.3.7 o UC5.3.8];
+			\item Il sistema mostra una schermata informativa contenente i dati relativi al numero di crediti dell'esame e il professore associato ad esso [UC5.3.11];
 		\end{enumerate}
 	\item \textbf{Precondizione:} L'amministratore vuole visualizzare i dettagli di un esame e ha richiesto una lista di esami [UC5.3.7 o UC5.3.8]; 
 	\item \textbf{Postcondizione:} L'amministratore ha ottenuto le informazioni ricercate.
@@ -616,12 +615,10 @@
 	\item \textbf{Flusso principale degli eventi:}\\
 	\begin{enumerate}
 		\item Il professore visualizza la lista degli esami di sua competenza [UC6.1];
-		\item Il professore, una volta individuato l'esame al quale è interessato, ne richiede la lista degli studenti registrati;
-		\item Il professore consulta la lista degli studenti dell'esame richiesto;
+		\item Il professore, una volta individuato l'esame al quale è interessato, ne richiede la lista degli studenti registrati [UC6.2].
 	\end{enumerate}
 	\item \textbf{Precondizione:} L'utente è già riconosciuto dal sistema come professore e richiede la visualizzazione della lista degli studenti iscritti a un determinato esame di sua competenza;\\
 	\item \textbf{Postcondizione:} Il professore ottiene la lista degli studenti iscritti all'esame richiesto per poterla consultare.\\
-	%TODO discutere: nessuna estensione, ha la possibilità di richiederlo solo ai suoi corsi, e se manomette il JS comunque non accede a informazioni segrete
 \end{itemize}
 
 \subsection{UC6.3 - Registrazione valutazione di un esame}
@@ -632,8 +629,8 @@
 	\begin{enumerate}
 		\item Il professore visualizza la lista degli esami di sua competenza [UC6.1];
 		\item Il professore, una volta individuato l'esame al quale è interessato, ne richiede la lista degli studenti registrati [UC6.2];
-		\item Il professore consulta la lista degli studenti ed individua la persona alla quale deve inserire la valutazione;
-		\item Il professore inserisce la valutazione allo studente;
+		\item Il professore consulta la lista degli studenti ed individua la persona alla quale deve inserire la valutazione [UC6.2];
+		\item Il professore inserisce la valutazione allo studente [UC6.3].
 	\end{enumerate}
 	\item \textbf{Precondizione:} Il professore possiede una valutazione da assegnare a uno studente riguardante un determinato esame e desidera registrarlo;\\
 	\item \textbf{Postcondizione:} Il voto è stato inserito nella blockchain universitaria.\\
@@ -768,8 +765,8 @@
 	\item \textbf{Attori primari:} Università;\\
 	\item \textbf{Scopo e Descrizione} Il sistema offre l'interfaccia per inserire la chiave pubblica del nuovo amministratore;
 	\item \textbf{Scenario principale:} L'utente che rappresenta l'università fornisce tramite un dispositivo di input il suo nome;	\begin{enumerate}
-		\item Se la chiave pubblica è mal formata l'utente viene avvisato con un relativo messaggio d'errore.[UC8.1.2]
-		\item Se la chiave pubblica è già registrata nel sistema in un altro ruolo l'utente viene avvisato un relativo messaggio d'errore.[UC8.1.3]
+		\item Se la chiave pubblica è mal formata l'utente viene avvisato con un relativo messaggio d'errore [UC8.1.2];
+		\item Se la chiave pubblica è già registrata nel sistema in un altro ruolo l'utente viene avvisato un relativo messaggio d'errore [UC8.1.3].
 	\end{enumerate}
 	\item \textbf{Precondizione:} Il sistema offre un campo per la compilazione della chiave pubblica del nuovo amministratore e rimane in attesa dell'input;
 	\item \textbf{Postcondizione:} L'utente che rappresenta l'università ha inserito la chiave pubblica del nuovo amministratore nel campo fornito dal sistema;
@@ -807,8 +804,8 @@
 	\item \textbf{Flusso principale degli eventi:}\\
 	\begin{enumerate}
 		\item L'utente che rappresenta l'università  visualizza la lista degli amministratori [UC8.2];
-		\item L'utente che rappresenta l'università, una volta ottenuta la lista degli amministratori, individua quale desidera rimuovere\\
-		\item L'utente che rappresenta l'università richiede al sistema l'eliminazione dell'amministratore;
+		\item L'utente che rappresenta l'università, una volta ottenuta la lista degli amministratori, individua quale desidera rimuovere [UC8.2];\\
+		\item L'utente che rappresenta l'università richiede al sistema l'eliminazione dell'amministratore [UC8.3].
 	\end{enumerate}
 	\item \textbf{Precondizione:} L'utente che rappresenta l'università desidera eliminare un amministratore dal sistema;\\
 	\item \textbf{Postcondizione:} L'amministratore indicato viene rimosso dal ruolo nell'università e non può più autenticarsi come tale.\\

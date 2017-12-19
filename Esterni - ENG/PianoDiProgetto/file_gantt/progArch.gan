@@ -77,13 +77,13 @@
         </task>
         <task id="7" name="TECHNOLOGY BASELINE" color="#000000" meeting="false" start="2018-02-03" duration="35" complete="0" expand="true">
             <depend id="8" type="2" difference="0" hardness="Strong"/>
-            <task id="16" name="Analisi strumenti e tecnologie" color="#0099cc" meeting="false" start="2018-02-03" duration="7" complete="0" expand="true">
+            <task id="16" name="Analisi strumenti e tecnologie" color="#0099cc" meeting="false" start="2018-02-03" duration="4" complete="0" expand="true">
                 <depend id="17" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="17" name="Descrizione architettura" color="#0099cc" meeting="false" start="2018-02-10" duration="6" complete="0" expand="true">
+            <task id="17" name="Descrizione architettura" color="#0099cc" meeting="false" start="2018-02-07" duration="4" complete="0" expand="true">
                 <depend id="18" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="18" name="Proof of Concept" color="#0099cc" meeting="false" start="2018-02-16" duration="7" complete="0" expand="true">
+            <task id="18" name="Proof of Concept" color="#0099cc" meeting="false" start="2018-02-11" duration="12" complete="0" expand="true">
                 <depend id="33" type="2" difference="0" hardness="Strong"/>
             </task>
             <task id="33" name="Verifica per la discussione" color="#66ff99" meeting="false" start="2018-02-23" duration="4" complete="0" expand="true">

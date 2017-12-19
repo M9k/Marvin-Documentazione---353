@@ -75,7 +75,7 @@
 		
 		\item \textbf{Piano di Qualifica:}
 		utilizzo Esterno, sigla (PdQ) \\
-		Documento per descrivere gli standard e gli obiettivi di qualità che il gruppo vorrà raggiungere per garantire la qualità di prodotto e di processo.
+		Documento per descrivere standard e obiettivi che il gruppo dovrà raggiungere per garantire la qualità di prodotto e processo.
 		
 		\item \textbf{Studio di Fattibilità:}
 		utilizzo Interno, sigla (SdF) \\
@@ -128,7 +128,7 @@
 			
 			\item \textbf{Virgolette:} alte singole ' ' per singolo carattere, alte doppie " " per racchiudere stringhe mentre quelle basse '\textless \textless ' '\textgreater \textgreater ' per racchiudere citazioni;
 			 
-			\item \textbf{Parentesi:} tonde per descrivere esempi o fornire sinonimi o precisazioni mentre quelle quadre sono usate per rappresentare uno standard ISO, uno stato relativo a un ticket o un riferimento ad un codice definito all'interno del documento stesso;
+			\item \textbf{Parentesi:} tonde per descrivere esempi e fornire sinonimi o precisazioni, quadre per rappresentare uno standard ISO, uno stato relativo a un ticket o un riferimento ad un codice definito all'interno del documento stesso;
 			
 			\item \textbf{Punteggiatura:} ogni segno di punteggiatura deve essere seguito da uno spazio e non avere spazi precedenti al segno stesso;
 
@@ -141,7 +141,7 @@
 			%TODO cosa? -Mirco
 			\end{itemize}
 		
-			\item \textbf{Elenchi:} ogni elenco avrà la prima parola di ogni elemento maiuscola seguita dal carattere 'due punti' (:) seguito dalla descrizione dell'elemento, mentre al termine dell'elemento si inserirà sempre sempre i carattere 'punto e virgola' (;) tranne per l'ultimo elemento della lista per cui si userà il carattere 'punto' (.);
+			\item \textbf{Elenchi:} ogni elenco avrà la prima parola di ogni elemento maiuscola seguita dal carattere 'due punti' (:) seguito dalla sua descrizione, mentre al termine dell'elemento si inserirà sempre il carattere 'punto e virgola' (;) tranne per l'ultimo elemento della lista per cui si userà il carattere 'punto' (.);
 			 
 			\item \textbf{Note a Piè pagina:} seguono le seguenti regole: 
 			\begin{itemize}
@@ -190,7 +190,7 @@
 	La scelta di creare un comando apposito per una operazione "elementare" è scaturita dall'agevolazione che porta alla stesura della documentazione: avendo un modo univoco di riconoscere i termini all'interno del glossario è possibile automatizzare la verifica del soddisfacimento delle norme all'interno dei documenti.
 	
 	\subsection{Strumenti a supporto della documentazione} %TODO sono da lasciare qui o da mettere su strumenti usati per la verifica nei PROCESSI DI VERIFICA?
-	La stesura dei documenti deve essere effettuata utilizzando il linguaggio di markup \LaTeX{}  utilizzando l'ambiente TeXstudio con dizionario italiano ed inglese installati.
+	La stesura dei documenti deve essere effettuata utilizzando il linguaggio di markup \LaTeX{}  e l'ambiente TeXstudio con dizionario italiano ed inglese installati.
 	
 	\section{Qualità}
 	\subsection{Descrizione}
@@ -200,7 +200,7 @@
 		\begin{itemize}
 			\item Tempo: richiesto per completamento
 			\item Risorse: uomo o software richieste
-			\item Occorrenze: ossia il numero di volte in cui si presenterà un particolare evento come il numero di difetti di una caratteristica di prodotto.
+			\item Occorrenze: ossia il numero di volte in cui si presenterà un particolare evento come il numero di difetti di una caratteristica del prodotto.
 		\end{itemize} 
 		
 		\item \textbf{Metriche per i documenti:} per la verifica dei documenti è stata scelto l'indice di leggibilità secondo l'indice Gulpease che viene calcolato tramite funzione Latex.\\I risultati sono compresi tra 0 e 100 dove il valore 100 indica una leggibilità massima, si è scelto di considerare un documento sufficientemente leggibile all'ottenimento del valore X; %TODO o funzione esterna si fixa il prototipo alla fine di questo documento? 
@@ -217,7 +217,7 @@
 	\subsection{Controllo di versione}
 	
 	\subsubsection{Descrizione}
-	Per le parti versionabili del progetto e per i documenti ufficiali si è scelto l'utilizzo della tecnologia Git, usando il servizio di hosting di \citGloss{repository} di \citGloss{GitHub}.
+	Per le parti versionabili del progetto e per i documenti ufficiali si è scelto l'utilizzo della tecnologia Git, ospitata sul servizio di hosting \citGloss{GitHub}.
 	La condivisione dei documenti informali e delle parti non versionabili è invece effettuata tramite l'uso di una cartella Google Drive condivisa.
 	
 	\subsubsection{Struttura delle repository}
@@ -269,16 +269,16 @@
 	\subsection{Descrizione}
 	Un processo fondamentale per il proseguimento e l'evoluzione di un progetto è la verifica su ogni sottoprodotto del progetto che porta alla creazione di un singolo prodotto.\\
 	In questa sezione si descriveranno gli strumenti e i metodi che verranno usati per la verifica del codice durante la progettazione.\\
-	Per quanto riguarda questa prima parte di progetto la verificati si è concentrata essenzialmente sui documenti e sui diagrammi.
+	Per quanto riguarda questa prima parte di progetto la verificati si è concentrata essenzialmente su documenti e diagrammi.
 	
 	\subsection{Analisi statica}
 	L'analisi statica è una tecnica di analisi applicabile sia alla documentazione che al codice e permette di effettuare la verifica di quanto prodotto individuando errori ed anomalie.\\
 	Essa può essere svolta in due modi diversi:
 		\begin{itemize}
-			\item \textbf{Walkthrough:} tecnica applicata quando non si sanno le tipologie di errori o di problemi che si stanno cercando e quindi prevede una lettura da cima a fondo del codice o documento per trovare anomalie di qualsiasi tipo.			
+			\item \textbf{Walkthrough:} tecnica applicata quando non si sanno le tipologie di errori o problemi che si stanno cercando e quindi prevede una lettura da cima a fondo del codice o documento per trovare anomalie di qualsiasi tipo.			
 			\item \textbf{Inspection:} tecnica da applicare quando si ha idea delle possibili problematiche che si stanno cercando e si attua leggendo in modo mirato il documento/codice sulla base di una lista di possibili errori precedentemente stilata.
 		\end{itemize}
-	Sono stati utilizzati degli strumenti e sotto processi per velocizzare e rendere più veloce questa analisi con l'utilizzo di funzionalità integrate nell'editor TexStudio oltre all'utilizzo di un sistema di checklist online personale per garantire esecuzione di ogni controllo da parte del Verificatore.
+	Sono stati utilizzati degli strumenti e sotto processi per velocizzare e rendere più veloce questa analisi con l'utilizzo di funzionalità integrate nell'editor TexStudio oltre all'utilizzo di diverse checklist online per garantire l'esecuzione di ogni controllo da parte del Verificatore.
 	
 	\subsection{Analisi dinamica}
 	Il processo di analisi dinamica consiste nella realizzazione ed esecuzione di una serie di test sul codice del software. 

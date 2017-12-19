@@ -494,7 +494,7 @@
       <packagedElement xmi:type="uml:UseCase" xmi:id="_h_Z-wN9HEeeVgP8NQIMk7g" name="UC 5.1.2 - Visualizzazione lista di professori" subject="_UvJCkN9HEeeVgP8NQIMk7g"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_oWjHAN9HEeeVgP8NQIMk7g" name="UC5.1.3 - Visualizzazione lista di utenti in attesa" subject="_UvJCkN9HEeeVgP8NQIMk7g"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_58XuMN9HEeeVgP8NQIMk7g" name="UC5.1.4 - Abilitazione Utenti" subject="_UvJCkN9HEeeVgP8NQIMk7g"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="__21hgN9HEeeVgP8NQIMk7g" name="UC5.1.5 - Disabilitazione Utente" subject="_UvJCkN9HEeeVgP8NQIMk7g"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="__21hgN9HEeeVgP8NQIMk7g" name="UC5.1.5 - Rimozione Utente" subject="_UvJCkN9HEeeVgP8NQIMk7g"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Component" xmi:id="_UE1r4N9IEeeVgP8NQIMk7g" name="UC5.2 - Gestione anni accademici" useCase="_a5sq4N9IEeeVgP8NQIMk7g _dyBi4N9IEeeVgP8NQIMk7g _esQ9kN9IEeeVgP8NQIMk7g _gAF88N9IEeeVgP8NQIMk7g _h3lqEN9IEeeVgP8NQIMk7g _k_AuAN9IEeeVgP8NQIMk7g">
       <packagedElement xmi:type="uml:UseCase" xmi:id="_a5sq4N9IEeeVgP8NQIMk7g" name="UC5.2.2 - Visualizzazione lista anni accademici" subject="_UE1r4N9IEeeVgP8NQIMk7g"/>

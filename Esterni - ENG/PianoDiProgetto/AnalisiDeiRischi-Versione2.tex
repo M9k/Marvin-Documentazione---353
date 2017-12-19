@@ -1,0 +1,90 @@
+\documentclass[PianoDiProgetto.tex]{subfiles}
+
+\begin{document}
+
+\chapter{Analisi dei rischi}
+Nella seguente tabella è stata effettuata un’analisi approfondita dei rischi atta ad ottimizzare l’avanzamento del progetto. Per migliorare la lettura della tabella, l'attualizzazione al periodo corrente viene riportata solo per i rischi che si sono veramente verificati.
+%TODO aggiungere attualizzazione per il periodo di analisi
+%TODO sistemare tabelle :'(
+
+% per tabelle, alterna i colori delle righe		
+\taburowcolors[2] 2{tableLineOne .. tableLineTwo}
+\tabulinesep = ^3mm_2mm
+
+\begin{longtabu} to \linewidth { >{\centering}m{.15\linewidth} >{\raggedright}m{.33\linewidth} >{\raggedright}m{0.25\linewidth} >{\centering}m{0.17\linewidth} }
+	\caption[Tabella descrittiva dell'analisi dei rischi]{Tabella descrittiva dell'analisi dei rischi}
+	\endlastfoot
+	\rowfont{\bfseries\sffamily\leavevmode\color{white}}
+	\rowcolor{tableHeader}
+	\textbf{Nome} & \textbf{Descrizione} & \textbf{Rilevamento} & \textbf{Grado di rischio} \\
+	\endhead
+	
+	\taburowcolors{tableLineOne..tableLineTwo}
+	
+	\rowcolor{tableLineOne} \textbf{Scarsa esperienza} &
+	{\small Nessun membro del gruppo ha mai lavorato a un progetto così impegnativo, ciò potrebbe tradursi in ritardi dovuti all'inesperienza} & {\small Ogni membro comunicherà al \Resp\ eventuali 
+		difficoltà} & \shortstack{Occorrenza: \\ \textbf{Alta} \vspace{0.6em}\\ Pericolosità: \\ \textbf{Alta} }\\
+	\rowcolor{tableLineTwo} Piano di contingenza: & \multicolumn{3}{m{0.8075\linewidth}}{\small  I compiti ad elevata difficoltà verranno affidati a membri di maggiore esperienza }\\
+	\hhline{====}
+	
+	\rowcolor{tableLineOne} \textbf{Contrasti nel gruppo} & {\small Nessun membro si è mai confrontato con un gruppo così ampio di collaboratori, inoltre la conoscenza dei membri è avvenuta in vista della formazione del gruppo. Questo potrebbe portare a contrasti e tensioni}&{\small Il \Resp\ dovrà monitorare la 
+		collaborazione tra i membri}& \shortstack{Occorrenza: \\ \textbf{Bassa} \vspace{0.6em}\\ Pericolosità: \\ 
+		\textbf{Medio-alta} } \\
+	Piano di contingenza: &\multicolumn{3}{m{0.8075\linewidth}}{\small  I ruoli saranno ruotati per minimizzare i contatti tra i membri in 
+		conflitto  }\\
+	\hhline{====}
+	
+	\rowcolor{tableLineOne} \textbf{Disponibi\-lità temporali} &{\small Tutti i membri del \GroupName\ sono studenti a tempo pieno, a causa di impegni universitari e/o personali il tempo da dedicare al progetto potrebbe essere limitato}&{\small Ogni membro comunicherà impegni che 
+		possano causare ritardi}& \shortstack{Occorrenza: \\ \textbf{Medio-bassa} \vspace{0.6em}\\ Pericolosità: 
+		\\ \textbf{Medio-alta} }\\
+	Piano di contingenza:&\multicolumn{3}{m{0.8075\linewidth}}
+	{\small Il carico di lavoro verrà ridistribuito tra i membri con maggiore 
+		disponibilità}\\
+	\hhline{====}
+	
+	\rowcolor{tableLineOne} \textbf{Tecnologie da usare} &{\small Il tempo di apprendimento per le tecnologie che il gruppo non conosce potrebbe causare ritardi nello svolgimento dei lavori}&{\small Il \Resp\ dovrà monitorare la preparazione 
+		dei vari membri rispetto al compito che devono svolgere}& \shortstack{Occorrenza: \\ \textbf{Alta} 
+		\vspace{0.6em}\\ Pericolosità: \\ \textbf{Alta} }\\
+	Piano di contingenza:&\multicolumn{3}{m{0.8075\linewidth}}{\small Il carico di lavoro verrà ridistribuito 
+		in caso di gravi lacune da parte di alcuni membri del gruppo}\\
+	\hhline{====}
+	
+	
+	\rowcolor{tableLineOne} \textbf{Problemi hardware}&{\small Ogni membro utilizza il computer personale per lavorare al progetto, guasti hardware potrebbero causare perdite di dati e/o di tempo}&{\small Ogni membro dovrà avvisare il gruppo in caso 
+		di comportamenti anomali del proprio computer}& \shortstack{Occorrenza: \\ \textbf{Bassa} \vspace{0.6em}\\  
+		Pericolosità: \\ \textbf{Bassa} } \\
+	Piano di contingenza:&\multicolumn{3}{m{0.8075\linewidth}}{\small In caso di ingenti perdite di dati chi ha causato la 
+		perdita provvederà al ripristino}\\
+	\hhline{====}
+	
+	
+	\rowcolor{tableLineOne} \textbf{Strumenti software} &{\small Il gruppo si affida su software di terze parti e piattaforme online, eventuali disfunzioni potrebbero causare perdite di dati o errori }&{\small Difficilmente sarà possibile rilevare il 
+		problema poiché dipende da fattori esterni}& \shortstack{Occorrenza: \\ \textbf{Alta} 
+		\vspace{0.6em}\\ Pericolosità: \\ \textbf{Bassa} }\\
+	Piano di contingenza:&\multicolumn{3}{m{0.8075\linewidth}}{\small Si cercherà di mantenere backup periodici dei 
+		dati e si conta sull'affidabilità degli strumenti scelti}\\
+	\hhline{====}
+	
+	\rowcolor{tableLineOne} \textbf{Costi delle attività} &{\small I membri hanno scarsa esperienza nella pianificazione, 
+		questo potrebbe provocare sovrastime o sottostime delle risorse necessarie alle varie attività}&{\small Ogni membro dovrà attenersi ai tempi previsti, 
+		in caso si accorgesse di eccessive sottostime lo comunicherà al \Resp}& \shortstack{Occorrenza: \\ \textbf{Alta} \vspace{0.6em}\\  
+		Pericolosità: \\ \textbf{Media} }\\
+	Piano di contingenza:&\multicolumn{3}{m{0.8075\linewidth}}{\small Il \Resp\ in caso di ingenti 
+		ritardi provvederà ad una ridistribuzione del lavoro}\\
+	\hhline{====}
+	
+	\rowcolor{tableLineOne} \textbf{\AR\ incompleta o errata} &{\small Data la scarsa esperienza del \GroupName, l'\AR\ prodotta 
+		potrebbe essere incompleta o errata}&{\small In caso di errori si cercherà riscontro con 
+		\Proponente}& 
+	\shortstack{Occorrenza: \\ \textbf{Medio-bassa} \vspace{0.6em}\\ Pericolosità: \\ \textbf{Molto Alta} } \\
+	Piano di contingenza:&\multicolumn{3}{m{0.8075\linewidth}}{\small Eventuali imprecisioni riscontrate dalla proponente verranno tempestivamente corrette}\\
+	\hhline{====}
+	
+	\rowcolor{tableLineOne} \textbf{Modifica dei requisiti} &{\small I requisiti esposti da \Proponente\ risultano chiari e precisi, tuttavia vi è la possibilità che la proponente decida di apportare delle modifiche}&{\small Lavorando a stretto contatto con la proponente si 
+		cercherà di rilevare rapidamente eventuali modifiche}& \shortstack{ Occorrenza: \\ \textbf{Molto bassa} \vspace{0.6em}\\ 
+		Pericolosità: \\ \textbf{Molto alta} } \\
+	Piano di contingenza:&\multicolumn{3}{m{0.8075\linewidth}}{\small In caso di cambiamenti radicali si cercherà di 
+		trovare un accordo con la proponente}\\
+	\hhline{====}
+\end{longtabu}
+\end{document}

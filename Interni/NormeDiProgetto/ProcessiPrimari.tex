@@ -48,9 +48,8 @@ Ogni requisito è identificato da un codice, costruito come descritto di seguito
 				\item \textbf{Uno (1):} se si tratta di un requisito desiderabile, cioè un requisito il cui
 				soddisfacimento può dare maggiore completezza al sistema ma il
 				non soddisfarlo non pregiudica alcuna funzione di base;
-				\item \textbf{Due (2):} indica un requisito opzionale;
+				\item \textbf{Due (2):} indica un requisito opzionale.
 		\end{itemize}
-	
 	\item La terza lettera indica la \textbf{classificazione}. Assume valore F se si tratta di un Requisito funzionale, Q se di qualità, P se prestazionale e V se di vincolo;
 	\item L'\textbf{identificativo} indica invece un numero progressivo.
 	\end{itemize}
@@ -63,8 +62,7 @@ Ogni requisito è identificato da un codice, costruito come descritto di seguito
 	secondari (ad esempio ufficio universitario) del caso d’uso;
 	\item \textbf{Scopo e descrizione:} riporta una breve descrizione del caso d’uso;
 	\item \textbf{Scenario principale:} rappresenta il flusso degli eventi come lista
-	numerata, specificando per ciascun evento: titolo, descrizione, attori
-	coinvolti e casi d’uso generati; %TODO Gianluca che ne pensi? -Mirco
+	numerata, specificando per ciascun evento il caso d'uso di riferimento;
 	\item \textbf{Precondizione:} specifica le condizioni che sono identificate come vere
 	prima del verificarsi degli eventi del caso d’uso;
 	\item \textbf{Postcondizione:} specifica le condizioni che sono identificate come
@@ -73,7 +71,7 @@ Ogni requisito è identificato da un codice, costruito come descritto di seguito
 	inserendo il comportamento comune in un caso d’uso a parte;
 	\item \textbf{Estensioni (se presenti):} descrivono i casi d’uso che non fanno parte del flusso
 	principale degli eventi, allo stesso modo di quanto descritto in “Scenario
-	principale”. %TODO Rivedere qui in base al todo sopra
+	principale”.
 \end{itemize}
 
 \subsection{Progettazione}
@@ -98,8 +96,11 @@ Al fine di rendere più chiare le scelte progettuali adottate e
 ridurre le possibili ambiguità, sarà necessario fare largo uso di vari tipi di diagrammi 
 \textbf{UML 2.0}, realizzandone secondo le seguenti rappresentazioni:
 \begin{itemize}
-	\item Diagrammi dei casi d'uso, dedicati alla descrizione delle funzioni offerte dal sistema.
-	%TODO aggiungere definizione
+	\item \textbf{Diagrammi dei casi d'uso:} dedicati alla descrizione delle funzioni offerte dal sistema;
+	\item \textbf{Diagrammi delle classi:} dedicati alla descrizione degli oggetti che fanno parte di un sistema e delle loro dipendenze;
+	\item \textbf{Diagrammi dei package:} dedicati alla descrizione della dipendenza tra classi raggruppate in package;
+	\item \textbf{Diagrammi di sequnza:} dedicati a descrivere la collaborazione nel tempo tra un gruppo di oggetti;
+	\item \textbf{Diagrammi di attività:} dedicati a descrivere la logica procedurale.
 \end{itemize}
 
 \subsubsection{Obiettivi della progettazione}
@@ -132,13 +133,13 @@ L'uso di norme e convenzioni è fondamentale per permettere la generazione di co
 Per i vari linguaggi verranno successivamente descritte altre norme per nomi di variabili, funzioni e altro facendo riferimento ai seguenti stili:
 \begin{itemize}
 	\item \texttt{lowercase};
-	\item \texttt{lower\_case\_with\_underscores}
-	\item \texttt{UPPERCASE}
-	\item \texttt{UPPER\_CASE\_WITH\_UNDERSCORES}
-	\item \texttt{CapitalizedWords} (o \texttt{CapWords})
-	\item \texttt{mixedCase}
-	\item \texttt{Capitalized\_Words\_With\_Underscores}
-	\item \texttt{lower-case-with-dashes}	
+	\item \texttt{lower\_case\_with\_underscores};
+	\item \texttt{UPPERCASE};
+	\item \texttt{UPPER\_CASE\_WITH\_UNDERSCORES};
+	\item \texttt{CapitalizedWords} (o \texttt{CapWords});
+	\item \texttt{mixedCase};
+	\item \texttt{Capitalized\_Words\_With\_Underscores};
+	\item \texttt{lower-case-with-dashes}.
 \end{itemize}
 
 \paragraph*{Convenzioni per la documentazione: }
@@ -173,7 +174,7 @@ Autore || Data || breve descrizione delle modifiche
 		\item \textbf{X}: è l’indice di versione principale, un incremento di tale indice rappresenta un avanzamento della versione stabile, che porta il valore dell’indice Y ad essere azzerato;
 		\item \textbf{Y}: è l’indice di modifica parziale, un incremento di tale indice rappresenta una verifica o una modifica rilevante, come per esempio la rimozione o l’aggiunta di una istruzione.
 	\end{itemize}
-	La versione \textit{1.0} deve rappresentare la prima versione del file completo e stabile, cioè quando le sue funzionalità obbligatorie sono state definite e si considerano funzionanti. Solo dalla versione \textit{1.0} è possibile testare il file, con degli appositi test predefiniti, per	verificarne l’effettivo funzionamento. %TODO funzionamento?
+	La versione \textit{1.0} deve rappresentare la prima versione del file completo e stabile, cioè quando le sue funzionalità obbligatorie sono state definite e si considerano funzionanti. Solo dalla versione \textit{1.0} è possibile testare il file, con degli appositi test predefiniti, per validarne la qualità. %TODO ok "validarne la qualità?"
 \end{itemize}
 
 
@@ -206,7 +207,7 @@ Autore || Data || breve descrizione delle modifiche
 \subsection{Strumenti}
 \begin{itemize}
 	\item \textbf{Tracciamento requisiti:} il gruppo 353 ha deciso di utilizzare il software \textbf{Trender}\footnote{\nURI{https://github.com/campagna91/Trender}} installato su server remoto condiviso;
-	\item \textbf{Creazione diagrammi UML:} {UML Designer}\footnote{\nURI{http://www.umldesigner.org/}} ;
+	\item \textbf{Creazione diagrammi UML:} {UML Designer}\footnote{\nURI{http://www.umldesigner.org/}};
 	\item \textbf{Scrittura del codice:} Webstorm by Jetbrains\footnote{\nURI{https://www.jetbrains.com/webstorm/}}; 
 	\item \textbf{Toolkit sviluppo:} si utilizzano i pacchetti installabili tramite Node.js con gestore di pacchetti npm per risolvere dipendenze delle librerie e tool richiesti;
 	\item \textbf{Tracciamento dei test:} Codecov\footnote{\nURI{https://codecov.io/}}; %TODO Sonarcube?
@@ -216,7 +217,7 @@ Autore || Data || breve descrizione delle modifiche
 		\item Redux: Jest\footnote{\nURI{https://facebook.github.io/jest/}};
 		\item Web3/Truffle: Mocha e Chai\footnote{\nURI{http://chaijs.com/}}.
 	\end{itemize}
-	\item \textbf{Continuos Integration:} Travis\footnote{\nURI{http://travis-ci.com/}}. 
+	\item \textbf{Continuos Integration:} Travis\footnote{\nURI{http://travis-ci.com/}}.;
 	\item \textbf{Tool di supporto:} Scss-lint\footnote{\nURI{https://github.com/brigade/scss-lint}}. 	
 \end{itemize}
 

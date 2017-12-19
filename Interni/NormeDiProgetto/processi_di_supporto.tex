@@ -137,8 +137,7 @@
 				\item Corsivo: Per dare enfasi ad una parola, un concetto o per indicare il nome di un tool/tecnologia;
 				\item Grassetto: Per i titoli, sottotitoli ed elementi di elenchi e liste;
 				\item Sottolineato: Per indicare dei collegamenti ipertestuali.
-			%	\item Glossario %TODO QUI O SOTTO?
-			%TODO cosa? -Mirco
+			%TODO \item Glossario QUI O SOTTO?
 			\end{itemize}
 		
 			\item \textbf{Elenchi:} ogni elenco avrà la prima parola di ogni elemento maiuscola seguita dal carattere 'due punti' (:) seguito dalla sua descrizione, mentre al termine dell'elemento si inserirà sempre il carattere 'punto e virgola' (;) tranne per l'ultimo elemento della lista per cui si userà il carattere 'punto' (.);
@@ -155,7 +154,7 @@
 				\item Date: scritte con lo standard DD-MM-YYYY dove YYYY indica l'anno, MM il mese e DD il giorno, inseribili nel formato corretto attraverso il comando \textbackslash nData;
 				\item Grassetto: lo stile grassetto va utilizzato per i titoli dei paragrafi e per i titoli degli elementi di un elenco; 
 				\item URI: lo stile utilizzato per un URI è il corsivo di colore blu, in modo da mantenere una continuità con lo standard web attuale, utilizzabile col comando personalizzato latex \textbackslash nURI;
-				%TODO \item glossario: %TODO QUI O SOTTO?
+				%TODO \item glossario QUI O SOTTO?
 			\end{itemize}
 			
 			\item \textbf{Ruoli/Fasi/Revisioni di Progetto} %TODO Comandi (???)
@@ -203,7 +202,8 @@
 			\item Occorrenze: ossia il numero di volte in cui si presenterà un particolare evento come il numero di difetti di una caratteristica del prodotto.
 		\end{itemize} 
 		
-		\item \textbf{Metriche per i documenti:} per la verifica dei documenti è stata scelto l'indice di leggibilità secondo l'indice Gulpease che viene calcolato tramite funzione Latex.\\I risultati sono compresi tra 0 e 100 dove il valore 100 indica una leggibilità massima, si è scelto di considerare un documento sufficientemente leggibile all'ottenimento del valore X; %TODO o funzione esterna si fixa il prototipo alla fine di questo documento? 
+		\item \textbf{Metriche per i documenti:} per la verifica dei documenti è stata scelto l'indice di leggibilità secondo l'indice Gulpease che viene calcolato tramite funzione Latex.\\
+		I risultati sono compresi tra 0 e 100 dove il valore 100 indica una leggibilità massima, si è scelto di considerare un documento sufficientemente leggibile all'ottenimento del valore X; %TODO o funzione esterna si fixa il prototipo alla fine di questo documento? 
 		%TODO specificare X
 		
 		\item \textbf{Metriche per il software:} al fine di perseguire gli obiettivi qualitativi prefissati nel Piano Di Qualifica è doveroso definire delle metriche come copertura del codice tramite test automatici; %TODO riferimenti a successive revisioni?
@@ -224,20 +224,20 @@
 	E' stata realizzata solo una \citGloss{repository} durante la fase di RR ossia quella relativa alla documentazione denominata "Documentazione 353", si prevede inoltre di creare ulteriori \citGloss{repository} per suddividere lo sviluppo e la codifica dell'applicazione del progetto. \\\\
 	I file interni al \citGloss{repository} "Documentazione 353" sono organizzati secondo questa struttura:
 	\begin{itemize}
-		\item \textbf{Esterni}
+		\item \textbf{Esterni:}
 				\begin{itemize}
-				\item \textbf{AnalisiDeiRequisiti}
-				\item \textbf{Glossario}
-				\item \textbf{PianoDiProgetto}
-				\item \textbf{PianoDiQualifica}
-				\item \textbf{Verbali esterni}
+				\item \textbf{AnalisiDeiRequisiti};
+				\item \textbf{Glossario};
+				\item \textbf{PianoDiProgetto};
+				\item \textbf{PianoDiQualifica};
+				\item \textbf{Verbali esterni}.
 			\end{itemize}
-		\item \textbf{Interni}
+		\item \textbf{Interni:}
 				\begin{itemize}
-					\item \textbf{NormeDiProgetto}
-					\item \textbf{Glossario}
-					\item \textbf{StudioDiFattibilita}
-					\item \textbf{Verbali interni}
+					\item \textbf{NormeDiProgetto};
+					\item \textbf{Glossario};
+					\item \textbf{StudioDiFattibilita};
+					\item \textbf{Verbali interni}.
 				\end{itemize}		
 	\end{itemize}	
 	All'interno di ogni cartella è stato definito un file LaTex principale che assume il nome del documento stesso ed il file diariomodifiche.tex per mantenere traccia delle modifiche effettuate.\\
@@ -311,11 +311,17 @@
 			\lp=\dimexpr \lettere*\p@/\parole\relax 
 			\strip@pt\dimexpr 89\p@ -10\lp +300\fr  \relax
 	}}
-	\section{Validazione} %TODO tutto
-	\IL{676}{287}{36}\\
-	\IL{676}{287}{367}\\
-	\IL{144}{1}{26}
+%	\IL{676}{287}{36}\\
+%	\IL{676}{287}{367}\\
+%	\IL{144}{1}{26}
+
+	\section{Validazione}
+	\subsection{Descrizione}
+	Il processo di validazione server per accertarsi che il prodotto rispetti quanto accordato con il Proponente.\\
+	Tale processo va eseguito al termine delle attività di verifica, in quanto lungo e dispendioso e quindi l'obbiettivo è di non doverlo ripetere a causa di modifiche successive.\\
+	In questa sezione si descriveranno gli strumenti e i metodi che verranno usati per la verifica del codice durante la progettazione.\\
 	
+	%TODO per ora va bene solo l'introduzione?
 	
 	
 \end{document}

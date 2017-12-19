@@ -312,155 +312,302 @@ Qualsiasi operazione effettuata in una rete Ethereum reale ha un tempo di soddis
 \subsection{Tracciamento requisiti-fonti}
 
 \label{table:Tabella di tracciamento requisiti-fonti}
-\begin{longtable}[H]{|p{2cm}|p{5cm}|p{5cm}|}
+\begin{longtable}[H]{|p{2cm}|p{5.2cm}|p{5cm}|}
 	\hline
 	\rowcolor[HTML]{38FFF8} 
 	\textbf{Requisito} & \textbf{Descrizione requisito} & \textbf{Fonti} \\ \hline
 	% REGEX for Notepad++
 	% (.*)&(.*)&(.*)&(.*)      --->       \1& \3&  \\\\ \\hline
 	\endhead
-	R0F1 &  L'amministratore può gestire gli utenti & Interno \\ 
-	& & UC5 \\  
-	& & UC5.1 \\ \hline
-	R0F1.1 &  L'amministratore può ottenere una lista di tutti gli utenti non abilitati & Interno \\ 
-	& & UC5 \\  
-	& & UC5.1.3 \\ \hline
-	R0F1.2 &  L'amministratore può abilitare un utente & Interno \\ 
-	& & UC5 \\ 
-	& & UC5.1.4 \\   \hline
-	R0F1.3 &  L'amministratore può rimuovere un utente & Interno \\ 
-	& & UC5.1.5 \\ \hline
-	R0F1.4 &  L'amministratore può ottenere una lista di tutti gli studenti & Interno \\  
-	& & UC5.1.1 \\ \hline
-	R0F2 &  L'amministratore può gestire i professori & Interno \\ \hline
-	R0F2.1 &  L'amministratore può ottenere una lista di tutti i professori & Interno \\ 
-	& & UC5.1.2 \\  \hline
-	R0F2.2 &  L'amministratore può assegnare un esame ad un determinato professore & Capitolato \\ \hline
-	R0F3 &  L'amministratore può gestire gli anni accademici & Capitolato \\ 
-	& & UC5.2 \\ \hline
-	R0F3.1 &  L'amministratore può aggiungere un anno accademico & Capitolato \\ 
-	& & UC5.2.1 \\ 
-	& & UC5.2.4 \\ 
-	& & UC5.2.5 \\ 
-	& & UC5.2.6 \\ \hline
-	R0F3.2 &  L'amministratore può ottenere una lista di gli anni accademici & Interno \\ 
-	& & UC5.2.2 \\ \hline
-	R0F3.3 &  L'amministratore può aggiungere dei corsi di laurea ad ogni anno accademico & Capitolato \\ 
-	& & UC5.2.3 \\ \hline
-	%R2F3.4 &  L'amministratore può rimuovere corsi di laurea da ogni anno accademico & Interno \\ \hline
-	R0F3.4 &  L'amministratore può gestire i corsi di laurea relativi agli anni accademici & Capitolato \\ 
-	& & UC5.3 \\  \hline
-	R0F3.4.1 &  L'amministratore può creare un nuovo corso di laurea a partire da un anno accademico & Capitolato \\ 
-	& & UC5.3.1 \\  
-	& & UC5.3.2 \\ \hline
-	R0F3.4.2 &  L'amministratore può ottenere una lista di tutti i corsi di laurea dato un anno accademico & Interno \\ 
-	& & UC5.3.3 \\  
-	& & UC5.3.4 \\ \hline
-	R0F3.4.3 &  L'amministratore può creare nuovi esami & Capitolato \\ 
-	& & UC5.3.5 \\  
-	& & UC5.3.6 \\ \hline
-	R0F3.4.4 &  L'amministratore può aggiungere degli esami ad ogni corso di laurea & Capitolato \\ 
-	& & UC5.3.9 \\ \hline
-	%R0F3.4.5 &  L'amministratore può rimuovere degli esami da un corso di laurea & Interno \\ 
-	& & UC5.3.10 \\ \hline
-	R0F3.4.5 &  L'amministratore può ottenere una lista di tutti gli esami dato il corso di laurea & Interno \\ 
-	& & UC5.3.7 \\ 
-	& & UC5.3.8 \\ \hline
-	R0F3.4.5.1 &  L'amministratore può ottenere l'informazione di quale professore è assegnato a un determinato esame & Interno \\ \hline
-	R0F3.4.5.2  &  L'amministratore può associare ad un esame il relativo professore & Interno \\ 
-	& & UC5.3.11 \\ \hline
-	R0F4 &  Un professore può gestire gli esami a lui assegnati & Capitolato \\ 
-	& & UC6 \\ \hline
-	R0F4.1 &  Un professore può ottenere la lista di tutti gli esami a lui assegnati & Capitolato \\ 
-	& & UC6.1 \\ \hline
-	R0F4.2 &  Un professore può ottenere la lista di tutti gli studenti associati a un determinato esame & Capitolato  \\ 
-	& & UC6.2 \\ \hline
-	R0F4.3 &  Un professore può registrare un esito ad un dato esame ad un dato studente registrato a quell'esame & Capitolato \\ 
-	& & UC6.3 \\ \hline
-	R0F5 &  Uno studente può gestire l'iscrizione agli esami & Capitolato \\ 
-	& & UC7 \\ \hline
-	R0F5.1 &  Uno studente può vedere l'elenco degli esami ai quali è iscritto & Capitolato \\ 
-	& & UC7.1 \\ \hline
-	R0F5.1.1 &  Uno studente può ottenere il numero di crediti assegnati agli esame & Interno \\ 
-	& & UC7.1.1 \\ \hline
-	R0F5.1.2 &  Uno studente può ottenere l'obbligatorietà degli esame & Interno \\ 
-	& & UC7.1.2 \\ \hline
-	R0F5.1.3 &  Uno studente può ottenere lo stato di superamento degli esame & Interno \\ 
-	& & UC7.1.3 \\ \hline
-	R0F5.1.4 &  Uno studente può ottenere il totale dei suoi crediti & Interno \\ 
-	& & UC7.4 \\ \hline
-	R0F5.1.5 &  Uno studente può ottenere il numero di crediti da raggiungere per la laurea & Interno \\ \hline
-	R0F5.2 &  Uno studente può ottenere l'elenco degli esami opzionali & Capitolato \\ 
-	& & UC7.2 \\ \hline
-	R0F5.2.1 &  Uno studente può ottenere il numero di crediti degli esami opzionali & Capitolato \\ 
-	& & UC7.4 \\ \hline
-	R0F5.2.2 &  Uno studente può iscriversi ad un esame opzionale & Capitolato \\ 
-	& & UC7.3 \\ \hline
-	R0F6 &  L'utente può effettuare il login & Interno \\ 
-	& & UC2 \\ \hline
-	R0F6.1 &  Il login deve avvenire tramite il controllo delle chiavi, senza ulteriori azioni da parte dell'utente & Interno \\ 
-	& & UC2.1 \\ \hline
-	R0F7 &  L'utente può effettuare il logout & Capitolato \\ 
-	& & UC2.1  \\
-	& & UC2.2 \\
-	& & UC2.3 \\
-	& & UC2.4 \\ 
-	& & UC4 \\ \hline
-	R0F8 &  L'utente non ancora registrato può registrarsi & Capitolato \\ 
-	& & UC3 \\ \hline
-	R0F8.1 &  La registrazione necessita di nome, cognome, categoria (studente o professore) e selezione del corso di laura se si tratta di uno studente & Capitolato \\
-	& & UC3.1 \\
-	& & UC3.2 \\
-	& & UC3.3 \\
-	& & UC3.4 \\
-	& & UC3.5 \\
-	& & UC3.6 \\
-	& & UC3.7 \\
-	& & UC3.8 \\ \hline
-	R1F9 &  L'utente può leggere una breve guida sull'uso di MetaMask e sul pagamento delle operazioni & Interno \\ 
-	& & UC1 \\ \hline
-	R0F10 &  L'utente deve poter vedere preventivamente il costo in Gas, Ether e Euro dell'operazione che sta per eseguire & Capitolato \\
-	& & UC9 \\ \hline
-	R0F11 &  L'università deve poter gestire gli amministratori & VE171209 \\
-	& & UC8 \\ \hline
-	R0F11.1 &  L'università deve poter aggiungere amministratori & VE171209 \\
-	& & UC8.1 \\
-	& & UC8.1.1 \\ 
-	& & UC8.1.2 \\
-	& & UC8.1.3 \\ \hline
-	R0F11.2 &  L'università deve poter rimuovere amministratori & VE171209 \\
-	& & UC8.3 \\ \hline
-	R0F11.3 &  L'università deve poter ottenere la lista di tutti gli amministratori & Interno \\
-	& & UC8.2 \\ \hline
-	R0Q1 &  La progettazione e il codice devono seguire le norme e le metriche riportate nei documenti allegati X e Y & Interno \\ \hline
-	R0Q2 &  L'approccio di scrittura di JavaScript deve essere promise Centric Approach & Capitolato \\ \hline
-	R0Q2.1 &  L'applicativo non deve fare uso di callback in presenza di alternative alle ultime & VE171122 \\ \hline
-	R0Q3 &  Il codice Javascript deve attenersi al Airbnb Javascript style guide & Capitolato \\ \hline
-	R0Q4 &  Lo sviluppo deve essere supportato dall'utilizzo del tool ESLint & Capitolato \\ \hline
-	R0Q5 &  Dovrà essere fornito un manuale utente in lingua inglese che tratterà l'uso da parte di studenti e professori & VE171122 \\ \hline
-	R0Q6 &  Dovrà essere fornito un manuale di deploy e di utilizzo da parte degli amministratori in lingua inglese & VE171122 \\ \hline
-	R0Q7 &  Il codice sorgente deve essere pubblicato sulla piattaforma GitHub, BitBucket o GitLab & Capitolato \\ \hline
-	R0Q8 &  Il codice deve attenersi il più possibile alle guide linea de "App a 12 Fattori" & Capitolato \\ \hline
-	R0V1 &  L'applicativo dovrà essere sviluppato attraverso l'uso di tecnologie web & Capitolato \\ \hline
-	R0V1.1 &  L'applicativo dovrà essere sviluppato con Node.js & Capitolato \\ \hline
-	R0V1.2 &  L'applicativo dovrà essere sviluppato con JavaScript 8 (ES8) & Capitolato \\ \hline
-	R0V1.3 &  L'applicativo dovrà essere sviluppato con il boilerplate Redux Minimal & Capitolato \\ \hline
-	R0V1.4 &  L'applicativo dovrà essere sviluppato utilizzando React & Capitolato \\ \hline
-	R0V1.5 &  L'applicativo dovrà essere sviluppato utilizzando Redux & Capitolato \\ \hline
-	R0V1.6 &  Il deploy del sito andrà eseguito utilizzando Surge.sh & Capitolato \\ \hline
-	R0V1.7 &  È desiderabile l'utilizzo di SCSS in sostituzione a CSS & Capitolato \\ \hline
-	R0V2 &  Gli smart contract dovranno essere scritti in linguaggio Solidity & Capitolato \\ \hline
-	R0V3 &  La connessione alla rete Ethereum deve avvernire tramite MetaMask & Capitolato \\ \hline
-	R0V3.1 &  I test riguartandi gli smart contract dovranno essere eseguiti in una rete locale ed almeno in una rete pubblica & Capitolato \\ \hline
-	R0V3.2 &  Il deploy degli smart contract dovrà avvenire su rete locale testrpc e rete di test Ropsten & Capitolato \\ \hline
-	R2V3.3 &  È apprezzabile un deploy finale sulla rete principale di Ethereum & Capitolato \\ \hline
-	R0V4 &  Lo sviluppo degli smart contract dovrà avvenire utilizzando il framework Truffle & Capitolato \\ \hline
-	R0V5 &  L'applicativo deve essere accessibile ed utilizzabile dal browser Mozilla Firefox a partire dalla versione X & Interno \\ \hline
-	R0V6 &  L'applicativo deve essere accessibile ed utilizzabile dal browser Google Chrome a partire dalla versione X & Interno \\ \hline
-	R1V7 &  L'applicativo deve essere accessibile ed utilizzabile da un browser mobile, per le versioni supportate fare riferimento alle controparti PC di Firefox e Chrome & Capitolato \\ \hline
-	R0V8 &  Un utente non deve poter compiere azioni sul sistema senza aver fatto l'accesso ad esso & Capitolato \\ \hline
-	R0V9 &  L'applicazione dei principi de "App a 12 Fattori" deve essere documentata & Capitolato \\ \hline
-	R0V10 &  Il codice sorgente deve essere pubblicato con licenza MIT & Capitolato \\ \hline
+	R0F1 &  L'amministratore può gestire gli utenti & \makecell[tl]{
+		Interno \\
+		UC5 \\
+		UC5.1
+	} \\ \hline
+	R0F1.1 &  L'amministratore può ottenere una lista di tutti gli utenti non abilitati & \makecell[tl]{
+		Interno \\ 
+		UC5 \\  
+		UC5.1.3
+	} \\ \hline
+	R0F1.2 &  L'amministratore può abilitare un utente & \makecell[tl]{
+		Interno \\ 
+		UC5 \\ 
+		UC5.1.4
+	} \\ \hline
+	R0F1.3 &  L'amministratore può rimuovere un utente & \makecell[tl]{
+		Interno \\ 
+		UC5.1.5
+	} \\ \hline
+	R0F1.4 &  L'amministratore può ottenere una lista di tutti gli studenti & \makecell[tl]{
+		Interno \\  
+		UC5.1.1
+	} \\ \hline
+	R0F2 &  L'amministratore può gestire i professori & \makecell[tl]{
+		Interno
+	} \\ \hline
+	R0F2.1 &  L'amministratore può ottenere una lista di tutti i professori & \makecell[tl]{
+		Interno \\ 
+		UC5.1.2 
+	} \\ \hline
+	R0F2.2 &  L'amministratore può assegnare un esame ad un determinato professore & \makecell[tl]{
+		Capitolato
+	} \\ \hline
+	R0F3 &  L'amministratore può gestire gli anni accademici & \makecell[tl]{
+		Capitolato \\ 
+		UC5.2
+	} \\ \hline
+	R0F3.1 &  L'amministratore può aggiungere un anno accademico & \makecell[tl]{
+		Capitolato \\ 
+		UC5.2.1 \\ 
+		UC5.2.4 \\ 
+		UC5.2.5 \\ 
+		UC5.2.6
+	} \\ \hline
+	R0F3.2 &  L'amministratore può ottenere una lista di gli anni accademici & \makecell[tl]{
+		Interno \\ 
+		UC5.2.2
+	} \\ \hline
+	R0F3.3 &  L'amministratore può aggiungere dei corsi di laurea ad ogni anno accademico & \makecell[tl]{
+		Capitolato \\ 
+		UC5.2.3
+	} \\ \hline
+	%R2F3.4 &  L'amministratore può rimuovere corsi di laurea da ogni anno accademico & Interno} \\ \hline
+	R0F3.4 &  L'amministratore può gestire i corsi di laurea relativi agli anni accademici & \makecell[tl]{
+		Capitolato \\ 
+		UC5.3 
+	} \\ \hline
+	R0F3.4.1 &  L'amministratore può creare un nuovo corso di laurea a partire da un anno accademico & \makecell[tl]{
+		Capitolato \\ 
+		UC5.3.1 \\  
+		UC5.3.2
+	} \\ \hline
+	R0F3.4.2 &  L'amministratore può ottenere una lista di tutti i corsi di laurea dato un anno accademico & \makecell[tl]{
+		Interno \\ 
+		UC5.3.3 \\  
+		UC5.3.4
+	} \\ \hline
+	R0F3.4.3 &  L'amministratore può creare nuovi esami & \makecell[tl]{
+		Capitolato \\ 
+		UC5.3.5 \\  
+		UC5.3.6
+	} \\ \hline
+	R0F3.4.4 &  L'amministratore può aggiungere degli esami ad ogni corso di laurea & \makecell[tl]{
+		Capitolato \\ 
+		UC5.3.9
+	} \\ \hline
+	%R0F3.4.5 &  L'amministratore può rimuovere degli esami da un corso di laurea & Interno \\ UC5.3.10} \\ \hline
+	R0F3.4.5 &  L'amministratore può ottenere una lista di tutti gli esami dato il corso di laurea & \makecell[tl]{
+		Interno \\ 
+		UC5.3.7 \\ 
+		UC5.3.8
+	} \\ \hline
+	R0F3.4.5.1 &  L'amministratore può ottenere l'informazione di quale professore è assegnato a un determinato esame & \makecell[tl]{
+		Interno
+	} \\ \hline
+	R0F3.4.5.2  &  L'amministratore può associare ad un esame il relativo professore & \makecell[tl]{
+		Interno \\ 
+		UC5.3.11
+	} \\ \hline
+	R0F4 &  Un professore può gestire gli esami a lui assegnati & \makecell[tl]{
+		Capitolato \\ 
+		UC6
+	} \\ \hline
+	R0F4.1 &  Un professore può ottenere la lista di tutti gli esami a lui assegnati & \makecell[tl]{
+		Capitolato \\ 
+		UC6.1
+	} \\ \hline
+	R0F4.2 &  Un professore può ottenere la lista di tutti gli studenti associati a un determinato esame & \makecell[tl]{
+		Capitolato  \\ 
+		UC6.2
+	} \\ \hline
+	R0F4.3 &  Un professore può registrare un esito ad un dato esame ad un dato studente registrato a quell'esame & \makecell[tl]{
+		Capitolato \\ 
+		UC6.3
+	} \\ \hline
+	R0F5 &  Uno studente può gestire l'iscrizione agli esami & \makecell[tl]{
+		Capitolato \\ 
+		UC7
+	} \\ \hline
+	R0F5.1 &  Uno studente può vedere l'elenco degli esami ai quali è iscritto & \makecell[tl]{
+		Capitolato \\ 
+		UC7.1
+	} \\ \hline
+	R0F5.1.1 &  Uno studente può ottenere il numero di crediti assegnati agli esame & \makecell[tl]{
+		Interno \\ 
+		UC7.1.1
+	} \\ \hline
+	R0F5.1.2 &  Uno studente può ottenere l'obbligatorietà degli esame & \makecell[tl]{
+		Interno \\ 
+		UC7.1.2
+	} \\ \hline
+	R0F5.1.3 &  Uno studente può ottenere lo stato di superamento degli esame & \makecell[tl]{
+		Interno \\ 
+		UC7.1.3
+	} \\ \hline
+	R0F5.1.4 &  Uno studente può ottenere il totale dei suoi crediti & \makecell[tl]{
+		Interno \\ 
+		UC7.4
+	} \\ \hline
+	R0F5.1.5 &  Uno studente può ottenere il numero di crediti da raggiungere per la laurea & \makecell[tl]{
+		Interno
+	} \\ \hline
+	R0F5.2 &  Uno studente può ottenere l'elenco degli esami opzionali & \makecell[tl]{
+		Capitolato \\ 
+		UC7.2
+	} \\ \hline
+	R0F5.2.1 &  Uno studente può ottenere il numero di crediti degli esami opzionali & \makecell[tl]{
+		Capitolato \\ 
+		UC7.4
+	} \\ \hline
+	R0F5.2.2 &  Uno studente può iscriversi ad un esame opzionale & \makecell[tl]{
+		Capitolato \\ 
+		UC7.3
+	} \\ \hline
+	R0F6 &  L'utente può effettuare il login & \makecell[tl]{
+		Interno \\ 
+		UC2
+	} \\ \hline
+	R0F6.1 &  Il login deve avvenire tramite il controllo delle chiavi, senza ulteriori azioni da parte dell'utente & \makecell[tl]{
+		Interno \\ 
+		UC2.1
+	} \\ \hline
+	R0F7 &  L'utente può effettuare il logout & \makecell[tl]{
+		Capitolato \\ 
+		UC2.1  \\
+		UC2.2 \\
+		UC2.3 \\
+		UC2.4 \\ 
+		UC4
+	} \\ \hline
+	R0F8 &  L'utente non ancora registrato può registrarsi & \makecell[tl]{
+		Capitolato \\ 
+		UC3
+	} \\ \hline
+	R0F8.1 &  La registrazione necessita di nome, cognome, categoria (studente o professore) e selezione del corso di laura se si tratta di uno studente & \makecell[tl]{
+		Capitolato \\
+		UC3.1 \\
+		UC3.2 \\
+		UC3.3 \\
+		UC3.4 \\
+		UC3.5 \\
+		UC3.6 \\
+		UC3.7 \\
+		UC3.8
+	} \\ \hline
+	R1F9 &  L'utente può leggere una breve guida sull'uso di MetaMask e sul pagamento delle operazioni & \makecell[tl]{
+		Interno \\ 
+		UC1
+	} \\ \hline
+	R0F10 &  L'utente deve poter vedere preventivamente il costo in Gas, Ether e Euro dell'operazione che sta per eseguire & \makecell[tl]{
+		Capitolato \\
+		UC9
+	} \\ \hline
+	R0F11 &  L'università deve poter gestire gli amministratori & \makecell[tl]{
+		VE171209 \\
+		UC8
+	} \\ \hline
+	R0F11.1 &  L'università deve poter aggiungere amministratori & \makecell[tl]{
+		VE171209 \\
+		UC8.1 \\
+		UC8.1.1 \\ 
+		UC8.1.2 \\
+		UC8.1.3
+	} \\ \hline
+	R0F11.2 &  L'università deve poter rimuovere amministratori & \makecell[tl]{
+		VE171209 \\
+		UC8.3
+	} \\ \hline
+	R0F11.3 &  L'università deve poter ottenere la lista di tutti gli amministratori & \makecell[tl]{
+		Interno \\
+		UC8.2
+	} \\ \hline
+	R0Q1 &  La progettazione e il codice devono seguire le norme e le metriche riportate nei documenti allegati X e Y & \makecell[tl]{
+		Interno
+	} \\ \hline
+	R0Q2 &  L'approccio di scrittura di JavaScript deve essere promise Centric Approach & \makecell[tl]{
+		Capitolato
+	} \\ \hline
+	R0Q2.1 &  L'applicativo non deve fare uso di callback in presenza di alternative alle ultime & \makecell[tl]{
+		VE171122
+	} \\ \hline
+	R0Q3 &  Il codice Javascript deve attenersi al Airbnb Javascript style guide & \makecell[tl]{
+		Capitolato
+	} \\ \hline
+	R0Q4 &  Lo sviluppo deve essere supportato dall'utilizzo del tool ESLint & \makecell[tl]{
+		Capitolato
+	} \\ \hline
+	R0Q5 &  Dovrà essere fornito un manuale utente in lingua inglese che tratterà l'uso da parte di studenti e professori & \makecell[tl]{
+		VE171122
+	} \\ \hline
+	R0Q6 &  Dovrà essere fornito un manuale di deploy e di utilizzo da parte degli amministratori in lingua inglese & \makecell[tl]{
+		VE171122
+	} \\ \hline
+	R0Q7 &  Il codice sorgente deve essere pubblicato sulla piattaforma GitHub, BitBucket o GitLab & \makecell[tl]{
+		Capitolato
+	} \\ \hline
+	R0Q8 &  Il codice deve attenersi il più possibile alle guide linea de "App a 12 Fattori" & \makecell[tl]{
+		Capitolato
+	} \\ \hline
+	R0V1 &  L'applicativo dovrà essere sviluppato attraverso l'uso di tecnologie web & \makecell[tl]{
+		Capitolato
+	} \\ \hline
+	R0V1.1 &  L'applicativo dovrà essere sviluppato con Node.js & \makecell[tl]{
+		Capitolato
+	} \\ \hline
+	R0V1.2 &  L'applicativo dovrà essere sviluppato con JavaScript 8 (ES8) & \makecell[tl]{
+		Capitolato
+	} \\ \hline
+	R0V1.3 &  L'applicativo dovrà essere sviluppato con il boilerplate Redux Minimal & \makecell[tl]{
+		Capitolato
+	} \\ \hline
+	R0V1.4 &  L'applicativo dovrà essere sviluppato utilizzando React & \makecell[tl]{
+		Capitolato
+	} \\ \hline
+	R0V1.5 &  L'applicativo dovrà essere sviluppato utilizzando Redux & \makecell[tl]{
+		Capitolato
+	} \\ \hline
+	R0V1.6 &  Il deploy del sito andrà eseguito utilizzando Surge.sh & \makecell[tl]{
+		Capitolato
+	} \\ \hline
+	R0V1.7 &  È desiderabile l'utilizzo di SCSS in sostituzione a CSS & \makecell[tl]{
+		Capitolato
+	} \\ \hline
+	R0V2 &  Gli smart contract dovranno essere scritti in linguaggio Solidity & \makecell[tl]{
+		Capitolato
+	} \\ \hline
+	R0V3 &  La connessione alla rete Ethereum deve avvernire tramite MetaMask & \makecell[tl]{
+		Capitolato
+	} \\ \hline
+	R0V3.1 &  I test riguartandi gli smart contract dovranno essere eseguiti in una rete locale ed almeno in una rete pubblica & \makecell[tl]{
+		Capitolato
+	} \\ \hline
+	R0V3.2 &  Il deploy degli smart contract dovrà avvenire su rete locale testrpc e rete di test Ropsten & \makecell[tl]{
+		Capitolato
+	} \\ \hline
+	R2V3.3 &  È apprezzabile un deploy finale sulla rete principale di Ethereum & \makecell[tl]{
+		Capitolato
+	} \\ \hline
+	R0V4 &  Lo sviluppo degli smart contract dovrà avvenire utilizzando il framework Truffle & \makecell[tl]{
+		Capitolato
+	} \\ \hline
+	R0V5 &  L'applicativo deve essere accessibile ed utilizzabile dal browser Mozilla Firefox a partire dalla versione X & \makecell[tl]{
+		Interno
+	} \\ \hline
+	R0V6 &  L'applicativo deve essere accessibile ed utilizzabile dal browser Google Chrome a partire dalla versione X & \makecell[tl]{
+		Interno
+	} \\ \hline
+	R1V7 &  L'applicativo deve essere accessibile ed utilizzabile da un browser mobile, per le versioni supportate fare riferimento alle controparti PC di Firefox e Chrome & \makecell[tl]{
+		Capitolato
+	} \\ \hline
+	R0V8 &  Un utente non deve poter compiere azioni sul sistema senza aver fatto l'accesso ad esso & \makecell[tl]{
+		Capitolato
+	}\\ \hline
+	R0V9 &  L'applicazione dei principi de "App a 12 Fattori" deve essere documentata & \makecell[tl]{
+		Capitolato 
+	}\\ \hline
+	R0V10 &  Il codice sorgente deve essere pubblicato con licenza MIT & \makecell[tl]{
+		Capitolato
+	}\\ \hline
 	\caption{Tabella di tracciamento requisiti-fonti}
 \end{longtable}
 

@@ -30,7 +30,7 @@
 	\end{itemize}
 	
 	\subsection{Separazione documenti interni ed esterni}
-	Ogni documento formale dovrà essere classificato come documento Interno
+	Ogni documento formale dovrà essere classificato come Interno
 	oppure Esterno con le seguenti differenze:
 	\begin{itemize}
 		\item \textbf{Interno:} ha utilizzo interno al gruppo 353, redatto in lingua Italiana;
@@ -47,7 +47,7 @@
 	\end{itemize}
 	Di seguito la spiegazione che assumono le versione del documento:
 	\begin{itemize}
-		\item \textbf{X:} rappresenta il numero di pubblicazioni formali del documento, ogni qual volta il documento verrà pubblicato il valore di Y e Z verrà azzerato;
+		\item \textbf{X:} rappresenta il numero di pubblicazioni formali del documento: ogni qual volta questo venga pubblicato il valore di Y e Z verrà azzerato, quello di X incrementato di uno;
 		\item \textbf{Y:} rappresenta il numero di verifiche completate con successo, in caso di mancato superamento della fase di verifica il valore non va modificato, mentre se superata viene incrementato di uno e si azzera il valore della Z;
 		\item \textbf{Z:} rappresenta il numero di modifiche effettuate al documento durante il suo sviluppo.	
 	\end{itemize}
@@ -71,7 +71,7 @@
 		
 		\item \textbf{Piano di Progetto:}
 		utilizzo Esterno, sigla (PdP) \\
-		Documento per l'analisi e la pianificazione della gestione delle risorse di tempo e delle risorse umane.
+		Documento per l'analisi e la pianificazione della gestione delle risorse di tempo e umane.
 		
 		\item \textbf{Piano di Qualifica:}
 		utilizzo Esterno, sigla (PdQ) \\
@@ -103,7 +103,7 @@
 			Questo diario sarà presente nella seconda pagina del documento sotto forma di tabella in ordine di versione decrescente con righe composte da: versione, data, descrizione modifiche, autore, ruolo
 			
 			\item \textbf{Indice delle sezioni:}
-			L'indice delle sezioni conterrà l'indice di tutti gli argomenti trattati nel documento con la seguente struttura: titolo, argomento e numero pagina
+			L'indice delle sezioni conterrà l'elenco di tutti gli argomenti trattati nel documento con la seguente struttura: titolo, argomento e numero pagina
 			
 			\item \textbf{Indice delle tabelle:} %TODO mettiamo questi indici?
 			Sezione contenente l'indice delle tabelle con struttura identica alle sezioni. 
@@ -183,9 +183,9 @@
 	Il template è basato sulle norme di documentazione elencate nella sezione precedente, inoltre è stata scritta una pagina di showcase per facilitare il mantenimento corretto delle strutture dei documenti. %TODO showcase?
 	
 	\subsection{Gestione termini Glossario}
-	Il glossario è un documento unico per tutti i documenti, esso conterrà tutte le definizioni, in ordine lessicografico crescente dei termini inerenti al tema del progetto o che possono essere fraintesi o non ben comprensibili. I termini che dovranno essere inseriti nel glossario saranno contrassegnati da una G pedice all'interno dei documenti.\\
+	Il glossario è un documento unico per tutti i documenti, esso conterrà tutte le definizioni, in ordine lessicografico crescente, dei termini inerenti al tema del progetto, che possono essere fraintesi o non ben comprensibili. I termini inseriti nel glossario saranno contrassegnati da una G pedice all'interno dei documenti.\\
 	Ovviamente prima di inserire un nuovo termine bisognerà assicurarsi che non sia già presente, in modo da evitare duplicati. \\
-	Il comando \LaTeX{}  da utilizzare per contrassegnare un termine da glossario all'interno dei documenti è \textbackslash{}citGloss, mentre per l’inserimento di una nuova parola all'interno del glossario viene utilizzato \textbackslash{}glossDef.\\ %TODO che comandi vogliamo usare per il dizionario?
+	Il comando \LaTeX{}  da utilizzare per contrassegnare un termine da glossario all'interno dei documenti è \textbackslash{}citGloss, mentre per l'inserimento di una nuova parola all'interno del glossario viene utilizzato \textbackslash{}glossDef.\\ %TODO che comandi vogliamo usare per il dizionario?
 	La scelta di creare un comando apposito per una operazione "elementare" è scaturita dall'agevolazione che porta alla stesura della documentazione: avendo un modo univoco di riconoscere i termini all'interno del glossario è possibile automatizzare la verifica del soddisfacimento delle norme all'interno dei documenti.
 	
 	\subsection{Strumenti a supporto della documentazione} %TODO sono da lasciare qui o da mettere su strumenti usati per la verifica nei PROCESSI DI VERIFICA?
@@ -202,7 +202,7 @@
 			\item Occorrenze: ossia il numero di volte in cui si presenterà un particolare evento come il numero di difetti di una caratteristica del prodotto.
 		\end{itemize} 
 		
-		\item \textbf{Metriche per i documenti:} per la verifica dei documenti è stata scelto l'indice di leggibilità secondo l'indice Gulpease che viene calcolato tramite funzione Latex.\\
+		\item \textbf{Metriche per i documenti:} per la verifica dei documenti è stata scelto l'indice di leggibilità Gulpease che viene calcolato tramite funzione Latex.\\
 		I risultati sono compresi tra 0 e 100 dove il valore 100 indica una leggibilità massima, si è scelto di considerare un documento sufficientemente leggibile all'ottenimento del valore X; %TODO o funzione esterna si fixa il prototipo alla fine di questo documento? 
 		%TODO specificare X
 		
@@ -244,7 +244,7 @@
 	Nella root della \citGloss{repository} è stato messo invece un file .sh gestito tramite Travis CI che controlla automaticamente gli errori in tutti i documenti presenti e compila un log con i risultati ottenuti.
 	
 	\subsubsection{Ciclo di vita dei branch}
-	Per sfruttare il parallelismo nello sviluppo di uno stesso documento sono stati creati appositamente dei branch denominati con il nome del membro o dei membri del gruppo che devono lavorare su una determinata parte, mentre i documenti baseline saranno invece contenuti solamente nel master branch.\\
+	Per sfruttare il parallelismo nello sviluppo di uno stesso documento sono stati creati appositamente dei branch denominati con il nome del membro o dei membri del gruppo che devono lavorare su una determinata parte, mentre i documenti baseline saranno invece contenuti nel master branch.\\
 	Il merge col master avviene quindi solamente quando un documento si trova in stato di "Approvato".
 	
 	\subsubsection{Aggiornamento della repository}
@@ -267,7 +267,7 @@
 	\section{Verifica}
 	
 	\subsection{Descrizione}
-	Un processo fondamentale per il proseguimento e l'evoluzione di un progetto è la verifica su ogni sottoprodotto del progetto che porta alla creazione di un singolo prodotto.\\
+	Un processo fondamentale per il proseguimento e l'evoluzione di un progetto è la verifica su ogni suo sottoprodotto che porta alla creazione di un singolo componente.\\
 	In questa sezione si descriveranno gli strumenti e i metodi che verranno usati per la verifica del codice durante la progettazione.\\
 	Per quanto riguarda questa prima parte di progetto la verificati si è concentrata essenzialmente su documenti e diagrammi.
 	
@@ -288,7 +288,7 @@
 	
 	\subsection{Strumenti usati per la verifica}
 	\begin{itemize}
-		\item \textbf{Software:} verranno usati per la verifica Mocha ed Enzyme per React, Jest per la verifica di Redux mentre per i contratti Solidity useremo Mocha e Chai; %TODO sono corrette queste info? Ho un dubbio su Jest siccome non presente sul redux-minimal che loro hanno detto di usare -Verifica(Davide): siccome è redux a consigliare JEst per i test, non vedo perché debba essere sbagliato. potremmo chiedere a Red B?
+		\item \textbf{Software:} verranno usati per la verifica Mocha ed Enzyme per React, Jest per Redux, mentre per i contratti Solidity useremo Mocha e Chai; %TODO sono corrette queste info? Ho un dubbio su Jest siccome non presente sul redux-minimal che loro hanno detto di usare -Verifica(Davide): siccome è redux a consigliare JEst per i test, non vedo perché debba essere sbagliato. potremmo chiedere a Red B?
 		\item \textbf{Documenti:} Per il controllo dei documenti prodotti utilizzeremo le funzionalità di Texstudio assieme a script bash eseguiti automaticamente da un \citGloss{Bot} per controllare che non ci siano errori nei file LaTex, per assicurarsi che il Glossario non presenti mancanze o duplicati e verificare l'assenza di errori ortografici;
 		\item \textbf{Gestione processi e feedback:} è stato scelto di utilizzare il sistema integrato di issues presente su \citGloss{GitHub} per permettere un dialogo maggiore per ogni singola issue. 
 	\end{itemize}

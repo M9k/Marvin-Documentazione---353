@@ -2,18 +2,21 @@
 <<USAGE
   FUNZIONANTE SU DISTRIBUTZIONI LINUX
   2 Modi per usarlo:
-  1)/bin/bash gupdate.sh
+  1)/bin/bash gupdate.sh [termine]
   2)
     Dare permessi di esecuzione al file "chmod +x build.sh"
-    ./gupdate.sh
+    ./gupdate.sh [termine]
+  Se viene passato un termine come argomento verra aggiornato solo quello,
+  altrimenti recupera le definizioni dal glossario
 USAGE
 <<FUNZIONAMENTO
   Recupera i termini definiti nel glossario
   Cerca in tutti i file .tex i termni trovati e li sostituisce con il comando di
   glossario relativo
+  In caso venga passato un argomento, sostituisce solo il termine passato
 FUNZIONAMENTO
 #Variabili di configurazione
-GLOSSARYDIR="Esterni - ENG/Glossario"
+GLOSSARYDIR="Esterni/Glossario"
 GLOSSARYENTRY="newglossaryentry"
 PICKCOMMAND="^[^%]$GLOSSARYENTRY" #"^[^%] -> evita di prendere righe commentate
 PICKREGEX="$PICKCOMMAND{.*}"
@@ -23,25 +26,25 @@ AFTERTERM="\}"
 GLOSSARYCOMMAND="citGloss"
 
 #Script
-RAWTERMS=$(grep -o $PICKREGEX "$GLOSSARYFILE") #Ricevi tutti i termini del glossario
-IFS=$'\n' TERMS=($RAWTERMS) #Crea un array spezzando la stringa per il carattere a capo
+if [[ -z "$1" ]]; then #Se NON è stato passato un termine
+  RAWTERMS=$(grep -o $PICKREGEX "$GLOSSARYFILE") #Ricevi tutti i termini del glossario
+  IFS=$'\n' TERMS=($RAWTERMS) #Crea un array spezzando la stringa per il carattere a capo
+else
+  TERMS[0]=$1
+fi
 for term in "${TERMS[@]}"; do
   term=${term//$BEFORETERM/""} #Elimina il testo latex lasciando solo il nome del term
   term=${term//$AFTERTERM/""}
-
-  #find ... -> trova il nome di tutti i file .tex ricorsivamente nella
-  #cartella corrente (.) evitando la cartella del glossario (-not -path ...)
-  FILES=$(find . -name "*.tex" -not -path "*$GLOSSARYDIR*")
-  IFS=$'\n' FILES=($FILES) #Spezza la stringa in righe
-  for file in "${FILES[@]}"; do #cicla sulle righe
-
-    #Sostiusce i termini evitando le righe che contengono il term desiderato in comandi latext
-    #eg \somecommand{requisiti} non viene toccato
-    #In questo modo il comando può essere eseguito più volte senza paura di annidare sostituzioni
-    #In questo modo evitiamo di mettere la g pedice in sezioni,capitoli, label, etc.
-    sed -i "/[\t|' ']*\\\\.*[{[].*$term.*}/I!s/$term/\\\\$GLOSSARYCOMMAND\{$term\}/gI" $file
+  #Sostiusce i termini evitando le righe che contengono il term desiderato in comandi latext
+  #eg \somecommand{requisiti} non viene toccato
+  #In questo modo il comando può essere eseguito più volte senza paura di annidare sostituzioni
+  #In questo modo evitiamo di mettere la g pedice in sezioni,capitoli, label, etc.
+  find . -name "*.tex" -not -path "*$GLOSSARYDIR*" | xargs sed -i "/[\t|' ']*\\\\.*[{[].*$term.*}/I!s/$term/\\\\$GLOSSARYCOMMAND\{$term\}/gI" #$file
 <<COMMENT
       SPIEGAZIONE COMANDO SOPRA
+      find ... -> trova il nome di tutti i file .tex ricorsivamente nella
+        cartella corrente (.) evitando la cartella del glossario (-not -path ...)
+      | xargs -> il suo output viene dato in pasto al comando successivo
       sed -i -> esegui sed in place, ovvero lavora direttamente sul file in esame
       Sed è un utility GNU per il find&replace, prende come argomento la regex per la ricerca
       e il termine con cui sostituire il contenuto tornato nel formato:
@@ -86,8 +89,7 @@ for term in "${TERMS[@]}"; do
       ---OPZIONI DI RICERCA--
       I --> case insensitive
 COMMENT
-  done
-done
+done #Fine ciclo termini
 #Se dovessimo rinominare le cartelle, togliendo gli spazi, un'alternativa
 #credo più efficente sarebbe si dare l'output di find direttamente in pasto a sed:
 # find . -name "*.tex" -not -path "*$GLOSSARYDIR*" | xargs sed REGEX

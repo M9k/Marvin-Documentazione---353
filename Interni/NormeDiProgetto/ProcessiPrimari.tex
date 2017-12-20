@@ -1,0 +1,224 @@
+\documentclass[NormeDiProgetto.tex]{subfiles}
+\begin{document}
+\chapter{Processi primari}
+\section{Fornitura}
+In questa sezione vengono tratta le norme che i membri del gruppo 353 sono tenuti a rispettare al fine di proporsi e diventare fornitori nei confronti della Proponente Red Babel e dei Committenti \Vardanega{} e \Cardin{} nell'ambito della progettazione, sviluppo e consegna del prodotto \progetto{}.
+
+\subsection{Studio di fattibilità}
+In seguito alla presentazione ufficiale dei \textbf{Capitolati d'appalto} avvenuta Venerdì 10 novembre 2017 alle ore 10.30 presso l'aula 1C150 di Torre Archimede è stata convocata una riunione interna al gruppo per discutere in merito alla varie proposte presentate.\\
+Una volta stabilita la scelta del capitolato per il quale proporsi come fornitori, gli analisti hanno condotto un'ulteriore e approfondita attività di analisi dei rischi e delle opportunità culminata con la redazione del documento \sdf \vruno. Tale documento include le motivazioni che hanno portato il gruppo 353 a proporsi come fornitore per il prodotto indicato e riporta per ciascun capitolato:
+\begin{itemize}
+	\item \textbf{Descrizione generale:} una sintesi del prodotto da sviluppare secondo quanto stabilito dal capitolato d'appalto;
+	\item \textbf{Obbiettivo finale:} rappresenta il Dominio Applicativo, cioè l'ambito di utilizzo del prodotto da sviluppare;
+	\item \textbf{Tecnologie richieste:} rappresenta il Dominio Tecnologico richiesto dal capitolato, raggruppando le tecnologie da impiegare nello sviluppo del progetto;
+	\item \textbf{Valutazione finale:} racchiude le motivazioni, i rischi, le criticità evidenziate per le quali il capitolato in questione è stato respinto o accettato.
+\end{itemize}
+
+\section{Sviluppo}
+\subsection{Analisi dei Requisiti}
+L'obbiettivo dell'analisi dei requisiti è quello di individuare ed elencare tutti i \citGloss{requisiti} del capitolato. I requisiti possono essere estrapolati da più fonti:
+\begin{itemize}
+	\item \textbf{Capitolato d’appalto};
+	\item \textbf{Verbali di riunioni esterne};
+	\item \textbf{Casi d’uso}.
+\end{itemize}
+Il risultato di quest'analisi sarà il documento \adr \vruno{} redatto dagli \alisti{}, dopo essere stato verificato, al fine di:
+\begin{itemize}
+\item Descrivere l'obiettivo del lavoro del gruppo;
+\item Fornire ai Progettisti riferimenti precisi ed affidabili;
+\item Fissare le funzionalità e i \citGloss{requisiti} concordati col cliente;
+\item Fornire una base per raffinamenti successivi al fine di garantire un
+miglioramento continuo del prodotto e del processo di sviluppo;
+\item Facilitare le revisioni del codice;
+\item Fornire ai Verificatori riferimenti per l’attività di test circa i casi d’uso principali e alternativi;
+\item Stimare i costi.
+\end{itemize}
+Ogni requisito dovrà essere meno ambiguo possibile e rispettare le seguenti norme.
+
+\subsubsection{Classificazione dei requisiti}
+Ogni requisito è identificato da un codice, costruito come descritto di seguito:\\ \\
+\textbf{\centerline{R[Importanza][Classificazione][Identificativo]}}\\
+	\begin{itemize}
+	\item La prima lettera (R) è l'abbreviazione di requisito;
+	\item Il secondo valore indica l'\textbf{importanza}. Assume il valore:
+		\begin{itemize}
+				\item \textbf{Zero (0):} indica un requisito obbligatorio, il cui soddisfacimento
+				dovrà necessariamente avvenire per garantire le funzioni base del
+				sistema;
+				\item \textbf{Uno (1):} se si tratta di un requisito desiderabile, cioè un requisito il cui
+				soddisfacimento può dare maggiore completezza al sistema ma il
+				non soddisfarlo non pregiudica alcuna funzione di base;
+				\item \textbf{Due (2):} indica un requisito opzionale.
+		\end{itemize}
+	\item La terza lettera indica la \textbf{classificazione}. Assume valore F se si tratta di un Requisito funzionale, Q se di qualità, P se prestazionale e V se di vincolo;
+	\item L'\textbf{identificativo} indica invece un numero progressivo.
+	\end{itemize}
+
+\subsubsection{Classificazione casi d'uso} gli \alisti{} hanno anche il compito di identificare i casi d’uso, elencandoli con un grado di precisione che va dal generico verso il dettaglio. Ogni caso d’uso è descritto dalla seguente struttura:\\
+\begin{itemize}
+	\item \textbf{Codice identificativo e nome:} ogni caso d'uso è identificato da una serie di cifre separate dal punto. L'ultima cifra indica il numero del figlio, la penultima cifra indica il numero del padre e UC è l'abbreviazione di Use Case (caso d'uso in inglese). Queste cifre sono seguite dopo il trattino (-) dal nome del caso d'uso: \\\\
+	\centerline{\textbf{UC[Codice padre].[Codice figlio] - Nome}}
+	\item \textbf{Attori:} indica gli attori principali (ad esempio l’utente generico) e
+	secondari (ad esempio ufficio universitario) del caso d’uso;
+	\item \textbf{Scopo e descrizione:} riporta una breve descrizione del caso d’uso;
+	\item \textbf{Scenario principale:} rappresenta il flusso degli eventi come lista
+	numerata, specificando per ciascun evento il caso d'uso di riferimento;
+	\item \textbf{Precondizione:} specifica le condizioni che sono identificate come vere
+	prima del verificarsi degli eventi del caso d’uso;
+	\item \textbf{Postcondizione:} specifica le condizioni che sono identificate come
+	vere dopo il verificarsi degli eventi del caso d’uso;
+	\item \textbf{Inclusioni (se presenti):} usate per non descrivere più volte lo stesso flusso di eventi,
+	inserendo il comportamento comune in un caso d’uso a parte;
+	\item \textbf{Estensioni (se presenti):} descrivono i casi d’uso che non fanno parte del flusso
+	principale degli eventi, allo stesso modo di quanto descritto in “Scenario
+	principale”.
+\end{itemize}
+
+\subsection{Progettazione}
+
+\subsubsection{Scopo}
+L’attività di Progettazione consiste nel descrivere una soluzione del problema
+che sia soddisfacente per tutti gli stakeholders.
+\`{E} compito dei \progi{} svolgere tale attività, definendo l’architettura logica
+del prodotto identificando componenti chiare, riusabili e coese rimanendo nei
+costi fissati. L’architettura definita dovrà:
+\begin{itemize}
+	\item Soddisfare i \citGloss{requisiti} definiti nel documento \adr{} e adattarsi facilmente nel caso essi evolvano o se ne aggiungano di nuovi; 
+	\item Essere comprensibile, modulare e robusta riuscendo a gestire situazioni erronee improvvise;
+	\item Essere affidabile, cioè avere una elevata capacità di rispettare le specifiche nel tempo;
+	\item Essere sicura rispetto ad intrusioni e malfunzionamenti;
+	\item Avere una elevata disponibilità, riducendo al minimo i tempi di manutenzione;
+	\item Avere componenti semplici, coesi nel raggiungere gli obiettivi, incapsulati e con scarse dipendenze tra loro.
+\end{itemize}
+
+\subsubsection{Diagrammi}
+Al fine di rendere più chiare le scelte progettuali adottate e
+ridurre le possibili ambiguità, sarà necessario fare largo uso di vari tipi di diagrammi 
+\textbf{UML 2.0}, realizzandone secondo le seguenti rappresentazioni:
+\begin{itemize}
+	\item \textbf{Diagrammi dei casi d'uso:} dedicati alla descrizione delle funzioni offerte dal sistema;
+	\item \textbf{Diagrammi delle classi:} dedicati alla descrizione degli oggetti che fanno parte di un sistema e delle loro dipendenze;
+	\item \textbf{Diagrammi dei package:} dedicati alla descrizione della dipendenza tra classi raggruppate in package;
+	\item \textbf{Diagrammi di sequnza:} dedicati a descrivere la collaborazione nel tempo tra un gruppo di oggetti;
+	\item \textbf{Diagrammi di attività:} dedicati a descrivere la logica procedurale.
+\end{itemize}
+
+\subsubsection{Obiettivi della progettazione}
+Essa serve a garantire che il prodotto sviluppato soddisfi le proprietà e i bisogni specificati nell'attività di analisi ponendo i seguenti obiettivi:
+\begin{itemize}
+	\item Garantire la qualità di prodotto sviluppato, perseguendo la \textit{correttezza
+		per costruzione};
+	\item Organizzare e ripartire compiti implementativi, riducendo la
+	complessità del problema originale fino alle singole componenti
+	facilitandone la codifica da parte dei singoli \progri{};
+	\item Ottimizzare l’uso di risorse.
+\end{itemize}
+
+\subsection{Codifica}
+In questa sotto-sezione vengono elencate le norme alle quali i \progri{} devono attenersi durante l'attività di programmazione e implementazione.\\
+All'inizio verranno elencate delle norme generali a cui i \progri{} devono attenersi con qualsiasi linguaggio di programmazione utilizzato, mentre di seguito verranno elencate delle norme specifiche per i linguaggi JavaScript, JavaScript Syntax eXtension, Solidity e SCSS.\\
+Ogni norma è rappresentata da un paragrafo; ciascuna ha un titolo, una breve descrizione e, se necessario, un esempio che illustri le convenzioni da applicare. Alcune di esse includono inoltre una lista di possibili eccezioni d'uso.\\
+L'uso di norme e convenzioni è fondamentale per permettere la generazione di codice leggibile e uniforme, agevolando così le fasi di manutenzione, verifica e validazione e migliorando la qualità del prodotto.
+
+\paragraph*{Convenzioni per i nomi: }
+\begin{itemize}
+	\item Alcuni nomi sono da evitare in quanto facilmente confondibili con i numeri \texttt{1} e \texttt{0}, elencati di seguito:
+	\begin{itemize}
+		\item \texttt{l} (lettera minuscola elle);
+		\item \texttt{O} (lettera maiuscola o);
+		\item \texttt{I} (lettera maiuscola i).
+	\end{itemize}
+	\item Tutti i nomi devono essere \textbf{unici} ed \textbf{esplicativi} al fine di evitare al più possibile ambiguità e comprensione.
+\end{itemize}
+Per i vari linguaggi verranno successivamente descritte altre norme per nomi di variabili, funzioni e altro facendo riferimento ai seguenti stili:
+\begin{itemize}
+	\item \texttt{lowercase};
+	\item \texttt{lower\_case\_with\_underscores};
+	\item \texttt{UPPERCASE};
+	\item \texttt{UPPER\_CASE\_WITH\_UNDERSCORES};
+	\item \texttt{CapitalizedWords} (o \texttt{CapWords});
+	\item \texttt{mixedCase};
+	\item \texttt{Capitalized\_Words\_With\_Underscores};
+	\item \texttt{lower-case-with-dashes}.
+\end{itemize}
+
+\paragraph*{Convenzioni per la documentazione: }
+\begin{itemize}
+	\item Tutti i nomi e i commenti al codice per la documentazione vanno scritti in \textbf{inglese};
+	\item \`{E} possibile utilizzare in un commento la keyword \textbf{TODO} per indicare codice temporaneo e soluzioni a breve termine o evidentemente migliorabili;
+	\item Ogni file contenente codice deve avere la seguente \textbf{intestazione} contenuta in un commento e posta all'inizio del file stesso:
+\begin{center}{
+\begin{minipage}{12cm}
+\begin{Verbatim}[frame=single]
+File : nome file
+Version : versione file
+Type : tipo file
+Date : data di creazione
+Author : nome autore/i
+E- mail : email autore/i
+
+License : tipo licenza
+
+Advice : lista avvertenze e limitazioni
+
+Changelog :
+Autore || Data || breve descrizione delle modifiche
+\end{Verbatim}
+\end{minipage}
+}
+\end{center}
+	\item La \textbf{versione} del codice viene inserita all’interno dell’intestazione del file e rispetta il
+	seguente formalismo:
+	\begin{center}{\textbf{X.Y}}\end{center}	
+	\begin{itemize}
+		\item \textbf{X}: è l’indice di versione principale, un incremento di tale indice rappresenta un avanzamento della versione stabile, che porta il valore dell’indice Y ad essere azzerato;
+		\item \textbf{Y}: è l’indice di modifica parziale, un incremento di tale indice rappresenta una verifica o una modifica rilevante, come per esempio la rimozione o l’aggiunta di una istruzione.
+	\end{itemize}
+	La versione \textit{1.0} deve rappresentare la prima versione del file completo e stabile, cioè quando le sue funzionalità obbligatorie sono state definite e si considerano funzionanti. Solo dalla versione \textit{1.0} è possibile testare il file, con degli appositi test predefiniti, per validarne la qualità. %TODO ok "validarne la qualità?"
+\end{itemize}
+
+
+\subfile{Codifica/Javascript.tex}
+\subfile{Codifica/React.tex}
+\subfile{Codifica/Solidity.tex}
+\subfile{Codifica/Scss.tex}
+
+
+\subsection{Procedure}
+
+%TODO non posso controllarlo io, visto che lo ho scritto -Mirco
+\subsubsection{Tracciamento componenti-requisiti}
+	Si è scelto di utilizzare il software Trender per il tracciamento automatizzato di tutte le informazioni ricavate dall'analisi dei \citGloss{requisiti}.\\
+	Il database MySQL che garantisce la persistenza e l'accesso ai dati si trova in remoto, in modo tale da rendere sempre disponibile a tutti le informazioni che esso contiene.\\
+	Qualsiasi componente del gruppo, utilizzando la parte front-end dell'applicazione scritta in PHP e JavaScript, può accedervi utilizzando l'account comune predisposto.\\
+	Una volta effettuato l'accesso si ha a disposizione le funzionalità di modifica e di esportazione in codice LaTeX dei dati presenti.\\
+%	Trender consente di mantenere il tracciamento di:\\
+%	\begin{itemize}
+%		\item \citGloss{requisiti};
+%		\item Casi d'uso;
+%		\item Attori;
+%		\item Verbali;
+%		\item Package;
+%		\item Classi;
+%		\item Test;
+%		\item Voci del glossario.
+%	\end{itemize}
+
+\subsection{Strumenti}
+\begin{itemize}
+	\item \textbf{Tracciamento requisiti:} il gruppo 353 ha deciso di utilizzare il software \textbf{Trender}\footnote{\nURI{https://github.com/campagna91/Trender}} installato su server remoto condiviso;
+	\item \textbf{Creazione diagrammi UML:} {UML Designer}\footnote{\nURI{http://www.umldesigner.org/}};
+	\item \textbf{Scrittura del codice:} Webstorm by Jetbrains\footnote{\nURI{https://www.jetbrains.com/webstorm/}}; 
+	\item \textbf{Toolkit sviluppo:} si utilizzano i pacchetti installabili tramite Node.js con gestore di pacchetti npm per risolvere dipendenze delle librerie e tool richiesti;
+	\item \textbf{Tracciamento dei test:} Codecov\footnote{\nURI{https://codecov.io/}}; %TODO Sonarcube?
+	\item \textbf{Esecuzione dei test:}
+	\begin{itemize}
+		\item React: Mocha\footnote{\nURI{https://github.com/mochajs/mocha}} e Enzyme\footnote{\nURI{https://github.com/airbnb/enzyme}};
+		\item Redux: Jest\footnote{\nURI{https://facebook.github.io/jest/}};
+		\item Web3/Truffle: Mocha e Chai\footnote{\nURI{http://chaijs.com/}}.
+	\end{itemize}
+	\item \textbf{Continuos Integration:} Travis\footnote{\nURI{http://travis-ci.com/}}.;
+	\item \textbf{Tool di supporto:} Scss-lint\footnote{\nURI{https://github.com/brigade/scss-lint}}. 	
+\end{itemize}
+
+\end{document}

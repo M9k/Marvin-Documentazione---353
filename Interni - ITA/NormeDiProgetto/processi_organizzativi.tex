@@ -8,9 +8,8 @@
 	\subsection{Comunicazione}
 	In questa sezione vengono illustrate le norme che regolano la comunicazione sia tra i membri del gruppo 353 che con entità esterne, come i Committenti e i Proponenti.
 	\subsubsection{Comunicazioni interne}
-	Le comunicazioni interne al gruppo vengono effettuate tramite \citGloss{Slack}, un'applicazione di messaggistica multi piattaforma con funzionalità specifiche per gruppi di lavoro. La decisione di utilizzare questo strumento è stata supportata dalle funzionalità di integrazione di \citGloss{Bot} e di creazione di canali tematici, utili per poter classificare le conversazioni e permettere una comunicazione più efficace e mirata.\\
-	Inoltre è stato deciso di affiancare \citGloss{Skype} per effettuare video chiamate in caso di impossibilità di riunirsi personalmente. \'{E} stato scelto questo metodo poiché immediato e di facile utilizzo.\\
-	All'interno di \citGloss{Slack} sono stati predisposti dei canali tematici, suddivisi per argomento in questo modo:
+
+	Le comunicazioni interne al gruppo vengono effettuate tramite \citGloss{Slack}, al cui interno sono stati predisposti dei canali tematici, suddivisi per argomento in questo modo:
 	\begin{itemize}
 		\item \textbf{\#General}: Per discutere tutto ciò che riguarda l'organizzazione generale del progetto, la scelta degli strumenti di lavoro e per prendere decisioni in modo rapido. Inoltre qui vengono decisi gli argomenti principali da discutere nelle riunioni;
 		\item \textbf{\#Calendario\underline{ }meeting}: Il canale riservato nel quale un \citGloss{Bot} notifica giornalmente gli eventi facenti parte del calendario comune, come riunioni interne, eventi di formazione o riunioni esterne;
@@ -27,6 +26,7 @@
 		\item \textbf{\#Piano\underline{ }qualifica}: Per discutere riguardo gli obiettivi e le strategie da applicare per garantire qualità e gestire verifica e validazione.
 	\end{itemize}
 	
+
 	\subsubsection{Comunicazioni esterne}
 	Questa sottosezione raccoglie le norme che regolano le comunicazioni con soggetti esterni al gruppo 353, i quali sono:
 	\begin{itemize}
@@ -51,6 +51,7 @@
 	
 	\subsection{Riunioni}
 	Questa sotto-sezione definisce le regole che normano le riunioni, interne o esterne, e il loro svolgimento. Durante lo svolgimento di ogni riunione verrà nominato un segretario tra i membri del gruppo 353, il cui compito verterà nel far rispettare l'ordine del giorno, annotare gli argomenti discussi e redarre il Verbale di Riunione.
+	Se non è possibile effettuare una riunione in un luogo fisico, è stato deciso di utilizzare \citGloss{Skype}.
 	\subsubsection{Verbale di riunione}
 	Redigere il Verbale di Riunione è il compito del segretario, il quale sarà strutturato secondo questo scheletro:
 	\begin{itemize}
@@ -61,7 +62,7 @@
 		\end{itemize}
 		\item \textbf{Informazioni sulla riunione}: questa sezione contiene:
 		\begin{itemize}
-			\item \textbf{Motivo della riunione}: sotto forma di paragrafo, che illustra i motivi generali della riunione; 
+			\item \textbf{Motivo della riunione}: illustra i motivi generali della riunione; 
 			\item \textbf{Luogo e Data}: ad esempio, Padova 05 Dicembre 2017;
 			\item \textbf{Ora di inizio}: nel formato ventiquattro ore, ad esempio 13:15;
 			\item \textbf{Ora di fine}: nel formato ventiquattro ore, ad esempio 15:30;
@@ -73,17 +74,19 @@
 	\end{itemize}
 	\paragraph{Nomenclatura e Conservazione:} i file relativi ai verbali dovranno essere nominati come: \textbf{VER-DATA}.\\
 	Ad esempio VER-2017-12-05, per permettere una facile organizzazione dei documenti.
-	Essendo documenti ufficiali, devono essere redatti in \LaTeX e inclusi nella \citGloss{repository} omonima.
+	Essendo documenti ufficiali, devono essere redatti in \LaTeX\ e inclusi nella \citGloss{repository} omonima.
 	
 	\subsubsection{Riunioni interne}
 	La partecipazione alle riunioni interne è permessa ai soli membri del gruppo 353.
 	Il \respdiprog{} ha il compito di stilare l'ordine del giorno, fissare la data e inserirla nel calendario e approvare il verbale redatto dal Segretario.\\
 	Di contro, i \textbf{partecipanti} devono presentarsi puntualmente alle riunioni, comunicare eventuali ritardi e partecipare attivamente alle discussioni.\\
 	Affinché una riunione sia ritenuta valida, devono essere presenti almeno cinque membri del gruppo 353.
+	
 	\subsubsection{Riunioni esterne}
-	Le riunioni esterne vedono coinvolti sia i membri del gruppo 353 che alcuni soggetti esterni.\\
-	Principalmente le riunioni esterne vengono svolte in Torre Tullio Levi Civita, previa disponibilità dei locali.\\
-	A causa della locazione dell'azienda proponente, con sede a Amsterdam, le riunioni verranno principalmente effettuate tramite \citGloss{Skype}, ovviando così al problema della distanza fisica.
+	Le riunioni esterne vedono coinvolti sia i membri del gruppo 353 che la Proponente.
+	Tutto ciò che viene discusso durante le riunioni, viene riportato nel verbale esterno corrispondente.\\
+	A causa della locazione dell'azienda proponente, con sede a Amsterdam, le riunioni verranno principalmente effettuate tramite \citGloss{Skype}, ovviando così al problema della distanza fisica, dopo essersi accordati sul giorno e ora stabiliti utilizzando l'apposito canale \citGloss{Slack}.
+	Quando possibile, verranno invece effettuate presso la Torre Tullio Levi Civita (ex Torre Archimede), previa disponibilità dei locali.
 	
 	\section{Processi di pianificazione}
 	\subsection{Ruoli di progetto}
@@ -96,8 +99,7 @@
 		\item \textbf{Programmatore};
 		\item \textbf{Verificatore}.
 	\end{itemize}
-	Il cambio del ruolo sarà effettuato in modo da garantire continuità alle attività in corso e far sì che ognuno ricopra ogni ruolo per un tempo omogeneo.\\ L'assegnazione dei ruoli verrà effettuata in modo da non creare condizioni contraddittorie, come ad esempio essere verificatori di documenti prodotti da se stessi, in modo da non compromettere la qualità del lavoro effettuato.
-	Spetterà al verificatore il compito di individuare possibili accavallamenti di ruoli. %TODO il verificatore deve controllare gli accavallamenti?
+	Il cambio del ruolo sarà effettuato in modo da garantire continuità alle attività in corso e far sì che ognuno ricopra ogni ruolo per un tempo omogeneo.\\ L'assegnazione dei ruoli verrà effettuata \respdiprog  in modo da non creare condizioni contraddittorie, come ad esempio essere verificatori di documenti prodotti da se stessi, in modo da non compromettere la qualità del lavoro effettuato.
 	\subsubsection{Responsabile di progetto}
 	Il \respdiprog, o "Project Manager", è il responsabile ultimo, per conto del suo gruppo, dei risultati del progetto. Partecipa al progetto per tutta la sua durata e accentra le responsabilità di scelta e di approvazione. Inoltre rappresenta il gruppo di lavoro nei confronti dei Committenti e dei Proponenti. Egli:
 	\begin{itemize}
@@ -163,13 +165,12 @@
 	\subsection{Ticketing}
 	\subsubsection{Task list}
 	Il \pdp{} prevede la suddivisione del modello di sviluppo in varie fasi.
-	L'insieme delle attività da svolgere in una fase è contenuto in una task list.\\
-	Il \respdiprog{} deve realizzare le task list per ogni fase del modello su \citGloss{Asana}.
-	Ogni task list viene quindi creata dal Responsabile del progetto avente il nome della fase alla quale si riferisce.
+	L'insieme delle attività da svolgere in una fase è contenuto in una task board.\\
+	Il \respdiprog{} deve realizzare le task board per ogni fase del modello su \citGloss{Asana}, utilizzando il nome "\textbf{WORK X}", dove X corrisponde ad ogni fase di revisione del progetto, in ordine: RR, RP, RQ, RA.
 	
 	\subsubsection{Task:}
 	Ogni task viene creata dal \respdiprog{} oppure da un membro del gruppo. Nel secondo caso è richiesta l'approvazione della task da parte della maggioranza (4) dei rimanenti componenti del gruppo.
-	Ogni task è quindi composta da un titolo significativo e due date, la prima d'inizio mentre la seconda di termine previsto.
+	Ogni task è quindi composta da un titolo significativo, due date( la prima d'inizio mentre la seconda di termine previsto), e un tag caratteristico per ogni documento a cui si riferisce. Ogni task inoltre può prevedere delle subtask, che possono essere assegnate a diversi membri del gruppo, in particolare se l'attività che la task rappresenta è complicata o tempisticamente lunga.
 	
 	\subsubsection{Ticket:}
 	I ticket rappresentano l'unione di una task ad un membro del gruppo.
@@ -209,7 +210,10 @@
 	\subsection{Pianificazione} Per quanto riguarda la pianificazione, la scelta del gruppo 353 è ricaduta sul servizio cloud \citGloss{Asana}.\\
 	Questo servizio offre la possibilità di creare dei task ed assegnarli ai membri del gruppo 353, indicando anche la data di inizio e di fine in modo da consentire una pianificazione del lavoro da svolgere.\\
 	Inoltre è possibile indicare delle dipendenze tra attività, favorendo così un controllo dei vincoli per lo svolgimento dei compiti.\\
-
+	
+	\subsection{Comunicazione}
+	Per facilitare la comunicazione tra i membri del gruppo, è stato deciso di utilizzare \citGloss{Slack}, un'applicazione di messaggistica multi piattaforma con funzionalità specifiche per gruppi di lavoro. La decisione di utilizzare questo strumento è stata supportata dalle funzionalità di integrazione di \citGloss{Bot} e di creazione di canali tematici, utili per poter classificare le conversazioni e permettere una comunicazione più efficace e mirata.\\
+	Inoltre è stato deciso di affiancare \citGloss{Skype} come strumento per effettuare video chiamate in caso di impossibilità di riunirsi personalmente. \'{E} stato scelto questo strumento perché permette la video chiamata tra più persone contemporaneamente, è di facile utilizzo e accessibile anche da dispositivo mobile.\\
 	\subparagraph{Standups:} per incentivare la continuità nel tempo dello sviluppo della commessa, si è scelto di utilizzare Standup Alice, un \citGloss{Bot} per \emph{Slack} per la realizzazione giornaliera di \citGloss{standups}, permettendo al gruppo di seguire costantemente l'operato degli altri componenti e di confrontarsi nel caso sorgano dubbi o domande.
 	\subsection{Creazione diagrammi di Gantt}
 	Lo strumento scelto per	la realizzazione dei diagrammi di \citGloss{Gantt} è GanttProject, in quanto è gratuito, open source, multi piattaforma ed è stato considerato adatto ai nostri bisogni.
@@ -223,16 +227,9 @@
 	\section{Formazione}
 	\subsection{Formazione dei membri del gruppo}
 		La formazione del personale è da realizzarsi in maniera autonoma. I membri del gruppo 353 sono tenuti a studiare individualmente le tecnologie che verranno utilizzate nel corso del progetto. \'{E} possibile che i membri del gruppo realizzino, in piena libertà, delle guide a carattere informale e relative ad un singolo argomento, allo scopo di facilitare la formazione ai restanti componenti del gruppo.
-		
-	\subsubsection{Ore rendicontabili e di investimento}
-	Per distinguere se le ore svolte sono a carico del proponente (rendicontabili) e non di formazione personale (di investimento), si devono verificare le seguenti caratteristiche:
-	\begin{enumerate}
-		\item \textbf{Incremento:} il contenuto documento o software è stato modificato venendo ampliato;
-		\item \textbf{Standard:} non si sono studiati nuovi concetti, procedure o strumenti.
-	\end{enumerate}
 
 	\subsubsection{Guide e materiale utilizzato}
-	 La documentazione di riferimento, oltre che al materiale già citato nella sottosezione \emph{Riferimenti Informativi}, comprende:\\
+	 La documentazione di riferimento, oltre al materiale già citato nella sottosezione \emph{Riferimenti Informativi}, comprende:\\
 	\begin{itemize}
 		\item Per l'utilizzo di \LaTeX: \nURI{https://www.latex-project.org};\\
 		\item Per l'utilizzo di GitHub: \nURI{https://github.com};\\

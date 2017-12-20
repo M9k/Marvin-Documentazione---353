@@ -11,7 +11,33 @@
 \usepackage{booktabs}
 \usepackage[table,xcdraw]{xcolor}
 \usepackage[nonumberlist]{glossaries}
+\usepackage{color}
+\usepackage{ifthen}
+\usepackage[titletoc]{appendix}
+\usepackage{eurosym}
+\usepackage{float}
+\usepackage[table]{xcolor}
+\usepackage{longtable}
+\usepackage{tabu}
+\usepackage{hypcap}
+\usepackage{multirow}
+\usepackage{breakurl}
+\usepackage{hhline}
+\usepackage{caption}
+\usepackage{enumitem}
+
+
 \pagestyle{fancy}
+
+\definecolor{tableHeader}{RGB}{211, 47, 47}
+\definecolor{tableLineOne}{RGB}{245, 245, 245}
+\definecolor{tableLineTwo}{RGB}{224, 224, 224}
+
+% Stile per intestazione tabella
+\newcommand{\tableHeaderStyle}{
+    \rowfont{\leavevmode\color{white}\bfseries}
+    \rowcolor{tableHeader}
+}
 
 \renewcommand{\chaptermark}[1]{ \markboth{#1}{} }
 \renewcommand{\sectionmark}[1]{ \markright{#1} }
@@ -123,6 +149,7 @@
 
 \newcommand{\nImg}[3]{%img source & caption & width
 	\begin{figure}[ht]	
+		\centering
 		\includegraphics[width= #3cm]{#1}
 		\label{fig:foo}
 		\caption{#2}		

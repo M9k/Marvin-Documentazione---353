@@ -1,7 +1,8 @@
 \documentclass[VER-2017-11-22.tex]{subfiles}
 
 \begin{document}
-
+\taburowcolors[2] 2{tableLineOne .. tableLineTwo}
+\tabulinesep = ^3mm_2mm
 \chapter{Informazioni sulla riunione} 
 \begin{itemize}
 	\item \textbf{Motivo della riunione:} La riunione del \nData{22}{11}{2017} è stata svolta utilizzando il canale di comunicazione \citGloss{Slack}, e si è discusso principalmente su chiarimenti in merito all'implementazione del progetto e allo stile da seguire per la scrittura del codice. La Proponente ha esposto alcune precisazioni sui \citGloss{requisiti} e indicato le parti sulle quali concentrare maggior impegno.
@@ -11,20 +12,20 @@
 	\item \textbf{Partecipanti:}
 	\begin{itemize}
 	\item Proponente:
-	\begin{itemize}
-		\item Alessandro Maccagnan;
-		\item Milo Ertola;
-	\end{itemize}
+		\begin{itemize}
+			\item Alessandro Maccagnan;
+			\item Milo Ertola.
+		\end{itemize}
 	\item Membri del gruppo \gruppo:
-	\begin{itemize}
-		\item \Davide;
-		\item \Elena;
-		\item \Gianluca;
-		\item \Mirco;
-		\item \Parwinder;
-		\item \Riccardo;
-		\item \Valentina.
-	\end{itemize}
+		\begin{itemize}
+			\item \Davide;
+			\item \Elena;
+			\item \Gianluca;
+			\item \Mirco;
+			\item \Parwinder;
+			\item \Riccardo;
+			\item \Valentina.
+		\end{itemize}
 	\end{itemize}
 \end{itemize}
 
@@ -52,4 +53,20 @@ I punti sono stati trattati dalla Proponente nello stesso ordine in cui sono sta
 	\item \textbf{Callbacks:} Non devono essere usate le callbacks a meno di casi specifici (in node.js ci sono alcuni casi in cui non si può fare a meno delle callback), ma solo promesse;
 	\item \textbf{Arc.js:} \'{E} stato chiesto alla Proponente se era possibile utilizzare Arc.js come base di partenza front-end per permette uno sviluppo con basi aggiornate rispetto a Redux-minimal La Proponente ha risposto che .Arc.js usa concetti (Atomic design) troppo articolati per lo scopo del progetto. La scelta di uno starter kit minimale e' stata presa specificatamente per far utilizzare le  componenti principali dell'architettura react (React + Redux + integrazione tra le 2), ma senza troppe complicazioni, non necessarie in questo progetto specifico.
 \end{enumerate}
+\section{Tracciamento delle decisioni}
+\begin{table}[H]
+	\begin{center}
+		\begin{tabu} to \textwidth {
+				>{\centering}m{0.25\linewidth}  
+				>{\centering\arraybackslash}m{0.7\linewidth}
+			}
+			\tableHeaderStyle
+			\textbf{Codice} & \textbf{Decisione} \\
+			VER-2017-11-22.1 & L'applicativo non deve utilizzare callback in presenza di alternative. \\
+			VER-2017-11-22.2 & Il manuale utente dovrà essere redatto in lingua inglese. \\
+			VER-2017-11-22.3 & Il manuale sviluppatori dovrà essere redatto in lingua inglese. \\
+		\end{tabu}
+		\caption{Tracciamento delle decisioni del verbale}
+	\end{center}
+\end{table}
 \end{document}

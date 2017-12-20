@@ -2,6 +2,11 @@
 
 \begin{document}
 
+\definecolor{CHeader}{HTML}{D22E2E}
+\definecolor{CHeaderText}{HTML}{FFFFFF}
+\definecolor{CRighePari}{HTML}{DFDFDF}
+\definecolor{CRigheDispari}{HTML}{F4F4F4}
+
 \chapter{Requisiti}
 \section{Classificazione dei requisiti}
 I requisiti vengono classificati ed assegnati loro un identificativo univoco secondo quanto definito nel documento \textit{Norme di progetto v1.0.0}.
@@ -20,58 +25,58 @@ I requisiti vengono classificati ed assegnati loro un identificativo univoco sec
 \subsection{Requisiti funzionali}
 
 \label{table:Tabella requisiti funzionali}
-\begin{longtable}[H]{|p{2.5cm}|p{2.5cm}|p{5cm}|p{2cm}|}
-	\hline
-	\rowcolor[HTML]{38FFF8} 
-	\textbf{Identificatore} & \textbf{Importanza} & \textbf{Descrizione} & \textbf{Fonti} \\ \hline
+\rowcolors{2}{CRighePari}{CRigheDispari}
+\begin{longtable}[H]{p{2.5cm}p{2.5cm}p{5cm}p{2cm}}
+	\rowcolor{CHeader} 
+	\color{CHeaderText} \textbf{Identificatore} & \color{CHeaderText} \textbf{Importanza} & \color{CHeaderText} \textbf{Descrizione} & \color{CHeaderText} \textbf{Fonti} \\
 	\endhead
-	R0F1 & Obbligatorio & L'amministratore può gestire gli utenti & Interno \\ \hline
-	R0F1.1 & Obbligatorio & L'amministratore può ottenere una lista di tutti gli utenti non abilitati & Interno \\ \hline
-	R0F1.2 & Obbligatorio & L'amministratore può abilitare un utente & Interno \\ \hline
-	R0F1.3 & Obbligatorio & L'amministratore può rimuovere un utente & Interno \\ \hline
-	R0F1.4 & Obbligatorio & L'amministratore può ottenere una lista di tutti gli studenti & Interno \\ \hline
-	R0F2 & Obbligatorio & L'amministratore può gestire i professori & Interno \\ \hline
-	R0F2.1 & Obbligatorio & L'amministratore può ottenere una lista di tutti i professori & Interno \\ \hline
-	R0F2.2 & Obbligatorio & L'amministratore può assegnare un esame ad un determinato professore & Capitolato \\ \hline
-	R0F3 & Obbligatorio & L'amministratore può gestire gli anni accademici & Capitolato \\ \hline
-	R0F3.1 & Obbligatorio & L'amministratore può aggiungere un anno accademico & Capitolato \\ \hline
-	R0F3.2 & Obbligatorio & L'amministratore può ottenere una lista di gli anni accademici & Interno \\ \hline
-	R0F3.3 & Obbligatorio & L'amministratore può aggiungere dei corsi di laurea ad ogni anno accademico & Capitolato \\ \hline
-	%R2F3.4 & Opzionale & L'amministratore può rimuovere corsi di laurea da ogni anno accademico & Interni \\ \hline
-	R0F3.4 & Obbligatorio & L'amministratore può gestire i corsi di laurea relativi agli anni accademici & Capitolato \\ \hline
-	R0F3.4.1 & Obbligatorio & L'amministratore può creare un nuovo corso di laurea a partire da un anno accademico & Capitolato \\ \hline
-	R0F3.4.2 & Obbligatorio & L'amministratore può ottenere una lista di tutti i corsi di laurea dato un anno accademico & Interno \\ \hline
-	R0F3.4.3 & Obbligatorio & L'amministratore può creare nuovi esami & Capitolato \\ \hline
-	R0F3.4.4 & Obbligatorio & L'amministratore può aggiungere degli esami ad ogni corso di laurea & Capitolato \\ \hline
-	%R0F3.4.5 & Opzionale & L'amministratore può rimuovere degli esami da un corso di laurea & Interno \\ \hline
-	R0F3.4.5 & Obbligatorio & L'amministratore può ottenere una lista di tutti gli esami dato il corso di laurea & Interno \\ \hline
-	R0F3.4.5.1 & Obbligatorio & L'amministratore può ottenere l'informazione di quale professore è assegnato a un determinato esame & Interno \\ \hline
-	R0F3.4.5.2  & Obbligatorio & L'amministratore può associare ad un esame il relativo professore & Interno \\ \hline
-	R0F4 & Obbligatorio & Un professore può gestire gli esami a lui assegnati & Capitolato \\ \hline
-	R0F4.1 & Obbligatorio & Un professore può ottenere la lista di tutti gli esami a lui assegnati & Capitolato \\ \hline
-	R0F4.2 & Obbligatorio & Un professore può ottenere la lista di tutti gli studenti associati a un determinato esame & Capitolato \\ \hline
-	R0F4.3 & Obbligatorio & Un professore può registrare un esito ad un dato esame ad un dato studente registrato a quell'esame & Capitolato \\ \hline
-	R0F5 & Obbligatorio & Uno studente può gestire l'iscrizione agli esami & Capitolato \\ \hline
-	R0F5.1 & Obbligatorio & Uno studente può vedere l'elenco degli esami ai quali è iscritto & Capitolato \\ \hline
-	R0F5.1.1 & Obbligatorio & Uno studente può ottenere il numero di crediti assegnati agli esame & Interno \\ \hline
-	R0F5.1.2 & Obbligatorio & Uno studente può ottenere l'obbligatorietà degli esame & Interno \\ \hline
-	R0F5.1.3 & Obbligatorio & Uno studente può ottenere lo stato di superamento degli esame & Interno \\ \hline
-	R0F5.1.4 & Obbligatorio & Uno studente può ottenere il totale dei suoi crediti & Interno \\ \hline
-	R0F5.1.5 & Obbligatorio & Uno studente può ottenere il numero di crediti da raggiungere per la laurea & Interno \\ \hline
-	R0F5.2 & Obbligatorio & Uno studente può ottenere l'elenco degli esami opzionali & Capitolato \\ \hline
-	R0F5.2.1 & Obbligatorio & Uno studente può ottenere il numero di crediti degli esami opzionali & Capitolato \\ \hline
-	R0F5.2.2 & Obbligatorio & Uno studente può iscriversi ad un esame opzionale & Capitolato \\ \hline
-	R0F6 & Obbligatorio & L'utente può effettuare il login & Interno \\ \hline
-	R0F6.1 & Obbligatorio & Il login deve avvenire tramite il controllo delle chiavi, senza ulteriori azioni da parte dell'utente & Interno \\ \hline
-	R0F7 & Obbligatorio & L'utente può effettuare il logout & Interno \\ \hline
-	R0F8 & Obbligatorio & L'utente non ancora registrato può registrarsi & Capitolato \\ \hline
-	R0F8.1 & Obbligatorio & La registrazione necessita di nome, cognome, categoria (studente o professore) e selezione del corso di laura se si tratta di uno studente & Capitolato \\ \hline
-	R1F9 & Desiderabile & L'utente può leggere una breve guida sull'uso di MetaMask e sul pagamento delle operazioni & Interno \\ \hline	
-	R0F10 & Obbligatorio & L'utente deve poter vedere preventivamente il costo in Gas, Ether e Euro dell'operazione che sta per eseguire & Capitolato \\ \hline	
-	R0F11 & Obbligatorio & L'università deve poter gestire gli amministratori & VE171209 \\ \hline %TODO: controllare se il nome del verbale coindice
-	R0F11.1 & Obbligatorio & L'università deve poter aggiungere amministratori & VE171209 \\ \hline %TODO: controllare se il nome del verbale coindice
-	R0F11.2 & Obbligatorio & L'università deve poter rimuovere amministratori & VE171209 \\ \hline %TODO: controllare se il nome del verbale coindice
-	R0F11.3 & Obbligatorio & L'università deve poter ottenere la lista di tutti gli amministratori & Interno \\ \hline 
+	R0F1 & Obbligatorio & L'amministratore può gestire gli utenti & Interno \\
+	R0F1.1 & Obbligatorio & L'amministratore può ottenere una lista di tutti gli utenti non abilitati & Interno \\  
+	R0F1.2 & Obbligatorio & L'amministratore può abilitare un utente & Interno \\  
+	R0F1.3 & Obbligatorio & L'amministratore può rimuovere un utente & Interno \\  
+	R0F1.4 & Obbligatorio & L'amministratore può ottenere una lista di tutti gli studenti & Interno \\  
+	R0F2 & Obbligatorio & L'amministratore può gestire i professori & Interno \\  
+	R0F2.1 & Obbligatorio & L'amministratore può ottenere una lista di tutti i professori & Interno \\  
+	R0F2.2 & Obbligatorio & L'amministratore può assegnare un esame ad un determinato professore & Capitolato \\  
+	R0F3 & Obbligatorio & L'amministratore può gestire gli anni accademici & Capitolato \\  
+	R0F3.1 & Obbligatorio & L'amministratore può aggiungere un anno accademico & Capitolato \\  
+	R0F3.2 & Obbligatorio & L'amministratore può ottenere una lista di gli anni accademici & Interno \\  
+	R0F3.3 & Obbligatorio & L'amministratore può aggiungere dei corsi di laurea ad ogni anno accademico & Capitolato \\  
+	%R2F3.4 & Opzionale & L'amministratore può rimuovere corsi di laurea da ogni anno accademico & Interni \\  
+	R0F3.4 & Obbligatorio & L'amministratore può gestire i corsi di laurea relativi agli anni accademici & Capitolato \\  
+	R0F3.4.1 & Obbligatorio & L'amministratore può creare un nuovo corso di laurea a partire da un anno accademico & Capitolato \\  
+	R0F3.4.2 & Obbligatorio & L'amministratore può ottenere una lista di tutti i corsi di laurea dato un anno accademico & Interno \\  
+	R0F3.4.3 & Obbligatorio & L'amministratore può creare nuovi esami & Capitolato \\  
+	R0F3.4.4 & Obbligatorio & L'amministratore può aggiungere degli esami ad ogni corso di laurea & Capitolato \\  
+	%R0F3.4.5 & Opzionale & L'amministratore può rimuovere degli esami da un corso di laurea & Interno \\  
+	R0F3.4.5 & Obbligatorio & L'amministratore può ottenere una lista di tutti gli esami dato il corso di laurea & Interno \\  
+	R0F3.4.5.1 & Obbligatorio & L'amministratore può ottenere l'informazione di quale professore è assegnato a un determinato esame & Interno \\  
+	R0F3.4.5.2  & Obbligatorio & L'amministratore può associare ad un esame il relativo professore & Interno \\  
+	R0F4 & Obbligatorio & Un professore può gestire gli esami a lui assegnati & Capitolato \\  
+	R0F4.1 & Obbligatorio & Un professore può ottenere la lista di tutti gli esami a lui assegnati & Capitolato \\  
+	R0F4.2 & Obbligatorio & Un professore può ottenere la lista di tutti gli studenti associati a un determinato esame & Capitolato \\  
+	R0F4.3 & Obbligatorio & Un professore può registrare un esito ad un dato esame ad un dato studente registrato a quell'esame & Capitolato \\  
+	R0F5 & Obbligatorio & Uno studente può gestire l'iscrizione agli esami & Capitolato \\  
+	R0F5.1 & Obbligatorio & Uno studente può vedere l'elenco degli esami ai quali è iscritto & Capitolato \\  
+	R0F5.1.1 & Obbligatorio & Uno studente può ottenere il numero di crediti assegnati agli esame & Interno \\  
+	R0F5.1.2 & Obbligatorio & Uno studente può ottenere l'obbligatorietà degli esame & Interno \\  
+	R0F5.1.3 & Obbligatorio & Uno studente può ottenere lo stato di superamento degli esame & Interno \\  
+	R0F5.1.4 & Obbligatorio & Uno studente può ottenere il totale dei suoi crediti & Interno \\  
+	R0F5.1.5 & Obbligatorio & Uno studente può ottenere il numero di crediti da raggiungere per la laurea & Interno \\  
+	R0F5.2 & Obbligatorio & Uno studente può ottenere l'elenco degli esami opzionali & Capitolato \\  
+	R0F5.2.1 & Obbligatorio & Uno studente può ottenere il numero di crediti degli esami opzionali & Capitolato \\  
+	R0F5.2.2 & Obbligatorio & Uno studente può iscriversi ad un esame opzionale & Capitolato \\  
+	R0F6 & Obbligatorio & L'utente può effettuare il login & Interno \\  
+	R0F6.1 & Obbligatorio & Il login deve avvenire tramite il controllo delle chiavi, senza ulteriori azioni da parte dell'utente & Interno \\  
+	R0F7 & Obbligatorio & L'utente può effettuare il logout & Interno \\  
+	R0F8 & Obbligatorio & L'utente non ancora registrato può registrarsi & Capitolato \\  
+	R0F8.1 & Obbligatorio & La registrazione necessita di nome, cognome, categoria (studente o professore) e selezione del corso di laura se si tratta di uno studente & Capitolato \\  
+	R1F9 & Desiderabile & L'utente può leggere una breve guida sull'uso di MetaMask e sul pagamento delle operazioni & Interno \\  	
+	R0F10 & Obbligatorio & L'utente deve poter vedere preventivamente il costo in Gas, Ether e Euro dell'operazione che sta per eseguire & Capitolato \\  	
+	R0F11 & Obbligatorio & L'università deve poter gestire gli amministratori & VE171209 \\   %TODO: controllare se il nome del verbale coindice
+	R0F11.1 & Obbligatorio & L'università deve poter aggiungere amministratori & VE171209 \\   %TODO: controllare se il nome del verbale coindice
+	R0F11.2 & Obbligatorio & L'università deve poter rimuovere amministratori & VE171209 \\   %TODO: controllare se il nome del verbale coindice
+	R0F11.3 & Obbligatorio & L'università deve poter ottenere la lista di tutti gli amministratori & Interno \\   
 	\caption{Tabella dei requisiti funzionali}
 \end{longtable}
 
@@ -79,20 +84,20 @@ I requisiti vengono classificati ed assegnati loro un identificativo univoco sec
 
 \label{table:Tabella requisiti di qualita'} %TODO: cercare un modo di inserire à nei label
 %TODO: concordare notazione dei verbali
-\begin{longtable}[H]{|p{2.5cm}|p{2.5cm}|p{5cm}|p{2cm}|}
-	\hline
-	\rowcolor[HTML]{38FFF8} 
-	\textbf{Identificatore} & \textbf{Importanza} & \textbf{Descrizione} & \textbf{Fonti} \\ \hline
+\rowcolors{2}{CRighePari}{CRigheDispari}
+\begin{longtable}[H]{p{2.5cm}p{2.5cm}p{5cm}p{2cm}}
+	\rowcolor{CHeader} 
+	\color{CHeaderText} \textbf{Identificatore} & \color{CHeaderText} \textbf{Importanza} & \color{CHeaderText} \textbf{Descrizione} & \color{CHeaderText} \textbf{Fonti} \\  
 	\endhead
-	R0Q1 & Obbligatorio & La progettazione e il codice devono seguire le norme e le metriche riportate nei documenti allegati X e Y & Interno \\ \hline %TODO: indicare allegati
-	R0Q2 & Obbligatorio & L'approccio di scrittura di JavaScript deve essere promise Centric Approach & Capitolato \\ \hline
-	R0Q2.1 & Obbligatorio & L'applicativo non deve fare uso di callback in presenza di alternative alle ultime & VE171122 \\ \hline
-	R0Q3 & Obbligatorio & Il codice Javascript deve attenersi al Airbnb Javascript style guide & Capitolato \\ \hline
-	R0Q4 & Obbligatorio & Lo sviluppo deve essere supportato dall'utilizzo del tool ESLint & Capitolato \\ \hline
-	R0Q5 & Obbligatorio & Dovrà essere fornito un manuale utente in lingua inglese che tratterà l'uso da parte di studenti e professori & VE171122 \\ \hline
-	R0Q6 & Obbligatorio & Dovrà essere fornito un manuale di deploy e di utilizzo da parte degli amministratori in lingua inglese & VE171122 \\ \hline %TODO controllare sigla del verbale
-	R0Q7 & Obbligatorio & Il codice sorgente deve essere pubblicato sulla piattaforma GitHub, BitBucket o GitLab & Capitolato \\ \hline
-	R0Q8 & Obbligatorio & Il codice deve attenersi il più possibile alle guide linea de "App a 12 Fattori" & Capitolato \\ \hline
+	R0Q1 & Obbligatorio & La progettazione e il codice devono seguire le norme e le metriche riportate nei documenti allegati X e Y & Interno \\   %TODO: indicare allegati
+	R0Q2 & Obbligatorio & L'approccio di scrittura di JavaScript deve essere promise Centric Approach & Capitolato \\  
+	R0Q2.1 & Obbligatorio & L'applicativo non deve fare uso di callback in presenza di alternative alle ultime & VE171122 \\  
+	R0Q3 & Obbligatorio & Il codice Javascript deve attenersi al Airbnb Javascript style guide & Capitolato \\  
+	R0Q4 & Obbligatorio & Lo sviluppo deve essere supportato dall'utilizzo del tool ESLint & Capitolato \\  
+	R0Q5 & Obbligatorio & Dovrà essere fornito un manuale utente in lingua inglese che tratterà l'uso da parte di studenti e professori & VE171122 \\  
+	R0Q6 & Obbligatorio & Dovrà essere fornito un manuale di deploy e di utilizzo da parte degli amministratori in lingua inglese & VE171122 \\   %TODO controllare sigla del verbale
+	R0Q7 & Obbligatorio & Il codice sorgente deve essere pubblicato sulla piattaforma GitHub, BitBucket o GitLab & Capitolato \\  
+	R0Q8 & Obbligatorio & Il codice deve attenersi il più possibile alle guide linea de "App a 12 Fattori" & Capitolato \\  
 	\caption{Tabella dei requisiti di qualità}
 \end{longtable}
 
@@ -100,31 +105,31 @@ I requisiti vengono classificati ed assegnati loro un identificativo univoco sec
 
 \label{table:Tabella requisiti di vincolo}
 
-\begin{longtable}[H]{|p{2.5cm}|p{2.5cm}|p{5cm}|p{2cm}|}
-	\hline
-	\rowcolor[HTML]{38FFF8} 
-	\textbf{Identificatore} & \textbf{Importanza} & \textbf{Descrizione} & \textbf{Fonti} \\ \hline
+\rowcolors{2}{CRighePari}{CRigheDispari}
+\begin{longtable}[H]{p{2.5cm}p{2.5cm}p{5cm}p{2cm}}
+	\rowcolor{CHeader} 
+	\color{CHeaderText} \textbf{Identificatore} & \color{CHeaderText} \textbf{Importanza} & \color{CHeaderText} \textbf{Descrizione} & \color{CHeaderText} \textbf{Fonti} \\  
 	\endhead
-	R0V1 & Obbligatorio & L'applicativo dovrà essere sviluppato attraverso l'uso di tecnologie web & Capitolato \\ \hline
-	R0V1.1 & Obbligatorio & L'applicativo dovrà essere sviluppato con Node.js & Capitolato \\ \hline
-	R0V1.2 & Obbligatorio & L'applicativo dovrà essere sviluppato con JavaScript 8 (ES8) & Capitolato \\ \hline
-	R0V1.3 & Obbligatorio & L'applicativo dovrà essere sviluppato con il boilerplate Redux Minimal & Capitolato \\ \hline
-	R0V1.4 & Obbligatorio & L'applicativo dovrà essere sviluppato utilizzando React & Capitolato \\ \hline
-	R0V1.5 & Obbligatorio & L'applicativo dovrà essere sviluppato utilizzando Redux & Capitolato \\ \hline
-	R0V1.6 & Obbligatorio & Il deploy del sito andrà eseguito utilizzando Surge.sh & Capitolato \\ \hline
-	R0V1.7 & Desiderabile & È desiderabile l'utilizzo di SCSS in sostituzione a CSS & Capitolato \\ \hline
-	R0V2 & Obbligatorio & Gli smart contract dovranno essere scritti in linguaggio Solidity & Capitolato \\ \hline
-	R0V3 & Obbligatorio & La connessione alla rete Ethereum deve avvernire tramite MetaMask & Capitolato \\ \hline
-	R0V3.1 & Obbligatorio & I test riguartandi gli smart contract dovranno essere eseguiti in una rete locale ed almeno in una rete pubblica & Capitolato \\ \hline
-	R0V3.2 & Obbligatorio & Il deploy degli smart contract dovrà avvenire su rete locale testrpc e rete di test Ropsten & Capitolato \\ \hline
-	R2V3.3 & Opzionale & È apprezzabile un deploy finale sulla rete principale di Ethereum & Capitolato \\ \hline
-	R0V4 & Obbligatorio & Lo sviluppo degli smart contract dovrà avvenire utilizzando il framework Truffle & Capitolato \\ \hline
-	R0V5 & Obbligatorio & L'applicativo deve essere accessibile ed utilizzabile dal browser Mozilla Firefox a partire dalla versione X & Interno \\ \hline %TODO: definire versione
-	R0V6 & Obbligatorio & L'applicativo deve essere accessibile ed utilizzabile dal browser Google Chrome a partire dalla versione X & Interno \\ \hline %TODO: definire versione
-	R1V7 & Desiderabile & L'applicativo deve essere accessibile ed utilizzabile da un browser mobile, per le versioni supportate fare riferimento alle controparti PC di Firefox e Chrome & Interno \\ \hline
-	R0V8 & Obbligatorio & Un utente non deve poter compiere azioni sul sistema senza aver fatto l'accesso ad esso & Capitolato \\ \hline
-	R0V9 & Obbligatorio & L'applicazione dei principi de "App a 12 Fattori" deve essere documentata & Capitolato \\ \hline
-	R0V10 & Obbligatorio & Il codice sorgente deve essere pubblicato con licenza MIT & Capitolato \\ \hline
+	R0V1 & Obbligatorio & L'applicativo dovrà essere sviluppato attraverso l'uso di tecnologie web & Capitolato \\  
+	R0V1.1 & Obbligatorio & L'applicativo dovrà essere sviluppato con Node.js & Capitolato \\  
+	R0V1.2 & Obbligatorio & L'applicativo dovrà essere sviluppato con JavaScript 8 (ES8) & Capitolato \\  
+	R0V1.3 & Obbligatorio & L'applicativo dovrà essere sviluppato con il boilerplate Redux Minimal & Capitolato \\  
+	R0V1.4 & Obbligatorio & L'applicativo dovrà essere sviluppato utilizzando React & Capitolato \\  
+	R0V1.5 & Obbligatorio & L'applicativo dovrà essere sviluppato utilizzando Redux & Capitolato \\  
+	R0V1.6 & Obbligatorio & Il deploy del sito andrà eseguito utilizzando Surge.sh & Capitolato \\  
+	R0V1.7 & Desiderabile & È desiderabile l'utilizzo di SCSS in sostituzione a CSS & Capitolato \\  
+	R0V2 & Obbligatorio & Gli smart contract dovranno essere scritti in linguaggio Solidity & Capitolato \\  
+	R0V3 & Obbligatorio & La connessione alla rete Ethereum deve avvernire tramite MetaMask & Capitolato \\  
+	R0V3.1 & Obbligatorio & I test riguartandi gli smart contract dovranno essere eseguiti in una rete locale ed almeno in una rete pubblica & Capitolato \\  
+	R0V3.2 & Obbligatorio & Il deploy degli smart contract dovrà avvenire su rete locale testrpc e rete di test Ropsten & Capitolato \\  
+	R2V3.3 & Opzionale & È apprezzabile un deploy finale sulla rete principale di Ethereum & Capitolato \\  
+	R0V4 & Obbligatorio & Lo sviluppo degli smart contract dovrà avvenire utilizzando il framework Truffle & Capitolato \\  
+	R0V5 & Obbligatorio & L'applicativo deve essere accessibile ed utilizzabile dal browser Mozilla Firefox a partire dalla versione X & Interno \\   %TODO: definire versione
+	R0V6 & Obbligatorio & L'applicativo deve essere accessibile ed utilizzabile dal browser Google Chrome a partire dalla versione X & Interno \\   %TODO: definire versione
+	R1V7 & Desiderabile & L'applicativo deve essere accessibile ed utilizzabile da un browser mobile, per le versioni supportate fare riferimento alle controparti PC di Firefox e Chrome & Interno \\  
+	R0V8 & Obbligatorio & Un utente non deve poter compiere azioni sul sistema senza aver fatto l'accesso ad esso & Capitolato \\  
+	R0V9 & Obbligatorio & L'applicazione dei principi de "App a 12 Fattori" deve essere documentata & Capitolato \\  
+	R0V10 & Obbligatorio & Il codice sorgente deve essere pubblicato con licenza MIT & Capitolato \\  
 	\caption{Tabella dei requisiti di vincolo}
 \end{longtable}
 
@@ -133,29 +138,14 @@ I requisiti vengono classificati ed assegnati loro un identificativo univoco sec
 Non sono stati individuati requisiti prestazionali, in quanto la maggior parte delle attività, per essere concluse, necessitano di una interazione con una rete Ethereum, e quindi non risultano costanti o prevedibili con precisione.\\
 Qualsiasi operazione effettuata in una rete Ethereum reale ha un tempo di soddisfacimento casuale influenzato dal carico della rete nel momento della richiesta e, nel caso di operazioni che vanno a modificare lo stato di un contratto, del quantitativo di Ether pagati per ogni unità di Gas.\\
  
-\begin{comment}
-\label{table:Tabella requisiti prestazionali}
-\begin{longtable}[H]{|p{2.5cm}|p{2.5cm}|p{5cm}|p{2cm}|}
-	\hline
-	\rowcolor[HTML]{38FFF8} 
-	\textbf{Identificatore} & \textbf{Importanza} & \textbf{Descrizione} & \textbf{Fonti} \\ \hline
-	\endhead
-	&  &  &  \\ \hline
-	&  &  &  \\ \hline
-	&  &  &  \\ \hline
-	&  &  &  \\ \hline
-	&  &  &  \\ \hline
-	\caption{Tabella dei requisiti prestazionali}
-\end{longtable}
-\end{comment}
 \section{Tracciamento}
 \subsection{Tracciamento fonti-requisiti}
 
 \label{table:Tabella di tracciamento fonti-requisiti}
-\begin{longtable}[H]{|p{2cm}|p{5cm}|p{5cm}|}
-	\hline
-	\rowcolor[HTML]{38FFF8} 
-	\textbf{Fonte} & \textbf{Nome fonte} & \textbf{Requisiti} \\ \hline
+\rowcolors{2}{CRighePari}{CRigheDispari}
+\begin{longtable}[H]{p{2cm}p{5cm}p{5cm}}
+	\rowcolor{CHeader} 
+	\color{CHeaderText} \textbf{Fonte} & \color{CHeaderText} \textbf{Nome fonte} & \color{CHeaderText} \textbf{Requisiti} \\  
 	\endhead
 	Capitolato & & R0F2.2 \\
 	& & R0F3 \\
@@ -200,7 +190,7 @@ Qualsiasi operazione effettuata in una rete Ethereum reale ha un tempo di soddis
 	& & R1V7 \\
 	& & R0V8 \\
 	& & R0V9 \\
-	& & R0V10 \\ \hline
+	& & R0V10 \\  
 	
 	Interno & & R0F1 \\
 	& & R0F1.1 \\
@@ -227,84 +217,84 @@ Qualsiasi operazione effettuata in una rete Ethereum reale ha un tempo di soddis
 	& & R0F11.3 \\
 	& & R0Q1 \\
 	& & R0V5 \\
-	& & R0V6 \\ \hline
+	& & R0V6 \\  
 	
 	VE171122 & Verbale & R0Q2.1 \\
 	& & R0Q5 \\
-	& & R0Q6 \\ \hline
+	& & R0Q6 \\  
 	
 	VE171209 & Verbale & R0F11 \\
 	& & R0F11.1 \\
-	& & R0F11.2 \\ \hline
+	& & R0F11.2 \\  
 	
-	UC1 & Breve guida & R1F9 \\ \hline
-	UC2 & Login & R0F6 \\ \hline
-	UC2.1 & Login automatico & R0F6.1 \\ \hline
-	UC2.2 & Visualizzazione messaggio di errore riguardo a chiave assente & R0F6.1 \\ \hline
-	UC2.3 & Visualizzazione messaggio di errore riguardo a chiave malformata & R0F6.1 \\ \hline
-	UC2.4 & Visualizzazione messaggio di errore riguardo a chiave non registrata & R0F6.1 \\ \hline
-	UC3 & Registrazione & R0F8 \\ \hline %TODO
-	UC3.1 & Inserimento nome & R0F8.1 \\ \hline
-	UC3.2 & Inserimento cognome & R0F8.1 \\ \hline
-	UC3.3 & Selezione categoria & R0F8.1 \\ \hline
-	UC3.4 & Selezione corso & R0F8.1 \\ \hline
-	UC3.5 & Visualizzazione errore campo non compilato & R0F8.1 \\ \hline
-	UC3.6 & Visualizzazione errore utente già registrato & R0F8.1 \\ \hline
-	UC3.7 & Visualizzazione errore chiave non presente & R0F8.1 \\ \hline
-	UC3.8 & Visualizzazione errore chiave malformata & R0F8.1 \\ \hline
-	UC4 & Logout & R0F7 \\ \hline
+	UC1 & Breve guida & R1F9 \\  
+	UC2 & Login & R0F6 \\  
+	UC2.1 & Login automatico & R0F6.1 \\  
+	UC2.2 & Visualizzazione messaggio di errore riguardo a chiave assente & R0F6.1 \\  
+	UC2.3 & Visualizzazione messaggio di errore riguardo a chiave malformata & R0F6.1 \\  
+	UC2.4 & Visualizzazione messaggio di errore riguardo a chiave non registrata & R0F6.1 \\  
+	UC3 & Registrazione & R0F8 \\   %TODO
+	UC3.1 & Inserimento nome & R0F8.1 \\  
+	UC3.2 & Inserimento cognome & R0F8.1 \\  
+	UC3.3 & Selezione categoria & R0F8.1 \\  
+	UC3.4 & Selezione corso & R0F8.1 \\  
+	UC3.5 & Visualizzazione errore campo non compilato & R0F8.1 \\  
+	UC3.6 & Visualizzazione errore utente già registrato & R0F8.1 \\  
+	UC3.7 & Visualizzazione errore chiave non presente & R0F8.1 \\  
+	UC3.8 & Visualizzazione errore chiave malformata & R0F8.1 \\  
+	UC4 & Logout & R0F7 \\  
 	UC5 & Amministrazione &  R0F1 \\ 
 	& & R0F2 \\
-	& & R0F3 \\ \hline
-	UC5.1 & Gestione Utenti &  R0F1 \\ \hline
-	UC5.1.1 & Visualizzazione lista di studenti & R0F1.4 \\ \hline
-	UC5.1.2 & Visualizzazione lista di professori &  R0F2.1\\ \hline
-	UC5.1.3 & Visualizzazione di utenti non abilitati & R0F1.1 \\ \hline
-	UC5.1.4 & Abilitazione utente & R0F1.2 \\  \hline 
-	UC5.1.5 & Rimozione utente & R0F1.3 \\ \hline
-	UC5.2 & Gestione anni accademici &  R0F3 \\ \hline
-	UC5.2.1 & Aggiunta anno accademico &  R0F3.1 \\ \hline
-	UC5.2.2 & Visualizzazione lista di tutti gli anni accademici & R0F3.2 \\ \hline
-	UC5.2.3 & Aggiunta di un corso di laurea ad un anno accademico & R0F3.3 \\ \hline
-	UC5.2.4 & Visualizzazione messaggio anno malformato & R0F3.1 \\ \hline
-	UC5.2.5 & Visualizzazione messaggio di anno accademico già presente & R0F3.1 \\ \hline
-	UC5.2.6 & Visualizzazione messaggio anno non compilato &  R0F3.1 \\ \hline
-	UC5.3 & Gestione corsi di laurea &  R0F3.4 \\  \hline
-	UC5.3.1 & Creazione corso di laurea &  R0F3.4.1 \\ \hline
-	UC5.3.2 & Visualizzazione errore mancata compilazione campi & R0F3.4.1 \\ \hline
-	UC5.3.3 & Visualizzazione lista completa dei corsi &  R0F3.4.2 \\ \hline
-	UC5.3.4 & Visualizzazione lista corsi di laurea per anno accademico & R0F3.4.2  \\ \hline
-	UC5.3.5 & Crea un esame nel corso &  R0F3.4.3\\ \hline
-	UC5.3.6 & Visualizzazione errore campi non compilati nella creazione dell'esame & R0F3.4.3  \\ \hline
-	UC5.3.7 & Visualizzazione lista esami per corso di laurea & R0F3.4.5 \\ \hline
-	UC5.3.8 & Visualizzazione lista esami &  R0F3.4.5 \\ \hline
-	UC5.3.9 & Aggiunta esame a corso &  R0F3.4.4 \\ \hline
-	%UC5.3.10 & Rimozione esame da un corso &  R0F3.4.5 \\ \hline
-	UC5.3.10 & Associazione professore a esame & R0F3.4.5.2 \\ \hline
-	%UC5.3.12 & Rimozione corso di laurea da anno accademico & R2F34 \\ \hline
-	UC5.3.11 & Visualizzazione dettagli esame & R0F3.4.5.1 \\ \hline
+	& & R0F3 \\  
+	UC5.1 & Gestione Utenti &  R0F1 \\  
+	UC5.1.1 & Visualizzazione lista di studenti & R0F1.4 \\  
+	UC5.1.2 & Visualizzazione lista di professori &  R0F2.1\\  
+	UC5.1.3 & Visualizzazione di utenti non abilitati & R0F1.1 \\  
+	UC5.1.4 & Abilitazione utente & R0F1.2 \\    
+	UC5.1.5 & Rimozione utente & R0F1.3 \\  
+	UC5.2 & Gestione anni accademici &  R0F3 \\  
+	UC5.2.1 & Aggiunta anno accademico &  R0F3.1 \\  
+	UC5.2.2 & Visualizzazione lista di tutti gli anni accademici & R0F3.2 \\  
+	UC5.2.3 & Aggiunta di un corso di laurea ad un anno accademico & R0F3.3 \\  
+	UC5.2.4 & Visualizzazione messaggio anno malformato & R0F3.1 \\  
+	UC5.2.5 & Visualizzazione messaggio di anno accademico già presente & R0F3.1 \\  
+	UC5.2.6 & Visualizzazione messaggio anno non compilato &  R0F3.1 \\  
+	UC5.3 & Gestione corsi di laurea &  R0F3.4 \\   
+	UC5.3.1 & Creazione corso di laurea &  R0F3.4.1 \\  
+	UC5.3.2 & Visualizzazione errore mancata compilazione campi & R0F3.4.1 \\  
+	UC5.3.3 & Visualizzazione lista completa dei corsi &  R0F3.4.2 \\  
+	UC5.3.4 & Visualizzazione lista corsi di laurea per anno accademico & R0F3.4.2  \\  
+	UC5.3.5 & Crea un esame nel corso &  R0F3.4.3\\  
+	UC5.3.6 & Visualizzazione errore campi non compilati nella creazione dell'esame & R0F3.4.3  \\  
+	UC5.3.7 & Visualizzazione lista esami per corso di laurea & R0F3.4.5 \\  
+	UC5.3.8 & Visualizzazione lista esami &  R0F3.4.5 \\  
+	UC5.3.9 & Aggiunta esame a corso &  R0F3.4.4 \\  
+	%UC5.3.10 & Rimozione esame da un corso &  R0F3.4.5 \\  
+	UC5.3.10 & Associazione professore a esame & R0F3.4.5.2 \\  
+	%UC5.3.12 & Rimozione corso di laurea da anno accademico & R2F34 \\  
+	UC5.3.11 & Visualizzazione dettagli esame & R0F3.4.5.1 \\  
 	%-----------------------------------------------------
-	UC6 & Gestione aspetti relativi agli esami & R0F4 \\ \hline
-	UC6.1 & Visualizzazione lista degli esami & R0F4.1 \\ \hline
-	UC6.2 & Visualizzazione lista degli studenti & R0F4.2  \\ \hline
-	UC6.3 & Registrazione valutazione di un esame & R0F4.3 \\ \hline
-	UC7 & Gestione aspetti relativi allo studente & R0F5 \\ \hline
-	UC7.1 & Visualizzazione lista degli esami & R0F5.1 \\ \hline
-	UC7.1.1 & Visualizzazione dei crediti degli esami ai quali è iscritto & R0F5.1.1 \\ \hline
-	UC7.1.2 & Visualizzazione della obbligatorietà degli esami ai quali è iscritto & R0F5.1.2 \\ \hline
-	UC7.1.3 & Visualizzazione delle valutazioni degli esami ai quali è iscritto	& R0F5.1.3 \\ \hline
-	UC7.2 & Visualizzazione degli esami opzionali e dei loro crediti & R0F5.2 \\ \hline
-	UC7.3 & Registrazione ad un esame opzionale & R0F5.2.2 \\ \hline
+	UC6 & Gestione aspetti relativi agli esami & R0F4 \\  
+	UC6.1 & Visualizzazione lista degli esami & R0F4.1 \\  
+	UC6.2 & Visualizzazione lista degli studenti & R0F4.2  \\  
+	UC6.3 & Registrazione valutazione di un esame & R0F4.3 \\  
+	UC7 & Gestione aspetti relativi allo studente & R0F5 \\  
+	UC7.1 & Visualizzazione lista degli esami & R0F5.1 \\  
+	UC7.1.1 & Visualizzazione dei crediti degli esami ai quali è iscritto & R0F5.1.1 \\  
+	UC7.1.2 & Visualizzazione della obbligatorietà degli esami ai quali è iscritto & R0F5.1.2 \\  
+	UC7.1.3 & Visualizzazione delle valutazioni degli esami ai quali è iscritto	& R0F5.1.3 \\  
+	UC7.2 & Visualizzazione degli esami opzionali e dei loro crediti & R0F5.2 \\  
+	UC7.3 & Registrazione ad un esame opzionale & R0F5.2.2 \\  
 	UC7.4 & Visualizzazione delle informazioni relative ai crediti & R0F5.1.4 \\ 
-	& & R0F5.2.1 \\ \hline
-	UC8 & Gestione degli amministratori & R0F11 \\ \hline
-	UC8.1 & Aggiunta di un amministratore & R0F11.1 \\ \hline
-	UC8.1.1 & Inserimento chiave pubblica & R0F11.1 \\ \hline
-	UC8.1.2 & Visualizzazione messaggio di errore riguardo a chiave mal formata & R0F11.1 \\ \hline
-	UC8.1.3 & Visualizzazione messaggio di errore riguardo a chiave già registrata & R0F11.1 \\ \hline
-	UC8.2 & Visualizzazione lista degli amministratori & R0F11.3 \\ \hline
-	UC8.3 & Rimozione amministratore & R0F11.2 \\ \hline
-	UC9 & Visualizzazione quantità di Gas, Ether e costo delle operazioni & R0F10 \\ \hline
+	& & R0F5.2.1 \\  
+	UC8 & Gestione degli amministratori & R0F11 \\  
+	UC8.1 & Aggiunta di un amministratore & R0F11.1 \\  
+	UC8.1.1 & Inserimento chiave pubblica & R0F11.1 \\  
+	UC8.1.2 & Visualizzazione messaggio di errore riguardo a chiave mal formata & R0F11.1 \\  
+	UC8.1.3 & Visualizzazione messaggio di errore riguardo a chiave già registrata & R0F11.1 \\  
+	UC8.2 & Visualizzazione lista degli amministratori & R0F11.3 \\  
+	UC8.3 & Rimozione amministratore & R0F11.2 \\  
+	UC9 & Visualizzazione quantità di Gas, Ether e costo delle operazioni & R0F10 \\  
 
 	\caption{Tabella di tracciamento fonti-requisiti}
 \end{longtable}
@@ -312,165 +302,165 @@ Qualsiasi operazione effettuata in una rete Ethereum reale ha un tempo di soddis
 \subsection{Tracciamento requisiti-fonti}
 
 \label{table:Tabella di tracciamento requisiti-fonti}
-\begin{longtable}[H]{|p{2cm}|p{5.2cm}|p{5cm}|}
-	\hline
-	\rowcolor[HTML]{38FFF8} 
-	\textbf{Requisito} & \textbf{Descrizione requisito} & \textbf{Fonti} \\ \hline
+\rowcolors{2}{CRighePari}{CRigheDispari}
+\begin{longtable}[H]{p{2cm}p{5.2cm}p{5cm}}
+	\rowcolor{CHeader} 
+	\color{CHeaderText} \textbf{Requisito} & \color{CHeaderText} \textbf{Descrizione requisito} & \color{CHeaderText} \textbf{Fonti} \\  
 	% REGEX for Notepad++
-	% (.*)&(.*)&(.*)&(.*)      --->       \1& \3&  \\\\ \\hline
+	% (.*)&(.*)&(.*)&(.*)      --->       \1& \3&  \\\\ \ 
 	\endhead
 	R0F1 &  L'amministratore può gestire gli utenti & \makecell[tl]{
 		Interno \\
 		UC5 \\
 		UC5.1
-	} \\ \hline
+	} \\  
 	R0F1.1 &  L'amministratore può ottenere una lista di tutti gli utenti non abilitati & \makecell[tl]{
 		Interno \\ 
 		UC5 \\  
 		UC5.1.3
-	} \\ \hline
+	} \\  
 	R0F1.2 &  L'amministratore può abilitare un utente & \makecell[tl]{
 		Interno \\ 
 		UC5 \\ 
 		UC5.1.4
-	} \\ \hline
+	} \\  
 	R0F1.3 &  L'amministratore può rimuovere un utente & \makecell[tl]{
 		Interno \\ 
 		UC5.1.5
-	} \\ \hline
+	} \\  
 	R0F1.4 &  L'amministratore può ottenere una lista di tutti gli studenti & \makecell[tl]{
 		Interno \\  
 		UC5.1.1
-	} \\ \hline
+	} \\  
 	R0F2 &  L'amministratore può gestire i professori & \makecell[tl]{
 		Interno
-	} \\ \hline
+	} \\  
 	R0F2.1 &  L'amministratore può ottenere una lista di tutti i professori & \makecell[tl]{
 		Interno \\ 
 		UC5.1.2 
-	} \\ \hline
+	} \\  
 	R0F2.2 &  L'amministratore può assegnare un esame ad un determinato professore & \makecell[tl]{
 		Capitolato
-	} \\ \hline
+	} \\  
 	R0F3 &  L'amministratore può gestire gli anni accademici & \makecell[tl]{
 		Capitolato \\ 
 		UC5.2
-	} \\ \hline
+	} \\  
 	R0F3.1 &  L'amministratore può aggiungere un anno accademico & \makecell[tl]{
 		Capitolato \\ 
 		UC5.2.1 \\ 
 		UC5.2.4 \\ 
 		UC5.2.5 \\ 
 		UC5.2.6
-	} \\ \hline
+	} \\  
 	R0F3.2 &  L'amministratore può ottenere una lista di gli anni accademici & \makecell[tl]{
 		Interno \\ 
 		UC5.2.2
-	} \\ \hline
+	} \\  
 	R0F3.3 &  L'amministratore può aggiungere dei corsi di laurea ad ogni anno accademico & \makecell[tl]{
 		Capitolato \\ 
 		UC5.2.3
-	} \\ \hline
-	%R2F3.4 &  L'amministratore può rimuovere corsi di laurea da ogni anno accademico & Interno} \\ \hline
+	} \\  
+	%R2F3.4 &  L'amministratore può rimuovere corsi di laurea da ogni anno accademico & Interno} \\  
 	R0F3.4 &  L'amministratore può gestire i corsi di laurea relativi agli anni accademici & \makecell[tl]{
 		Capitolato \\ 
 		UC5.3 
-	} \\ \hline
+	} \\  
 	R0F3.4.1 &  L'amministratore può creare un nuovo corso di laurea a partire da un anno accademico & \makecell[tl]{
 		Capitolato \\ 
 		UC5.3.1 \\  
 		UC5.3.2
-	} \\ \hline
+	} \\  
 	R0F3.4.2 &  L'amministratore può ottenere una lista di tutti i corsi di laurea dato un anno accademico & \makecell[tl]{
 		Interno \\ 
 		UC5.3.3 \\  
 		UC5.3.4
-	} \\ \hline
+	} \\  
 	R0F3.4.3 &  L'amministratore può creare nuovi esami & \makecell[tl]{
 		Capitolato \\ 
 		UC5.3.5 \\  
 		UC5.3.6
-	} \\ \hline
+	} \\  
 	R0F3.4.4 &  L'amministratore può aggiungere degli esami ad ogni corso di laurea & \makecell[tl]{
 		Capitolato \\ 
 		UC5.3.9
-	} \\ \hline
-	%R0F3.4.5 &  L'amministratore può rimuovere degli esami da un corso di laurea & Interno \\ UC5.3.10} \\ \hline
+	} \\  
+	%R0F3.4.5 &  L'amministratore può rimuovere degli esami da un corso di laurea & Interno \\ UC5.3.10} \\  
 	R0F3.4.5 &  L'amministratore può ottenere una lista di tutti gli esami dato il corso di laurea & \makecell[tl]{
 		Interno \\ 
 		UC5.3.7 \\ 
 		UC5.3.8
-	} \\ \hline
+	} \\  
 	R0F3.4.5.1 &  L'amministratore può ottenere l'informazione di quale professore è assegnato a un determinato esame & \makecell[tl]{
 		Interno
-	} \\ \hline
+	} \\  
 	R0F3.4.5.2  &  L'amministratore può associare ad un esame il relativo professore & \makecell[tl]{
 		Interno \\ 
 		UC5.3.11
-	} \\ \hline
+	} \\  
 	R0F4 &  Un professore può gestire gli esami a lui assegnati & \makecell[tl]{
 		Capitolato \\ 
 		UC6
-	} \\ \hline
+	} \\  
 	R0F4.1 &  Un professore può ottenere la lista di tutti gli esami a lui assegnati & \makecell[tl]{
 		Capitolato \\ 
 		UC6.1
-	} \\ \hline
+	} \\  
 	R0F4.2 &  Un professore può ottenere la lista di tutti gli studenti associati a un determinato esame & \makecell[tl]{
 		Capitolato  \\ 
 		UC6.2
-	} \\ \hline
+	} \\  
 	R0F4.3 &  Un professore può registrare un esito ad un dato esame ad un dato studente registrato a quell'esame & \makecell[tl]{
 		Capitolato \\ 
 		UC6.3
-	} \\ \hline
+	} \\  
 	R0F5 &  Uno studente può gestire l'iscrizione agli esami & \makecell[tl]{
 		Capitolato \\ 
 		UC7
-	} \\ \hline
+	} \\  
 	R0F5.1 &  Uno studente può vedere l'elenco degli esami ai quali è iscritto & \makecell[tl]{
 		Capitolato \\ 
 		UC7.1
-	} \\ \hline
+	} \\  
 	R0F5.1.1 &  Uno studente può ottenere il numero di crediti assegnati agli esame & \makecell[tl]{
 		Interno \\ 
 		UC7.1.1
-	} \\ \hline
+	} \\  
 	R0F5.1.2 &  Uno studente può ottenere l'obbligatorietà degli esame & \makecell[tl]{
 		Interno \\ 
 		UC7.1.2
-	} \\ \hline
+	} \\  
 	R0F5.1.3 &  Uno studente può ottenere lo stato di superamento degli esame & \makecell[tl]{
 		Interno \\ 
 		UC7.1.3
-	} \\ \hline
+	} \\  
 	R0F5.1.4 &  Uno studente può ottenere il totale dei suoi crediti & \makecell[tl]{
 		Interno \\ 
 		UC7.4
-	} \\ \hline
+	} \\  
 	R0F5.1.5 &  Uno studente può ottenere il numero di crediti da raggiungere per la laurea & \makecell[tl]{
 		Interno
-	} \\ \hline
+	} \\  
 	R0F5.2 &  Uno studente può ottenere l'elenco degli esami opzionali & \makecell[tl]{
 		Capitolato \\ 
 		UC7.2
-	} \\ \hline
+	} \\  
 	R0F5.2.1 &  Uno studente può ottenere il numero di crediti degli esami opzionali & \makecell[tl]{
 		Capitolato \\ 
 		UC7.4
-	} \\ \hline
+	} \\  
 	R0F5.2.2 &  Uno studente può iscriversi ad un esame opzionale & \makecell[tl]{
 		Capitolato \\ 
 		UC7.3
-	} \\ \hline
+	} \\  
 	R0F6 &  L'utente può effettuare il login & \makecell[tl]{
 		Interno \\ 
 		UC2
-	} \\ \hline
+	} \\  
 	R0F6.1 &  Il login deve avvenire tramite il controllo delle chiavi, senza ulteriori azioni da parte dell'utente & \makecell[tl]{
 		Interno \\ 
 		UC2.1
-	} \\ \hline
+	} \\  
 	R0F7 &  L'utente può effettuare il logout & \makecell[tl]{
 		Capitolato \\ 
 		UC2.1  \\
@@ -478,11 +468,11 @@ Qualsiasi operazione effettuata in una rete Ethereum reale ha un tempo di soddis
 		UC2.3 \\
 		UC2.4 \\ 
 		UC4
-	} \\ \hline
+	} \\  
 	R0F8 &  L'utente non ancora registrato può registrarsi & \makecell[tl]{
 		Capitolato \\ 
 		UC3
-	} \\ \hline
+	} \\  
 	R0F8.1 &  La registrazione necessita di nome, cognome, categoria (studente o professore) e selezione del corso di laura se si tratta di uno studente & \makecell[tl]{
 		Capitolato \\
 		UC3.1 \\
@@ -493,135 +483,135 @@ Qualsiasi operazione effettuata in una rete Ethereum reale ha un tempo di soddis
 		UC3.6 \\
 		UC3.7 \\
 		UC3.8
-	} \\ \hline
+	} \\  
 	R1F9 &  L'utente può leggere una breve guida sull'uso di MetaMask e sul pagamento delle operazioni & \makecell[tl]{
 		Interno \\ 
 		UC1
-	} \\ \hline
+	} \\  
 	R0F10 &  L'utente deve poter vedere preventivamente il costo in Gas, Ether e Euro dell'operazione che sta per eseguire & \makecell[tl]{
 		Capitolato \\
 		UC9
-	} \\ \hline
+	} \\  
 	R0F11 &  L'università deve poter gestire gli amministratori & \makecell[tl]{
 		VE171209 \\
 		UC8
-	} \\ \hline
+	} \\  
 	R0F11.1 &  L'università deve poter aggiungere amministratori & \makecell[tl]{
 		VE171209 \\
 		UC8.1 \\
 		UC8.1.1 \\ 
 		UC8.1.2 \\
 		UC8.1.3
-	} \\ \hline
+	} \\  
 	R0F11.2 &  L'università deve poter rimuovere amministratori & \makecell[tl]{
 		VE171209 \\
 		UC8.3
-	} \\ \hline
+	} \\  
 	R0F11.3 &  L'università deve poter ottenere la lista di tutti gli amministratori & \makecell[tl]{
 		Interno \\
 		UC8.2
-	} \\ \hline
+	} \\  
 	R0Q1 &  La progettazione e il codice devono seguire le norme e le metriche riportate nei documenti allegati X e Y & \makecell[tl]{
 		Interno
-	} \\ \hline
+	} \\  
 	R0Q2 &  L'approccio di scrittura di JavaScript deve essere promise Centric Approach & \makecell[tl]{
 		Capitolato
-	} \\ \hline
+	} \\  
 	R0Q2.1 &  L'applicativo non deve fare uso di callback in presenza di alternative alle ultime & \makecell[tl]{
 		VE171122
-	} \\ \hline
+	} \\  
 	R0Q3 &  Il codice Javascript deve attenersi al Airbnb Javascript style guide & \makecell[tl]{
 		Capitolato
-	} \\ \hline
+	} \\  
 	R0Q4 &  Lo sviluppo deve essere supportato dall'utilizzo del tool ESLint & \makecell[tl]{
 		Capitolato
-	} \\ \hline
+	} \\  
 	R0Q5 &  Dovrà essere fornito un manuale utente in lingua inglese che tratterà l'uso da parte di studenti e professori & \makecell[tl]{
 		VE171122
-	} \\ \hline
+	} \\  
 	R0Q6 &  Dovrà essere fornito un manuale di deploy e di utilizzo da parte degli amministratori in lingua inglese & \makecell[tl]{
 		VE171122
-	} \\ \hline
+	} \\  
 	R0Q7 &  Il codice sorgente deve essere pubblicato sulla piattaforma GitHub, BitBucket o GitLab & \makecell[tl]{
 		Capitolato
-	} \\ \hline
+	} \\  
 	R0Q8 &  Il codice deve attenersi il più possibile alle guide linea de "App a 12 Fattori" & \makecell[tl]{
 		Capitolato
-	} \\ \hline
+	} \\  
 	R0V1 &  L'applicativo dovrà essere sviluppato attraverso l'uso di tecnologie web & \makecell[tl]{
 		Capitolato
-	} \\ \hline
+	} \\  
 	R0V1.1 &  L'applicativo dovrà essere sviluppato con Node.js & \makecell[tl]{
 		Capitolato
-	} \\ \hline
+	} \\  
 	R0V1.2 &  L'applicativo dovrà essere sviluppato con JavaScript 8 (ES8) & \makecell[tl]{
 		Capitolato
-	} \\ \hline
+	} \\  
 	R0V1.3 &  L'applicativo dovrà essere sviluppato con il boilerplate Redux Minimal & \makecell[tl]{
 		Capitolato
-	} \\ \hline
+	} \\  
 	R0V1.4 &  L'applicativo dovrà essere sviluppato utilizzando React & \makecell[tl]{
 		Capitolato
-	} \\ \hline
+	} \\  
 	R0V1.5 &  L'applicativo dovrà essere sviluppato utilizzando Redux & \makecell[tl]{
 		Capitolato
-	} \\ \hline
+	} \\  
 	R0V1.6 &  Il deploy del sito andrà eseguito utilizzando Surge.sh & \makecell[tl]{
 		Capitolato
-	} \\ \hline
+	} \\  
 	R0V1.7 &  È desiderabile l'utilizzo di SCSS in sostituzione a CSS & \makecell[tl]{
 		Capitolato
-	} \\ \hline
+	} \\  
 	R0V2 &  Gli smart contract dovranno essere scritti in linguaggio Solidity & \makecell[tl]{
 		Capitolato
-	} \\ \hline
+	} \\  
 	R0V3 &  La connessione alla rete Ethereum deve avvernire tramite MetaMask & \makecell[tl]{
 		Capitolato
-	} \\ \hline
+	} \\  
 	R0V3.1 &  I test riguartandi gli smart contract dovranno essere eseguiti in una rete locale ed almeno in una rete pubblica & \makecell[tl]{
 		Capitolato
-	} \\ \hline
+	} \\  
 	R0V3.2 &  Il deploy degli smart contract dovrà avvenire su rete locale testrpc e rete di test Ropsten & \makecell[tl]{
 		Capitolato
-	} \\ \hline
+	} \\  
 	R2V3.3 &  È apprezzabile un deploy finale sulla rete principale di Ethereum & \makecell[tl]{
 		Capitolato
-	} \\ \hline
+	} \\  
 	R0V4 &  Lo sviluppo degli smart contract dovrà avvenire utilizzando il framework Truffle & \makecell[tl]{
 		Capitolato
-	} \\ \hline
+	} \\  
 	R0V5 &  L'applicativo deve essere accessibile ed utilizzabile dal browser Mozilla Firefox a partire dalla versione X & \makecell[tl]{
 		Interno
-	} \\ \hline
+	} \\  
 	R0V6 &  L'applicativo deve essere accessibile ed utilizzabile dal browser Google Chrome a partire dalla versione X & \makecell[tl]{
 		Interno
-	} \\ \hline
+	} \\  
 	R1V7 &  L'applicativo deve essere accessibile ed utilizzabile da un browser mobile, per le versioni supportate fare riferimento alle controparti PC di Firefox e Chrome & \makecell[tl]{
 		Capitolato
-	} \\ \hline
+	} \\  
 	R0V8 &  Un utente non deve poter compiere azioni sul sistema senza aver fatto l'accesso ad esso & \makecell[tl]{
 		Capitolato
-	}\\ \hline
+	}\\  
 	R0V9 &  L'applicazione dei principi de "App a 12 Fattori" deve essere documentata & \makecell[tl]{
 		Capitolato 
-	}\\ \hline
+	}\\  
 	R0V10 &  Il codice sorgente deve essere pubblicato con licenza MIT & \makecell[tl]{
 		Capitolato
-	}\\ \hline
+	}\\  
 	\caption{Tabella di tracciamento requisiti-fonti}
 \end{longtable}
 
 \section{Riepilogo}
 
 \label{table:Riepilogo del numero dei requisiti individuati}
-\begin{longtable}[H]{|p{2.8cm}|p{2.9cm}|p{2.9cm}|p{2.9cm}|p{1.5cm}|}
-	\hline
-	\rowcolor[HTML]{38FFF8} 
-	\textbf{Tipologia} & \textbf{0 Obbligatori} & \textbf{1 Desiderabili} & \textbf{2 Opzionali} & \textbf{Totale} \\ \hline
-	Funzionali & 45 & 1 & 1 & 47 \\ \hline
-	Di qualità & 9 & 0 & 0 & 9 \\ \hline
-	Di vincolo & 18 & 1 & 1 & 20 \\ \hline
-	Prestazionali & 0 & 0 & 0 & 0 \\ \hline
+\rowcolors{2}{CRighePari}{CRigheDispari}
+\begin{longtable}[H]{p{2.8cm}p{2.9cm}p{2.9cm}p{2.9cm}p{1.5cm}}
+	\rowcolor{CHeader}
+	\color{CHeaderText} \textbf{Tipologia} & \color{CHeaderText} \textbf{0 Obbligatori} & \color{CHeaderText} \textbf{1 Desiderabili} & \color{CHeaderText} \textbf{2 Opzionali} & \color{CHeaderText} \textbf{Totale} \\  
+	Funzionali & 45 & 1 & 1 & 47 \\  
+	Di qualità & 9 & 0 & 0 & 9 \\  
+	Di vincolo & 18 & 1 & 1 & 20 \\  
+	Prestazionali & 0 & 0 & 0 & 0 \\  
 	
 	\caption{Riepilogo del numero dei requisiti individuati}
 \end{longtable}

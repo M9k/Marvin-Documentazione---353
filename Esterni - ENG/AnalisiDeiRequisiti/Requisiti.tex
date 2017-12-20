@@ -6,6 +6,7 @@
 \definecolor{CHeaderText}{HTML}{FFFFFF}
 \definecolor{CRighePari}{HTML}{DFDFDF}
 \definecolor{CRigheDispari}{HTML}{F4F4F4}
+\definecolor{CCaption}{HTML}{FFFFFF}
 
 \chapter{Requisiti}
 \section{Classificazione dei requisiti}
@@ -76,7 +77,8 @@ I requisiti vengono classificati ed assegnati loro un identificativo univoco sec
 	R0F11 & Obbligatorio & L'università deve poter gestire gli amministratori & VE171209 \\   %TODO: controllare se il nome del verbale coindice
 	R0F11.1 & Obbligatorio & L'università deve poter aggiungere amministratori & VE171209 \\   %TODO: controllare se il nome del verbale coindice
 	R0F11.2 & Obbligatorio & L'università deve poter rimuovere amministratori & VE171209 \\   %TODO: controllare se il nome del verbale coindice
-	R0F11.3 & Obbligatorio & L'università deve poter ottenere la lista di tutti gli amministratori & Interno \\   
+	R0F11.3 & Obbligatorio & L'università deve poter ottenere la lista di tutti gli amministratori & Interno \\
+	\hiderowcolors
 	\caption{Tabella dei requisiti funzionali}
 \end{longtable}
 
@@ -98,6 +100,7 @@ I requisiti vengono classificati ed assegnati loro un identificativo univoco sec
 	R0Q6 & Obbligatorio & Dovrà essere fornito un manuale di deploy e di utilizzo da parte degli amministratori in lingua inglese & VE171122 \\   %TODO controllare sigla del verbale
 	R0Q7 & Obbligatorio & Il codice sorgente deve essere pubblicato sulla piattaforma GitHub, BitBucket o GitLab & Capitolato \\  
 	R0Q8 & Obbligatorio & Il codice deve attenersi il più possibile alle guide linea de "App a 12 Fattori" & Capitolato \\  
+	\hiderowcolors
 	\caption{Tabella dei requisiti di qualità}
 \end{longtable}
 
@@ -130,6 +133,7 @@ I requisiti vengono classificati ed assegnati loro un identificativo univoco sec
 	R0V8 & Obbligatorio & Un utente non deve poter compiere azioni sul sistema senza aver fatto l'accesso ad esso & Capitolato \\  
 	R0V9 & Obbligatorio & L'applicazione dei principi de "App a 12 Fattori" deve essere documentata & Capitolato \\  
 	R0V10 & Obbligatorio & Il codice sorgente deve essere pubblicato con licenza MIT & Capitolato \\  
+	\hiderowcolors
 	\caption{Tabella dei requisiti di vincolo}
 \end{longtable}
 
@@ -295,7 +299,7 @@ Qualsiasi operazione effettuata in una rete Ethereum reale ha un tempo di soddis
 	UC8.2 & Visualizzazione lista degli amministratori & R0F11.3 \\  
 	UC8.3 & Rimozione amministratore & R0F11.2 \\  
 	UC9 & Visualizzazione quantità di Gas, Ether e costo delle operazioni & R0F10 \\  
-
+	\hiderowcolors
 	\caption{Tabella di tracciamento fonti-requisiti}
 \end{longtable}
 
@@ -598,6 +602,7 @@ Qualsiasi operazione effettuata in una rete Ethereum reale ha un tempo di soddis
 	R0V10 &  Il codice sorgente deve essere pubblicato con licenza MIT & \makecell[tl]{
 		Capitolato
 	}\\  
+	\hiderowcolors
 	\caption{Tabella di tracciamento requisiti-fonti}
 \end{longtable}
 
@@ -612,7 +617,7 @@ Qualsiasi operazione effettuata in una rete Ethereum reale ha un tempo di soddis
 	Di qualità & 9 & 0 & 0 & 9 \\  
 	Di vincolo & 18 & 1 & 1 & 20 \\  
 	Prestazionali & 0 & 0 & 0 & 0 \\  
-	
+	\hiderowcolors
 	\caption{Riepilogo del numero dei requisiti individuati}
 \end{longtable}
 

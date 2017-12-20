@@ -1,6 +1,8 @@
 \documentclass[PianoDiProgetto.tex]{subfiles}
+\begin{document}
 
-\begin{appendices}	
+
+\appendix
 \taburowcolors[2] 2{tableLineOne .. tableLineTwo}
 \tabulinesep = ^3mm_2mm
 \chapter{Organigramma}
@@ -14,7 +16,7 @@
 			}
 			\tableHeaderStyle
 			\textbf{Nominativo} & \textbf{Data di redazione} & \textbf{Firma} \\
-			\Valentina &  &  \\
+			\Valentina & 20-12-2017 & \includegraphics[width=0.7\linewidth]{Firme/firmaMarcon} \\
 			%\includegraphics[width=1\linewidth]{path}
 		\end{tabu}
 		\caption{Redazione}
@@ -30,7 +32,7 @@
 			}
 			\tableHeaderStyle
 			\textbf{Nominativo} & \textbf{Data di approvazione} & \textbf{Firma} \\
-			\Elena &  &  \\
+			\Elena &  & \includegraphics[width=0.7\linewidth]{Firme/firmaMattiazzo} \\
 			\Vardanega & & \\
 			%\includegraphics[width=1\linewidth]{path}
 		\end{tabu}
@@ -48,8 +50,15 @@
 			}
 			\tableHeaderStyle
 			\textbf{Nominativo} & \textbf{Data di accettazione} & \textbf{Firma} \\
-			&  &  \\
+			\Davide& 16-01-2018 & \includegraphics[width=0.7\linewidth]{Firme/firmaStocco}\\
+			\Elena&16-01-2018  & \includegraphics[width=0.7\linewidth]{Firme/firmaMattiazzo}  \\
+			\Gianluca& 16-01-2018 & \includegraphics[width=0.7\linewidth]{Firme/firmaMarraffa}  \\
+			\Mirco& 16-01-2018 & \includegraphics[width=0.7\linewidth]{Firme/firmaCailotto}  \\
+			\Parwinder&16-01-2018  & \includegraphics[width=0.7\linewidth]{Firme/firmaParwinder}  \\
+			\Riccardo& 16-01-2018 & \includegraphics[width=0.7\linewidth]{Firme/firmaGiorato}  \\
+			\Valentina& 16-01-2018 & \includegraphics[width=0.7\linewidth]{Firme/firmaMarcon}  \\
 			%\includegraphics[width=1\linewidth]{path}
+
 		\end{tabu}
 		\caption{Accettazione dei componenti}
 	\end{center}
@@ -57,26 +66,31 @@
 \newpage
 \section{Componenti}
 \begin{table}[H]	
-	\begin{center}	
+	
 		\begin{tabu} to \textwidth { 
-				>{\centering}m{0.20\linewidth} 
-				>{\centering}m{0.15\linewidth}
-				>{\centering}m{0.35\linewidth}  
-				>{\centering\arraybackslash}m{0.2\linewidth}
+				>{\centering}m{0.15\linewidth} 
+				>{\centering}m{0.12\linewidth}
+				>{\centering}m{0.52\linewidth}  
+				>{\centering\arraybackslash}m{0.15\linewidth}
 			}
 			\tableHeaderStyle
 			\textbf{Nominativo} & \textbf{Matricola} & \textbf{Indirizzo email} & \textbf{Ruoli previsti}\\
 			\Davide &  &  & \\
-			\Elena &  &  & \\
-			\Gianluca &  &  & \\
-			\Mirco &  &  & \\
-			\Parwinder &  &  & \\
-			\Riccardo &  &  & \\
-			\Valentina &  &  & \\
-			%\includegraphics[width=1\linewidth]{path}
+			\Elena & 1122273 & elena.mattiazzo.1@studenti.unipd.it & \\
+			\Gianluca & 1121080 & marraffa3ai@gmail.com & \\
+			\Mirco & 1123521 & mirco.cailotto.1@studenti.unipd.it & \\
+			\Parwinder & 1073318 & parwinder.singh@studenti.unipd.it & \\
+			\Riccardo & 1122158 & riccardoemanuele.giorato@studenti.unipd.it & \\
+			\Valentina &  1122461 & valentina.marcon.3@studenti.unipd.it & \\
+			%\includegraphics[width=1\lininewidth]{path}
 		\end{tabu}
 		\caption{Accettazione dei componenti}
-	\end{center}
+
 \end{table}
-%TODO Ruoli previsti: ruoli ricoperti fino a quel momento nel progetto
-\end{appendices}
+
+\section{Note}
+I membri del gruppo, durante lo svolgimento del progetto, ricopriranno ogni ruolo specificato nelle \ndp, a cui corrisponde un costo orario espresso in euro.\\
+Verrà verificato che non ci siano sovrapposizione di ruoli non necessarie, e che l'ammontare delle ore ricoperte da ogni persona per tutti i ruoli sia omogeneo.\\
+Particolare attenzione va posta sul ruolo di verifica, al fine di non creare situazioni in cui il verificatore debba controllare il ruolo da lui prodotto.
+
+\end{document}

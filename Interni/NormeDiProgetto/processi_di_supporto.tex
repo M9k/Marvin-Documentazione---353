@@ -294,35 +294,4 @@
 		\item \textbf{Gestione processi e feedback:} è stato scelto di utilizzare il sistema integrato di issues presente su \citGloss{GitHub} per permettere un dialogo maggiore per ogni singola issue. 
 	\end{itemize}
 	
-	
-	
-	%TODO COMPLETARE Testing funzione per produrre indice di leggibilità Gulpease?!
-	Il comando IL (Indice di Leggibilità) ha tre argomenti, nell'ordine:
-	1) numero lettere
-	2) numero frasi
-	3) numero parole
-	\makeatletter
-	\newcommand{\IL}[3]{{%
-			\dimendef\lettere 256 \lettere=#1\p@ 
-			\dimendef\frasi 258   \frasi  =#2\p@ 
-			\dimendef\parole 260  \parole =#3\p@ 
-			\dimendef\lp 262
-			\dimendef\fr 264
-			\fr=\dimexpr \p@*\frasi/\parole\relax 
-			\lp=\dimexpr \lettere*\p@/\parole\relax 
-			\strip@pt\dimexpr 89\p@ -10\lp +300\fr  \relax
-	}}
-%	\IL{676}{287}{36}\\
-%	\IL{676}{287}{367}\\
-%	\IL{144}{1}{26}
-
-	\section{Validazione}
-	\subsection{Descrizione}
-	Il processo di validazione server per accertarsi che il prodotto rispetti quanto accordato con il Proponente.\\
-	Tale processo va eseguito al termine delle attività di verifica, in quanto lungo e dispendioso e quindi l'obbiettivo è di non doverlo ripetere a causa di modifiche successive.\\
-	In questa sezione si descriveranno gli strumenti e i metodi che verranno usati per la verifica del codice durante la progettazione.\\
-	
-	%TODO per ora va bene solo l'introduzione?
-	
-	
 \end{document}

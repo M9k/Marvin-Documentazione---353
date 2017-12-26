@@ -4,7 +4,7 @@
 \tabulinesep = ^3mm_2mm
 \chapter{Informazioni sulla riunione}
 \begin{itemize}
-	\item \textbf{Motivo della riunione:} La riunione è stata effettuata utilizzando \citGloss{Skype} ed è servita a conoscere il Proponente Milo Ertola di persona. Sono stati chiariti alcuni dubbi sia da parte del gruppo \gruppo che dalla Proponente. Sono stati presentati e discussi i casi d'uso e i \citGloss{requisiti} fin'ora individuati.
+	\item \textbf{Motivo della riunione:} La riunione è stata effettuata utilizzando \citGloss{Skype} ed è servita a conoscere il Proponente Milo Ertola di persona. Sono stati chiariti alcuni dubbi sia da parte del gruppo 353 che dalla Proponente. Sono stati presentati e discussi i casi d'uso e i \citGloss{Requisiti} fin'ora individuati.
 
 	\item \textbf{Luogo e data:} Padova-Amsterdam 08-12-2107;
 	\item \textbf{Ora di inizio:} 13:00;
@@ -41,19 +41,26 @@ Di seguito sono riportati i punti dell'ordine del giorno che sono stati discussi
 \end{enumerate}
 \chapter{Resoconto}
 \begin{enumerate}
-	\item \textbf{Macro contratto:} L'incontro si è aperto con il gruppo \gruppo\ che espone l'idea di utilizzare un macro contratto, la quale è stata sconsigliata dalla Proponente perché più complessa da gestire e meno sicura. L'idea migliore è quella di implementare dei contratti modulari, in cui ogni contratto gestisce le azioni solo di quel modulo.\\
+	\item \textbf{Macro contratto:} l'incontro si è aperto con il gruppo \gruppo\ che espone l'idea di utilizzare un macro contratto, la quale è stata sconsigliata dalla Proponente perché più complessa da gestire e meno sicura. L'idea migliore è quella di implementare dei contratti modulari, in cui ogni contratto gestisce le azioni solo di quel modulo.\\
 	\'{E} stato poi spiegato il funzionamento di React-Redux: React si occupa della visualizzazione mentre Redux dello stato del componente. Viene introdotto il concetto di immutabilità, cioè un oggetto non deve essere modificato, ma è necessario fare la copia di esso e poi modificarlo.\\
-	Questo principio si ritrova anche nella \citGloss{blockchain}, dove ogni blocco non viene mai modificato e lo stato finale è derivato dalla composizione di tutti i blocchi. Non viene mai persa un'informazione, ma viene sempre aggiunta.
-	\item \textbf{Lingua:} E' stato chiarito che la lingua dell'interfaccia grafica deve essere sviluppata in inglese. Inoltre, anche i documenti che possono essere letti all'esterno del corso, le informazioni presenti nella \citGloss{repository} \citGloss{GitHub}, i commenti al codice devono essere in inglese;
-	\item \textbf{Registrazione:} La registrazione dell'utente non è stata specificata, la scelta è lasciata al gruppo;
-	\item \textbf{Amministratori:} La Proponente ha consigliato l'implementazione di più amministratori, e non un unica entità di gestione dell'intero sistema. L'introduzione di appelli è facoltativa, ma è importante la data di registrazione del voto nel libretto;
-	\item \textbf{Organizzazione:} Le scelte organizzative sono lasciate alla decisione del gruppo \gruppo. Vengono reputate importanti le argomentazioni alla base delle scelte effettuate. Inoltre, fondamentale è utilizzare un approccio sicuro: più i contratti sviluppati sono piccoli, più è semplice gestire la sicurezza (ad esempio impedire che un utente semplice possa impersonificarsi professore);
-	\item \textbf{Esami opzionali:} Gli esami opzionali richiesti nel capitolato corrispondono agli esami a scelta necessari per raggiungere i crediti sufficienti per la laurea;
-	\item \textbf{Registrazione professori:} Come già spiegato prima, è lasciata al gruppo la scelta implementativa, tenendo sempre a mente sicurezza e modularità.
+	Questo principio si ritrova anche nella \citGloss{Blockchain}, dove ogni blocco non viene mai modificato e lo stato finale è derivato dalla composizione di tutti i blocchi. Non viene mai persa un'informazione, ma viene sempre aggiunta.
+	
+	\item \textbf{Lingua dell'applicazione:} è stato chiarito che la lingua dell'interfaccia grafica deve essere sviluppata in inglese. Inoltre, anche i documenti che possono essere letti all'esterno del corso, le informazioni presenti nella \citGloss{Repository} \citGloss{GitHub}, i commenti al codice devono essere in inglese;
+	
+	\item \textbf{Registrazione utente:} la registrazione dell'utente non è stata specificata, la scelta è lasciata al gruppo;
+	
+	\item \textbf{Amministratori:} la Proponente ha consigliato l'implementazione di più amministratori, e non un unica entità di gestione dell'intero sistema. L'introduzione di appelli è facoltativa, ma è importante la data di registrazione del voto nel libretto;
+	
+	\item \textbf{Organizzazione:} le scelte organizzative sono lasciate alla decisione del gruppo 353. Vengono reputate importanti le argomentazioni alla base delle scelte effettuate. Inoltre, fondamentale è utilizzare un approccio sicuro: più i contratti sviluppati sono piccoli, più è semplice gestire la sicurezza (ad esempio impedire che un utente semplice possa impersonificarsi professore);
+	
+	\item \textbf{Esami opzionali:} gli esami opzionali richiesti nel capitolato corrispondono agli esami a scelta necessari per raggiungere i crediti sufficienti per la laurea;
+	
+	\item \textbf{Registrazione professori:} come già spiegato precedentemente, è lasciata al gruppo la scelta implementativa, tenendo sempre a mente sicurezza e modularità.
 \end{enumerate}
 \section{Argomenti discussi ma assenti dall'ordine del giorno}
 \begin{itemize}
-	\item Particolari raccomandazioni sono state fatte riguardo alla scrittura di codice in Javascript: è stato richiesto l'utilizzo del \textbf{linting} fin da subito, per facilitare la navigazione nel codice;
+	\item Particolari raccomandazioni sono state fatte riguardo alla scrittura di codice in Javascript: è stato richiesto l'utilizzo del \citGloss{Linting} fin da subito;
+	
 	\item Un consiglio dato al gruppo riguarda la creazione di \textbf{prototipi}: se è in dubbio la validità di un'idea oppure se il dubbio riguarda la scelta tra più idee, è stato raccomandata la creazione di un prototipo, affermando che risolve velocemente i dubbi senza una perdita importante di tempo.
 \end{itemize}
 \section{Tracciamento delle decisioni}
@@ -67,7 +74,6 @@ Di seguito sono riportati i punti dell'ordine del giorno che sono stati discussi
 			\textbf{Codice} & \textbf{Decisione} \\
 			VER-2017-12-08.1 & L'università deve poter gestire gli amministratori. \\
 			VER-2017-12-08.2 & L'università deve poter rimuovere gli amministratori. \\
-			VER-2017-12-08.3 & L'università deve poter rimuovere gli amministratori. \\
 		\end{tabu}
 	\caption{Tracciamento delle decisioni del verbale}
 	\end{center}

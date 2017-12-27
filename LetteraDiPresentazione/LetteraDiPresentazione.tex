@@ -2,6 +2,12 @@
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage[italian]{babel}
+
+%per citare i termini nel glossario
+\usepackage{glossaries}
+\newcommand{\citGloss}[1]{ \glsadd{#1} #1\ped{G}} 
+\loadglsentries{../Esterni/Glossario/Definizioni.tex}
+
 \graphicspath{{images/}{./images/}}
 %\usepackage{lipsum}
 %\usepackage{tabularx}

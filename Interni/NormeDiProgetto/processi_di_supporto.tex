@@ -179,7 +179,9 @@
 	Il glossario è un documento unico per tutti i documenti, esso conterrà tutte le definizioni, in ordine lessicografico crescente, dei termini inerenti al tema del progetto, che possono essere fraintesi o non ben comprensibili. I termini inseriti nel glossario saranno contrassegnati da una G pedice all'interno dei documenti.\\
 	Ovviamente prima di inserire un nuovo termine bisognerà assicurarsi che non sia già presente, in modo da evitare duplicati. \\
 	Il comando \LaTeX{}  da utilizzare per contrassegnare un termine da glossario all'interno dei documenti è \texttt{\textbackslash{}citGloss}, mentre per l'inserimento di una nuova parola all'interno del glossario viene utilizzato \texttt{\textbackslash{}newglossaryentry }.\\
-	La scelta di creare un comando apposito per una operazione "elementare" è scaturita dall'agevolazione che porta alla stesura della documentazione: avendo un modo univoco di riconoscere i termini all'interno del glossario è stato possibile automatizzare la verifica del soddisfacimento delle norme all'interno dei documenti tramite uno script gestioneglossario.sh.
+	La scelta di creare un comando apposito per una operazione "elementare" è scaturita dall'agevolazione che porta alla stesura della documentazione: avendo un modo univoco di riconoscere i termini all'interno del glossario è stato possibile automatizzare la verifica del soddisfacimento delle norme all'interno dei documenti tramite uno script denominato "gupdate.sh".\\
+	In aggiunta è stato creato anche uno script denominato "addterm.sh" che facilita l'inserimento di un termine all'interno del glossario.\\
+	Tutti gli script sono eseguibili da qualsiasi distribuzione Linux, per i membri del gruppo che utilizzano Windows è richiesto il software Cygwin oppure il Windows Subsystem for Linux, per quanto riguarda i sistemi *BSD e iOS non è richiesto nessun programma aggiuntivo.
 	
 	\subsection{Strumenti a supporto della documentazione}
 	La stesura dei documenti deve essere effettuata utilizzando il linguaggio di markup \LaTeX{}  e l'ambiente TeXstudio con dizionario italiano ed inglese installati.

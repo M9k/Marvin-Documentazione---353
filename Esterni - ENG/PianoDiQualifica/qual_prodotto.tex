@@ -1,41 +1,159 @@
 \documentclass[PianoDiProgetto.tex]{subfiles}
 
 \begin{document}
+	
+\taburowcolors[2] 2{tableLineOne .. tableLineTwo}
+\tabulinesep = ^2.5mm_1.5mm
 
 \chapter{Qualità di prodotto}
 
 \section{Scopo}
-Per garantire una buona qualità di prodotto, il team ha individuato dallo standard ISO/IEC 9126 le qualità che ritiene più importanti nell’arco del ciclo di vita del prodotto e le ha istanziate individuando obiettivi e metriche coerenti con i livelli di qualità perseguiti.
-
+Per garantire una buona qualità di prodotto, il gruppo \gruppo\ ha individuato dallo standard ISO/IEC 9126 le qualità che ritiene più importanti nell’arco del ciclo di vita del prodotto e le ha istanziate individuando obiettivi e metriche coerenti con i livelli di qualità perseguiti.
 
 \section{Qualità dei documenti}
-	\subsection{Qualità x.y.}
-		\paragraph{Obiettivi qualità}
-		\paragraph{Metriche}
+I documenti prodotti dal gruppo \gruppo\ dovranno essere leggibili, comprensibili e corretti dal punto di vista ortografico, sintattico, logico e semantico.
+\subsection{Comprensione}
+\subsubsection{Obiettivi di qualità}
+\begin{itemize}
+	\item \textbf{Leggibilità:} i documenti prodotti dovranno essere leggibili e comprensibili a persone con licenza di istruzione media;
+	\item \textbf{Correttezza ortografica:} i documenti prodotti non dovranno contenere errori ortografici.
+\end{itemize}
 
+\subsubsection{Metriche}
+\begin{itemize}
+	\item \textbf{Indice di Gulpease:} è l'indice di leggibilità tarato sulla lingua italiana. Considera due variabili linguistiche: la lunghezza della parola e la lunghezza della frase rispetto al numero di lettere. La formulata per il suo calcolo è la seguente:
+	\[IG=89+\dfrac{300*N_F-10*N_L}{N_P}\] dove $ N_F $ è il numero delle frasi, $ N_P $ il numero delle lettere e $ N_P $ il numero delle parole. Il risultato $I$ è un numero compreso tra 0 e 100. In generale risulta che i testi con indice inferiore a:
+	\begin{itemize}
+		\item 80 sono difficili da leggere per chi ha una licenza elementare;
+		\item 60 sono difficili da leggere per chi ha una licenza media;
+		\item 40 sono difficili da leggere per chi ha un diploma superiore.
+	\end{itemize}	
+	\item \textbf{Formula di Flesch:} è una formula che serve per misurare la leggibilità di un testo in inglese:
+	\[F=206,835-(0,846*S)-(1,015*P)\] dove $ S $ è il numero delle sillabe, calcolato su un campione di 100 parole e $ P $ è il numero medio di parole per frase.
+	La leggibilità è alta se $F$ è superiore a 60, media se fra 50 e 60, bassa sotto a 50;
+	\item \textbf{Errori ortografici:} gli errori ortografici possono essere identificati tramite lo strumento \textquoteleft Controllo ortografico\textquoteright\ presente in TexStudio. Sarà poi compito del Verificatore correggerli.  	
+\end{itemize}
 		
 \section{Qualità del software}
-	Guardare meglio su 
-http://www.math.unipd.it/~tullio/IS-1/2017/Dispense/L13.pdf
-
-	\subsection{Funzionalità}
-		\paragraph{Obiettivi qualità}
-		\paragraph{Metriche}
+%TODO va aggiunto anche il numero di livello massimo di annidamento e max linee di codice per funzione?
+\subsection{Funzionalità}
+Rappresenta la capicità del prodotto di fornire tutte le funzioni che sono state individuate attraverso l'\adr.	
+\subsubsection{Obiettivi qualità}
+Il gruppo \gruppo\ si impegnerà affinché:
+\begin{itemize}
+	\item \textbf{Adeguatezza}: le funzionalità fornite siano conformi rispetto le aspettative;
+	\item \textbf{Accuratezza}: il prodotto fornisca i risultati attesi, con il livello di dettaglio richiesto. 
+\end{itemize}	
+\subsubsection{Metriche}
+\begin{itemize}
+	\item \textbf{Copertura requisiti obbligatori:} indica la percentuale dei requisiti obbligatori coperti dall'implementazione. La formula di misurazione è \[CRO=(\frac{N_{ROS}}{N_{RO}})*100\] dove $ N_{ROS} $ è il numero di requisiti obbligatori soddisfatti e $ N_{RO} $ è il numero totale dei requisiti obbligatori;
+	\item \textbf{Copertura requisiti accettati:} indica la percentuale dei requisiti desiderabili e facoltativi coperti dall'implementazione. La formula di misurazione è \[CRA=(\frac{N_{RAS}}{N_{RA}})*100\] dove $ N_{RAS} $ è il numero di requisiti accettati soddisfatti e $ N_{RA } $ è il numero totale dei requisiti accettati;
+	\item \textbf{Accuratezza rispetto alle attese:} indica la percentuale di risultati concordi alle attese. La formula di misurazione è \[ARA=(1-\frac{N_{TD}}{N_{TE}})*100\] dove $ N_{TD} $ è il numero di test che producono risultati discordi alle attese e $ N_{TE} $ è il numero di test-case eseguiti.
+\end{itemize}
 		
-	\subsection{Affidabilità}
-	
-	
-	\subsection{Usabilità}
-	
-	
-	\subsection{Efficienza}
-	
-	
-	\subsection{Manutenibilità}
-	
-	
-	\subsection{Portabilità}
-
-
+\subsection{Affidabilità}
+Rappresenta la capacità del prodotto software di svolgere correttamente le sue funzioni durante il suo utilizzo, anche in caso in cui si presentino situazioni anomale.
+\subsubsection{Obiettivi di qualità}
+L'esecuzione del prodotto dovrà presentare le seguenti caratteristiche:
+\begin{itemize}
+	\item \textbf{Maturità:} evitare che si verifichino malfunzionamenti, operazioni illegali e failure in seguito a fault;
+	\item \textbf{Tolleranza agli errori:} nel caso in cui si presentino degli errori, dovuti a guasti o ad un uso scorretto dell'applicativo, questi devo essere gestiti in modo da mantenere alto il livello di prestazioni.
+\end{itemize}
+\subsubsection{Metriche}
+\begin{itemize}
+	\item \textbf{Densità di failure:} indica la percentuale di testing che si sono concluse in failure. La sua formula di misurazione è \[DF=(\frac{N_{FR}}{N_{TE}})*100\] dove $ N_{FR} $ è il numero di failure rilevati durante l'attività di testing e $ N_{TE} $ è il numero di test-case eseguiti;
+	\item \textbf{Blocco di operazioni non corrette:} indica la percentuale di funzionalità in grado di gestire correttamente i fault che potrebbero verificarsi . La sua formula di misurazione è \[BNC=(\frac{N_{FE}}{N_{ON}})*100\] dove $ N_{FE} $ è il numero di failure evitati durante i test effettuati e $ N_{ON} $ è il numero di test-case eseguiti che prevedono l'esecuzione di operazioni non corrette, causa di possibili failure.
+\end{itemize}
+\subsection{Usabilità}
+Rappresenta la capacità del prodotto di essere facilmente comprensibile e attraente in ogni sua parte per qualsiasi utente che lo andrà ad utilizzare.
+\subsubsection{Obiettivi di qualità}
+Il prodotto dovrà puntare ai seguenti obiettivi di usabilità:
+\begin{itemize}
+	\item \textbf{Comprensibilità:} l'utente deve essere in grado di riconoscere le funzionalità offerte dal software e deve comprendere le modalità di utilizzo per raggiungere i risultati attesi;
+	\item \textbf{Apprendibilità:} deve essere data la possibilità all'utente di imparare ad utilizzare l'applicazione senza troppo impegno;
+	\item \textbf{Operabilità:} le funzioni presenti devono essere coerenti con le aspettative dell'utente;
+	\item \textbf{Attrattiva:} il software deve essere piacevole per chi ne fa uso.
+\end{itemize}
+\subsubsection{Metriche}
+\begin{itemize}
+	\item \textbf{Comprensibilità delle funzioni offerte:} indica la percentuale di operazioni comprese in modo immediato dall'utente, senza la consultazione del manuale.  La sua formula di misurazione è \[CFC=(\frac{N_{FC}}{N_{FO}})*100\] dove $ N_{FC} $ è il numero di funzionalità comprese in modo immediato dall'utente durante l'attività di testing del prodotto e $ N_{FO} $ è il numero di funzionalità offerte dal sistema;
+	\item \textbf{Facilità di apprendimento delle funzionalità:} indica il tempo medio impiegato dall'utente nell'imparare ad usare correttamente una data funzionalità. Si misura tramite un indicatore numerico, che indica i minuti impiegati da un utente per apprendere il funzionamento di una certa funzionalità;
+	\item \textbf{Consistenza operazionale in uso:} indica la percentuale di messaggi e funzionalità offerte all'utente che rispettano le sue aspettative riguardo al comportamento del software.  La sua formula di misurazione è \[COU=(\frac{N_{MFU}}{N_{MFO}})*100\] dove $ N_{MFU} $ è il numero di messaggi e funzionalità che non rispettano le aspettative dell'utente e $ N_{MFO} $ è il numero di messaggi e funzionalità offerte dal sistema.	
+\end{itemize}	
+\subsection{Efficienza}
+Rappresenta la capacità di eseguire le funzionalità offerte dal software nel minor tempo possibile utilizzando al tempo stesso il minor numero di risorse disponibili.
+\subsubsection{Obiettivi di qualità}
+Il prodotto dovrà essere efficiente, in particolare:
+\begin{itemize}
+	\item \textbf{Comportamento rispetto al tempo:} per svolgere le sue funzioni il software deve fornire adeguati tempi di risposta ed elaborazione;
+	\item \textbf{Utilizzo delle risorse:} il software quando esegue le sue funzionalità deve utilizzare un appropriato numero e tipo di risorse.
+\end{itemize}
+\subsubsection{Metriche}
+\begin{itemize}
+	\item \textbf{Tempo di risposta:} indica il tempo medio che intercorre fra la richiesta software di una determinata funzionalità e la restituzione del risultato all'utente. La sua formula di misurazione è \[TR=\frac{\sum_{i=1}^n T_i}{n}\] dove $ T_i $ è il tempo intercorso fra la richiesta $ i $ di una funzionalità ed il comportamento delle operazioni necessarie a restituire un risultato a tale richiesta.	
+\end{itemize}
+\subsection{Manutenibilità}
+Rappresenta la capacità del prodotto di essere modificato, tramite correzioni, miglioramenti o adattamenti del software a cambiamenti negli ambienti, nei requisiti e nelle specifiche funzionali.
+\subsubsection{Obiettivi di qualità}
+Le operazioni di manutenzione andranno agevolate il più possibile adottando le seguenti caratteristiche:
+\begin{itemize}
+	\item \textbf{Analizzabilità:} il software deve consentire una rapida identificazione delle possibili cause di errori e malfunzionamenti;
+	\item \textbf{Modificabilità:} il prodotto originale deve permettere eventuali cambiamenti in alcune sue parti;
+	\item \textbf{Stabilità:} non devono insorgere effetti indesiderati in seguito a modifiche effettuate sul software;
+	\item \textbf{Testabilità:} il software deve poter essere facilmente testato per valiare le modifiche effettuate.
+\end{itemize}
+\subsubsection{Metriche}
+\begin{itemize}
+	\item \textbf{Capacità di analisi di failure:} indica la percentuale di modifiche effettuate in risposta a failure che hanno portato all'introduzione di nuove failure in altre componenti del sistema. La sua formula di misurazione è \[CAF=(\frac{N_{FI}}{N_{FR}})*100\] dove $ N_{FI} $ è il numero di failure delle quali sono state individuate le cause e $ N_{FR} $ è il numero di failure rilevate;
+	\item \textbf{Impatto delle modifiche:} indica la percentuale di modifiche effettuate in risposta a failure che hanno portato all'introduzione di nuove failure in altre componenti del sistema. La sua formula i misurazione è \[IM=(\frac{N_{FRF}}{N_{FR}})*100\] dove $ N_{FRF} $ è il numero di failure risolte con l'introduzione di nuove failure e $ N_{FR} $ è il numero di failure risolte.
+\end{itemize}
+\subsection{Portabilità}
+Rappresenta la capacità del software di poter essere utilizzato su diversi ambienti.
+\subsubsection{Obiettivi di qualità}
+Sarò agevolata la portabilità del prodotto adottando i seguenti obiettivi:
+\begin{itemize}
+	\item \textbf{Adattabilità:} il prodotto deve adattarsi a tutti quelli ambienti di lavoro nei quali è stato previsto un suo utilizzo, senza dover apportare modifiche dello stesso;
+	\item \textbf{Sostituibilità:} l'applicativo deve poter sostituire un altro software che ha lo stesso scopo e lavora nel medesimo ambiente.
+\end{itemize}
+\subsubsection{Metriche}
+\begin{itemize}
+	\item \textbf{Versioni dei browser supportate:} indica la percentuale di versioni di browser attualmente supportate, fra quelle individuate dai requisiti. La sua formula di misurazione è \[VB=(\frac{N_{VS}}{N_{VI}})*100\] dove $ N_{VS} $ è il numero di versioni di browser supportate dal prodotto e $ N_{VI} $ è il numero di versioni di browser che devono essere supportate dal prodotto;
+	\item \textbf{Inclusione di funzionalità da altri prodotti:} indica la percentuale del software utilizzato in precedenza dall'utente che produce risultati simili a quelli ottenuti dal prodotto in oggetto. La sua formula di misurazione è \[IFP=(\frac{N_{FPA}}{N_{FPP}})*100\] dove $ N_{FPA} $ è il numero di funzionalità del software utilizzato in precedenza dall'utente che produce risultati simili a quelli ottenuti dal prodotto in oggetto e $ N_{FPP} $ è il numero di funzionalità offerte dal software utilizzato in precedenza dall'utente. 
+\end{itemize}
+\newpage
+\section{Tabella delle metriche}
+%TODO bisogna introdurre un ID per metrica?
+Questa tabella indica i \textbf{range} di accettazione e di ottimalità per le metriche utilizzate per la qualità di prodotto:
+\begin{table}[H]
+	\begin{center}
+		\begin{tabu} to \textwidth {
+				>{\centering}m{0.50\linewidth}
+				>{\centering}m{0.2\linewidth} 
+				>{\centering\arraybackslash}m{0.2\linewidth}
+			}
+			\tableHeaderStyle
+			\textbf{Nome} & \textbf{Range di accettazione} & \textbf{Range di ottimalità}\\
+			Indice di Gulpease & 50 - 100 & 60 - 100\\
+			Formula di Flesch & 40 - 60 & 50 - 60\\ 
+			Errori ortografici & 100\% corretti & 100\% corretti\\ 
+			\hline
+			Copertura requisiti obbligatori & 100\% & 100\%\\
+			Copertura requisiti accettati & 60\% - 100\% & 80\% - 100\%\\
+			Accuratezza rispetto alle attese & 90\% - 100\% & 100\%\\
+			Densità di failure & 0\% - 10\% & 0\% \\
+			Blocco di operazioni non corrette & 80\% - 100\% & 100\%\\
+			Comprensibilità delle funzioni offerte & 80\% - 100\% & 90\% - 100\%\\
+			Facilità di apprendimento delle funzionalità & 0 - 20 min & 0 - 10 min\\
+			Consistenza operazionale in uso & 80\% - 100\% & 90\% - 100\%\\  
+			Tempo di risposta & 0 - 8 sec & 0 - 3 sec \\
+			Capacità di analisi di failure & 60\% - 100\% & 80\% - 100\% \\
+			Impatto delle modifiche & 0\% - 20\% & 0\% - 10\% \\
+			Versioni di browser supportate & 70\% - 100\% & 100\%\\
+			Inclusione di funzionalità da altri prodotti & 80\% - 100\% & 90\% - 100\% \\
+		\end{tabu}
+		\caption{Tabella delle metriche della qualità di prodotto}
+		\vspace{-1em}
+	\end{center}
+\end{table}
 
 \end{document}

@@ -2,15 +2,15 @@
 \begin{document}
 \chapter{Processi primari}
 \section{Fornitura}
-In questa sezione vengono tratta le norme che i membri del gruppo 353 sono tenuti a rispettare al fine di proporsi e diventare fornitori nei confronti della Proponente Red Babel e dei Committenti \Vardanega{} e \Cardin{} nell'ambito della progettazione, sviluppo e consegna del prodotto \progetto{}.
+In questa sezione vengono tratta le norme che i membri del gruppo 353 sono tenuti a rispettare al fine di proporsi e diventare fornitori nei confronti della Proponente Red Babel e dei committenti \Vardanega{} e \Cardin{} nell'ambito della progettazione, sviluppo e consegna del prodotto \progetto{}.
 
 \subsection{Studio di fattibilità}
 In seguito alla presentazione ufficiale dei \textbf{Capitolati d'appalto} avvenuta Venerdì 10 novembre 2017 alle ore 10.30 presso l'aula 1C150 di Torre Archimede è stata convocata una riunione interna al gruppo per discutere in merito alla varie proposte presentate.\\
 Una volta stabilita la scelta del capitolato per il quale proporsi come fornitori, gli analisti hanno condotto un'ulteriore e approfondita attività di analisi dei rischi e delle opportunità culminata con la redazione del documento \sdf \vruno. Tale documento include le motivazioni che hanno portato il gruppo 353 a proporsi come fornitore per il prodotto indicato e riporta per ciascun capitolato:
 \begin{itemize}
-	\item \textbf{Descrizione generale:} una sintesi del prodotto da sviluppare secondo quanto stabilito dal capitolato d'appalto;
-	\item \textbf{Obbiettivo finale:} rappresenta il Dominio Applicativo, cioè l'ambito di utilizzo del prodotto da sviluppare;
-	\item \textbf{Tecnologie richieste:} rappresenta il Dominio Tecnologico richiesto dal capitolato, raggruppando le tecnologie da impiegare nello sviluppo del progetto;
+	\item \textbf{Descrizione generale:} una sintesi del prodotto da sviluppare secondo quanto stabilito dal \citGloss{capitolato d'appalto};
+	\item \textbf{Obbiettivo finale:} rappresenta il dominio Applicativo, cioè l'ambito di utilizzo del prodotto da sviluppare;
+	\item \textbf{Tecnologie richieste:} rappresenta il dominio Tecnologico richiesto dal capitolato, raggruppando le tecnologie da impiegare nello sviluppo del progetto;
 	\item \textbf{Valutazione finale:} racchiude le motivazioni, i rischi, le criticità evidenziate per le quali il capitolato in questione è stato respinto o accettato.
 \end{itemize}
 
@@ -30,7 +30,7 @@ Il risultato di quest'analisi sarà il documento \adr \vruno{} redatto dagli \al
 \item Fornire una base per raffinamenti successivi al fine di garantire un
 miglioramento continuo del prodotto e del processo di sviluppo;
 \item Facilitare le revisioni del codice;
-\item Fornire ai Verificatori riferimenti per l’attività di test circa i casi d’uso principali e alternativi;
+\item Fornire ai verificatori riferimenti per l’attività di test circa i casi d’uso principali e alternativi;
 \item Stimare i costi.
 \end{itemize}
 Ogni requisito dovrà essere meno ambiguo possibile e rispettare le seguenti norme.
@@ -116,9 +116,9 @@ Essa serve a garantire che il prodotto sviluppato soddisfi le proprietà e i bis
 
 \subsection{Codifica}
 In questa sotto-sezione vengono elencate le norme alle quali i \progri{} devono attenersi durante l'attività di programmazione e implementazione.\\
-All'inizio verranno elencate delle norme generali a cui i \progri{} devono attenersi con qualsiasi linguaggio di programmazione utilizzato, mentre di seguito verranno elencate delle norme specifiche per i linguaggi JavaScript, JavaScript Syntax eXtension, Solidity e SCSS.\\
+All'inizio verranno elencate delle norme generali a cui i \progri{} devono attenersi con qualsiasi linguaggio di programmazione utilizzato, mentre di seguito verranno elencate delle norme specifiche per i linguaggi JavaScript, JavaScript Syntax eXtension, Solidity e \citGloss{SCSS}.\\
 Ogni norma è rappresentata da un paragrafo; ciascuna ha un titolo, una breve descrizione e, se necessario, un esempio che illustri le convenzioni da applicare. Alcune di esse includono inoltre una lista di possibili eccezioni d'uso.\\
-L'uso di norme e convenzioni è fondamentale per permettere la generazione di codice leggibile e uniforme, agevolando così le fasi di manutenzione, verifica e validazione e migliorando la qualità del prodotto.
+L'uso di norme e convenzioni è fondamentale per permettere la generazione di codice leggibile e uniforme, agevolando così le fasi di manutenzione, \citGloss{verifica} e \citGloss{validazione} e migliorando la qualità del prodotto.
 
 \paragraph*{Convenzioni per i nomi: }
 \begin{itemize}
@@ -172,7 +172,7 @@ Autore || Data || breve descrizione delle modifiche
 	\begin{center}{\textbf{X.Y}}\end{center}	
 	\begin{itemize}
 		\item \textbf{X}: è l’indice di versione principale, un incremento di tale indice rappresenta un avanzamento della versione stabile, che porta il valore dell’indice Y ad essere azzerato;
-		\item \textbf{Y}: è l’indice di modifica parziale, un incremento di tale indice rappresenta una verifica o una modifica rilevante, come per esempio la rimozione o l’aggiunta di una istruzione.
+		\item \textbf{Y}: è l’indice di modifica parziale, un incremento di tale indice rappresenta una \citGloss{verifica} o una modifica rilevante, come per esempio la rimozione o l’aggiunta di una istruzione.
 	\end{itemize}
 	La versione \textit{1.0} deve rappresentare la prima versione del file completo e stabile, cioè quando le sue funzionalità obbligatorie sono state definite e si considerano funzionanti. Solo dalla versione \textit{1.0} è possibile testare il file, con degli appositi test predefiniti, per validarne la qualità. %TODO ok "validarne la qualità?"
 \end{itemize}
@@ -188,11 +188,11 @@ Autore || Data || breve descrizione delle modifiche
 
 %TODO non posso controllarlo io, visto che lo ho scritto -Mirco
 \subsubsection{Tracciamento componenti-requisiti}
-	Si è scelto di utilizzare il software Trender per il tracciamento automatizzato di tutte le informazioni ricavate dall'analisi dei \citGloss{requisiti}.\\
+	Si è scelto di utilizzare il software \citGloss{Trender} per il tracciamento automatizzato di tutte le informazioni ricavate dall'analisi dei \citGloss{requisiti}.\\
 	Il database MySQL che garantisce la persistenza e l'accesso ai dati si trova in remoto, in modo tale da rendere sempre disponibile a tutti le informazioni che esso contiene.\\
-	Qualsiasi componente del gruppo, utilizzando la parte front-end dell'applicazione scritta in PHP e JavaScript, può accedervi utilizzando l'account comune predisposto.\\
-	Una volta effettuato l'accesso si ha a disposizione le funzionalità di modifica e di esportazione in codice LaTeX dei dati presenti.\\
-%	Trender consente di mantenere il tracciamento di:\\
+	Qualsiasi componente del gruppo, utilizzando la parte \citGloss{front-end} dell'applicazione scritta in PHP e \citGloss{JavaScript}, può accedervi utilizzando l'account comune predisposto.\\
+	Una volta effettuato l'accesso si ha a disposizione le funzionalità di modifica e di esportazione in codice \citGloss{LaTeX} dei dati presenti.\\
+%	\citGloss{Trender} consente di mantenere il tracciamento di:\\
 %	\begin{itemize}
 %		\item \citGloss{requisiti};
 %		\item Casi d'uso;
@@ -213,8 +213,8 @@ Autore || Data || breve descrizione delle modifiche
 	\item \textbf{Tracciamento dei test:} Codecov\footnote{\nURI{https://codecov.io/}}; %TODO Sonarcube?
 	\item \textbf{Esecuzione dei test:}
 	\begin{itemize}
-		\item React: Mocha\footnote{\nURI{https://github.com/mochajs/mocha}} e Enzyme\footnote{\nURI{https://github.com/airbnb/enzyme}};
-		\item Redux: Jest\footnote{\nURI{https://facebook.github.io/jest/}};
+		\item \citGloss{React}: Mocha\footnote{\nURI{https://github.com/mochajs/mocha}} e Enzyme\footnote{\nURI{https://github.com/airbnb/enzyme}};
+		\item \citGloss{Redux}: Jest\footnote{\nURI{https://facebook.github.io/jest/}};
 		\item Web3/Truffle: Mocha e Chai\footnote{\nURI{http://chaijs.com/}}.
 	\end{itemize}
 	\item \textbf{Continuos Integration:} Travis\footnote{\nURI{http://travis-ci.com/}}.;

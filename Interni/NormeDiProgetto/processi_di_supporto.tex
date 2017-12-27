@@ -10,20 +10,20 @@
 	\section{Documentazione}
 	\subsection{Descrizione}
 	Questo capitolo descrive le scelte intraprese per la
-	stesura, verifica e approvazione riguardante la documentazione ufficiale.
+	stesura, \citGloss{verifica} e approvazione riguardante la documentazione ufficiale.
 	Tali norme sono tassative per tutti i documenti formali.
 	Tali documenti sono elencati successivamente nella sotto-sezione "Documenti correnti". 
 	
 	\subsection{Ciclo di vita documentazione}
 	Ogni documento formale deve passare gli stadi di "Sviluppo", "Verifica" e "Approvato".
 	\begin{itemize}
-		\item \textbf{Sviluppo:} inizia con la creazione del documento e termina con la conclusione della stesura di tutte le sue parti. In questa fase i Redattori aggiungono le parti assegnate tramite ticket.
-		Il passaggio alla fase di Verifica è automatizzato con la segnalazione al Responsabile;
+		\item \textbf{Sviluppo:} inizia con la creazione del documento e termina con la conclusione della stesura di tutte le sue parti. In questa fase i Redattori aggiungono le parti assegnate tramite \citGloss{ticket}.
+		Il passaggio alla fase di \citGloss{verifica} è automatizzato con la segnalazione al Responsabile;
 		
 		\item \textbf{Verifica:} il documento entra nella fase di verifica dopo l'assegnazione da parte del Responsabile. I Verificatori effettueranno le procedure di controllo dello stesso.s\\
 		Al termine del controllo in caso positivo il documento entra automaticamente in fase di "Approvato", altrimenti i loro riscontri vengono consegnati al Responsabile di Progetto, che provvederà ad assegnare nuovamente il documento ad un Redattore attraverso una nuova fase di Sviluppo; 
 		
-		\item \textbf{Approvato:} l'approvazione di un documento coincide con il superamento positivo da parte di un Verificatore dello stadio di Verifica comunicato al Responsabile che approva il documento per il rilascio esterno.
+		\item \textbf{Approvato:} l'approvazione di un documento coincide con il superamento positivo da parte di un verificatore dello stadio di \citGloss{verifica} comunicato al Responsabile che approva il documento per il rilascio esterno.
 	\end{itemize}
 	
 	\subsection{Separazione documenti interni ed esterni}
@@ -31,7 +31,7 @@
 	oppure Esterno con le seguenti differenze:
 	\begin{itemize}
 		\item \textbf{Interno:} ha utilizzo interno al gruppo 353, redatto in lingua Italiana;
-		\item \textbf{Esterno:} verrà condiviso con la Proponente ed i Committenti, nel caso sia utile per il deploy dell'applicazione web o per il suo utilizzo da parte degli utenti finali, deve essere redatto in lingua Inglese.
+		\item \textbf{Esterno:} verrà condiviso con la Proponente ed i committenti, nel caso sia utile per il deploy dell'applicazione web o per il suo utilizzo da parte degli utenti finali, deve essere redatto in lingua Inglese.
 	\end{itemize}
 	Un documento formale farà sempre parte di una delle due categorie elencate.
 	
@@ -45,11 +45,11 @@
 	Di seguito la spiegazione che assumono le versione del documento:
 	\begin{itemize}
 		\item \textbf{X:} rappresenta il numero di pubblicazioni ufficiali del documento: ogni qual volta il documento viene pubblicato il valore di Y e Z viene azzerato, quello di X incrementato di uno;
-		\item \textbf{Y:} rappresenta il numero di verifiche completate con successo, in caso di mancato superamento della fase di verifica il valore non va modificato, mentre se superata viene incrementato di uno e si azzera il valore della Z;
+		\item \textbf{Y:} rappresenta il numero di verifiche completate con successo, in caso di mancato superamento della fase di \citGloss{verifica} il valore non va modificato, mentre se superata viene incrementato di uno e si azzera il valore della Z;
 		\item \textbf{Z:} rappresenta il numero di modifiche effettuate al documento durante il suo sviluppo.	
 	\end{itemize}
 	Formato dei file: ogni documento si trova nel formato .tex durante il suo ciclo di vita.
-	Dopo lo stato di “Approvato” per il documento viene quindi creato un PDF contenente la versione approvata dal Responsabile.
+	Dopo lo stato di “Approvato” per il documento viene quindi creato un \citGloss{PDF} contenente la versione approvata dal Responsabile.
 	
 	\subsection{Documenti correnti}
 	Qui di seguito si presentano i documenti formali in ordine alfabetico, classificati per appartenenza (Interno ed Esterno):
@@ -124,7 +124,7 @@
 			
 			\item \textbf{Virgolette:} alte singole ' ' per singolo carattere, alte doppie " " per racchiudere stringhe mentre quelle basse '\textless \textless ' '\textgreater \textgreater ' per racchiudere citazioni;
 			 
-			\item \textbf{Parentesi:} tonde per descrivere esempi e fornire sinonimi o precisazioni, quadre per rappresentare uno standard ISO, uno stato relativo a un ticket o un riferimento ad un codice definito all'interno del documento stesso;
+			\item \textbf{Parentesi:} tonde per descrivere esempi e fornire sinonimi o precisazioni, quadre per rappresentare uno standard ISO, uno stato relativo a un \citGloss{ticket} o un riferimento ad un codice definito all'interno del documento stesso;
 			
 			\item \textbf{Punteggiatura:} ogni segno di punteggiatura deve essere seguito da uno spazio e non avere spazi precedenti al segno stesso;
 
@@ -148,7 +148,7 @@
 			\begin{itemize}
 				\item Date: scritte con lo standard DD-MM-YYYY dove YYYY indica l'anno, MM il mese e DD il giorno, inseribili nel formato corretto attraverso il comando \texttt{\textbackslash nData};
 				\item Grassetto: lo stile grassetto va utilizzato per i titoli dei paragrafi e per i titoli degli elementi di un elenco; 
-				\item URI: lo stile utilizzato per un URI è il corsivo di colore blu, in modo da mantenere una continuità con lo standard web attuale, utilizzabile col comando personalizzato latex \texttt{\textbackslash nURI}.
+				\item URI: lo stile utilizzato per un URI è il corsivo di colore blu, in modo da mantenere una continuità con lo standard web attuale, utilizzabile col comando personalizzato \citGloss{LaTeX} \texttt{\textbackslash nURI}.
 			\end{itemize}
 			
 			\item \textbf{Ruoli/Fasi/Revisioni di Progetto:} sono stati realizzati dei comandi personalizzati per poter richiamare la visualizzazione dei ruoli di progetto, per indicare le fasi e le revisioni di progetto secondo comandi unificati per tutti i documenti facilitando il lavoro dei Redattori.
@@ -178,13 +178,13 @@
 	\subsection{Gestione termini Glossario}
 	Il glossario è un documento unico per tutti i documenti, esso conterrà tutte le definizioni, in ordine lessicografico crescente, dei termini inerenti al tema del progetto, che possono essere fraintesi o non ben comprensibili. I termini inseriti nel glossario saranno contrassegnati da una G pedice all'interno dei documenti.\\
 	Ovviamente prima di inserire un nuovo termine bisognerà assicurarsi che non sia già presente, in modo da evitare duplicati. \\
-	Il comando \LaTeX{}  da utilizzare per contrassegnare un termine da glossario all'interno dei documenti è \texttt{\textbackslash{}citGloss}, mentre per l'inserimento di una nuova parola all'interno del glossario viene utilizzato \texttt{\textbackslash{}newglossaryentry }.\\
-	La scelta di creare un comando apposito per una operazione "elementare" è scaturita dall'agevolazione che porta alla stesura della documentazione: avendo un modo univoco di riconoscere i termini all'interno del glossario è stato possibile automatizzare la verifica del soddisfacimento delle norme all'interno dei documenti tramite uno script denominato "gupdate.sh".\\
+	Il comando \LaTeX{} da utilizzare per contrassegnare un termine da glossario all'interno dei documenti è \texttt{\textbackslash{}citGloss}, mentre per l'inserimento di una nuova parola all'interno del glossario viene utilizzato \texttt{\textbackslash{}newglossaryentry }.\\
+	La scelta di creare un comando apposito per una operazione "elementare" è scaturita dall'agevolazione che porta alla stesura della documentazione: avendo un modo univoco di riconoscere i termini all'interno del glossario è stato possibile automatizzare la \citGloss{verifica} del soddisfacimento delle norme all'interno dei documenti tramite uno script denominato "gupdate.sh".\\
 	In aggiunta è stato creato anche uno script denominato "addterm.sh" che facilita l'inserimento di un termine all'interno del glossario.\\
 	Tutti gli script sono eseguibili da qualsiasi distribuzione Linux, per i membri del gruppo che utilizzano Windows è richiesto il software Cygwin oppure il Windows Subsystem for Linux, per quanto riguarda i sistemi *BSD e iOS non è richiesto nessun programma aggiuntivo.
 	
 	\subsection{Strumenti a supporto della documentazione}
-	La stesura dei documenti deve essere effettuata utilizzando il linguaggio di markup \LaTeX{}  e l'ambiente TeXstudio con dizionario italiano ed inglese installati.
+	La stesura dei documenti deve essere effettuata utilizzando il linguaggio di markup \citGloss{LaTeX}  e l'ambiente \citGloss{TexStudio} con dizionario italiano ed inglese installati.
 	
 	\section{Qualità}
 	\subsection{Descrizione}
@@ -197,7 +197,7 @@
 			\item Occorrenze: ossia il numero di volte in cui si presenterà un particolare evento come il numero di difetti di una caratteristica del prodotto.
 		\end{itemize} 
 		
-		\item \textbf{Metriche per i documenti:} per la verifica dei documenti è stata scelto l'indice di leggibilità Gulpease che viene calcolato tramite funzione Latex.\\
+		\item \textbf{Metriche per i documenti:} per la \citGloss{verifica} dei documenti è stata scelto l'indice di leggibilità Gulpease che viene calcolato tramite funzione \citGloss{LaTeX}.\\
 		I risultati sono compresi tra 0 e 100 dove il valore 100 indica una leggibilità massima, si è scelto di considerare un documento sufficientemente leggibile all'ottenimento di un valore compreso tra 50 e 100; 
 		
 		\item \textbf{Metriche per il software:} al fine di perseguire gli obiettivi qualitativi prefissati nel Piano Di Qualifica è doveroso definire delle metriche come copertura del codice tramite test automatici;
@@ -215,8 +215,8 @@
 	La condivisione dei documenti informali e delle parti non versionabili è invece effettuata tramite l'uso di una cartella Google Drive condivisa.
 	
 	\subsubsection{Struttura delle repository}
-	E' stata realizzata solo una \citGloss{repository} durante la fase di RR ossia quella relativa alla documentazione denominata "Documentazione 353", si prevede inoltre di creare ulteriori \citGloss{repository} per suddividere lo sviluppo e la codifica dell'applicazione del progetto. \\\\
-	I file interni al \citGloss{repository} "Documentazione 353" sono organizzati secondo questa struttura:
+	E' stata realizzata solo una \citGloss{repository} durante la fase di RR ossia quella relativa alla documentazione denominata "Documentazione 353", si prevede inoltre di creare ulteriori repository per suddividere lo sviluppo e la codifica dell'applicazione del progetto. \\\\
+	I file interni al repository "Documentazione 353" sono organizzati secondo questa struttura:
 	\begin{itemize}
 		\item \textbf{Esterni:}
 				\begin{itemize}
@@ -234,21 +234,21 @@
 					\item \textbf{Verbali interni}.
 				\end{itemize}		
 	\end{itemize}	
-	All'interno di ogni cartella è stato definito un file LaTex principale che assume il nome del documento stesso ed il file diariomodifiche.tex per mantenere traccia delle modifiche effettuate.\\
+	All'interno di ogni cartella è stato definito un file \citGloss{LaTeX} principale che assume il nome del documento stesso ed il file diariomodifiche.tex per mantenere traccia delle modifiche effettuate.\\
 	Nella root della \citGloss{repository} è stato messo invece un file .sh gestito tramite \citGloss{Travis} CI che controlla automaticamente gli errori in tutti i documenti presenti e compila un log con i risultati ottenuti.
 	
 	\subsubsection{Ciclo di vita dei branch}
-	Per sfruttare il parallelismo nello sviluppo di uno stesso documento sono stati creati appositamente dei branch denominati con il nome del membro o dei membri del gruppo che devono lavorare su una determinata parte, mentre i documenti baseline saranno invece contenuti nel master branch.\\
+	Per sfruttare il parallelismo nello sviluppo di uno stesso documento sono stati creati appositamente dei \citGloss{branch} denominati con il nome del membro o dei membri del gruppo che devono lavorare su una determinata parte, mentre i documenti baseline saranno invece contenuti nel master \citGloss{branch}.\\
 	Il merge col master avviene quindi solamente quando un documento si trova in stato di "Approvato".
 	
 	\subsubsection{Aggiornamento della repository}
 	Per l'aggiornamento della \citGloss{repository} è previsto il seguente sotto processo motivato dalla sezione precedente "ciclo di vita":
 	\begin{itemize}
-		\item Verificare di trovarsi sul branch personale con "git branch"(quella selezionata presenta un asterisco *) e in caso di riscontro negativo cambiare branch con "git checkout"
+		\item Verificare di trovarsi sul \citGloss{branch} personale con "git branch"(quella selezionata presenta un asterisco *) e in caso di riscontro negativo cambiare branch con "git checkout"
 		\item Dare il comando "git pull". Nel caso in cui si verifichino dei conflitti:
 		\begin{itemize}
 			\item Dare il comando "git stash" per accantonare momentaneamente	le modifiche apportate;
-			\item Dare il comando "git pull" per ottenere ed applicare i commit mancanti;
+			\item Dare il comando "git pull" per ottenere ed applicare i \citGloss{commit} mancanti;
 			\item Dare il comando "git stash apply" per ripristinare le modifiche.
 		\end{itemize}
 		In questo modo il \citGloss{repository} locale risulta aggiornato rispetto il \citGloss{repository} remoto, mantenendo le modifiche personali apportate;
@@ -261,16 +261,16 @@
 	\section{Verifica}
 	
 	\subsection{Descrizione}
-	Un processo fondamentale per il proseguimento e l'evoluzione di un progetto è la verifica su ogni suo sottoprodotto che porta alla creazione di un singolo componente.\\
-	In questa sezione si descriveranno gli strumenti e i metodi che verranno usati per la verifica del codice e dei documenti durante la loro realizzazione.\\
-	Per quanto riguarda questa prima parte di progetto la verifica si è concentrata essenzialmente su documenti e diagrammi.
+	Un processo fondamentale per il proseguimento e l'evoluzione di un progetto è la \citGloss{verifica} su ogni suo sottoprodotto che porta alla creazione di un singolo componente.\\
+	In questa sezione si descriveranno gli strumenti e i metodi che verranno usati per la \citGloss{verifica} del codice e dei documenti durante la loro realizzazione.\\
+	Per quanto riguarda questa prima parte di progetto la \citGloss{verifica} si è concentrata essenzialmente su documenti e diagrammi.
 	
 	\subsection{Analisi statica}
-	L'analisi statica è una tecnica di analisi applicabile sia alla documentazione che al codice e permette di effettuare la verifica di quanto prodotto individuando errori ed anomalie.\\
+	L'analisi statica è una tecnica di analisi applicabile sia alla documentazione che al codice e permette di effettuare la \citGloss{verifica} di quanto prodotto individuando errori ed anomalie.\\
 	Essa può essere svolta in due modi diversi:
 		\begin{itemize}
 			\item \textbf{Walkthrough:} tecnica applicata quando non si sanno le tipologie di errori o problemi che si stanno cercando e quindi prevede una lettura da cima a fondo del codice o documento per trovare anomalie di qualsiasi tipo.\\
-			Viene sempre svolto per la verifica dei contenuti dei documenti;
+			Viene sempre svolto per la \citGloss{verifica} dei contenuti dei documenti;
 						
 			\item \textbf{Inspection:} tecnica da applicare quando si ha idea delle possibili problematiche che si stanno cercando e si attua leggendo in modo mirato il documento/codice sulla base di una lista di possibili errori precedentemente stilata.\\
 			Viene realizzata tramite la checklist presente sul sito TODO353.
@@ -280,28 +280,28 @@
 	Il processo di analisi dinamica consiste nella realizzazione ed esecuzione di una serie di test sul codice del software di varie tipologie. Questa tecnica non è applicabile per trovare errori nella documentazione.
 	
 	\subsection{Verifica Diagrammi UML}
-	I Verificatori devono controllare tutti i diagrammi UML prodotti rispettino lo standard UML e che siano corretti semanticamente.
+	I verificatori devono controllare tutti i diagrammi UML prodotti rispettino lo standard UML e che siano corretti semanticamente.
 	
 	\subsection{Strumenti usati per la verifica}
 	\begin{itemize}
-		\item \textbf{Software:} verranno usati per la verifica Mocha ed Enzyme per React, Jest per Redux, mentre per i contratti Solidity useremo Mocha e Chai ma verranno attualizzati e confermati per la Technology Baseline;
+		\item \textbf{Software:} verranno usati per la verifica Mocha ed Enzyme per React, Jest per Redux, mentre per i contratti Solidity useremo Mocha e Chai ma verranno attualizzati e confermati per la Technology \citGloss{baseline};
 		\item \textbf{Documenti:} Per il controllo dei documenti prodotti utilizzeremo le funzionalità di Texstudio assieme a script bash eseguiti automaticamente da \citGloss{Travis} per controllare che non ci siano errori nei file LaTex, per assicurarsi che il Glossario non presenti mancanze o duplicati e verificare l'assenza di errori ortografici;
 		\item \textbf{Gestione processi e feedback:} è stato scelto di utilizzare il sistema integrato di issues presente su \citGloss{GitHub} per permettere un dialogo maggiore per ogni singola issue. 
 		\item \textbf{Gestione tasklist:} \nURI{todo353swe.netlify.com} semplice sito per gestione tasklist realizzato dai membri del gruppo per utilizzo interno.
-		\item \textbf{Analisi dinamica:} è stato individuato Sonarqube come possibile soluzione iniziale da accertare, per risolvere tutte le necessità di analisi del codice del gruppo. Maggiori dettagli sarannò introdotti durante la creazione dei Proof of concept per la Technology Baseline.
+		\item \textbf{Analisi dinamica:} è stato individuato Sonarqube come possibile soluzione iniziale da accertare, per risolvere tutte le necessità di analisi del codice del gruppo. Maggiori dettagli sarannò introdotti durante la creazione dei Proof of concept per la Technology \citGloss{baseline}.
 	\end{itemize}
 
 
 	\section{Validazione}
 	\subsection{Descrizione}
-		Il processo di validazione ha l'obiettivo di verificare che il prodotto sia conforme a quanto pianificato e sia abile nel gestire e minimizzare gli effetti degli errori.
+		Il processo di \citGloss{validazione} ha l'obiettivo di verificare che il prodotto sia conforme a quanto pianificato e sia abile nel gestire e minimizzare gli effetti degli errori.
 	\subsection{Procedure}
-		I passi per compiere l’attività di validazione sono i seguenti:
+		I passi per compiere l’attività di \citGloss{validazione} sono i seguenti:
 		\begin{enumerate}
-			\item \textbf{Tracciamento:} tracciamento dei test con rendiconto eseguito dai Verificatori;
+			\item \textbf{Tracciamento:} tracciamento dei test con rendiconto eseguito dai verificatori;
 			\item \textbf{Analisi risultati:} quindi a seguire il Responsabile di progetto controlla e analizza i report ricevuti sui test decidendo se:
 			\begin{itemize}
-				\item accettare la validazione e consegnare i risultati al proponente, informandolo sulle modalità di esecuzione della validazione.
+				\item accettare la \citGloss{validazione} e consegnare i risultati al proponente, informandolo sulle modalità di esecuzione della \citGloss{validazione}.
 				\item chiedere la ripetizione di alcuni o tutti i test con ulteriori nuove indicazioni.
 			\end{itemize}
 		\end{enumerate}

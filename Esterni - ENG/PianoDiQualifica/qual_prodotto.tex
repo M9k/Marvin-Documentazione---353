@@ -1,9 +1,6 @@
 \documentclass[PianoDiQualifica.tex]{subfiles}
 
 \begin{document}
-	
-\taburowcolors[2] 2{tableLineOne .. tableLineTwo}
-\tabulinesep = ^2.5mm_1.5mm
 
 \chapter{Qualità di prodotto}
 
@@ -35,8 +32,6 @@ I documenti prodotti dal gruppo \gruppo\ dovranno essere leggibili, comprensibil
 \end{itemize}
 		
 \section{Qualità del software}
-%TODO va aggiunto anche il numero di livello massimo di annidamento e max linee di codice per funzione?
-%VERI-GIORAT viene messo in un processo futuro su qualità dei processi siccome qui si parla del prodotto finale non di come viene creato/scritto
 \subsection{Funzionalità}
 Rappresenta la capacità del prodotto di fornire tutte le funzioni che sono state individuate attraverso l'\adr.	
 \subsubsection{Obiettivi qualità}
@@ -126,34 +121,39 @@ Sarò agevolata la portabilità del prodotto adottando i seguenti obiettivi:
 %TODO bisogna introdurre un ID per metrica?
 %VERI-GIORAT gruppi in passato non lo facevano,altri si. IMHO sarebbe utile siccome a Cardin e Tullio secondo me piace ogni cosa che ha un codice unico per essere facilmente citabile/misurabile  
 %dopo aver aggiunto gli ID a queste metriche sul prodotto bisogna mettere ID pure alle metriche trovate sul processo aggiornando la tabella messa su qualità dei processi
-
+% ID METRICA
+% M --> metrica
+% PD --> prodotto
+% D/S --> documenti/software (macrocategorie)
+% 00n --> numero incrementale
 Questa tabella indica i \textbf{range} di accettazione e di ottimalità per le metriche utilizzate per la qualità di prodotto:
 \begin{table}[H]
 	\begin{center}
 		\begin{tabu} to \textwidth {
-				>{\centering}m{0.50\linewidth}
-				>{\centering}m{0.2\linewidth} 
-				>{\centering\arraybackslash}m{0.2\linewidth}
+				>{\centering}m{0.15\linewidth}
+				>{\centering}m{0.45\linewidth}
+				>{\centering}m{0.18\linewidth} 
+				>{\centering\arraybackslash}m{0.17\linewidth}
 			}
 			\tableHeaderStyle
-			\textbf{Nome} & \textbf{Range di accettazione} & \textbf{Range di ottimalità}\\
-			Indice di Gulpease & 50 - 100 & 60 - 100\\
-			Formula di Flesch & 40 - 60 & 50 - 60\\ 
-			Errori ortografici & 100\% corretti & 100\% corretti\\ 
+			\textbf{ID} & \textbf{Nome} & \textbf{Range di accettazione} & \textbf{Range di ottimalità}\\
+			MPDD001 & Indice di Gulpease & 50 - 100 & 60 - 100\\
+			MPDD002 & Formula di Flesch & 40 - 60 & 50 - 60\\ 
+			MPDD003 & Errori ortografici & 100\% corretti & 100\% corretti\\ 
 			\hline
-			Copertura requisiti obbligatori & 100\% & 100\%\\
-			Copertura requisiti accettati & 60\% - 100\% & 80\% - 100\%\\
-			Accuratezza rispetto alle attese & 90\% - 100\% & 100\%\\
-			Densità di failure & 0\% - 10\% & 0\% \\
-			Blocco di operazioni non corrette & 80\% - 100\% & 100\%\\
-			Comprensibilità delle funzioni offerte & 80\% - 100\% & 90\% - 100\%\\
-			Facilità di apprendimento delle funzionalità & 0 - 20 min & 0 - 10 min\\
-			Consistenza operazionale in uso & 80\% - 100\% & 90\% - 100\%\\  
-			Tempo di risposta & 0 - 8 sec & 0 - 3 sec \\
-			Capacità di analisi di failure & 60\% - 100\% & 80\% - 100\% \\
-			Impatto delle modifiche & 0\% - 20\% & 0\% - 10\% \\
-			Versioni di browser supportate & 70\% - 100\% & 100\%\\
-			Inclusione di funzionalità da altri prodotti & 80\% - 100\% & 90\% - 100\% \\
+			MPDS001 & Copertura requisiti obbligatori & 100\% & 100\%\\
+			MPDS002 & Copertura requisiti accettati & 60\% - 100\% & 80\% - 100\%\\
+			MPDS003 & Accuratezza rispetto alle attese & 90\% - 100\% & 100\%\\
+			MPDS004 & Densità di failure & 0\% - 10\% & 0\% \\
+			MPDS005 & Blocco di operazioni non corrette & 80\% - 100\% & 100\%\\
+			MPDS006 & Comprensibilità delle funzioni offerte & 80\% - 100\% & 90\% - 100\%\\
+			MPDS007 & Facilità di apprendimento delle funzionalità & 0 - 20 min & 0 - 10 min\\
+			MPDS008 & Consistenza operazionale in uso & 80\% - 100\% & 90\% - 100\%\\  
+			MPDS009 & Tempo di risposta & 0 - 8 sec & 0 - 3 sec \\
+			MPDS010 & Capacità di analisi di failure & 60\% - 100\% & 80\% - 100\% \\
+			MPDS011 & Impatto delle modifiche & 0\% - 20\% & 0\% - 10\% \\
+			MPDS012 & Versioni di browser supportate & 70\% - 100\% & 100\%\\
+			MPDS013 & Inclusione di funzionalità da altri prodotti & 80\% - 100\% & 90\% - 100\% \\
 		\end{tabu}
 		\caption{Tabella delle metriche della qualità di prodotto}
 		\vspace{-1em}

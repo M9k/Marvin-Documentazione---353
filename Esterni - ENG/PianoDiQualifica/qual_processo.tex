@@ -97,6 +97,11 @@ Viene calcolato in percentuale la quantità di codice testato e verificato sul t
 
 
 \section{Tabella delle metriche}
+% ID METRICA
+% M --> metrica
+% PS--> processo
+% (lettera per macro categoria, se esistono)
+% 00n --> numero incrementale
 Questa tabella indica i \textbf{range} di accettazione e di ottimalità per le metriche utilizzate per la qualità di processo:
 \begin{table}[H]
 	\begin{center}
@@ -107,14 +112,16 @@ Questa tabella indica i \textbf{range} di accettazione e di ottimalità per le m
 				>{\centering\arraybackslash}m{0.2\linewidth}
 			}
 			\tableHeaderStyle
+			
 			\textbf{ID} & \textbf{Nome} & \textbf{Range di accettazione} & \textbf{Range di ottimalità}\\
 
-			MPC1 & Schedule Variance & $ \geq -5\% $ & $ \geq 0 $ \\
-			MPC2 & Budget Variance & $ \geq -10\% $ & $ \geq 0 $ \\
-			MPC3 & Function coverage & $ \geq 98\% $ & $ 100\% $\\
-			MPC4 & Statement coverage &  $ \geq 97\% $& $ 100\% $\\
-			MPC5 & Branch coverage & $ \geq 95\% $ & $ 100\% $\\
-			MPC6 & Condition coverage & $ \geq 99\% $ & $ 100\% $
+			MPS001 & Schedule Variance & $ \geq -5\% $ & $ \geq 0 $ \\
+			MPS002 & Budget Variance & $ \geq -10\% $ & $ \geq 0 $ \\
+			MPS003 & Function coverage & $ \geq 98\% $ & $ 100\% $\\
+			MPS004 & Statement coverage &  $ \geq 97\% $& $ 100\% $\\
+			MPS005 & Branch coverage & $ \geq 95\% $ & $ 100\% $\\
+			MPS006 & Condition coverage & $ \geq 99\% $ & $ 100\% $
+
 
 		\end{tabu}
 		\caption{Tabella delle metriche della qualità di processo}

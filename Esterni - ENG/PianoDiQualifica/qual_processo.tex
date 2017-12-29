@@ -18,68 +18,81 @@ Per ottenere qualità dei processi, bisogna:
 	\item Usare buoni strumenti di valutazione: SPICE e PDCA;
 \end{itemize}
 
-\section{Metriche per i processi}%VERI-GIORAT non più metriche ma solo processi siccome di seguito elencata lista dei processi e all'interno di ogni processo le sue metriche.
+\section{Processi}
 
-%VERI-GIORAT corrette le metriche e le appendici.
-%manca la citazione di un qualsiasi processo che abbiamo gestito, guardando dai processi analizzati da altri gruppi direi che noi durante la RR dovremmo avere almeno questi:
+\subsection{Pianificazione di progetto, impostazione e controllo processi}
+Il macro-processo ha lo scopo di produrre dei piani di sviluppo per il progetto, comprendenti la scelta del modello di ciclo di vita del prodotto, descrizioni delle attività e dei compiti da svolgere, pianificazione temporale del lavoro e dei costi da sostenere, allocazione di compiti e responsabilità, e misurazioni per rilevare lo stato del progetto rispetto alle pianificazioni prodotte.
 
-%VERI-GIORAT non so se sia citato veramente da ISO/IEC 15504 o da  IEEE STD 12207-2008 siccome non trovo indici disponibili 
-\subsection{Processo di pianificazione di progetto, impostazione e controllo processi}
-Il macro-processo ha lo scopo di produrre dei piani di sviluppo per il progetto, comprendenti
-la scelta del modello di ciclo di vita del prodotto, descrizioni delle attività e dei compiti
-da svolgere, pianificazione temporale del lavoro e dei costi da sostenere, allocazione di compiti e
-responsabilità, e misurazioni per rilevare lo stato del progetto rispetto alle pianificazioni prodotte.
-%VERI-GIORAT le metriche da te descritte fanno parte di solo questo processo che è come un master per tutti i processi che sono branch diciamo 
 \subsubsection{Obiettivi}
-Sviluppo del progetto dovrà.... ponendo in enfasi:
+Lo sviluppo del progetto dovrà porre particolare attenzione a rispettare dei particolari obiettivi:
 \begin{itemize}
-	\item \textbf{Rispetto budget:} blah blah 
-	\item %VERI-GIORAT lavoro del singolo e segnalazione preventiva problemi di ritardo consegna task membri
+	\item \textbf{Budget:} utilizzando le metriche descritte nella sezione seguente, tenere sempre controllato l'utilizzo del budget, al fine di non avere scarti eccessivi con il costo preventivato;
+	\item \textbf{Task:} porre attenzione alla pianificazione delle task e al loro completamento, assicurandosi che seguano il principio di miglioramento continuo, affinché nessun compito non venga migliorato;
+	\item \textbf{Educazione personale:} avere accortezza che ogni membro del gruppo abbia un livello di preparazione adatto all'esecuzione dei task assegnati, al fine di evitare ritardi sul calendario;
+	\item \textbf{Calendario:} assicurare una pianificazione adatta ai compiti da svolgere, per evitare le condizioni di sforamento del budget;
+	\item \textbf{Standard:} definire standard di processo ogni qualvolta sia possibile, per facilitare il lavoro del gruppo e favorire un incremento continuo.
 \end{itemize}
 
 \subsubsection{Strategie}
-Ogni eventuale valore negativo a livello di Schedule o Budget Variance rilevato sarà compensato....
+Ogni eventuale valore negativo a livello di Schedule o Budget Variance rilevato sarà compensato con la revisione delle attività da svolgere e i requisiti da ottenere, per valutare se nei tempi di calendario stabiliti la pianificazione sia corretta o se sia necessario rivedere la programmazione.
+Utilizzare gli strumenti come Asana e i diagrammi di Gantt per verificare l'andamento del progetto, per avere sempre una visione chiara e quantificabile del lavoro in corso affinché il lavoro non subisca ritardi.
+Porre sempre delle finestre di slack, per evitare sovrapposizioni di task dovute a ritardi. 
 
-\subsubsection{Metirche} %VERI-GIORAT ho messo le due metriche che avevi scritto dentro al processo di appartenenza
+\subsubsection{Metriche} 
 \paragraph{Schedule Variance (SV)}
 Indica se si è in linea, in anticipo o in ritardo rispetto alla schedulazione delle attività di progetto pianificate nella baseline.\\
 È un indicatore di efficacia soprattutto nei confronti del Cliente. \\
 Se SV è positivo, significa che il progetto sta producendo con maggior velocità rispetto a quanto pianificato, viceversa se negativo.
-%VERI-GIORAT: ogni metrica deve avere una misurazione matematica/formula
-%inoltre deve essere presente un range ottimale e di accettazione messo nella tabella riassuntiva alla fine della qualità di processo come come è stato fatto per la qualità di prodotto.
 \textbf{Misurazione:}
+\begin{center}
+	 $ SV = BCWP – BCWS $
+\end{center}
+Dove \begin{itemize}
+	\item BCWP (Budgeted Cost of Work Performed) è il valore (in giorni o Euro) delle attività realizzate alla data corrente.
+	Rappresenta il valore prodotto dal progetto ossia il valore dei deliverable rilasciati fino al momento della misurazione in seguito alle attività svolte.
+	\item BCWS (Budgeted Cost of Work Scheduled) è il costo pianificato (in giorni o Euro) per realizzare le attività di progetto alla data corrente.
+\end{itemize}
 
 
 \paragraph{Budget Variance (BV)}
 Indica se alla data corrente si è speso di più o di meno rispetto a quanto previsto a budget alla data corrente.\\
 È un indicatore che ha un valore unicamente contabile e finanziario.\\
 Se BV è positivo significa che il progetto sta spendendo il proprio budget con minor velocità di quanto pianificato, viceversa se negativo.
-%VERI-GIORAT: ogni metrica deve avere una misurazione matematica/formula
-%inoltre deve essere presente un range ottimale e di accettazione messo nella tabella riassuntiva alla fine della qualità di processo come come è stato fatto per la qualità di prodotto.
+
 \textbf{Misurazione:}
+\begin{center}
+	$ BV = BCWS – ACWP $
+\end{center}
+Dove \begin{itemize}
+	\item BCWS (Budgeted Cost of Work Scheduled) è il costo pianificato (in giorni o Euro) per realizzare le attività di progetto alla data corrente.
+	\item ACWP (Actual Cost of Work Performed) è il costo effettivamente sostenuto (in giorni o Euro) alla data corrente.
+\end{itemize}
 
 
-
-%VERI-GIORAT stesso discorso che per il processo precedente spiegando che questo è pianficiato come processo futuro da attivare durante progettazione
-\subsection{Processo verifica software}
+\subsection{Verifica software}
 Il processo punta a verificare se qualsiasi elemento del sistema soddisfa completamente i requisiti ad esso correlati.
-%VERI-GIORAT processo per garantire ogni parte documentazione chiara e migliorabile/misurabile
 \subsubsection{Obiettivi}
-....
+Per poter definire delle baseline per lo sviluppo del software, è necessario che il codice venga sempre verificato.
  \begin{itemize}
- 	\item \textbf{Obiettivo 1 bla:} blah blah 
+ 	\item \textbf{Commenti al codice:} ogni pezzo di codice dovrà essere commentato affinché sia ritenuto verificabile;
+ 	\item \textbf{Prevenzione di bug:} fare in modo che ogni pezzo di codice non sia affetto da bug prima dell'utilizzo.
  \end{itemize}
- 
 \subsubsection{Strategie}
-%VERI-GIORAT Utilizzo di tool come Sonarlint Sonarcloud ecc guardando dalle norme
+Per prevenire bug e vulnerabilità al codice, si utilizzano strumenti come Sonarlint e Sonarqube al fine di evitare la propagazione di errori e avere una panoramica sullo stato generale del codice prodotto.
+Utilizzare delle metriche di Code Coverage per avere consapevolezza della quantità di codice testato e poter agire di conseguenza.
  
-\subsubsection{Metirche}
-\paragraph{Branch Coverage}%VERI-GIORAT Branch Coverage e Code Coverage essendo stati citati nelle ultime lezione da Tullio
+\subsubsection{Metriche}
 \paragraph{Code Coverage}
+Per avere una misura di codice testato e verificato, si utilizzano dei coverage criteria:
+\begin{description}
+	\item [Function coverage:] verificare che ogni funzione sia stata chiamata;
+	\item [Statement coverage:] verificare che ogni statement del codice sia stato eseguito; 
+	\item [Branch coverage:] verificare se tutti i possibili branch (derivanti da if e case statement) sono stati eseguiti;
+	\item [Condition coverage:] verificare se ogni condizione booleana è stata valutata sia nella condizione true che false. 
+\end{description}
 
-%VERI-GIORAT: ogni metrica deve avere una misurazione matematica/formula
-%inoltre deve essere presente un range ottimale e di accettazione messo nella tabella riassuntiva alla fine della qualità di processo come come è stato fatto per la qualità di prodotto.
 \textbf{Misurazione:}
+Viene calcolato in percentuale la quantità di codice testato e verificato sul totale delle linee di codice scritte.
 
 
 
@@ -88,14 +101,20 @@ Questa tabella indica i \textbf{range} di accettazione e di ottimalità per le m
 \begin{table}[H]
 	\begin{center}
 		\begin{tabu} to \textwidth {
-				>{\centering}m{0.50\linewidth}
+				>{\centering}m{0.1\linewidth}
+				>{\centering}m{0.4\linewidth}
 				>{\centering}m{0.2\linewidth} 
 				>{\centering\arraybackslash}m{0.2\linewidth}
 			}
 			\tableHeaderStyle
-			\textbf{Nome} & \textbf{Range di accettazione} & \textbf{Range di ottimalità}\\
+			\textbf{ID} & \textbf{Nome} & \textbf{Range di accettazione} & \textbf{Range di ottimalità}\\
 
-			%metterci tutte le metriche della qualità dei processi 
+			MPC1 & Schedule Variance & $ \geq -5\% $ & $ \geq 0 $ \\
+			MPC2 & Budget Variance & $ \geq -10\% $ & $ \geq 0 $ \\
+			MPC3 & Function coverage & $ \geq 98\% $ & $ 100\% $\\
+			MPC4 & Statement coverage &  $ \geq 97\% $& $ 100\% $\\
+			MPC5 & Branch coverage & $ \geq 95\% $ & $ 100\% $\\
+			MPC6 & Condition coverage & $ \geq 99\% $ & $ 100\% $
 
 		\end{tabu}
 		\caption{Tabella delle metriche della qualità di processo}
@@ -119,7 +138,7 @@ Ogni processo deve essere organizzato basandosi sul principio del miglioramento 
 
 \begin{figure}[htbp]
 	\begin{center}
-		\includegraphics[width=0.7\linewidth]{../../common/images/PDCAkaizen}
+		\includegraphics[width=0.7\linewidth]{PDCAkaizen}
 		\caption[Ciclo di Deming]{Ciclo di Deming}
 		\label{fig:pdca}
 	\end{center}
@@ -152,18 +171,32 @@ Per ogni processo, lo standard ISO/IEC 15504 definisce dei livelli di capacità:
 \end{description}
 
 La capacità dei processi viene misurata attraverso degli attributi di processo.
-\begin{description}
-%VERI-GIORAT mettere per ogni processo un numero che indichi il livello di processo a cui appartiene per rendere facile l'individuamento del livello del processo tramite i seguenti attributi? Idea
-\item [Process performance:] capacità di un processo di raggiungere gli obiettivi trasformando input identificabili in output identificabili;
-\item [Performance management:] capacità del processo di elaborare un prodotto coerente con gli obiettivi fissati;
-\item [Work product management:] capacità del processo di elaborare un prodotto documentato, controllato e verificato;
-\item [Process definition:] l'esecuzione del processo si basa su standard di processo per raggiungere i propri obiettivi;
-\item [Process deployment:] capacità del processo di attingere a risorse tecniche e umane appropriate per essere attuato efficacemente;
-\item [Process measurement:] gli obiettivi e le misure di prodotto e di processo vengono usati per garantire il raggiungimento dei traguardi definiti in supporto ai target aziendali;
-\item [Process control:] il processo viene controllato tramite misure di prodotto e processo per effettuare correzioni migliorative al processo stesso;
-\item [Process innovation:] i cambiamenti strutturali, di gestione e di esecuzione vengono gestiti in modo controllato per raggiungere i risultati fissati;
-\item [Process optimization:] le modifiche al processo sono identificate e implementate per garantire il miglioramento continuo nella realizzazione degli obiettivi di business dell'organizzazione. 
-\end{description}
+\begin{itemize}
+\item Livello 1
+	\begin{itemize}
+		 \item \textbf{Process performance:} capacità di un processo di raggiungere gli obiettivi trasformando input identificabili in output identificabili;
+	\end{itemize}
+\item Livello 2
+	\begin{itemize}
+		 \item \textbf{Performance management:} capacità del processo di elaborare un prodotto coerente con gli obiettivi fissati;
+		\item \textbf{Work product management:} capacità del processo di elaborare un prodotto documentato, controllato e verificato;
+	\end{itemize}
+\item Livello 3
+	\begin{itemize}
+		\item \textbf{Process definition:} l'esecuzione del processo si basa su standard di processo per raggiungere i propri obiettivi;
+		\item \textbf{Process deployment:} capacità del processo di attingere a risorse tecniche e umane appropriate per essere attuato efficacemente;
+	\end{itemize}
+\item Livello 4
+	\begin{itemize}
+		 \item \textbf{Process measurement:} gli obiettivi e le misure di prodotto e di processo vengono usati per garantire il raggiungimento dei traguardi definiti in supporto ai target aziendali;
+		\item \textbf{Process control:} il processo viene controllato tramite misure di prodotto e processo per effettuare correzioni migliorative al processo stesso;
+	\end{itemize}
+\item Livello 5
+	\begin{itemize}
+		 \item \textbf{Process innovation:} i cambiamenti strutturali, di gestione e di esecuzione vengono gestiti in modo controllato per raggiungere i risultati fissati;
+		\item \textbf{Process optimization:} le modifiche al processo sono identificate e implementate per garantire il miglioramento continuo nella realizzazione degli obiettivi di business dell'organizzazione. 
+	\end{itemize}
+\end{itemize}
 
 Ogni attributo consiste di una o più pratiche generiche che sono ulteriormente elaborate in indicatori pratici per aiutare la valutazione delle performance, sotto forma di indici N-P-L-F:
 \begin{itemize}

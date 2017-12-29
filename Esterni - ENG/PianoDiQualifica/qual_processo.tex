@@ -18,18 +18,92 @@ Per ottenere qualità dei processi, bisogna:
 	\item Usare buoni strumenti di valutazione: SPICE e PDCA;
 \end{itemize}
 
-\section{Metriche per i processi}
+\section{Metriche per i processi}%VERI-GIORAT non più metriche ma solo processi siccome di seguito elencata lista dei processi e all'interno di ogni processo le sue metriche.
 
-\subsection{Schedule Variance (SV)}
+%VERI-GIORAT corrette le metriche e le appendici.
+%manca la citazione di un qualsiasi processo che abbiamo gestito, guardando dai processi analizzati da altri gruppi direi che noi durante la RR dovremmo avere almeno questi:
+
+%VERI-GIORAT non so se sia citato veramente da ISO/IEC 15504 o da  IEEE STD 12207-2008 siccome non trovo indici disponibili 
+\subsection{Processo di pianificazione di progetto, impostazione e controllo processi}
+Il macro-processo ha lo scopo di produrre dei piani di sviluppo per il progetto, comprendenti
+la scelta del modello di ciclo di vita del prodotto, descrizioni delle attività e dei compiti
+da svolgere, pianificazione temporale del lavoro e dei costi da sostenere, allocazione di compiti e
+responsabilità, e misurazioni per rilevare lo stato del progetto rispetto alle pianificazioni prodotte.
+%VERI-GIORAT le metriche da te descritte fanno parte di solo questo processo che è come un master per tutti i processi che sono branch diciamo 
+\subsubsection{Obiettivi}
+Sviluppo del progetto dovrà.... ponendo in enfasi:
+\begin{itemize}
+	\item \textbf{Rispetto budget:} blah blah 
+	\item %VERI-GIORAT lavoro del singolo e segnalazione preventiva problemi di ritardo consegna task membri
+\end{itemize}
+
+\subsubsection{Strategie}
+Ogni eventuale valore negativo a livello di Schedule o Budget Variance rilevato sarà compensato....
+
+\subsubsection{Metirche} %VERI-GIORAT ho messo le due metriche che avevi scritto dentro al processo di appartenenza
+\paragraph{Schedule Variance (SV)}
 Indica se si è in linea, in anticipo o in ritardo rispetto alla schedulazione delle attività di progetto pianificate nella baseline.\\
 È un indicatore di efficacia soprattutto nei confronti del Cliente. \\
 Se SV è positivo, significa che il progetto sta producendo con maggior velocità rispetto a quanto pianificato, viceversa se negativo.
+%VERI-GIORAT: ogni metrica deve avere una misurazione matematica/formula
+%inoltre deve essere presente un range ottimale e di accettazione messo nella tabella riassuntiva alla fine della qualità di processo come come è stato fatto per la qualità di prodotto.
+\textbf{Misurazione:}
 
 
-\subsection{Budget Variance (BV)}
+\paragraph{Budget Variance (BV)}
 Indica se alla data corrente si è speso di più o di meno rispetto a quanto previsto a budget alla data corrente.\\
 È un indicatore che ha un valore unicamente contabile e finanziario.\\
 Se BV è positivo significa che il progetto sta spendendo il proprio budget con minor velocità di quanto pianificato, viceversa se negativo.
+%VERI-GIORAT: ogni metrica deve avere una misurazione matematica/formula
+%inoltre deve essere presente un range ottimale e di accettazione messo nella tabella riassuntiva alla fine della qualità di processo come come è stato fatto per la qualità di prodotto.
+\textbf{Misurazione:}
+
+
+
+%VERI-GIORAT stesso discorso che per il processo precedente spiegando che questo è pianficiato come processo futuro da attivare durante progettazione
+\subsection{Processo verifica software}
+Il processo punta a verificare se qualsiasi elemento del sistema soddisfa completamente i requisiti ad esso correlati.
+%VERI-GIORAT processo per garantire ogni parte documentazione chiara e migliorabile/misurabile
+\subsubsection{Obiettivi}
+....
+ \begin{itemize}
+ 	\item \textbf{Obiettivo 1 bla:} blah blah 
+ \end{itemize}
+ 
+\subsubsection{Strategie}
+%VERI-GIORAT Utilizzo di tool come Sonarlint Sonarcloud ecc guardando dalle norme
+ 
+\subsubsection{Metirche}
+\paragraph{Branch Coverage}%VERI-GIORAT Branch Coverage e Code Coverage essendo stati citati nelle ultime lezione da Tullio
+\paragraph{Code Coverage}
+
+%VERI-GIORAT: ogni metrica deve avere una misurazione matematica/formula
+%inoltre deve essere presente un range ottimale e di accettazione messo nella tabella riassuntiva alla fine della qualità di processo come come è stato fatto per la qualità di prodotto.
+\textbf{Misurazione:}
+
+
+
+\section{Tabella delle metriche}
+Questa tabella indica i \textbf{range} di accettazione e di ottimalità per le metriche utilizzate per la qualità di processo:
+\begin{table}[H]
+	\begin{center}
+		\begin{tabu} to \textwidth {
+				>{\centering}m{0.50\linewidth}
+				>{\centering}m{0.2\linewidth} 
+				>{\centering\arraybackslash}m{0.2\linewidth}
+			}
+			\tableHeaderStyle
+			\textbf{Nome} & \textbf{Range di accettazione} & \textbf{Range di ottimalità}\\
+
+			%metterci tutte le metriche della qualità dei processi 
+
+		\end{tabu}
+		\caption{Tabella delle metriche della qualità di processo}
+		\vspace{-1em}
+	\end{center}
+\end{table}
+
+
 
 
 \begin{appendices}
@@ -79,6 +153,7 @@ Per ogni processo, lo standard ISO/IEC 15504 definisce dei livelli di capacità:
 
 La capacità dei processi viene misurata attraverso degli attributi di processo.
 \begin{description}
+%VERI-GIORAT mettere per ogni processo un numero che indichi il livello di processo a cui appartiene per rendere facile l'individuamento del livello del processo tramite i seguenti attributi? Idea
 \item [Process performance:] capacità di un processo di raggiungere gli obiettivi trasformando input identificabili in output identificabili;
 \item [Performance management:] capacità del processo di elaborare un prodotto coerente con gli obiettivi fissati;
 \item [Work product management:] capacità del processo di elaborare un prodotto documentato, controllato e verificato;

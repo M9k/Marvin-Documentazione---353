@@ -39,10 +39,11 @@ Utilizzare gli strumenti come Asana e i diagrammi di Gantt per verificare l'anda
 Porre sempre delle finestre di slack, per evitare sovrapposizioni di task dovute a ritardi. 
 
 \subsubsection{Metriche} 
-\paragraph{Schedule Variance (SV)}
+\paragraph{}
+\textlink{MPS001TAB}{MPS001}{\textbf{MPS001 Schedule Variance (SV)}}\\
 Indica se si è in linea, in anticipo o in ritardo rispetto alla schedulazione delle attività di progetto pianificate nella baseline.\\
 È un indicatore di efficacia soprattutto nei confronti del Cliente. \\
-Se SV è positivo, significa che il progetto sta producendo con maggior velocità rispetto a quanto pianificato, viceversa se negativo.
+Se SV è positivo, significa che il progetto sta producendo con maggior velocità rispetto a quanto pianificato, viceversa se negativo.\\
 \textbf{Misurazione:}
 \begin{center}
 	 $ SV = BCWP – BCWS $
@@ -54,10 +55,11 @@ Dove \begin{itemize}
 \end{itemize}
 
 
-\paragraph{Budget Variance (BV)}
+\paragraph{}
+\textlink{MPS002TAB}{MPS002}{\textbf{MPS002 Budget Variance (BV)}}\\
 Indica se alla data corrente si è speso di più o di meno rispetto a quanto previsto a budget alla data corrente.\\
 È un indicatore che ha un valore unicamente contabile e finanziario.\\
-Se BV è positivo significa che il progetto sta spendendo il proprio budget con minor velocità di quanto pianificato, viceversa se negativo.
+Se BV è positivo significa che il progetto sta spendendo il proprio budget con minor velocità di quanto pianificato, viceversa se negativo.\\
 
 \textbf{Misurazione:}
 \begin{center}
@@ -84,12 +86,12 @@ Utilizzare delle metriche di Code Coverage per avere consapevolezza della quanti
 \subsubsection{Metriche}
 \paragraph{Code Coverage}
 Per avere una misura di codice testato e verificato, si utilizzano dei coverage criteria:
-\begin{description}
-	\item [Function coverage:] verificare che ogni funzione sia stata chiamata;
-	\item [Statement coverage:] verificare che ogni statement del codice sia stato eseguito; 
-	\item [Branch coverage:] verificare se tutti i possibili branch (derivanti da if e case statement) sono stati eseguiti;
-	\item [Condition coverage:] verificare se ogni condizione booleana è stata valutata sia nella condizione true che false. 
-\end{description}
+\begin{itemize}
+	\item \textlink{MPS003TAB}{MPS003}{\textbf{MPS003 Code coverage:}} verificare che ogni funzione sia stata chiamata;
+	\item \textlink{MPS004TAB}{MPS004}{\textbf{MPS004 Statement coverage:}} verificare che ogni statement del codice sia stato eseguito; 
+	\item \textlink{MPS005TAB}{MPS004}{\textbf{MPS005 Branch coverage:}} verificare se tutti i possibili branch (derivanti da if e case statement) sono stati eseguiti;
+	\item \textlink{MPS006TAB}{MPS006}{\textbf{MPS006 Condition coverage:}} verificare se ogni condizione booleana è stata valutata sia nella condizione true che false. 
+\end{itemize}
 
 \textbf{Misurazione:}
 Viene calcolato in percentuale la quantità di codice testato e verificato sul totale delle linee di codice scritte.
@@ -114,13 +116,12 @@ Questa tabella indica i \textbf{range} di accettazione e di ottimalità per le m
 			\tableHeaderStyle
 			
 			\textbf{ID} & \textbf{Nome} & \textbf{Range di accettazione} & \textbf{Range di ottimalità}\\
-
-			MPS001 & Schedule Variance & $ \geq -5\% $ & $ \geq 0 $ \\
-			MPS002 & Budget Variance & $ \geq -10\% $ & $ \geq 0 $ \\
-			MPS003 & Function coverage & $ \geq 98\% $ & $ 100\% $\\
-			MPS004 & Statement coverage &  $ \geq 97\% $& $ 100\% $\\
-			MPS005 & Branch coverage & $ \geq 95\% $ & $ 100\% $\\
-			MPS006 & Condition coverage & $ \geq 99\% $ & $ 100\% $
+			\textlink{MPS001}{MPS001TAB}{MPS001} & Schedule Variance & $ \geq -5\% $ & $ \geq 0 $ \\
+			\textlink{MPS002}{MPS002TAB}{MPS002} & Budget Variance & $ \geq -10\% $ & $ \geq 0 $ \\
+			\textlink{MPS003}{MPS003TAB}{MPS003} & Function coverage & $ \geq 98\% $ & $ 100\% $\\
+			\textlink{MPS004}{MPS004TAB}{MPS004} & Statement coverage &  $ \geq 97\% $& $ 100\% $\\
+			\textlink{MPS005}{MPS005TAB}{MPS005} & Branch coverage & $ \geq 95\% $ & $ 100\% $\\
+			\textlink{MPS006}{MPS006TAB}{MPS006} & Condition coverage & $ \geq 99\% $ & $ 100\% $
 
 
 		\end{tabu}

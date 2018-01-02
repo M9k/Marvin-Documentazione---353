@@ -297,6 +297,18 @@
         <ownedEnd xmi:id="_ZypNId9REeeVgP8NQIMk7g" type="_hrGeQNO4EeeqiP5Ban4ZWQ" association="_ZypNIN9REeeVgP8NQIMk7g"/>
         <ownedEnd xmi:id="_ZypNIt9REeeVgP8NQIMk7g" type="_doYagN9PEeeVgP8NQIMk7g" association="_ZypNIN9REeeVgP8NQIMk7g"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_H5HfsO_MEeerachfDy3V3g" memberEnd="_H5Hfse_MEeerachfDy3V3g _H5It0O_MEeerachfDy3V3g">
+        <ownedEnd xmi:id="_H5Hfse_MEeerachfDy3V3g" type="_hrGeQNO4EeeqiP5Ban4ZWQ" association="_H5HfsO_MEeerachfDy3V3g"/>
+        <ownedEnd xmi:id="_H5It0O_MEeerachfDy3V3g" type="_z8eLEO_LEeerachfDy3V3g" association="_H5HfsO_MEeerachfDy3V3g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_IaLlYO_MEeerachfDy3V3g" memberEnd="_IaLlYe_MEeerachfDy3V3g _IaLlYu_MEeerachfDy3V3g">
+        <ownedEnd xmi:id="_IaLlYe_MEeerachfDy3V3g" type="_hrGeQNO4EeeqiP5Ban4ZWQ" association="_IaLlYO_MEeerachfDy3V3g"/>
+        <ownedEnd xmi:id="_IaLlYu_MEeerachfDy3V3g" type="_0sersO_LEeerachfDy3V3g" association="_IaLlYO_MEeerachfDy3V3g"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_I-9GYO_MEeerachfDy3V3g" memberEnd="_I-9GYe_MEeerachfDy3V3g _I-9tcO_MEeerachfDy3V3g">
+        <ownedEnd xmi:id="_I-9GYe_MEeerachfDy3V3g" type="_hrGeQNO4EeeqiP5Ban4ZWQ" association="_I-9GYO_MEeerachfDy3V3g"/>
+        <ownedEnd xmi:id="_I-9tcO_MEeerachfDy3V3g" type="_1omVsO_LEeerachfDy3V3g" association="_I-9GYO_MEeerachfDy3V3g"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_vQ5WUNdtEeea54gTi5Qyaw" name="UC2 componenti">
       <packagedElement xmi:type="uml:Component" xmi:id="_x4bZQNdtEeea54gTi5Qyaw" name="UC2 - Login" useCase="_x4bZSNdtEeea54gTi5Qyaw _2OKqcNdtEeea54gTi5Qyaw _3KvncNdtEeea54gTi5Qyaw _3YfvkNdtEeea54gTi5Qyaw _3k7CANdtEeea54gTi5Qyaw">
@@ -526,6 +538,11 @@
       <packagedElement xmi:type="uml:UseCase" xmi:id="_d7uNQN9PEeeVgP8NQIMk7g" name="UC5.3.6 - Visualizzazione errore campi non compilati" subject="_MSZmIN9PEeeVgP8NQIMk7g">
         <extend xmi:id="_5YG0cN9QEeeVgP8NQIMk7g" extendedCase="_doYagN9PEeeVgP8NQIMk7g"/>
       </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_uzmz0O_LEeerachfDy3V3g" name="UC5.3.10 - Associa professore a corso" useCase="_z8eLEO_LEeerachfDy3V3g _0sersO_LEeerachfDy3V3g _1omVsO_LEeerachfDy3V3g">
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_z8eLEO_LEeerachfDy3V3g" name="UC5.3.10.1 - Selezione esame" subject="_uzmz0O_LEeerachfDy3V3g"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_0sersO_LEeerachfDy3V3g" name="UC5.3.10.2 - Visualizzazione lista professori non associati ad un determinato esame" subject="_uzmz0O_LEeerachfDy3V3g"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_1omVsO_LEeerachfDy3V3g" name="UC5.3.10.3 - Selezione professore" subject="_uzmz0O_LEeerachfDy3V3g"/>
     </packagedElement>
   </packagedElement>
 </uml:Model>

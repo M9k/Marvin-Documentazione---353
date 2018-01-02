@@ -130,9 +130,9 @@
 
 			\item \textbf{Stile del testo:} 
 			\begin{itemize}
-				\item Corsivo: Per dare enfasi ad una parola, un concetto o per indicare il nome di un tool/tecnologia;
-				\item Grassetto: Per i titoli, sottotitoli ed elementi di elenchi e liste;
-				\item Azzurro: Per indicare dei collegamenti ipertestuali.
+				\item \textbf{Corsivo:} per dare enfasi ad una parola, un concetto o per indicare il nome di un tool/tecnologia;
+				\item \textbf{Grassetto:} per i titoli, sottotitoli ed elementi di elenchi e liste;
+				\item \textbf{Azzurro:} per indicare dei collegamenti ipertestuali.
 			\end{itemize}
 		
 			\item \textbf{Elenchi:} ogni elenco avrà la prima parola di ogni elemento maiuscola seguita dal carattere 'due punti' (:) seguito dalla sua descrizione, mentre al termine dell'elemento si inserirà sempre il carattere 'punto e virgola' (;) tranne per l'ultimo elemento della lista per cui si userà il carattere 'punto' (.);
@@ -183,27 +183,35 @@
 	In aggiunta è stato creato anche uno script denominato "addterm.sh" che facilita l'inserimento di un termine all'interno del glossario.\\
 	Tutti gli script sono eseguibili da qualsiasi distribuzione Linux, per i membri del gruppo che utilizzano Windows è richiesto il software Cygwin oppure il Windows Subsystem for Linux, per quanto riguarda i sistemi *BSD e iOS non è richiesto nessun programma aggiuntivo.
 	
-	\subsection{Strumenti a supporto della documentazione}
-	La stesura dei documenti deve essere effettuata utilizzando il linguaggio di markup \citGloss{LaTeX}  e l'ambiente \citGloss{TexStudio} con dizionario italiano ed inglese installati.
+	\subsection{Strumenti}
+	La stesura dei documenti deve essere effettuata utilizzando il linguaggio di markup \citGloss{LaTeX}  e l'ambiente \citGloss{TexStudio}\footnote{\nURI{https://www.texstudio.org/}} con dizionario italiano ed inglese installati.
 	
 	\section{Qualità}
 	\subsection{Descrizione}%TODO
-	\subsection{Metriche}
+	Questa sezione descrive le classificazioni, procedure per il calcolo e metriche aggiuntive.
+	
+	\subsection{Classificazione delle metriche}
+	Per garantire la qualità del lavoro gli Amministratori hanno definito delle metriche, riportandole all'interno del Piano di qualifica, che devono però rispettare la seguente notazione \textbf{M[categ][macrocateg][num]}	dove:
 	\begin{itemize}
-		\item \textbf{Metriche per processi:} ogni processo dovrà avere uno standard di qualità elevato definito come unione di:
+		\item \textbf{categ:} indica la categoria della metrica riferendosi a prodotti o processi assume i valori:
 		\begin{itemize}
-			\item Tempo: richiesto per completamento
-			\item Risorse: umane o software richieste
-			\item Occorrenze: ossia il numero di volte in cui si presenterà un particolare evento come il numero di difetti di una caratteristica del prodotto.
-		\end{itemize} 
-		
-		\item \textbf{Metriche per i documenti:} per la \citGloss{verifica} dei documenti è stata scelto l'indice di leggibilità Gulpease che viene calcolato tramite funzione \citGloss{LaTeX}.\\
-		I risultati sono compresi tra 0 e 100 dove il valore 100 indica una leggibilità massima, si è scelto di considerare un documento sufficientemente leggibile all'ottenimento di un valore compreso tra 50 e 100; 
-		
-		\item \textbf{Metriche per il software:} al fine di perseguire gli obiettivi qualitativi prefissati nel Piano Di Qualifica è doveroso definire delle metriche come copertura del codice tramite test automatici;
-		
-		\item \textbf{Metriche per i feedback di miglioramento:} i feedback gestiti come spiegato nelle sezioni successive presentano un indice di occorrenze che viene incrementato in automatico ad ogni nuova segnalazione inserito su un documento di uso interno su Google Drive. 
+			\item \textbf{PS:} per indicare i processi;
+			\item \textbf{PD:} per indicare i prodotti.
+		\end{itemize}
+		\item \textbf{macrocateg:} indica la macrocategoria della metrica, se esiste altrimenti non compare, può assumere i valori:
+		\begin{itemize}
+			\item \textbf{D:} per indicare i documenti;
+			\item \textbf{S:} per indicare i software.
+		\end{itemize}	
+		\item \textbf{num:} indica il codice univoco della metrica come numero intero a tre cifre incrementale a partire da 1.
+	\end{itemize}	
+	
+	\subsection{Metriche aggiuntive interne}
+	\begin{itemize}
+		\item \textbf{Metriche per i feedback di miglioramento:} i feedback permettono il miglioramento dello svolgimento dei differenti ruoli all'interno del progetto. 
 	\end{itemize}
+
+	\subsection{Procedure}
 
 	
 	\section{Configurazione}
@@ -273,7 +281,7 @@
 			Viene sempre svolto per la \citGloss{verifica} dei contenuti dei documenti;
 						
 			\item \textbf{Inspection:} tecnica da applicare quando si ha idea delle possibili problematiche che si stanno cercando e si attua leggendo in modo mirato il documento/codice sulla base di una lista di possibili errori precedentemente stilata.\\
-			Viene realizzata tramite la checklist presente sul sito TODO353.
+			Viene realizzata tramite la checklist presente sul sito Todo353swe.
 		\end{itemize}
 	
 	\subsection{Analisi dinamica}
@@ -282,13 +290,14 @@
 	\subsection{Verifica Diagrammi UML}
 	I verificatori devono controllare tutti i diagrammi UML prodotti rispettino lo standard UML e che siano corretti semanticamente.
 	
-	\subsection{Strumenti usati per la verifica}
+	\subsection{Strumenti}
 	\begin{itemize}
 		\item \textbf{Software:} verranno usati per la verifica Mocha ed Enzyme per React, Jest per Redux, mentre per i contratti Solidity useremo Mocha e Chai ma verranno attualizzati e confermati per la Technology \citGloss{baseline};
 		\item \textbf{Documenti:} Per il controllo dei documenti prodotti utilizzeremo le funzionalità di Texstudio assieme a script bash eseguiti automaticamente da \citGloss{Travis} per controllare che non ci siano errori nei file LaTex, per assicurarsi che il Glossario non presenti mancanze o duplicati e verificare l'assenza di errori ortografici;
-		\item \textbf{Gestione processi e feedback:} è stato scelto di utilizzare il sistema integrato di issues presente su \citGloss{GitHub} per permettere un dialogo maggiore per ogni singola issue. 
-		\item \textbf{Gestione tasklist:} \nURI{todo353swe.netlify.com} semplice sito per gestione tasklist realizzato dai membri del gruppo per utilizzo interno.
-		\item \textbf{Analisi dinamica:} è stato individuato Sonarqube come possibile soluzione iniziale da accertare, per risolvere tutte le necessità di analisi del codice del gruppo. Maggiori dettagli sarannò introdotti durante la creazione dei Proof of concept per la Technology \citGloss{baseline}.
+		\item \textbf{Gestione processi e feedback:} è stato scelto di utilizzare il sistema integrato di issues\footnote{\nURI{https://guides.github.com/features/issues/}} presente su \citGloss{GitHub} per permettere un dialogo maggiore per ogni singola issue. 
+		\item \textbf{Gestione tasklist:} Todo353swe\footnote{\nURI{todo353swe.netlify.com}} semplice sito per gestione tasklist realizzato dai membri del gruppo per utilizzo interno.
+		\item \textbf{Analisi dinamica locale:} è stato individuato un plugin per Webstorm SonarLint\footnote{\nURI{https://plugins.jetbrains.com/plugin/7973-sonarlint}} come possibile soluzione iniziale da verificare, per risolvere tutte le necessità di analisi del codice locale. Maggiori dettagli sarannò introdotti durante la creazione dei Proof of concept per la Technology \citGloss{baseline}.
+		\item \textbf{Analisi dinamica remota:} è stato individuato Sonarqube come possibile soluzione iniziale da accertare, per risolvere tutte le necessità di analisi del codice del gruppo. Maggiori dettagli sarannò introdotti durante la creazione dei Proof of concept per la Technology \citGloss{baseline}.
 	\end{itemize}
 
 

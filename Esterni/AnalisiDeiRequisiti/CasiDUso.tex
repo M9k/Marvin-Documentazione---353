@@ -529,47 +529,44 @@
 	\item \textbf{Precondizione:} l'amministratore vuole aggiungere un esame ad un \citGloss{corso di laurea} e ha ottenuto una lista di corsi di laurea presenti nel sistema [UC5.3.3 o UC5.3.4]; 
 	\item \textbf{Postcondizione:} l'esame è stato aggiunto al \citGloss{corso di laurea} e il loro stato aggiornato nel sistema.
 \end{itemize}
-\begin{comment}
-subsection{UC5.3.10 - Rimozione esame da un corso}
-\begin{itemize}
-	\item \textbf{Attori primari:} Amministratore;
-	\item \textbf{Scopo e descrizione:} L'amministratore rimuove un esame da un \citGloss{corso di laurea};
-	\item \textbf{Scenario principale:}
-	\begin{enumerate}
-		\item L'utente seleziona l'esame e lo rimuove dal corso selezionato;
-	\end{enumerate}
-	\item \textbf{Precondizione:}L'utente ha ottenuto una lista di esami associati dal \citGloss{corso di laurea} [UC5.3.7] e ne vuole rimuovere uno dal corso; 
-	\item \textbf{Postcondizione:} L'esame è rimosso dal \citGloss{corso di laurea}.
-\end{itemize}
-\end{comment}
+
 \subsection{UC5.3.10 - Associazione professore a esame}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
 	\item \textbf{Scopo e descrizione:} l'amministratore associa ad un esame un professore;
 	\item \textbf{Scenario principale:};
 	\begin{enumerate}
-		\item l'amministratore ottiene una lista degli esami [UC5.3.7 o UC5.3.8];
-		\item l'amministratore ottiene una lista dei professori e seleziona quello di suo interesse [UC5.1.2];
-		\item l'amministratore associa all'esame il professore selezionato [UC5.3.10].
+		\item l'amministratore seleziona un'esame [UC5.3.10.1];
+		\item l'amministratore ottiene una lista dei professori non associati all'esame selezionato [UC5.3.10.2];
+		\item l'amministratore seleziona il professore e lo associa all'esame [UC5.3.10.3].
 	\end{enumerate}
-	\item \textbf{Precondizione:} l'amministratore ha ottenuto una lista di esami [UC5.3.7 o UC5.3.8], ne ha selezionato uno e vuole associarci un professore; 
-	\item \textbf{Postcondizione:} ll professore selezionato viene associato all'esame e il loro stato aggiornato nel sistema.
+	\item \textbf{Precondizione:} l'amministratore desidera associare un professore ad un esame; 
+	\item \textbf{Postcondizione:} il professore selezionato viene associato all'esame e il loro stato aggiornato nel sistema.
 \end{itemize}
-\begin{comment}
-subsection{UC5.3.11 - Rimozione \citGloss{corso di laurea} da \citGloss{anno accademico}}
+\subsection{UC5.3.10.1 - Selezione esame}
 \begin{itemize}
-	\item \textbf{Attori primari:} Amministratore;
-	\item \textbf{Scopo e descrizione:} L'amministratore rimuove l'associazione tra un corso di laurea e l'\citGloss{anno accademico} a lui associato;
-	\item \textbf{Scenario principale:}
-	\begin{enumerate}
-		\item L'amministratore ottiene una lista degli anni accademici [UC5.2.2];
-		\item L'amministratore seleziona un \citGloss{anno accademico};
-		\item L'amministratore rimuove l'associazione;
-	\end{enumerate}
-	\item \textbf{Precondizione:} L'amministratore vuole rimuovere un corso di laurea da un determinato \citGloss{anno accademico}; 
-	\item \textbf{Postcondizione:} L'associazione tra \citGloss{anno accademico} e il \citGloss{corso di laurea} scelto è stata rimossa dal sistema.
+	\item \textbf{Attori primari:} amministratore;
+	\item \textbf{Scopo e descrizione:} l'amministratore seleziona l'esame desiderato;
+	\item \textbf{Scenario principale:} l'amministratore seleziona da una lista l'esame a cui associare un professore;
+	\item \textbf{Precondizione:} l'amministratore ha visualizzato una lista di esami [UC5.3.7 o UC5.3.8] e vuole associare un professore ad uno di essi; 
+	\item \textbf{Postcondizione:} l'amministratore ha selezionato un esame a cui associare un professore.
 \end{itemize}
-\end{comment}
+\subsection{UC5.3.10.2 - Visualizzazione lista professori non associati ad un determinato esame}
+\begin{itemize}
+	\item \textbf{Attori primari:} amministratore;
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di professori non associati all'esame selezionato;
+	\item \textbf{Scenario principale:} il sistema mostra all'amministratore una lista di professori non associati con l'esame selezionato;
+	\item \textbf{Precondizione:} l'amministratore ha selezionato l'esame desiderato [UC5.3.10.1] e vuole vedere i professori non associati ad esso;  
+	\item \textbf{Postcondizione:} l'amministratore è a conoscenza dei professori non associati all'esame selezionato.
+\end{itemize}
+\subsection{UC5.3.10.3 - Selezione professore}
+\begin{itemize}
+	\item \textbf{Attori primari:} amministratore;
+	\item \textbf{Scopo e descrizione:} l'amministratore associa un professore ad un esame selezionato;
+	\item \textbf{Scenario principale:} l'amministratore seleziona da una lista il professore desiderato;
+	\item \textbf{Precondizione:} l'amministratore ha selezionato un esame [UC5.3.10.1] e ha ottenuto una lista di professori non associati ad esso [UC5.3.1.2], volendo associarne uno; 
+	\item \textbf{Postcondizione:} il professore selezionato viene associato all'esame desiderato.
+\end{itemize}
 \subsection{UC5.3.11 - Visualizzazione dettagli esame}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;

@@ -43,17 +43,15 @@ I \citGloss{requisiti} vengono classificati ed assegnati loro un identificativo 
 	R0F3 & Obbligatorio & L'amministratore può gestire gli anni accademici & Capitolato \\  
 	R0F3.1 & Obbligatorio & L'amministratore può aggiungere un \citGloss{anno accademico} & Capitolato \\  
 	R0F3.2 & Obbligatorio & L'amministratore può ottenere una lista di gli anni accademici & Interno \\  
-	R0F3.3 & Obbligatorio & L'amministratore può aggiungere dei corsi di laurea ad ogni \citGloss{anno accademico} & Capitolato \\  
+
 	%R2F3.4 & Opzionale & L'amministratore può rimuovere corsi di laurea da ogni \citGloss{anno accademico} & Interni \\  
-	R0F3.4 & Obbligatorio & L'amministratore può gestire i corsi di laurea relativi agli anni accademici & Capitolato \\  
-	R0F3.4.1 & Obbligatorio & L'amministratore può creare un nuovo \citGloss{corso di laurea} a partire da un \citGloss{anno accademico} & Capitolato \\  
-	R0F3.4.2 & Obbligatorio & L'amministratore può ottenere una lista di tutti i corsi di laurea dato un \citGloss{anno accademico} & Interno \\  
-	R0F3.4.3 & Obbligatorio & L'amministratore può creare nuovi esami & Capitolato \\  
-	R0F3.4.4 & Obbligatorio & L'amministratore può aggiungere degli esami ad ogni \citGloss{corso di laurea} & Capitolato \\  
-	%R0F3.4.5 & Opzionale & L'amministratore può rimuovere degli esami da un \citGloss{corso di laurea} & Interno \\  
-	R0F3.4.5 & Obbligatorio & L'amministratore può ottenere una lista di tutti gli esami dato il \citGloss{corso di laurea} & Interno \\  
-	R0F3.4.5.1 & Obbligatorio & L'amministratore può ottenere l'informazione di quale professore è assegnato a un determinato esame & Interno \\  
-	R0F3.4.5.2  & Obbligatorio & L'amministratore può associare ad un esame il relativo professore & Interno \\  
+	R0F3.3 & Obbligatorio & L'amministratore può gestire i corsi di laurea relativi agli anni accademici & Capitolato \\  
+	R0F3.3.1 & Obbligatorio & L'amministratore può creare un nuovo \citGloss{corso di laurea} a partire da un \citGloss{anno accademico} & Capitolato \\  
+	R0F3.3.2 & Obbligatorio & L'amministratore può ottenere una lista di tutti i corsi di laurea dato un \citGloss{anno accademico} & Interno \\  
+	R0F3.3.3 & Obbligatorio & L'amministratore può creare nuovi esami & Capitolato \\ 
+	R0F3.3.4 & Obbligatorio & L'amministratore può ottenere una lista di tutti gli esami dato il \citGloss{corso di laurea} & Interno \\  
+	R0F3.3.4.1 & Obbligatorio & L'amministratore può ottenere l'informazione di quale professore è assegnato a un determinato esame & Interno \\  
+	R0F3.3.4.2  & Obbligatorio & L'amministratore può associare ad un esame il relativo professore & Interno \\  
 	R0F4 & Obbligatorio & Un professore può gestire gli esami a lui assegnati & Capitolato \\  
 	R0F4.1 & Obbligatorio & Un professore può ottenere la lista di tutti gli esami a lui assegnati & Capitolato \\  
 	R0F4.2 & Obbligatorio & Un professore può ottenere la lista di tutti gli studenti associati a un determinato esame & Capitolato \\  
@@ -161,10 +159,9 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 	& & R0F3 \\
 	& & R0F3.1 \\
 	& & R0F3.3 \\
-	& & R0F3.4 \\
-	& & R0F3.4.1 \\
-	& & R0F3.4.3 \\
-	& & R0F3.4.4 \\
+	& & R0F3.3.1 \\
+	& & R0F3.3.3 \\
+	& & R0F3.3.4 \\
 	& & R0F4 \\
 	& & R0F4.1 \\
 	& & R0F4.2 \\
@@ -210,12 +207,12 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 	& & R0F2 \\
 	& & R0F2.1 \\
 	& & R0F3.2 \\
-	& & R0F3.4 \\
-	& & R0F3.4.2 \\
-	& & R0F3.4.5 \\
-	%& & R0F3.4.5 \\
-	& & R0F3.4.5.1 \\
-	& & R0F3.4.5.2 \\
+	& & R0F3.3 \\
+	& & R0F3.3.2 \\
+	& & R0F3.3.4 \\
+	%& & R0F3.3.4 \\
+	& & R0F3.3.4.1 \\
+	& & R0F3.3.4.2 \\
 	& & R0F5.1.1 \\
 	& & R0F5.1.2 \\
 	& & R0F5.1.3 \\
@@ -264,25 +261,23 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 	UC5.1.5 & Rimozione utente & R0F1.3 \\  
 	UC5.2 & Gestione anni accademici &  R0F3 \\  
 	UC5.2.1 & Aggiunta \citGloss{anno accademico} &  R0F3.1 \\  
-	UC5.2.2 & Visualizzazione lista di tutti gli anni accademici & R0F3.2 \\  
-	UC5.2.3 & Aggiunta di un \citGloss{corso di laurea} ad un \citGloss{anno accademico} & R0F3.3 \\  
-	UC5.2.4 & Visualizzazione messaggio anno malformato & R0F3.1 \\  
-	UC5.2.5 & Visualizzazione messaggio di \citGloss{anno accademico} già presente & R0F3.1 \\  
-	UC5.2.6 & Visualizzazione messaggio anno non compilato &  R0F3.1 \\  
-	UC5.3 & Gestione corsi di laurea &  R0F3.4 \\   
-	UC5.3.1 & Creazione \citGloss{corso di laurea} &  R0F3.4.1 \\  
-	UC5.3.2 & Visualizzazione errore mancata compilazione campi & R0F3.4.1 \\  
-	UC5.3.3 & Visualizzazione lista completa dei corsi &  R0F3.4.2 \\  
-	UC5.3.4 & Visualizzazione lista corsi di laurea per \citGloss{anno accademico} & R0F3.4.2  \\  
-	UC5.3.5 & Crea un esame nel corso &  R0F3.4.3\\  
-	UC5.3.6 & Visualizzazione errore campi non compilati nella creazione dell'esame & R0F3.4.3  \\  
-	UC5.3.7 & Visualizzazione lista esami per \citGloss{corso di laurea} & R0F3.4.5 \\  
-	UC5.3.8 & Visualizzazione lista esami &  R0F3.4.5 \\  
-	UC5.3.9 & Aggiunta esame a corso &  R0F3.4.4 \\  
-	%UC5.3.10 & Rimozione esame da un corso &  R0F3.4.5 \\  
-	UC5.3.10 & Associazione professore a esame & R0F3.4.5.2 \\  
+	UC5.2.2 & Visualizzazione lista di tutti gli anni accademici & R0F3.2 \\   
+	UC5.2.3 & Visualizzazione messaggio anno malformato & R0F3.1 \\  
+	UC5.2.4 & Visualizzazione messaggio di \citGloss{anno accademico} già presente & R0F3.1 \\  
+	UC5.2.5 & Visualizzazione messaggio anno non compilato &  R0F3.1 \\  
+	UC5.3 & Gestione corsi di laurea &  R0F3.3 \\   
+	UC5.3.1 & Creazione \citGloss{corso di laurea} &  R0F3.3.1 \\  
+	UC5.3.2 & Visualizzazione errore mancata compilazione campi & R0F3.3.1 \\  
+	UC5.3.3 & Visualizzazione lista completa dei corsi &  R0F3.3.2 \\  
+	UC5.3.4 & Visualizzazione lista corsi di laurea per \citGloss{anno accademico} & R0F3.3.2  \\  
+	UC5.3.5 & Crea un esame nel corso &  R0F3.3.3\\  
+	UC5.3.6 & Visualizzazione errore campi non compilati nella creazione dell'esame & R0F3.3.3  \\  
+	UC5.3.7 & Visualizzazione lista esami per \citGloss{corso di laurea} & R0F3.3.4 \\  
+	UC5.3.8 & Visualizzazione lista esami &  R0F3.3.4 \\  
+	%UC5.3.10 & Rimozione esame da un corso &  R0F3.3.4 \\  
+	UC5.3.10 & Associazione professore a esame & R0F3.3.4.2 \\  
 	%UC5.3.12 & Rimozione \citGloss{corso di laurea} da \citGloss{anno accademico} & R2F34 \\  
-	UC5.3.11 & Visualizzazione dettagli esame & R0F3.4.5.1 \\  
+	UC5.3.9 & Visualizzazione dettagli esame & R0F3.3.4.1 \\  
 	%-----------------------------------------------------
 	UC6 & Gestione aspetti relativi agli esami & R0F4 \\  
 	UC6.1 & Visualizzazione lista degli esami & R0F4.1 \\  
@@ -360,54 +355,46 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 	R0F3.1 &  L'amministratore può aggiungere un \citGloss{anno accademico} & \makecell[tl]{
 		Capitolato \\ 
 		UC5.2.1 \\ 
+		UC5.2.3 \\ 
 		UC5.2.4 \\ 
-		UC5.2.5 \\ 
-		UC5.2.6
+		UC5.2.5
 	} \\  
 	R0F3.2 &  L'amministratore può ottenere una lista di gli anni accademici & \makecell[tl]{
 		Interno \\ 
 		UC5.2.2
 	} \\  
-	R0F3.3 &  L'amministratore può aggiungere dei corsi di laurea ad ogni \citGloss{anno accademico} & \makecell[tl]{
-		Capitolato \\ 
-		UC5.2.3
-	} \\  
 	%R2F3.4 &  L'amministratore può rimuovere corsi di laurea da ogni \citGloss{anno accademico} & Interno} \\  
-	R0F3.4 &  L'amministratore può gestire i corsi di laurea relativi agli anni accademici & \makecell[tl]{
+	R0F3.3 &  L'amministratore può gestire i corsi di laurea relativi agli anni accademici & \makecell[tl]{
 		Capitolato \\ 
 		UC5.3 
 	} \\  
-	R0F3.4.1 &  L'amministratore può creare un nuovo \citGloss{corso di laurea} a partire da un \citGloss{anno accademico} & \makecell[tl]{
+	R0F3.3.1 &  L'amministratore può creare un nuovo \citGloss{corso di laurea} a partire da un \citGloss{anno accademico} & \makecell[tl]{
 		Capitolato \\ 
 		UC5.3.1 \\  
 		UC5.3.2
 	} \\  
-	R0F3.4.2 &  L'amministratore può ottenere una lista di tutti i corsi di laurea dato un \citGloss{anno accademico} & \makecell[tl]{
+	R0F3.3.2 &  L'amministratore può ottenere una lista di tutti i corsi di laurea dato un \citGloss{anno accademico} & \makecell[tl]{
 		Interno \\ 
 		UC5.3.3 \\  
 		UC5.3.4
 	} \\  
-	R0F3.4.3 &  L'amministratore può creare nuovi esami & \makecell[tl]{
+	R0F3.3.3 &  L'amministratore può creare nuovi esami & \makecell[tl]{
 		Capitolato \\ 
 		UC5.3.5 \\  
 		UC5.3.6
-	} \\  
-	R0F3.4.4 &  L'amministratore può aggiungere degli esami ad ogni \citGloss{corso di laurea} & \makecell[tl]{
-		Capitolato \\ 
-		UC5.3.9
-	} \\  
-	%R0F3.4.5 &  L'amministratore può rimuovere degli esami da un \citGloss{corso di laurea} & Interno \\ UC5.3.10} \\  
-	R0F3.4.5 &  L'amministratore può ottenere una lista di tutti gli esami dato il \citGloss{corso di laurea} & \makecell[tl]{
+	} \\ 
+	%R0F3.3.4 &  L'amministratore può rimuovere degli esami da un \citGloss{corso di laurea} & Interno \\ UC5.3.10} \\  
+	R0F3.3.4 &  L'amministratore può ottenere una lista di tutti gli esami dato il \citGloss{corso di laurea} & \makecell[tl]{
 		Interno \\ 
 		UC5.3.7 \\ 
 		UC5.3.8
 	} \\  
-	R0F3.4.5.1 &  L'amministratore può ottenere l'informazione di quale professore è assegnato a un determinato esame & \makecell[tl]{
+	R0F3.3.4.1 &  L'amministratore può ottenere l'informazione di quale professore è assegnato a un determinato esame & \makecell[tl]{
 		Interno
 	} \\  
-	R0F3.4.5.2  &  L'amministratore può associare ad un esame il relativo professore & \makecell[tl]{
+	R0F3.3.4.2  &  L'amministratore può associare ad un esame il relativo professore & \makecell[tl]{
 		Interno \\ 
-		UC5.3.11
+		UC5.3.9
 	} \\  
 	R0F4 &  Un professore può gestire gli esami a lui assegnati & \makecell[tl]{
 		Capitolato \\ 

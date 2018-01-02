@@ -12,7 +12,6 @@
 *.cb2
 *.gz
 *.pdf
-*.tex
 *.glo
 *.ist
 *.acn

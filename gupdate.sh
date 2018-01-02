@@ -39,7 +39,7 @@ for term in "${TERMS[@]}"; do
   #eg \somecommand{requisiti} non viene toccato
   #In questo modo il comando può essere eseguito più volte senza paura di annidare sostituzioni
   #In questo modo evitiamo di mettere la g pedice in sezioni,capitoli, label, etc.
-  find . -name "*.tex" -not -path "*$GLOSSARYDIR*" | xargs sed -i "/[\t|' ']*\\\\.*[{[].*$term.*}/I!s/$term/\\\\$GLOSSARYCOMMAND\{$term\}/gI" #$file
+  find . -name "*.tex" -not -path "*$GLOSSARYDIR*" | xargs sed -i "/\([\t|' ']*\\\\.*[{[].*$term.*}\)\|\(.*[a-z]$term.*\)\|\(.*$term[a-z].*\)/I!s/$term/\\\\$GLOSSARYCOMMAND\{$term\}/gI" #$file
 <<COMMENT
       SPIEGAZIONE COMANDO SOPRA
       find ... -> trova il nome di tutti i file .tex ricorsivamente nella
@@ -50,7 +50,7 @@ for term in "${TERMS[@]}"; do
       e il termine con cui sostituire il contenuto tornato nel formato:
       s/regex/termine/g
       Per questo compito necessitiamo di due componenti separate:
-      1)/[\t|' ']*\\\\.*[{[].*$term.*}/I!
+      1)/\([\t|' ']*\\\\.*[{[].*$term.*}\)\|\(.*[a-z]$term.*\)\|\(.*$term[a-z].*\)/I!
       2)s/$term/\\\\$GLOSSARYCOMMAND\{$term\}/gI
       La 1 viene lanciata per prima e indica quali linee non considerare (grazie a "!"),
       la seconda esegue il find&replace sulle righe considerate, in particolare:
@@ -69,13 +69,19 @@ for term in "${TERMS[@]}"; do
       .* --> 0 o più caratteri qualsiasi, seguita da
       [{[] -> una parentesi graffa o quadra aperta, seguita da
       } --> una parentesi graffa chiusa (*)
+      \| --> oppure
+      .*[a-z]$term.* --> le stringhe che non abbiano lettere immediatamente prima al valore ricercato
+      \| --> oppure
+      .*$term[a-z].* --> le stringhe che non abbiano lettere immediatamente dopo al valore rircercato
       / --> fine
+
       ---OPZIONI DI RICERCA---
       I --> case insensitive
       ! --> considera le linee non contenenti questa stringa
       ---COMMENTI---
       * non riesco a dirgli di prendere anche quella quadra, ma sembra funzionare
         siccome i comandi latex con le quadre sono seguiti da graffe
+      I costrutti \(...\) indicano la parentesizzazione
       ----------------------------------2--------------------------------------
       s/ --> trova le stringhe costituite da
       $term --> il termine esaminato

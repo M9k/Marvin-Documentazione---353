@@ -2,9 +2,6 @@
 
 \begin{document}
 	
-	%TODO come gestire riferimenti  
-	%TODO footnote messi come riferimenti informativi
-	
 	\chapter{Processi di supporto}
 	
 	\section{Documentazione}
@@ -141,7 +138,7 @@
 			\begin{itemize}
 				\item Devono presentare una numerazione progressiva all'interno del documento;
 				\item Devono essere scritte solo una volta;
-				\item Il primo carattere di ogni nota deve essere maiuscolo. Fanno eccezione i casi in cui la parola sia un acronimo.
+				\item Il primo carattere di ogni nota deve essere maiuscolo. Fanno eccezione i casi in cui la parola sia un acronimo oppure un link esterno.
 			\end{itemize}
 			 
 			\item \textbf{Formati:}
@@ -150,6 +147,9 @@
 				\item Grassetto: lo stile grassetto va utilizzato per i titoli dei paragrafi e per i titoli degli elementi di un elenco; 
 				\item URI: lo stile utilizzato per un URI è il corsivo di colore blu, in modo da mantenere una continuità con lo standard web attuale, utilizzabile col comando personalizzato \citGloss{LaTeX} \texttt{\textbackslash nURI}.
 			\end{itemize}
+			
+			\item \textbf{Riferimenti informativi:}
+			Ogni riferimento a prodotti, software, guide, libri esterno al progetto deve essere indicato tramite un'annotazione a piè di pagina.			
 			
 			\item \textbf{Ruoli/Fasi/Revisioni di Progetto:} sono stati realizzati dei comandi personalizzati per poter richiamare la visualizzazione dei ruoli di progetto, per indicare le fasi e le revisioni di progetto secondo comandi unificati per tutti i documenti facilitando il lavoro dei Redattori.
 			
@@ -187,11 +187,11 @@
 	La stesura dei documenti deve essere effettuata utilizzando il linguaggio di markup \citGloss{LaTeX}  e l'ambiente \citGloss{TexStudio}\footnote{\nURI{https://www.texstudio.org/}} con dizionario italiano ed inglese installati.
 	
 	\section{Qualità}
-	\subsection{Descrizione}%TODO
-	Questa sezione descrive le classificazioni, procedure per il calcolo e metriche aggiuntive.
+	\subsection{Descrizione}
+	Questa sezione descrive le classificazioni, procedure per il calcolo delle metriche descritte nel \pdq{}.
 	
 	\subsection{Classificazione delle metriche}
-	Per garantire la qualità del lavoro gli Amministratori hanno definito delle metriche, riportandole all'interno del Piano di qualifica, che devono però rispettare la seguente notazione \textbf{M[categ][macrocateg][num]}	dove:
+	Per garantire la qualità del lavoro gli Amministratori hanno definito delle metriche, riportandole all'interno del \pdq{}, che devono però rispettare la seguente notazione \textbf{M[categ][macrocateg][num]}	dove:
 	\begin{itemize}
 		\item \textbf{categ:} indica la categoria della metrica riferendosi a prodotti o processi assume i valori:
 		\begin{itemize}
@@ -206,20 +206,15 @@
 		\item \textbf{num:} indica il codice univoco della metrica come numero intero a tre cifre incrementale a partire da 1.
 	\end{itemize}	
 	
-	\subsection{Metriche aggiuntive interne}
-	\begin{itemize}
-		\item \textbf{Metriche per i feedback di miglioramento:} i feedback permettono il miglioramento dello svolgimento dei differenti ruoli all'interno del progetto. 
-	\end{itemize}
-
-	\subsection{Procedure}
-
+	%\subsection{Procedure}
+	%TODO aggiunta delle procedure calcolo metriche
 	
 	\section{Configurazione}
 	
 	\subsection{Controllo di versione}
 	
 	\subsubsection{Descrizione}
-	Per le parti versionabili del progetto e per i documenti ufficiali si è scelto l'utilizzo della tecnologia Git, ospitata sul servizio di hosting \citGloss{GitHub}.
+	Per le parti versionabili del progetto e per i documenti ufficiali si è scelto l'utilizzo della tecnologia Git.
 	La condivisione dei documenti informali e delle parti non versionabili è invece effettuata tramite l'uso di una cartella Google Drive condivisa.
 	
 	\subsubsection{Struttura delle repository}
@@ -265,6 +260,12 @@
 		\item Dare il comando "git commit" e successivamente riassumere le modifiche effettuate, in caso sia utile si può aggiungere un messaggio esteso di descrizione;
 		\item Dare il comando "git push" per completare l'operazione e fornire le modifiche agli altri membri del gruppo.
 	\end{itemize}
+	\subsection{Strumenti}
+	\begin{itemize}
+		\item \textbf{Client git:} verrano usati due client secondo le preferenze personali di ogni membro del gruppo tra Github Desktop\footnote{\nURI{https://desktop.github.com/}} e GitKraken\footnote{\nURI{https://www.gitkraken.com/}}, gratuito con licenza studenti;
+		\item \textbf{Server git:} sarà utilizzato Github\footnote{\nURI{https://github.com/}} per affidabilità ed integrazione con strumenti esterni come \citGloss{Travis} facilitata. Era stato inoltre suggerito dal Referente oltre ad essere già utilizzato dalla maggior parte dei membri del gruppo.
+	\end{itemize}
+
 	
 	\section{Verifica}
 	
@@ -293,11 +294,11 @@
 	\subsection{Strumenti}
 	\begin{itemize}
 		\item \textbf{Software:} verranno usati per la verifica Mocha ed Enzyme per React, Jest per Redux, mentre per i contratti Solidity useremo Mocha e Chai ma verranno attualizzati e confermati per la Technology \citGloss{baseline};
-		\item \textbf{Documenti:} Per il controllo dei documenti prodotti utilizzeremo le funzionalità di Texstudio assieme a script bash eseguiti automaticamente da \citGloss{Travis} per controllare che non ci siano errori nei file LaTex, per assicurarsi che il Glossario non presenti mancanze o duplicati e verificare l'assenza di errori ortografici;
+		\item \textbf{Documenti:} per il controllo dei documenti prodotti utilizzeremo le funzionalità di Texstudio assieme a script bash eseguiti automaticamente da \citGloss{Travis} per controllare che non ci siano errori nei file LaTex, per assicurarsi che il Glossario non presenti mancanze o duplicati e verificare l'assenza di errori ortografici;
 		\item \textbf{Gestione processi e feedback:} è stato scelto di utilizzare il sistema integrato di issues\footnote{\nURI{https://guides.github.com/features/issues/}} presente su \citGloss{GitHub} per permettere un dialogo maggiore per ogni singola issue. 
-		\item \textbf{Gestione tasklist:} Todo353swe\footnote{\nURI{todo353swe.netlify.com}} semplice sito per gestione tasklist realizzato dai membri del gruppo per utilizzo interno.
-		\item \textbf{Analisi dinamica locale:} è stato individuato un plugin per Webstorm SonarLint\footnote{\nURI{https://plugins.jetbrains.com/plugin/7973-sonarlint}} come possibile soluzione iniziale da verificare, per risolvere tutte le necessità di analisi del codice locale. Maggiori dettagli sarannò introdotti durante la creazione dei Proof of concept per la Technology \citGloss{baseline}.
-		\item \textbf{Analisi dinamica remota:} è stato individuato Sonarqube come possibile soluzione iniziale da accertare, per risolvere tutte le necessità di analisi del codice del gruppo. Maggiori dettagli sarannò introdotti durante la creazione dei Proof of concept per la Technology \citGloss{baseline}.
+		\item \textbf{Gestione tasklist:} Todo353swe\footnote{\nURI{https://todo353swe.netlify.com}} semplice sito per gestione tasklist realizzato dai membri del gruppo per utilizzo interno.
+		\item \textbf{Analisi dinamica locale:} è stato individuato un plugin per Webstorm SonarLint\footnote{\nURI{https://plugins.jetbrains.com/plugin/7973-sonarlint}} come soluzione iniziale da verificare, per risolvere tutte le necessità di analisi del codice locale. Maggiori dettagli sarannò forniti durante la creazione dei Proof of concept per la Technology \citGloss{baseline}.
+		\item \textbf{Analisi dinamica remota:} è stato individuato Sonarqube\footnote{\nURI{https://www.sonarqube.org/}} come soluzione iniziale da accertare, per risolvere tutte le necessità di analisi del codice del gruppo. Maggiori dettagli sarannò introdotti durante la creazione dei Proof of concept per la Technology \citGloss{baseline}.
 	\end{itemize}
 
 

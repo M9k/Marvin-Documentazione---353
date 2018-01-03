@@ -43,8 +43,6 @@ I \citGloss{requisiti} vengono classificati ed assegnati loro un identificativo 
 	R0F3 & Obbligatorio & L'amministratore può gestire gli anni accademici & Capitolato \\  
 	R0F3.1 & Obbligatorio & L'amministratore può aggiungere un \citGloss{anno accademico} & Capitolato \\  
 	R0F3.2 & Obbligatorio & L'amministratore può ottenere una lista di gli anni accademici & Interno \\  
-
-	%R2F3.4 & Opzionale & L'amministratore può rimuovere corsi di laurea da ogni \citGloss{anno accademico} & Interni \\  
 	R0F3.3 & Obbligatorio & L'amministratore può gestire i corsi di laurea relativi agli anni accademici & Capitolato \\  
 	R0F3.3.1 & Obbligatorio & L'amministratore può creare un nuovo \citGloss{corso di laurea} a partire da un \citGloss{anno accademico} & Capitolato \\  
 	R0F3.3.2 & Obbligatorio & L'amministratore può ottenere una lista di tutti i corsi di laurea dato un \citGloss{anno accademico} & Interno \\  
@@ -73,9 +71,9 @@ I \citGloss{requisiti} vengono classificati ed assegnati loro un identificativo 
 	R0F8.1 & Obbligatorio & La registrazione necessita di nome, cognome, categoria (studente o professore) e selezione del corso di laura se si tratta di uno studente & Capitolato \\  
 	R1F9 & Desiderabile & L'utente può leggere una breve guida sull'uso di MetaMask e sul pagamento delle operazioni & Interno \\  	
 	R0F10 & Obbligatorio & L'utente deve poter vedere preventivamente il costo in \citGloss{Gas}, \citGloss{Ether} e Euro dell'operazione che sta per eseguire & Capitolato \\  	
-	R0F11 & Obbligatorio & L'università deve poter gestire gli amministratori & VE171209 \\   %TODO: controllare se il nome del verbale coindice
-	R0F11.1 & Obbligatorio & L'università deve poter aggiungere amministratori & VE171209 \\   %TODO: controllare se il nome del verbale coindice
-	R0F11.2 & Obbligatorio & L'università deve poter rimuovere amministratori & VE171209 \\   %TODO: controllare se il nome del verbale coindice
+	R0F11 & Obbligatorio & L'università deve poter gestire gli amministratori & VER-2017-12-08 \\
+	R0F11.1 & Obbligatorio & L'università deve poter aggiungere amministratori & VER-2017-12-08 \\
+	R0F11.2 & Obbligatorio & L'università deve poter rimuovere amministratori & VER-2017-12-08 \\
 	R0F11.3 & Obbligatorio & L'università deve poter ottenere la lista di tutti gli amministratori & Interno \\
 	\hiderowcolors
 	\caption{Tabella dei requisiti funzionali}
@@ -83,8 +81,7 @@ I \citGloss{requisiti} vengono classificati ed assegnati loro un identificativo 
 
 \subsection{Requisiti di qualità}
 
-\label{table:Tabella requisiti di qualita'} %TODO: cercare un modo di inserire à nei label
-%TODO: concordare notazione dei verbali
+\label{table:Tabella requisiti di qualita'} %TODO \`{a} non funziona
 \rowcolors{2}{CRighePari}{CRigheDispari}
 \renewcommand*{\arraystretch}{1.2}
 \begin{longtable}[H]{p{2.5cm}p{2.5cm}p{5cm}p{2cm}}
@@ -93,11 +90,11 @@ I \citGloss{requisiti} vengono classificati ed assegnati loro un identificativo 
 	\endhead
 	R0Q1 & Obbligatorio & La progettazione e il codice devono seguire le norme e le metriche riportate nei documenti allegati X e Y & Interno \\   %TODO: indicare allegati
 	R0Q2 & Obbligatorio & L'approccio di scrittura di \citGloss{JavaScript} deve essere promise Centric Approach & Capitolato \\  
-	R0Q2.1 & Obbligatorio & L'applicativo non deve fare uso di callback in presenza di alternative alle ultime & VE171122 \\  
+	R0Q2.1 & Obbligatorio & L'applicativo non deve fare uso di callback in presenza di alternative alle ultime & VER-2017-11-22 \\  
 	R0Q3 & Obbligatorio & Il codice \citGloss{JavaScript} deve attenersi al \citGloss{airbnb} \citGloss{JavaScript} style guide & Capitolato \\  
 	R0Q4 & Obbligatorio & Lo sviluppo deve essere supportato dall'utilizzo del tool ESLint & Capitolato \\  
-	R0Q5 & Obbligatorio & Dovrà essere fornito un manuale utente in lingua inglese che tratterà l'uso da parte di studenti e professori & VE171122 \\  
-	R0Q6 & Obbligatorio & Dovrà essere fornito un manuale di deploy e di utilizzo da parte degli amministratori in lingua inglese & VE171122 \\   %TODO controllare sigla del verbale
+	R0Q5 & Obbligatorio & Dovrà essere fornito un manuale utente in lingua inglese che tratterà l'uso da parte di studenti e professori & VER-2017-11-22 \\  
+	R0Q6 & Obbligatorio & Dovrà essere fornito un manuale di deploy e di utilizzo da parte degli amministratori in lingua inglese & VER-2017-11-22 \\
 	R0Q7 & Obbligatorio & Il codice sorgente deve essere pubblicato sulla piattaforma \citGloss{GitHub}, BitBucket o GitLab & Capitolato \\  
 	R0Q8 & Obbligatorio & Il codice deve attenersi il più possibile alle guide linea de "App a 12 Fattori" & Capitolato \\  
 	\hiderowcolors
@@ -107,7 +104,6 @@ I \citGloss{requisiti} vengono classificati ed assegnati loro un identificativo 
 \subsection{Requisiti di vincolo}
 
 \label{table:Tabella requisiti di vincolo}
-
 \rowcolors{2}{CRighePari}{CRigheDispari}
 \renewcommand*{\arraystretch}{1.2}
 \begin{longtable}[H]{p{2.5cm}p{2.5cm}p{5cm}p{2cm}}
@@ -155,84 +151,84 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 	\rowcolor{CHeader} 
 	\color{CHeaderText} \textbf{Fonte} & \color{CHeaderText} \textbf{Nome fonte} & \color{CHeaderText} \textbf{Requisiti} \\  
 	\endhead
-	Capitolato & & R0F2.2 \\
-	& & R0F3 \\
-	& & R0F3.1 \\
-	& & R0F3.3 \\
-	& & R0F3.3.1 \\
-	& & R0F3.3.3 \\
-	& & R0F3.3.4 \\
-	& & R0F4 \\
-	& & R0F4.1 \\
-	& & R0F4.2 \\
-	& & R0F4.3 \\
-	& & R0F5 \\
-	& & R0F5.1 \\
-	& & R0F5.2 \\
-	& & R0F5.2.1 \\
-	& & R0F5.2.2 \\
-	& & R0F7 \\
-	& & R0F8 \\
-	& & R0F8.1 \\
-	& & R0F10 \\
-	& & R0Q2 \\
-	& & R0Q3 \\
-	& & R0Q4 \\
-	& & R0Q7 \\
-	& & R0Q8 \\
-	& & R0V1 \\
-	& & R0V1.1 \\
-	& & R0V1.2 \\
-	& & R0V1.3 \\
-	& & R0V1.4 \\
-	& & R0V1.5 \\
-	& & R0V1.6 \\
-	& & R0V1.7 \\
-	& & R0V2 \\
-	& & R0V3 \\
-	& & R0V3.1 \\
-	& & R0V3.2 \\
-	& & R2V3.3 \\
-	& & R0V4 \\
-	& & R1V7 \\
-	& & R0V8 \\
-	& & R0V9 \\
-	& & R0V10 \\  
+	\rowcolor{CRighePari}
+	Capitolato & & \makecell[tl]{ R0F2.2 \\
+	 R0F3 \\
+	 R0F3.1 \\
+	 R0F3.3 \\
+	 R0F3.3.1 \\
+	 R0F3.3.3 \\
+	 R0F3.3.4 \\
+	 R0F4 \\
+	 R0F4.1 \\
+	 R0F4.2 \\
+	 R0F4.3 \\
+	 R0F5 \\
+	 R0F5.1 \\
+	 R0F5.2 \\
+	 R0F5.2.1 \\
+	 R0F5.2.2 \\
+	 R0F7 \\
+	 R0F8 \\
+	 R0F8.1 \\
+	 R0F10 \\
+	 R0Q2 \\
+	 R0Q3 \\
+	 R0Q4 \\
+	 R0Q7 \\
+	 R0Q8 } \\
+	 & & \makecell[tl]{ R0V1 \\
+	 R0V1.1 \\
+	 R0V1.2 \\
+	 R0V1.3 \\
+	 R0V1.4 \\
+	 R0V1.5 \\
+	 R0V1.6 \\
+	 R0V1.7 \\
+	 R0V2 \\
+	 R0V3 \\
+	 R0V3.1 \\
+	 R0V3.2 \\
+	 R2V3.3 \\
+	 R0V4 \\
+	 R1V7 \\
+	 R0V8 \\
+	 R0V9 \\
+	 R0V10 } \\
 	
-	Interno & & R0F1 \\
-	& & R0F1.1 \\
-	& & R0F1.2 \\
-	& & R0F1.3 \\
-	& & R0F1.4 \\
-	& & R0F2 \\
-	& & R0F2.1 \\
-	& & R0F3.2 \\
-	& & R0F3.3 \\
-	& & R0F3.3.2 \\
-	& & R0F3.3.4 \\
-	%& & R0F3.3.4 \\
-	& & R0F3.3.4.1 \\
-	& & R0F3.3.4.2 \\
-	& & R0F5.1.1 \\
-	& & R0F5.1.2 \\
-	& & R0F5.1.3 \\
-	& & R0F5.1.4 \\
-	& & R0F5.1.5 \\
-	& & R0F6 \\
-	& & R0F6.1 \\
-	& & R1F9 \\
-	& & R0F11.3 \\
-	& & R0Q1 \\
-	& & R0V5 \\
-	& & R0V6 \\  
+	Interno & &  \makecell[tl]{ R0F1 \\
+	 R0F1.1 \\
+	 R0F1.2 \\
+	 R0F1.3 \\
+	 R0F1.4 \\
+	 R0F2 \\
+	 R0F2.1 \\
+	 R0F3.2 \\
+	 R0F3.3 \\
+	 R0F3.3.2 \\
+	 R0F3.3.4 \\
+	 R0F3.3.4.1 \\
+	 R0F3.3.4.2 \\
+	 R0F5.1.1 \\
+	 R0F5.1.2 \\
+	 R0F5.1.3 \\
+	 R0F5.1.4 \\
+	 R0F5.1.5 \\
+	 R0F6 \\
+	 R0F6.1 \\
+	 R1F9 \\
+	 R0F11.3 \\
+	 R0Q1 \\
+	 R0V5 \\
+	 R0V6 } \\  
 	
-	VE171122 & Verbale & R0Q2.1 \\
-	& & R0Q5 \\
-	& & R0Q6 \\  
+	VER-2017-11-22 & Verbale &  \makecell[tl]{ R0Q2.1 \\
+	 R0Q5 \\
+	 R0Q6 } \\  
 	
-	VE171209 & Verbale & R0F11 \\
-	& & R0F11.1 \\
-	& & R0F11.2 \\  
+	VER-2017-12-08 & Verbale & \makecell[tl]{ R0F11 \\
+	 R0F11.1 \\
+	 R0F11.2 } \\  
 	
 	UC1 & Breve guida & R1F9 \\  
 	UC2 & Login & R0F6 \\  
@@ -362,8 +358,7 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 	R0F3.2 &  L'amministratore può ottenere una lista di gli anni accademici & \makecell[tl]{
 		Interno \\ 
 		UC5.2.2
-	} \\  
-	%R2F3.4 &  L'amministratore può rimuovere corsi di laurea da ogni \citGloss{anno accademico} & Interno} \\  
+	} \\ 
 	R0F3.3 &  L'amministratore può gestire i corsi di laurea relativi agli anni accademici & \makecell[tl]{
 		Capitolato \\ 
 		UC5.3 
@@ -382,8 +377,7 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 		Capitolato \\ 
 		UC5.3.5 \\  
 		UC5.3.6
-	} \\ 
-	%R0F3.3.4 &  L'amministratore può rimuovere degli esami da un \citGloss{corso di laurea} & Interno \\ UC5.3.10} \\  
+	} \\  
 	R0F3.3.4 &  L'amministratore può ottenere una lista di tutti gli esami dato il \citGloss{corso di laurea} & \makecell[tl]{
 		Interno \\ 
 		UC5.3.7 \\ 
@@ -491,18 +485,18 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 		UC9
 	} \\  
 	R0F11 &  L'università deve poter gestire gli amministratori & \makecell[tl]{
-		VE171209 \\
+		VER-2017-12-08 \\
 		UC8
 	} \\  
 	R0F11.1 &  L'università deve poter aggiungere amministratori & \makecell[tl]{
-		VE171209 \\
+		VER-2017-12-08 \\
 		UC8.1 \\
 		UC8.1.1 \\ 
 		UC8.1.2 \\
 		UC8.1.3
 	} \\  
 	R0F11.2 &  L'università deve poter rimuovere amministratori & \makecell[tl]{
-		VE171209 \\
+		VER-2017-12-08 \\
 		UC8.3
 	} \\  
 	R0F11.3 &  L'università deve poter ottenere la lista di tutti gli amministratori & \makecell[tl]{
@@ -516,7 +510,7 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 		Capitolato
 	} \\  
 	R0Q2.1 &  L'applicativo non deve fare uso di callback in presenza di alternative alle ultime & \makecell[tl]{
-		VE171122
+		VER-2017-11-22
 	} \\  
 	R0Q3 &  Il codice \citGloss{JavaScript} deve attenersi al \citGloss{AirBNB} \citGloss{JavaScript} style guide & \makecell[tl]{
 		Capitolato
@@ -525,10 +519,10 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 		Capitolato
 	} \\  
 	R0Q5 &  Dovrà essere fornito un manuale utente in lingua inglese che tratterà l'uso da parte di studenti e professori & \makecell[tl]{
-		VE171122
+		VER-2017-11-22
 	} \\  
 	R0Q6 &  Dovrà essere fornito un manuale di deploy e di utilizzo da parte degli amministratori in lingua inglese & \makecell[tl]{
-		VE171122
+		VER-2017-11-22
 	} \\  
 	R0Q7 &  Il codice sorgente deve essere pubblicato sulla piattaforma \citGloss{GitHub}, BitBucket o GitLab & \makecell[tl]{
 		Capitolato
@@ -608,7 +602,7 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 \begin{longtable}[H]{p{2.8cm}p{2.9cm}p{2.9cm}p{2.9cm}p{1.5cm}}
 	\rowcolor{CHeader}
 	\color{CHeaderText} \textbf{Tipologia} & \color{CHeaderText} \textbf{0 Obbligatori} & \color{CHeaderText} \textbf{1 Desiderabili} & \color{CHeaderText} \textbf{2 Opzionali} & \color{CHeaderText} \textbf{Totale} \\  
-	Funzionali & 45 & 1 & 1 & 47 \\  
+	Funzionali & 42 & 1 & 0 & 43 \\  
 	Di qualità & 9 & 0 & 0 & 9 \\  
 	Di vincolo & 18 & 1 & 1 & 20 \\  
 	Prestazionali & 0 & 0 & 0 & 0 \\  

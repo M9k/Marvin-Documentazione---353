@@ -5,32 +5,33 @@
 \chapter{Specifica dei test}
 
 \section{Scopo}
+Per garantire la maggiore rilevazione di errori durante la fase di sviluppo, il team porrà grande attenzione sull'analisi dinamica del codice: ovvero l'esecuzione di test automatici. \\
+Durante la fase di codifica, programmatori e verificatori seguiranno la filosofia TDD in tutte le sue varianti (ATDD e BDD) per garantire il corretto sviluppo dell'applicativo: verranno prima scritti i test e poi il codice necessario per soddisfarli.
 
 \section{Tipi di test}
-Sono stati individuati quattro livelli di testing e sono rispettivamente:
-\begin{itemize}
-	
-	\item Test di unità [TU]: con questa tipologia di test si cerca di verificare la più piccola parte di lavoro prodotta da un programmatore. Questo si traduce tendenzialmente a verificare i metodi e le funzioni scritte;
-	
-	\item Test di integrazione [TI]: con questa tipologia di test si cerca di verificare le componenti
-	di sistema;
-	
-	\item Test di sistema [TS]: con questa tipologia di test si cerca di verificare che il comportamento e il funzionamento dell’architettura siano corretti;
-	
-	\item Test di validazione [TV]: con questa tipologia di test si vuole verificare che il lavoro prodotto soddisfi quanto richiesto dal proponente.
+Sono stati individuate due macro categorie di test.
 
+\subsection{Test di modulo}
+I test appartenenti a questa categoria mirano alla verifica della logica del software e verranno scritti ed eseguiti dai programmatori, il loro successo costituirà vincolo per poter consegnare il codice all'interno del repository. \\
+Si dividono in:
+\begin{itemize}
+	\item \textbf{Test di unità [TU]}: Con questa tipologia si cerca di verificare la più piccola parte di lavoro prodotta da un programmatore, corrispondente alla più piccola unità di logica del prodotto, che può essere una singola classe, metodo o funzione oppure un insieme di essi. \\
+	Verranno sviluppati test black-box per testare le funzionalità delle unità e test white-box per verificarne la struttura;
+	\item \textbf{Test di integrazione[TI]}:Con questa categoria si cerca di verificare l'integrazione tra le unità logiche che formano i vari componenti del sistema.\\
+	La tecnica scelta per testare l'integrazione è quella dal basso verso l'alto: si testano prima le parti con minore dipendenza funzionale e con maggiore funzionalità, per poi risalire l'albero delle dipendenze.\\
 \end{itemize}
 
-\section{Test di Validazione}
-	\subsection{caratteristiche e organizzazione}
-	%es. TV[tiporequisiti][id][importanza]
-	\subsection{tabella test}
-	%es. tabella di tutti i test TV con formato 3 colonne come parametri di un TV 
-	
-\section{Test di Sistema}
-	
-\section{Test di integrazione}
+\subsection{Test ad alto livello}
+I test appartenenti a questa categoria mirano alla verifica delle funzionalità del sistema, si concentrano di più sul comportamento dell'applicazione e vengono gestite dal team di Quality Assurance (QA: i verificatori).
+Alcuni di questi test sono manuali e per garantirne la ripetibilità la loro organizzazione sarà gestita tramite dei tool appositi che verranno discussi in sede di technology baseline.
+\begin{itemize}
+	\item \textbf{Test Funzionali [TF]:} possono essere visti come dei test di unità ad alto livello, verificano l'implementazione delle specifiche del prodotto e si concentrano sulle funzionalità delle suddette specifiche: l'analisi della struttura è infatti relegata ai test di unità [TU] veri e propri. \\
+	Il fallimento di questi test può causare l'avvio dei test di regressione: l'esecuzione a ritroso dei test di modulo per scovare l'errore.\\
+	Questi test possono essere automatizzati e scritti dai programmatori, ma è bene affiancarli ad una revisione ed esecuzione dei verificatori;
+	\item \textbf{Test di sistema [TS]}: questa tipologia di test punta a verificare il sistema e l'architettura nella sua interezza, sono test pesanti e complessi; la loro implementazione verrà discussa in sede di technology baseline. 
+	Questi test necessitano di componenti software ma devono essere supervisionate da dei verificatori, verranno quindi eseguiti dal team di QA;
+	\item \textbf{Test di validazione [TV]}: si tratta dei test finali che valutano se il sistema sviluppato corrisponde alle richieste del proponente, godono quindi di un forte accoppiamento con i requisiti. Sono principalmente test manuali e verranno eseguiti dal team di QA, nelle fasi finali dello sviluppo verranno effettuati assieme ai proponenti per determinare la validità del prodotto.
 
-\section{Test di unità}	
+\end{itemize}	
 	
 \end{document}

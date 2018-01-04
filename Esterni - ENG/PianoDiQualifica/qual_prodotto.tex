@@ -33,9 +33,9 @@ I documenti prodotti dal gruppo \gruppo\ dovranno essere leggibili, comprensibil
 		
 \section{Qualità del software}
 \subsection{Funzionalità}
-Rappresenta la capacità del prodotto di fornire tutte le funzioni che sono state individuate attraverso l'\adr.	
+Rappresenta la capacità del prodotto di fornire tutte le funzionalità che sono state individuate attraverso l'\adr.	
 \subsubsection{Obiettivi qualità}
-Il gruppo \gruppo\ si impegnerà affinché:
+Il gruppo \gruppo\ si impegnerà per perseguire:
 \begin{itemize}
 	\item \textbf{Adeguatezza}: le funzionalità fornite siano conformi rispetto le aspettative;
 	\item \textbf{Accuratezza}: il prodotto fornisca i risultati attesi, con il livello di dettaglio richiesto. 
@@ -58,7 +58,7 @@ L'esecuzione del prodotto dovrà presentare le seguenti caratteristiche:
 \subsubsection{Metriche}
 \begin{itemize}
 	\item \textlink{MPDS004TAB}{MPDS004}{\textbf{MPDS004 Densità di failure:}} indica la percentuale di testing che si sono concluse in failure. La sua formula di misurazione è \[DF=(\frac{N_{FR}}{N_{TE}})*100\] dove $ N_{FR} $ è il numero di failure rilevati durante l'attività di testing e $ N_{TE} $ è il numero di test-case eseguiti;
-	\item \textlink{MPDS005TAB}{MPDS005}{\textbf{MPDS005 Blocco di operazioni non corrette:}} indica la percentuale di funzionalità in grado di gestire correttamente i fault che potrebbero verificarsi . La sua formula di misurazione è \[BNC=(\frac{N_{FE}}{N_{ON}})*100\] dove $ N_{FE} $ è il numero di failure evitati durante i test effettuati e $ N_{ON} $ è il numero di test-case eseguiti che prevedono l'esecuzione di operazioni non corrette, causa di possibili failure.
+	\item \textlink{MPDS005TAB}{MPDS005}{\textbf{MPDS005 Blocco di operazioni non corrette:}} indica la percentuale di funzionalità in grado di gestire correttamente i fault che potrebbero verificarsi. La sua formula di misurazione è \[BNC=(\frac{N_{FE}}{N_{ON}})*100\] dove $ N_{FE} $ è il numero di failure evitati durante i test effettuati e $ N_{ON} $ è il numero di test-case eseguiti che prevedono l'esecuzione di operazioni non corrette, causa di possibili failure.
 \end{itemize}
 \subsection{Usabilità}
 Rappresenta la capacità del prodotto di essere facilmente comprensibile e attraente in ogni sua parte per qualsiasi utente che lo andrà ad utilizzare.
@@ -73,7 +73,7 @@ Il prodotto dovrà puntare ai seguenti obiettivi di usabilità:
 \subsubsection{Metriche}
 \begin{itemize}
 	\item \textlink{MPDS006TAB}{MPDS006}{\textbf{MPDS006 Comprensibilità delle funzioni offerte:}} indica la percentuale di operazioni comprese in modo immediato dall'utente, senza la consultazione del manuale.  La sua formula di misurazione è \[CFC=(\frac{N_{FC}}{N_{FO}})*100\] dove $ N_{FC} $ è il numero di funzionalità comprese in modo immediato dall'utente durante l'attività di testing del prodotto e $ N_{FO} $ è il numero di funzionalità offerte dal sistema;
-	\item \textlink{MPDS007TAB}{MPDS007}{\textbf{MPDS007 Facilità di apprendimento delle funzionalità:}} indica il tempo medio impiegato dall'utente nell'imparare ad usare correttamente una data funzionalità. Si misura tramite un indicatore numerico, che indica i minuti impiegati da un utente per apprendere il funzionamento di una certa funzionalità;
+	\item \textlink{MPDS007TAB}{MPDS007}{\textbf{MPDS007 Facilità di apprendimento delle funzionalità:}} indica il tempo medio impiegato dall'utente nell'imparare ad usare correttamente una data funzionalità. Si misura tramite un indicatore numerico che indica i minuti impiegati da un utente per apprendere il funzionamento di una certa funzionalità;
 	\item \textlink{MPDS008TAB}{MPDS008}{\textbf{MPDS008 Consistenza operazionale in uso:}} indica la percentuale di messaggi e funzionalità offerte all'utente che rispettano le sue aspettative riguardo al comportamento del software.  La sua formula di misurazione è \[COU=(\frac{N_{MFU}}{N_{MFO}})*100\] dove $ N_{MFU} $ è il numero di messaggi e funzionalità che non rispettano le aspettative dell'utente e $ N_{MFO} $ è il numero di messaggi e funzionalità offerte dal sistema.	
 \end{itemize}	
 \subsection{Efficienza}

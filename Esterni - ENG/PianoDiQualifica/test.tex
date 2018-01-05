@@ -26,12 +26,15 @@ I test appartenenti a questa categoria mirano alla verifica delle funzionalità 
 Alcuni di questi test sono manuali e per garantirne la ripetibilità la loro organizzazione sarà gestita tramite dei tool appositi che verranno discussi in sede di technology baseline.
 \begin{itemize}
 	\item \textbf{Test Funzionali [TF]:} possono essere visti come dei test di unità ad alto livello, verificano l'implementazione delle specifiche del prodotto e si concentrano sulle funzionalità delle suddette specifiche: l'analisi della struttura è infatti relegata ai test di unità [TU] veri e propri. \\
-	Il fallimento di questi test può causare l'avvio dei test di regressione: l'esecuzione a ritroso dei test di modulo per scovare l'errore.\\ %TODO Mirco -  i test di regressione non sono quando si cambia una parte e quindi va ricontrollato tutto quello che dipende da quella parte?
 	Questi test possono essere automatizzati e scritti dai programmatori, ma è bene affiancarli ad una revisione ed esecuzione dei verificatori;
 	\item \textbf{Test di sistema [TS]}: questa tipologia di test punta a verificare il sistema e l'architettura nella sua interezza, sono test pesanti e complessi; la loro implementazione verrà discussa in sede di technology baseline. 
 	Questi test necessitano di componenti software ma devono essere supervisionate da dei verificatori, verranno quindi eseguiti dal team di QA;
 	\item \textbf{Test di validazione [TV]}: si tratta dei test finali che valutano se il sistema sviluppato corrisponde alle richieste del proponente, godono quindi di un forte accoppiamento con i requisiti. Sono principalmente test manuali e verranno eseguiti dal team di QA, nelle fasi finali dello sviluppo verranno effettuati assieme ai proponenti per determinare la validità del prodotto.
+\end{itemize}
 
-\end{itemize}	
+\subsection{Test di regressione}
+I test di regressione sono la categoria più onerosa di test: sostanzialmente si tratta di rieseguire in modo selettivo i vari test, esclusi quelli di validazione, elencati sopra.\\
+Questi test diventano necessari alla modifica di qualsiasi parte di codice: che sia una correzione di un bug o l'inserimento di una nuova funzionalità, la modifica di una parte della sorgente comporta l'esecuzione di tutti i test relativi ad essa. La motivazione di questi test è semplice: l'introduzione di modifiche all'interno della codebase è più incline all'inserimento di errori rispetto al codice già esistente.\\
+I test di modulo, essendo necessari per la consegna nel repository, verranno eseguiti automaticamente, mentre per i test ad alto livello i verificatori si impegneranno a pianificarne l'esecuzione ad ogni modifica della sorgente.
 	
 \end{document}

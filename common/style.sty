@@ -9,10 +9,8 @@
 \usepackage{geometry}
 \usepackage{fancyhdr}
 \usepackage{booktabs}
-
-
-
-%per lettere accentate
+\usepackage[table,xcdraw]{xcolor}
+\usepackage[nonumberlist, acronym, style=altlisthypergroup]{glossaries}
 \usepackage{color}
 \usepackage{ifthen}
 \usepackage[titletoc]{appendix}
@@ -27,18 +25,20 @@
 \usepackage{hhline}
 \usepackage{caption}
 \usepackage{enumitem}
+\usepackage{hyphenat}
+
+
+\pagestyle{fancy}
+
 \definecolor{tableHeader}{RGB}{211, 47, 47}
 \definecolor{tableLineOne}{RGB}{245, 245, 245}
 \definecolor{tableLineTwo}{RGB}{224, 224, 224}
 
+% Stile per intestazione tabella
 \newcommand{\tableHeaderStyle}{
     \rowfont{\leavevmode\color{white}\bfseries}
     \rowcolor{tableHeader}
 }
-
-
-\usepackage[nonumberlist]{glossaries}
-\pagestyle{fancy}
 
 \renewcommand{\chaptermark}[1]{ \markboth{#1}{} }
 \renewcommand{\sectionmark}[1]{ \markright{#1} }
@@ -69,7 +69,7 @@
 % commands for group name or email to
 \newcommand{\gruppo}{\textit{353}}
 \newcommand{\mail}[1]{\href{mailto:#1}{\texttt{#1}}}
-\newcommand{\mailleaf}{\mail{353swe@gmail.com}}
+\newcommand{\mailgroup}{\mail{353swe@gmail.com}}
 \newcommand{\progetto}{\textit{Marvin}}
 
 % commands for team members name
@@ -89,7 +89,6 @@
 
 % commands for roles and name of documents
 \newcommand{\respdiprog}{Responsabile di progetto}
-\newcommand{\resp}{Responsabile}
 
 \newcommand{\amme}{Amministratore}
 \newcommand{\ammi}{Amministratori}
@@ -117,7 +116,6 @@
 \newcommand{\ms}{\textit{Manuale sviluppatore}}
 \newcommand{\g}{\textit{Glossario}}
 \newcommand{\lettera}{\textit{Lettera di presentazione}}
-\newcommand{\tfd}{\textit{Twelve Factor Document}}
 
 %versione documenti
 \newcommand{\vruno}{\textit{ v 1.0.0}} %revisione uno RR
@@ -144,7 +142,7 @@
 }
 
 
-\newcommand{\nData}[3]{#1-#2-#3} % \nData{gg}{mm}{aaa}
+\newcommand{\nData}[3]{#1-#2-#3} % GG MM AAAA
 \newcommand{\nURI}[1]{{\color{blue}\url{#1}}}
 \newcommand{\nPath}[1]{\texttt{#1}}
 \newcommand{\nDoc}[1]{\textit{“#1”}}
@@ -161,34 +159,23 @@
 
 % document diario delle modifiche enviroment
 \newenvironment{DiarioModifiche}{
-	
 	\newgeometry{margin=3cm}
 	\begin{document}
+	{\huge \textbf{Diario delle modifiche}}\\
+		\renewcommand\arraystretch{1.2}
 		
-		\huge \bfseries Diario delle modifiche\\
-		\begin{table}[htbp]
-			\centering
-			\renewcommand\arraystretch{1.2}
+		\begin{longtable}[htbp]{p{1.6cm}|p{2cm}|p{4.2cm}|p{2cm}|p{2.5cm}}
 			
-			\begin{tabularx}{\textwidth}{p{2cm}|p{2cm}|p{4cm}|p{2cm}|p{2cm}}
-				
-				\hline
-				\textbf{Versione} & \textbf{Data} & \textbf{Descrizione} & \textbf{Autore} & \textbf{Ruolo}\\
-			}
-			{
-				
-			\end{table}
-			\restoregeometry
-		\end{document}
+			\hline
+			\textbf{Versione} & \textbf{Data} & \textbf{Descrizione} & \textbf{Autore} & \textbf{Ruolo}\\
+			\endhead
+	}
+	{
+	\restoregeometry
+	\end{document}
 		
 	}%end DiarioModifiche
 	
-	
-\newcommand{\nModifica}[5]{ %aggiuta modifica al diario 
-%param 1 versione
-%param 2 data \nData{gg}{mm}{aaa}
-%param 3 descrizione
-%param 4 autore
-%param 5 ruolo	
-	\hline {#1} & {#2} & {#3} & {#4} & {#5} \\
-}
+	\newcommand{\nModifica}[5]{ %aggiuta modifica al diario
+		\hline \raggedleft\nohyphens{#1} & \nohyphens{#2} & \raggedright\nohyphens{#3} & \centering\nohyphens{#4} & \nohyphens{#5} \\
+	}

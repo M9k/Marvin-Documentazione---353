@@ -35,7 +35,13 @@ fi
 #UPDATE DEL GLOSSARIO
 mkdir $BACKUPDIR/ &>/dev/null #Crea la cartella di backup
 cp -r * $BACKUPDIR/ &>/dev/null #Copia il contenuto corrente nella cartella di backup
-/bin/bash gupdate.sh #Esegue l'update dei termini del glossario
+
+###########################################
+#  FUNZIONE TEMPORANEAMENTE DISABILITATA  #
+###########################################
+# /bin/bash gupdate.sh #Esegue l'update dei termini del glossario
+###########################################
+
 COMPILELOG=$(/bin/bash compile.sh) #Prova a compilare salvandosi il risultato
 RESULT="${COMPILELOG##*$'\n'}" #Si trova l'ultima riga dell'output di compilazione
 if [[ $RESULT == 'ok' ]]; then

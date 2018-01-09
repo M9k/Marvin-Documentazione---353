@@ -25,6 +25,7 @@
 \usepackage{hhline}
 \usepackage{caption}
 \usepackage{enumitem}
+\usepackage{hyphenat}
 
 
 \pagestyle{fancy}
@@ -104,6 +105,9 @@
 \newcommand{\vere}{Verificatore}
 \newcommand{\veri}{Verificatori}
 
+\newcommand{\resp}{Responsabile} 
+\newcommand{\respi}{Responsabili} 
+
 \newcommand{\pdp}{\textit{Piano di progetto}}
 \newcommand{\pdq}{\textit{Piano di qualifica}}
 \newcommand{\ndp}{\textit{Norme di progetto}}
@@ -115,6 +119,7 @@
 \newcommand{\ms}{\textit{Manuale sviluppatore}}
 \newcommand{\g}{\textit{Glossario}}
 \newcommand{\lettera}{\textit{Lettera di presentazione}}
+\newcommand{\tfd}{\textit{Twelve Factor Document}} 
 
 %versione documenti
 \newcommand{\vruno}{\textit{ v 1.0.0}} %revisione uno RR
@@ -158,28 +163,27 @@
 
 % document diario delle modifiche enviroment
 \newenvironment{DiarioModifiche}{
-	
 	\newgeometry{margin=3cm}
 	\begin{document}
+	{\huge \textbf{Diario delle modifiche}}\\
+		\renewcommand\arraystretch{1.2}
 		
-		\huge \bfseries Diario delle modifiche\\
-		\begin{table}[htbp]
-			\centering
-			\renewcommand\arraystretch{1.2}
+		\begin{longtable}[htbp]{p{1.6cm}|p{2cm}|p{4.2cm}|p{2cm}|p{2.5cm}}
 			
-			\begin{tabularx}{\textwidth}{p{2cm}|p{2cm}|p{4cm}|p{2cm}|p{2cm}}
-				
-				\hline
-				\textbf{Versione} & \textbf{Data} & \textbf{Descrizione} & \textbf{Autore} & \textbf{Ruolo}\\
-			}
-			{
-				
-			\end{table}
-			\restoregeometry
-		\end{document}
+			\hline
+			\textbf{Versione} & \textbf{Data} & \textbf{Descrizione} & \textbf{Autore} & \textbf{Ruolo}\\
+			\endhead
+	}
+	{
+	\restoregeometry
+	\end{document}
 		
 	}%end DiarioModifiche
 	
 	\newcommand{\nModifica}[5]{ %aggiuta modifica al diario
-		\hline {#1} & {#2} & {#3} & {#4} & {#5} \\
+		\hline \raggedleft\nohyphens{#1} & \nohyphens{#2} & \raggedright\nohyphens{#3} & \centering\nohyphens{#4} & \nohyphens{#5} \\
 	}
+
+%link al testo 
+\newcommand{\textlink}[3]{\hypertarget{#1}{}\hyperlink{#2}{#3}}
+

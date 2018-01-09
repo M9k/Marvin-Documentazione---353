@@ -16,6 +16,8 @@ P.S. il testo estrapolato da detex viene manipolato:
 -Viene aggiunto un punto alla fine di ogni frase che non lo ha (ad esempio i titoli delle sezioni)
 
 Link detex: https://github.com/pkubowicz/opendetex
+-Per usarlo: Installare python e "python gulpease.py"
+-Testato con Python v2.7.12
 '''
 
 SCRIPT_DIR = sys.path[0]

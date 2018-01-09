@@ -1,0 +1,40 @@
+\documentclass[PianoDiProgetto.tex]{subfiles}
+
+\begin{document}
+
+\chapter{Specifica dei test}
+
+\section{Scopo}
+Per garantire la maggiore rilevazione di errori durante la fase di sviluppo, il team porrà grande attenzione sull'analisi dinamica del codice: ovvero l'esecuzione di test automatici. \\
+Durante la fase di codifica, programmatori e verificatori seguiranno la filosofia TDD in tutte le sue varianti (ATDD e BDD) per garantire il corretto sviluppo dell'applicativo: verranno prima scritti i test e poi il codice necessario per soddisfarli.
+
+\section{Tipi di test}
+Sono stati individuate due macro categorie di test.
+
+\subsection{Test di modulo}
+I test appartenenti a questa categoria mirano alla \citGloss{verifica} della logica del software e verranno scritti ed eseguiti dai programmatori, il loro successo costituirà vincolo per poter consegnare il codice all'interno del \citGloss{repository}. \\
+Si dividono in:
+\begin{itemize}
+	\item \textbf{Test di unità [TU]}: con questa tipologia si cerca di verificare la più piccola parte di lavoro prodotta da un programmatore, corrispondente alla più piccola unità di logica del prodotto, che può essere una singola classe, metodo o funzione oppure un insieme di essi. \\
+	Verranno sviluppati test black-box per testare le funzionalità delle unità e test white-box per verificarne la struttura;
+	\item \textbf{Test di integrazione[TI]}: con questa categoria si cerca di verificare l'integrazione tra le unità logiche che formano i vari componenti del sistema.\\
+	La tecnica scelta per testare l'integrazione è quella dal basso verso l'alto: si testano prima le parti con minore dipendenza funzionale e con maggiore funzionalità, per poi risalire l'albero delle dipendenze.\\
+\end{itemize}
+
+\subsection{Test ad alto livello}
+I test appartenenti a questa categoria mirano alla verifica delle funzionalità del sistema, si concentrano di più sul comportamento dell'applicazione e vengono gestite dal team di Quality Assurance (QA: i verificatori).
+Alcuni di questi test sono manuali e per garantirne la ripetibilità la loro organizzazione sarà gestita tramite dei tool appositi che verranno discussi in sede di technology \citGloss{baseline}.
+\begin{itemize}
+	\item \textbf{Test Funzionali [TF]:} possono essere visti come dei test di unità ad alto livello, verificano l'implementazione delle specifiche del prodotto e si concentrano sulle funzionalità delle suddette specifiche: l'analisi della struttura è infatti relegata ai test di unità [TU] veri e propri. \\
+	Questi test possono essere automatizzati e scritti dai programmatori, ma è bene affiancarli ad una revisione ed esecuzione svolta dai verificatori;
+	\item \textbf{Test di sistema [TS]}: questa tipologia di test punta a verificare il sistema e l'architettura nella sua interezza, sono test pesanti e complessi; la loro implementazione verrà discussa in sede di technology \citGloss{baseline}. 
+	Questi test necessitano di componenti software ma devono essere supervisionate dai verificatori, verranno quindi eseguiti dal team di QA;
+	\item \textbf{Test di validazione [TV]}: si tratta dei test finali che valutano se il sistema sviluppato corrisponde alle richieste del proponente, godono quindi di un forte accoppiamento con i \citGloss{requisiti}. Sono principalmente test manuali e verranno eseguiti dal team di QA, nelle fasi finali dello sviluppo verranno effettuati assieme ai proponenti per determinare la validità del prodotto.
+\end{itemize}
+
+\subsection{Test di regressione}
+I test di regressione sono la categoria più onerosa di test: sostanzialmente si tratta di rieseguire in modo selettivo i vari test, esclusi quelli di \citGloss{validazione}, elencati sopra.\\
+Questi test diventano necessari alla modifica di qualsiasi parte di codice: che sia una correzione di un bug o l'inserimento di una nuova funzionalità, la modifica di una parte della sorgente comporta l'esecuzione di tutti i test relativi ad essa. La motivazione di questi test è semplice: l'introduzione di modifiche all'interno della codebase è più incline all'inserimento di errori rispetto al codice già esistente.\\
+I test di modulo, essendo necessari per la consegna nel \citGloss{repository}, verranno eseguiti automaticamente, mentre per i test ad alto livello i verificatori si impegneranno a pianificarne l'esecuzione ad ogni superamento di \citGloss{baseline}.
+	
+\end{document}

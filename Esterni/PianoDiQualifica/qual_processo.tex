@@ -6,16 +6,16 @@
 
 \section{Scopo} 
 Per garantire la qualità del prodotto è necessario perseguire la qualità dei processi che lo definiscono.
-Per raggiungere questo obiettivo, si è deciso di seguire il principio di miglioramento continuo (PDCA) e di adottare lo standard ISO/IEC 15504 denominato SPICE (Software Process Improvement and Capability Determination).
+Per raggiungere questo obiettivo, si è deciso di seguire il principio di miglioramento continuo (\citGloss{PDCA}) e di adottare lo standard ISO/IEC 15504 denominato SPICE (Software Process Improvement and Capability Determination).
 
 \section{Procedure di controllo di qualità di processo}
-La qualità dei processi verrà garantita dall'applicazione del metodo PDCA, descritto dell'appendice A. Grazie a questo metodo sarà possibile ottenere un miglioramento continuo della qualità di tutti i processi, inclusa la verifica, e come diretta conseguenza si otterrà il miglioramento dei prodotti risultanti. 
+La qualità dei processi verrà garantita dall'applicazione del metodo \citGloss{PDCA}, descritto dell'appendice A. Grazie a questo metodo sarà possibile ottenere un miglioramento continuo della qualità di tutti i processi, inclusa la \citGloss{verifica}, e come diretta conseguenza si otterrà il miglioramento dei prodotti risultanti. 
 
 Per ottenere qualità dei processi, bisogna:
 \begin{itemize}
 	\item \textbf{Definire il processo}: affinché sia controllabile;
 	\item \textbf{Controllare il processo}: in funzione dell'ottenimento di efficacia, efficienza ed esperienza;
-	\item \textbf{Usare strumenti di valutazione}: SPICE e PDCA.
+	\item \textbf{Usare strumenti di valutazione}: SPICE e \citGloss{PDCA}.
 \end{itemize}
 
 \section{Processi}
@@ -34,14 +34,14 @@ Lo sviluppo del progetto dovrà porre particolare attenzione a rispettare dei pa
 \end{itemize}
 
 \subsubsection{Strategie}
-Ogni eventuale valore negativo a livello di Schedule o Budget Variance rilevato sarà compensato con la revisione delle attività da svolgere e i requisiti da ottenere, per valutare se nei tempi di calendario stabiliti la pianificazione sia corretta o se sia necessario rivedere la programmazione.\\
-Il controllo verrà favorito con strumenti come Asana e i diagrammi di Gantt in modo tale da verificare l'andamento del progetto, per avere sempre una visione chiara e quantificabile del lavoro in corso affinché il lavoro non subisca ritardi.\\
-Saranno sempre presenti delle finestre di slack per evitare sovrapposizioni di task dovute a eventuali ritardi o imprevisti. 
+Ogni eventuale valore negativo a livello di Schedule o Budget Variance rilevato sarà compensato con la revisione delle attività da svolgere e i \citGloss{requisiti} da ottenere, per valutare se nei tempi di calendario stabiliti la pianificazione sia corretta o se sia necessario rivedere la programmazione.\\
+Il controllo verrà favorito con strumenti come \citGloss{Asana} e i diagrammi di \citGloss{Gantt} in modo tale da verificare l'andamento del progetto, per avere sempre una visione chiara e quantificabile del lavoro in corso affinché il lavoro non subisca ritardi.\\
+Saranno sempre presenti delle finestre di \citGloss{Slack} per evitare sovrapposizioni di task dovute a eventuali ritardi o imprevisti. 
 
 \subsubsection{Metriche} 
 \paragraph{}
 \textlink{MPS001TAB}{MPS001}{\textbf{MPS001 Schedule Variance (SV)}}\\
-Indica se si è in linea, in anticipo o in ritardo, rispetto alla schedulazione delle attività di progetto pianificate nella baseline.\\
+Indica se si è in linea, in anticipo o in ritardo, rispetto alla schedulazione delle attività di progetto pianificate nella \citGloss{baseline}.\\
 È un indicatore di efficacia soprattutto nei confronti del Cliente. \\
 Se il valore SV ottenuto è positivo significa che il progetto sta procedendo con una maggiore velocità rispetto a quanto pianificato, viceversa se negativo.\\
 \textbf{Misurazione:}
@@ -72,9 +72,9 @@ Dove: \begin{itemize}
 
 
 \subsection{Verifica software}
-Il processo punta a verificare se qualsiasi elemento del sistema soddisfa completamente i requisiti ad esso assegnati.
+Il processo punta a verificare se qualsiasi elemento del sistema soddisfa completamente i \citGloss{requisiti} ad esso assegnati.
 \subsubsection{Obiettivi}
-Per poter definire delle baseline per lo sviluppo del software, è necessario che il codice venga sempre verificato.
+Per poter definire delle \citGloss{baseline} per lo sviluppo del software, è necessario che il codice venga sempre verificato.
  \begin{itemize}
  	\item \textbf{Commenti al codice:} ogni unità di codice dovrà essere sufficientemente commentata affinché sia ritenuta verificabile;
  	\item \textbf{Prevenzione di bug:} accertarsi per quanto possibile che ogni unità di codice non sia affetta da bug prima dell'utilizzo.
@@ -119,7 +119,7 @@ Questa tabella indica i \textbf{range} di accettazione e di ottimalità per le m
 			\textlink{MPS002}{MPS002TAB}{MPS002} & Budget Variance & $ \geq -10\% $ & $ \geq 0 $ \\
 			\textlink{MPS003}{MPS003TAB}{MPS003} & Function coverage & $ \geq 98\% $ & $ 100\% $\\
 			\textlink{MPS004}{MPS004TAB}{MPS004} & Statement coverage &  $ \geq 97\% $& $ 100\% $\\
-			\textlink{MPS005}{MPS005TAB}{MPS005} & Branch coverage & $ \geq 95\% $ & $ 100\% $\\
+			\textlink{MPS005}{MPS005TAB}{MPS005} & \citGloss{branch} coverage & $ \geq 95\% $ & $ 100\% $\\
 			\textlink{MPS006}{MPS006TAB}{MPS006} & Condition coverage & $ \geq 99\% $ & $ 100\% $\\ % lasciate questo capo riga
 
 
@@ -135,7 +135,7 @@ Questa tabella indica i \textbf{range} di accettazione e di ottimalità per le m
 \begin{appendices}
 
 \chapter{Ciclo di Deming o PDCA}
-Ogni processo deve essere organizzato basandosi sul principio del miglioramento continuo (o ciclo di Deming):
+Ogni processo deve essere organizzato basandosi sul principio del miglioramento continuo (o \citGloss{ciclo di Deming}):
 \begin{description}
 	\item [Plan (pianificare)]: viene definito un piano che basandosi sulla definizione di problemi e obiettivi pianifica compiti, assegna responsabilità, studia il caso, analizza le cause della criticità e definisce azioni correttive; 
 	\item [Do (eseguire)]: vengono implementate le attività secondo le linee definite durante la fase Plan;

@@ -28,7 +28,7 @@ I documenti prodotti dal gruppo \gruppo\ dovranno essere leggibili, comprensibil
 	\item \textlink{MPDD002TAB}{MPDD002}{\textbf{MPDD002 Formula di Flesch:}} è una formula che serve per misurare la leggibilità di un testo in inglese:
 	\[F=206,835-(0,846*S)-(1,015*P)\] dove $ S $ è il numero delle sillabe, calcolato su un campione di 100 parole e $ P $ è il numero medio di parole per frase.
 	La leggibilità è alta se $F$ è superiore a 60, media se fra 50 e 60, bassa sotto a 50;
-	\item \textlink{MPDD003TAB}{MPDD003}{\textbf{MPDD003 Errori ortografici:}} gli errori ortografici possono essere identificati tramite lo strumento \textquoteleft Controllo ortografico\textquoteright\ presente in TexStudio. Sarà poi compito del Verificatore correggerli.  	
+	\item \textlink{MPDD003TAB}{MPDD003}{\textbf{MPDD003 Errori ortografici:}} gli errori ortografici possono essere identificati tramite lo strumento \textquoteleft Controllo ortografico\textquoteright\ presente in \citGloss{TexStudio}. Sarà poi compito del Verificatore correggerli.  	
 \end{itemize}
 		
 \section{Qualità del software}
@@ -93,7 +93,7 @@ Il prodotto dovrà essere efficiente, in particolare:
 	\item \textlink{MPDS009TAB}{MPDS009}{\textbf{MPDS009 Tempo di risposta:}} indica il tempo medio che intercorre fra la richiesta software di una determinata funzionalità e la restituzione del risultato all'utente. La sua formula di misurazione è \[TR=\frac{\sum_{i=1}^n T_i}{n}\] dove $ T_i $ è il tempo intercorso fra la richiesta $ i $ di una funzionalità ed il comportamento delle operazioni necessarie a restituire un risultato a tale richiesta.	
 \end{itemize}
 \subsection{Manutenibilità}
-Rappresenta la capacità del prodotto di essere modificato, tramite correzioni, miglioramenti o adattamenti del software a cambiamenti negli ambienti, nei requisiti e nelle specifiche funzionali.
+Rappresenta la capacità del prodotto di essere modificato, tramite correzioni, miglioramenti o adattamenti del software a cambiamenti negli ambienti, nei \citGloss{requisiti} e nelle specifiche funzionali.
 \subsubsection{Obiettivi di qualità}
 Le operazioni di manutenzione andranno agevolate il più possibile adottando le seguenti caratteristiche:
 \begin{itemize}
@@ -142,18 +142,18 @@ Questa tabella indica i \textbf{range} di accettazione e di ottimalità per le m
 			\textlink{MPDD002}{MPDD002TAB}{MPDD002} & Formula di Flesch & 40 - 60 & 50 - 60\\ 
 			\textlink{MPDD003}{MPDD003TAB}{MPDD003} & Errori ortografici & 100\% corretti & 100\% corretti\\ 
 			\hline
-			\textlink{MPDS001}{MPDS001TAB}{MPDS001} & Copertura requisiti obbligatori & 100\% & 100\%\\
-			\textlink{MPDS002}{MPDS002TAB}{MPDS002} & Copertura requisiti accettati & 60\% - 100\% & 80\% - 100\%\\
+			\textlink{MPDS001}{MPDS001TAB}{MPDS001} & Copertura \citGloss{requisiti} obbligatori & 100\% & 100\%\\
+			\textlink{MPDS002}{MPDS002TAB}{MPDS002} & Copertura \citGloss{requisiti} accettati & 60\% - 100\% & 80\% - 100\%\\
 			\textlink{MPDS003}{MPDS003TAB}{MPDS003} & Accuratezza rispetto alle attese & 90\% - 100\% & 100\%\\
 			\textlink{MPDS004}{MPDS004TAB}{MPDS004} & Densità di failure & 0\% - 10\% & 0\% \\
-			\textlink{MPDS005}{MPDS005TAB}{MPDS005} & Blocco di operazioni non corrette & 80\% - 100\% & 100\%\\
+			\textlink{MPDS005}{MPDS005TAB}{MPDS005} & \citGloss{blocco} di operazioni non corrette & 80\% - 100\% & 100\%\\
 			\textlink{MPDS006}{MPDS006TAB}{MPDS006} & Comprensibilità delle funzioni offerte & 80\% - 100\% & 90\% - 100\%\\
 			\textlink{MPDS007}{MPDS007TAB}{MPDS007} & Facilità di apprendimento delle funzionalità & 0 - 20 min & 0 - 10 min\\
 			\textlink{MPDS008}{MPDS008TAB}{MPDS008} & Consistenza operazionale in uso & 80\% - 100\% & 90\% - 100\%\\  
 			\textlink{MPDS009}{MPDS009TAB}{MPDS009} & Tempo di risposta & 0 - 8 sec & 0 - 3 sec \\
 			\textlink{MPDS010}{MPDS010TAB}{MPDS010} & Capacità di analisi di failure & 60\% - 100\% & 80\% - 100\% \\
 			\textlink{MPDS011}{MPDS011TAB}{MPDS011} & Impatto delle modifiche & 0\% - 20\% & 0\% - 10\% \\
-			\textlink{MPDS012}{MPDS012TAB}{MPDS012} & Versioni di browser supportate & 70\% - 100\% & 100\%\\
+			\textlink{MPDS012}{MPDS012TAB}{MPDS012} & Versioni di \citGloss{browser} supportate & 70\% - 100\% & 100\%\\
 			\textlink{MPDS013}{MPDS013TAB}{MPDS013} & Inclusione di funzionalità da altri prodotti & 80\% - 100\% & 90\% - 100\% \\
 		\end{tabu}
 		\caption{Tabella delle metriche della qualità di prodotto}

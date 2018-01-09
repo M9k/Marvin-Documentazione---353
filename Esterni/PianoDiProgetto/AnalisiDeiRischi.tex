@@ -77,22 +77,10 @@ Nella seguente tabella è stata effettuata un’analisi approfondita dei rischi 
 	\hhline{====}
 	
 	
+
+	
+	
 	%Quarto rischio
-	\rowcolor{tableLineOne} \textbf{Problemi hardware} (Tecnologico)
-	&
-	{\small Ogni membro utilizza computer personale per lavorare al progetto, guasti hardware potrebbero causare perdite di dati e/o di tempo.}
-	&
-	{\small Ogni membro dovrà avvisare il gruppo in caso di comportamenti anomali del proprio computer.}
-	&
-	 \shortstack{Occorrenza: \\ \textbf{bassa} 
-		\vspace{0.6em}\\ Pericolosità: \\ \textbf{medio-bassa} }\\
-	\rowcolor{tableLineTwo} Piano di contingenza:
-	&
-	\multicolumn{3}{m{0.8075\linewidth}}{\small Ogni componente del gruppo dovrà effettuare il backup di tutti i file relativi al progetto, compresi i file di configurazione degli ambienti di sviluppo ed eventuali appunti personali.}\\
-	\hhline{====}
-	
-	
-	%Quinto rischio
 	\rowcolor{tableLineOne} \textbf{Tecnologie da usare} (Tecnologico)
 	&
 	{\small Le tecnologie da studiare sono molto recenti e la documentazione fornita è spesso molto limitata e/o poco approfondita. Il tempo di apprendimento per queste tecnologie potrebbe causare dei ritardi nello svolgimento dei lavori.}
@@ -104,10 +92,25 @@ Nella seguente tabella è stata effettuata un’analisi approfondita dei rischi 
 	\rowcolor{tableLineTwo} Piano di contingenza:
 	&
 	\multicolumn{3}{m{0.8075\linewidth}}{\small In casi gravi i membri con più esperienza e famigliarità con quella tecnologia dovranno aiutare il membro in difficoltà, ridistribuendo il carico di lavoro.}\\
+
+	
+	
+	%Codice per Attualizzazione 
+	\multicolumn{4}{c}{ \cellcolor{tableLineOne} \textbf{Attualizzazione}} \\*
+	\rowcolor{tableLineTwo} \textbf{Periodo} 
+	&
+	 \multicolumn{3}{c}{\textbf{Mitigazione}} \\*
+	\rowcolor{tableLineOne} Analisi
+	
+	&  \multicolumn{3}{m{0.8075\linewidth}}{
+	Si è verificato un piccolo problema legato all'ambiente git. Alcuni membri non avendo esperienza con quest'ambiente, hanno avuto necessità di dedicare più tempo per imparare ad utilizzare questa tecnologia.
+		}\\ 
+	%Fine codice per Attualizzazione
+	
 	\hhline{====}
 	
 	
-	%Sesto rischio
+	%Quinto rischio
 	\rowcolor{tableLineOne} \textbf{Strumenti software}  (Tecnologico)
 	&
 	{\small Il gruppo si affida su software di terze parti e piattaforme online, eventuali disfunzioni potrebbero causare errori o perdite di dati.}
@@ -120,9 +123,23 @@ Nella seguente tabella è stata effettuata un’analisi approfondita dei rischi 
 	\rowcolor{tableLineTwo} Piano di contingenza:
 	&
 	\multicolumn{3}{m{0.8075\linewidth}}{\small Si effettueranno backup bi-settimanali dei 
-		dati Asana e Github, basandosi sull'affidabilità degli strumenti scelti. Potrà essere utilizzato anche Turbo\footnote{\nURI{https://turbo.net/}} in caso di malfunzionamenti per avere un'immediata disponibilità dei software da utilizzare.}\\
+		dati \citGloss{Asana} e \citGloss{GitHub}, basandosi sull'affidabilità degli strumenti scelti. Potrà essere utilizzato anche Turbo\footnote{\nURI{https://turbo.net/}} in caso di malfunzionamenti per avere un'immediata disponibilità dei software da utilizzare.}\\
 	\hhline{====}
 	
+	
+		%Sesto rischio
+	\rowcolor{tableLineOne} \textbf{Problemi hardware} (Tecnologico)
+	&
+	{\small Ogni membro utilizza computer personale per lavorare al progetto, guasti hardware potrebbero causare perdite di dati e/o di tempo.}
+	&
+	{\small Ogni membro dovrà avvisare il gruppo in caso di comportamenti anomali del proprio computer.}
+	&
+	\shortstack{Occorrenza: \\ \textbf{bassa} 
+		\vspace{0.6em}\\ Pericolosità: \\ \textbf{medio-bassa} }\\
+	\rowcolor{tableLineTwo} Piano di contingenza:
+	&
+	\multicolumn{3}{m{0.8075\linewidth}}{\small Ogni componente del gruppo dovrà effettuare il backup di tutti i file relativi al progetto, compresi i file di configurazione degli ambienti di sviluppo ed eventuali appunti personali.}\\
+	\hhline{====}
 	
 	%Settimo rischio
 	\rowcolor{tableLineOne} \textbf{Costi delle attività} (Organizza-
@@ -145,7 +162,7 @@ Nella seguente tabella è stata effettuata un’analisi approfondita dei rischi 
 	&
 	{\small È possibile che la Proponente \Proponente\ decida di voler apportare delle modifiche. Questo porterebbe una parziale/totale riscrittura dell'\adr\ con conseguente rivalutazione della pianificazione delle attività.}
 	&
-	{\small È necessario lavorare a stretto contatto con la Proponente in modo da rilevare subito eventuali modifiche ai requisiti.}
+	{\small È necessario lavorare a stretto contatto con la Proponente in modo da rilevare subito eventuali modifiche ai \citGloss{requisiti}.}
 	&
 	 \shortstack{ Occorrenza: \\ \textbf{bassa} \vspace{0.6em}\\ 
 		Pericolosità: \\ \textbf{molto alta} } \\

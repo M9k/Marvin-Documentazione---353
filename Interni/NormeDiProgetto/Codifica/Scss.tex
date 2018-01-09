@@ -1,7 +1,169 @@
-\documentclass[../processi_primari.tex]{subfiles}
+\documentclass[../ProcessiPrimari.tex]{subfiles}
 
 \begin{document}
 	
-\subsubsection{Scss}
+\subsubsection{SCSS}
+In questa sotto-sezione vengono elencate le norme tratte dalla \textbf{Airbnb\\ CSS/Scss Styleguide}\footnote{\nURI{https://github.com/airbnb/css}}, il cui utilizzo viene supportato tramite plugin Webstorm scss-lint\footnote{\nURI{https://plugins.jetbrains.com/plugin/7530-scss-lint}} utilizzando la corretta configurazione\footnote{\nURI{https://github.com/airbnb/css/blob/master/.scss-lint.yml}} ed il tool scss-lint\footnote{\nURI{https://github.com/brigade/scss-lint}}.
+\paragraph*{Formattazione:}
+\begin{itemize}
+	\item Utilizzare due (2) spazi per ogni livello di indentazione;
+	\item Per i nomi delle classi utilizzare la \texttt{lower-case-with-dashes};
+	\item Non usare selettori ID;
+	\item In caso di selettori multipli per una singola regola, inserire ogni selettore in una linea singola;
+	\item Lasciare uno spazio prima dell'apertura della parentesi graffa di una regola;
+	\item Nelle proprietà lasciare uno spazio dopo e non prima i due punti;
+	\item Chiudere la parentesi graffa di una regola in una nuova linea;
+	\item Lasciare una linea vuota tra una dichiarazione e l'altra;
+	\item Dichiarare le classi raggruppate per tipologia e in ordine alfabetico.
+\end{itemize}
+\begin{center}{
+\begin{minipage}{6cm}
+{\begin{center}SI\end{center}}
+\begin{Verbatim}[frame=single]
+.avatar {
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.one,
+.per-line,
+.selector
+ {
+  // ...
+}
+\end{Verbatim}
+\end{minipage}
+\hfil
+\begin{minipage}{7cm}
+{\begin{center}NO\end{center}}
+\begin{Verbatim}[frame=single]
+.wrong {
+  // ...}
+.avatar{
+  border-radius:50%;
+  border:2px solid white; }
+.no, .nope, .not_good {
+  // ...
+}
+#lol-no {
+  // ...
+}
+
+\end{Verbatim}
+\end{minipage}
+}
+\end{center}
+\paragraph*{BEM:}
+utilizzare la notazione BEM (Block-Element-Modifier) come convenzione per i nomi delle classi.
+\begin{center}{
+\begin{minipage}{13.5cm}
+\begin{Verbatim}[frame=single]
+// ListingCard.jsx
+function ListingCard() {
+  return (
+    <article class="listingcard listingcard-featured">
+
+      <h1 class="listingcard-title">Adorable Mission</h1>
+
+      <div class="listingcard-content">
+        <p>Vestibulum id ligula porta euismod semper.</p>
+      </div>
+
+    </article>
+  );
+}
+\end{Verbatim}
+\end{minipage}
+}
+\end{center}
+\begin{center}{
+\begin{minipage}{13.5cm}
+\begin{Verbatim}[frame=single]
+/* listingcard.\citGloss{CSS} */
+.listingcard { }
+.listingcard-featured { }
+.listingcard-title { }
+.listingcard-content { }
+\end{Verbatim}
+\end{minipage}
+}
+\end{center}
+In questo esempio:
+\begin{itemize}
+	\item \texttt{.listingcard} è il `\citGloss{blocco}` e rappresenta il livello più alto del componente;
+	\item \texttt{.listingcard-title} è un `elemento` e rappresenta un discendente di \texttt{.listingcard};
+	\item \texttt{.listingcard-featured} è un `modificatore` e rappresenta un diverso stato o una variante del blocco \texttt{.listingcard};
+\end{itemize}
+\paragraph*{Commenti:}
+\begin{itemize}
+	\item Non usare commenti di \citGloss{blocco};
+	\item Fare commenti in linee a se stanti, non in linee contenenti anche codice.
+\end{itemize}
+\paragraph*{Ordine di dichiarazione delle proprietà:}
+\begin{enumerate}
+	\item \textbf{Proprietà standard:} vanno dichiarate per prime e in ordine alfabetico;
+\begin{center}{
+\begin{minipage}{5cm}
+\begin{Verbatim}[frame=single]
+.btn-green {
+  background: green;
+  font-weight: bold;
+  // ...
+}
+\end{Verbatim}
+\end{minipage}
+}
+\end{center}
+	\item \textbf{Dichiarazioni di \texttt{@include}:} vanno raggruppate sotto alla dichiarazione delle proprietà standard
+\begin{center}{
+\begin{minipage}{10cm}
+\begin{Verbatim}[frame=single]
+.btn-green {
+  background: green;
+  font-weight: bold;
+  @include transition(background 0.5s ease);
+  // ...
+}
+\end{Verbatim}
+\end{minipage}
+}
+\end{center}
+\item \textbf{Selettori nidificati:} vanno dichiarati dopo tutte le altre dichiarazioni e deve essere lasciata una linea vuota prima della loro dichiarazione
+\begin{center}{
+\begin{minipage}{10cm}
+\begin{Verbatim}[frame=single]
+.btn {
+  background: green;
+  font-weight: bold;
+  @include transition(background 0.5s ease);
+
+  .icon {
+    margin-right: 10px;
+  }
+}
+\end{Verbatim}
+\end{minipage}
+}
+\end{center}
+\end{enumerate}
+\paragraph*{Extend:}
+la direttiva \texttt{@extend} non va utilizzata perché ha un comportamento poco intuitivo e pericoloso, specialmente quando usata in selettori nidificati.
+\paragraph*{Selettori annidati: }
+non utilizzare più di tre livelli di annidamento
+\begin{center}{
+\begin{minipage}{5cm}
+\begin{Verbatim}[frame=single]
+.page-container {
+  .content {
+    .profile {
+      // STOP!
+    }
+  }
+}
+\end{Verbatim}
+\end{minipage}
+}
+\end{center}
+
 	
 \end{document}

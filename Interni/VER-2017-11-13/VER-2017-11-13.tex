@@ -1,19 +1,10 @@
 \documentclass[openany, a4paper, 12pt]{report}
 \usepackage{subfiles}
 \usepackage{../../common/style}
-\fancyfoot[L]{Norme Di Progetto v 1.0.0 }
-\usepackage{listings}
-\usepackage{fancyvrb}
-\usepackage{graphicx}
-
-\usepackage{chngcntr}
-\counterwithout{footnote}{chapter}
-
-
-\setcounter{tocdepth}{3}
-\setcounter{secnumdepth}{3}
+\usepackage{geometry}
+\fancyfoot[L]{Verbale interno del \nData{13}{11}{2017}}
 \loadglsentries{"./../../Esterni/Glossario/Definizioni.tex"}
-
+ 
 \begin{document}
 
 \begin{titlepage}
@@ -24,9 +15,9 @@
 		\vskip2cm
 		\includegraphics[width=9cm]{../../common/images/logo.png} \\
 		\vfill
-		\Huge{NORME DI PROGETTO}\\
+		\Huge{VERBALE INTERNO\\DEL \nData{13}{11}{2017}}\\
 		\vfill
-		\Large Versione 1.0.0 in data 05-01-2018\\
+		\Large Versione 1.0.0 in data \nData{07}{12}{2017}\\
 		\large Gruppo 353 - Progetto \progetto \\
 		\vfill
 		\normalsize Informazioni sul documento\\
@@ -36,25 +27,20 @@
 			\begin{tabular}{r|l}
 				\hline
 				\textbf{Responsabili}	& \Valentina \\
-										& \Parwinder \\
-														
-				\textbf{Redazione} 		& \Davide \\
-										& \Elena \\
-										& \Riccardo \\
-										
-				\textbf{Verifica} 		& \Mirco \\
-										& \Gianluca \\	
 				
-				\textbf{Stato} 			& In corso \\
-				\textbf{Uso}			& Interno \\
-				\textbf{Destinato a}   	& Gruppo 353 \\
-										& \Vardanega \\
-										& \Cardin \\
+				\textbf{Redazione} 		& \Elena \\
+				\textbf{Verifica} 		& \Riccardo \\	
+				
+				\textbf{Stato} 			& In uso\\
+				\textbf{Uso}			& Interno\\
+				\textbf{Destinato a}   	& Gruppo 353\\
+										& \Vardanega\\
+										& \Cardin\\
 				
 				\textbf{Email di contatto}	& \mailgroup
 			\end{tabular}
 		\end{table}
-		\vfill
+		\vfill 
 	}    
 \end{titlepage}
 \pagenumbering{roman}
@@ -62,10 +48,6 @@
 \tableofcontents
 \newpage
 \pagenumbering{arabic}
-\subfile{introduzione}
-\subfile{ProcessiPrimari}
-\subfile{processi_di_supporto}
-\subfile{processi_organizzativi}
-
+\subfile{verbale}
  
 \end{document}

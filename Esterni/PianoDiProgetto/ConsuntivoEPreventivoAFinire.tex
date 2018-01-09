@@ -1,13 +1,74 @@
 \documentclass[PianoDiProgetto.tex]{subfiles}
 
 \begin{document}
-\chapter{Consuntivo e preventivo finale}
+\chapter{Consuntivo di periodo e preventivo a finire}
+Di seguito sono riportati i consuntivi e breve resoconto della pianificazione per ogni periodo di progetto.\\\\
+Nei consuntivi vengono riportate le ore e i costi preventivati e affianco tra parentesi una valore: 
+\begin{itemize}
+	\item \textbf{Positivo:} se sono state necessarie meno ore di lavoro rispetto al preventivo o se il costo è diminuito;
+	\item \textbf{Negativo:} se sono state necessarie più ore di lavoro rispetto al preventivo o se il costo è aumentato;
+\end{itemize}
+Se il valore tra parentesi non è presente vuol dire che il numero di ore preventivate o il costo è stato rispettato.\\\\
+Per una maggiore lettura delle tabelle, i valori pari a 0 (zero) sono stati omessi.
 
-\section{Periodo di Analisi}
+\section{Periodo di Analisi dei requisiti}
 \subsection{Consuntivo}
+\begin{table}[H]
+	\begin{center}
+		\begin{tabu} to \textwidth {
+				>{\centering}m{0.3\linewidth} 
+				>{\centering}m{0.05\linewidth}  
+				>{\centering}m{0.05\linewidth}  
+				>{\centering}m{0.05\linewidth}
+				>{\centering}m{0.05\linewidth}
+				>{\centering}m{0.05\linewidth}
+				>{\centering}m{0.05\linewidth}
+				>{\centering\arraybackslash}m{0.15\linewidth}
+			}
+			\tableHeaderStyle			
+			\textbf{Nome} & \textbf{Re} & \textbf{Ad} & \textbf{An} & \textbf{Pj} & \textbf{Pr} & \textbf{Ve} & \textbf{Totale} \\
+			\Davide &  & 11 & 4 &  &  & 10 & 25 \\
+			\Elena & 10 & 8 & 3 &  &  & 4 & 25 \\
+			\Gianluca &  & 2 & 15 &  &  & 8 & 25 \\
+			\Mirco &  & 4 & 16 &  &  & 5 & 25 \\
+			\Parwinder & 8 & 8 & 3 &  &  & 6 & 25 \\
+			\Riccardo &  & 11 & 4 &  &  & 10 & 25 \\
+			\Valentina & 5 & 8 & 4 &  &  & 8 & 25 \\
+		\end{tabu}
+		\caption{Resoconto orario - Consuntivo Analisi dei requisiti}
+		\vspace{-1em}
+	\end{center}
+\end{table}	
+
+
+\begin{table}[H]
+	\begin{center}
+		\capstart
+		\begin{tabu} to \textwidth { 
+				>{\centering}m{0.4\linewidth} 
+				>{\centering}m{.2\linewidth}  
+				>{\centering\arraybackslash}m{0.25\linewidth}  }
+			\tableHeaderStyle
+			\textbf{Ruolo} & \textbf{Ore} & \textbf{Costo in \euro} \\
+			\resp & 23 & 690,00 \\
+			\amme & 52 & 1.040,00 \\
+			\alista & 49 & 1.225,00 \\
+			\proga &  &  \\
+			\progre &  &  \\
+			\vere & 51 & 765,00 \\
+			\textbf{Totale} & \textbf{175} & \textbf{3.720,00} \\
+		\end{tabu}
+		\caption{Resoconto economico - Consuntivo Analisi dei requisiti}
+		\vspace{-1em}
+	\end{center}
+\end{table}
+
+\subsection{Variazioni nella pianificazione}
+
 \subsection{Conclusione}
 
 \section{Preventivo a finire}
+La seguente tabella presenta l'attuale preventivo a finire. Il macro periodo iniziale di investimento non è incluso nel totale delle ore rendicontate ed è riportato solo a scopo riassuntivo. Se il valore del consuntivo non è ancora presente, per il conteggio totale verrà utilizzato il valore presente nel preventivo.
 
 
 \end{document}

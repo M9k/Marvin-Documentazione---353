@@ -1,35 +1,418 @@
 \documentclass[PianoDiProgetto.tex]{subfiles}
+\begin{document}	
 
-\begin{document}
-
-\chapter{Preventivo}
-
-\section{Analisi}
+\chapter{Suddivisione risorse e preventivo}
+La suddivisione oraria viene fatta tenendo conto di \textbf{quattro regole} principali:
+\begin{enumerate}
+	\item Tutti i membri devono coprire tutti i ruoli di progetto almeno una volta;
+	\item In tutti i periodi tutti i membri devono lavorare lo stesso numero di ore;
+	\item Ogni membro del gruppo dovrà lavorare in totale ad almeno 8 ore per ogni figura di progetto, in modo da apprendere a pieno i compiti dei vari ruoli;
+	\item Il totale delle ore di lavoro dei vari membri per ogni ruolo dovrà essere più o meno equivalente.
+\end{enumerate}
+Per il preventivo si tiene conto che i periodi di Analisi dei \citGloss{requisiti} e di Consolidamento dei \citGloss{requisiti} sono considerati di investimento non a carico del \citGloss{committente}, per cui le ore qui rendicontate non saranno conteggiate nelle ore totali da retribuire.\\\\
+Per facilitare la lettura delle tabelle i valori pari a 0 (zero) sono stati omessi, lasciando uno spazio vuoto.
+\newpage
+\section{Analisi dei requisiti}
 \subsection{Prospetto Orario}
+Nel periodo di Analisi la distribuzione oraria è la seguente:
+\begin{table}[H]
+	\begin{center}
+		\begin{tabu} to \textwidth {
+				>{\centering}m{0.3\linewidth} 
+				>{\centering}m{0.05\linewidth}  
+				>{\centering}m{0.05\linewidth}  
+				>{\centering}m{0.05\linewidth}
+				>{\centering}m{0.05\linewidth}
+				>{\centering}m{0.05\linewidth}
+				>{\centering}m{0.05\linewidth}
+				>{\centering\arraybackslash}m{0.15\linewidth}
+			}
+			\tableHeaderStyle			
+			\textbf{Nome} & \textbf{Re} & \textbf{Ad} & \textbf{An} & \textbf{Pj} & \textbf{Pr} & \textbf{Ve} & \textbf{Totale} \\
+			\Davide &  & 11 & 4 &  &  & 10 & 25 \\
+			\Elena & 10 & 8 & 3 &  &  & 4 & 25 \\
+			\Gianluca &  & 2 & 15 &  &  & 8 & 25 \\
+			\Mirco &  & 4 & 16 &  &  & 5 & 25 \\
+			\Parwinder & 8 & 8 & 3 &  &  & 6 & 25 \\
+			\Riccardo &  & 11 & 4 &  &  & 10 & 25 \\
+			\Valentina & 5 & 8 & 4 &  &  & 8 & 25 \\
+		\end{tabu}
+		\caption{Distribuzione oraria del periodo di Analisi dei requisiti}
+		\vspace{-1em}
+	\end{center}
+\end{table}	
+Il seguente grafico dà una rappresentazione visiva della suddivisione oraria:
+\nImg{images/prospettoOrario/analisi.png}{Grafico suddivisione oraria del periodo di Analisi dei requisiti}{14.5}
 \subsection{Prospetto Economico}
-
+Nel periodo di Analisi la distribuzione delle ore tra i differenti ruoli è la seguente:\\
+\begin{table}[H]
+	\begin{center}
+		\capstart
+		\begin{tabu} to \textwidth { 
+				>{\centering}m{0.4\linewidth} 
+				>{\centering}m{.2\linewidth}  
+				>{\centering\arraybackslash}m{0.25\linewidth}  }
+			\tableHeaderStyle
+			\textbf{Ruolo} & \textbf{Ore} & \textbf{Costo in \euro} \\
+			\resp & 23 & 690,00 \\
+			\amme & 52 & 1.040,00 \\
+			\alista & 49 & 1.225,00 \\
+			\proga &  &  \\
+			\progre &  &  \\
+			\vere & 51 & 765,00 \\
+			\textbf{Totale} & \textbf{175} & \textbf{3.720,00} \\
+		\end{tabu}
+		\caption{Prospetto economico del periodo di Analisi dei requisiti}
+		\vspace{-1em}
+	\end{center}
+\end{table}
+Il seguente grafico dà una rappresentazione visiva della distribuzione dei ruoli:
+\nImg{images/prospettoEconomico/analisi.png}{Grafico suddivisione dei ruoli del periodo di Analisi dei requisiti}{12}
+\newpage
 \section{Consolidamento dei requisiti}
 \subsection{Prospetto Orario}
+Nel periodo di Consolidamento dei \citGloss{requisiti} la distribuzione oraria è la seguente:
+\begin{table}[H]
+	\begin{center}
+		\begin{tabu} to \textwidth {
+				>{\centering}m{0.3\linewidth} 
+				>{\centering}m{0.05\linewidth}  
+				>{\centering}m{0.05\linewidth}  
+				>{\centering}m{0.05\linewidth}
+				>{\centering}m{0.05\linewidth}
+				>{\centering}m{0.05\linewidth}
+				>{\centering}m{0.05\linewidth}
+				>{\centering\arraybackslash}m{0.15\linewidth}
+			}
+			\tableHeaderStyle			
+			\textbf{Nome} & \textbf{Re} & \textbf{Ad} & \textbf{An} & \textbf{Pj} & \textbf{Pr} & \textbf{Ve} & \textbf{Totale} \\
+			\Davide 	&  & 3 & 4 &  &  &  & 7 \\
+			\Elena 		&  &  & 2 &  &  & 5 & 7 \\
+			\Gianluca 	&  &  &  &  &  & 7 & 7 \\
+			\Mirco		&  & 4 & 3 &  &  &  & 7 \\
+			\Parwinder	&  &  & 7 &  &  & 6 & 7 \\
+			\Riccardo 	& 5 & 2 & 4 &  &  &  & 7 \\
+			\Valentina	&  &  &  &  &  & 7 & 7 \\
+		\end{tabu}
+		\caption{Distribuzione oraria del periodo di Consolidamento dei requisiti}
+		\vspace{-1em}
+	\end{center}
+\end{table}
+Il seguente grafico dà una rappresentazione visiva della suddivisione oraria:
+\nImg{images/prospettoOrario/consolidamento.png}{Grafico suddivisione oraria del periodo di Consolidamento dei requisiti}{14.5}
 \subsection{Prospetto Economico}
-
-\section{Progettazione architetturale}
+Nel periodo di Analisi la distribuzione delle ore tra i differenti ruoli è la seguente:
+\begin{table}[H]
+	\begin{center}
+		\capstart
+		\begin{tabu} to \textwidth { 
+				>{\centering}m{0.4\linewidth} 
+				>{\centering}m{.2\linewidth}  
+				>{\centering\arraybackslash}m{0.25\linewidth}  }
+			\tableHeaderStyle
+			\textbf{Ruolo} & \textbf{Ore} & \textbf{Costo in \euro} \\
+			\resp & 5 & 120,00 \\
+			\amme & 9 & 180,00 \\
+			\alista & 16 & 400,00 \\
+			\proga &  &  \\
+			\progre &  &  \\
+			\vere & 19 & 285,00 \\
+			\textbf{Totale} & \textbf{49} & \textbf{985,00} \\
+		\end{tabu}
+		\caption{Prospetto economico del periodo di Consolidamento dei requisiti}
+		\vspace{-1em}
+	\end{center}
+\end{table}
+Il seguente grafico dà una rappresentazione visiva della distribuzione dei ruoli:
+\nImg{images/prospettoEconomico/consolidamento.png}{Grafico suddivisione dei ruoli del periodo di Consolidamento dei requisiti}{13.5}
+\clearpage
+\section{Progettazione della base tecnologica}
 \subsection{Prospetto Orario}
+Nel periodo di Progettazione architetturale la distribuzione oraria è la seguente:
+\begin{table}[H]
+	\begin{center}
+		\begin{tabu} to \textwidth {
+				>{\centering}m{0.3\linewidth} 
+				>{\centering}m{0.05\linewidth}  
+				>{\centering}m{0.05\linewidth}  
+				>{\centering}m{0.05\linewidth}
+				>{\centering}m{0.05\linewidth}
+				>{\centering}m{0.05\linewidth}
+				>{\centering}m{0.05\linewidth}
+				>{\centering\arraybackslash}m{0.15\linewidth}
+			}
+			\tableHeaderStyle			
+			\textbf{Nome} & \textbf{Re} & \textbf{Ad} & \textbf{An} & \textbf{Pj} & \textbf{Pr} & \textbf{Ve} & \textbf{Totale} \\
+			\Davide 	& 8 &  & 10 &  & 6 & 6 & 30 \\
+			\Elena 		&  &  &  & 14 & 6 & 10 & 30 \\
+			\Gianluca 	&  & 5 &  &  & 10 & 15 & 30 \\
+			\Mirco		&  &  &  & 12 & 10 & 8 & 30 \\
+			\Parwinder	&  &  &  & 6 & 10 & 14 & 30 \\
+			\Riccardo 	& 5 &  &  & 9 & 6 & 10 & 30 \\
+			\Valentina	&  & 5 & 10 &  & 6 & 9 & 30 \\
+		\end{tabu}
+		\caption{Distribuzione oraria del periodo di Progettazione della base tecnologica}
+		\vspace{-1em}
+	\end{center}
+\end{table}
+Il seguente grafico dà una rappresentazione visiva della suddivisione oraria:
+\nImg{images/prospettoOrario/progArch.png}{Grafico suddivisione oraria del periodo di Progettazione della base tecnologica}{11}	
+\newpage
 \subsection{Prospetto Economico}
-
+Nel periodo di Progettazione della base tecnologica la distribuzione delle ore tra i differenti ruoli è la seguente:
+\begin{table}[H]
+	\begin{center}
+		\capstart
+		\begin{tabu} to \textwidth { 
+				>{\centering}m{0.4\linewidth} 
+				>{\centering}m{.2\linewidth}  
+				>{\centering\arraybackslash}m{0.25\linewidth}  }
+			\tableHeaderStyle
+			\textbf{Ruolo} & \textbf{Ore} & \textbf{Costo in \euro} \\
+			\resp & 13 & 390,00 \\
+			\amme & 10 & 200,00 \\
+			\alista & 20 & 500,00 \\
+			\proga & 41 & 902,00 \\
+			\progre & 54 & 810,00 \\
+			\vere & 72 & 1.080,00 \\
+			\textbf{Totale} & \textbf{210} & \textbf{3.882,00} \\
+		\end{tabu}
+		\caption{Prospetto economico del periodo di Progettazione della base tecnologica}
+		\vspace{-1em}
+	\end{center}
+\end{table}
+Il seguente grafico dà una rappresentazione visiva della distribuzione dei ruoli:
+\nImg{images/prospettoEconomico/progArch.png}{Grafico suddivisione dei ruoli nel periodo di Progettazione della base tecnologica}{11}	 
+\newpage
 \section{Progettazione di dettaglio e codifica}
 \subsection{Prospetto Orario}
+Nel periodo di Progettazione di dettaglio e codifica la distribuzione oraria è la seguente:
+\begin{table}[H]
+	\begin{center}
+		\begin{tabu} to \textwidth {
+				>{\centering}m{0.3\linewidth} 
+				>{\centering}m{0.05\linewidth}  
+				>{\centering}m{0.05\linewidth}  
+				>{\centering}m{0.05\linewidth}
+				>{\centering}m{0.05\linewidth}
+				>{\centering}m{0.05\linewidth}
+				>{\centering}m{0.05\linewidth}
+				>{\centering\arraybackslash}m{0.15\linewidth}
+			}
+			\tableHeaderStyle			
+			\textbf{Nome} & \textbf{Re} & \textbf{Ad} & \textbf{An} & \textbf{Pj} & \textbf{Pr} & \textbf{Ve} & \textbf{Totale} \\
+			\Davide 	&  &  &  & 17 & 20 & 15 & 52 \\
+			\Elena 		&  &  & 4 & 18 & 20 & 10 & 52 \\
+			\Gianluca 	&  & 8 &  & 16 & 18 & 10 & 52 \\
+			\Mirco		& 8 &  &  & 16 & 18 & 10 & 52 \\
+			\Parwinder	&  &  &  & 24 & 18 & 10 & 52 \\
+			\Riccardo 	&  &  & 4 & 16 & 20 & 12 & 52 \\
+			\Valentina	& 5 &  &  & 27 & 20 &  & 52 \\
+		\end{tabu}
+		\caption{Distribuzione oraria del periodo di Progettazione in dettaglio e codifica}
+		\vspace{-1em}
+	\end{center}
+\end{table}
+Il seguente grafico dà una rappresentazione visiva della suddivisione oraria:
+\nImg{images/prospettoOrario/progCod.png}{Grafico suddivisione oraria del periodo di Progettazione di dettaglio e codifica}{11}	 
+\newpage
 \subsection{Prospetto Economico}
-
+Nel periodo di Progettazione di dettaglio e codifica la distribuzione delle ore tra i differenti ruoli è la seguente:
+\begin{table}[H]
+	\begin{center}
+		\capstart
+		\begin{tabu} to \textwidth { 
+				>{\centering}m{0.4\linewidth} 
+				>{\centering}m{.2\linewidth}  
+				>{\centering\arraybackslash}m{0.25\linewidth}  }
+			\tableHeaderStyle
+			\textbf{Ruolo} & \textbf{Ore} & \textbf{Costo in \euro} \\
+			\resp & 13 & 390,00 \\
+			\amme & 8 & 160,00 \\
+			\alista & 8 & 200,00 \\
+			\proga & 134 & 2.948,00 \\
+			\progre & 134 & 2.010,00 \\
+			\vere & 67 & 1.005,00 \\
+			\textbf{Totale} & \textbf{364} & \textbf{6.713,00} \\
+		\end{tabu}
+		\caption{Prospetto economico del periodo di Progettazione di dettaglio e codifica}
+		\vspace{-1em}
+	\end{center}
+\end{table}
+Il seguente grafico dà una rappresentazione visiva della distribuzione dei ruoli:
+\nImg{images/prospettoEconomico/progCod.png}{Grafico suddivisione dei ruoli nel periodo di Progettazione di dettaglio e codifica}{12}	 
+\clearpage
 \section{Validazione e collaudo}
 \subsection{Prospetto Orario}
+Nel periodo di \citGloss{validazione} e collaudo la distribuzione oraria è la seguente:
+\begin{table}[H]
+	\begin{center}
+		\begin{tabu} to \textwidth {
+				>{\centering}m{0.3\linewidth} 
+				>{\centering}m{0.05\linewidth}  
+				>{\centering}m{0.05\linewidth}  
+				>{\centering}m{0.05\linewidth}
+				>{\centering}m{0.05\linewidth}
+				>{\centering}m{0.05\linewidth}
+				>{\centering}m{0.05\linewidth}
+				>{\centering\arraybackslash}m{0.15\linewidth}
+			}
+			\tableHeaderStyle			
+			\textbf{Nome} & \textbf{Re} & \textbf{Ad} & \textbf{An} & \textbf{Pj} & \textbf{Pr} & \textbf{Ve} & \textbf{Totale} \\
+			\Davide 	&  &  &  & 8 & 6 & 6 & 20 \\
+			\Elena 		&  & 8 &  &  & 6 & 6 & 20 \\
+			\Gianluca 	& 10 &  &  & 6 & 4 &  & 20 \\
+			\Mirco		&  & 8 &  &  & 4 & 9 & 20 \\
+			\Parwinder	&  & 7 &  &  & 4 & 9 & 20 \\
+			\Riccardo 	&  &  &  & 8 & 6 & 6 & 20 \\
+			\Valentina	&  & 4 &  & 6 & 6 & 4 & 20 \\
+		\end{tabu}
+		\caption{Distribuzione oraria del periodo di Validazione e collaudo}
+		\vspace{-1em}
+	\end{center}
+\end{table}
+Il seguente grafico dà una rappresentazione visiva della suddivisione oraria:
+\nImg{images/prospettoOrario/valCol.png}{Grafico suddivisione oraria del periodo di Validazione e collaudo}{12}
+\newpage
 \subsection{Prospetto Economico}
-
-\section{Totale}
-\subsection{Totale suddivisione ore con investimento}
-\subsection{Totale ore con investimento}
+Nel periodo di \citGloss{validazione} e collaudo la distribuzione delle ore tra i differenti ruoli è la seguente:
+\begin{table}[H]
+	\begin{center}
+		\capstart
+		\begin{tabu} to \textwidth { 
+				>{\centering}m{0.4\linewidth} 
+				>{\centering}m{.2\linewidth}  
+				>{\centering\arraybackslash}m{0.25\linewidth}  }
+			\tableHeaderStyle
+			\textbf{Ruolo} & \textbf{Ore} & \textbf{Costo in \euro} \\
+			\resp & 10 & 300,00 \\
+			\amme & 27 & 540,00 \\
+			\alista &  &  \\
+			\proga & 28 & 616,00 \\
+			\progre & 36 & 540,00 \\
+			\vere & 39 & 585,00 \\
+			\textbf{Totale} & \textbf{140} & \textbf{2.581,00} \\
+		\end{tabu}
+		\caption{Prospetto economico del periodo di Validazione e collaudo}
+		\vspace{-1em}
+	\end{center}
+\end{table}
+Il seguente grafico dà una rappresentazione visiva della distribuzione dei ruoli:
+\nImg{images/prospettoEconomico/valCol.png}{Grafico suddivisione dei ruoli nel periodo di Validazione e collaudo}{13} 
+\clearpage
+\section{Totale ore rendicontate}
 \subsection{Totale suddivisione ore rendicontate}
-\subsection{Totale ore rendicontate}
-
-\section{Conclusione}
-
+Di seguito sono riportate il totale delle sole ore rendicontate nel preventivo a carico del \citGloss{committente}:
+\begin{table}[H]
+	\begin{center}
+		\begin{tabu} to \textwidth {
+				>{\centering}m{0.3\linewidth} 
+				>{\centering}m{0.05\linewidth}  
+				>{\centering}m{0.05\linewidth}  
+				>{\centering}m{0.05\linewidth}
+				>{\centering}m{0.05\linewidth}
+				>{\centering}m{0.05\linewidth}
+				>{\centering}m{0.05\linewidth}
+				>{\centering\arraybackslash}m{0.15\linewidth}
+			}
+			\tableHeaderStyle			
+			\textbf{Nome} & \textbf{Re} & \textbf{Ad} & \textbf{An} & \textbf{Pj} & \textbf{Pr} & \textbf{Ve} & \textbf{Totale} \\
+			\Davide 	& 8 &  & 10 & 25 & 32 & 27 & 102 \\
+			\Elena 		&  & 8 & 4 & 32 & 32 & 26 & 102 \\
+			\Gianluca 	& 10 & 13 &  & 22 & 32 & 25 & 102 \\
+			\Mirco		& 8 & 8 &  & 28 & 32 & 26 & 102 \\
+			\Parwinder	&  & 7 &  & 30 & 32 & 33 & 102 \\
+			\Riccardo 	& 5 &  & 4 & 33 & 32 & 28 & 102 \\
+			\Valentina	& 5 & 9 & 10 & 33 & 32 & 13 & 102 \\
+		\end{tabu}
+		\caption{Distribuzione oraria totale delle ore rendicontate}
+		\vspace{-1em}
+	\end{center}
+\end{table}
+Il seguente grafico dà una rappresentazione visiva della suddivisione oraria:
+\nImg{images/prospettoOrario/totRen.png}{Grafico suddivisione oraria totale delle ore rendicontate}{12}
+\clearpage
+\subsection{Totale del prospetto economico rendicontato}
+Di seguite è riportato il totale delle ore dei diversi ruoli del progetto contando solo le ore rendicontate nel preventivo a carico del \citGloss{committente} cioè dei periodi di Progettazione della base tecnologica, Progettazione di dettaglio e codifica e il periodo di \citGloss{validazione} e collaudo:
+\begin{table}[H]
+	\begin{center}
+		\capstart
+		\begin{tabu} to \textwidth { 
+				>{\centering}m{0.4\linewidth} 
+				>{\centering}m{.2\linewidth}  
+				>{\centering\arraybackslash}m{0.25\linewidth}  }
+			\tableHeaderStyle
+			\textbf{Ruolo} & \textbf{Ore} & \textbf{Costo in \euro} \\
+			\resp & 36 & 1.080,00 \\
+			\amme & 45 & 900,00 \\
+			\alista & 28 & 700,00 \\
+			\proga & 203 & 4.466,00 \\
+			\progre & 224 & 3.360,00 \\
+			\vere & 178 & 2670,00 \\
+			\textbf{Totale} & \textbf{714} & \textbf{13.176,00} \\
+		\end{tabu}
+		\caption{Prospetto economico del totale delle ore rendicontate}
+		\vspace{-1em}
+	\end{center}
+\end{table}
+Il seguente grafico dà una rappresentazione visiva della distribuzione dei ruoli:
+\nImg{images/prospettoEconomico/totRen.png}{Grafico suddivisione dei ruoli totale delle ore rendicontate}{11}
+\clearpage
+\section{Totale ore con investimento}
+\subsection{Totale suddivisione ore con investimento}
+Di seguito sono riportate il totale delle ore del progetto contando le ore di investimento e delle ore rendicontate nel preventivo a carico del \citGloss{committente}:
+\begin{table}[H]
+	\begin{center}
+		\begin{tabu} to \textwidth {
+				>{\centering}m{0.3\linewidth} 
+				>{\centering}m{0.05\linewidth}  
+				>{\centering}m{0.05\linewidth}  
+				>{\centering}m{0.05\linewidth}
+				>{\centering}m{0.05\linewidth}
+				>{\centering}m{0.05\linewidth}
+				>{\centering}m{0.05\linewidth}
+				>{\centering\arraybackslash}m{0.15\linewidth}
+			}
+			\tableHeaderStyle			
+			\textbf{Nome} & \textbf{Re} & \textbf{Ad} & \textbf{An} & \textbf{Pj} & \textbf{Pr} & \textbf{Ve} & \textbf{Totale} \\
+			\Davide 	& 8 & 14 & 18 & 25 & 32 & 37 & 134 \\
+			\Elena 		& 10 & 16 & 9 & 32 & 32 & 35 & 134 \\
+			\Gianluca 	& 10 & 15 & 15 & 22 & 32 & 40 & 134 \\
+			\Mirco		& 8 & 16 & 19 & 28 & 32 & 31 & 134 \\
+			\Parwinder	& 8 & 15 & 10 & 30 & 32 & 39 & 134 \\
+			\Riccardo 	& 10 & 13 & 8 & 33 & 32 & 38 & 134 \\
+			\Valentina	& 10 & 17 & 14 & 33 & 32 & 28 & 134 \\
+		\end{tabu}
+		\caption{Distribuzione oraria totale delle ore di investimento e rendicontate}
+		\vspace{-1em}
+	\end{center}
+\end{table}
+Il seguente grafico dà una rappresentazione visiva della suddivisione oraria:
+\nImg{images/prospettoOrario/totale.png}{Grafico suddivisione oraria totale delle ore di investimento e rendicontate}{11} 
+\clearpage
+\subsection{Totale del prospetto economico con investimento}
+Di seguito è riportato il totale delle ore dei diversi ruoli del progetto contando le ore di investimento e delle ore rendicontate nel preventivo a carico del \citGloss{committente}:
+\begin{table}[H]
+	\begin{center}
+		\capstart
+		\begin{tabu} to \textwidth { 
+				>{\centering}m{0.4\linewidth} 
+				>{\centering}m{.2\linewidth}  
+				>{\centering\arraybackslash}m{0.25\linewidth}  }
+			\tableHeaderStyle
+			\textbf{Ruolo} & \textbf{Ore} & \textbf{Costo in \euro} \\
+			\resp & 64 & 1.920,00 \\
+			\amme & 106 & 2.120,00 \\
+			\alista & 93 & 2.325,00 \\
+			\proga & 203 & 4.466,00 \\
+			\progre & 224 & 3.360,00 \\
+			\vere & 248 & 3.720,00 \\
+			\textbf{Totale} & \textbf{938} & \textbf{17.911,00} \\
+		\end{tabu}
+		\caption{Prospetto economico del totale delle ore di investimento e rendicontate}
+		\vspace{-1em}
+	\end{center}
+\end{table}
+Il seguente grafico dà una rappresentazione visiva della distribuzione dei ruoli:
+\nImg{images/prospettoEconomico/totInv.png}{Grafico suddivisione totale dei ruoli delle ore di investimento e rendicontate}{11}
 \end{document}

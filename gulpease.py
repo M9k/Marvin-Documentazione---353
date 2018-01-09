@@ -32,18 +32,38 @@ gulpease_indexes = ""
 for directory in directories:
     text = ""
     os.chdir(directory)
+
+'''    document_name = directory.split('/')[-1]
+    for tex_file in glob.glob("*.tex"):
+        if  document_name not in tex_file and "diariomodifiche" not in tex_file:
+            detex = ["detex", "-e", "table", tex_file]
+            output, error = subprocess.Popen(detex, stdout=subprocess.PIPE).communicate()
+            #r"\w\s\*\n" -> trova tutte le lettere seguite da un numero
+            #indefinito (anche 0) di spazi seguiti da un a capo
+            #Sono praticamente i titoli delle sezioni, mettendoci il . alla
+            #fine l'indice migliora decisamente
+            text += re.sub(r"\w\s*\n", "a.\n", re.sub(';', '.', output)) + '\n'
+'''
     for tex_file in glob.glob("*.tex"):
         if directory.split('/')[-1] not in tex_file and "diariomodifiche" not in tex_file:
             command = DETEX_CMD + tex_file
             detex = subprocess.Popen(command.split(), stdout=subprocess.PIPE)
             output, error = detex.communicate()
             text += re.sub(r"\w\s*\n", "a.\n", re.sub(';', '.', output))
+
     if len(text) == 0:
         text = "NOPE" #Cosi non mi crasha il perl
     os.chdir(SCRIPT_DIR)
     tmp_file = open(TMP_FILE, "w")
     tmp_file.write(text)
     tmp_file.close()
+'''
+    gulpease = ["perl", "gulpease.pl", TMP_FILE]
+    output, error = subprocess.Popen(gulpease, stdout=subprocess.PIPE).communicate()
+    os.remove(TMP_FILE)
+    document_index = output.split()[-1]
+    gulpease_indexes += document_name + " - " + document_index + '\n'
+'''
     command = PERL_CMD + TMP_FILE
     gulpease = subprocess.Popen(command.split(), stdout=subprocess.PIPE)
     output, error = gulpease.communicate()

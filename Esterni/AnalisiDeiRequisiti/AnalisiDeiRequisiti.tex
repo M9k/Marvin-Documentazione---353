@@ -1,7 +1,18 @@
 \documentclass[openany, a4paper, 12pt]{report}
 \usepackage{subfiles}
 \usepackage{../../common/style}
-\fancyfoot[L]{Analisi Dei Requisiti}
+\loadglsentries{"./../../Esterni/Glossario/Definizioni.tex"}
+
+% Per lo span delle colonne
+\usepackage{makecell}
+% Per i blocchi di commenti
+\usepackage{verbatim}
+% Per le tabelle
+\usepackage[table,xcdraw]{xcolor}
+% Per la posizione float
+\usepackage{float}
+% Per avere colonne multipagina
+\usepackage{longtable}
  
 \begin{document}
 
@@ -12,28 +23,28 @@
 		\bfseries
 		\vskip2cm
 		\includegraphics[width=9cm]{../../common/images/logo.png} \\
-		\Large Titolo Capitolato\\
 		\vfill
-		\Huge Titolo Documento\\
-		\Large Versione x.x in data xx-xx-xxxx\\
+		\Huge{ANALISI DEI REQUISITI}\\
 		\vfill
-		\large Gruppo 353\\
+		\Large Versione 1.0.0 in data 05-01-2018\\
+		\large Gruppo 353 - Progetto \progetto \\
 		\vfill
-	\normalsize Informazioni sul documento\\
+\normalsize Informazioni sul documento\\
+
 \begin{table}[htbp]
 	\centering
 	\renewcommand\arraystretch{1.2}
 	\begin{tabular}{r|l}
 		\hline
-		\textbf{Responsabili}	& Elena Mattiazzo\\
-								& Valentina Marcon\\
-								& Mirco Cailotto\\
+		\textbf{Responsabili}	& \Elena \\
+								& \Parwinder\\
+								& \Valentina\\
 		
-		\textbf{Redazione} 		& Riccardo E. Giorato\\
-								& Gianluca Marraffa\\
+		\textbf{Redazione} 		& \Mirco\\
+								& \Gianluca\\
 		
-		\textbf{Verifica} 		& Parwinder Singh\\
-								& Davide Stocco\\
+		\textbf{Verifica} 		& \Riccardo\\
+								& \Davide\\
 						
 		\textbf{Stato} 			& In corso\\
 		\textbf{Uso}			& Esterno\\
@@ -49,8 +60,15 @@
 \pagenumbering{roman}
 \subfile{diariomodifiche}
 \tableofcontents
+\listoffigures
+
+\listoftables
+
 \newpage
 \pagenumbering{arabic}
-%\subfile{Capitolo1}
+\subfile{Introduzione}
+\subfile{DescrizioneGenerale}
+\subfile{CasiDUso}
+\subfile{Requisiti}
  
 \end{document}

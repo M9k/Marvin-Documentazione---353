@@ -213,10 +213,10 @@
 \subsection{UC3.4 - Selezione corso}
 \begin{itemize}
 	\item \textbf{Attori Primari:} utente non autenticato;
-	\item \textbf{Scopo e Descrizione} il sistema offre l'interfaccia per selezionare il \citGloss{corso di laurea} desiderato;
+	\item \textbf{Scopo e Descrizione} il sistema offre l'interfaccia per selezionare il \citGloss{corso di laurea} desiderato da un elenco, specificando per ognuno la sigla di riferimento;
 	\item \textbf{Scenario principale:} l'utente seleziona tramite un dispositivo di input il \citGloss{corso di laurea} scelto;
 	\item \textbf{Precondizione:} l'utente ha selezionato la registrazione come studente, il sistema offre un campo per la selezione del \citGloss{corso di laurea} e rimane in attesa dell'input;
-	\item \textbf{Postcondizione:} l'utente ha selezionato il suo \citGloss{corso di laurea} nel campo fornito dal sistema e termina la procedura di registrazione.
+	\item \textbf{Postcondizione:} l'utente ha selezionato il \citGloss{corso di laurea} desiderato e termina la procedura di registrazione.
 \end{itemize}
 
 \subsection{UC3.5 - Visualizzazione errore campo non compilato}
@@ -296,24 +296,24 @@
 \subsection{UC5.1.1 - Visualizzazione lista di studenti}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
-	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti gli studenti registrati nel sistema;
-	\item \textbf{Scenario principale:} l'amministratore richiede al sistema una lista di studenti per poterli gestire;
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti gli studenti registrati nel sistema, visualizzando per ogni studente chiave, nome, cognome e corso;
+	\item \textbf{Scenario principale:} l'amministratore richiede al sistema una lista di studenti per poterli visualizzare e eventualmente gestire;
 	\item \textbf{Precondizione:} l'amministratore è nell'area di gestione utenti e richiede una lista di tutti gli studenti; 
 	\item \textbf{Postcondizione:} l'amministratore ottiene la lista.
 \end{itemize}
 \subsection{UC5.1.2 - Visualizzazione lista di professori}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
-	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti i professori registrati nel sistema;
-	\item \textbf{Scenario principale:} l'amministratore richiede al sistema una lista di professori per poterli gestire;
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti i professori registrati nel sistema, visualizzando per ogni professore chiave, nome e cognome;
+	\item \textbf{Scenario principale:} l'amministratore richiede al sistema una lista di professori per poterli visualizzare ed eventualmente gestire;
 	\item \textbf{Precondizione:} l'amministratore è nell'area di gestione utenti e richiede una lista di tutti i professori; 
 	\item \textbf{Postcondizione:} l'amministratore ottiene la lista.
 \end{itemize}
 \subsection{UC5.1.3 - Visualizzazione lista di utenti in attesa di abilitazione}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
-	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti gli studenti ancora non abilitati;
-	\item \textbf{Scenario principale:} l'amministratore richiede al sistema una lista di studenti in attesa di abilitazione per poterli gestire;
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti gli utenti ancora non abilitati, ottenendo per ognuno chiave, nome, cognome e ruolo, nel caso si tratti di studenti anche il corso;
+	\item \textbf{Scenario principale:} l'amministratore richiede al sistema una lista di utenti in attesa di abilitazione per poterli gestire;
 	\item \textbf{Precondizione:} l'amministratore è nell'area di gestione studenti e richiede una lista di studenti in attesa di abilitazione; 
 	\item \textbf{Postcondizione:} l'amministratore ottiene la lista.
 \end{itemize}
@@ -326,8 +326,8 @@
 		\item L'amministratore visualizza la lista degli utenti in attesa di abilitazione [UC5.1.3];
 		\item L'amministratore lo abilita [UC5.1.4].
 	\end{enumerate}
-	\item \textbf{Precondizione:} l'amministratore ha richiesto una lista di utenti non abilitati; 
-	\item \textbf{Postcondizione:} l'utente selezionato viene abilitato e il suo stato viene aggiornato nel sistema.
+	\item \textbf{Precondizione:} l'amministratore ha richiesto una lista di utenti non abilitati ed ha individuato l'account che desidera abilitare; 
+	\item \textbf{Postcondizione:} l'utente indicato viene abilitato e il suo stato viene aggiornato nel sistema.
 \end{itemize}
 \subsection{UC5.1.5 - Rimozione utente}
 \begin{itemize}
@@ -338,15 +338,15 @@
 		\item L'amministratore visualizza gli utenti abilitati o in attesa di abilitazione e ne seleziona uno [UC5.1.1 o UC5.1.2 o UC5.3];
 		\item L'amministratore rimuove l'utente selezionato [UC5.1.5].
 	\end{enumerate}
-	\item \textbf{Precondizione:} l'amministratore ha richiesto una lista di studenti o professori; 
-	\item \textbf{Postcondizione:} l'utente selezionato viene rimosso dal sistema.
+	\item \textbf{Precondizione:} l'amministratore ha richiesto una lista di studenti o professori ed ha individuato l'account che desidera rimuovere;
+	\item \textbf{Postcondizione:} l'utente indicato viene rimosso dal sistema.
 \end{itemize}
 \subsection{UC5.2 - Gestione anni accademici}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
 	\item \textbf{Scopo e descrizione:} l'amministratore è in grado di eseguire operazioni sugli anni accademici dell'ateneo;
 	\item \textbf{Scenario principale:} l'amministratore visualizza una lista di operazioni eseguibili sugli anni accademici e ne sceglie una;
-	\item \textbf{Precondizione:} l'amministratore ha scelto di gestire gli anni accademeici; 
+	\item \textbf{Precondizione:} l'amministratore ha scelto di gestire gli anni accademici; 
 	\item \textbf{Postcondizione:} l'amministratore è a conoscenza delle possibili operazioni da eseguire sugli anni accademici e ne ha scelta una.
 \end{itemize}
 
@@ -360,11 +360,11 @@
 \subsection{UC5.2.1 - Aggiunta anno accademico}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
-	\item \textbf{Scopo e descrizione:} l'amministratore aggiunge un \citGloss{anno accademico} nel sistema;
-	\item \textbf{Scenario principale:} l'amministratore inserisce il numero dell'anno da aggiungere in un campo fornito dal sistema;
+	\item \textbf{Scopo e descrizione:} l'amministratore aggiunge un \citGloss{anno accademico} nel sistema fornendo l'anno solare di riferimento;
+	\item \textbf{Scenario principale:} l'amministratore inserisce il numero dell'anno solare da aggiungere in un campo fornito dal sistema;
 	\item \textbf{Estensioni:}
 	\begin{enumerate}
-		\item Se l'amministratore inserisce un'anno non numerico viene mostrato un messaggio d'errore relativo alla malformazione dell'anno [UC5.2.4];
+		\item Se l'amministratore inserisce un anno non numerico viene mostrato un messaggio d'errore relativo alla invalidità del dato fornito [UC5.2.4];
 		\item Se l'amministratore inserisce un'anno già presente nel sistema viene mostrato un messaggio d'errore relativo alla non univocità dell'anno [UC5.2.5];
 		\item Se l'amministratore lascia il campo vuoto l'utente viene avvisato con un relativo messaggio d'errore [UC5.2.6].
 	\end{enumerate}
@@ -374,7 +374,7 @@
 \subsection{UC5.2.2 - Visualizzazione lista di tutti gli anni accademici}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
-	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti gli anni accademici presenti nel sistema;
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti gli anni accademici presenti nel sistema, visualizzandone l'anno solare di riferimento;
 	\item \textbf{Scenario principale:} l'amministratore richiede la lista di tutti gli anni del sistema;
 	\item \textbf{Precondizione:} l'amministratore è nell'area di gestione Anni Accademici e vuole ottenere la lista di tutti gli anni presenti nel sistema; 
 	\item \textbf{Postcondizione:} l'amministratore ottiene la lista.
@@ -422,7 +422,7 @@
 \subsection{UC5.3.1 - Creazione corso di laurea}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
-	\item \textbf{Scopo e descrizione:} l'amministratore crea un nuovo corso di laurea associato ad un \citGloss{anno accademico};
+	\item \textbf{Scopo e descrizione:} l'amministratore crea un nuovo corso di laurea associato ad un \citGloss{anno accademico}, indicando la sigla da utilizzare per riferirsi al corso;
 	\item \textbf{Scenario principale:}
 		\begin{enumerate}
 			\item L'amministratore ottiene una lista degli anni accademici e seleziona quello di suo interesse [UC5.2.2];
@@ -430,22 +430,22 @@
 		\end{enumerate}
 	\item \textbf{Estensioni:}
 		\begin{enumerate}
-			\item Se l'amministratore non inserisce tutti i campi viene avvisato dal sistema [UC5.3.2].
+			\item Se l'amministratore inserisce una sigla invalida viene avvisato con un messaggio [UC5.3.2].
 		\end{enumerate}
 	\item \textbf{Precondizione:} l'amministratore vuole inserire un nuovo corso di laurea associato ad un \citGloss{anno accademico}; 
 	\item \textbf{Postcondizione:} il \citGloss{corso di laurea} è stato creato ed inserito nel sistema.
 \end{itemize}
-\subsection{UC5.3.2 - Visualizzazione errore mancata compilazione campi}
+\subsection{UC5.3.2 - Visualizzazione errore sigla invalida}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
-	\item \textbf{Scopo e descrizione:} viene mostrato un messaggio d'errore per avvisare l'amministratore che non ha compilato i campi necessari;
-	\item \textbf{Scenario principale:} il sistema mostra all'amministratore che non ha compilato tutti i campi;
-	\item \textbf{Precondizione:} l'amministratore ha tentato di creare un \citGloss{corso di laurea} senza compilare tutti i campi; 
-	\item \textbf{Postcondizione:} l'amministratore è consapevole di non aver inserito tutti i campi necessari.
+	\item \textbf{Scopo e descrizione:} viene mostrato un messaggio d'errore per avvisare l'amministratore che non è possibile utilizzare la sigla inserita, in quanto non rispetta il pattern indicato dal sistema oppure risulta già in uso;
+	\item \textbf{Scenario principale:} il sistema avvisa l'amministratore che non è possibili utilizzare la sigla indicata;
+	\item \textbf{Precondizione:} l'amministratore ha tentato di creare un \citGloss{corso di laurea} utilizzando una sigla che non rispetta i requisiti indicati dal sistema; 
+	\item \textbf{Postcondizione:} l'amministratore è consapevole di non poter utilizzare quella determinata sigla per la creazione di un nuovo corso.
 \end{itemize}\subsection{UC5.3.3 - Visualizzazione lista completa dei corsi}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
-	\item \textbf{Scopo e descrizione:} vengono mostrati tutti i corsi di laurea presenti nel sistema;
+	\item \textbf{Scopo e descrizione:} vengono mostrati tutti i corsi di laurea presenti nel sistema, visualizzandone il nome;
 	\item \textbf{Scenario principale:} l'amministratore visualizza tutti i corsi di laurea presenti nel sistema;
 	\item \textbf{Precondizione:} l'amministratore ha richiesto la visualizzazione di tutti i corsi di laurea; 
 	\item \textbf{Postcondizione:} l'amministratore ottiene la lista.
@@ -453,7 +453,7 @@
 \subsection{UC5.3.4 - Visualizzazione lista corsi di laurea per anno accademico}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
-	\item \textbf{Scopo e descrizione:} vengono visualizzati i corsi di laurea relativi ad un determinato \citGloss{anno accademico};
+	\item \textbf{Scopo e descrizione:} vengono visualizzati i corsi di laurea relativi ad un determinato \citGloss{anno accademico}, ottenendone i nomi;
 	\item \textbf{Scenario principale:}
 	\begin{enumerate}
 		\item L'amministratore ottiene una lista degli anni accademici e seleziona quello di suo interesse [UC5.2.2];
@@ -462,30 +462,30 @@
 	\item \textbf{Precondizione:} l'amministratore ha visualizzato una lista di anni accademici [UC5.2.2] e vuole visualizzare i corsi di laurea all'interno di uno di essi; 
 	\item \textbf{Postcondizione:} l'amministratore ottiene la lista desiderata.
 \end{itemize}
-\subsection{UC5.3.5 - Crea un esame nel corso}
+\subsection{UC5.3.5 - Creazione esame in un corso}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
 	\item \textbf{Scopo e descrizione:} l'amministratore crea ed assegna un esame all'interno di un \citGloss{corso di laurea};
-	\item \textbf{Scenario principale:} l'amministratore inserisce i dati necessari per la creazione dell'esame;
+	\item \textbf{Scenario principale:} l'amministratore inserisce il nome dell'esame che desidera creare e seleziona la quantità di crediti;
 	\item \textbf{Estensioni:}
 	\begin{enumerate}
-		\item Se l'amministratore non compila tutti i campi viene visualizzato un messaggio d'errore [UC5.3.4].
+		\item Se l'amministratore inserisce un nome invalido ottiene un messaggio d'errore [UC5.3.4].
 	\end{enumerate}
-	\item \textbf{Precondizione:} l'amministratore ha ottenuto una lista di corsi di laurea per \citGloss{anno accademico} [UC5.3.3] e ne ha selezionato uno, volendo creare un esame al su interno; 
+	\item \textbf{Precondizione:} l'amministratore ha ottenuto una lista di corsi di laurea per \citGloss{anno accademico} [UC5.3.3] e ne ha selezionato uno, volendo creare un esame al suo interno; 
 	\item \textbf{Postcondizione:} l'esame viene inserito nel sistema e associato al \citGloss{corso di laurea} selezionato.
 \end{itemize}
-\subsection{UC5.3.6 - Visualizzazione errore campi non compilati nella creazione dell'esame}
+\subsection{UC5.3.6 - Visualizzazione errore nome esame non valido}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
-	\item \textbf{Scopo e descrizione:} viene mostrato un messaggio d'errore relativo alla mancata compilazione dei campi associati all'esame;
+	\item \textbf{Scopo e descrizione:} viene mostrato un messaggio d'errore relativo all'invalidità del nome del corso, in quanto non rispetta un pattern indicato dal sistema oppure già utilizzato;
 	\item \textbf{Scenario principale:} l'amministratore visualizza il messaggio d'errore;
-	\item \textbf{Precondizione:} l'amministratore tenta di creare un esame senza compilare tutti i campi obbligatori; 
-	\item \textbf{Postcondizione:} l'amministratore è a conoscenza di non aver compilato tutti i campi necessari.
+	\item \textbf{Precondizione:} l'amministratore tenta di creare un esame utilizzando un nome che non rispetta i requisiti indicati dal sistema; 
+	\item \textbf{Postcondizione:} l'amministratore è a conoscenza di aver inserito un nome invalido.
 \end{itemize}
 \subsection{UC5.3.7 - Visualizzazione lista esami per corso}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
-	\item \textbf{Scopo e descrizione:} vengono visualizzati gli esami relativi ad un determinato \citGloss{corso di laurea};
+	\item \textbf{Scopo e descrizione:} vengono visualizzati gli esami relativi ad un determinato \citGloss{corso di laurea}, con indicato per ognuno di essi il nome, il numero di crediti e, se presente, il nome ed il cognome del professore assegnatogli;
 	\item \textbf{Scenario principale:}
 	\begin{enumerate}
 		\item L'amministratore ottiene una lista dei corsi di laurea e seleziona quello di suo interesse [UC5.3.3 o UC5.3.4];
@@ -497,7 +497,7 @@
 \subsection{UC5.3.8 - Visualizzazione lista esami}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
-	\item \textbf{Scopo e descrizione:} vengono visualizzati gli esami all'interno del sistema;
+	\item \textbf{Scopo e descrizione:} vengono visualizzati gli esami all'interno del sistema, con indicato per ognuno di essi il nome, il numero di crediti e, se presente, il nome ed il cognome del professore assegnatogli;
 	\item \textbf{Scenario principale:} l'amministratore visualizza la lista di tutti gli esami presenti nel sistema;
 	\item \textbf{Precondizione:} l'amministratore vuole vedere tutti gli esami presenti nel sistema; 
 	\item \textbf{Postcondizione:} l'amministratore ottiene la lista desiderata.
@@ -506,13 +506,13 @@
 \subsection{UC5.3.9 - Visualizzazione dettagli esame}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
-	\item \textbf{Scopo e descrizione:} l'amministratore visualizza i dati relativi ad uno specifico esame, come crediti e professore associato;
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza il nome dell'esame, la relativa quantità di crediti, il nome, cognome e chiave del professore associato ed il numero di studenti iscritti.
 	\item \textbf{Scenario principale:}
 	\begin{enumerate}
 		\item L'amministratore ottiene una lista degli esami e seleziona quello di suo interesse [UC5.3.7 o UC5.3.8];
-		\item Il sistema mostra una schermata informativa contenente i dati relativi al numero di crediti dell'esame e il professore associato ad esso [UC5.3.9].
+		\item Il sistema mostra una schermata informativa contenente i dati relativi all'esame [UC5.3.9].
 	\end{enumerate}
-	\item \textbf{Precondizione:} l'amministratore vuole visualizzare i dettagli di un esame e ha richiesto una lista di esami [UC5.3.7 o UC5.3.8]; 
+	\item \textbf{Precondizione:} l'amministratore vuole visualizzare i dettagli di un esame dopo averlo individuato in una elenco di esami [UC5.3.7 o UC5.3.8]; 
 	\item \textbf{Postcondizione:} l'amministratore ha ottenuto le informazioni ricercate.
 \end{itemize}
 \subsection{UC5.3.10 - Associa professore a esame}
@@ -534,28 +534,28 @@
 	\caption{UC5.3.10 - Associazione professore a esame}
 	\label{fig:UC5.3.10 - Associazione professore a esame}
 \end{figure}
-\subsection{UC5.3.10.1 - Selezione esame}
+\subsection{UC5.3.10.1 - Visualizzazione lista di esami non ancora assegnati}
 \begin{itemize}
-	\item \textbf{Attori primari:} amministratore;
-	\item \textbf{Scopo e descrizione:} l'amministratore seleziona l'esame desiderato;
-	\item \textbf{Scenario principale:} l'amministratore seleziona da una lista l'esame a cui associare un professore;
-	\item \textbf{Precondizione:} l'amministratore ha visualizzato una lista di esami [UC5.3.7 o UC5.3.8] e vuole associare un professore ad uno di essi; 
-	\item \textbf{Postcondizione:} l'amministratore ha selezionato un esame a cui associare un professore.
+\item \textbf{Attori primari:} amministratore;
+\item \textbf{Scopo e descrizione:} l'amministratore ottiene una lista dei nomi degli esami che non presentano un professore associato;
+\item \textbf{Scenario principale:} l'amministratore ottiene una lista di esami ai quali può associare un nuovo professore, essendone sprovvisti;
+\item \textbf{Precondizione:} l'amministratore desidera ottenere una lista di esami sprovvisti di professore associato; 
+\item \textbf{Postcondizione:} l'amministratore ottiene la lista richiesta e può procedere a identificare l'esame di suo interesse.
 \end{itemize}
-\subsection{UC5.3.10.2 - Visualizzazione lista professori non associati ad un determinato esame}
+\subsection{UC5.3.10.2 - Visualizzazione lista professori selezionato un esame}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
-	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di professori non associati all'esame selezionato;
-	\item \textbf{Scenario principale:} il sistema mostra all'amministratore una lista di professori non associati con l'esame selezionato;
-	\item \textbf{Precondizione:} l'amministratore ha selezionato l'esame desiderato [UC5.3.10.1] e vuole vedere i professori non associati ad esso;  
-	\item \textbf{Postcondizione:} l'amministratore è a conoscenza dei professori non associati all'esame selezionato.
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista dei nomi, cognomi e indirizzi dei professori per identificare quale assegnare all'esame precedentemente indicato;
+	\item \textbf{Scenario principale:} il sistema mostra all'amministratore una lista di professori in modo da consentire la scelta di quale associare all'esame precedentemente indicato;
+	\item \textbf{Precondizione:} l'amministratore ha selezionato l'esame desiderato [UC5.3.10.1] e desidera ottenere la lista dei professori per poterne associare uno;  
+	\item \textbf{Postcondizione:} l'amministratore è a conoscenza dell'elenco dei professori.
 \end{itemize}
-\subsection{UC5.3.10.3 - Selezione professore}
+\subsection{UC5.3.10.3 - Associazione professore all'esame}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
-	\item \textbf{Scopo e descrizione:} l'amministratore associa un professore ad un esame selezionato;
-	\item \textbf{Scenario principale:} l'amministratore seleziona da una lista il professore desiderato;
-	\item \textbf{Precondizione:} l'amministratore ha selezionato un esame [UC5.3.10.1] e ha ottenuto una lista di professori non associati ad esso [UC5.3.1.2], volendo associarne uno; 
+	\item \textbf{Scopo e descrizione:} l'amministratore associa un professore dopo averlo individuato in una lista contenente tutti i professori ad un esame che ne è ancora sprovvisto;
+	\item \textbf{Scenario principale:} l'amministratore associa ad un esame un determinato professore;
+	\item \textbf{Precondizione:} l'amministratore ha selezionato un esame sprovvisto di assegnazione a un professore [UC5.3.10.1] e ha ottenuto una lista di professori [UC5.3.1.2], volendo associarne uno; 
 	\item \textbf{Postcondizione:} il professore selezionato viene associato all'esame desiderato.
 \end{itemize}
 

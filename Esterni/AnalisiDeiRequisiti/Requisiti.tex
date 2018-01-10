@@ -263,17 +263,18 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 	UC5.2.5 & Visualizzazione messaggio anno non compilato &  R0F3.1 \\  
 	UC5.3 & Gestione corsi di laurea &  R0F3.3 \\   
 	UC5.3.1 & Creazione \citGloss{corso di laurea} &  R0F3.3.1 \\  
-	UC5.3.2 & Visualizzazione errore mancata compilazione campi & R0F3.3.1 \\  
+	UC5.3.2 & Visualizzazione errore sigla invalida & R0F3.3.1 \\  
 	UC5.3.3 & Visualizzazione lista completa dei corsi &  R0F3.3.2 \\  
 	UC5.3.4 & Visualizzazione lista corsi di laurea per \citGloss{anno accademico} & R0F3.3.2  \\  
-	UC5.3.5 & Crea un esame nel corso &  R0F3.3.3\\  
-	UC5.3.6 & Visualizzazione errore campi non compilati nella creazione dell'esame & R0F3.3.3  \\  
+	UC5.3.5 & Creazione esame in un corso &  R0F3.3.3\\  
+	UC5.3.6 & Visualizzazione errore nome esame non valido & R0F3.3.3  \\  
 	UC5.3.7 & Visualizzazione lista esami per \citGloss{corso di laurea} & R0F3.3.4 \\  
 	UC5.3.8 & Visualizzazione lista esami &  R0F3.3.4 \\  
-	%UC5.3.10 & Rimozione esame da un corso &  R0F3.3.4 \\  
-	UC5.3.10 & Associazione professore a esame & R0F3.3.4.2 \\  
-	%UC5.3.12 & Rimozione \citGloss{corso di laurea} da \citGloss{anno accademico} & R2F34 \\  
 	UC5.3.9 & Visualizzazione dettagli esame & R0F3.3.4.1 \\  
+	UC5.3.10 & Associazione professore a esame & R0F3.3.4.2 \\
+	UC5.3.10.1 & Visualizzazione lista di esami non ancora assegnati & R0F3.3.4.2 \\ 
+	UC5.3.10.2 & Visualizzazione lista professori selezionato un esame & R0F3.3.4.2 \\ 
+	UC5.3.10.3 & Associazione professore all'esame & R0F3.3.4.2 \\ 
 	%-----------------------------------------------------
 	UC6 & Gestione aspetti relativi agli esami & R0F4 \\  
 	UC6.1 & Visualizzazione lista degli esami & R0F4.1 \\  
@@ -384,11 +385,15 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 		UC5.3.8
 	} \\  
 	R0F3.3.4.1 &  L'amministratore può ottenere l'informazione di quale professore è assegnato a un determinato esame & \makecell[tl]{
-		Interno
+		Interno \\ 
+		UC5.3.9 	
 	} \\  
 	R0F3.3.4.2  &  L'amministratore può associare ad un esame il relativo professore & \makecell[tl]{
-		Interno \\ 
-		UC5.3.9
+		Interno	 \\ 
+		UC5.3.10 \\ 
+		UC5.3.10.1 \\ 
+		UC5.3.10.2 \\ 
+		UC5.3.10.3 \\ 	
 	} \\  
 	R0F4 &  Un professore può gestire gli esami a lui assegnati & \makecell[tl]{
 		Capitolato \\ 

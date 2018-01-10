@@ -297,6 +297,10 @@
         <ownedEnd xmi:id="_ZypNId9REeeVgP8NQIMk7g" type="_hrGeQNO4EeeqiP5Ban4ZWQ" association="_ZypNIN9REeeVgP8NQIMk7g"/>
         <ownedEnd xmi:id="_ZypNIt9REeeVgP8NQIMk7g" type="_doYagN9PEeeVgP8NQIMk7g" association="_ZypNIN9REeeVgP8NQIMk7g"/>
       </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_GU8IIPYXEee66fDqXdUN5g" memberEnd="_GU8vMPYXEee66fDqXdUN5g _GU8vMfYXEee66fDqXdUN5g">
+        <ownedEnd xmi:id="_GU8vMPYXEee66fDqXdUN5g" type="_hrGeQNO4EeeqiP5Ban4ZWQ" association="_GU8IIPYXEee66fDqXdUN5g"/>
+        <ownedEnd xmi:id="_GU8vMfYXEee66fDqXdUN5g" type="_9G32EPYWEee66fDqXdUN5g" association="_GU8IIPYXEee66fDqXdUN5g"/>
+      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_vQ5WUNdtEeea54gTi5Qyaw" name="UC2 componenti">
       <packagedElement xmi:type="uml:Component" xmi:id="_x4bZQNdtEeea54gTi5Qyaw" name="UC2 - Login" useCase="_x4bZSNdtEeea54gTi5Qyaw _2OKqcNdtEeea54gTi5Qyaw _3KvncNdtEeea54gTi5Qyaw _3YfvkNdtEeea54gTi5Qyaw _3k7CANdtEeea54gTi5Qyaw">
@@ -515,15 +519,28 @@
       <packagedElement xmi:type="uml:UseCase" xmi:id="_YkmXkN9PEeeVgP8NQIMk7g" name="UC5.3.7 - Visualizzazione lista esami per corso" subject="_MSZmIN9PEeeVgP8NQIMk7g"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_ZV21YN9PEeeVgP8NQIMk7g" name="UC5.3.8 - Visualizzazione lista esami" subject="_MSZmIN9PEeeVgP8NQIMk7g"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_Z9QzoN9PEeeVgP8NQIMk7g" name="UC5.3.9 - Visualizzazione dettagli esame" subject="_MSZmIN9PEeeVgP8NQIMk7g"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_bJO3gN9PEeeVgP8NQIMk7g" name="UC5.3.1 - Creazione corso di laurea&#xA;-------------------------------&#xA;Extension points:&#xA;-Visualizzazione errore mancata compilazione campi" subject="_MSZmIN9PEeeVgP8NQIMk7g"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_bJO3gN9PEeeVgP8NQIMk7g" name="UC5.3.1 - Creazione corso di laurea&#xD;&#xA;-------------------------------&#xD;&#xA;Extension points:&#xD;&#xA;-Visualizzazione errore sigla invalida" subject="_MSZmIN9PEeeVgP8NQIMk7g"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_bpo14N9PEeeVgP8NQIMk7g" name="UC5.3.10 - Associa professore a esame" subject="_MSZmIN9PEeeVgP8NQIMk7g"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_dOQDQN9PEeeVgP8NQIMk7g" name="UC5.3.2 - Visualizzazione errore mancata compilazione campi" subject="_MSZmIN9PEeeVgP8NQIMk7g">
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_dOQDQN9PEeeVgP8NQIMk7g" name="UC5.3.2 - Visualizzazione errore sigla invalida" subject="_MSZmIN9PEeeVgP8NQIMk7g">
         <extend xmi:id="_6ZRWgN9QEeeVgP8NQIMk7g" extendedCase="_bJO3gN9PEeeVgP8NQIMk7g"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_doYagN9PEeeVgP8NQIMk7g" name="UC5.3.5 - Crea un esame nel corso&#xA;-------------------------------&#xA;Extension points:&#xA;-Visualizzazione errore campi non compilati" subject="_MSZmIN9PEeeVgP8NQIMk7g"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_d7uNQN9PEeeVgP8NQIMk7g" name="UC5.3.6 - Visualizzazione errore campi non compilati" subject="_MSZmIN9PEeeVgP8NQIMk7g">
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_doYagN9PEeeVgP8NQIMk7g" name="UC5.3.5 - Creazione esame in un corso&#xD;&#xA;-------------------------------&#xD;&#xA;Extension points:&#xD;&#xA;-Visualizzazione errore nome esame non valido" subject="_MSZmIN9PEeeVgP8NQIMk7g"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_d7uNQN9PEeeVgP8NQIMk7g" name="UC5.3.6 - Visualizzazione errore nome esame non valido" subject="_MSZmIN9PEeeVgP8NQIMk7g">
         <extend xmi:id="_5YG0cN9QEeeVgP8NQIMk7g" extendedCase="_doYagN9PEeeVgP8NQIMk7g"/>
       </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_7A0vkPYWEee66fDqXdUN5g" name="UC5.3.10 - Associazione professore a esame" useCase="_9G32EPYWEee66fDqXdUN5g _-xIYcPYWEee66fDqXdUN5g __CnKAPYWEee66fDqXdUN5g">
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_9G32EPYWEee66fDqXdUN5g" name="UC5.3.10.1 - Visualizzazione lista di esami non ancora assegnati" subject="_7A0vkPYWEee66fDqXdUN5g"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_-xIYcPYWEee66fDqXdUN5g" name="UC5.3.10.2 - Visualizzazione lista professori selezionato un esame" subject="_7A0vkPYWEee66fDqXdUN5g"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="__CnKAPYWEee66fDqXdUN5g" name="UC5.3.10.3 - Associazione professore all'esame" subject="_7A0vkPYWEee66fDqXdUN5g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_GxorMPYXEee66fDqXdUN5g" memberEnd="_GxorMfYXEee66fDqXdUN5g _GxorMvYXEee66fDqXdUN5g">
+      <ownedEnd xmi:id="_GxorMfYXEee66fDqXdUN5g" type="_-xIYcPYWEee66fDqXdUN5g" association="_GxorMPYXEee66fDqXdUN5g"/>
+      <ownedEnd xmi:id="_GxorMvYXEee66fDqXdUN5g" type="_hrGeQNO4EeeqiP5Ban4ZWQ" association="_GxorMPYXEee66fDqXdUN5g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_HPS3kPYXEee66fDqXdUN5g" memberEnd="_HPS3kfYXEee66fDqXdUN5g _HPS3kvYXEee66fDqXdUN5g">
+      <ownedEnd xmi:id="_HPS3kfYXEee66fDqXdUN5g" type="__CnKAPYWEee66fDqXdUN5g" association="_HPS3kPYXEee66fDqXdUN5g"/>
+      <ownedEnd xmi:id="_HPS3kvYXEee66fDqXdUN5g" type="_hrGeQNO4EeeqiP5Ban4ZWQ" association="_HPS3kPYXEee66fDqXdUN5g"/>
     </packagedElement>
   </packagedElement>
 </uml:Model>

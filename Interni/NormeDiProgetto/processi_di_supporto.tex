@@ -181,10 +181,25 @@
 	Il comando \LaTeX{} da utilizzare per contrassegnare un termine da glossario all'interno dei documenti è \texttt{\textbackslash{}citGloss}, mentre per l'inserimento di una nuova parola all'interno del glossario viene utilizzato \texttt{\textbackslash{}newglossaryentry }.\\
 	La scelta di creare un comando apposito per una operazione "elementare" è scaturita dall'agevolazione che porta alla stesura della documentazione: avendo un modo univoco di riconoscere i termini all'interno del glossario è stato possibile automatizzare la \citGloss{verifica} del soddisfacimento delle norme all'interno dei documenti tramite uno script denominato "gupdate.sh".\\
 	In aggiunta è stato creato anche uno script denominato "addterm.sh" che facilita l'inserimento di un termine all'interno del glossario.\\
-	Tutti gli script sono eseguibili da qualsiasi distribuzione Linux, per i membri del gruppo che utilizzano Windows è richiesto il software Cygwin oppure il Windows Subsystem for Linux, per quanto riguarda i sistemi *BSD e iOS non è richiesto nessun programma aggiuntivo.
+	La descrizione dettagliata degli script è riposta nella sezione \textbf{Strumenti a supporto della documentazione}.
 	
-	\subsection{Strumenti}
+	
+	\subsection{Ambiente}
 	La stesura dei documenti deve essere effettuata utilizzando il linguaggio di markup \citGloss{LaTeX}  e l'ambiente \citGloss{TexStudio}\footnote{\nURI{https://www.texstudio.org/}} con dizionario italiano ed inglese installati.
+	
+	\subsection{Strumenti di supporto alla documentazione}
+	Per facilitare le attività di verifica e manutenzione della documentazione, sono stati sviluppati degli script per automatizzare l'esecuzione di determinate attività \\
+	Tutti gli script sono eseguibili da qualsiasi distribuzione Linux, per i membri del gruppo che utilizzano Windows è richiesto il software Cygwin oppure il Windows Subsystem for Linux, per quanto riguarda i sistemi *BSD e iOS non è richiesto nessun programma aggiuntivo.\\
+	In alcuni script sono richiesti dei programmi particolari, che vengono specificati, ove necessario, nell'elenco sottostante.
+	\begin{itemize}
+		\item \textbf{gupdate.sh [termine]:} si occupa di controllare le parole inserite nel glossario e, per ognuna di esse, aggiornare con il comando di glossario tutti i .tex file che le contengono. Se viene specificato un termine, lo script aggiorna solo quello indicato;
+		\item \textbf{addterm.sh:} aggiunge un termine nel glossario ed esegue gupdate.sh per il termine appena inserito;
+		\item \textbf{rmterm.sh [termine]:} rimuove un termine dal glossario e il corrispondente comando di glossario in tutte le occorenze presenti nei file .tex;
+		\item \textbf{compile.sh:} effettua la compilazione di tutti i file .tex presenti nelle sottocartelle, segnalando eventuali fallimenti;
+		\item \textbf{build.sh:} esegue lo script compile.sh, aggiorna le occorenze di glossario tramite gupdate.sh e compila nuovamente. In caso di errori durante il procedimento si blocca ed avvisa il suo esecutore. Questo script è necessario per l'approvazione del commit da parte di Travis;
+		\item \textbf{gulpease.py:} calcola l'indice di leggibilità Gulpease per tutti i documenti prodotti e mostra i risultati. Lo script, per essere eseguito, necessita dell'installazione di python\footnote{\nURI{https://www.python.org/}} (con versione minima richiesta 2.7) e del programma OpenDetex\footnote{\nURI{https://github.com/pkubowicz/opendetex}}.	
+	\end{itemize}
+	
 	
 	\section{Qualità}
 	\subsection{Descrizione}

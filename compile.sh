@@ -6,69 +6,25 @@
     Dare permessi di esecuzione al file "chmod +x build.sh"
     ./compile.sh
 USAGE
+RED='\033[0;31m'
+BLUE='\033[0;34m'
+NC='\033[0m'
 
-cd 'Esterni'
-cd Glossario
-pdflatex -interaction=nonstopmode -halt-on-error GlossarioEST.tex && echo "ok" || exit  2
-cd ..
-cd ..
-
-cd 'Esterni'
-cd AnalisiDeiRequisiti
-pdflatex -interaction=nonstopmode -halt-on-error AnalisiDeiRequisiti.tex && echo "ok" || exit  3
-cd ..
-cd ..
-
-cd 'Esterni'
-cd Glossario
-pdflatex -interaction=nonstopmode -halt-on-error GlossarioEST.tex && echo "ok" || exit  4
-cd ..
-cd ..
-
-cd 'Esterni'
-cd PianoDiProgetto
-pdflatex -interaction=nonstopmode -halt-on-error PianoDiProgetto.tex && echo "ok" || exit  5
-cd ..
-cd ..
-
-cd 'Esterni'
-cd PianoDiQualifica
-pdflatex -interaction=nonstopmode -halt-on-error PianoDiQualifica.tex && echo "ok" || exit  6
-cd ..
-cd ..
-
-cd 'Esterni'
-cd VER-2017-11-22
-pdflatex -interaction=nonstopmode -halt-on-error VER-2017-11-22.tex && echo "ok" || exit  7
-cd ..
-cd ..
-
-cd 'Esterni'
-cd VER-2017-12-08
-pdflatex -interaction=nonstopmode -halt-on-error VER-2017-12-08.tex && echo "ok" || exit  8
-cd ..
-cd ..
-
-cd 'Esterni'
-cd VER-2018-01-09
-pdflatex -interaction=nonstopmode -halt-on-error VER-2018-01-09.tex && echo "ok" || exit  8
-cd ..
-cd ..
-
-cd 'Interni'
-cd NormeDiProgetto
-pdflatex -interaction=nonstopmode -halt-on-error NormeDiProgetto.tex && echo "ok" || exit  9
-cd ..
-cd ..
-
-cd 'Interni'
-cd StudioDiFattibilità
-pdflatex -interaction=nonstopmode -halt-on-error StudioDiFattibilità.tex && echo "ok" || exit  10
-cd ..
-cd ..
-
-cd 'Interni'
-cd VER-2017-11-13
-pdflatex -interaction=nonstopmode -halt-on-error VER-2017-11-13.tex && echo "ok" || exit  11
-cd ..
-cd ..
+for D in 'Interni Esterni'
+do
+  cd $D
+  for NM in `find * -maxdepth 0 -type d`
+  do
+    cd $NM
+    echo ""
+    echo -e "${BLUE}Compilando $NM.tex${NC}"
+    if [ -f $NM.tex ]; then
+      pdflatex -interaction=nonstopmode -halt-on-error $NM.tex && echo "ok" || exit  11
+    else
+      echo -e "${RED}File main mancante, controllare il contenuto della cartella${NC}"
+      exit 11
+    fi
+    cd ..
+  done
+  cd ..
+done

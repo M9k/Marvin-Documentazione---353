@@ -38,7 +38,7 @@
 \subsection{Attori secondari}
 \begin{enumerate}
 	\item \textbf{\citGloss{MetaMask}}\\
-	Plugin del \citGloss{browser} \citGloss{MetaMask} per interfacciarsi ad una rete \citGloss{Ethereum}.\\
+	Plugin per \citGloss{browser} che permette di interfacciarsi ad una rete \citGloss{Ethereum}.\\
 	
 	\item \textbf{Ufficio Universitario}\\
 	Entità fisica che consente l'immatricolazione degli studenti e la registrazione dei professori.\\
@@ -112,28 +112,28 @@
 \item \textbf{Estensioni:}
 \begin{enumerate}
 	\item Se l'utente non ha a disposizione una chiave viene avvisato con un errore a riguardo [UC2.2];
-	\item Se l'utente ha a disposizione una chiave malformata viene avvisato con un errore a riguardo [UC2.3];
+	\item Se l'utente non ha il plugin \citGloss{MetaMask} installato nel browser viene avvisato con un errore a riguardo [UC2.3];
 	\item Se l'utente ha a disposizione una chiave non registrata viene avvisato con un errore a riguardo [UC2.4];
-	\item Se l'utente tenta di fare il login con un account in attesa d'informazione viene avvisato con una schermata informativa a riguardo [UC2.5].
+	\item Se l'utente tenta di fare il login con un account in attesa di approvazione viene avvisato con una schermata informativa a riguardo [UC2.5].
 \end{enumerate}
 \item \textbf{Precondizione:} l'utente ha richiesto al sistema di venire riconosciuto;
-\item \textbf{Postcondizione:} l'utente viene riconosciuto da parte del sistema.
+\item \textbf{Postcondizione:} l'utente, tramite una interazione con \citGloss{MetaMask}, viene riconosciuto da parte del sistema.
 \end{itemize}
 \subsection{UC2.2 - Visualizzazione messaggio di errore riguardo a chiave assente}
 \begin{itemize}
 	\item \textbf{Attori primari:} utente non autenticato;
-	\item \textbf{Scopo e descrizione:} l'utente viene avvisato del fatto che non ha fornito nessuna chiave al sistema;
+	\item \textbf{Scopo e descrizione:} l'utente viene avvisato del fatto che non è stato possibile da parte del sistema il recupero della chiave;
 	\item \textbf{Scenario principale:} l'utente visualizza l'errore relativo all'assenza di una chiave per accedere al sistema;
-	\item \textbf{Precondizione:} l'utente richiede il login senza fornire una chiave;
-	\item \textbf{Postcondizione:} l'utente è consapevole di dover fornire una chiave.
+	\item \textbf{Precondizione:} l'utente richiede il login senza possedere una chiave;
+	\item \textbf{Postcondizione:} l'utente è consapevole di dover interagire con \citGloss{MetaMask} per poter fornire una chiave.
 \end{itemize}
-\subsection{UC2.3 - Visualizzazione messaggio di errore riguardo a chiave malformata}
+\subsection{UC2.3 - Visualizzazione messaggio di errore riguardo a MetaMask assente}
 \begin{itemize}
 	\item \textbf{Attori primari:} utente non autenticato;
-	\item \textbf{Scopo e descrizione:} l'utente viene avvisato del fatto che ha fornito una chiave malformata, quindi con lunghezza invalida o contenente caratteri non permessi;
-	\item \textbf{Scenario principale:} l'utente visualizza il messaggio d'errore relativo alla chiave malformata;
-	\item \textbf{Precondizione:} l'utente richiede il login utilizzando una chiave malformata;
-	\item \textbf{Postcondizione:} l'utente è consapevole di cambiare la chiave o sistemare quella fornita.
+	\item \textbf{Scopo e descrizione:} l'utente viene avvisato del fatto sta cercando di accedere al sistema senza il plugin \citGloss{MetaMask};
+	\item \textbf{Scenario principale:} l'utente visualizza il messaggio d'errore relativo alla mancanza del plugin \citGloss{MetaMask};
+	\item \textbf{Precondizione:} l'utente richiede il login senza avere a disposizione il plugin \citGloss{MetaMask};
+	\item \textbf{Postcondizione:} l'utente è consapevole della necessità di possedere \citGloss{MetaMask} per poter accedere al sistema.
 \end{itemize}
 \subsection{UC2.4 - Visualizzazione messaggio di errore riguardo a chiave non registrata}
 \begin{itemize}
@@ -148,8 +148,8 @@
 	\item \textbf{Attori primari:} utente non autenticato;
 	\item \textbf{Scopo e descrizione:} l'utente viene informato che la sua chiave non è ancora stata abilitata all'uso dei servizi;
 	\item \textbf{Scenario principale:} il sistema mostra una schermata informativa per avvisare l'utente che il suo account è in attesa di essere abilitato;
-	\item \textbf{Precondizione:} l'utente tenta di accedere al sistema senza che il suo account sia stato abilitato; 
-	\item \textbf{Postcondizione:} l'utente è consapevole di aspettare l'abilitazione del suo account per accedere al sistema.
+	\item \textbf{Precondizione:} l'utente tenta di accedere al sistema senza che il suo account sia stato abilitato da un amministratore;
+	\item \textbf{Postcondizione:} l'utente è consapevole di dover attendere l'abilitazione del suo account da parte di un amministratore per accedere al sistema.
 \end{itemize}
 \subsection{UC3 - Registrazione}
 \begin{itemize}
@@ -183,7 +183,7 @@
 	\item \textbf{Estensioni:}
 		\begin{enumerate}
 			\item Se l'utente non ha un chiave viene avvisato tramite un messaggio d'errore [UC3.7];
-			\item Se l'utente non ha una chiave dal formato non corretto viene avvisato tramite messaggio d'errore [UC3.8];
+			\item Se l'utente non possiede \citGloss{MetaMask} viene avvisato tramite messaggio d'errore [UC3.8];
 			\item Se la chiave fornita dall'utente è già presente nel sistema l'utente viene avvisato tramite un messaggio d'errore [UC3.6];
 			\item Se l'utente non compila il campo viene avvisato con un messaggio d'errore [UC3.5].
 		\end{enumerate}
@@ -243,13 +243,13 @@
 	\item \textbf{Precondizione:} l'utente tenta di registrarsi senza fornire una chiave;
 	\item \textbf{Postcondizione:} l'utente è consapevole di non possedere una chiave.
 \end{itemize}
-\subsection{UC3.8 - Visualizzazione errore chiave malformata}
+\subsection{UC3.8 - Visualizzazione errore MetaMask non installato}
 \begin{itemize}
 	\item \textbf{Attori Primari:} utente non autenticato;
-	\item \textbf{Scopo e Descrizione} il sistema avvisa l'utente che ha fornito una chiave malformata e quindi non può procedere alla registrazione;
-	\item \textbf{Scenario principale:} il sistema mostra un messaggio d'errore all'utente indicandogli che la sua chiave è malformata;
-	\item \textbf{Precondizione:} l'utente tenta di registrarsi fornendo una chiave malformata;
-	\item \textbf{Postcondizione:} l'utente è consapevole di possedere una chiave malformata.
+	\item \textbf{Scopo e Descrizione} il sistema avvisa l'utente del fatto che non possiede il plugin \citGloss{MetaMask};
+	\item \textbf{Scenario principale:} il sistema mostra un messaggio d'errore all'utente indicandogli che non ha il plugin \citGloss{MetaMask} installato;
+	\item \textbf{Precondizione:} l'utente inizia la procedura di registrazione senza possedere \citGloss{MetaMask};
+	\item \textbf{Postcondizione:} l'utente è consapevole di dover installare il plugin \citGloss{MetaMask} per potersi registrare.
 \end{itemize}
 \subsection{UC4 - Logout}
 \begin{itemize}

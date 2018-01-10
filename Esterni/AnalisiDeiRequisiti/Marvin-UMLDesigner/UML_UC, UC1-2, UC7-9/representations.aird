@@ -1483,7 +1483,7 @@
               <element xsi:nil="true"/>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_PgEMhdduEeea54gTi5Qyaw" x="474" y="138" width="217" height="84"/>
             </children>
-            <children xmi:type="notation:Shape" xmi:id="_gyBcgNduEeea54gTi5Qyaw" type="Note" fontName="Segoe UI" description="condition: {L'utente ha fornito una chiave malformata}&#xD;&#xA;extension point: Errore chiave malformata" fillColor="13369343" transparency="0" lineColor="6737151" lineWidth="1">
+            <children xmi:type="notation:Shape" xmi:id="_gyBcgNduEeea54gTi5Qyaw" type="Note" fontName="Segoe UI" description="condition: {L'utente non possiede il plugin MetaMask}&#xD;&#xA;extension point: Errore MetaMask assente" fillColor="13369343" transparency="0" lineColor="6737151" lineWidth="1">
               <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gyBcgdduEeea54gTi5Qyaw" source="specificStyles">
                 <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gyBcgtduEeea54gTi5Qyaw" key="verticalAlignment" value="8"/>
               </eAnnotations>
@@ -1710,7 +1710,7 @@
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Capture']/@ownedRepresentations[name='Use%20Case%20Diagram']/@defaultLayer/@containerMappings[name='UCD_Subject']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Capture']/@ownedRepresentations[name='Use%20Case%20Diagram']/@defaultLayer/@containerMappings[name='UCD_Subject']"/>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_2OLRgNdtEeea54gTi5Qyaw" name="UC2.1 - Login automatico&#xD;&#xA;-------------------------------&#xD;&#xA;Extension points:&#xD;&#xA;-Errore chiave non registrata&#xD;&#xA;-Errore chiave malformata&#xD;&#xA;-Errore chiave assente&#xD;&#xA;-Errore chiave non abilitata" outgoingEdges="_81yesNdtEeea54gTi5Qyaw _-N5hINdtEeea54gTi5Qyaw" incomingEdges="__JXD0NdtEeea54gTi5Qyaw __v77oNdtEeea54gTi5Qyaw _ASWsMNduEeea54gTi5Qyaw _0aYmIOHVEeesHJdalhjjtg" width="14" height="14" resizeKind="NSEW">
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_2OLRgNdtEeea54gTi5Qyaw" name="UC2.1 - Login automatico&#xD;&#xA;-------------------------------&#xD;&#xA;Extension points:&#xD;&#xA;-Errore chiave non registrata&#xD;&#xA;-Errore MetaMask assente&#xD;&#xA;-Errore chiave assente&#xD;&#xA;-Errore chiave non abilitata" outgoingEdges="_81yesNdtEeea54gTi5Qyaw _-N5hINdtEeea54gTi5Qyaw" incomingEdges="__JXD0NdtEeea54gTi5Qyaw __v77oNdtEeea54gTi5Qyaw _ASWsMNduEeea54gTi5Qyaw _0aYmIOHVEeesHJdalhjjtg" width="14" height="14" resizeKind="NSEW">
         <target xmi:type="uml:UseCase" href="Marvin.uml#_2OKqcNdtEeea54gTi5Qyaw"/>
         <semanticElements xmi:type="uml:UseCase" href="Marvin.uml#_2OKqcNdtEeea54gTi5Qyaw"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -1732,7 +1732,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Capture']/@ownedRepresentations[name='Use%20Case%20Diagram']/@defaultLayer/@nodeMappings[name='UCD_UseCase']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_3YfvkddtEeea54gTi5Qyaw" name="UC2.3 - Visualizzazione messaggio di errore riguardo a chiave malformata" outgoingEdges="__v77oNdtEeea54gTi5Qyaw" width="14" height="14" resizeKind="NSEW">
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_3YfvkddtEeea54gTi5Qyaw" name="UC2.3 - Visualizzazione messaggio di errore riguardo a MetaMask assente" outgoingEdges="__v77oNdtEeea54gTi5Qyaw" width="14" height="14" resizeKind="NSEW">
         <target xmi:type="uml:UseCase" href="Marvin.uml#_3YfvkNdtEeea54gTi5Qyaw"/>
         <semanticElements xmi:type="uml:UseCase" href="Marvin.uml#_3YfvkNdtEeea54gTi5Qyaw"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>

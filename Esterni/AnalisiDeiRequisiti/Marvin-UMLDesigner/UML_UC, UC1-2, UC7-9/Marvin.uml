@@ -208,11 +208,11 @@
         <ownedUseCase xmi:id="_x4bZRtdtEeea54gTi5Qyaw" name="UC3 Registrazione"/>
         <ownedUseCase xmi:id="_x4bZR9dtEeea54gTi5Qyaw" name="UC7 Gestione aspetti relativi allo studente"/>
         <packagedElement xmi:type="uml:UseCase" xmi:id="_x4bZSNdtEeea54gTi5Qyaw" name="UC2 Login" subject="_x4bZQNdtEeea54gTi5Qyaw"/>
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_2OKqcNdtEeea54gTi5Qyaw" name="UC2.1 - Login automatico&#xD;&#xA;-------------------------------&#xD;&#xA;Extension points:&#xD;&#xA;-Errore chiave non registrata&#xD;&#xA;-Errore chiave malformata&#xD;&#xA;-Errore chiave assente&#xD;&#xA;-Errore chiave non abilitata" subject="_x4bZQNdtEeea54gTi5Qyaw"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_2OKqcNdtEeea54gTi5Qyaw" name="UC2.1 - Login automatico&#xD;&#xA;-------------------------------&#xD;&#xA;Extension points:&#xD;&#xA;-Errore chiave non registrata&#xD;&#xA;-Errore MetaMask assente&#xD;&#xA;-Errore chiave assente&#xD;&#xA;-Errore chiave non abilitata" subject="_x4bZQNdtEeea54gTi5Qyaw"/>
         <packagedElement xmi:type="uml:UseCase" xmi:id="_3KvncNdtEeea54gTi5Qyaw" name="UC2.2 - Visualizzazione messaggio di errore riguardo a chiave assente" subject="_x4bZQNdtEeea54gTi5Qyaw">
           <extend xmi:id="__JV1sNdtEeea54gTi5Qyaw" extendedCase="_2OKqcNdtEeea54gTi5Qyaw"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_3YfvkNdtEeea54gTi5Qyaw" name="UC2.3 - Visualizzazione messaggio di errore riguardo a chiave malformata" subject="_x4bZQNdtEeea54gTi5Qyaw">
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_3YfvkNdtEeea54gTi5Qyaw" name="UC2.3 - Visualizzazione messaggio di errore riguardo a MetaMask assente" subject="_x4bZQNdtEeea54gTi5Qyaw">
           <extend xmi:id="__v6tgNdtEeea54gTi5Qyaw" extendedCase="_2OKqcNdtEeea54gTi5Qyaw"/>
         </packagedElement>
         <packagedElement xmi:type="uml:UseCase" xmi:id="_3k7CANdtEeea54gTi5Qyaw" name="UC2.4 - Visualizzazione messaggio di errore riguardo a chiave non registrata" subject="_x4bZQNdtEeea54gTi5Qyaw">

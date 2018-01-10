@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import sys
 import re
 import subprocess
@@ -14,6 +15,7 @@ I vari risultati vengono salvati in una stringa che viene poi stampata nella con
 P.S. il testo estrapolato da detex viene manipolato:
 -Vengono sostituite le ; con i .
 -Viene aggiunto un punto alla fine di ogni frase che non lo ha (ad esempio i titoli delle sezioni)
+-I separatori di colonna, nelle tabelle (&), vengono sostituiti con i .
 
 Link detex: https://github.com/pkubowicz/opendetex
 -Per usarlo: Installare python e "python gulpease.py"
@@ -23,22 +25,36 @@ Link detex: https://github.com/pkubowicz/opendetex
 SCRIPT_DIR = sys.path[0]
 TMP_FILE = "tmp.txt"
 directories = [
-    "Interni/NormeDiProgetto"
+    "Interni/StudioDiFattibilità",
+    "Interni/NormeDiProgetto",
+    "Interni/VER-2017-11-13",
+    "Interni/Verbale",
+    "Esterni/AnalisiDeiRequisiti",
+    "Esterni/PianoDiProgetto",
+    "Esterni/PianoDiQualifica",
+    "Esterni/VER-2017-11-22",
+    "Esterni/VER-2017-12-08",
+    "Esterni/VER-2018-01-09",
+    "LetteraDiPresentazione"
 ]
 gulpease_indexes = ""
+with_intro = ["LetteraDiPresentazione", "Verbale"]
 for directory in directories:
     text = ""
     os.chdir(directory)
     document_name = directory.split('/')[-1]
     for tex_file in glob.glob("*.tex"):
-        if  document_name not in tex_file and "diariomodifiche" not in tex_file:
-            detex = ["detex", "-e", "table", tex_file]
+        if  directory in with_intro or (document_name not in tex_file and "diariomodifiche" not in tex_file):
+            detex = ["detex", "-e", "table", tex_file] #Il flag -e stampa anche le tabelle
             output, error = subprocess.Popen(detex, stdout=subprocess.PIPE).communicate()
             #r"\w\s\*\n" -> trova tutte le lettere seguite da un numero
             #indefinito (anche 0) di spazi seguiti da un a capo
             #Sono praticamente i titoli delle sezioni, mettendoci il . alla
             #fine l'indice migliora decisamente
-            text += re.sub(r"\w\s*\n", "a.\n", re.sub(';', '.', output)) + '\n'
+            formatted_text = re.sub(';', '.', output) #Sostituisce i "punti e virgola" con il punto
+            formatted_text = re.sub(r"\w\s*\n", "a.\n", formatted_text) #Mette il punto dove manca
+            formatted_text = re.sub(r"\w\s*\&", "a. ", formatted_text) #Sostitusice il separatore di colonne latex con il punto
+            text += formatted_text + '\n'
     if len(text) == 0:
         text = "NOPE" #Cosi non mi crasha il perl
     os.chdir(SCRIPT_DIR)

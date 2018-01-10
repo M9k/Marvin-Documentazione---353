@@ -13,7 +13,7 @@ NC='\033[0m'
 for D in 'Interni Esterni'
 do
   cd $D
-  for NM in `find * -maxdepth 0 -type d -not -name "Verbale"`
+  for NM in `find * -maxdepth 0 -type d`
   do
     cd $NM
     echo ""

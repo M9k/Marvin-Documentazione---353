@@ -28,7 +28,6 @@ directories = [
     "Interni/StudioDiFattibilità",
     "Interni/NormeDiProgetto",
     "Interni/VER-2017-11-13",
-    "Interni/Verbale",
     "Esterni/AnalisiDeiRequisiti",
     "Esterni/PianoDiProgetto",
     "Esterni/PianoDiQualifica",

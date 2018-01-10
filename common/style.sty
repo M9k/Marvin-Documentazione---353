@@ -26,6 +26,7 @@
 \usepackage{caption}
 \usepackage{enumitem}
 \usepackage{hyphenat}
+\usepackage{xspace}
 
 
 \pagestyle{fancy}
@@ -47,7 +48,11 @@
 \fancyhead[L]{\includegraphics[width=2cm]{../../common/images/logo.png}}
 \fancyhead[R]{\leftmark}
 \fancyfoot[R]{\thepage}
+\fancyfoot[L]{\makeatletter \@one \space \@two \makeatother}
 
+\newcommand{\setfoot}[2]{\newcommand{\@one}{#1}\newcommand{\@two}{#2}}
+
+%\makeatletter \@title \space \textit{v \ver{}.0.0} \makeatother
 \fancypagestyle{plain}{
 	\renewcommand{\headrulewidth}{0.4pt}
 	\renewcommand{\footrulewidth}{0.4pt}
@@ -67,68 +72,68 @@
 }
 
 % commands for group name or email to
-\newcommand{\gruppo}{\textit{353}}
+\newcommand{\gruppo}{\textit{353}\xspace}
 \newcommand{\mail}[1]{\href{mailto:#1}{\texttt{#1}}}
-\newcommand{\mailgroup}{\mail{353swe@gmail.com}}
-\newcommand{\progetto}{\textit{Marvin}}
+\newcommand{\mailgroup}{\mail{353swe@gmail.com}\xspace}
+\newcommand{\progetto}{\textit{Marvin}\xspace}
 
 % commands for team members name
-\newcommand{\Valentina}{Valentina Marcon}
-\newcommand{\Mirco}{Mirco Cailotto}
-\newcommand{\Riccardo}{Riccardo E. Giorato}
-\newcommand{\Davide}{Davide Stocco}
-\newcommand{\Parwinder}{Parwinder Singh}
-\newcommand{\Elena}{Elena Mattiazzo}
-\newcommand{\Gianluca}{Gianluca Marraffa}
+\newcommand{\Valentina}{Valentina Marcon\xspace}
+\newcommand{\Mirco}{Mirco Cailotto\xspace}
+\newcommand{\Riccardo}{Riccardo E. Giorato\xspace}
+\newcommand{\Davide}{Davide Stocco\xspace}
+\newcommand{\Parwinder}{Parwinder Singh\xspace}
+\newcommand{\Elena}{Elena Mattiazzo\xspace}
+\newcommand{\Gianluca}{Gianluca Marraffa\xspace}
 
 %Proponente, committente, competitor
-\newcommand{\Proponente}{Red Babel}
-\newcommand{\Vardanega}{Prof. Tullio Vardanega}
-\newcommand{\Cardin}{Prof. Riccardo Cardin}
+\newcommand{\Proponente}{Red Babel\xspace}
+\newcommand{\Vardanega}{Prof. Tullio Vardanega\xspace}
+\newcommand{\Cardin}{Prof. Riccardo Cardin\xspace}
 
 
 % commands for roles and name of documents
-\newcommand{\respdiprog}{Responsabile di progetto}
+\newcommand{\respdiprog}{Responsabile di progetto\xspace}
 
-\newcommand{\amme}{Amministratore}
-\newcommand{\ammi}{Amministratori}
+\newcommand{\amme}{Amministratore\xspace}
+\newcommand{\ammi}{Amministratori\xspace}
 
-\newcommand{\alista}{Analista}
-\newcommand{\alisti}{Analisti}
+\newcommand{\alista}{Analista\xspace}
+\newcommand{\alisti}{Analisti\xspace}
 
-\newcommand{\proga}{Progettista}
-\newcommand{\progi}{Progettisti}
+\newcommand{\proga}{Progettista\xspace}
+\newcommand{\progi}{Progettisti\xspace}
 
-\newcommand{\progre}{Programmatore}
-\newcommand{\progri}{Programmatori}
+\newcommand{\progre}{Programmatore\xspace}
+\newcommand{\progri}{Programmatori\xspace}
 
-\newcommand{\vere}{Verificatore}
-\newcommand{\veri}{Verificatori}
+\newcommand{\vere}{Verificatore\xspace}
+\newcommand{\veri}{Verificatori\xspace}
 
-\newcommand{\resp}{Responsabile}
+\newcommand{\resp}{Responsabile\xspace}
  
-\newcommand{\respi}{Responsabili}
+\newcommand{\respi}{Responsabili\xspace}
  
 
-\newcommand{\pdp}{\textit{Piano di progetto}}
-\newcommand{\pdq}{\textit{Piano di qualifica}}
-\newcommand{\ndp}{\textit{Norme di progetto}}
-\newcommand{\sdf}{\textit{Studio di fattibilità}}
-\newcommand{\adr}{\textit{Analisi dei requisiti}}
-\newcommand{\tb}{\textit{Technology baseline}}
-\newcommand{\pb}{\textit{Product baseline}}
-\newcommand{\mut}{\textit{Manuale utente}}
-\newcommand{\ms}{\textit{Manuale sviluppatore}}
-\newcommand{\g}{\textit{Glossario}}
-\newcommand{\lettera}{\textit{Lettera di presentazione}}
-\newcommand{\tfd}{\textit{Twelve Factor Document}}
+\newcommand{\pdp}{\textit{Piano di progetto}\xspace}
+\newcommand{\pdq}{\textit{Piano di qualifica}\xspace}
+\newcommand{\ndp}{\textit{Norme di progetto}\xspace}
+\newcommand{\sdf}{\textit{Studio di fattibilità}\xspace}
+\newcommand{\adr}{\textit{Analisi dei requisiti}\xspace}
+\newcommand{\tb}{\textit{Technology baseline}\xspace}
+\newcommand{\pb}{\textit{Product baseline}\xspace}
+\newcommand{\mut}{\textit{Manuale utente}\xspace}
+\newcommand{\ms}{\textit{Manuale sviluppatore}\xspace}
+\newcommand{\g}{\textit{Glossario}\xspace}
+\newcommand{\lettera}{\textit{Lettera di presentazione}\xspace}
+\newcommand{\tfd}{\textit{Twelve Factor Document}\xspace}
  
 
 %versione documenti
-\newcommand{\vruno}{\textit{ v 1.0.0}} %revisione uno RR
-\newcommand{\vrdue}{\textit{ v 2.0.0}} %revisione uno RP
-\newcommand{\vrtre}{\textit{ v 3.0.0}} %revisione uno RQ
-\newcommand{\vrquattro}{\textit{ v 4.0.0}} %revisione uno RA
+\newcommand{\vruno}{\textit{v 1.0.0}\xspace} %revisione uno RR
+\newcommand{\vrdue}{\textit{v 2.0.0}\xspace} %revisione uno RP
+\newcommand{\vrtre}{\textit{v 3.0.0}\xspace} %revisione uno RQ
+\newcommand{\vrquattro}{\textit{v 4.0.0}\xspace} %revisione uno RA
 
 
 % Comandi per citare definizione e parola riportata su Glossario
@@ -140,14 +145,14 @@
 % document glossary explanation
 \newcommand{\glossExpl}{
 	\section{Glossario}
-	All'interno del documento sono presenti termini che presentano significati ambigui a seconda del contesto. Per evitare questa ambiguità è stato creato un documento di nome Glossario che conterrà tali termini con il loro significati specifico. Per segnalare che un termine del testo è presente all'interno del \g \vruno{} verrà aggiunta una G a pedice a fianco del termine.
+	All'interno del documento sono presenti termini che presentano significati ambigui a seconda del contesto. Per evitare questa ambiguità è stato creato un documento di nome Glossario che conterrà tali termini con il loro significati specifico. Per segnalare che un termine del testo è presente all'interno del \g \vruno verrà aggiunta una G a pedice a fianco del termine.\xspace
 }
 % product objective
 \newcommand{\scopoProdotto}{
 
 \section{Scopo del prodotto}
 	Lo scopo del prodotto è la creazione di una \citGloss{DAPP} accessibile da interfaccia web ed utilizzabile assieme al plugin \citGloss{MetaMask} che consenta una gestione di un sistema che simuli le funzionalità base di UniPD.\\
-	Il \citGloss{front-end} del sistema consisterà in una applicazione web realizzata con \citGloss{React} e \citGloss{Redux}, mentre il \citGloss{back-end} sarà composto da un insieme di \citGloss{smart contract} scritti in linguaggio \citGloss{Solidity} che andranno a girare su una rete \citGloss{Ethereum}.
+	Il \citGloss{front-end} del sistema consisterà in una applicazione web realizzata con \citGloss{React} e \citGloss{Redux}, mentre il \citGloss{back-end} sarà composto da un insieme di \citGloss{smart contract} scritti in linguaggio \citGloss{Solidity} che andranno a girare su una rete \citGloss{Ethereum}.\xspace
 }
 
 

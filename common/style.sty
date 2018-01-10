@@ -105,8 +105,10 @@
 \newcommand{\vere}{Verificatore}
 \newcommand{\veri}{Verificatori}
 
-\newcommand{\resp}{Responsabile} 
-\newcommand{\respi}{Responsabili} 
+\newcommand{\resp}{Responsabile}
+ 
+\newcommand{\respi}{Responsabili}
+ 
 
 \newcommand{\pdp}{\textit{Piano di progetto}}
 \newcommand{\pdq}{\textit{Piano di qualifica}}
@@ -119,7 +121,8 @@
 \newcommand{\ms}{\textit{Manuale sviluppatore}}
 \newcommand{\g}{\textit{Glossario}}
 \newcommand{\lettera}{\textit{Lettera di presentazione}}
-\newcommand{\tfd}{\textit{Twelve Factor Document}} 
+\newcommand{\tfd}{\textit{Twelve Factor Document}}
+ 
 
 %versione documenti
 \newcommand{\vruno}{\textit{ v 1.0.0}} %revisione uno RR
@@ -165,7 +168,7 @@
 
 % document diario delle modifiche enviroment
 \newenvironment{DiarioModifiche}{
-	\newgeometry{margin=3cm}
+	%\newgeometry{margin=3cm}
 	\begin{document}
 	{\huge \textbf{Diario delle modifiche}}\\
 		\renewcommand\arraystretch{1.2}
@@ -175,17 +178,19 @@
 			\hline
 			\textbf{Versione} & \textbf{Data} & \textbf{Descrizione} & \textbf{Autore} & \textbf{Ruolo}\\
 			\endhead
+			
+		
 	}
 	{
-	\restoregeometry
+	%\restoregeometry
 	\end{document}
 		
-	}%end DiarioModifiche
+}%end DiarioModifiche
 	
-	\newcommand{\nModifica}[5]{ %aggiuta modifica al diario
-		\hline \raggedleft\nohyphens{#1} & \nohyphens{#2} & \raggedright\nohyphens{#3} & \centering\nohyphens{#4} & \nohyphens{#5} \\
-	}
+\newcommand{\nModifica}[5]{ %aggiuta modifica al diario
+	\hline \raggedleft\nohyphens{#1} & \nohyphens{#2} & \raggedright\nohyphens{#3} & \centering\nohyphens{#4} & \nohyphens{#5} \\
+}
 
-%link al testo 
+%link al testo #1: label per arrivarci, #2: label propria, #3: nome da visualizzare
 \newcommand{\textlink}[3]{\hypertarget{#1}{}\hyperlink{#2}{#3}}
 

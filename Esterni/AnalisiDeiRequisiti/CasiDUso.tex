@@ -465,8 +465,8 @@
 \subsection{UC5.3.5 - Creazione esame in un corso}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
-	\item \textbf{Scopo e descrizione:} l'amministratore crea ed assegna un esame all'interno di un \citGloss{corso di laurea};
-	\item \textbf{Scenario principale:} l'amministratore inserisce il nome dell'esame che desidera creare e seleziona la quantità di crediti;
+	\item \textbf{Scopo e descrizione:} l'amministratore crea ed assegna un esame all'interno di un \citGloss{corso di laurea} indicandone il nome, la quantità di crediti e l'obbligatorietà;
+	\item \textbf{Scenario principale:} l'amministratore inserisce un nuovo esame all'interno di un corso;
 	\item \textbf{Estensioni:}
 	\begin{enumerate}
 		\item Se l'amministratore inserisce un nome invalido ottiene un messaggio d'errore [UC5.3.4].
@@ -633,7 +633,7 @@
 \subsection{UC7.1 - Visualizzazione delle informazione degli esami ai quali è iscritto}
 \begin{itemize}
 	\item \textbf{Attori primari:} studente;
-	\item \textbf{Scopo e descrizione:} lo studente visualizza una lista di tutti gli esami ai quali è iscritto;
+	\item \textbf{Scopo e descrizione:} lo studente visualizza una lista di tutti gli esami ai quali è iscritto indicati dal nome;
 	\item \textbf{Scenario principale:} lo studente richiede al sistema la lista degli esami ai quali è iscritto per poterla consultare;
 	\item \textbf{Precondizione:} l'utente è già riconosciuto dal sistema come studente e richiede la visualizzazione della lista degli esami ai quali è iscritto ed le relative informazioni;
 	\item \textbf{Postcondizione:} lo studente ottiene la lista per poterla consultare.
@@ -676,8 +676,8 @@
 \subsection{UC7.2 - Visualizzazione degli esami opzionali e dei loro crediti}
 \begin{itemize}
 	\item \textbf{Attori primari:} studente;
-	\item \textbf{Scopo e descrizione:} lo studente visualizza una lista di tutti gli esami opzionali ai quali ha possibilità di iscriversi ed i relativi crediti;
-	\item \textbf{Scenario principale:} lo studente richiede al sistema la lista di tutti gli esami opzionali ai quali ha possibilità di iscriversi per poterla consultare con i relativi crediti;
+	\item \textbf{Scopo e descrizione:} lo studente visualizza una lista di tutti gli esami opzionali del suo corso, con indicati nomi e crediti, ai quali ha possibilità di iscriversi;
+	\item \textbf{Scenario principale:} lo studente richiede al sistema la lista di tutti gli esami opzionali ai quali ha possibilità di iscriversi per poterla consultare;
 	\item \textbf{Precondizione:} l'utente è già riconosciuto dal sistema come studente e richiede la visualizzazione della lista di tutti gli esami opzionali ai quali ha possibilità di iscriversi;
 	\item \textbf{Postcondizione:} lo studente ottiene la lista per poterla consultare.
 \end{itemize}
@@ -693,7 +693,7 @@
 		\item Lo studente compie l'operazione di iscrizione.
 	\end{enumerate}
 	\item \textbf{Precondizione:} lo studente ha individuato l'esame opzionale al quale desidera iscriversi;
-	\item \textbf{Postcondizione:} lo studente inserisce nella \citGloss{blockchain} universitaria l'iscrizione all'esame.
+	\item \textbf{Postcondizione:} lo studente viene registrato ad un esame opzionale.
 \end{itemize}
 
 \subsection{UC7.4 - Visualizzazione delle informazioni relative ai crediti}
@@ -767,7 +767,7 @@
 \subsection{UC8.2 - Visualizzazione lista degli amministratori}
 	\begin{itemize}
 	\item \textbf{Attori primari:} università;
-	\item \textbf{Scopo e descrizione:} l'utente che rappresenta l'università visualizza una lista di tutti gli amministratori;
+	\item \textbf{Scopo e descrizione:} l'utente che rappresenta l'università visualizza una lista di tutti gli amministratori, con indicata la chiave;
 	\item \textbf{Scenario principale:} l'utente che rappresenta l'università richiede al sistema la lista degli amministratori per poterla consultare;
 	\item \textbf{Precondizione:} l'utente che rappresenta l'università è già riconosciuto dal sistema come tale e richiede la visualizzazione della lista degli amministratori;
 	\item \textbf{Postcondizione:} l'utente che rappresenta l'università ottiene la lista degli amministratori per poterla consultare.

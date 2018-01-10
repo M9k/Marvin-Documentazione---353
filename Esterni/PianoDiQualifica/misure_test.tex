@@ -31,14 +31,16 @@ Questa categoria di misurazioni mira a valutare l'efficienza di scrittura ed ese
 	\item \textlink{MTSA004TAB}{MTSA004}{\textbf{MTSA004 Efficienza della progettazione dei test:}} Indica il tempo medio per la scrittura di un test, un numero troppo elevato potrebbe indicare che si stanno progettando test troppo complessi o che si sta cercando di testare parti del codice superflue
 	\[TDE=\dfrac{NTP}{TST}\]
 	Dove NTP indica il numero totale di test progettati e TST il tempo per la loro stesura;
+	\begin{comment}
 	\item \textlink{MTSA005TAB}{MTSA005}{\textbf{MTSA005 Tempo medio per il testing dei bug fix:}} Indica la quantità di tempo medio per testare la risoluzione di un difetto, utile per avere un'idea dell'impatto del testing sull'implementazione di una modifica
 	\[TTCD=\dfrac{BFTT}{NDT}\]
 	Dove BFTT indica il tempo usato per testare le la correzione dei difetti e NDT il numero di difetti trovati.
+	\end{comment}
 \end{itemize}
 \subsection{Efficacia}
 Questa categoria di misurazioni mira a valutare l'efficacia dell'esecuzione dei test.
 \begin{itemize}
-	\item \textlink{MTSA006TAB}{MTSA006}{\textbf{MTSA006 Contenimento dei difetti:}} Indica il rapporto percentuale tra i bug trovati durante i test e i bug trovati durante l'utilizzo del prodotto. Un numero troppo basso di questo indice suggerisce una scarsa progettazione dei test, richiedendo un intervento di analisi da parte del team di sviluppo
+	\item \textlink{MTSA005TAB}{MTSA005}{\textbf{MTSA005 Contenimento dei difetti:}} Indica il rapporto percentuale tra i bug trovati durante i test e i bug trovati durante l'utilizzo del prodotto. Un numero troppo basso di questo indice suggerisce una scarsa progettazione dei test, richiedendo un intervento di analisi da parte del team di sviluppo
 	\[CD=\dfrac{DTT}{TNDT}*100\]
 	Dove DTT indica il numero di difetti trovati durante l'esecuzione dei test, e TNDT la somma dei difetti trovati nei test e quelli trovati durante l'utilizzo del prodotto.
 \end{itemize}
@@ -62,12 +64,14 @@ Questa categoria di misurazioni si occupa di tenere traccia dell'esecuzione dei 
 	\item \textlink{MTSH004TAB}{MTSH004}{\textbf{MTSH004 Difetti per requisito:}} Indica il numero di difetti trovati nel test del requisito, da informazioni sullo stato di soddisfacimento del requisito: se ha 0 difetti, vuol dire che il requisito è stato trovato e considerato senza errori, quindi soddisfatto.
 	Non essendo calcolabile, la misurazione si mostra come una tabella avente nella prima colonna il nome del requisito, e nella seconda i difetti ad esso associati.
 \end{itemize}
+\begin{comment}
 \subsection{Efficacia dei cambiamenti}
 \begin{itemize}
 	\item \textlink{MTSH005TAB}{MTSH005}{\textbf{MTSH005 Tasso di iniezione dei difetti:}} Indica il tasso di errori attribuibili all'introduzione di una modifica, la conoscenza di questo numero aiuta a stimare il tempo medio per la scoperta e correzione di errori introdotti dalle modifiche, aiutando la stima dei costi per l'introduzione di nuove funzionalità
 	\[TID=\dfrac{NM}{NDM}\]
 	Dove NM indica il numero di modifiche e NDM i difetti attribuibili ad esse.
 \end{itemize}
+\end{comment}
 \section{Tabella delle metriche}
 Questa tabella indica i \textbf{range} di accettazione e ottimalità per le misure effettuate sui test, per le misure effettuate su tutti i tipi di test saranno presenti due valori per range, TM, per i test di modulo e TH, per i test ad alto livello.\\
 Una piccola legenda per facilitare la lettura della tabella: \\
@@ -89,15 +93,15 @@ Una piccola legenda per facilitare la lettura della tabella: \\
 			\textlink{MTSA001}{MTSA001TAB}{MTSA001} & Percentuale di test case passati & 100\%-100\%(TM) PRC-100\%(TH) & 100\%-100\%(TM) 100\%-100\%(TH) \\ 
 			\textlink{MTSA002}{MTSA002TAB}{MTSA002} & Percentuale di test case falliti & 0\%-0\%(TM) 0\%-PRF(TH) & 0\%-0\%(TM) 0\%-0\%(TH) \\
 			\textlink{MTSA003}{MTSA003TAB}{MTSA003} & Tempo medio del team di sviluppo per la risoluzione di errori& 0h-4h(TM) 0h-4h(TH) & 0h-2h(TM) 0h-2h(TH) \\
-			\textlink{MTSA004}{MTSA004TAB}{MTSA004} & Efficienza della progettazione dei test & ? & ? \\
-			\textlink{MTSA005}{MTSA005TAB}{MTSA005} & Tempo medio per il testing dei bug fix & ? & ? \\
-			\textlink{MTSA006}{MTSA006TAB}{MTSA006} & Contenimento dei difetti & 60\%-100\% & 80\%-100\% \\
+			\textlink{MTSA004}{MTSA004TAB}{MTSA004} & Efficienza della progettazione dei test & 0.5h-3h & 1h-2h \\
+			%\textlink{MTSA005}{MTSA005TAB}{MTSA005} & Tempo medio per il testing dei bug fix & ? & ? \\
+			\textlink{MTSA005}{MTSA005TAB}{MTSA005} & Contenimento dei difetti & 60\%-100\% & 80\%-100\% \\
 			\hline
 			\textlink{MTSH001}{MTSH001TAB}{MTSH001} & Percentuale di difetti sistemati & 90\%-100\% & 98\%-100\% \\
 			\textlink{MTSH002}{MTSH002TAB}{MTSH002} & Copertura dei test eseguiti & 80\%-100\% & 95\%-100\%  \\
 			\textlink{MTSH003}{MTSH003TAB}{MTSH003} & Copertura dei \citGloss{requisiti} & PRO-100\% & 100\%-100\% \\
 			\textlink{MTSH004}{MTSH004TAB}{MTSH004} & Difetti per requisito & Variabile in base alla gravità del difetto & 0  \\
-			\textlink{MTSH005}{MTSH005TAB}{MTSH005} & Tasso di iniezione dei difetti & ? & ? \\			
+			%\textlink{MTSH005}{MTSH005TAB}{MTSH005} & Tasso di iniezione dei difetti & ? & ? \\			
 		\end{tabu}
 		\caption{Tabella delle metriche per i test}
 		\vspace{-1em}

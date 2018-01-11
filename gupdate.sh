@@ -35,6 +35,7 @@ fi
 for term in "${TERMS[@]}"; do
   term=${term//$BEFORETERM/""} #Elimina il testo latex lasciando solo il nome del term
   term=${term//$AFTERTERM/""}
+  echo "Sostituendo $term ..."
   #Sostiusce i termini evitando le righe che contengono il term desiderato in comandi latext
   #eg \somecommand{requisiti} non viene toccato
   #In questo modo il comando può essere eseguito più volte senza paura di annidare sostituzioni
@@ -96,6 +97,7 @@ for term in "${TERMS[@]}"; do
       I --> case insensitive
 COMMENT
 done #Fine ciclo termini
+echo "Fine"
 #Se dovessimo rinominare le cartelle, togliendo gli spazi, un'alternativa
 #credo più efficente sarebbe si dare l'output di find direttamente in pasto a sed:
 # find . -name "*.tex" -not -path "*$GLOSSARYDIR*" | xargs sed REGEX

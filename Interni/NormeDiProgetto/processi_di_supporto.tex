@@ -12,7 +12,7 @@
 	Tali documenti sono elencati successivamente nella sotto-sezione "Documenti correnti". 
 	
 	\subsection{Ciclo di vita documentazione}
-	Ogni documento formale deve passare gli stadi di "Sviluppo", "Verifica" e "Approvato".
+	Ogni documento formale deve passare gli stadi di "Sviluppo", "\citGloss{verifica}" e "Approvato".
 	\begin{itemize}
 		\item \textbf{Sviluppo:} inizia con la creazione del documento e termina con la conclusione della stesura di tutte le sue parti. In questa fase i Redattori aggiungono le parti assegnate tramite \citGloss{ticket}.
 		Il passaggio alla fase di \citGloss{verifica} è automatizzato con la segnalazione al Responsabile;
@@ -178,7 +178,7 @@
 	\subsection{Gestione termini Glossario}
 	Il glossario è un documento unico per tutti i documenti, esso conterrà tutte le definizioni, in ordine lessicografico crescente, dei termini inerenti al tema del progetto, che possono essere fraintesi o non ben comprensibili. I termini inseriti nel glossario saranno contrassegnati da una G pedice all'interno dei documenti.\\
 	Ovviamente prima di inserire un nuovo termine bisognerà assicurarsi che non sia già presente, in modo da evitare duplicati. \\
-	Il comando \LaTeX{} da utilizzare per contrassegnare un termine da glossario all'interno dei documenti è \texttt{\textbackslash{}citGloss}, mentre per l'inserimento di una nuova parola all'interno del glossario viene utilizzato \texttt{\textbackslash{}newglossaryentry }.\\
+	Il comando \\citGloss{LaTeX}{} da utilizzare per contrassegnare un termine da glossario all'interno dei documenti è \texttt{\textbackslash{}citGloss}, mentre per l'inserimento di una nuova parola all'interno del glossario viene utilizzato \texttt{\textbackslash{}newglossaryentry }.\\
 	La scelta di creare un comando apposito per una operazione "elementare" è scaturita dall'agevolazione che porta alla stesura della documentazione: avendo un modo univoco di riconoscere i termini all'interno del glossario è stato possibile automatizzare la \citGloss{verifica} del soddisfacimento delle norme all'interno dei documenti tramite uno script denominato "gupdate.sh".\\
 	In aggiunta è stato creato anche uno script denominato "addterm.sh" che facilita l'inserimento di un termine all'interno del glossario.\\
 	La descrizione dettagliata degli script è riposta nella sezione \textbf{Strumenti a supporto della documentazione}.
@@ -188,7 +188,7 @@
 	La stesura dei documenti deve essere effettuata utilizzando il linguaggio di markup \citGloss{LaTeX}  e l'ambiente \citGloss{TexStudio}\footnote{\nURI{https://www.texstudio.org/}} con dizionario italiano ed inglese installati.
 	
 	\subsection{Strumenti di supporto alla documentazione}
-	Per facilitare le attività di verifica e manutenzione della documentazione, sono stati sviluppati degli script per automatizzare l'esecuzione di determinate attività. \\
+	Per facilitare le attività di \citGloss{verifica} e manutenzione della documentazione, sono stati sviluppati degli script per automatizzare l'esecuzione di determinate attività. \\
 	Tutti gli script sono eseguibili da qualsiasi distribuzione Linux, per i membri del gruppo che utilizzano Windows è richiesto il software Cygwin\footnote{\nURI{http://www.cygwin.com/}} oppure il Windows Subsystem for Linux\footnote{\nURI{https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux}}, per quanto riguarda i sistemi *BSD e iOS non è richiesto nessun programma aggiuntivo.\\
 	In alcuni script sono richiesti dei programmi particolari, che vengono specificati, ove necessario, nell'elenco sottostante.
 	\begin{itemize}
@@ -196,7 +196,7 @@
 		\item \textbf{addterm.sh:} aggiunge un termine nel glossario ed esegue gupdate.sh per il termine appena inserito;
 		\item \textbf{rmterm.sh [termine]:} rimuove un termine dal glossario e il corrispondente comando di glossario in tutte le occorenze presenti nei file .tex;
 		\item \textbf{compile.sh:} effettua la compilazione di tutti i file .tex presenti nelle sottocartelle, segnalando eventuali fallimenti;
-		\item \textbf{build.sh:} esegue lo script compile.sh, aggiorna le occorenze di glossario tramite gupdate.sh e compila nuovamente. In caso di errori durante il procedimento si blocca ed avvisa il suo esecutore. Questo script è necessario per l'approvazione del commit da parte di Travis;
+		\item \textbf{build.sh:} esegue lo script compile.sh, aggiorna le occorenze di glossario tramite gupdate.sh e compila nuovamente. In caso di errori durante il procedimento si blocca ed avvisa il suo esecutore. Questo script è necessario per l'approvazione del \citGloss{commit} da parte di \citGloss{Travis};
 		\item \textbf{gulpease.py:} calcola l'indice di leggibilità Gulpease per tutti i documenti prodotti e mostra i risultati. Lo script, per essere eseguito, necessita dell'installazione di python\footnote{\nURI{https://www.python.org/}} (con versione minima richiesta 2.7) e del programma OpenDetex\footnote{\nURI{https://github.com/pkubowicz/opendetex}}.	
 	\end{itemize}
 	
@@ -244,7 +244,7 @@
 	
 	\subsubsection{Struttura delle repository}
 	E' stata realizzata solo una \citGloss{repository} durante la fase di RR ossia quella relativa alla documentazione denominata "Documentazione 353", si prevede inoltre di creare ulteriori repository per suddividere lo sviluppo e la codifica dell'applicazione del progetto. \\\\
-	I file interni al repository "Documentazione 353" sono organizzati secondo questa struttura:
+	I file interni al \citGloss{repository} "Documentazione 353" sono organizzati secondo questa struttura:
 	\begin{itemize}
 		\item \textbf{Esterni:}
 				\begin{itemize}
@@ -273,17 +273,17 @@
 	Per l'aggiornamento della \citGloss{repository} è previsto il seguente sotto processo motivato dalla sezione precedente "ciclo di vita":
 	\begin{itemize}
 		\item Verificare di trovarsi sul \citGloss{branch} personale con "git branch"(quella selezionata presenta un asterisco *) e in caso di riscontro negativo cambiare branch con "git checkout"
-		\item Dare il comando "git pull". Nel caso in cui si verifichino dei conflitti:
+		\item Dare il comando "git \citGloss{pull}". Nel caso in cui si verifichino dei conflitti:
 		\begin{itemize}
 			\item Dare il comando "git stash" per accantonare momentaneamente	le modifiche apportate;
-			\item Dare il comando "git pull" per ottenere ed applicare i \citGloss{commit} mancanti;
+			\item Dare il comando "git \citGloss{pull}" per ottenere ed applicare i \citGloss{commit} mancanti;
 			\item Dare il comando "git stash apply" per ripristinare le modifiche.
 		\end{itemize}
 		In questo modo il \citGloss{repository} locale risulta aggiornato rispetto il \citGloss{repository} remoto, mantenendo le modifiche personali apportate;
 	
 		\item Dare il comando "git add [files]" , che aggiungerà i file modificati e quelli nuovi specificati;
-		\item Dare il comando "git commit" e successivamente riassumere le modifiche effettuate, in caso sia utile si può aggiungere un messaggio esteso di descrizione;
-		\item Dare il comando "git push" per completare l'operazione e fornire le modifiche agli altri membri del gruppo.
+		\item Dare il comando "git \citGloss{commit}" e successivamente riassumere le modifiche effettuate, in caso sia utile si può aggiungere un messaggio esteso di descrizione;
+		\item Dare il comando "git \citGloss{push}" per completare l'operazione e fornire le modifiche agli altri membri del gruppo.
 	\end{itemize}
 	\subsection{Strumenti}
 	\begin{itemize}
@@ -319,7 +319,7 @@
 	\subsection{Strumenti}
 	\begin{itemize}
 		\item \textbf{Software:} verranno usati per la verifica Mocha ed Enzyme per React, Jest per Redux, mentre per i contratti Solidity useremo Mocha e Chai ma verranno attualizzati e confermati per la Technology \citGloss{baseline};
-		\item \textbf{Documenti:} per il controllo dei documenti prodotti utilizzeremo le funzionalità di Texstudio assieme a script bash eseguiti automaticamente da \citGloss{Travis} per controllare che non ci siano errori nei file LaTex, per assicurarsi che il Glossario non presenti mancanze o duplicati e verificare l'assenza di errori ortografici;
+		\item \textbf{Documenti:} per il controllo dei documenti prodotti utilizzeremo le funzionalità di Texstudio assieme a script bash eseguiti automaticamente da \citGloss{Travis} per controllare che non ci siano errori nei file \citGloss{LaTeX}, per assicurarsi che il Glossario non presenti mancanze o duplicati e verificare l'assenza di errori ortografici;
 		\item \textbf{Gestione processi e feedback:} è stato scelto di utilizzare il sistema integrato di issues\footnote{\nURI{https://guides.github.com/features/issues/}} presente su \citGloss{GitHub} per permettere un dialogo maggiore per ogni singola issue. 
 		\item \textbf{Gestione tasklist:} Todo353swe\footnote{\nURI{https://todo353swe.netlify.com}} semplice sito per gestione tasklist realizzato dai membri del gruppo per utilizzo interno.
 		\item \textbf{Analisi dinamica locale:} è stato individuato un plugin per Webstorm SonarLint\footnote{\nURI{https://plugins.jetbrains.com/plugin/7973-sonarlint}} come soluzione iniziale da verificare, per risolvere tutte le necessità di analisi del codice locale. Maggiori dettagli sarannò forniti durante la creazione dei Proof of concept per la Technology \citGloss{baseline}.

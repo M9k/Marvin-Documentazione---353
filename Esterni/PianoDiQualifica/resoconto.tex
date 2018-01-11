@@ -1,13 +1,45 @@
-\documentclass[PianoDiProgetto.tex]{subfiles}
+\documentclass[PianoDiQualifica.tex]{subfiles}
 
 \begin{document}
 
 \chapter{Resoconto attività di verifica}
+\section{Metriche sui documenti}
+In questa fase del progetto le uniche metriche istanziate sono quelle riguardanti i documenti.
+\subsection{Errori ortografici}
+Tutti i documenti, dopo l'attento lavoro dei verificatori e il feedback positivo rilasciato dallo strumento di controllo ortografico dell'ambiente TexStudio, risultano privi di errori ortografici, raggiungendo il valore accettabile e ottimale della metrica \textlink{MPDD003TAB}{MPDD003}{\textbf{MPDD003 Errori ortografici}}.
 
-\section{Revisione dei Requisiti}
-	\subsection{Tracciamento}
-	\subsection{Analisi Statica documenti}
-	\subsection{Verifiche automatiche}
+\subsection{Indice di Gulpease}
+Grazie ad alcuni script automatici è stato possibile istanziare la metrica \textlink{MPDD001TAB}{MPDD001}{\textbf{MPDD001 Indice di Gulpease}} in modo coerente e ripetibile.\\
+L'esecuzione degli script ha rivelato l'ottimo lavoro dei redattori, ottenendo valori nei range di accettazione per 2 documenti e valori nel range ottimale per 8 documenti, su un totale di 10 documenti.\\
+Nella tabella sottostante è mostrato il dettaglio dei risultati ottenuti.
+\begin{table}[H]
+	\begin{center}
+		\begin{tabu} to \textwidth {
+				>{\centering}m{0.34\linewidth}
+				>{\centering}m{0.33\linewidth}
+				>{\centering}m{0.33\linewidth} 
+			}
+			\tableHeaderStyle
+			\textbf{Nome documento} & \textbf{Indice di Gulpease} & \textbf{Esito} \\
+			\textbf{Piano di Progetto} & 62.70 & Ottimo \\
+			\textbf{Piano di Qualifica} & 55.16 & Accettato \\
+			\textbf{Norme di Progetto} & 60.27 & Ottimo \\
+			\textbf{Analisi dei Requisiti} & 90.89 & Ottimo \\
+			\textbf{Studio di Fattibilità} & 58.61 & Accettato \\
+			\textbf{Lettera di Presentazione} & 98.25 & Ottimo \\
+			\textbf{VER-2017-11-13} & 67.49 & Ottimo \\
+			\textbf{VER-2017-11-22} & 63.78 & Ottimo \\
+			\textbf{VER-2017-12-08} & 62.99 & Ottimo \\
+			\textbf{VER-2018-01-09} & 69.52 & Ottimo \\
+			
+		\end{tabu}
+		\caption{Resoconto delle misurazioni sulla metrica MPDD001 - Indice di Gulpease}
+		\vspace{-1em}
+	\end{center}
+\end{table}
+
+\subsection{Formula di Flesch}
+Non essendo ancora presenti documenti redatti in lingua inglese, non c'è stata ragione di istanziare questa metrica.
 	
 %\section{Revisione di Progettazione}	
 

@@ -189,7 +189,7 @@
 	
 	\subsection{Strumenti di supporto alla documentazione}
 	Per facilitare le attività di \citGloss{verifica} e manutenzione della documentazione, sono stati sviluppati degli script per automatizzare l'esecuzione di determinate attività. \\
-	Tutti gli script sono eseguibili da qualsiasi distribuzione Linux, per i membri del gruppo che utilizzano Windows è richiesto il software Cygwin\footnote{\nURI{http://www.cygwin.com/}} oppure il Windows Subsystem for Linux\footnote{\nURI{https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux}}, per quanto riguarda i sistemi *BSD e iOS non è richiesto nessun programma aggiuntivo.\\
+	Tutti gli script sono eseguibili da qualsiasi distribuzione Linux, per i membri del gruppo che utilizzano Windows è richiesto il software Cygwin\footnote{\nURI{http://www.cygwin.com/}} oppure il Windows Subsystem for Linux\footnote{\nURI{https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux}}, per quanto riguarda i sistemi *BSD e macOS non è richiesto nessun programma aggiuntivo.\\
 	In alcuni script sono richiesti dei programmi particolari, che vengono specificati, ove necessario, nell'elenco sottostante.
 	\begin{itemize}
 		\item \textbf{gupdate.sh [termine]:} si occupa di controllare le parole inserite nel glossario e, per ognuna di esse, aggiornare con il comando di glossario tutti i .tex file che le contengono. Se viene specificato un termine, lo script aggiorna solo quello indicato;
@@ -203,7 +203,7 @@
 	
 	\section{Qualità}
 	\subsection{Descrizione}
-	Questa sezione descrive le classificazioni, procedure per il calcolo delle metriche descritte nel \pdq{}.
+	Questa sezione descrive le classificazioni e procedure per il calcolo delle metriche descritte nel \pdq{}.
 	
 	\subsection{Classificazione delle metriche}
 	Per garantire la qualità del lavoro gli Amministratori hanno definito delle metriche, riportandole all'interno del \pdq{}, che devono però rispettare la seguente notazione \textbf{M[categ][macrocateg][num]}	dove:
@@ -229,10 +229,9 @@
 		\item \textbf{num:} indica il codice univoco della metrica come numero intero a tre cifre incrementale a partire da 1.
 	\end{itemize}	
 	
-	%\subsection{Procedure}
-	\subsection{Istanziazione delle metriche}
-	In questa fase del progetto, l'unica metrica che è stata implementata è "MPDD001 - Indice di Gulpease", calcolata tramite lo script "gulpease.py" citato nella sottosezione \textbf{Strumenti di supporto alla documentazione}.\\
-	L'implementazione delle restanti metriche verrà studiata con l'avanzare del progetto.
+	\subsection{Procedure}
+	In questa fase del progetto, l'unica metrica che è stata implementata tramite procedura esterna è "MPDD001 - Indice di Gulpease", calcolata tramite lo script "gulpease.py" citato nella sottosezione \textbf{Strumenti di supporto alla documentazione}.\\
+	L'implementazione di ulteriori metriche tramite procedure verrà studiato con l'avanzare del progetto.
 	
 	\section{Configurazione}
 	

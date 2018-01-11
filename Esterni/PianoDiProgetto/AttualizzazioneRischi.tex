@@ -1,0 +1,25 @@
+\documentclass[PianoDiProgetto.tex]{subfiles}
+\begin{document}
+
+\chapter{Attualizzazione dei rischi }
+\taburowcolors[2] 2{tableLineOne .. tableLineTwo}
+\tabulinesep = ^3mm_2mm
+\begin{longtabu} to \linewidth {
+		 >{\centering}m{.17\linewidth} 
+		 >{\centering}m{.17\linewidth} 
+		 >{\raggedright}m{.57\linewidth} 
+	 }
+	\caption[Attualizzazione dell'analisi dei rischi]{Attualizzazione dell'analisi dei rischi}
+	\endlastfoot
+	\rowfont{\bfseries\sffamily\leavevmode\color{white}}
+	\rowcolor{tableHeader}
+	\textbf{Codice} & \textbf{Periodo} & \textbf{Mitigazione} \\
+	\endhead
+	
+	\rowcolor{tableLineOne} \textbf{RT001} & \textbf{Analisi} &  {
+		Si è verificato un piccolo problema legato all'ambiente \citGloss{GitHub}. Alcuni membri non avendo esperienza con quest'ambiente, hanno avuto necessità di dedicare più tempo per imparare ad utilizzare questa tecnologia.
+	}
+\\
+\end{longtabu}
+
+\end{document}

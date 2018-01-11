@@ -8,18 +8,23 @@ Nella seguente tabella è stata effettuata un’analisi approfondita dei rischi 
 % per tabelle, alterna i colori delle righe		
 \taburowcolors[2] 2{tableLineOne .. tableLineTwo}
 \tabulinesep = ^3mm_2mm
-\begin{longtabu} to \linewidth { >{\centering}m{.17\linewidth} >{\raggedright}m{.33\linewidth} >{\raggedright}m{0.25\linewidth} >{\centering}m{0.17\linewidth} }
+\begin{longtabu} to \linewidth { 
+		>{\centering}m{.17\linewidth} 
+		>{\raggedright}m{.33\linewidth} 
+		>{\raggedright}m{0.25\linewidth} 
+		>{\centering}m{0.17\linewidth} 
+	}
 	\caption[Tabella descrittiva dell'analisi dei rischi]{Tabella descrittiva dell'analisi dei rischi}
 	\endlastfoot
 	\rowfont{\bfseries\sffamily\leavevmode\color{white}}
 	\rowcolor{tableHeader}
-	\textbf{Nome (Tipologia)} & \textbf{Descrizione} & \textbf{Rilevamento} & \textbf{Grado di rischio} \\
+	\textbf{Nome Codice (Tipologia)} & \textbf{Descrizione} & \textbf{Rilevamento} & \textbf{Grado di rischio} \\
 	\endhead
 	
 	\taburowcolors{tableLineOne..tableLineTwo}
 	
 	%Primo rischio
-	\rowcolor{tableLineOne} \textbf{Scarsa esperienza} (Membri 353)
+	\rowcolor{tableLineOne} \textbf{Scarsa esperienza RM001} (Membri 353)
 	&
 	{\small Nessun membro del gruppo ha mai lavorato su un progetto così impegnativo, ciò potrebbe produrre dei ritardi.} 
 	& 
@@ -44,7 +49,7 @@ Nella seguente tabella è stata effettuata un’analisi approfondita dei rischi 
 	%Fine codice per Attualizzazione	
 		
 	%Secondo rischio
-	\rowcolor{tableLineOne} \textbf{Contrasti nel gruppo} (Membri 353)
+	\rowcolor{tableLineOne} \textbf{Contrasti nel gruppo RM002} (Membri 353)
 	&
 	 {\small Quest'anno i gruppi sono stati formati in modo casuale. Ogni membro si trova a fare il progetto con un gruppo di persone che non conosceva. Questo potrebbe portare a tensioni e conflitti.}
 	 &
@@ -60,7 +65,7 @@ Nella seguente tabella è stata effettuata un’analisi approfondita dei rischi 
 	
 	
 	%Terzo rischio
-	\rowcolor{tableLineOne} \textbf{Disponibilità dei membri} (Membri 353)
+	\rowcolor{tableLineOne} \textbf{Disponibilità dei membri RM003} (Membri 353)
 	&
 	{\small Alcuni membri del gruppo \gruppo sono anche lavoratori. Quindi il tempo dedicato al progetto da questi membri potrebbe essere limitato.}
 	&
@@ -80,7 +85,7 @@ Nella seguente tabella è stata effettuata un’analisi approfondita dei rischi 
 	
 	
 	%Quarto rischio
-	\rowcolor{tableLineOne} \textbf{Tecnologie da usare} (Tecnologico)
+	\rowcolor{tableLineOne} \textbf{Tecnologie da usare RT001} (Tecnologico)
 	&
 	{\small Le tecnologie da studiare sono molto recenti e la documentazione fornita è spesso molto limitata e/o poco approfondita. Il tempo di apprendimento per queste tecnologie potrebbe causare dei ritardi nello svolgimento dei lavori.}
 	&
@@ -92,25 +97,13 @@ Nella seguente tabella è stata effettuata un’analisi approfondita dei rischi 
 	&
 	\multicolumn{3}{m{0.8075\linewidth}}{\small In casi gravi i membri con più esperienza e familiarità con quella tecnologia dovranno aiutare il membro in difficoltà, ridistribuendo il carico di lavoro.}\\
 
-	
-	
-	%Codice per Attualizzazione 
-	\multicolumn{4}{c}{ \cellcolor{tableLineOne} \textbf{Attualizzazione}} \\*
-	\rowcolor{tableLineTwo} \textbf{Periodo} 
-	&
-	 \multicolumn{3}{c}{\textbf{Mitigazione}} \\*
-	\rowcolor{tableLineOne} Analisi
-	
-	&  \multicolumn{3}{m{0.8075\linewidth}}{
-	Si è verificato un piccolo problema legato all'ambiente \citGloss{GitHub}. Alcuni membri non avendo esperienza con quest'ambiente, hanno avuto necessità di dedicare più tempo per imparare ad utilizzare questa tecnologia.
-		}\\ 
-	%Fine codice per Attualizzazione
+
 	
 	\hhline{====}
 	
 	
 	%Quinto rischio
-	\rowcolor{tableLineOne} \textbf{Strumenti software}  (Tecnologico)
+	\rowcolor{tableLineOne} \textbf{Strumenti software RT002}  (Tecnologico)
 	&
 	{\small Il gruppo si affida su software di terze parti e piattaforme online, eventuali disfunzioni potrebbero causare errori o perdite di dati.}
 	&
@@ -127,7 +120,7 @@ Nella seguente tabella è stata effettuata un’analisi approfondita dei rischi 
 	
 	
 		%Sesto rischio
-	\rowcolor{tableLineOne} \textbf{Problemi hardware} (Tecnologico)
+	\rowcolor{tableLineOne} \textbf{Problemi hardware RT003} (Tecnologico)
 	&
 	{\small Ogni membro utilizza il computer personale per lavorare al progetto, guasti hardware potrebbero causare perdite di dati e/o di tempo.}
 	&
@@ -141,7 +134,7 @@ Nella seguente tabella è stata effettuata un’analisi approfondita dei rischi 
 	\hhline{====}
 	
 	%Settimo rischio
-	\rowcolor{tableLineOne} \textbf{Costi delle attività} (Organizza-
+	\rowcolor{tableLineOne} \textbf{Costi delle attività RO001} (Organizza-
 	tivo)
 	 &
 	{\small La pianificazione prevede un costo per le attività. Essendo tutti membri del gruppo inesperti, è possibile che i tempi vengano calcolati in modo errato.}
@@ -157,7 +150,7 @@ Nella seguente tabella è stata effettuata un’analisi approfondita dei rischi 
 	
 	
 	%Ultimo rischio
-	\rowcolor{tableLineOne} \textbf{Modifica dei requisiti} (Requisiti)
+	\rowcolor{tableLineOne} \textbf{Modifica dei requisiti RR001} (Requisiti)
 	&
 	{\small È possibile che la Proponente \Proponente decida di voler apportare delle modifiche. Questo porterebbe a una parziale/totale riscrittura dell'\adr con conseguente rivalutazione della pianificazione delle attività.}
 	&

@@ -3,9 +3,27 @@
 \begin{document}
 
 \chapter{Resoconto attività di verifica}
-\section{Metriche sui documenti}
-In questa fase del progetto le uniche metriche istanziate sono quelle riguardanti i processi e i documenti.
+\section{Qualità di Processo}
+%TODO intro in base a livello ISO 15504
 \subsection{Metriche processi}
+\begin{table}[H]
+	\begin{center}
+		\begin{tabu} to \textwidth {
+				>{\centering}m{0.15\linewidth}
+				>{\centering}m{0.15\linewidth}
+				>{\centering}m{0.5\linewidth} 
+				>{\centering}m{0.1\linewidth} 				
+			}
+			\tableHeaderStyle
+			\textbf{ID} & \textbf{Valore ottenuto} & \textbf{Commento} & \textbf{Esito} \\
+			\textbf{MPS001} & 0 & Attività di documentazione e analisi requisiti terminata l'11 Gennaio & Ottimo \\
+			\textbf{MPS002} & 0 & Ottimo risultato grazie ad attività pianificate con tempo maggiore rispetto aspettativa & Ottimo\\
+		\end{tabu}
+		\caption{Resoconto delle misurazioni delle metriche di processo}
+		\vspace{-1em}
+	\end{center}
+\end{table}
+\subsection{Maturità processi ISO 15504}
 \begin{table}[H]
 	\begin{center}
 		\begin{tabu} to \textwidth {
@@ -14,16 +32,17 @@ In questa fase del progetto le uniche metriche istanziate sono quelle riguardant
 				>{\centering}m{0.33\linewidth} 
 			}
 			\tableHeaderStyle
-			\textbf{ID} & \textbf{Valore ottenuto} & \textbf{Commento} \\%TODO metto valori
-			\textbf{MPS001} &  & Ottimo risultato grazie ad Asana \\
-			\textbf{MPS002} &  & Ottimo risultato grazie a \\
+			\textbf{ID} & \textbf{Livello maturità: 1 a 5} & \textbf{Commento} \\
+			\textbf{PROC001} & 2 & Gestito tramite software, come Asana, ha permesso di ottenere risultati positivi nella pianificazione  \\
+			\textbf{PROC002} & 0 & Sarà istanziato dalla fine RR per creazione Proof of concept \\
 		\end{tabu}
-		\caption{Resoconto delle misurazioni delle metriche di processo}
+		\caption{Resoconto del livello maturità processi}
 		\vspace{-1em}
 	\end{center}
 \end{table}
 
-\subsection{Metriche prodotto}
+
+\section{Qualità di Prodotto}
 In questa fase del progetto le uniche metriche di prodotto istanziate sono quelle riguardanti i documenti.
 \subsection{Errori ortografici}
 Tutti i documenti, dopo l'attento lavoro dei verificatori e il feedback positivo rilasciato dallo strumento di controllo ortografico dell'ambiente \citGloss{TexStudio}, risultano privi di errori ortografici, raggiungendo il valore accettabile e ottimale della metrica \textlink{MPDD003TAB}{MPDD003}{\textbf{MPDD003 Errori ortografici}}.

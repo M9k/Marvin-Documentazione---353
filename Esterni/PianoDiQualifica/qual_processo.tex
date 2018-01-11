@@ -20,7 +20,7 @@ Per ottenere qualità dei processi, bisogna:
 
 \section{Processi}
 
-\subsection{Pianificazione di progetto, impostazione e controllo di processi}
+\subsection{PROC001 - Pianificazione di progetto, impostazione e controllo di processi}
 Il macro-processo ha lo scopo di produrre dei piani di sviluppo per il progetto, comprendenti la scelta del modello di ciclo di vita del prodotto, descrizioni delle attività e dei compiti da svolgere, pianificazione temporale del lavoro e dei costi da sostenere, allocazione di compiti e responsabilità e misurazioni per rilevare lo stato del progetto rispetto alle pianificazioni prodotte.
 
 \subsubsection{Obbiettivi}
@@ -71,7 +71,7 @@ Dove: \begin{itemize}
 \end{itemize}
 
 
-\subsection{Verifica software}
+\subsection{PROC002 - Verifica software}
 Il processo punta a verificare se qualsiasi elemento del sistema soddisfa completamente i \citGloss{requisiti} ad esso assegnati.
 \subsubsection{Obiettivi}
 Per poter definire delle \citGloss{baseline} per lo sviluppo del software, è necessario che il codice venga sempre verificato.
@@ -96,6 +96,27 @@ Per poter avere una misura di codice testato e verificato si adoreranno determin
 \textbf{Misurazione:}
 Vengono calcolate in percentuale sulla quantità di codice testato e verificato oltre che sul totale delle linee di codice scritte, tramite tool automatici come IstanbulJS\footnote{\nURI{https://istanbul.js.org/}}.
 
+\section{Tabella dei processi}
+% ID Processo
+% PROC --> metrica
+% 00n --> numero incrementale
+Questa tabella indica i processi presenti.
+\begin{table}[H]
+	\begin{center}
+		\begin{tabu} to \textwidth {
+				>{\centering}m{0.2\linewidth}
+				>{\centering}m{0.7\linewidth}
+			}
+			\tableHeaderStyle
+			\textbf{ID} & \textbf{Nome} \\
+			\textbf{PROC001} & {Pianificazione di progetto, impostazione e controllo di processi}\\ 
+			\textbf{PROC002} & {Verifica Software}\\ 
+			
+		\end{tabu}
+		\caption{Tabella dei processi}
+		\vspace{-1em}
+	\end{center}
+\end{table}
 
 \section{Tabella delle metriche}
 % ID METRICA

@@ -99,6 +99,8 @@
 \newacronym{VS Code}{VSCode}{}
 \newacronym{VScode}{VSCode}{}
 \newacronym{VS code}{VSCode}{}
+\newacronym{White-box}{white-box}{}
+\newacronym{Black-box}{black-box}{}
 
 %INIZIO SLACK
 \newglossaryentry{Slack}{
@@ -157,7 +159,7 @@
 
 %INIZIO BRANCH
 \newglossaryentry{branch}{
-	name={branch},
+	name={Branch},
 	description={Ramo di lavoro, favorisce uno sviluppo non lineare e incrementale, offrendo la possibilità di sviluppare degli incrementi sui branch che verranno poi uniti al branch principale, chiamato master}
 }
 %FINE BRANCH
@@ -561,21 +563,21 @@
 %INIZIO QA
 \newglossaryentry{QA}{
 	name={QA},
-	description={Acronimo per Quality Assurance, s'intende il team di verificatori che effettua l'analisi dinamica del software, specificatamente sui test ad alto livello.}
+	description={Acronimo per Quality Assurance, indica il team di verificatori che effettua l'analisi dinamica del software attraverso test ad alto livello.}
 }
 %FINE QA
 
 %INIZIO WHITE-BOX
 \newglossaryentry{white-box}{
-	name={white-box},
-	description={Tipologia di test atta a verificare la struttura del codice, controllando ogni azione logica che il codice può/deve compiere.}
+	name={White-box},
+	description={Tipologia di test atta a verificare la struttura del codice, controllando ogni azione logica che il codice può o deve compiere.}
 }
 %FINE WHITE-BOX
 
 %INIZIO BLACK-BOX
 \newglossaryentry{black-box}{
-	name={black-box},
-	description={Tipologia di test atta a verificare il comportamento del codice, forniti dei parametri di ingresso, si controllano quelli di uscita, ignorando la logica interno.}
+	name={Black-box},
+	description={Tipologia di test atta a verificare il comportamento del codice fornendo dei parametri di ingresso e controllando che quelli di uscita corrispondano a quelli previsti, ignorando la logica all'interno.}
 }
 %FINE BLACK-BOX
 
@@ -589,7 +591,7 @@
 %INIZIO BDD
 \newglossaryentry{BDD}{
 	name={BDD},
-	description={Variante del TDD per i test ad alto livello, la B si riferisce a behaviour, comportamento, indicando un focus, a livello di analisi sul comportamento del codice. La dialettica usata per la stesura dei test, per questa filosofia, si avvicina alla lingua parlata.}
+	description={Variante del \citGloss{TDD} per i test ad alto livello, la B si riferisce a behaviour, cioè comportamento, indicando un focus, a livello di analisi, sul comportamento del codice. Vengono espressi in un linguaggio quasi informale.}
 }
 %FINE BDD
 

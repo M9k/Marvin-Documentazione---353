@@ -70,7 +70,7 @@ I \citGloss{requisiti} vengono classificati ed assegnati a un identificativo uni
 	R0F8 & Obbligatorio & L'utente non ancora registrato può registrarsi & Capitolato \\  
 	R0F8.1 & Obbligatorio & La registrazione necessita di nome, cognome, categoria (studente o professore) e selezione del corso di laura se si tratta di uno studente & Capitolato \\  
 	R1F9 & Desiderabile & L'utente può leggere una breve guida sull'uso di MetaMask e sul pagamento delle operazioni & Interno \\  	
-	R0F10 & Obbligatorio & L'utente deve poter vedere preventivamente il costo in \citGloss{Gas}, \citGloss{Ether} e Euro dell'operazione che sta per eseguire & Capitolato \\  	
+	R0F10 & Obbligatorio & L'utente deve poter vedere preventivamente il costo in \citGloss{Gas}, \citGloss{Ether} e Euro dell'operazione che sta per eseguire & Capitolato, VER-2018-01-09 \\  	
 	R0F11 & Obbligatorio & L'università deve poter gestire gli amministratori & VER-2017-12-08 \\
 	R0F11.1 & Obbligatorio & L'università deve poter aggiungere amministratori & VER-2017-12-08 \\
 	R0F11.2 & Obbligatorio & L'università deve poter rimuovere amministratori & VER-2017-12-08 \\
@@ -88,7 +88,7 @@ I \citGloss{requisiti} vengono classificati ed assegnati a un identificativo uni
 	\rowcolor{CHeader} 
 	\color{CHeaderText} \textbf{Identificatore} & \color{CHeaderText} \textbf{Importanza} & \color{CHeaderText} \textbf{Descrizione} & \color{CHeaderText} \textbf{Fonti} \\  
 	\endhead
-	R0Q1 & Obbligatorio & La progettazione e il codice devono seguire le norme e le metriche riportate nei documenti allegati X e Y & Interno \\   %TODO: indicare allegati
+	R0Q1 & Obbligatorio & La progettazione e il codice devono seguire le norme e le metriche riportate nel documento allegato \pdq \vruno & Interno \\
 	R0Q2 & Obbligatorio & L'approccio di scrittura di \citGloss{JavaScript} deve essere promise Centric Approach & Capitolato \\  
 	R0Q2.1 & Obbligatorio & L'applicativo non deve fare uso di callback in presenza di alternative alle ultime & VER-2017-11-22 \\  
 	R0Q3 & Obbligatorio & Il codice \citGloss{JavaScript} deve attenersi al \citGloss{airbnb} \citGloss{JavaScript} style guide & Capitolato \\  
@@ -96,7 +96,7 @@ I \citGloss{requisiti} vengono classificati ed assegnati a un identificativo uni
 	R0Q5 & Obbligatorio & Dovrà essere fornito un manuale utente in lingua inglese che tratterà l'uso da parte di studenti e professori & VER-2017-11-22 \\  
 	R0Q6 & Obbligatorio & Dovrà essere fornito un manuale di deploy e di utilizzo da parte degli amministratori in lingua inglese & VER-2017-11-22 \\
 	R0Q7 & Obbligatorio & Il codice sorgente deve essere pubblicato sulla piattaforma \citGloss{GitHub}, BitBucket o GitLab & Capitolato \\  
-	R0Q8 & Obbligatorio & Il codice deve attenersi il più possibile alle guide linea de "App a 12 Fattori" & Capitolato \\  
+	R0Q8 & Obbligatorio & Il codice deve attenersi il più possibile alle guide linea de "App a 12 Fattori" & Capitolato \\ 
 	\hiderowcolors
 	\caption{Tabella dei requisiti di qualità}
 \end{longtable}
@@ -127,8 +127,8 @@ I \citGloss{requisiti} vengono classificati ed assegnati a un identificativo uni
 	R0V5 & Obbligatorio & L'applicativo deve essere accessibile ed utilizzabile dal \citGloss{browser} Mozilla \citGloss{Firefox} a partire dalla versione 52 & Interno \\
 	R0V6 & Obbligatorio & L'applicativo deve essere accessibile ed utilizzabile dal \citGloss{browser} Google \citGloss{Chrome} a partire dalla versione 57 & Interno \\
 	R1V7 & Desiderabile & L'applicativo deve essere accessibile ed utilizzabile da un \citGloss{browser} mobile, per le versioni supportate fare riferimento alle controparti PC di \citGloss{Firefox} e \citGloss{Chrome} & Interno \\  
-	R0V8 & Obbligatorio & Un utente non deve poter compiere azioni sul sistema senza aver fatto l'accesso ad esso & Capitolato \\  
-	R0V9 & Obbligatorio & L'applicazione dei principi de "App a 12 Fattori" deve essere documentata & Capitolato \\  
+	R0V8 & Obbligatorio & Un utente non deve poter compiere azioni sul sistema senza aver fatto l'accesso ad esso & Capitolato \\ 
+	R0V9 & Obbligatorio & 'applicazione dei principi de "App a 12 Fattori" deve essere documentato ove possibile l'utilizzo & Capitolato, VER-2018-01-09 \\
 	R0V10 & Obbligatorio & Il codice sorgente deve essere pubblicato con licenza MIT & Capitolato \\  
 	\hiderowcolors
 	\caption{Tabella dei requisiti di vincolo}
@@ -216,10 +216,10 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 	 R0F5.1.2 \\
 	 R0F5.1.3 \\
 	 R0F5.1.4 \\
-	 R0F5.1.5
- } \\
-& & \makecell[tl]{
-	 R0F6 \\
+	 R0F5.1.5 \\
+	 R0F6
+	 } \\
+	& & \makecell[tl]{
 	 R0F6.1 \\
 	 R1F9 \\
 	 R0F11.3 \\
@@ -234,6 +234,8 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 	VER-2017-12-08 & Verbale & \makecell[tl]{ R0F11 \\
 	 R0F11.1 \\
 	 R0F11.2 } \\  
+	VER-2018-01-09 & Verbale & \makecell[tl]{ R0F10 \\
+	R0V9 } \\ 
 	
 	UC1 & Breve guida & R1F9 \\  
 	UC2 & Login & R0F6 \\  

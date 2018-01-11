@@ -1,9 +1,9 @@
 \documentclass[openany, a4paper, 12pt]{report}
 \usepackage{subfiles}
 \usepackage{../../common/style}
-\fancyfoot[L]{Glossario}
+\setfoot{\g}{\vruno}
 \loadglsentries{Definizioni.tex}
-%\glossarystyle{listhypergroup}
+
 
 
 \glsaddall
@@ -50,7 +50,6 @@
 \pagenumbering{roman}
 \subfile{diariomodifiche}
 \pagenumbering{arabic}
-%\subfile{Introduzione}
 \printglossary
  
 \end{document}

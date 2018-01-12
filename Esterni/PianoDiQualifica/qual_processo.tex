@@ -96,6 +96,28 @@ Per poter avere una misura di codice testato e verificato si adoreranno determin
 \textbf{Misurazione:}
 Vengono calcolate in percentuale sulla quantità di codice testato e verificato oltre che sul totale delle linee di codice scritte, tramite tool automatici come IstanbulJS\footnote{\nURI{https://istanbul.js.org/}}.
 
+
+\subsection{PROC003 - Gestione rischi}
+Il processo mira ad identificare nuovi rischi e a monitorare e ridurre la possibilità dell'insorgere di questi durante l'attività di progetto.
+\subsubsection{Obiettivi}
+\begin{itemize}
+	\item \textbf{Individurare rischi Fase:} ad ogni nuova fase del progetto verranno analizzati possibili rischi, cercando delle soluzioni automatiche per diminuire l'occorrenza di questi;
+	\item \textbf{Analisi:} i rischi saranno gestiti con una prima analisi che dovrà fornire uno strumento o procedura automatica per ridurre o prevenire le cause scatenanti di questo rischio.
+\end{itemize}
+\subsubsection{Strategie}
+Nel caso dovessero sorgere troppi rischi il gruppo dovrà sospendere i lavori eliminando il maggior numero di questi per permettere la prosecuzione del lavoro.
+Viene utilizzato StatusTicker\footnote{\nURI{https://swe353.statusticker.com}} per avere dashobard sullo status dei servizi esterni utilizzati;
+
+\subsubsection{Metriche}
+\paragraph{}
+\textlink{MPS007TAB}{MPS007}{\textbf{MPS007 Indisponibilità servizi esterni:}} numero totale di giorni in cui siano stati offline o bloccati servizi usati.\\
+
+\paragraph{}
+\textlink{MPS008TAB}{MPS008}{\textbf{MPS008 Rischi non previsti:}} indice numerico che viene incrementato nel momento in cui si manifesta un
+rischio esterno a quelli presenti nell’attività di analisi dei rischi.\\
+\textbf{Misurazione:}
+
+
 \section{Tabella dei processi}
 % ID Processo
 % PROC --> metrica
@@ -111,6 +133,7 @@ Questa tabella indica i processi presenti.
 			\textbf{ID} & \textbf{Nome} \\
 			\textbf{PROC001} & {Pianificazione di progetto, impostazione e controllo di processi}\\ 
 			\textbf{PROC002} & {Verifica Software}\\ 
+			\textbf{PROC003} & {Gestione rischi}\\ 
 			
 		\end{tabu}
 		\caption{Tabella dei processi}
@@ -138,7 +161,7 @@ Questa tabella indica i \textbf{range} di accettazione e di ottimalità per le m
 			\textbf{ID} & \textbf{Nome} & \textbf{Range di accettazione} & \textbf{Range di ottimalità}\\
 			
 			\multicolumn{4}{c}{\textbf{PROC001}}\\
-			\textlink{MPS001}{MPS001TAB}{MPS001} & Schedule Variance & $ \geq -5\% $ & $ \geq 0 $ \\
+			\textlink{MPS001}{MPS001TAB}{MPS001} & Schedule Variance & $ \geq -5 \space giorni $ & $ \geq 0 giorni $ \\
 			\textlink{MPS002}{MPS002TAB}{MPS002} & Budget Variance & $ \geq -10\% $ & $ \geq 0 $ \\
 			
 			\hline
@@ -146,9 +169,15 @@ Questa tabella indica i \textbf{range} di accettazione e di ottimalità per le m
 			\textlink{MPS003}{MPS003TAB}{MPS003} & Function coverage & $ \geq 98\% $ & $ 100\% $\\
 			\textlink{MPS004}{MPS004TAB}{MPS004} & Statement coverage &  $ \geq 97\% $& $ 100\% $\\
 			\textlink{MPS005}{MPS005TAB}{MPS005} & \citGloss{branch} coverage & $ \geq 95\% $ & $ 100\% $\\
-			\textlink{MPS006}{MPS006TAB}{MPS006} & Condition coverage & $ \geq 99\% $ & $ 100\% $\\ % lasciate questo capo riga
+			\textlink{MPS006}{MPS006TAB}{MPS006} & Condition coverage & $ \geq 99\% $ & $ 100\% $\\
+
+			\hline
+			\multicolumn{4}{c}{\textbf{PROC003}}\\
+			\textlink{MPS007}{MPS007TAB}{MPS007} & Indisponibilità servizi esterni & $ 3 $ & $ 0 $\\
+			\textlink{MPS008}{MPS008TAB}{MPS008} & Rischi non previsti & $ 5 $ & $ 0 $\\ 
 
 
+			
 		\end{tabu}
 		\caption{Tabella delle metriche della qualità di processo}
 		\vspace{-1em}

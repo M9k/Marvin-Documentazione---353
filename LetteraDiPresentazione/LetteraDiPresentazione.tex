@@ -2,39 +2,60 @@
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage[italian]{babel}
-\usepackage{eurosym}
-\usepackage{tabu}
-\usepackage{moderncv}
-\usepackage{../common/style}
-
-\taburowcolors[2] 2{tableLineOne .. tableLineTwo}
-\tabulinesep = ^3mm_2mm
-
 \graphicspath{{images/}{./images/}}
 %\usepackage{lipsum}
 %\usepackage{tabularx}
 %\usepackage{hyperref} 
 \usepackage{fancyhdr}
+\usepackage{eurosym}
+\usepackage{longtable}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage[table]{xcolor}
+\usepackage{xspace}
 
-\pagestyle{fancy}
-\fancyfoot[C]{\thepage}
-\renewcommand{\headrulewidth}{0.4pt}
-\renewcommand{\footrulewidth}{0.4pt}
+%---------------------------- COPIATI DA STYLE.STY ------------------------------
 
-\fancypagestyle{firstpage}{
-	\fancyhf{}
-	\fancyhead[L]{\includegraphics[width=4cm]{../common/images/logo.png}}
-	\fancyfoot[C]{\thepage}
+\definecolor{tableHeader}{RGB}{211, 47, 47}
+\definecolor{tableLineOne}{RGB}{245, 245, 245}
+\definecolor{tableLineTwo}{RGB}{224, 224, 224}
+
+% commands for team members name
+\newcommand{\Valentina}{Valentina Marcon\xspace}
+\newcommand{\Mirco}{Mirco Cailotto\xspace}
+\newcommand{\Riccardo}{Riccardo E. Giorato\xspace}
+\newcommand{\Davide}{Davide Stocco\xspace}
+\newcommand{\Parwinder}{Parwinder Singh\xspace}
+\newcommand{\Elena}{Elena Mattiazzo\xspace}
+\newcommand{\Gianluca}{Gianluca Marraffa\xspace}
+
+\fancyhf{}
+\fancyhead[L]{\includegraphics[width=2cm]{../../common/images/logo.png}}
+\fancyhead[R]{Lettera di presentazione}
+\fancyfoot[R]{\thepage}
+
+\newcommand{\setfoot}[2]{\newcommand{\@one}{#1}\newcommand{\@two}{#2}}
+
+%\makeatletter \@title \space \textit{v \ver{}.0.0} \makeatother
+\fancypagestyle{plain}{
 	\renewcommand{\headrulewidth}{0.4pt}
 	\renewcommand{\footrulewidth}{0.4pt}
 }
 
-\setlength{\headheight}{50pt} 
+\pagestyle{plain}
+\setlength{\headheight}{50pt}
+
+%---------------------------- COPIATI DA ADR/Requsiti ----------------------------
+\definecolor{CHeader}{HTML}{D22E2E}
+\definecolor{CHeaderText}{HTML}{FFFFFF}
+\definecolor{CRighePari}{HTML}{DFDFDF}
+\definecolor{CRigheDispari}{HTML}{F4F4F4}
+%---------------------------------------------------------------------------------
+
 \address{Via Trieste, 63 35131 Padova (PD)\\Email: 353swe@gmail.com}
 
 \begin{document}	
 	\begin{letter}{
-			Alla cortese attenzione del committente:\\
+			Alla cortese attenzione del Committente:\\
 			\smallskip
 			Prof. Tullio Vardanega\\
 			Prof. Riccardo Cardin\\
@@ -42,79 +63,64 @@
 			Universita degli Studi di Padova \\
 			Dipartimento di Matematica\\
 			Via Trieste, 62, 35131 Padova (PD)}
-			\opening{Egregio Prof. Tullio Vardanega, \\
-				Egregio Prof. Riccardo Cardin,}
-			Con la presente, il gruppo 353 intende comunicarVi ufficialmente l’impegno alla realizzazione del
-			prodotto da Voi commissionato, denominato: \\
-			\begin{center}
+		\opening{Egregio Prof. Tullio Vardanega, \\
+			Egregio Prof. Riccardo Cardin,}
+		\thispagestyle{plain}
+		Con la presente, il gruppo 353 intende comunicarVi ufficialmente l’impegno alla realizzazione del prodotto da Voi commissionato, denominato: \\
+		\begin{center}
 			\emph{\textbf{Marvin: dimostratore di Uniweb su Ethereum}}\medskip \\
-			\end{center}
-			proposto da Red Babel.\medskip\\
-			Allegati alla presente, potrete trovare i seguenti documenti che illustrano in dettaglio analisi del
-			prodotto, di pianificazione e relativi criteri a garanzia della qualità: 
+		\end{center}
+		proposto da Red Babel.\medskip\\
+		Allegati alla presente, potrete trovare i seguenti documenti che illustrano in dettaglio analisi del
+		prodotto, di pianificazione e relativi criteri a garanzia della qualità: 
+		\begin{itemize}
+			\item Analisi dei Requisiti v 1.0.0.
+			\item Glossario v 1.0.0.
+			\item Piano di Progetto v 1.0.0.
+			\item Piano di Qualifica v 1.0.0.
+			\item Norme di Progetto v 1.0.0.
+			\item Studio di Fattibilità v 1.0.0.
+			\item Verbali interni:
 			\begin{itemize}
-				\item Analisi dei requisiti v 1.0.0.
-				\item Glossario v 1.0.0.
-				\item Piano di Progetto v 1.0.0.
-				\item Piano di Qualifica v 1.0.0.
-				\item Norme di Progetto v 1.0.0.
-				\item Studio di Fattibilità v 1.0.0.
-				\item Verbali interni:
-					\begin{itemize}
-						\item VER-2017-11-13 v 1.0.0
-					\end{itemize}
-				\item Verbali esterni:
-					\begin{itemize}
-						\item VER-2017-11-22 v 1.0.0
-						\item VER-2017-12-08 v 1.0.0
-					\end{itemize}				
-				\end{itemize}
-			
-			\thispagestyle{firstpage}
-
-			Il gruppo 353 ha stimato di consegnare il prodotto richiesto entro il giorno 07/05/2018,
-			con relativo collaudo, salvo ulteriori accordi, per il giorno 14/05/2018. Il preventivo di costo
-			fissato è pari a 13,176 \euro, come descritto all'interno del documento Piano di Progetto v 1.0.0.
-			\medskip \\
-			Si riportano di seguito i nomi dei componenti del gruppo:\\
-			%\begin{center}
-			%	\begin{tabular}{|l r|}
-			%		Mirco Cailotto & 1123521\\
-			%		Riccardo Emanuele Giorato & 1122158\\
-			%		Valentina Marcon & 1122461\\
-			%		Gianluca Marraffa & 1121080\\
-			%		Elena Mattiazzo & 1122273\\
-			%		Parwinder Singh & 1073318\\
-			%		Davide Stocco & 1097631\\
-			%	\end{tabular}
-			%\end{center}
-			\begin{table}[H]	
-				\begin{center}	
-					\begin{tabu} to \textwidth { 
-							>{\centering}m{0.4\linewidth} 
-							>{\centering}m{0.2\linewidth} 
-							>{\centering\arraybackslash}m{0.25\linewidth}
-						}
-						\tableHeaderStyle
-						\textbf{Nominativo} & \textbf{Matricola}\\
-						\Davide & 1097631 \\
-						\Elena & 1122273 \\
-						\Gianluca & 1121080 \\
-						\Mirco & 1123521\\
-						\Parwinder & 1073318\\
-						\Riccardo & 1122158\\
-						\Valentina &  1122461\\
-						%\includegraphics[width=1\lininewidth]{path}						
-					\end{tabu}
-				\end{center}
-			\end{table}
+				\item VER-2017-11-13 v 1.0.0.
+			\end{itemize}
+			\item Verbali esterni:
+			\begin{itemize}
+				\item VER-2017-11-22 v 1.0.0.
+				\item VER-2017-12-08 v 1.0.0.
+				\item VER-2018-01-09 v 1.0.0.
+			\end{itemize}				
+		\end{itemize}
+		
+		
+		Il gruppo 353 ha stimato di consegnare il prodotto richiesto entro il giorno 07/05/2018,
+		con relativo collaudo, salvo ulteriori accordi, per il giorno 14/05/2018. Il preventivo di costo
+		fissato è pari a 13,176 \euro, come descritto all'interno del documento Piano di Progetto v 1.0.0.
+		\medskip \\
+		Si riportano di seguito i nomi dei componenti del gruppo:\\
+		
+		\rowcolors{2}{CRighePari}{CRigheDispari}
+		\renewcommand*{\arraystretch}{1.2}
+		\begin{longtable}[H]{p{6cm}p{2.5cm}}
+			\rowcolor{CHeader}   
+			\color{CHeaderText} \textbf{Nominativo} & \color{CHeaderText} \textbf{Matricola}\\
+			\endhead
+			\Elena & 1122273 \\
+			\Mirco & 1123521 \\
+			\Riccardo & 1122158 \\
+			\Valentina &  1122461 \\
+			\Gianluca & 1121080 \\
+			\Parwinder & 1073318 \\
+			\Davide & 1097631 \\
+			\hiderowcolors
+		\end{longtable}
+		
 		Rimaniamo a Vostra completa disposizione per qualsiasi chiarimento in merito ai documenti presentati.
 		\begin{flushleft}
-		Cordiali saluti,\\
-		\includegraphics[width=0.4\textwidth]{firmaResp}\\
-		Elena Mattiazzo\\
-		Responsabile di Progetto\\
+			Cordiali saluti,\\
+			\includegraphics[width=0.4\textwidth]{firmaResp}\\
+			Elena Mattiazzo\\
+			Responsabile di Progetto\\
 		\end{flushleft}
-		\end{letter}
-	\end{document}
-	
+	\end{letter}
+\end{document}

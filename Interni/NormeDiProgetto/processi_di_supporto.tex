@@ -12,7 +12,7 @@
 	Tali documenti sono elencati successivamente nella sotto-sezione "Documenti correnti". 
 	
 	\subsection{Ciclo di vita documentazione}
-	Ogni documento formale deve passare gli stadi di "Sviluppo", "\citGloss{verifica}" e "Approvato".
+	Ogni documento formale deve passare gli stadi di "Sviluppo", "Verifica" e "Approvato".
 	\begin{itemize}
 		\item \textbf{Sviluppo:} inizia con la creazione del documento e termina con la conclusione della stesura di tutte le sue parti. In questa fase i Redattori aggiungono le parti assegnate tramite \citGloss{ticket}.
 		Il passaggio alla fase di \citGloss{verifica} è automatizzato con la segnalazione al Responsabile;
@@ -178,7 +178,7 @@
 	\subsection{Gestione termini Glossario}
 	Il glossario è un documento unico per tutti i documenti, esso conterrà tutte le definizioni, in ordine lessicografico crescente, dei termini inerenti al tema del progetto, che possono essere fraintesi o non ben comprensibili. I termini inseriti nel glossario saranno contrassegnati da una G pedice all'interno dei documenti.\\
 	Ovviamente prima di inserire un nuovo termine bisognerà assicurarsi che non sia già presente, in modo da evitare duplicati. \\
-	Il comando \\citGloss{LaTeX}{} da utilizzare per contrassegnare un termine da glossario all'interno dei documenti è \texttt{\textbackslash{}citGloss}, mentre per l'inserimento di una nuova parola all'interno del glossario viene utilizzato \texttt{\textbackslash{}newglossaryentry }.\\
+	Il comando \LaTeX{} da utilizzare per contrassegnare un termine da glossario all'interno dei documenti è \texttt{\textbackslash{}citGloss}, mentre per l'inserimento di una nuova parola all'interno del glossario viene utilizzato \texttt{\textbackslash{}newglossaryentry }.\\
 	La scelta di creare un comando apposito per una operazione "elementare" è scaturita dall'agevolazione che porta alla stesura della documentazione: avendo un modo univoco di riconoscere i termini all'interno del glossario è stato possibile automatizzare la \citGloss{verifica} del soddisfacimento delle norme all'interno dei documenti tramite uno script denominato "gupdate.sh".\\
 	In aggiunta è stato creato anche uno script denominato "addterm.sh" che facilita l'inserimento di un termine all'interno del glossario.\\
 	La descrizione dettagliata degli script è riposta nella sezione \textbf{Strumenti a supporto della documentazione}.
@@ -277,17 +277,17 @@
 	Per l'aggiornamento della \citGloss{repository} è previsto il seguente sotto processo motivato dalla sezione precedente "ciclo di vita":
 	\begin{itemize}
 		\item Verificare di trovarsi sul \citGloss{branch} personale con "git branch"(quella selezionata presenta un asterisco *) e in caso di riscontro negativo cambiare branch con "git checkout"
-		\item Dare il comando "git \citGloss{pull}". Nel caso in cui si verifichino dei conflitti:
+		\item Dare il comando "git pull". Nel caso in cui si verifichino dei conflitti:
 		\begin{itemize}
 			\item Dare il comando "git stash" per accantonare momentaneamente	le modifiche apportate;
-			\item Dare il comando "git \citGloss{pull}" per ottenere ed applicare i \citGloss{commit} mancanti;
+			\item Dare il comando "git pull" per ottenere ed applicare i \citGloss{commit} mancanti;
 			\item Dare il comando "git stash apply" per ripristinare le modifiche.
 		\end{itemize}
 		In questo modo il \citGloss{repository} locale risulta aggiornato rispetto il \citGloss{repository} remoto, mantenendo le modifiche personali apportate;
 	
 		\item Dare il comando "git add [files]" , che aggiungerà i file modificati e quelli nuovi specificati;
-		\item Dare il comando "git \citGloss{commit}" e successivamente riassumere le modifiche effettuate, in caso sia utile si può aggiungere un messaggio esteso di descrizione;
-		\item Dare il comando "git \citGloss{push}" per completare l'operazione e fornire le modifiche agli altri membri del gruppo.
+		\item Dare il comando "git commit" e successivamente riassumere le modifiche effettuate, in caso sia utile si può aggiungere un messaggio esteso di descrizione;
+		\item Dare il comando "git push" per completare l'operazione e fornire le modifiche agli altri membri del gruppo.
 	\end{itemize}
 	\subsection{Strumenti}
 	\begin{itemize}

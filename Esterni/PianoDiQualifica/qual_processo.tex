@@ -9,9 +9,7 @@ Per garantire la qualità del prodotto è necessario perseguire la qualità dei 
 Per raggiungere questo obiettivo, si è deciso di seguire il principio di miglioramento continuo (\citGloss{PDCA}) e di adottare lo standard ISO/IEC 15504 denominato SPICE (Software Process Improvement and Capability Determination).
 
 \section{Procedure di controllo di qualità di processo}
-La qualità dei processi verrà garantita dall'applicazione del metodo \citGloss{PDCA}, descritto dell'appendice A. Grazie a questo metodo sarà possibile ottenere un miglioramento continuo della qualità di tutti i processi, inclusa la \citGloss{verifica}, e come diretta conseguenza si otterrà il miglioramento dei prodotti risultanti. 
-
-Per ottenere qualità dei processi, bisogna:
+La qualità dei processi verrà garantita dall'applicazione del metodo \citGloss{PDCA}, descritto dell'appendice A. Grazie a questo metodo sarà possibile ottenere un miglioramento continuo della qualità di tutti i processi, inclusa la \citGloss{verifica}, e come diretta conseguenza si otterrà il miglioramento dei prodotti risultanti.\\Per ottenere qualità dei processi, bisogna:
 \begin{itemize}
 	\item \textbf{Definire il processo}: affinché sia controllabile;
 	\item \textbf{Controllare il processo}: in funzione dell'ottenimento di efficacia, efficienza ed esperienza;
@@ -49,6 +47,7 @@ Se il valore SV ottenuto è positivo significa che il progetto sta procedendo co
 	 $ SV = BCWP – BCWS $
 \end{center}
 Dove: \begin{itemize}
+	%TODO Non è tanto chiare la parte di BCWP, soprattuttto "deliverable?"
 	\item \textbf{BCWP (Budgeted Cost of Work Performed)}: è il valore (in giorni o Euro) delle attività realizzate alla data corrente.
 	Rappresenta il valore prodotto dal progetto ossia il valore dei deliverable rilasciati fino al momento della misurazione in seguito alle attività svolte;
 	\item \textbf{BCWS (Budgeted Cost of Work Scheduled)}: è il costo pianificato (in giorni o Euro) per realizzare le attività di progetto alla data corrente.
@@ -76,17 +75,19 @@ Il processo punta a verificare se qualsiasi elemento del sistema soddisfa comple
 \subsubsection{Obiettivi}
 Per poter definire delle \citGloss{baseline} per lo sviluppo del software, è necessario che il codice venga sempre verificato.
  \begin{itemize}
+ 	%TODO Il termine bug non mi convince tanto. A Tullio non andava tanto a genio, non sarebbe meglio utilizzare termini come failure,  errors o fault? Comunque lasciando anche bug, non andrebbe messo nel glossario?
  	\item \textbf{Commenti al codice:} ogni unità di codice dovrà essere sufficientemente commentata affinché sia ritenuta verificabile;
  	\item \textbf{Prevenzione di bug:} accertarsi per quanto possibile che ogni unità di codice non sia affetta da bug prima dell'utilizzo.
  \end{itemize}
 \subsubsection{Strategie}
+%TODO Sonarlink e Sonarqube da mettere in glossario.
 Per prevenire bug e vulnerabilità al codice si utilizzano strumenti come Sonarlint e Sonarqube al fine di evitare la propagazione di errori ed avere una panoramica sullo stato generale del codice prodotto.\\
 Si utilizzeranno delle metriche di Code Coverage per avere consapevolezza della quantità di codice testato e poter agire di conseguenza.
  
 \subsubsection{Metriche}
 \paragraph{Code Coverage}
 Per poter avere una misura di codice testato e verificato si adoreranno determinati coverage criteria:
-\begin{itemize}
+\begin{itemize}%TODO Alcuni termini da inserire nel glossario(Esempio branch).
 	\item \textlink{MPS003TAB}{MPS003}{\textbf{MPS003 Function coverage:}} verificare che ogni funzione sia stata chiamata;
 	\item \textlink{MPS004TAB}{MPS004}{\textbf{MPS004 Statement coverage:}} verificare che ogni statement del codice sia stato eseguito; 
 	\item \textlink{MPS005TAB}{MPS004}{\textbf{MPS005 Branch coverage:}} verificare se tutti i possibili branch (derivanti da if e case statement) sono stati eseguiti;

@@ -12,23 +12,23 @@ Per garantire una gestione efficacie dell'analisi dinamica è necessario stabili
 Le misure elencate qui sotto sono consigliate dal blog di una azienda che produce prodotti di riferimento per la gestione dei test, le informazioni possono essere trovate nei riferimenti informativi.
 
 \section{Per tutti i test}
-\subsection{Tracciamento}%TODO guardare questo elenco, non soddifa le norme di progetto.
+\subsection{Tracciamento}%TODO Elenco non soddifa le norme specificate nel documento norme di progetto, mancano i :(2 punti). Non ero sicuro se andavano messi per come era formulato la frase. Controllare e inserire i :
 Questa categoria di misurazioni si occupa di tenere traccia delle esecuzioni dei test e relativi successi fallimenti.
 \begin{itemize}
-	\item \textlink{MTSA001TAB}{MTSA001}{\textbf{MTSA001 Percentuale di test case passati:}} indica la percentuale di test case passati, molto utile per capire a che punto si è nella fase di sviluppo della componente
+	\item \textlink{MTSA001TAB}{MTSA001}{\textbf{MTSA001 Percentuale di test case passati:}} indica la percentuale di test case passati, molto utile per capire a che punto si è nella fase di sviluppo della componente. La sua formula di misurazione è la seguente:
 	\[PPT=\dfrac{PT}{ET}*100\]
 	Dove PT indica il numero di test passati e ET il numero di test eseguiti;
-	\item \textlink{MTSA002TAB}{MTSA002}{\textbf{MTSA002 Percentuale di test case falliti:}} complementare della misurazione precedente
+	\item \textlink{MTSA002TAB}{MTSA002}{\textbf{MTSA002 Percentuale di test case falliti:}} complementare della misurazione precedente. La sua formula di misurazione è la seguente:
 	\[PFT=\dfrac{FT}{ET}*100\]
 	Dove FT indica il numero di test falliti ed ET quello di test eseguiti;
-	\item \textlink{MTSA003TAB}{MTSA003}{\textbf{MTSA003 Tempo medio del team di sviluppo per la risoluzione di errori:}} indica la quantità di tempo media usata per risolvere un bug dal team di sviluppo, utile per capire l'impatto medio dell'introduzione di un bug sui tempi di sviluppo
+	\item \textlink{MTSA003TAB}{MTSA003}{\textbf{MTSA003 Tempo medio del team di sviluppo per la risoluzione di errori:}} indica la quantità di tempo medio utilizzato per risolvere un bug dal team di sviluppo, utile per capire l'impatto medio dell'introduzione di un bug sui tempi di sviluppo. La sua formula di misurazione è la seguente:
 	\[TMRE=\dfrac{TTBF}{TB}\]
 	Dove TTBF indica il tempo totale speso per la correzione dei difetti (sviluppo e test) e TB il numero totale di bug trovati.
 \end{itemize}
-\subsection{Efficienza}
+\subsection{Efficienza}%TODO Ok, tutti gli elenchi da adesso in poi non soddisfano le norme di progetto!! Manca in tutti i : (2 punti). Controllare ed inserirli.
 Questa categoria di misurazioni mira a valutare l'efficienza di scrittura ed esecuzione dei test.
 \begin{itemize}
-	\item \textlink{MTSA004TAB}{MTSA004}{\textbf{MTSA004 Efficienza della progettazione dei test:}} Indica il tempo medio per la scrittura di un test, un numero troppo elevato potrebbe indicare che si stanno progettando test troppo complessi o che si sta cercando di testare parti del codice superflue
+	\item \textlink{MTSA004TAB}{MTSA004}{\textbf{MTSA004 Efficienza della progettazione dei test:}} Indica il tempo medio per la scrittura di un test, un numero troppo elevato potrebbe indicare che si stanno progettando test troppo complessi o che si sta cercando di testare parti del codice superflue. La sua formula di misurazione è la seguente:
 	\[TDE=\dfrac{NTP}{TST}\]
 	Dove NTP indica il numero totale di test progettati e TST il tempo per la loro stesura;
 	\begin{comment}
@@ -40,7 +40,7 @@ Questa categoria di misurazioni mira a valutare l'efficienza di scrittura ed ese
 \subsection{Efficacia}
 Questa categoria di misurazioni mira a valutare l'efficacia dell'esecuzione dei test.
 \begin{itemize}
-	\item \textlink{MTSA005TAB}{MTSA005}{\textbf{MTSA005 Contenimento dei difetti:}} Indica il rapporto percentuale tra i bug trovati durante i test e i bug trovati durante l'utilizzo del prodotto. Un numero troppo basso di questo indice suggerisce una scarsa progettazione dei test, richiedendo un intervento di analisi da parte del team di sviluppo
+	\item \textlink{MTSA005TAB}{MTSA005}{\textbf{MTSA005 Contenimento dei difetti:}} Indica il rapporto percentuale tra i bug trovati durante i test e i bug trovati durante l'utilizzo del prodotto. Un numero troppo basso di questo indice suggerisce una scarsa progettazione dei test, richiedendo un intervento di analisi da parte del team di sviluppo. La sua formula di misurazione è la seguente:
 	\[CD=\dfrac{DTT}{TNDT}*100\]
 	Dove DTT indica il numero di difetti trovati durante l'esecuzione dei test, e TNDT la somma dei difetti trovati nei test e quelli trovati durante l'utilizzo del prodotto.
 \end{itemize}
@@ -48,17 +48,17 @@ Questa categoria di misurazioni mira a valutare l'efficacia dell'esecuzione dei 
 \subsection{Tracciamento}
 Questa categoria di misurazioni mira a tenere traccia delle gestioni dei bug trovati.
 \begin{itemize}
-	\item \textlink{MTSH001TAB}{MTSH001}{\textbf{MTSH001 Percentuale di difetti sistemati:}} indica la percentuale di difetti sistemati sul totale dei difetti rilevati, utile per avere una panoramica dei bug da risolvere: un numero troppo basso potrebbe costringere il team a fermare lo sviluppo di nuove funzionalità per concentrarsi sulla correzione delle parti già esistenti
+	\item \textlink{MTSH001TAB}{MTSH001}{\textbf{MTSH001 Percentuale di difetti sistemati:}} indica la percentuale di difetti sistemati sul totale dei difetti rilevati, utile per avere una panoramica dei bug da risolvere: un numero troppo basso potrebbe costringere il team a fermare lo sviluppo di nuove funzionalità per concentrarsi sulla correzione delle parti già esistenti. La sua formula di misurazione è la seguente:
 	\[PDS=\dfrac{DS}{DR}*100\]
 	Dove DS indica i difetti sistemati mentre DR quelli segnalati.	
 \end{itemize}
 \subsection{Copertura}
 Questa categoria di misurazioni si occupa di tenere traccia dell'esecuzione dei test e della copertura che questi hanno sui \citGloss{requisiti}.
 \begin{itemize}
-	\item \textlink{MTSH002TAB}{MTSH002}{\textbf{MTSH002 Copertura dei test eseguiti:}} Indica la percentuale di test già eseguiti sul totale di test da eseguire, utile per monitorare il lavoro del team dei verificatori
+	\item \textlink{MTSH002TAB}{MTSH002}{\textbf{MTSH002 Copertura dei test eseguiti:}} Indica la percentuale di test già eseguiti sul totale di test da eseguire, utile per monitorare il lavoro del team dei verificatori. La sua formula di misurazione è la seguente:
 	\[CTE=\dfrac{TE}{TT}*100\]
 	Dove TE indica i test eseguiti e TT il numero di test totali;
-	\item \textlink{MTSH003TAB}{MTSH003}{\textbf{MTSH003 Copertura dei requisiti:}} Indica la percentuale di requisiti coperti dai test sui requisiti totali, utile per capire quante parti del prodotto finale hanno un test associato, non da indicazioni sullo stato di avanzamento del soddisfacimento del requisito
+	\item \textlink{MTSH003TAB}{MTSH003}{\textbf{MTSH003 Copertura dei requisiti:}} Indica la percentuale di requisiti coperti dai test sui requisiti totali, utile per capire quante parti del prodotto finale hanno un test associato, non da indicazioni sullo stato di avanzamento del soddisfacimento del requisito. La sua formula di misurazione è la seguente:
 	\[CR=\dfrac{RC}{RT}*100\]
 	Dove RC indica il numero di \citGloss{requisiti} coperti mentre RT quelli totali;
 	\item \textlink{MTSH004TAB}{MTSH004}{\textbf{MTSH004 Difetti per requisito:}} Indica il numero di difetti trovati nel test del requisito, da informazioni sullo stato di soddisfacimento del requisito: se ha 0 difetti, vuol dire che il requisito è stato trovato e considerato senza errori, quindi soddisfatto.

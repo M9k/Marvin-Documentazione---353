@@ -167,6 +167,14 @@ Questa tabella indica i \textbf{range} di accettazione e di ottimalità per le m
 \section{The Twelve-Factor App}
 Nel capitolato è stata citata la documentazione delle "The Twelve-Factor App", ed è stato chiarito con la Proponente, nell'incontro descritto nel \textbf{VER-2018-01-09}, che la documentazione sarà da ritenersi minimale e limitata a delle brevi descrizioni nella sezione seguente nelle prossime fasi.\\
 Il lavoro su queste sarà concentrato sul rispetto di questi principi, analizzati e riassunti in appendice al documento.\\\\
-Di questi non saranno applicabili i numeri 7-Binding porte usando Metamask come unico protocollo non standard verso server esterno Infuria e 8-Concorrenza sviluppando un prodotto decentralizzato. %TODO altri fattori non applicabili?
+Di questi non saranno applicabili totalmente o parzialmente i seguenti:
+\begin{itemize}
+	\item \textbf{5:} server su cui gira l'applicazione non dovrà eseguire nulla se non inviare solamente file html e js;
+	\item \textbf{6:} l'applicazione non possiede processi non avendo uno stato;
+	\item \textbf{7:} non è possibile il binding delle porte usando Metamask come unico protocollo verso server esterno Infuria;
+	\item \textbf{8:} concorrenza non realizzabile sviluppando un prodotto decentralizzato;
+	\item \textbf{9:} è inapplicabile, non c'è nulla da fermare o far partire, non c'è nulla che crasha sul lato server
+	\item \textbf{11:} log non sarà perseguibile in remoto nativamente all'architettura decentralizzata dovendo quindi appoggiarsi a servizi di log esterno in caso di necessità, sarà possibile localmente nel broswer.
+\end{itemize}
 
 \end{document}

@@ -64,14 +64,14 @@ Ogni backing service è quindi definibile come una "risorsa connessa". Un Databa
 \subsection{Build, release, esecuzione}
 Una codebase viene "trasformata" in deploy attraverso tre fasi:
 \begin{itemize}
-\item Build $\rightarrow$ converte il codice del repo in una build "eseguibile". Usando una certa versione del codice, ad una specifica commit, nella fase di build vengono compilati i binari con gli asset appropriati includendo anche le eventuali dipendenze. Una fase di build è sempre avviata da uno sviluppatore, non appena il codice viene modificato oppure può essere gestita anche in maniera automatica. E' fortemente consigliato evitare di eseguire modifiche che potrebbero rompere qualche equilibrio durante questa fase;
-\item Release $\rightarrow$ prende la build prodotta nella fase precedente e la combina con l'attuale insieme di impostazioni di configurazione del deploy specifico. La release risultante contiene sia la build che le impostazioni. Ogni release dovrebbe possedere un ID univoco di rilascio. I tool di deploy offrono tipicamente dei tool di gestione delle release, in particolare alcuni dedicati ad un rollback verso una release precedente;
-\item Esecuzione $\rightarrow$ (conosciuta anche come "runtime") vede l'applicazione in esecuzione nell'ambiente di destinazione, attraverso l'avvio di processi della release scelta.
+\item \textbf{Build}: converte il codice del repo in una build "eseguibile". Usando una certa versione del codice, ad una specifica commit, nella fase di build vengono compilati i binari con gli asset appropriati includendo anche le eventuali dipendenze. Una fase di build è sempre avviata da uno sviluppatore, non appena il codice viene modificato oppure può essere gestita anche in maniera automatica. E' fortemente consigliato evitare di eseguire modifiche che potrebbero rompere qualche equilibrio durante questa fase;
+\item \textbf{Release}: prende la build prodotta nella fase precedente e la combina con l'attuale insieme di impostazioni di configurazione del deploy specifico. La release risultante contiene sia la build che le impostazioni. Ogni release dovrebbe possedere un ID univoco di rilascio. I tool di deploy offrono tipicamente dei tool di gestione delle release, in particolare alcuni dedicati ad un rollback verso una release precedente;
+\item \textbf{Esecuzione}: (conosciuta anche come "runtime") vede l'applicazione in esecuzione nell'ambiente di destinazione, attraverso l'avvio di processi della release scelta.
 \end{itemize}
 
 \subsection{Processi}
 L'app viene eseguita nell'ambiente di esecuzione come uno o più processi. I processi twelve-factor sono stateless (senza stato) e share-nothing (nessuna condivisione). Tutti i dati che devono persistere devono essere memorizzati in un backing service, come ad esempio un database.
-I packager di asset usano il filesystem come cache per gli asset compilati. Un'app twelve-factor vuole questa compilazione durante la fase di build e non a runtime.
+I packager di asset usano il filesystem come cache per gli asset compilati. Un'app twelve-factor richiede che questa compilazione sia effettuata durante la fase di build e non a runtime.
 Le sticky session sono una palese violazione della metodologia twelve-factor. I dati di sessione sono un ottimo candidato per quei sistemi di datastore che offrono la feature di scadenza.
 
 \subsection{Binding delle porte}
@@ -85,6 +85,7 @@ es. le richieste HTTP possono essere gestite da un web process, mentre dei compi
 Il modello di processo così come presentato rende il massimo quando arriva il momento di scalare. La natura orizzontalmente partizionabile (e non soggetta a condivisioni) di un "processo twelve-factor" permette di gestire la concorrenza in modo semplice ed affidabile. 
 In ogni app è presente la process fo	rmation.
 I processi di un'app twelve-factor non dovrebbero essere soggetti a daemonizing, o scrivere file PID. Al contrario, facendo affidamento sul process manager del sistema operativo (es. systemd, un process manager distribuito su piattaforma cloud, o Foreman durante lo sviluppo) per gestire gli stream in output (VEDI PUNTO XI), rispondere adeguatamente a crash di processi e gestire riavvii e shutdown.
+%todo VEDI PUNTO XI in maiuscolo? E quale sarebbe?
 
 \subsection{Rilasciabilità}
 I processi di un'applicazione twelve-factor sono rilasciabili, cioè possono essere avviati o fermati senza problemi al momento del bisogno. Questa caratteristica ovviamente facilita le procedure di scaling, deploy rapido della codebase o cambi dei file di configurazione.

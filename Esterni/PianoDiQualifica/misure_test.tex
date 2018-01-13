@@ -12,8 +12,8 @@ Per garantire una gestione efficacie dell'analisi dinamica è necessario stabili
 Le misure elencate qui sotto sono consigliate dal blog di una azienda che produce prodotti di riferimento per la gestione dei test, le informazioni possono essere trovate nei riferimenti informativi.
 
 \section{Per tutti i test}
-\subsection{Tracciamento}%TODO Elenco non soddifa le norme specificate nel documento norme di progetto, mancano i :(2 punti). Non ero sicuro se andavano messi per come era formulato la frase. Controllare e inserire i :
-Questa categoria di misurazioni si occupa di tenere traccia delle esecuzioni dei test e relativi successi fallimenti.
+\subsection{Tracciamento}
+Questa categoria di misurazioni si occupa di tenere traccia delle esecuzioni dei test e relativi successi fallimenti tramite le seguenti metriche:
 \begin{itemize}
 	\item \textlink{MTSA001TAB}{MTSA001}{\textbf{MTSA001 Percentuale di test case passati:}} indica la percentuale di test case passati, molto utile per capire a che punto si è nella fase di sviluppo della componente. La sua formula di misurazione è la seguente:
 	\[PPT=\dfrac{PT}{ET}*100\]
@@ -25,7 +25,8 @@ Questa categoria di misurazioni si occupa di tenere traccia delle esecuzioni dei
 	\[TMRE=\dfrac{TTBF}{TB}\]
 	Dove TTBF indica il tempo totale speso per la correzione dei difetti (sviluppo e test) e TB il numero totale di bug trovati.
 \end{itemize}
-\subsection{Efficienza}%TODO Ok, tutti gli elenchi da adesso in poi non soddisfano le norme di progetto!! Manca in tutti i : (2 punti). Controllare ed inserirli.
+
+\subsection{Efficienza}
 Questa categoria di misurazioni mira a valutare l'efficienza di scrittura ed esecuzione dei test.
 \begin{itemize}
 	\item \textlink{MTSA004TAB}{MTSA004}{\textbf{MTSA004 Efficienza della progettazione dei test:}} Indica il tempo medio per la scrittura di un test, un numero troppo elevato potrebbe indicare che si stanno progettando test troppo complessi o che si sta cercando di testare parti del codice superflue. La sua formula di misurazione è la seguente:
@@ -80,6 +81,7 @@ Una piccola legenda per facilitare la lettura della tabella: \\
 \item \textbf{PRF:} percentuale \citGloss{requisiti} facoltativi;
 \item \textbf{xh:} dove x è un numero, ore.
 \end{itemize}
+
 \begin{table}[H]
 	\begin{center}
 		\begin{tabu} to \textwidth {

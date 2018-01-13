@@ -11,8 +11,8 @@ Per raggiungere questo obiettivo, si è deciso di seguire il principio di miglio
 \section{Procedure di controllo di qualità di processo}
 La qualità dei processi verrà garantita dall'applicazione del metodo \citGloss{PDCA}, descritto dell'appendice A. Grazie a questo metodo sarà possibile ottenere un miglioramento continuo della qualità di tutti i processi, inclusa la \citGloss{verifica}, e come diretta conseguenza si otterrà il miglioramento dei prodotti risultanti.\\Per ottenere qualità dei processi, bisogna:
 \begin{itemize}
-	\item \textbf{Definire il processo}: affinché sia controllabile;
-	\item \textbf{Controllare il processo}: in funzione dell'ottenimento di efficacia, efficienza ed esperienza;
+	\item \textbf{Definire il processo}: Affinché sia controllabile;
+	\item \textbf{Controllare il processo}: In funzione dell'ottenimento di efficacia, efficienza ed esperienza;
 	\item \textbf{Usare strumenti di valutazione}: SPICE e \citGloss{PDCA}.
 \end{itemize}
 
@@ -24,11 +24,11 @@ Il macro-processo ha lo scopo di produrre dei piani di sviluppo per il progetto,
 \subsubsection{Obbiettivi}
 Lo sviluppo del progetto dovrà porre particolare attenzione a rispettare dei particolari obbiettivi:
 \begin{itemize}
-	\item \textbf{Budget:} utilizzando le metriche descritte nella sezione seguente, si deve tenere sempre controllato l'utilizzo del budget, al fine di non avere scarti eccessivi con il costo preventivato;
-	\item \textbf{Task:} porre attenzione alla pianificazione dei task e al loro completamento, assicurandosi che seguano la metodologia del miglioramento continuo, affinché tutti i compiti ne traggano vantaggio;
-	\item \textbf{Educazione personale:} avere accortezza che ogni membro del gruppo abbia un livello di preparazione adatto all'esecuzione dei task assegnati, al fine di evitare ritardi sul calendario;
-	\item \textbf{Calendario:} assicurare una pianificazione adatta ai compiti da svolgere, per evitare scostamenti dal budget preventivato;
-	\item \textbf{Standard:} definire standard di processo ogni qualvolta sia possibile, per facilitare il lavoro in gruppo e favorire un incremento continuo.
+	\item \textbf{Budget:} Utilizzando le metriche descritte nella sezione seguente, si deve tenere sempre controllato l'utilizzo del budget, al fine di non avere scarti eccessivi con il costo preventivato;
+	\item \textbf{Task:} Porre attenzione alla pianificazione dei task e al loro completamento, assicurandosi che seguano la metodologia del miglioramento continuo, affinché tutti i compiti ne traggano vantaggio;
+	\item \textbf{Educazione personale:} Avere accortezza che ogni membro del gruppo abbia un livello di preparazione adatto all'esecuzione dei task assegnati, al fine di evitare ritardi sul calendario;
+	\item \textbf{Calendario:} Assicurare una pianificazione adatta ai compiti da svolgere, per evitare scostamenti dal budget preventivato;
+	\item \textbf{Standard:} Definire standard di processo ogni qualvolta sia possibile, per facilitare il lavoro in gruppo e favorire un incremento continuo.
 \end{itemize}
 
 \subsubsection{Strategie}
@@ -47,10 +47,9 @@ Se il valore SV ottenuto è positivo significa che il progetto sta procedendo co
 	 $ SV = BCWP – BCWS $
 \end{center}
 Dove: \begin{itemize}
-	%TODO Non è tanto chiare la parte di BCWP, soprattuttto "deliverable?"
-	\item \textbf{BCWP (Budgeted Cost of Work Performed)}: è il valore (in giorni o Euro) delle attività realizzate alla data corrente.
-	Rappresenta il valore prodotto dal progetto ossia il valore dei deliverable rilasciati fino al momento della misurazione in seguito alle attività svolte;
-	\item \textbf{BCWS (Budgeted Cost of Work Scheduled)}: è il costo pianificato (in giorni o Euro) per realizzare le attività di progetto alla data corrente.
+	\item \textbf{BCWP (Budgeted Cost of Work Performed)}: \`{E} il valore (in giorni o Euro) delle attività realizzate alla data corrente.
+	Rappresenta il valore prodotto dal progetto ossia il valore dei \citGloss{deliverable} rilasciati fino al momento della misurazione in seguito alle attività svolte;
+	\item \textbf{BCWS (Budgeted Cost of Work Scheduled)}: \`{E} il costo pianificato (in giorni o Euro) per realizzare le attività di progetto alla data corrente.
 \end{itemize}
 
 
@@ -65,8 +64,8 @@ Se il valore BV ottenuto è positivo significa che il progetto sta spendendo il 
 	$ BV = BCWS – ACWP $
 \end{center}
 Dove: \begin{itemize}
-	\item \textbf{BCWS (Budgeted Cost of Work Scheduled)}: è il costo pianificato (in giorni o Euro) per realizzare le attività di progetto alla data corrente;
-	\item \textbf{ACWP (Actual Cost of Work Performed)}: è il costo effettivamente sostenuto (in giorni o Euro) alla data corrente.
+	\item \textbf{BCWS (Budgeted Cost of Work Scheduled)}: \`{E} il costo pianificato (in giorni o Euro) per realizzare le attività di progetto alla data corrente;
+	\item \textbf{ACWP (Actual Cost of Work Performed)}: \`{E} il costo effettivamente sostenuto (in giorni o Euro) alla data corrente.
 \end{itemize}
 
 
@@ -75,22 +74,22 @@ Il processo punta a verificare se qualsiasi elemento del sistema soddisfa comple
 \subsubsection{Obiettivi}
 Per poter definire delle \citGloss{baseline} per lo sviluppo del software, è necessario che il codice venga sempre verificato:
  \begin{itemize}
- 	\item \textbf{Commenti al codice:} ogni unità di codice dovrà essere sufficientemente commentata affinché sia ritenuta verificabile;
- 	\item \textbf{Prevenzione di bug:} accertarsi per quanto possibile che ogni unità di codice non sia affetta da bug prima dell'utilizzo.
+ 	\item \textbf{Commenti al codice:} Ogni unità di codice dovrà essere sufficientemente commentata affinché sia ritenuta verificabile;
+ 	\item \textbf{Prevenzione di bug:} Accertarsi per quanto possibile che ogni unità di codice non sia affetta da bug prima dell'utilizzo.
  \end{itemize}
 \subsubsection{Strategie}
-%TODO Sonarlink e Sonarqube da mettere in glossario.
+
 Per prevenire bug e vulnerabilità al codice si utilizzano strumenti come Sonarlint e Sonarqube al fine di evitare la propagazione di errori ed avere una panoramica sullo stato generale del codice prodotto.\\
 Si utilizzeranno delle metriche di Code Coverage per avere consapevolezza della quantità di codice testato e poter agire di conseguenza.
  
 \subsubsection{Metriche}
 \paragraph{Code Coverage}
 Per poter avere una misura di codice testato e verificato si adoreranno determinati coverage criteria:
-\begin{itemize}%TODO Alcuni termini da inserire nel glossario(Esempio branch).
-	\item \textlink{MPS003TAB}{MPS003}{\textbf{MPS003 Function coverage:}} verificare che ogni funzione sia stata chiamata;
-	\item \textlink{MPS004TAB}{MPS004}{\textbf{MPS004 Statement coverage:}} verificare che ogni statement del codice sia stato eseguito; 
-	\item \textlink{MPS005TAB}{MPS004}{\textbf{MPS005 Branch coverage:}} verificare se tutti i possibili branch (derivanti da if e case statement) sono stati eseguiti;
-	\item \textlink{MPS006TAB}{MPS006}{\textbf{MPS006 Condition coverage:}} verificare se ogni condizione booleana è stata valutata sia nella condizione true che false. 
+\begin{itemize}
+	\item \textlink{MPS003TAB}{MPS003}{\textbf{MPS003 Function coverage:}} Verificare che ogni funzione sia stata chiamata;
+	\item \textlink{MPS004TAB}{MPS004}{\textbf{MPS004 Statement coverage:}} Verificare che ogni statement del codice sia stato eseguito; 
+	\item \textlink{MPS005TAB}{MPS004}{\textbf{MPS005 \citGloss{Branch} coverage:}} Verificare se tutti i possibili \citGloss{branch} (derivanti da if e case statement) sono stati eseguiti;
+	\item \textlink{MPS006TAB}{MPS006}{\textbf{MPS006 Condition coverage:}} Verificare se ogni condizione booleana è stata valutata sia nella condizione true che false. 
 \end{itemize}
 
 \textbf{Misurazione:}
@@ -101,12 +100,12 @@ Vengono calcolate in percentuale sulla quantità di codice testato e verificato 
 Il processo mira ad identificare nuovi rischi e a monitorare e ridurre la possibilità dell'insorgere di questi durante l'attività di progetto.
 \subsubsection{Obiettivi:}
 \begin{itemize}
-	\item \textbf{Individurare rischi Fase:} ad ogni nuova fase del progetto verranno analizzati possibili rischi, cercando delle soluzioni automatiche per diminuire l'occorrenza di questi;
-	\item \textbf{Analisi:} i rischi saranno gestiti con una prima analisi che dovrà fornire uno strumento o procedura automatica per ridurre o prevenire le cause scatenanti di questo rischio.
+	\item \textbf{Individurare rischi Fase:} Ad ogni nuova fase del progetto verranno analizzati possibili rischi, cercando delle soluzioni automatiche per diminuire l'occorrenza di questi;
+	\item \textbf{Analisi:} I rischi saranno gestiti con una prima analisi che dovrà fornire uno strumento o procedura automatica per ridurre o prevenire le cause scatenanti di questo rischio.
 \end{itemize}
 \subsubsection{Strategie}
 Nel caso dovessero sorgere troppi rischi il gruppo dovrà sospendere i lavori eliminando il maggior numero di questi per permettere la prosecuzione del lavoro.
-Viene utilizzato StatusTicker\footnote{\nURI{https://swe353.statusticker.com}} per avere dashobard sullo status dei servizi esterni utilizzati;
+Viene utilizzato StatusTicker\footnote{\nURI{https://swe353.statusticker.com}} per avere dashboard sullo status dei servizi esterni utilizzati;
 
 \subsubsection{Metriche}
 \paragraph{}
@@ -114,7 +113,7 @@ Viene utilizzato StatusTicker\footnote{\nURI{https://swe353.statusticker.com}} p
 
 \paragraph{}
 \textlink{MPS008TAB}{MPS008}{\textbf{MPS008 Rischi non previsti:}} indice numerico che viene incrementato nel momento in cui si manifesta un
-rischio esterno a quelli presenti nell’attività di analisi dei rischi.\\ \\
+rischio esterno a quelli presenti nell'attività di analisi dei rischi.\\ \\
 \textbf{Misurazione:}
 %TODO IMPORTANTE! manca misurazione
 

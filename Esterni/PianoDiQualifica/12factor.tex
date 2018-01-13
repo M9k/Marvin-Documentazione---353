@@ -9,28 +9,28 @@ Queste applicazioni:
 \item Si interfacciano in modo pulito con il sistema operativo sottostante, in modo tale da offrire la massima portabilità sui vari ambienti di esecuzione;
 \item Sono adatti allo sviluppo sulle più recenti cloud platform, ovviando alla necessità di server ed amministrazioni di sistema;
 \item Minimizzano la divergenza tra sviluppo e produzione, permettendo il continuous deployment per una massima "agilità";
-\item Possono scalare significativamente senza troppi cambiamenti ai tool, all'architettura e al processo di sviluppo.
+\item Possono scalare significativamente senza troppi cambiamenti ai tool, all'architettura o al processo di sviluppo.
 \end{itemize}
 
 \section{I dodici fattori:}
 \begin{enumerate}
 \item \textbf{Codebase:} una sola codebase sotto controllo di versione, tanti deploy;
 \item \textbf{Dipendenze:} dipendenze dichiarate ed isolate;
-\item \textbf{Configurazione:} memorizza le informazioni di configurazione nell'ambiente;
-\item \textbf{Backing service:} tratta i backing service come "risorse";
+\item \textbf{Configurazione:} memorizzare le informazioni di configurazione nell'ambiente;
+\item \textbf{Backing service:} trattare i backing service come "risorse";
 \item \textbf{Build, release, esecuzione:} separare in modo netto lo stadio di build dall'esecuzione;
-\item \textbf{Processi:} esegui l'applicazione come uno o più processi stateless;
-\item \textbf{Binding delle porte:} esporta i servizi tramite binding delle porte;
+\item \textbf{Processi:} eseguire l'applicazione come uno o più processi stateless;
+\item \textbf{Binding delle porte:} esportare i servizi tramite binding delle porte;
 \item \textbf{Concorrenza:} scalare attraverso il process model;
 \item \textbf{Rilasciabilità:} massimizzare la robustezza con avvii veloci e chiusure non brusche;
-\item \textbf{Parità tra sviluppo e produzione:} mantieni lo sviluppo, staging e produzione simili il più possibile;
-\item \textbf{Log:} tratta i log come stream di eventi;
-\item \textbf{Processi di amministrazione:} esegui i task di amministrazione/management come processi una tantum.
+\item \textbf{Parità tra sviluppo e produzione:} mantenere lo sviluppo, staging e produzione simili il più possibile;
+\item \textbf{Log:} trattare i log come stream di eventi;
+\item \textbf{Processi di amministrazione:} eseguire i task di amministrazione/management come processi una tantum.
 \end{enumerate}
 
 \subsection{Codebase}
-L'app deve sempre attenersi al controllo di versione. Esiste una relazione uno-a-uno tra codebase e applicazione, ma ci saranno comunque tanti deploy. In uno stesso istante possono esistere più versioni della codebase.
-Varianti:
+L'app deve sempre attenersi al controllo di versione. Esiste una relazione uno-a-uno tra codebase e applicazione, ma ci saranno comunque tanti deploy. In uno stesso istante possono esistere più versioni della codebase.\\
+Sono possibili alcune varianti di questa modalità:
 \begin{itemize}
 \item Se ci sono più codebase, non si parla più di applicazione ma di sistema distribuito (composto da più app, ogni app sarà correlata alla propria codebase);
 \item Più app non possono condividere la stessa codebase, è possibile ciò soltanto con un apposito sistema di dipendenza.
@@ -39,12 +39,12 @@ Varianti:
 \subsection{Dipendenze}
 Un'applicazione che aderisce alla twelve-factor:
 \begin{itemize}
-\item Non si basa mai sull'esistenza implicita di librerie system-wide (es. CPAN per Perl, Rubygems per Ruby);
-\item Le dipendenze vengono tutte dichiarate tramite un manifest dedicato;
+\item Non si basa mai sull'esistenza implicita di librerie system-wide (ad esempio CPAN per Perl e Rubygems per Ruby);
+\item Le dipendenze vengono tutte dichiarate tramite un file manifest dedicato;
 \item Viene contemplato l'uso di un tool di isolamento delle dipendenze durante l'esecuzione, in modo tale da assicurarsi che non ci siano delle "dipendenze implicite" che creino interferenze nel sistema in cui ci si trova;
-\item La specifica completa ed esplicita delle dipendenze si applica in modo uniforme: sia in production che in sviluppo;
+\item La specifica completa ed esplicita delle dipendenze si applica in modo uniforme, sia in production che in sviluppo;
 \item Le operazioni di dichiarazione ed isolamento vanno sempre effettuate, non ha importanza quale sia il toolchain usato;
-\item Non si basa mai sull'esistenza di un qualsiasi tool di sistema (es. ImageMagick, curl) perché non si ha la certezza che questo tool possa essere presente in tutti i sistemi in cui girerà in futuro.
+\item L'applicazione si deve mai basare sull'esistenza di un qualsiasi tool di sistema (es. ImageMagick, curl) perché non si ha la certezza che questo tool possa essere presente in tutti i sistemi in cui girerà in futuro.
 \end{itemize}
 
 \subsection{Configurazione}
@@ -52,21 +52,21 @@ Un'app conforme alla metodologia richiede una separazione ben definita delle imp
 Per fare ciò si deve memorizzare tutte le impostazioni in variabili d'ambiente (dette anche "env vars" oppure "env") per le seguenti ragioni:
 \begin{itemize}
 \item Sono molto semplici da cambiare da deploy a deploy senza dover toccare direttamente il codice;
-\item C'è una probabilità molto bassa di venire inclusi nel repo, a differenza dei classici file di configurazione;
+\item C'è una probabilità molto bassa che siano erroneamente incluse all'interno della repo, a differenza dei classici file di configurazione;
 \item Sono file indipendenti sia dal linguaggio che dal sistema operativo utilizzato.
 \end{itemize}
 Affinché il prodotto finale ne possa risentire positivamente in termini di scalabilità le variabili d'ambiente non sono mai raggruppate e classificate sotto "ambienti" (a volte chiamati anche gruppi, nel nostro caso saranno local, test, staging e production) specifici ma vengono gestite in modo totalmente indipendente in ogni deploy.
 
 \subsection{Backing service}
-Il codice di un'app twelve-factor non fa distinzioni tra servizi in locale o third party. Per l'applicazione, entrambi sono risorse connesse, accessibili via URL (o tramite un altro locator) e credenziali memorizzate nell'opportuno file di configurazione. Ad un qualsiasi deploy di un'applicazione twelve-factor si deve poter permettere di passare velocemente da un database MySQL locale ad uno third party senza alcuna modifica al codice. A cambiare dovrebbero essere solo i file di configurazione necessari.
+Il codice di un'app twelve-factor non fa distinzioni tra servizi in locale o third party. Per l'applicazione, entrambi sono risorse connesse, accessibili via URL (o tramite un altro locator) e dispongono di credenziali memorizzate nell'opportuno file di configurazione. Ad un qualsiasi deploy di un'applicazione twelve-factor si deve poter permettere di passare velocemente da un database MySQL locale ad uno third party senza alcuna modifica al codice. A cambiare dovrebbero essere solo i file di configurazione necessari.
 Ogni backing service è quindi definibile come una "risorsa connessa". Un Database MySQL è una risorsa. Due database MySQL saranno visti come due distinte risorse. Un'app twelve-factor vede questi database come risorse anche per sottolineare la separazione dal deploy a cui fanno riferimento. Le risorse possono essere collegate e scollegate da un deploy a piacimento.
 
 \subsection{Build, release, esecuzione}
 Una codebase viene "trasformata" in deploy attraverso tre fasi:
 \begin{itemize}
-\item \textbf{Build}: converte il codice del repo in una build "eseguibile". Usando una certa versione del codice, ad una specifica commit, nella fase di build vengono compilati i binari con gli asset appropriati includendo anche le eventuali dipendenze. Una fase di build è sempre avviata da uno sviluppatore, non appena il codice viene modificato oppure può essere gestita anche in maniera automatica. E' fortemente consigliato evitare di eseguire modifiche che potrebbero rompere qualche equilibrio durante questa fase;
-\item \textbf{Release}: prende la build prodotta nella fase precedente e la combina con l'attuale insieme di impostazioni di configurazione del deploy specifico. La release risultante contiene sia la build che le impostazioni. Ogni release dovrebbe possedere un ID univoco di rilascio. I tool di deploy offrono tipicamente dei tool di gestione delle release, in particolare alcuni dedicati ad un rollback verso una release precedente;
-\item \textbf{Esecuzione}: (conosciuta anche come "runtime") vede l'applicazione in esecuzione nell'ambiente di destinazione, attraverso l'avvio di processi della release scelta.
+\item \textbf{Build}: converte il codice del repo in una applicazione "eseguibile", utilizzando una determinata versione del codice ad una specifica commit. Nella fase di build vengono compilati i binari con gli asset appropriati includendo anche le eventuali dipendenze. Una fase di build può essere avviata manualmente da uno sviluppatore oppure avere un sistema automatico che la esegue ad ogni modifica effettuata al codice viene.
+\item \textbf{Release}: preleva la build prodotta nella fase precedente e la combina con l'attuale insieme di impostazioni di configurazione del deploy specifico. La release risultante quindi contiene sia la build che le impostazioni. Ogni release dovrebbe possedere un ID univoco di rilascio. I tool di deploy offrono tipicamente dei tool di gestione delle release, in particolare alcuni dedicati ad un rollback verso una release precedente;
+\item \textbf{Esecuzione}: conosciuta anche come "runtime", vede l'applicazione in esecuzione nell'ambiente di destinazione, attraverso l'avvio di processi della release scelta.
 \end{itemize}
 
 \subsection{Processi}
@@ -75,34 +75,33 @@ I packager di asset usano il filesystem come cache per gli asset compilati. Un'a
 Le sticky session sono una palese violazione della metodologia twelve-factor. I dati di sessione sono un ottimo candidato per quei sistemi di datastore che offrono la feature di scadenza.
 
 \subsection{Binding delle porte}
-L'applicazione twelve-factor è completamente self-contained (contenuta in se stessa) e non si affida ad un altro servizio (come appunto un webserver) nell'ambiente di esecuzione. La web app esporta HTTP come un servizio effettuando un binding specifico ad una porta, rimanendo in ascolto su tale porta per le richieste in entrata. Tale funzionalità viene, frequentemente, implementata tramite dichiarazione delle opportune dipendenze, aggiungendo una libreria webserver all'applicazione.
-HTTP non è l'unico servizio che può essere esportato tramite port binding. In realtà quasi ogni tipo di software può essere eseguito tramite uno specifico binding tra processo e porta dedicata.
-Nota inoltre che usare il binding delle porte permette ad un'applicazione di diventare il backing service di un'altra applicazione, tramite un URL dedicato o comunque come una risorsa la cui configurazione si può gestire tramite appositi file di config dell'app consumer del servizio.
+L'applicazione twelve-factor è completamente self-contained (contenuta in se stessa) e non si affida ad un altro servizio, come un webserver, nell'ambiente di esecuzione. La web app esporta HTTP come un servizio effettuando un binding specifico ad una porta, rimanendo in ascolto su tale porta per le richieste in entrata. Tale funzionalità viene, frequentemente, implementata tramite dichiarazione delle opportune dipendenze, aggiungendo una libreria webserver all'applicazione.
+HTTP non è l'unico servizio che può essere esportato tramite port bindin, in realtà quasi ogni tipo di software può essere eseguito tramite uno specifico binding tra processo e porta dedicata.
+Da notare inoltre che usare il binding delle porte permette ad un'applicazione di diventare il backing service di un'altra applicazione.
 
 \subsection{Concorrenza}
-In un'applicazione twelve-factor, i processi sono "first class citizen". La visione del concetto di processo prende spunto dal concetto, in unix, dedicato all'esecuzione di demoni di servizi. Attraverso l'uso di questo modello, lo sviluppatore può realizzare la propria applicazione in modo tale da farle gestire senza problemi diversi livelli di carico di lavoro, assegnando ogni tipo di lavoro ad un tipo di processo ben definito.
-es. le richieste HTTP possono essere gestite da un web process, mentre dei compiti più lunghi (in background) possono essere gestiti da un altro processo separato.
-Il modello di processo così come presentato rende il massimo quando arriva il momento di scalare. La natura orizzontalmente partizionabile (e non soggetta a condivisioni) di un "processo twelve-factor" permette di gestire la concorrenza in modo semplice ed affidabile. 
-In ogni app è presente la process fo	rmation.
-I processi di un'app twelve-factor non dovrebbero essere soggetti a daemonizing, o scrivere file PID. Al contrario, facendo affidamento sul process manager del sistema operativo (es. systemd, un process manager distribuito su piattaforma cloud, o Foreman durante lo sviluppo) per gestire gli stream in output (VEDI PUNTO XI), rispondere adeguatamente a crash di processi e gestire riavvii e shutdown.
-%todo VEDI PUNTO XI in maiuscolo? E quale sarebbe?
+In un'applicazione twelve-factor, i processi sono definiti "first class citizen". La visione del concetto di processo prende spunto dai demoni in Unix, che equivalgono ai servizi su sistemi Windows.
+Attraverso l'uso di questo modello, lo sviluppatore può realizzare la propria applicazione in modo tale da farle gestire senza problemi diversi livelli di carico di lavoro, assegnando ogni tipo di lavoro ad un tipo di processo ben definito.
+Ad esempio le richieste HTTP possono essere gestite da un web process, mentre i compiti più lunghi, svolti in background, possono essere gestiti da un altro processo separato.
+Il modello di processo così come presentato favorisce la scalabilità del sistema, in quanto la natura orizzontalmente partizionabile, e non soggetta a condivisioni, di un "processo twelve-factor" permette di gestire la concorrenza in modo semplice ed affidabile. 
+I processi di una applicazione twelve-factor non dovrebbero essere soggetti a daemonizing, cioè la possibilità di essere avviati come demoni o servizi, ma dovrebbero fare affidamento a sistemi di process manager del sistema operativo, ad esempio Systemd o SysVinit, in modo da rispondere adeguatamente a crash o riavii improvvisi.
 
 \subsection{Rilasciabilità}
 I processi di un'applicazione twelve-factor sono rilasciabili, cioè possono essere avviati o fermati senza problemi al momento del bisogno. Questa caratteristica ovviamente facilita le procedure di scaling, deploy rapido della codebase o cambi dei file di configurazione.
 Quindi i processi dovrebbero:
 \begin{itemize}
-\item Ambire a minimizzare i tempi di avvio. Idealmente, un processo impiega pochi secondi dal tempo di lancio al momento in cui tutto è pronto per ricevere nuove richieste. Dei tempi brevi di avvio inoltre forniscono una maggiore agilità in fase di release; il tutto a vantaggio della robustezza dell'applicazione, dato che il process manager può così muoversi agevolmente verso un'altra macchina fisica, se necessario;
-\item Terminare in modo tutt'altro che brusco, quindi graduale, in caso di ricezione di un segnale SIGTERM dal process manager. Per un'applicazione web, la giusta terminazione di un processo viene ottenuta quando si cessa innanzitutto di ascoltare sulla porta dedicata del servizio (evitando quindi di ricevere altre richieste), permettendo poi di terminare le richieste esistenti ed infine di concludere la fase di terminazione in modo definitivo;
-\item Essere "robusti nei confronti di situazioni di crash improvviso", cosa che si verifica ad esempio in caso di problemi a livello di hardware sottostante. Nonostante questa seconda evenienza si verifichi meno frequentemente di una chiusura con SIGTERM, può comunque succedere. L'approccio raccomandato, in questi casi, è l'uso di un sistema robusto di code che rimanda il job in coda in caso di timeout o disconnessione. Ad ogni modo, una buona applicazione twelve-factor deve poter gestire senza problemi le terminazioni inaspettate.
+\item Ambire a minimizzare i tempi di avvio. Idealmente, un processo impiega pochi secondi dal tempo di lancio al momento in cui tutto è pronto per ricevere nuove richieste. Dei tempi brevi di avvio inoltre forniscono una maggiore agilità in fase di release, il tutto a vantaggio della robustezza dell'applicazione.
+\item Terminare in modo tutt'altro che brusco, quindi graduale, in caso di ricezione di un segnale SIGTERM dal process manager. Per un'applicazione web la giusta terminazione di un processo viene ottenuta quando si cessa innanzitutto di ascoltare sulla porta dedicata al servizio, evitando quindi di ricevere altre richieste, permettendo poi di terminare le richieste esistenti ed infine di terminare definitivamente;
+\item Essere robusti nei confronti di situazioni di crash improvviso, cosa che si verifica ad esempio in caso di problemi a livello di hardware sottostante. Nonostante questa seconda evenienza si verifichi meno frequentemente di una chiusura con SIGTERM, può comunque succedere. L'approccio raccomandato, in questi casi, è l'uso di un sistema robusto di code che rimette nella lista delle richieste il lavoro che non può essere immediatamente completato. Ad ogni modo, una buona applicazione twelve-factor deve poter gestire senza problemi le terminazioni inaspettate, senza che questo generi problemi al successivo esecuzione.
 \end{itemize}
 
 \subsection{Parità tra sviluppo e produzione}
 Un'applicazione twelve-factor è progettata per il rilascio continuo. Il suo obiettivo è quelli di minimizzare le differenze di tempo, personale e strumenti.
-Per fare ciò:
+Per fare ciò sono necessari alcuni accorgimenti:
 \begin{itemize}
-\item Rendi la differenze temporali minime $\rightarrow$ cerca di scrivere (o far scrivere) del codice da rilasciare nel giro di poche ore, se non minuti;
-\item Rendi le differenze a livello di personale minime $\rightarrow$ fai in modo che gli sviluppatori siano coinvolti anche nella fase di deploy, per permettere loro di osservare il comportamento di ciò che hanno scritto anche in produzione;
-\item Rendi le differenze a livello di strumenti minime $\rightarrow$ mantieni gli ambienti di lavoro il più simile possibile.
+\item \textbf{Rendere la differenze temporali minime}: scrivere del codice da rilasciare nel giro di poche ore, se non minuti;
+\item \textbf{Rendi le differenze a livello di personale minime}: gli sviluppatori devono essere coinvolti anche nella fase di deploy, per permettere loro di osservare il comportamento di ciò che hanno scritto in produzione;
+\item \textbf{Rendi le differenze a livello di strumenti minime}: mantenere gli ambienti di lavoro il più simile possibile.
 \end{itemize}
 
 A volte in fase di sviluppo viene utilizzato un servizio più "leggero" rispetto a quello che poi verrà utilizzato in produzione (es. SQLite in locale e PostgreSQL in produzione). Inoltre, molti linguaggi offrono anche delle librerie che facilitano l'accesso a questi servizi, tra cui anche degli adattatori. Lo sviluppatore twelve-factor "resiste" a questa necessità. Nulla impedisce, infatti, a qualche altra incompatibilità di uscire allo scoperto quando meno ce lo si aspetta, soprattutto se in ambiente di sviluppo funziona tutto e poi, magari, in produzione i test non vengono superati. Il costo di questa differenza può risultare abbastanza alto, soprattutto in situazioni in cui si effettua il rilascio continuo.
@@ -110,10 +109,11 @@ Piuttosto è preferibile utilizzare alcuni tool di provisioning, che combinati c
 Tutto questo, sia chiaro, non rende gli adapter meno utili: grazie ad essi infatti il porting verso nuovi servizi, in un secondo momento, rimane un processo indolore. Nonostante questo, comunque, rimane scontato che sarebbe buona norma usare uno stesso backing service su tutti i deploy di un'applicazione.
 
 \subsection{Log}
-Un'applicazione twelve-factor non dovrebbe preoccuparsi di lavorare con il proprio output stream. Non dovrebbe lavorare o comunque gestire i vari logfile. Dovrebbe, invece, fare in modo che ogni processo si occupi di scrivere il proprio stream di eventi su "stdout". 
+Un'applicazione twelve-factor non dovrebbe preoccuparsi di lavorare con il proprio output stream. Non dovrebbe lavorare o comunque gestire i vari logfile. Dovrebbe, invece, fare in modo che ogni processo si occupi di scrivere il proprio stream di eventi su una interfaccia di output standardizzata.
+Il log si differenzia in base alla fase dello sviluppo nel quale viene utilizzato:
 \begin{itemize}
-\item Sviluppo in locale $\rightarrow$ lo sviluppatore potrà visionare lo stream in modo completo direttamente dal terminale, per capire meglio il comportamento della sua applicazione;
-\item Staging/produzione $\rightarrow$ ogni stream viene "preso" dall'ambiente di esecuzione ed elaborato insieme a tutti gli altri stream dell'applicazione, quindi indirizzato verso una o più "destinazioni" finali per la visualizzazione ed archiviazione a lungo termine. Queste "destinazioni" non sono visibili o configurabili, ma vengono gestite totalmente dall'ambiente di esecuzione. Per fare ciò esistono strumenti appositi.
+\item \textbf{Sviluppo in locale}: lo sviluppatore potrà visionare lo stream in modo completo direttamente dal terminale, per capire meglio il comportamento della sua applicazione;
+\item \textbf{Staging/produzione}: ogni stream viene gestito dall'ambiente di esecuzione ed elaborato assieme a tutti gli altri stream dell'applicazione, quindi indirizzato verso una o più "destinazioni" finali per la visualizzazione ed archiviazione a lungo termine. Queste destinazioni non sono visibili o configurabili, ma vengono gestite totalmente dall'ambiente di esecuzione. Per fare ciò esistono strumenti appositi.
 \end{itemize}
 Lo stream inoltre può essere inviato ad un sistema di analisi ed indicizzazione di log oppure ad un sistema di memorizzazione general-purpose. Questi sistemi hanno ottimi tool per effettuare un lavoro di analisi del comportamento dell'applicazione, come ad esempio:
 \begin{itemize}
@@ -123,15 +123,14 @@ Lo stream inoltre può essere inviato ad un sistema di analisi ed indicizzazione
 \end{itemize}
 
 \subsection{Processi di amministrazione}
-Lo sviluppatore può eseguire ogni tanto dei task, oltre alla process formation.
-Es di task:
+Lo sviluppatore potrebbe richiedere l'esecuzione di alcuni task, alcuni esempi potrebbero essere:
 \begin{itemize}
 \item Esecuzione delle migration del database;
-\item Esecuzione di una console in modo tale da avviare del codice arbitrariamente o analizzare alcuni aspetti dell'applicazione specifici;
+\item Utilizzo di una console in modo tale da avviare del codice arbitrariamente o analizzare alcuni aspetti dell'applicazione specifici;
 \item Esecuzione one-time di alcuni script specifici.
 \end{itemize}
 Tali processi dovrebbero essere avviati in un ambiente identico a quello in cui lavorano gli altri nel contesto dell'applicazione. Dovrebbero essere eseguiti quindi su una specifica release, partendo dalla stessa codebase ed impostazioni di configurazione. Il codice per l'amministrazione dovrebbe inoltre essere incluso nel codice dell'applicazione, in modo tale da evitare qualsiasi problema di sincronizzazione.
-La stessa tecnica di isolamento delle dipendenze dovrebbe poter essere usata allo stesso modo su tutti i processi. 
-La metodologia twelve-factor favorisce molto tutti quei linguaggi che offrono una shell REPL out of the box, rendendo quindi semplice l'esecuzione di script una tantum. In un deploy locale, gli sviluppatori possono invocare questi processi speciali tramite un semplice comando diretto. In un ambiente di produzione, invece, gli sviluppatori possono raggiungere lo stesso obiettivo tramite SSH o un qualsiasi altro sistema di esecuzione di comandi remoto.
+La stessa tecnica di isolamento delle dipendenze dovrebbe poter essere usata allo stesso modo su tutti i processi.
+La metodologia twelve-factor favorisce tutti quei linguaggi che offrono una shell REPL out of the box, rendendo quindi semplice l'esecuzione di script una tantum. In un deploy locale, gli sviluppatori possono invocare questi processi speciali tramite un semplice comando diretto, mentre in un ambiente di produzione si può raggiungere lo stesso obiettivo tramite SSH o un qualsiasi altro sistema di esecuzione di comandi remoto.
 
 \end{document}

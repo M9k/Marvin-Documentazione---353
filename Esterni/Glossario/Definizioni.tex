@@ -111,6 +111,9 @@
 \newacronym{Log}{log}{}
 \newacronym{Codebase}{codebase}{}
 \newacronym{Script}{script}{}
+\newacronym{asset}{assets}{}
+\newacronym{Release}{release}{}
+\newacronym{Build}{build}{}
 
 %INIZIO SLACK
 \newglossaryentry{Slack}{
@@ -121,7 +124,7 @@
 %INIZIO BOT
 \newglossaryentry{bot}{
 	name={Bot},
-	description={Programma che sostituisce un \citGloss{BOT}, \citGloss{bot} umano nello svolgere una attività usualmente ripetitiva, fornisce agli utenti servizi e informazioni in modo completamente automatizzato}
+	description={Programma che sostituisce un essere umano nello svolgere una attività usualmente ripetitiva, fornisce agli utenti servizi e informazioni in modo completamente automatizzato}
 }
 %FINE BOT
 %INIZIO SKYPE
@@ -673,12 +676,12 @@
 	description={Anche chiamato deployment, indica la consegna o il rilascio al cliente del prodotto richiesto, con relativa installazione e messa in funzione}
 }
 %FINE DEPLOY
-%INIZIO BACKINGSERVICE
+%INIZIO BACKING SERVICE
 \newglossaryentry{backing service}{
 	name={Backing service},
 	description={\`{E} un qualsiasi servizio che l’applicazione consuma attraverso la rete durante la sua esecuzione. Alcuni esempi includono i database ed i servizi per la posta}
 }
-%FINE BACKINGSERVICE
+%FINE BACKING SERVICE
 %INIZIO STREAM
 \newglossaryentry{stream}{
 	name={Stream},
@@ -703,3 +706,38 @@
 	description={Insieme di strumenti per la programmazione, più facili da utilizzare rispetto ai tradizionali linguaggi}
 }
 %FINE SCRIPT
+
+%INIZIO SAAS
+\newglossaryentry{SaaS}{ %Non ho messo acronimi perchè così lo scriviamo sempre con le maiuscole giuste
+	name={SaaS},
+	description={Acronimo di Software as a Service, è un modello di distribuzione del software dove il cliente non acquista il codice sorgente del prodotto ma sottoscrive un abbonamento ad esso. Il fornitore quindi s'impegna ad erogare il prodotto software come un servizio}
+}
+%FINE SAAS
+
+%INIZIO BUILD
+\newglossaryentry{build}{
+	name={build},
+	description={Indica la "costruzione" del prodotto software: è l'insieme di operazioni che trasformano il codice sorgente in una lista di operazioni eseguibili dal computer.}
+}
+%FINE BUILD
+
+%INIZIO RELEASE
+\newglossaryentry{release}{
+	name={release},
+	description={Indica la combinazione dell'output fornito dal processo di build con i file di configurazione che personalizzano l'esecuzione del programma. Una build per essere eseguita necessita di informazioni relative all'ambiente d'esecuzine della stessa, la release si occupa di fornire alla build le informazini contenute nei file di configurazione.}
+}
+%FINE RELEASE
+
+%INIZIO CONTINUOUS DELIVERY
+\newglossaryentry{continuous delivery}{
+	name={Continuous delivery},
+	description={\`{E} un approccio dell'ingegneria del software che regola la produzione del codice in finestre di tempo ristrette. Ogni volta che un programmatore effettua una modifica alla codebase e pubblica il suo lavoro sulla repository vengono innescati dei meccanismi che automatizzano il processo di build e verifica del codice, valutando se il lavoro effettuato rispetta gli standard di qualità tali per cui può essere rilasciato nell'ambiente di produzione}
+}
+%FINE CONTINUOUS DELIVERY
+
+%INIZIO CONTINUOUS DEPLOYMENT
+\newglossaryentry{continuous deployment}{
+	name={Continuous deployment},
+	description={Variante del continuous delivery, ma viene automatizzato anche il rilascio nell'ambiente di produzione}
+}
+%FINE CONTINUOUS DEPLOYMENT

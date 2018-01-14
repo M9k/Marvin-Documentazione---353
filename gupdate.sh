@@ -33,6 +33,7 @@ else
   TERMS[0]=$1
 fi
 for term in "${TERMS[@]}"; do
+  echo $term
   term=${term//$BEFORETERM/""} #Elimina il testo latex lasciando solo il nome del term
   term=${term//$AFTERTERM/""}
   echo "Sostituendo $term ..."

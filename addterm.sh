@@ -25,4 +25,4 @@ NEWENTRY="
 }
 %FINE $UPPERENTRY"
 echo "$NEWENTRY" >> $GLOSSARYFILE #Scrive in modalità append la stringa nel file di definizioni
-/bin/bash gupdate.sh $1 #Lancia il comando di update glossario del termine inserito
+/bin/bash gupdate.sh "$1" #Lancia il comando di update glossario del termine inserito

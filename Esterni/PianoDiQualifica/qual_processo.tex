@@ -107,17 +107,19 @@ Il processo mira ad identificare nuovi rischi e a monitorare e ridurre la possib
 \end{itemize}
 \subsubsection{Strategie}
 Nel caso dovessero sorgere troppi rischi il gruppo dovrà sospendere i lavori eliminando il maggior numero di questi per permettere la prosecuzione del lavoro.
-Viene utilizzato StatusTicker\footnote{\nURI{https://swe353.statusticker.com}} per avere dashboard sullo status dei servizi esterni utilizzati;
+Viene utilizzato StatusTicker\footnote{\nURI{https://swe353.statusticker.com}} per avere un cruscotto informativo sullo status dei servizi esterni utilizzati.
 
 \subsubsection{Metriche}
 \paragraph{}
-\textlink{MPS007TAB}{MPS007}{\textbf{MPS007 Indisponibilità servizi esterni:}} numero totale di giorni in cui siano stati offline o bloccati servizi usati.
+\textlink{MPS007TAB}{MPS007}{\textbf{MPS007 Indisponibilità servizi esterni:}} numero totale di giorni in cui siano stati offline o bloccati servizi usati.\\
+\textbf{Misurazione:}
+Indice numerico incrementato partendo da zero per ogni giorno in cui i servizi utilizzati dal gruppo siano risultati totalmente offline per la maggior parte del giorno, tramite controllo su \nURI{statusticker.com}.
 
 \paragraph{}
-\textlink{MPS008TAB}{MPS008}{\textbf{MPS008 Rischi non previsti:}} indice numerico che viene incrementato nel momento in cui si manifesta un
-rischio esterno a quelli presenti nell'attività di analisi dei rischi.\\ \\
+\textlink{MPS008TAB}{MPS008}{\textbf{MPS008 Rischi non previsti:}} indice numerico indica la quantità di rischi esterni a quelli presenti nell'attività di analisi dei rischi rilevati nella corrente fase di progetto. \\
 \textbf{Misurazione:}
-%TODO IMPORTANTE! manca misurazione
+Indice numerico incrementato partendo da 0 per ogni rischio che si manifesta senza essere stato individuato precedentemente nella lista di rischi.
+Viene resettato all'inizio di ogni nuova fase di progetto.
 
 \section{Tabella dei processi}
 % ID Processo

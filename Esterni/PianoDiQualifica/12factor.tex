@@ -2,12 +2,12 @@
 \begin{document}
 
 \chapter{The twelve-factor app}
-E' una metodologia di sviluppo orientata alla costruzione di applicazioni \citGloss{SaaS} (Software-as-a-Service) che può essere applicata ad ogni software, scritto in un qualsiasi linguaggio di programmazione.
+E' una metodologia di sviluppo orientata alla costruzione di applicazioni \citGloss{SaaS} che può essere applicata ad ogni software, scritto in un qualsiasi linguaggio di programmazione.
 Queste applicazioni:
 \begin{itemize}
 \item Seguono un formato dichiarativo per l'automazione della configurazione, minimizzando tempi e costi di ingresso per ogni sviluppatore che si aggiunge al progetto;
 \item Si interfacciano in modo pulito con il sistema operativo sottostante, in modo tale da offrire la massima portabilità sui vari ambienti di esecuzione;
-\item Sono adatti allo sviluppo sulle più recenti cloud platform (servizi di computazione ospitati sulla rete internet), ovviando alla necessità di server ed amministrazioni di sistema;
+\item Sono adatti allo sviluppo sulle più recenti cloud platform, cioè servizi di computazione ospitati sulla rete internet, ovviando alla necessità di server ed amministrazioni di sistema;
 \item Minimizzano la divergenza tra sviluppo e produzione, permettendo il \citGloss{continuous deployment} per una massima "agilità";
 \item Possono scalare significativamente senza troppi cambiamenti ai tool, all'architettura o al processo di sviluppo.
 \end{itemize}
@@ -39,26 +39,26 @@ Sono possibili alcune varianti di questa modalità:
 \subsection{Dipendenze}
 Un'applicazione che aderisce alla twelve-factor:
 \begin{itemize}
-\item Non si basa mai sull'esistenza implicita di librerie system-wide (ad esempio CPAN per Perl e Rubygems per Ruby);
+\item Non si basa mai sull'esistenza implicita di librerie system-wide, ad esempio CPAN per Perl e Rubygems per Ruby;
 \item Le dipendenze vengono tutte dichiarate tramite un file manifest dedicato;
 \item Viene contemplato l'uso di un tool di isolamento delle dipendenze durante l'esecuzione, in modo tale da assicurarsi che non ci siano delle "dipendenze implicite" che creino interferenze nel sistema in cui ci si trova;
 \item La specifica completa ed esplicita delle dipendenze si applica in modo uniforme, sia in production che in sviluppo;
 \item Le operazioni di dichiarazione ed isolamento vanno sempre effettuate, non ha importanza quale sia il toolchain usato;
-\item L'applicazione si deve mai basare sull'esistenza di un qualsiasi tool di sistema (es. ImageMagick, curl) perché non si ha la certezza che questo tool possa essere presente in tutti i sistemi in cui girerà in futuro.
+\item L'applicazione si deve mai basare sull'esistenza di un qualsiasi tool di sistema, ad esempio ImageMagick e curl, perché non si ha la certezza che questo tool possa essere presente in tutti i sistemi in cui girerà in futuro.
 \end{itemize}
 
 \subsection{Configurazione}
 Un'app conforme alla metodologia richiede una separazione ben definita delle impostazioni di configurazione dal codice.
-Per fare ciò si deve memorizzare tutte le impostazioni in variabili d'ambiente (dette anche "env vars" oppure "env") per le seguenti ragioni:
+Per fare ciò si deve memorizzare tutte le impostazioni in variabili d'ambiente, dette anche "env vars" oppure "env", per le seguenti ragioni:
 \begin{itemize}
 \item Sono molto semplici da cambiare da \citGloss{deploy} a deploy senza dover toccare direttamente il codice;
 \item C'è una probabilità molto bassa che siano erroneamente incluse all'interno del repository, a differenza dei classici file di configurazione;
 \item Sono file indipendenti sia dal linguaggio che dal sistema operativo utilizzato.
 \end{itemize}
-Affinché il prodotto finale ne possa risentire positivamente in termini di scalabilità le variabili d'ambiente non sono mai raggruppate e classificate sotto "ambienti" (a volte chiamati anche gruppi, nel nostro caso saranno local, test, staging e production) specifici ma vengono gestite in modo totalmente indipendente in ogni \citGloss{deploy}.
+Affinché il prodotto finale ne possa risentire positivamente in termini di scalabilità le variabili d'ambiente non sono mai raggruppate e classificate sotto "ambienti" specifici, a volte chiamati anche gruppi, che vengono gestiti in modo totalmente indipendente in ogni \citGloss{deploy}.
 
 \subsection{Backing service}
-Il codice di un'app twelve-factor non fa distinzioni tra servizi in locale o third party. Per l'applicazione, entrambi sono risorse connesse, accessibili via URL (o tramite un altro locator) e dispongono di credenziali memorizzate nell'opportuno file di configurazione. Ad un qualsiasi \citGloss{deploy} di un'applicazione twelve-factor si deve poter permettere di passare velocemente da un database MySQL locale ad uno third party senza alcuna modifica al codice. A cambiare dovrebbero essere solo i file di configurazione necessari.
+Il codice di un'app twelve-factor non fa distinzioni tra servizi in locale o third party. Per l'applicazione, entrambi sono risorse connesse, accessibili via URL e dispongono di credenziali memorizzate nell'opportuno file di configurazione. Ad un qualsiasi \citGloss{deploy} di un'applicazione twelve-factor si deve poter permettere di passare velocemente da un database MySQL locale ad uno third party senza alcuna modifica al codice. A cambiare dovrebbero essere solo i file di configurazione necessari.
 Ogni \citGloss{backing service} è quindi definibile come una "risorsa connessa". Un Database MySQL è una risorsa. Due database MySQL saranno visti come due distinte risorse. Un'app twelve-factor vede questi database come risorse anche per sottolineare la separazione dal \citGloss{deploy} a cui fanno riferimento. Le risorse possono essere collegate e scollegate da un \citGloss{deploy} a piacimento.
 
 \subsection{Build, release, esecuzione}
@@ -70,12 +70,12 @@ Una \citGloss{codebase} viene "trasformata" in \citGloss{deploy} attraverso tre 
 \end{itemize}
 
 \subsection{Processi}
-L'app viene eseguita nell'ambiente di esecuzione come uno o più processi. I processi twelve-factor sono stateless (senza stato) e share-nothing (nessuna condivisione). Tutti i dati che devono persistere devono essere memorizzati in un \citGloss{backing service}, come ad esempio un database.
+L'app viene eseguita nell'ambiente di esecuzione come uno o più processi. I processi twelve-factor sono stateless, cioè senza stato, e share-nothing, cioè con nessuna condivisione. Tutti i dati che devono persistere devono essere memorizzati in un \citGloss{backing service}, come ad esempio un database.
 I packager di asset usano il filesystem come cache per gli asset compilati. Un'app twelve-factor richiede che questa compilazione sia effettuata durante la fase di \citGloss{build} e non a runtime.
 Le sticky session sono una palese violazione della metodologia twelve-factor. I dati di sessione sono un ottimo candidato per quei sistemi di datastore che offrono la feature di scadenza.
 
 \subsection{Binding delle porte}
-L'applicazione twelve-factor è completamente self-contained (contenuta in se stessa) e non si affida ad un altro servizio, come un webserver, nell'ambiente di esecuzione. La web app esporta HTTP come un servizio effettuando un binding specifico ad una porta, rimanendo in ascolto su tale porta per le richieste in entrata. Tale funzionalità viene, frequentemente, implementata tramite dichiarazione delle opportune dipendenze, aggiungendo una libreria webserver all'applicazione.
+L'applicazione twelve-factor è completamente self-contained, in italiano "contenuta in se stessa", e non si affida ad un altro servizio, come un webserver, nell'ambiente di esecuzione. La web app esporta HTTP come un servizio effettuando un binding specifico ad una porta, rimanendo in ascolto su tale porta per le richieste in entrata. Tale funzionalità viene, frequentemente, implementata tramite dichiarazione delle opportune dipendenze, aggiungendo una libreria webserver all'applicazione.
 HTTP non è l'unico servizio che può essere esportato tramite port bindin, in realtà quasi ogni tipo di software può essere eseguito tramite uno specifico binding tra processo e porta dedicata.
 Da notare inoltre che usare il binding delle porte permette ad un'applicazione di diventare il \citGloss{backing service} di un'altra applicazione.
 
@@ -115,8 +115,8 @@ Il \citGloss{log} si differenzia in base alla fase dello sviluppo nel quale vien
 Lo \citGloss{stream} inoltre può essere inviato ad un sistema di analisi ed indicizzazione di \citGloss{log} oppure ad un sistema di memorizzazione general-purpose. Questi sistemi hanno ottimi tool per effettuare un lavoro di analisi del comportamento dell'applicazione, come ad esempio:
 \begin{itemize}
 \item Ricerca di specifici eventi nel passato;
-\item Grafici per rappresentare dei trend (es. richieste per minuto);
-\item Attivazione di alert specifici in base a regole definite dall'utente (es. alert avverte l'amministratore se il rate di eventi al minuto sale oltre una certa soglia).
+\item Grafici per rappresentare dei trend, ad esempio il numero di richieste per minuto;
+\item Attivazione di avvisi specifici in base a regole definite dall'utente, ad esempio nel caso la frequenza di eventi al minuto sale oltre una certa soglia.
 \end{itemize}
 \subsection{Processi di amministrazione}
 Lo sviluppatore potrebbe richiedere l'esecuzione di alcuni task, alcuni esempi potrebbero essere:

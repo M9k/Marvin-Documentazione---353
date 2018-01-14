@@ -111,9 +111,10 @@
 \newacronym{Log}{log}{}
 \newacronym{Codebase}{codebase}{}
 \newacronym{Script}{script}{}
-\newacronym{asset}{assets}{}
 \newacronym{Release}{release}{}
 \newacronym{Build}{build}{}
+\newacronym{Continuous delivery}{continuous delivery}{}
+\newacronym{Continuous deployment}{continuous deployment}{}
 
 %INIZIO SLACK
 \newglossaryentry{Slack}{
@@ -716,15 +717,15 @@
 
 %INIZIO BUILD
 \newglossaryentry{build}{
-	name={build},
-	description={Indica la "costruzione" del prodotto software: è l'insieme di operazioni che trasformano il codice sorgente in una lista di operazioni eseguibili dal computer.}
+	name={Build},
+	description={Indica la "costruzione" del prodotto software, indicando l'insieme di operazioni che trasformano il codice sorgente in operazioni eseguibili dal computer. Può indicare anche l'output di una fase di build}
 }
 %FINE BUILD
 
 %INIZIO RELEASE
 \newglossaryentry{release}{
-	name={release},
-	description={Indica la combinazione dell'output fornito dal processo di build con i file di configurazione che personalizzano l'esecuzione del programma. Una build per essere eseguita necessita di informazioni relative all'ambiente d'esecuzine della stessa, la release si occupa di fornire alla build le informazini contenute nei file di configurazione.}
+	name={Release},
+	description={Indica la combinazione dell'output fornito dal processo di \citGloss{build} con i file di configurazione che personalizzano l'esecuzione del programma. Può indicare anche l'output di una fase di relase}
 }
 %FINE RELEASE
 
@@ -738,6 +739,6 @@
 %INIZIO CONTINUOUS DEPLOYMENT
 \newglossaryentry{continuous deployment}{
 	name={Continuous deployment},
-	description={Variante del continuous delivery, ma viene automatizzato anche il rilascio nell'ambiente di produzione}
+	description={Variante del continuous delivery, nella quale viene automatizzato anche il rilascio nell'ambiente di produzione}
 }
 %FINE CONTINUOUS DEPLOYMENT

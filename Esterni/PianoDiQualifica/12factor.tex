@@ -78,7 +78,7 @@ Le sticky session sono una palese violazione della metodologia twelve-factor. I 
 L'applicazione twelve-factor è completamente self-contained (contenuta in se stessa) e non si affida ad un altro servizio, come un webserver, nell'ambiente di esecuzione. La web app esporta HTTP come un servizio effettuando un binding specifico ad una porta, rimanendo in ascolto su tale porta per le richieste in entrata. Tale funzionalità viene, frequentemente, implementata tramite dichiarazione delle opportune dipendenze, aggiungendo una libreria webserver all'applicazione.
 HTTP non è l'unico servizio che può essere esportato tramite port bindin, in realtà quasi ogni tipo di software può essere eseguito tramite uno specifico binding tra processo e porta dedicata.
 Da notare inoltre che usare il binding delle porte permette ad un'applicazione di diventare il backing service di un'altra applicazione.
-
+%TODO Concorrenza: tanti termini da aggiungere nel glossario. Esempio i demoni,Unix,crash, SysVinit, Systemd, Http ecc... 
 \subsection{Concorrenza}
 In un'applicazione twelve-factor, i processi sono definiti "first class citizen". La visione del concetto di processo prende spunto dai demoni in Unix, che equivalgono ai servizi su sistemi Windows.
 Attraverso l'uso di questo modello, lo sviluppatore può realizzare la propria applicazione in modo tale da farle gestire senza problemi diversi livelli di carico di lavoro, assegnando ogni tipo di lavoro ad un tipo di processo ben definito.
@@ -94,7 +94,7 @@ Quindi i processi dovrebbero:
 \item Terminare in modo tutt'altro che brusco, quindi graduale, in caso di ricezione di un segnale SIGTERM dal process manager. Per un'applicazione web la giusta terminazione di un processo viene ottenuta quando si cessa innanzitutto di ascoltare sulla porta dedicata al servizio, evitando quindi di ricevere altre richieste, permettendo poi di terminare le richieste esistenti ed infine di terminare definitivamente;
 \item Essere robusti nei confronti di situazioni di crash improvviso, cosa che si \citGloss{verifica} ad esempio in caso di problemi a livello di hardware sottostante. Nonostante questa seconda evenienza si verifichi meno frequentemente di una chiusura con SIGTERM, può comunque succedere. L'approccio raccomandato, in questi casi, è l'uso di un sistema robusto di code che rimette nella lista delle richieste il lavoro che non può essere immediatamente completato. Ad ogni modo, una buona applicazione twelve-factor deve poter gestire senza problemi le terminazioni inaspettate, senza che questo generi problemi al successivo esecuzione.
 \end{itemize}
-
+%TODO Termini da agiungere al glossario. Esempio SQLLite, PostgreSQL, deploy(?), backing service ecc..
 \subsection{Parità tra sviluppo e produzione}
 Un'applicazione twelve-factor è progettata per il rilascio continuo. Il suo obiettivo è quelli di minimizzare le differenze di tempo, personale e strumenti.
 Per fare ciò sono necessari alcuni accorgimenti:
@@ -107,7 +107,7 @@ Per fare ciò sono necessari alcuni accorgimenti:
 A volte in fase di sviluppo viene utilizzato un servizio più "leggero" rispetto a quello che poi verrà utilizzato in produzione (es. SQLite in locale e PostgreSQL in produzione). Inoltre, molti linguaggi offrono anche delle librerie che facilitano l'accesso a questi servizi, tra cui anche degli adattatori. Lo sviluppatore twelve-factor "resiste" a questa necessità. Nulla impedisce, infatti, a qualche altra incompatibilità di uscire allo scoperto quando meno ce lo si aspetta, soprattutto se in ambiente di sviluppo funziona tutto e poi, magari, in produzione i test non vengono superati. Il costo di questa differenza può risultare abbastanza alto, soprattutto in situazioni in cui si effettua il rilascio continuo.
 Piuttosto è preferibile utilizzare alcuni tool di provisioning, che combinati con sistemi di ambienti virtuali permettono agli sviluppatori di riprodurre in locale delle macchine molto simili, se non identiche, a quelle in produzione. Ne risente quindi positivamente il costo di deploy.
 Tutto questo, sia chiaro, non rende gli adapter meno utili: grazie ad essi infatti il porting verso nuovi servizi, in un secondo momento, rimane un processo indolore. Nonostante questo, comunque, rimane scontato che sarebbe buona norma usare uno stesso backing service su tutti i deploy di un'applicazione.
-
+%TODO Termini da aggiunger al glossario. Esempio stream, logfile,log(?), alert.
 \subsection{Log}
 Un'applicazione twelve-factor non dovrebbe preoccuparsi di lavorare con il proprio output stream. Non dovrebbe lavorare o comunque gestire i vari logfile. Dovrebbe, invece, fare in modo che ogni processo si occupi di scrivere il proprio stream di eventi su una interfaccia di output standardizzata.
 Il log si differenzia in base alla fase dello sviluppo nel quale viene utilizzato:
@@ -121,7 +121,7 @@ Lo stream inoltre può essere inviato ad un sistema di analisi ed indicizzazione
 \item Grafici per rappresentare dei trend (es. richieste per minuto);
 \item Attivazione di alert specifici in base a regole definite dall'utente (es. alert avverte l'amministratore se il rate di eventi al minuto sale oltre una certa soglia).
 \end{itemize}
-
+%TODO Termini da aggiungere al glossario. Esempio script,database, realese,codebase,shell, REPL, out of the box(??),SSH ecc..
 \subsection{Processi di amministrazione}
 Lo sviluppatore potrebbe richiedere l'esecuzione di alcuni task, alcuni esempi potrebbero essere:
 \begin{itemize}

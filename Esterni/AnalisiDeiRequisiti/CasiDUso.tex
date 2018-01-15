@@ -20,7 +20,7 @@
 	Ci si riferisce ad un utente generico che non ha ancora effettuato il login.\\
 	
 	\item \textbf{Utente autenticato}\\
-	 Ci si riferisce ad un utente generico con chiave valida ed autenticato nel sistema tramite la procedura di login.\\
+	 Ci si riferisce ad un utente generico con \citGloss{indirizzo} valido ed autenticato nel sistema tramite la procedura di login.\\
 	
 	\item \textbf{Amministratore}\\
 	Ci si riferisce ad un utente autenticato nel sistema nel ruolo di amministratore, ha i permessi per gestire i professori.\\
@@ -111,21 +111,21 @@
 \item \textbf{Scenario principale:} l'utente non ancora riconosciuto dal sistema richiede il login;
 \item \textbf{Estensioni:}
 \begin{enumerate}
-	\item Se l'utente non ha a disposizione una chiave viene avvisato con un errore a riguardo [UC2.2];
+	\item Se l'utente non ha a disposizione una \citGloss{chiave} viene avvisato con un errore a riguardo [UC2.2];
 	\item Se l'utente non ha il plugin \citGloss{MetaMask} installato nel \citGloss{browser} viene avvisato con un errore a riguardo [UC2.3];
-	\item Se l'utente ha a disposizione una chiave non registrata viene avvisato con un errore a riguardo [UC2.4];
+	\item Se l'utente ha a disposizione una \citGloss{chiave} non registrata viene avvisato con un errore a riguardo [UC2.4];
 	\item Se l'utente tenta di fare il login con un account in attesa di approvazione viene avvisato con una schermata informativa a riguardo [UC2.5].
 \end{enumerate}
 \item \textbf{Precondizione:} l'utente ha richiesto al sistema di venire riconosciuto;
 \item \textbf{Postcondizione:} l'utente, tramite una interazione con \citGloss{MetaMask}, viene riconosciuto da parte del sistema.
 \end{itemize}
-\subsection{UC2.2 - Visualizzazione messaggio di errore riguardo a chiave assente}
+\subsection{UC2.2 - Visualizzazione messaggio di errore riguardo a \citGloss{chiave} assente}
 \begin{itemize}
 	\item \textbf{Attori primari:} utente non autenticato;
-	\item \textbf{Scopo e descrizione:} l'utente viene avvisato del fatto che non è stato possibile da parte del sistema il recupero della chiave;
-	\item \textbf{Scenario principale:} l'utente visualizza l'errore relativo all'assenza di una chiave per accedere al sistema;
-	\item \textbf{Precondizione:} l'utente richiede il login senza possedere una chiave;
-	\item \textbf{Postcondizione:} l'utente è consapevole di dover interagire con \citGloss{MetaMask} per poter fornire una chiave.
+	\item \textbf{Scopo e descrizione:} l'utente viene avvisato del fatto che non è stato possibile da parte del sistema il recupero della \citGloss{chiave};
+	\item \textbf{Scenario principale:} l'utente visualizza l'errore relativo all'assenza di una \citGloss{chiave} per accedere al sistema;
+	\item \textbf{Precondizione:} l'utente richiede il login senza possedere una \citGloss{chiave};
+	\item \textbf{Postcondizione:} l'utente è consapevole di dover interagire con \citGloss{MetaMask} per poter fornire una \citGloss{chiave}.
 \end{itemize}
 \subsection{UC2.3 - Visualizzazione messaggio di errore riguardo a MetaMask assente}
 \begin{itemize}
@@ -138,15 +138,15 @@
 \subsection{UC2.4 - Visualizzazione messaggio di errore riguardo a chiave non registrata}
 \begin{itemize}
 	\item \textbf{Attori primari:} utente non autenticato;
-	\item \textbf{Scopo e descrizione:} l'utente viene avvisato del fatto che ha fornito una chiave non registrata nel sistema;
-	\item \textbf{Scenario principale:} l'utente viene informato che la sua chiave non risulta registrata, suggerendone la registrazione;
-	\item \textbf{Precondizione:} l'utente richiede il login utilizzando una chiave non registrata;
+	\item \textbf{Scopo e descrizione:} l'utente viene avvisato del fatto che ha fornito una \citGloss{chiave} non registrata nel sistema;
+	\item \textbf{Scenario principale:} l'utente viene informato che la sua \citGloss{chiave} non risulta registrata, in quanto il relativo \citGloss{indirizzo} non è presente nel sistema, suggerendone la registrazione;
+	\item \textbf{Precondizione:} l'utente richiede il login utilizzando una \citGloss{chiave} non registrata;
 	\item \textbf{Postcondizione:} l'utente è consapevole di dover effettuare la registrazione per accedere al sistema.
 \end{itemize}
 \subsection{UC2.5 - Visualizzazione schermata informativa account non abilitato}
 \begin{itemize}
 	\item \textbf{Attori primari:} utente non autenticato;
-	\item \textbf{Scopo e descrizione:} l'utente viene informato che la sua chiave non è ancora stata abilitata all'uso dei servizi;
+	\item \textbf{Scopo e descrizione:} l'utente viene informato che il suo \citGloss{indirizzo} non è ancora stato abilitato all'uso dei servizi;
 	\item \textbf{Scenario principale:} il sistema mostra una schermata informativa per avvisare l'utente che il suo account è in attesa di essere abilitato;
 	\item \textbf{Precondizione:} l'utente tenta di accedere al sistema senza che il suo account sia stato abilitato da un amministratore;
 	\item \textbf{Postcondizione:} l'utente è consapevole di dover attendere l'abilitazione del suo account da parte di un amministratore per accedere al sistema.
@@ -164,7 +164,7 @@
 		\item L'utente seleziona il corso desiderato [UC3.4].
 	\end{enumerate}
 	\item \textbf{Precondizione:} l'utente è entrato nel sistema e ha scelto di registrarsi;
-	\item \textbf{Postcondizione:} la registrazione è andata a buon fine e la chiave dell'utente è stata salvata nel sistema.
+	\item \textbf{Postcondizione:} la registrazione è andata a buon fine e la \citGloss{chiave} dell'utente è stata registrata nel sistema, salvandone l'\citGloss{indirizzo}.
 \end{itemize}
 
 \begin{figure}[H]
@@ -178,17 +178,17 @@
 \subsection{UC3.1 - Inserimento nome}
 \begin{itemize}
 	\item \textbf{Attori Primari:} utente non autenticato;
-	\item \textbf{Scopo e Descrizione:} il sistema \citGloss{verifica} la validità della chiave ed offre l'interfaccia per inserire il nome dell'utente;
+	\item \textbf{Scopo e Descrizione:} il sistema \citGloss{verifica} la validità della \citGloss{chiave} ed offre l'interfaccia per inserire il nome dell'utente;
 	\item \textbf{Scenario principale:} l'utente fornisce tramite un dispositivo di input il suo nome;
 	\item \textbf{Estensioni:}
 		\begin{enumerate}
-			\item Se l'utente non ha un chiave viene avvisato tramite un messaggio d'errore [UC3.7];
+			\item Se l'utente non ha un \citGloss{chiave} viene avvisato tramite un messaggio d'errore [UC3.7];
 			\item Se l'utente non possiede \citGloss{MetaMask} viene avvisato tramite messaggio d'errore [UC3.8];
-			\item Se la chiave fornita dall'utente è già presente nel sistema l'utente viene avvisato tramite un messaggio d'errore [UC3.6];
+			\item Se la \citGloss{chiave} fornita dall'utente è già presente nel sistema l'utente viene avvisato tramite un messaggio d'errore [UC3.6];
 			\item Se l'utente non compila il campo viene avvisato con un messaggio d'errore [UC3.5].
 		\end{enumerate}
 	\item \textbf{Precondizione:} l'utente vuole inserire il proprio nome per poter proseguire con la procedura di registrazione;
-	\item \textbf{Postcondizione:} l'utente ha inserito il proprio nome nel campo fornito dal sistema e la validità della sua chiave è stata controllata.
+	\item \textbf{Postcondizione:} l'utente ha inserito il proprio nome nel campo fornito dal sistema e la validità della sua \citGloss{chiave} è stata controllata.
 \end{itemize}	
 \subsection{UC3.2 - Inserimento cognome}
 \begin{itemize}
@@ -230,18 +230,18 @@
 \subsection{UC3.6 - Visualizzazione errore utente già registrato}
 \begin{itemize}
 	\item \textbf{Attori Primari:} utente non autenticato;
-	\item \textbf{Scopo e Descrizione} il sistema avvisa l'utente che la sua chiave è già presente nel sistema e che non può procedere alla registrazione;
-	\item \textbf{Scenario principale:} il sistema mostra un messaggio d'errore all'utente che indica che sta tentando di effettuare una registrazione utilizzando una chiave già presente nell'università;
-	\item \textbf{Precondizione:} l'utente tenta di registrarsi utilizzando una chiave già registrata;
-	\item \textbf{Postcondizione:} l'utente è consapevole di star utilizzando una chiave che corrisponde ad un account precedentemente registrato nel sistema.
+	\item \textbf{Scopo e Descrizione} il sistema avvisa l'utente che la sua \citGloss{chiave} è già presente nel sistema, facendo collidere il suo \citGloss{indirizzo} con uno precedentemente inserito, e che quindi non può procedere alla registrazione;
+	\item \textbf{Scenario principale:} il sistema mostra un messaggio d'errore all'utente che indica che sta tentando di effettuare una registrazione utilizzando una \citGloss{chiave} già utilizzata nel sistema;
+	\item \textbf{Precondizione:} l'utente tenta di registrarsi utilizzando una \citGloss{chiave} precedentemente registrata;
+	\item \textbf{Postcondizione:} l'utente è consapevole di star utilizzando una \citGloss{chiave} che corrisponde ad un account precedentemente registrato nel sistema.
 \end{itemize}
 \subsection{UC3.7 - Visualizzazione errore chiave non presente}
 \begin{itemize}
 	\item \textbf{Attori Primari:} utente non autenticato;
-	\item \textbf{Scopo e Descrizione} il sistema avvisa l'utente che non ha fornito una chiave e quindi non può procedere alla registrazione;
-	\item \textbf{Scenario principale:} il sistema mostra un messaggio d'errore all'utente indicandogli l'assenza della chiave;
-	\item \textbf{Precondizione:} l'utente tenta di registrarsi senza fornire una chiave;
-	\item \textbf{Postcondizione:} l'utente è consapevole di non possedere una chiave.
+	\item \textbf{Scopo e Descrizione} il sistema avvisa l'utente che non ha fornito una \citGloss{chiave} e quindi non può procedere alla registrazione;
+	\item \textbf{Scenario principale:} il sistema mostra un messaggio d'errore all'utente indicandogli l'assenza della \citGloss{chiave};
+	\item \textbf{Precondizione:} l'utente tenta di registrarsi senza fornire una \citGloss{chiave};
+	\item \textbf{Postcondizione:} l'utente è consapevole di non possedere una \citGloss{chiave}.
 \end{itemize}
 \subsection{UC3.8 - Visualizzazione errore MetaMask non installato}
 \begin{itemize}
@@ -296,7 +296,7 @@
 \subsection{UC5.1.1 - Visualizzazione lista di studenti}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
-	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti gli studenti registrati nel sistema, visualizzando per ogni studente chiave, nome, cognome e corso;
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti gli studenti registrati nel sistema, visualizzando per ogni studente \citGloss{indirizzo}, nome, cognome e corso;
 	\item \textbf{Scenario principale:} l'amministratore richiede al sistema una lista di studenti per poterli visualizzare e eventualmente gestire;
 	\item \textbf{Precondizione:} l'amministratore è nell'area di gestione utenti e richiede una lista di tutti gli studenti; 
 	\item \textbf{Postcondizione:} l'amministratore ottiene la lista.
@@ -304,7 +304,7 @@
 \subsection{UC5.1.2 - Visualizzazione lista di professori}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
-	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti i professori registrati nel sistema, visualizzando per ogni professore chiave, nome e cognome;
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti i professori registrati nel sistema, visualizzando per ogni professore \citGloss{indirizzo}, nome e cognome;
 	\item \textbf{Scenario principale:} l'amministratore richiede al sistema una lista di professori per poterli visualizzare ed eventualmente gestire;
 	\item \textbf{Precondizione:} l'amministratore è nell'area di gestione utenti e richiede una lista di tutti i professori; 
 	\item \textbf{Postcondizione:} l'amministratore ottiene la lista.
@@ -312,7 +312,7 @@
 \subsection{UC5.1.3 - Visualizzazione lista di utenti in attesa di abilitazione}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
-	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti gli utenti ancora non abilitati, ottenendo per ognuno chiave, nome, cognome e ruolo, nel caso si tratti di studenti anche il corso;
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti gli utenti ancora non abilitati, ottenendo per ognuno \citGloss{indirizzo}, nome, cognome e ruolo, nel caso si tratti di studenti anche il corso;
 	\item \textbf{Scenario principale:} l'amministratore richiede al sistema una lista di utenti in attesa di abilitazione per poterli gestire;
 	\item \textbf{Precondizione:} l'amministratore è nell'area di gestione studenti e richiede una lista di studenti in attesa di abilitazione; 
 	\item \textbf{Postcondizione:} l'amministratore ottiene la lista.
@@ -506,7 +506,7 @@
 \subsection{UC5.3.9 - Visualizzazione dettagli esame}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
-	\item \textbf{Scopo e descrizione:} l'amministratore visualizza il nome dell'esame, la relativa quantità di crediti, il nome, cognome e chiave del professore associato ed il numero di studenti iscritti.
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza il nome dell'esame, la relativa quantità di crediti, il nome, cognome e \citGloss{indirizzo} del professore associato ed il numero di studenti iscritti.
 	\item \textbf{Scenario principale:}
 	\begin{enumerate}
 		\item L'amministratore ottiene una lista degli esami e seleziona quello di suo interesse [UC5.3.7 o UC5.3.8];
@@ -749,25 +749,25 @@
 \subsection{UC8.1.2 - Visualizzazione messaggio di errore riguardo a chiave mal formata}
 \begin{itemize}
 	\item \textbf{Attori primari:} università;
-	\item \textbf{Scopo e descrizione:} l'utente viene avvisato del fatto che ha fornito una chiave ma formata, ad esempio di lunghezza invalida oppure non in caratteri esadecimali;
-	\item \textbf{Scenario principale:} l'utente viene informato che la sua chiave risulta mal formata, invitandolo a ricontrollarla;
-	\item \textbf{Precondizione:} l'utente cerca di registrare nel sistema una chiave mal formata;
-	\item \textbf{Postcondizione:} l'utente è consapevole di aver tentato l'inserimento di una chiave mal formata.
+	\item \textbf{Scopo e descrizione:} l'utente viene avvisato del fatto che ha fornito una \citGloss{chiave} ma formata, ad esempio di lunghezza invalida oppure non in caratteri esadecimali;
+	\item \textbf{Scenario principale:} l'utente viene informato che la sua \citGloss{chiave} risulta mal formata, invitandolo a ricontrollarla;
+	\item \textbf{Precondizione:} l'utente cerca di registrare nel sistema una \citGloss{chiave} mal formata;
+	\item \textbf{Postcondizione:} l'utente è consapevole di aver tentato l'inserimento di una \citGloss{chiave} mal formata.
 \end{itemize}
 \subsection{UC8.1.3 - Visualizzazione messaggio di errore riguardo a chiave già registrata}
 \begin{itemize}
 	\item \textbf{Attori primari:} università;
-	\item \textbf{Scopo e descrizione:} l'utente viene avvisato del fatto che ha fornito una chiave già registrata in un altro ruolo all'interno dell'università;
-	\item \textbf{Scenario principale:} l'utente viene informato che la sua chiave risulta già registrata;
-	\item \textbf{Precondizione:} l'utente cerca di registrare nel sistema una chiave precedentemente registrata in un altro ruolo;
-	\item \textbf{Postcondizione:} l'utente è consapevole di aver tentato l'inserimento di una chiave già registrata nell'università in un altro ruolo.
+	\item \textbf{Scopo e descrizione:} l'utente viene avvisato del fatto che ha fornito una \citGloss{chiave} già registrata in un altro ruolo all'interno dell'università, in quanto il suo \citGloss{indirizzo} collide con un secondo precedentemente inserito;
+	\item \textbf{Scenario principale:} l'utente viene informato che la sua \citGloss{chiave} risulta già registrata;
+	\item \textbf{Precondizione:} l'utente cerca di registrare nel sistema una \citGloss{chiave} precedentemente registrata in un altro ruolo;
+	\item \textbf{Postcondizione:} l'utente è consapevole di aver tentato l'inserimento di una \citGloss{chiave} già registrata nell'università in un altro ruolo.
 \end{itemize}
 
 
 \subsection{UC8.2 - Visualizzazione lista degli amministratori}
 	\begin{itemize}
 	\item \textbf{Attori primari:} università;
-	\item \textbf{Scopo e descrizione:} l'utente che rappresenta l'università visualizza una lista di tutti gli amministratori, con indicata la chiave;
+	\item \textbf{Scopo e descrizione:} l'utente che rappresenta l'università visualizza una lista di tutti gli amministratori, con indicata l'\citGloss{indirizzo};
 	\item \textbf{Scenario principale:} l'utente che rappresenta l'università richiede al sistema la lista degli amministratori per poterla consultare;
 	\item \textbf{Precondizione:} l'utente che rappresenta l'università è già riconosciuto dal sistema come tale e richiede la visualizzazione della lista degli amministratori;
 	\item \textbf{Postcondizione:} l'utente che rappresenta l'università ottiene la lista degli amministratori per poterla consultare.

@@ -106,7 +106,7 @@
 \subsection{UC2.1 - Login automatico}
 \begin{itemize}
 \item \textbf{Attori primari:} utente non autenticato;
-\item \textbf{Attori secondari:} MetaMask;
+\item \textbf{Attori secondari:} \citGloss{MetaMask};
 \item \textbf{Scopo e descrizione:} l'utente attende il login da parte del sistema senza effettuare nessuna operazione aggiuntiva;
 \item \textbf{Scenario principale:} l'utente non ancora riconosciuto dal sistema richiede il login;
 \item \textbf{Estensioni:}
@@ -127,7 +127,7 @@
 	\item \textbf{Precondizione:} l'utente richiede il login senza possedere una \citGloss{chiave};
 	\item \textbf{Postcondizione:} l'utente è consapevole di dover interagire con \citGloss{MetaMask} per poter fornire una \citGloss{chiave}.
 \end{itemize}
-\subsection{UC2.3 - Visualizzazione messaggio di errore riguardo a MetaMask assente}
+\subsection{UC2.3 - Visualizzazione messaggio di errore riguardo a \citGloss{MetaMask} assente}
 \begin{itemize}
 	\item \textbf{Attori primari:} utente non autenticato;
 	\item \textbf{Scopo e descrizione:} l'utente viene avvisato del fatto sta cercando di accedere al sistema senza il plugin \citGloss{MetaMask};
@@ -243,7 +243,7 @@
 	\item \textbf{Precondizione:} l'utente tenta di registrarsi senza fornire una \citGloss{chiave};
 	\item \textbf{Postcondizione:} l'utente è consapevole di non possedere una \citGloss{chiave}.
 \end{itemize}
-\subsection{UC3.8 - Visualizzazione errore MetaMask non installato}
+\subsection{UC3.8 - Visualizzazione errore \citGloss{MetaMask} non installato}
 \begin{itemize}
 	\item \textbf{Attori Primari:} utente non autenticato;
 	\item \textbf{Scopo e Descrizione} il sistema avvisa l'utente del fatto che non possiede il plugin \citGloss{MetaMask};
@@ -434,7 +434,7 @@
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
 	\item \textbf{Scopo e descrizione:} viene mostrato un messaggio d'errore per avvisare l'amministratore che non è possibile utilizzare la sigla inserita, in quanto non rispetta il pattern indicato dal sistema oppure risulta già in uso;
-	\item \textbf{Scenario principale:} il sistema avvisa l'amministratore che non è possibili utilizzare la sigla indicata;
+	\item \textbf{Scenario principale:} il sistema avvisa l'amministratore che non è possibile utilizzare la sigla indicata;
 	\item \textbf{Precondizione:} l'amministratore ha tentato di creare un \citGloss{corso di laurea} utilizzando una sigla che non rispetta i \citGloss{requisiti} indicati dal sistema; 
 	\item \textbf{Postcondizione:} l'amministratore è consapevole di non poter utilizzare quella determinata sigla per la creazione di un nuovo corso.
 \end{itemize}\subsection{UC5.3.3 - Visualizzazione lista completa dei corsi}
@@ -459,7 +459,7 @@
 	\item \textbf{Scenario principale:} l'amministratore inserisce un nuovo esame all'interno di un corso;
 	\item \textbf{Estensioni:}
 	\begin{enumerate}
-		\item Se l'amministratore inserisce un nome invalido ottiene un messaggio d'errore [UC5.3.4].
+		\item Se l'amministratore inserisce un nome invalido ottiene un messaggio d'errore [UC5.3.6].
 	\end{enumerate}
 	\item \textbf{Precondizione:} l'amministratore ha ottenuto una lista di corsi di laurea per \citGloss{anno accademico} [UC5.3.3] e ne ha selezionato uno, volendo creare un esame al suo interno; 
 	\item \textbf{Postcondizione:} l'esame viene inserito nel sistema e associato al \citGloss{corso di laurea} selezionato.

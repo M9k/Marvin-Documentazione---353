@@ -1,0 +1,183 @@
+\File di esempio
+\Per gli UC assicurarsi che TUTTI i requisiti siano sulla stessa riga
+
+\label{table:Tabella requisiti funzionali}
+\rowcolors{2}{CRighePari}{CRigheDispari}
+\renewcommand*{\arraystretch}{1.2}
+\begin{longtable}[H]{p{2.6cm}p{2.5cm}p{5cm}p{2cm}}
+	\rowcolor{CHeader} 
+	\color{CHeaderText} \textbf{Identificatore} & \color{CHeaderText} \textbf{Importanza} & \color{CHeaderText} \textbf{Descrizione} & \color{CHeaderText} \textbf{Fonti} \\
+	\endhead
+	R0F1 & Obbligatorio & L'amministratore può gestire gli utenti & Interno \\
+	R0F1.1 & Obbligatorio & L'amministratore può ottenere una lista di tutti gli utenti non abilitati & Interno \\  
+	R0F1.2 & Obbligatorio & L'amministratore può abilitare un utente & Interno \\  
+	R0F1.3 & Obbligatorio & L'amministratore può rimuovere un utente & Interno \\  
+	R0F1.4 & Obbligatorio & L'amministratore può ottenere una lista di tutti gli studenti & Interno \\  
+	R0F2 & Obbligatorio & L'amministratore può gestire i professori & Interno \\  
+	R0F2.1 & Obbligatorio & L'amministratore può ottenere una lista di tutti i professori & Interno \\  
+	R0F2.2 & Obbligatorio & L'amministratore può assegnare un esame ad un determinato professore & Capitolato \\  
+	R0F3 & Obbligatorio & L'amministratore può gestire gli anni accademici & Capitolato \\  
+	R0F3.1 & Obbligatorio & L'amministratore può aggiungere un \citGloss{anno accademico} & Capitolato \\  
+	R0F3.2 & Obbligatorio & L'amministratore può ottenere una lista degli anni accademici & Interno \\  
+	R0F3.3 & Obbligatorio & L'amministratore può gestire i corsi di laurea relativi agli anni accademici & Capitolato \\  
+	R0F3.3.1 & Obbligatorio & L'amministratore può creare un nuovo \citGloss{corso di laurea} a partire da un \citGloss{anno accademico} & Capitolato \\  
+	R0F3.3.2 & Obbligatorio & L'amministratore può ottenere una lista di tutti i corsi di laurea dato un \citGloss{anno accademico} & Interno \\  
+	R0F3.3.3 & Obbligatorio & L'amministratore può creare nuovi esami & Capitolato \\ 
+	R0F3.3.4 & Obbligatorio & L'amministratore può ottenere una lista di tutti gli esami dato il \citGloss{corso di laurea} & Interno \\  
+	R0F3.3.4.1 & Obbligatorio & L'amministratore può ottenere l'informazione di quale professore è assegnato a un determinato esame & Interno \\  
+	R0F3.3.4.2  & Obbligatorio & L'amministratore può associare ad un esame il relativo professore & Interno \\  
+	R0F4 & Obbligatorio & Un professore può gestire gli esami a lui assegnati & Capitolato \\  
+	R0F4.1 & Obbligatorio & Un professore può ottenere la lista di tutti gli esami a lui assegnati & Capitolato \\  
+	R0F4.2 & Obbligatorio & Un professore può ottenere la lista di tutti gli studenti associati a un determinato esame & Capitolato \\  
+	R0F4.3 & Obbligatorio & Un professore può registrare un esito ad un dato esame ad un dato studente registrato a quell'esame & Capitolato \\  
+	R0F5 & Obbligatorio & Uno studente può gestire l'iscrizione agli esami & Capitolato \\  
+	R0F5.1 & Obbligatorio & Uno studente può vedere l'elenco degli esami ai quali è iscritto & Capitolato \\  
+	R0F5.1.1 & Obbligatorio & Uno studente può ottenere il numero di crediti assegnati agli esame & Interno \\  
+	R0F5.1.2 & Obbligatorio & Uno studente può ottenere l'obbligatorietà degli esame & Interno \\  
+	R0F5.1.3 & Obbligatorio & Uno studente può ottenere lo stato di superamento degli esame & Interno \\  
+	R0F5.1.4 & Obbligatorio & Uno studente può ottenere il totale dei suoi crediti & Interno \\  
+	R0F5.1.5 & Obbligatorio & Uno studente può ottenere il numero di crediti da raggiungere per la laurea & Interno \\  
+	R0F5.2 & Obbligatorio & Uno studente può ottenere l'elenco degli esami opzionali & Capitolato \\  
+	R0F5.2.1 & Obbligatorio & Uno studente può ottenere il numero di crediti degli esami opzionali & Capitolato \\  
+	R0F5.2.2 & Obbligatorio & Uno studente può iscriversi ad un esame opzionale & Capitolato \\  
+	R0F6 & Obbligatorio & L'utente può effettuare il login & Interno \\  
+	R0F6.1 & Obbligatorio & Il login deve avvenire tramite il controllo delle chiavi, senza ulteriori azioni da parte dell'utente & Interno \\  
+	R0F7 & Obbligatorio & L'utente può effettuare il logout & Interno \\  
+	R0F8 & Obbligatorio & L'utente non ancora registrato può registrarsi & Capitolato \\  
+	R0F8.1 & Obbligatorio & La registrazione necessita di nome, cognome, categoria (studente o professore) e selezione del corso di laura se si tratta di uno studente & Capitolato \\  
+	R1F9 & Desiderabile & L'utente può leggere una breve guida sull'uso di MetaMask e sul pagamento delle operazioni & Interno \\  	
+	R0F10 & Obbligatorio & L'utente deve poter vedere preventivamente il costo in \citGloss{Gas}, \citGloss{Ether} e Euro dell'operazione che sta per eseguire & Capitolato, VER-2018-01-09 \\  	
+	R0F11 & Obbligatorio & L'università deve poter gestire gli amministratori & VER-2017-12-08.1 \\
+	R0F11.1 & Obbligatorio & L'università deve poter aggiungere amministratori & VER-2017-12-08.1 \\
+	R0F11.2 & Obbligatorio & L'università deve poter rimuovere amministratori & VER-2017-12-08.2 \\
+	R0F11.3 & Obbligatorio & L'università deve poter ottenere la lista di tutti gli amministratori & Interno \\
+	\hiderowcolors
+	\caption{Tabella dei requisiti funzionali}
+\end{longtable}
+
+\subsection{Requisiti di qualità}
+
+\label{table:Tabella requisiti di qualita'}
+\rowcolors{2}{CRighePari}{CRigheDispari}
+\renewcommand*{\arraystretch}{1.2}
+\begin{longtable}[H]{p{2.5cm}p{2.5cm}p{5cm}p{2cm}}
+	\rowcolor{CHeader} 
+	\color{CHeaderText} \textbf{Identificatore} & \color{CHeaderText} \textbf{Importanza} & \color{CHeaderText} \textbf{Descrizione} & \color{CHeaderText} \textbf{Fonti} \\  
+	\endhead
+	R0Q1 & Obbligatorio & La progettazione e il codice devono seguire le norme e le metriche riportate nel documento allegato \pdq \vruno & Interno \\
+	R0Q2 & Obbligatorio & L'approccio di scrittura di \citGloss{JavaScript} deve essere promise Centric Approach & Capitolato \\  
+	R0Q2.1 & Obbligatorio & L'applicativo non deve fare uso di callback in presenza di alternative alle ultime & VER-2017-11-22.1 \\  
+	R0Q3 & Obbligatorio & Il codice \citGloss{JavaScript} deve attenersi al \citGloss{airbnb} \citGloss{JavaScript} style guide & Capitolato \\  
+	R0Q4 & Obbligatorio & Lo sviluppo deve essere supportato dall'utilizzo del tool ESLint & Capitolato \\  
+	R0Q5 & Obbligatorio & Dovrà essere fornito un manuale utente in lingua inglese che tratterà l'uso da parte di studenti e professori & VER-2017-11-22.2 \\  
+	R0Q6 & Obbligatorio & Dovrà essere fornito un manuale di deploy e di utilizzo da parte degli amministratori in lingua inglese & VER-2017-11-22.3 \\
+	R0Q7 & Obbligatorio & Il codice sorgente deve essere pubblicato sulla piattaforma \citGloss{GitHub}, BitBucket o GitLab & Capitolato \\  
+	R0Q8 & Obbligatorio & Il codice deve attenersi il più possibile alle guide linea de "App a 12 Fattori" & Capitolato \\ 
+	\hiderowcolors
+	\caption{Tabella dei requisiti di qualità}
+\end{longtable}
+
+\subsection{Requisiti di vincolo}
+
+\label{table:Tabella requisiti di vincolo}
+\rowcolors{2}{CRighePari}{CRigheDispari}
+\renewcommand*{\arraystretch}{1.2}
+\begin{longtable}[H]{p{2.5cm}p{2.5cm}p{5cm}p{2cm}}
+	\rowcolor{CHeader} 
+	\color{CHeaderText} \textbf{Identificatore} & \color{CHeaderText} \textbf{Importanza} & \color{CHeaderText} \textbf{Descrizione} & \color{CHeaderText} \textbf{Fonti} \\  
+	\endhead
+	R0V1 & Obbligatorio & L'applicativo dovrà essere sviluppato attraverso l'uso di tecnologie web & Capitolato \\  
+	R0V1.1 & Obbligatorio & L'applicativo necessiterà della piattaforma Node.js per soddisfare le dipendenze delle librerie richieste citate nei \citGloss{requisiti} sottostanti. & Capitolato \\  
+	R0V1.2 & Obbligatorio & L'applicativo dovrà essere sviluppato con \citGloss{JavaScript} 8 (ES8) & Capitolato \\  
+	R0V1.3 & Obbligatorio & L'applicativo dovrà essere sviluppato con il boilerplate \citGloss{Redux} Minimal & Capitolato \\  
+	R0V1.4 & Obbligatorio & L'applicativo dovrà essere sviluppato utilizzando \citGloss{React} & Capitolato \\  
+	R0V1.5 & Obbligatorio & L'applicativo dovrà essere sviluppato utilizzando \citGloss{Redux} & Capitolato \\  
+	R0V1.6 & Obbligatorio & Il deploy del sito andrà eseguito utilizzando Surge.sh & Capitolato \\  
+	R0V1.7 & Desiderabile & È desiderabile l'utilizzo di \citGloss{SCSS} in sostituzione a \citGloss{CSS} & Capitolato \\  
+	R0V2 & Obbligatorio & Gli \citGloss{smart contract} dovranno essere scritti in linguaggio \citGloss{Solidity} & Capitolato \\  
+	R0V3 & Obbligatorio & La connessione alla rete \citGloss{Ethereum} deve avvernire tramite MetaMask & Capitolato \\  
+	R0V3.1 & Obbligatorio & I test riguartandi gli \citGloss{smart contract} dovranno essere eseguiti in una rete locale ed almeno in una rete pubblica & Capitolato \\  
+	R0V3.2 & Obbligatorio & Il deploy degli \citGloss{smart contract} dovrà avvenire su rete locale testrpc e rete di test Ropsten & Capitolato \\  
+	R2V3.3 & Opzionale & È apprezzabile un deploy finale sulla rete principale di \citGloss{Ethereum} & Capitolato \\  
+	R0V4 & Obbligatorio & Lo sviluppo degli \citGloss{smart contract} dovrà avvenire utilizzando il framework Truffle & Capitolato \\  
+	R0V5 & Obbligatorio & L'applicativo deve essere accessibile ed utilizzabile dal \citGloss{browser} Mozilla \citGloss{Firefox} a partire dalla versione 52 & Interno \\
+	R0V6 & Obbligatorio & L'applicativo deve essere accessibile ed utilizzabile dal \citGloss{browser} Google \citGloss{Chrome} a partire dalla versione 57 & Interno \\
+	R1V7 & Desiderabile & L'applicativo deve essere accessibile ed utilizzabile da un \citGloss{browser} mobile, per le versioni supportate fare riferimento alle controparti PC di \citGloss{Firefox} e \citGloss{Chrome} & Interno \\  
+	R0V8 & Obbligatorio & Un utente non deve poter compiere azioni sul sistema senza aver fatto l'accesso ad esso & Capitolato \\ 
+	R0V9 & Obbligatorio & 'applicazione dei principi de "App a 12 Fattori" deve essere documentato ove possibile l'utilizzo & Capitolato, VER-2018-01-09 \\
+	R0V10 & Obbligatorio & Il codice sorgente deve essere pubblicato con licenza MIT & Capitolato \\  
+	\hiderowcolors
+	\caption{Tabella dei requisiti di vincolo}
+\end{longtable}
+
+
+
+
+
+	UC1 & Breve guida & R1F9 \\  
+	UC2 & Login & R0F6 \\  
+	UC2.1 & Login automatico & R0F6.1 \\  
+	UC2.2 & Visualizzazione messaggio di errore riguardo a chiave assente & R0F6.1 \\  
+	UC2.3 & Visualizzazione messaggio di errore riguardo a MetaMask assente & R0F6.1 \\  
+	UC2.4 & Visualizzazione messaggio di errore riguardo a chiave non registrata & R0F6.1 \\  
+	UC3 & Registrazione & R0F8 \\
+	UC3.1 & Inserimento nome & R0F8.1 \\  
+	UC3.2 & Inserimento cognome & R0F8.1 \\  
+	UC3.3 & Selezione categoria & R0F8.1 \\  
+	UC3.4 & Selezione corso & R0F8.1 \\  
+	UC3.5 & Visualizzazione errore campo non compilato & R0F8.1 \\  
+	UC3.6 & Visualizzazione errore utente già registrato & R0F8.1 \\  
+	UC3.7 & Visualizzazione errore chiave non presente & R0F8.1 \\  
+	UC3.8 & Visualizzazione errore MetaMask non installato & R0F8.1 \\  
+	UC4 & Logout & R0F7 \\  
+	UC5 & Amministrazione &  R0F1 \\ & & R0F2 \\ & & R0F3 \\  
+	UC5.1 & Gestione Utenti &  R0F1 \\  
+	UC5.1.1 & Visualizzazione lista di studenti & R0F1.4 \\  
+	UC5.1.2 & Visualizzazione lista di professori &  R0F2.1\\  
+	UC5.1.3 & Visualizzazione di utenti non abilitati & R0F1.1 \\  
+	UC5.1.4 & Abilitazione utente & R0F1.2 \\    
+	UC5.1.5 & Rimozione utente & R0F1.3 \\  
+	UC5.2 & Gestione anni accademici &  R0F3 \\  
+	UC5.2.1 & Aggiunta \citGloss{anno accademico} &  R0F3.1 \\  
+	UC5.2.2 & Visualizzazione lista di tutti gli anni accademici & R0F3.2 \\   
+	UC5.2.3 & Visualizzazione messaggio anno malformato & R0F3.1 \\  
+	UC5.2.4 & Visualizzazione messaggio di \citGloss{anno accademico} già presente & R0F3.1 \\  
+	UC5.2.5 & Visualizzazione messaggio anno non compilato &  R0F3.1 \\  
+	UC5.3 & Gestione corsi di laurea &  R0F3.3 \\   
+	UC5.3.1 & Creazione \citGloss{corso di laurea} &  R0F3.3.1 \\  
+	UC5.3.2 & Visualizzazione errore sigla invalida & R0F3.3.1 \\  
+	UC5.3.3 & Visualizzazione lista completa dei corsi &  R0F3.3.2 \\  
+	UC5.3.4 & Visualizzazione lista corsi di laurea per \citGloss{anno accademico} & R0F3.3.2  \\  
+	UC5.3.5 & Creazione esame in un corso &  R0F3.3.3\\  
+	UC5.3.6 & Visualizzazione errore nome esame non valido & R0F3.3.3  \\  
+	UC5.3.7 & Visualizzazione lista esami per \citGloss{corso di laurea} & R0F3.3.4 \\  
+	UC5.3.8 & Visualizzazione lista esami &  R0F3.3.4 \\  
+	UC5.3.9 & Visualizzazione dettagli esame & R0F3.3.4.1 \\  
+	UC5.3.10 & Associazione professore a esame & R0F3.3.4.2 \\
+	UC5.3.10.1 & Visualizzazione lista di esami non ancora assegnati & R0F3.3.4.2 \\ 
+	UC5.3.10.2 & Visualizzazione lista professori selezionato un esame & R0F3.3.4.2 \\ 
+	UC5.3.10.3 & Associazione professore all'esame & R0F3.3.4.2 \\ 
+	%-----------------------------------------------------
+	UC6 & Gestione aspetti relativi agli esami & R0F4 \\  
+	UC6.1 & Visualizzazione lista degli esami & R0F4.1 \\  
+	UC6.2 & Visualizzazione lista degli studenti & R0F4.2  \\  
+	UC6.3 & Registrazione valutazione di un esame & R0F4.3 \\  
+	UC7 & Gestione aspetti relativi allo studente & R0F5 \\  
+	UC7.1 & Visualizzazione lista degli esami & R0F5.1 \\  
+	UC7.1.1 & Visualizzazione dei crediti degli esami ai quali è iscritto & R0F5.1.1 \\  
+	UC7.1.2 & Visualizzazione della obbligatorietà degli esami ai quali è iscritto & R0F5.1.2 \\  
+	UC7.1.3 & Visualizzazione delle valutazioni degli esami ai quali è iscritto	& R0F5.1.3 \\  
+	UC7.2 & Visualizzazione degli esami opzionali e dei loro crediti & R0F5.2 \\  
+	UC7.3 & Registrazione ad un esame opzionale & R0F5.2.2 \\  
+	UC7.4 & Visualizzazione delle informazioni relative ai crediti & R0F5.1.4 \\ & & R0F5.2.1 \\  
+	UC8 & Gestione degli amministratori & R0F11 \\  
+	UC8.1 & Aggiunta di un amministratore & R0F11.1 \\  
+	UC8.1.1 & Inserimento \citGloss{chiave pubblica} & R0F11.1 \\  
+	UC8.1.2 & Visualizzazione messaggio di errore riguardo a chiave mal formata & R0F11.1 \\  
+	UC8.1.3 & Visualizzazione messaggio di errore riguardo a chiave già registrata & R0F11.1 \\  
+	UC8.2 & Visualizzazione lista degli amministratori & R0F11.3 \\  
+	UC8.3 & Rimozione amministratore & R0F11.2 \\  
+	UC9 & Visualizzazione quantità di \citGloss{Gas}, \citGloss{Ether} e costo delle operazioni & R0F10 \\  
+	\hiderowcolors
+	\caption{Tabella di tracciamento fonti-requisiti}
+\end{longtable}

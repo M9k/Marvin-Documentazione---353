@@ -2,9 +2,27 @@
 \usepackage{subfiles}
 \usepackage{../../common/style}
 \lfoot{\g{} \vruno}
+
+\newglossary*{entry}{Glossario}
+\makeglossary
 \loadglsentries{Definizioni.tex}
 
-
+% Tolgo la numerazione per l'indice
+\setcounter{secnumdepth}{0}
+% Tolgo il titolo alla parte di glossario
+\renewcommand{\glossarysection}[2][]{}
+% Stile per il glossario
+\newglossarystyle{glossaryStyle}{
+	\setcounter{page}{1}
+	\setglossarystyle{altlistgroup}
+	\renewcommand*{\glsgroupheading}[1]{
+		\newpage
+		\section{##1}
+		\vspace*{-\baselineskip}
+		% Solo per fare un po' di spazio tra la lettera e le voci
+		\item\makebox[\linewidth]{\hspace*{2cm}}
+	}
+}
 
 \glsaddall
 
@@ -20,7 +38,7 @@
 	\vfill
 	\Huge{GLOSSARIO}\\
 	\vfill
-	\Large Versione 1.0.0 in data \nData{10}{01}{2018}\\
+	\Large Versione \vrdue in data \nData{10}{01}{2018}\\ %TODO: cambiare data
 	\large Gruppo 353 - Progetto \progetto \\
 	\vfill
 	\normalsize Informazioni sul documento\\
@@ -53,7 +71,9 @@
 \end{titlepage}
 \pagenumbering{roman}
 \subfile{diariomodifiche}
+\tableofcontents
 \pagenumbering{arabic}
-\printglossary
+
+\printglossary[type=entry, style=glossaryStyle, nonumberlist]
  
 \end{document}

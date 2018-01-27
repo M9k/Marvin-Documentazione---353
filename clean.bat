@@ -5,3 +5,13 @@ DEL /S *.glo
 DEL /S *.ist
 DEL /S *.out
 DEL /S *.toc
+DEL /S *.entry-glo
+DEL /S *.lot
+DEL /S *.lof
+DEL /S *.gz
+DEL /S *.acr
+DEL /S *.alg
+DEL /S *.entry-glg
+DEL /S *.entry-gls
+DEL /S *.glg
+DEL /S *.gls

@@ -24,13 +24,17 @@ NOTE
 #BACKUPDIR="/tmp/backup" #cartella di backup, verificare supporto travis/windows
 #rm -r $BACKUPDIR/ &>/dev/null
 
+# Compila due volte
+/bin/bash compile.sh
+/bin/bash compile.sh
+
 #prima compilazione
-COMPILELOG=$(/bin/bash compile.sh) #Prova a compilare salvandosi il risultato
-RESULT="${COMPILELOG##*$'\n'}" #Si trova l'ultima riga dell'output di compilazione
-if [[ $RESULT != "ok" ]]; then
-  echo "LE MODIFCHE EFFETTUATE SONO ERRATE, CONTROLLARE I FILE MODIFICATI"
-  exit 10001;
-fi
+#COMPILELOG=$(/bin/bash compile.sh) #Prova a compilare salvandosi il risultato
+#RESULT="${COMPILELOG##*$'\n'}" #Si trova l'ultima riga dell'output di compilazione
+#if [[ $RESULT != "ok" ]]; then
+#  echo "LE MODIFCHE EFFETTUATE SONO ERRATE, CONTROLLARE I FILE MODIFICATI"
+#  exit 10001;
+#fi
 
 #UPDATE DEL GLOSSARIO
 #mkdir $BACKUPDIR/ &>/dev/null #Crea la cartella di backup

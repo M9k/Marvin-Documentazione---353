@@ -2,9 +2,6 @@
 \usepackage{subfiles}
 \usepackage{../../common/style}
 \lfoot{\g{} \vruno}
-
-\newglossary*{entry}{Glossario}
-\makeglossary
 \loadglsentries{Definizioni.tex}
 
 % Tolgo la numerazione per l'indice
@@ -38,7 +35,7 @@
 	\vfill
 	\Huge{GLOSSARIO}\\
 	\vfill
-	\Large Versione \vrdue in data \nData{10}{01}{2018}\\ %TODO: cambiare data
+	\Large Versione 1.0.0 in data \nData{10}{01}{2018}\\
 	\large Gruppo 353 - Progetto \progetto \\
 	\vfill
 	\normalsize Informazioni sul documento\\
@@ -73,7 +70,6 @@
 \subfile{diariomodifiche}
 \tableofcontents
 \pagenumbering{arabic}
-
-\printglossary[type=entry, style=glossaryStyle, nonumberlist]
+\printglossary[style=glossaryStyle, nonumberlist]
  
 \end{document}

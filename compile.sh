@@ -9,7 +9,9 @@ USAGE
 
 cd 'Esterni'
 cd Glossario
-pdflatex -interaction=nonstopmode -halt-on-error GlossarioEST.tex && echo "ok" || exit  2
+pdflatex -interaction=nonstopmode -halt-on-error GlossarioEST.tex && echo "ok" || exit  10001
+pdflatex -interaction=nonstopmode -halt-on-error GlossarioEST.tex && echo "ok" || exit  10002
+pdflatex -interaction=nonstopmode -halt-on-error GlossarioEST.tex && echo "ok" || exit  10003
 cd ..
 cd ..
 

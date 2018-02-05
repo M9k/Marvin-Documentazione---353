@@ -24,8 +24,6 @@ NOTE
 #BACKUPDIR="/tmp/backup" #cartella di backup, verificare supporto travis/windows
 #rm -r $BACKUPDIR/ &>/dev/null
 
-# Compila due volte
-/bin/bash compile.sh
 /bin/bash compile.sh
 
 #prima compilazione

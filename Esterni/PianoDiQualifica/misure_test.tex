@@ -1,7 +1,7 @@
 \documentclass[PianoDiProgetto.tex]{subfiles}
 
 \begin{document}
-
+\begin{comment}
 \chapter{Misure e Metriche per i Test}
 % M --> Metrica
 % TS --> Test
@@ -36,7 +36,7 @@ Questa categoria di misurazioni mira a valutare l'efficienza di scrittura ed ese
 	\item \textlink{MTSA005TAB}{MTSA005}{\textbf{MTSA005 Tempo medio per il testing dei bug fix:}} Indica la quantità di tempo medio per testare la risoluzione di un difetto, utile per avere un'idea dell'impatto del testing sull'implementazione di una modifica
 	\[TTCD=\dfrac{BFTT}{NDT}\]
 	Dove BFTT indica il tempo usato per testare le la correzione dei difetti e NDT il numero di difetti trovati.
-	\end{comment}
+	
 \end{itemize}
 \subsection{Efficacia}
 Questa categoria di misurazioni mira a valutare l'efficacia dell'esecuzione dei test.
@@ -45,6 +45,11 @@ Questa categoria di misurazioni mira a valutare l'efficacia dell'esecuzione dei 
 	\[CD=\dfrac{DTT}{TNDT}*100\]
 	Dove DTT indica il numero di difetti trovati durante l'esecuzione dei test, e TNDT la somma dei difetti trovati nei test e quelli trovati durante l'utilizzo del prodotto.
 \end{itemize}
+
+
+
+
+
 \section{Per i test ad alto livello}
 \subsection{Tracciamento}
 Questa categoria di misurazioni mira a tenere traccia delle gestioni dei bug trovati.
@@ -72,7 +77,9 @@ Questa categoria di misurazioni si occupa di tenere traccia dell'esecuzione dei 
 	\[TID=\dfrac{NM}{NDM}\]
 	Dove NM indica il numero di modifiche e NDM i difetti attribuibili ad esse.
 \end{itemize}
-\end{comment}
+
+
+
 \section{Tabella delle metriche}
 Questa tabella indica i \textbf{range} di accettazione e ottimalità per le misure effettuate sui test, per le misure effettuate su tutti i tipi di test saranno presenti due valori per range, TM, per i test di modulo e TH, per i test ad alto livello.\\
 Una piccola legenda per facilitare la lettura della tabella: \\
@@ -109,4 +116,6 @@ Una piccola legenda per facilitare la lettura della tabella: \\
 		\vspace{-1em}
 	\end{center}
 \end{table}
+\end{comment}
+
 \end{document}

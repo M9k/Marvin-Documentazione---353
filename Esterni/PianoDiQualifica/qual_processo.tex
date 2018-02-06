@@ -119,6 +119,100 @@ Indice numerico incrementato partendo da zero per ogni giorno in cui i servizi u
 Indice numerico incrementato partendo da 0 per ogni rischio che si manifesta senza essere stato individuato precedentemente nella lista di rischi.
 Viene resettato all'inizio di ogni nuova fase di progetto.
 
+
+\subsection{PROC004 - Gestione Test}
+% M --> Metrica
+% TS --> Test
+% M/H/A --> Testi di modulo/alto livello/tutti
+% 00n --> Numero progressivo	
+Per garantire una gestione efficacie dell'analisi dinamica è necessario stabilire delle misurazioni sull'esecuzione di essa.
+Le misure elencate qui sotto sono consigliate dal blog di una azienda che produce prodotti di riferimento per la gestione dei test, le informazioni possono essere trovate nei riferimenti informativi.
+\subsubsection{Per tutti i test}
+\paragraph{Tracciamento}
+Questa categoria di misurazioni si occupa di tenere traccia delle esecuzioni dei test e relativi successi fallimenti tramite le seguenti metriche:
+\begin{itemize}
+	\item \textlink{MTSA001TAB}{MTSA001}{\textbf{MTSA001 Percentuale di test case passati:}} indica la percentuale di test case passati, molto utile per capire a che punto si è nella fase di sviluppo della componente. La sua formula di misurazione è la seguente:
+	\[PPT=\dfrac{PT}{ET}*100\]
+	Dove PT indica il numero di test passati e ET il numero di test eseguiti;
+	\item \textlink{MTSA002TAB}{MTSA002}{\textbf{MTSA002 Percentuale di test case falliti:}} complementare della misurazione precedente. La sua formula di misurazione è la seguente:
+	\[PFT=\dfrac{FT}{ET}*100\]
+	Dove FT indica il numero di test falliti ed ET quello di test eseguiti;
+	\item \textlink{MTSA003TAB}{MTSA003}{\textbf{MTSA003 Tempo medio del team di sviluppo per la risoluzione di errori:}} indica la quantità di tempo medio utilizzato per risolvere un bug dal team di sviluppo, utile per capire l'impatto medio dell'introduzione di un bug sui tempi di sviluppo. La sua formula di misurazione è la seguente:
+	\[TMRE=\dfrac{TTBF}{TB}\]
+	Dove TTBF indica il tempo totale speso per la correzione dei difetti (sviluppo e test) e TB il numero totale di bug trovati.
+\end{itemize}
+
+\paragraph{Efficienza}
+Questa categoria di misurazioni mira a valutare l'efficienza di scrittura ed esecuzione dei test.
+\begin{itemize}
+	\item \textlink{MTSA004TAB}{MTSA004}{\textbf{MTSA004 Efficienza della progettazione dei test:}} Indica il tempo medio per la scrittura di un test, un numero troppo elevato potrebbe indicare che si stanno progettando test troppo complessi o che si sta cercando di testare parti del codice superflue. La sua formula di misurazione è la seguente:
+	\[TDE=\dfrac{NTP}{TST}\]
+	Dove NTP indica il numero totale di test progettati e TST il tempo per la loro stesura.
+	\begin{comment}
+	\item \textlink{MTSA005TAB}{MTSA005}{\textbf{MTSA005 Tempo medio per il testing dei bug fix:}} Indica la quantità di tempo medio per testare la risoluzione di un difetto, utile per avere un'idea dell'impatto del testing sull'implementazione di una modifica
+	\[TTCD=\dfrac{BFTT}{NDT}\]
+	Dove BFTT indica il tempo usato per testare le la correzione dei difetti e NDT il numero di difetti trovati.
+	\end{comment}
+\end{itemize}
+\paragraph{Efficacia}
+Questa categoria di misurazioni mira a valutare l'efficacia dell'esecuzione dei test.
+\begin{itemize}
+	\item \textlink{MTSA005TAB}{MTSA005}{\textbf{MTSA005 Contenimento dei difetti:}} Indica il rapporto percentuale tra i bug trovati durante i test e i bug trovati durante l'utilizzo del prodotto. Un numero troppo basso di questo indice suggerisce una scarsa progettazione dei test, richiedendo un intervento di analisi da parte del team di sviluppo. La sua formula di misurazione è la seguente:
+	\[CD=\dfrac{DTT}{TNDT}*100\]
+	Dove DTT indica il numero di difetti trovati durante l'esecuzione dei test, e TNDT la somma dei difetti trovati nei test e quelli trovati durante l'utilizzo del prodotto.
+\end{itemize}
+
+\subsubsection{Per i test ad alto livello}
+\paragraph{Tracciamento}
+Questa categoria di misurazioni mira a tenere traccia delle gestioni dei bug trovati.
+\begin{itemize}
+	\item \textlink{MTSH001TAB}{MTSH001}{\textbf{MTSH001 Percentuale di difetti sistemati:}} indica la percentuale di difetti sistemati sul totale dei difetti rilevati, utile per avere una panoramica dei bug da risolvere: un numero troppo basso potrebbe costringere il team a fermare lo sviluppo di nuove funzionalità per concentrarsi sulla correzione delle parti già esistenti. La sua formula di misurazione è la seguente:
+	\[PDS=\dfrac{DS}{DR}*100\]
+	Dove DS indica i difetti sistemati mentre DR quelli segnalati.	
+\end{itemize}
+\paragraph{Copertura}
+Questa categoria di misurazioni si occupa di tenere traccia dell'esecuzione dei test e della copertura che questi hanno sui \citGloss{requisiti}.
+\begin{itemize}
+	\item \textlink{MTSH002TAB}{MTSH002}{\textbf{MTSH002 Copertura dei test eseguiti:}} Indica la percentuale di test già eseguiti sul totale di test da eseguire, utile per monitorare il lavoro del team dei verificatori. La sua formula di misurazione è la seguente:
+	\[CTE=\dfrac{TE}{TT}*100\]
+	Dove TE indica i test eseguiti e TT il numero di test totali;
+	\item \textlink{MTSH003TAB}{MTSH003}{\textbf{MTSH003 Copertura dei requisiti:}} Indica la percentuale di requisiti coperti dai test sui requisiti totali, utile per capire quante parti del prodotto finale hanno un test associato, non da indicazioni sullo stato di avanzamento del soddisfacimento del requisito. La sua formula di misurazione è la seguente:
+	\[CR=\dfrac{RC}{RT}*100\]
+	Dove RC indica il numero di \citGloss{requisiti} coperti mentre RT quelli totali;
+	\item \textlink{MTSH004TAB}{MTSH004}{\textbf{MTSH004 Difetti per requisito:}} Indica il numero di difetti trovati nel test del requisito, da informazioni sullo stato di soddisfacimento del requisito: se ha 0 difetti, vuol dire che il requisito è stato trovato e considerato senza errori, quindi soddisfatto.
+	Non essendo calcolabile, la misurazione si mostra come una tabella avente nella prima colonna il nome del requisito, e nella seconda i difetti ad esso associati.
+\end{itemize}
+\begin{comment}
+\paragraph{Efficacia dei cambiamenti}
+\begin{itemize}
+\item \textlink{MTSH005TAB}{MTSH005}{\textbf{MTSH005 Tasso di iniezione dei difetti:}} Indica il tasso di errori attribuibili all'introduzione di una modifica, la conoscenza di questo numero aiuta a stimare il tempo medio per la scoperta e correzione di errori introdotti dalle modifiche, aiutando la stima dei costi per l'introduzione di nuove funzionalità
+\[TID=\dfrac{NM}{NDM}\]
+Dove NM indica il numero di modifiche e NDM i difetti attribuibili ad esse.
+\end{itemize}
+\end{comment}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 \section{Tabella dei processi}
 % ID Processo
 % PROC --> metrica
@@ -181,6 +275,44 @@ Questa tabella indica i \textbf{range} di accettazione e di ottimalità per le m
 			
 		\end{tabu}
 		\caption{Tabella delle metriche della qualità di processo}
+		\vspace{-1em}
+	\end{center}
+\end{table}
+
+\section{Tabella delle metriche}
+Questa tabella indica i \textbf{range} di accettazione e ottimalità per le misure effettuate sui test, per le misure effettuate su tutti i tipi di test saranno presenti due valori per range, TM, per i test di modulo e TH, per i test ad alto livello.\\
+Una piccola legenda per facilitare la lettura della tabella: \\
+\begin{itemize}
+	\item \textbf{PRO:} percentuale requisiti obbligatori;
+	\item \textbf{PRF:} percentuale requisiti facoltativi;
+	\item \textbf{xh:} dove x è un numero, ore.
+\end{itemize}
+
+\begin{table}[H]
+	\begin{center}
+		\begin{tabu} to \textwidth {
+				>{\centering}m{0.15\linewidth}
+				>{\centering}m{0.45\linewidth}
+				>{\centering}m{0.18\linewidth} 
+				>{\centering\arraybackslash}m{0.17\linewidth}
+			}
+			\tableHeaderStyle
+			\textbf{ID} & \textbf{Nome} & \textbf{Range di accettazione} & \textbf{Range di ottimalità}\\
+			\multicolumn{4}{c}{\textbf{Per tutti i test}}\\
+			\textlink{MTSA001}{MTSA001TAB}{MTSA001} & Percentuale di test case passati & 100\%-100\%(TM) PRC-100\%(TH) & 100\%-100\%(TM) 100\%-100\%(TH) \\ 
+			\textlink{MTSA002}{MTSA002TAB}{MTSA002} & Percentuale di test case falliti & 0\%-0\%(TM) 0\%-PRF(TH) & 0\%-0\%(TM) 0\%-0\%(TH) \\
+			\textlink{MTSA003}{MTSA003TAB}{MTSA003} & Tempo medio del team di sviluppo per la risoluzione di errori& 0h-4h(TM) 0h-4h(TH) & 0h-2h(TM) 0h-2h(TH) \\
+			\textlink{MTSA004}{MTSA004TAB}{MTSA004} & Efficienza della progettazione dei test & 0.5h-3h & 1h-2h \\
+			%\textlink{MTSA005}{MTSA005TAB}{MTSA005} & Tempo medio per il testing dei bug fix & ? & ? \\
+			\textlink{MTSA005}{MTSA005TAB}{MTSA005} & Contenimento dei difetti & 60\%-100\% & 80\%-100\% \\
+			\multicolumn{4}{c}{\textbf{Per i test ad alto livello}}\\
+			\textlink{MTSH001}{MTSH001TAB}{MTSH001} & Percentuale di difetti sistemati & 90\%-100\% & 98\%-100\% \\
+			\textlink{MTSH002}{MTSH002TAB}{MTSH002} & Copertura dei test eseguiti & 80\%-100\% & 95\%-100\%  \\
+			\textlink{MTSH003}{MTSH003TAB}{MTSH003} & Copertura dei requisiti & PRO-100\% & 100\%-100\% \\
+			\textlink{MTSH004}{MTSH004TAB}{MTSH004} & Difetti per requisito & Variabile in base alla gravità del difetto & 0  \\
+			%\textlink{MTSH005}{MTSH005TAB}{MTSH005} & Tasso di iniezione dei difetti & ? & ? \\			
+		\end{tabu}
+		\caption{Tabella delle metriche per i test}
 		\vspace{-1em}
 	\end{center}
 \end{table}

@@ -8,21 +8,39 @@ L'obiettivo finale del prodotto è la realizzazione di un simulatore di \citGlos
 La peculiarità del sistema consiste nel suo dominio tecnologico: la quasi totalità della logica applicativa dovrà essere consegnata nella \citGloss{blockchain} pubblica "\citGloss{Ethereum}" ed esposta agli utenti tramite un'interfaccia web. \\
 Lo scopo fondamentale è dimostrare la concreta possibilità di sviluppare applicazioni decentralizzate che non riguardino esclusivamente il mondo delle criptovalute.
 
-\section{Funzioni del prodotto}
+\section{Funzionalità del prodotto}
 Le funzioni del prodotto si avvicinano a quelle basilari offerte dal sistema \citGloss{Uniweb} dell'Università di Padova:
 \begin{itemize}
 	\item La possibilità per gli studenti di iscriversi ad un \citGloss{corso di laurea} e gestire il proprio percorso accademico;
 	\item La possibilità per i professori di gestire i propri corsi di laurea e gli esami erogati agli studenti;
-	\item La possibilità per l'università di gestire il personale amministrativo che si occuperà di organizzare l'\citGloss{anno accademico} e gestire le interazioni di studenti e professori.
+	\item La possibilità per il gestore dell'università e per gli amministratori di gestire gli account degli studenti e dei professori e di inserire anni accademici, corsi di laurea ed esami.
 \end{itemize}
 Data la particolarità della rete \citGloss{Ethereum}, in cui ogni operazione di scrittura ha un costo economico, l'applicativo fornirà all'utente, in maniera preventiva, la possibilità di visualizzare la stima del prezzo di ogni operazione da effettuare.
 
+\subsection{Funzionalità offerte agli studenti}
+Gli studenti avranno la possibilità di consultare gli esiti dei propri esami e, ove il corso lo prevede, l'iscrizione ad esami opzionali.\\
+Oltre a ciò sarà presente una schermata riassuntiva che permetta allo studente di conoscere il numero di crediti che ha accumulato fino a quel momento e quanti ne servono per raggiungere la laurea.
+
+\subsection{Funzionalità offerte ai professori}
+I professori avranno la possibilità di consultare l'elenco degli esami di loro competenza, visualizzando per ognuno gli studenti iscritti ed assegnare le valutazioni ad essi.
+
+\subsection{Funzionalità offerte agli amministratori}
+Gli amministratori avranno il compito di gestire l'inserimento dei corsi di laurea all'interno degli anni accademici e la creazione di esami all'interno dei corsi.\\
+Questo compito è stato delegato a loro e non viene gestito direttamente dal gestore dell'università soprattutto per motivi pratici e di sicurezza, in quanto l'aggiunta degli esami sarebbe un lavoro oneroso da svolgere singolarmente e la condivisione della chiave privata relativa alla gestione dell'università avrebbe portato a problemi di sicurezza.\\
+Ulteriormente avranno il compito di approvare o rimuovere le richieste di sottoscrizione all'università da parte di professori e studenti ed avranno la possibilità di rimuoverli successivamente.
+
+
+\subsection{Funzionalità offerte al gestore dell'università}
+L'università avrà il compito di gestire gli amministratori, inserendoli e rimuovendoli dal sistema.\\
+Un secondo compito di sua competenza è la creazione degli anni accademici, mentre l'inserimento dei corsi e degli esami è stato delegato agli amministratori per i motivi precedentemente elencati.
 
 \section{Caratteristiche degli utenti}
 Il prodotto si rivolge ad una classe d'utenza collusa con il mondo accademico.\\
 L'utente, per accedere al sistema, dovrà possedere alcune nozioni base sul funzionamento della rete \citGloss{Ethereum} e del plugin \citGloss{Metamask}, conoscenze che potranno essere acquisite tramite una breve guida fornita dall'applicazione.
+
 \section{Piattaforma d'esecuzione}
 Il prodotto finale può essere suddiviso in due macro parti con due diverse piattaforme d'esecuzione: il backend verrà ospitato dalla rete \citGloss{Ethereum}, l'interfacciamento ad esso (frontend) sarà fruibile tramite un qualsiasi \citGloss{browser} web predisposto all'installazione del plugin \citGloss{Metamask}.
+
 \section{Vincoli generali}
 L'utente, per usufruire del servizio, dovrà possedere un \citGloss{browser} con installato il plugin \citGloss{Metamask}, una connessione a internet e una coppia di chiavi (pubblica-privata) compatibile con la rete \citGloss{Ethereum}.	
 

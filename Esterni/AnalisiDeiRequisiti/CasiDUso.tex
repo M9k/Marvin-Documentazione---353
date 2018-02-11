@@ -711,9 +711,9 @@
 \subsection{UC10.1 - Aggiunta di un amministratore}
 \begin{itemize}
 	\item \textbf{Attori primari:} università;
-	\item \textbf{Scopo e descrizione:} l'utente che rappresenta l'università aggiunge un nuovo amministratore nel sistema;
-	\item \textbf{Precondizione:} l'utente che rappresenta l'università ha scelto di aggiungere un nuovo amministratore; 
-	\item \textbf{Postcondizione:} il nuovo amministratore è stato inserito nel sistema.
+	\item \textbf{Scopo e descrizione:} l'utente che rappresenta l'università aggiunge un nuovo amministratore nel sistema, abilitandolo ad operare come definito dal sistema;
+	\item \textbf{Precondizione:} l'utente che rappresenta l'università desidera l'aggiunta di un nuovo amministratore e possiede già l'indirizzo dell'amministratore, comunicatogli precedentemente. L'indirizzo si suppone essere precedentemente generato dall'amministratore utilizzando \citGloss{MetaMask} o un qualsiasi altro generatore; 
+	\item \textbf{Postcondizione:} il nuovo amministratore è stato inserito nel sistema e può operare come tale.
 \end{itemize}
 
 \begin{figure}[H]

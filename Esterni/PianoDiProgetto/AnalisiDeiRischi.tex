@@ -10,18 +10,18 @@ Ogni rischio è classificato secondo la seguente convenzione:\\
 	\item La prima lettera (R) è l'abbreviazione di rischio;
 	\item Il secondo valore indica la \textbf{tipologia} di rischio. E può assumere il valore:
 	\begin{itemize}
-		\item \textbf{M:} indica rischi legati ai membri del gruppo 353;
+		\item \textbf{M:} indica rischi legati ai membri del gruppo \gruppo;
 		\item \textbf{T:} indica rischi legati ai mezzi tecnologici;
 		\item \textbf{O:} indica rischi legati all’organizzazione del lavoro;
 		\item \textbf{R:} indica rischi legati ai requisiti.
 	\end{itemize}
 	\item L'\textbf{identificativo} indica invece un numero progressivo.
 \end{itemize}
-%Per migliorare la lettura della tabella, l'attualizzazione al periodo corrente viene riportata solo per i rischi che si sono veramente verificati, in una tabella separata in fondo al documento.
 
 % per tabelle, alterna i colori delle righe		
 \taburowcolors[2] 2{tableLineOne .. tableLineTwo}
 \tabulinesep = ^3mm_2mm
+
 \begin{longtabu} to \linewidth { 
 		>{\centering}m{.17\linewidth} 
 		>{\raggedright}m{.33\linewidth} 
@@ -37,7 +37,7 @@ Ogni rischio è classificato secondo la seguente convenzione:\\
 	
 	\taburowcolors{tableLineOne..tableLineTwo}
 	
-	%Primo rischio
+	% RISCHI MEMBRI GRUPPO 353
 	\rowcolor{tableLineOne} \textbf{Scarsa esperienza RM001}
 	&
 	{\small Nessun membro del gruppo ha mai lavorato su un progetto così impegnativo, ciò potrebbe produrre dei ritardi.} 
@@ -47,22 +47,8 @@ Ogni rischio è classificato secondo la seguente convenzione:\\
 	\rowcolor{tableLineTwo} Piano di contingenza: 
 	&
 	 \multicolumn{3}{m{0.8075\linewidth}}{\small  I compiti ad elevata difficoltà verranno affidati a membri con maggiore esperienza. }\\
-	\hhline{====}
-
-
-	%Codice per Attualizzazione 
-	%\multicolumn{4}{c}{ \cellcolor{tableLineOne} \textbf{Attualizzazione}} \\*
-	%\rowcolor{tableLineTwo} \textbf{Periodo} 
-	%&
-	% \multicolumn{3}{c}{\textbf{Mitigazione}} \\*
-	%\rowcolor{tableLineOne} Prova prova
-	
-	%&
-	%  \multicolumn{3}{m{0.8075\linewidth}}{Prova prova prova prova prova prova prova prova prova prova prova prova prova.} 
-
-	%Fine codice per Attualizzazione	
+	\hline	
 		
-	%Secondo rischio
 	\rowcolor{tableLineOne} \textbf{Contrasti nel gruppo RM002}
 	&
 	 {\small Quest'anno i gruppi sono stati formati in modo casuale. Ogni membro si trova a fare il progetto con un gruppo di persone che non conosceva. Questo potrebbe portare a tensioni e conflitti.}
@@ -75,10 +61,8 @@ Ogni rischio è classificato secondo la seguente convenzione:\\
 	&
 	\multicolumn{3}{m{0.8075\linewidth}}{\small  I ruoli saranno ruotati per minimizzare i contatti tra i membri in 
 		conflitto.  }\\
-	\hhline{====}
+	\hline
 	
-	
-	%Terzo rischio
 	\rowcolor{tableLineOne} \textbf{Disponibilità dei membri RM003} 
 	&
 	{\small Alcuni membri del gruppo \gruppo sono anche lavoratori. Quindi il tempo dedicato al progetto da questi membri potrebbe essere limitato.}
@@ -92,13 +76,9 @@ Ogni rischio è classificato secondo la seguente convenzione:\\
 	\multicolumn{3}{m{0.8075\linewidth}}
 	{\small Il carico di lavoro verrà ridistribuito tra i membri con maggiore 
 		disponibilità.}\\
-	\hhline{====}
+	\hhline{====}	
 	
-	
-
-	
-	
-	%Quarto rischio
+	% RISCHI MEZZI TECNOLOGICI
 	\rowcolor{tableLineOne} \textbf{Tecnologie da usare RT001}
 	&
 	{\small Le tecnologie da studiare sono molto recenti e la documentazione fornita è spesso molto limitata e/o poco approfondita. Il tempo di apprendimento per queste tecnologie potrebbe causare dei ritardi nello svolgimento dei lavori.}
@@ -110,13 +90,8 @@ Ogni rischio è classificato secondo la seguente convenzione:\\
 	\rowcolor{tableLineTwo} Piano di contingenza:
 	&
 	\multicolumn{3}{m{0.8075\linewidth}}{\small In casi gravi i membri con più esperienza e familiarità con quella tecnologia dovranno aiutare il membro in difficoltà, ridistribuendo il carico di lavoro.}\\
-
-
+	\hline
 	
-	\hhline{====}
-	
-	
-	%Quinto rischio
 	\rowcolor{tableLineOne} \textbf{Strumenti software RT002}
 	&
 	{\small Il gruppo si affida su software di terze parti e piattaforme online, eventuali disfunzioni potrebbero causare errori o perdite di dati.}
@@ -130,10 +105,8 @@ Ogni rischio è classificato secondo la seguente convenzione:\\
 	&
 	\multicolumn{3}{m{0.8075\linewidth}}{\small Si effettueranno backup bi-settimanali dei 
 		dati \citGloss{Asana} e \citGloss{GitHub}, basandosi sull'affidabilità degli strumenti scelti. Potrà essere utilizzato anche Turbo\footnote{\nURI{https://turbo.net/}} in caso di malfunzionamenti per avere un'immediata disponibilità dei software da utilizzare.}\\
-	\hhline{====}
+	\hline
 	
-	
-		%Sesto rischio
 	\rowcolor{tableLineOne} \textbf{Problemi hardware RT003}
 	&
 	{\small Ogni membro utilizza il computer personale per lavorare al progetto, guasti hardware potrebbero causare perdite di dati e/o di tempo.}
@@ -145,9 +118,35 @@ Ogni rischio è classificato secondo la seguente convenzione:\\
 	\rowcolor{tableLineTwo} Piano di contingenza:
 	&
 	\multicolumn{3}{m{0.8075\linewidth}}{\small Ogni componente del gruppo dovrà effettuare il backup di tutti i file relativi al progetto, compresi i file di configurazione degli ambienti di sviluppo ed eventuali appunti personali.}\\
+	\hline
+	
+	\rowcolor{tableLineOne} \textbf{Problemi di connessione RT004}
+	&
+	{\small Essendo la maggior parte dei membri del gruppo pendolari, spesso le riunioni di gruppo potranno essere effettuate tramite Skype. Il malfunzionamento della connessione Internet di uno dei membri potrebbe impedire la sua partecipazione.}
+	&
+	{\small Sarà compito di ogni membro avvisare gli altri in caso di guasti o malfunzionamenti alla connessione Internet.}
+	&
+	\shortstack{Occorrenza: \\ \textbf{bassa} 
+		\vspace{0.6em}\\ Pericolosità: \\ \textbf{media} }\\
+	\rowcolor{tableLineTwo} Piano di contingenza:
+	&
+	\multicolumn{3}{m{0.8075\linewidth}}{\small Chi non riuscirà a partecipare alla conferenza Skype potrà interagire con gli altri membri utilizzando Slack}\\
+	\hline
+	
+	\rowcolor{tableLineOne} \textbf{Configurazione software RT005}
+	&
+	{\small Siccome il progetto richiede l'utilizzo di molte tecnologie, sarà compito dei singoli membri predisporre e configurare correttamente l'ambite di sviluppo nei propri computer.}
+	&
+	{\small Sarà compito di ogni membro verificare che nel proprio pc l'ambiente sia correttamente configurato, in quanto, in caso contrario, si potrebbero anche produrre dei ritardi o codice non corretto.}
+	&
+	\shortstack{Occorrenza: \\ \textbf{media} 
+		\vspace{0.6em}\\ Pericolosità: \\ \textbf{molto alta} }\\
+	\rowcolor{tableLineTwo} Piano di contingenza:
+	&
+	\multicolumn{3}{m{0.8075\linewidth}}{\small Si dovrà il prima possibile avvisare gli altri membri del gruppo, cercando di risolvere il problema.}\\
 	\hhline{====}
 	
-	%Settimo rischio
+	% RISCHI ORGANIZZAZIONE DEL LAVORO
 	\rowcolor{tableLineOne} \textbf{Costi delle attività RO001}
 	 &
 	{\small La pianificazione prevede un costo per le attività. Essendo tutti membri del gruppo inesperti, è possibile che i tempi vengano calcolati in modo errato.}
@@ -159,11 +158,37 @@ Ogni rischio è classificato secondo la seguente convenzione:\\
 	\rowcolor{tableLineTwo} Piano di contingenza:
 	&
 	\multicolumn{3}{m{0.8075\linewidth}}{\small Se il ritardo è ingente, il Responsabile dovrà ridistribuire il carico di lavoro fra gli altri membri avendo come obiettivo primario quello di non far slittare le milestone.}\\
+	\hline
+	
+	\rowcolor{tableLineOne} \textbf{Rotazione dei ruoli RO002}
+	&
+	{\small La pianificazione prevede una corretta rotazione dei ruoli di progetto tra i componenti del gruppo durante tutta la durata del progetto.}
+	&
+	{\small Sarà compito del responsabile verificare periodicamente che la rotazione stia avvedendo correttamente e che nessuno abbia problemi a ricoprire ruoli mai ricoperti in precedenza.}
+	&
+	\shortstack{Occorrenza: \\ \textbf{media-bassa} \vspace{0.6em}\\  
+		Pericolosità: \\ \textbf{molto alta} }\\
+	\rowcolor{tableLineTwo} Piano di contingenza:
+	&
+	\multicolumn{3}{m{0.8075\linewidth}}{\small In caso che qualche componente del gruppo abbia delle difficoltà nel nuovo ruolo affidato, sarà suo compito chiedere al suo precessore delle informazioni in merito.}\\
 	\hhline{====}
 	
 	
-	%Ultimo rischio
-	\rowcolor{tableLineOne} \textbf{Modifica dei requisiti RR001}
+	% RISCHI REQUISITI
+	\rowcolor{tableLineOne} \textbf{Comprensione dei requisiti RR001}
+	&
+	{\small È possibile che alcuni requisiti siano male interpretati dal gruppo \gruppo, portando così alla realizzazione di un prodotto software non soddisfacente per la Proponente \Proponente.}
+	&
+	{\small È necessario lavorare a stretto contatto con la Proponente, e in caso di dubbio, contattarli il prima possibile tramite il canale Slack.}
+	&
+	\shortstack{ Occorrenza: \\ \textbf{media} \vspace{0.6em}\\ 
+		Pericolosità: \\ \textbf{molto alta} } \\
+	\rowcolor{tableLineTwo} Piano di contingenza:
+	&
+	\multicolumn{3}{m{0.8075\linewidth}}{\small I requisiti mal interpretati dovranno essere il prima possibile corretti, così da poter realizzare correttamente il prodotto software richiesto.}\\
+	\hline
+	
+	\rowcolor{tableLineOne} \textbf{Modifica dei requisiti RR002}
 	&
 	{\small È possibile che la Proponente \Proponente decida di voler apportare delle modifiche. Questo porterebbe a una parziale/totale riscrittura dell'\adr con conseguente rivalutazione della pianificazione delle attività.}
 	&

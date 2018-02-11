@@ -5,7 +5,7 @@
 \usepackage{pdflscape}
 \usepackage{eurosym}
 \usepackage{longtable}
-\lfoot{\pdq{} \vrdue}
+\setfoot{\pdq}{\vrdue}
 \loadglsentries{"./../../Esterni/Glossario/Definizioni.tex"}
 
 \begin{document}
@@ -58,7 +58,6 @@
 	\pagenumbering{roman}
 	\subfile{diariomodifiche}
 	\tableofcontents
-	\listoffigures
 	\listoftables
 	\newpage
 	\pagenumbering{arabic}
@@ -72,8 +71,5 @@
 	
 	\subfile{resoconto}
 	
-	\appendix
-	\subfile{PDCA}
-	\subfile{SPICE}
-	\subfile{12factor}
+
 \end{document}

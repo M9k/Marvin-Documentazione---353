@@ -47,11 +47,10 @@
 \fancyhead[L]{\includegraphics[width=2cm]{../../common/images/logo.png}}
 \fancyhead[R]{\leftmark}
 \fancyfoot[R]{\thepage}
-%\fancyfoot[L]{\makeatletter \@one \space \@two \makeatother}
+\fancyfoot[L]{\makeatletter \@one \space \@two \makeatother}
 
 \newcommand{\setfoot}[2]{\newcommand{\@one}{#1}\newcommand{\@two}{#2}}
 
-%\makeatletter \@title \space \textit{v \ver{}.0.0} \makeatother
 \fancypagestyle{plain}{
 	\renewcommand{\headrulewidth}{0.4pt}
 	\renewcommand{\footrulewidth}{0.4pt}

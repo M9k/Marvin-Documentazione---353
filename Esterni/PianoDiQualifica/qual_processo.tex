@@ -8,212 +8,9 @@
 Per garantire la qualità del prodotto è necessario perseguire la qualità dei processi che lo definiscono.
 Per raggiungere questo obiettivo, si è deciso di seguire il principio di miglioramento continuo (\citGloss{PDCA}) e di adottare lo standard ISO/IEC 15504 denominato SPICE (Software Process Improvement and Capability Determination).
 
-\section{Procedure di controllo di qualità di processo}
-La qualità dei processi verrà garantita dall'applicazione del metodo \citGloss{PDCA}, descritto dell'appendice A. Grazie a questo metodo sarà possibile ottenere un miglioramento continuo della qualità di tutti i processi, inclusa la \citGloss{verifica}, e come diretta conseguenza si otterrà il miglioramento dei prodotti risultanti.\\Per ottenere qualità dei processi, bisogna:
-\begin{itemize}
-	\item \textbf{Definire il processo}: Affinché sia controllabile;
-	\item \textbf{Controllare il processo}: In funzione dell'ottenimento di efficacia, efficienza ed esperienza;
-	\item \textbf{Usare strumenti di valutazione}: SPICE e \citGloss{PDCA}.
-\end{itemize}
-
 \section{Processi}
-
-\subsection{PROC001 - Pianificazione di progetto, impostazione e controllo di processi}
-Il macro-processo ha lo scopo di produrre dei piani di sviluppo per il progetto, comprendenti la scelta del modello di ciclo di vita del prodotto, descrizioni delle attività e dei compiti da svolgere, pianificazione temporale del lavoro e dei costi da sostenere, allocazione di compiti e responsabilità e misurazioni per rilevare lo stato del progetto rispetto alle pianificazioni prodotte.
-
-\subsubsection{Obbiettivi}
-Lo sviluppo del progetto dovrà porre particolare attenzione a rispettare dei particolari obbiettivi:
-\begin{itemize}
-	\item \textbf{Budget:} Utilizzando le metriche descritte nella sezione seguente, si deve tenere sempre controllato l'utilizzo del budget, al fine di non avere scarti eccessivi con il costo preventivato;
-	\item \textbf{Task:} Porre attenzione alla pianificazione dei task e al loro completamento, assicurandosi che seguano la metodologia del miglioramento continuo, affinché tutti i compiti ne traggano vantaggio;
-	\item \textbf{Educazione personale:} Avere accortezza che ogni membro del gruppo abbia un livello di preparazione adatto all'esecuzione dei task assegnati, al fine di evitare ritardi sul calendario;
-	\item \textbf{Calendario:} Assicurare una pianificazione adatta ai compiti da svolgere, per evitare scostamenti dal budget preventivato;
-	\item \textbf{Standard:} Definire standard di processo ogni qualvolta sia possibile, per facilitare il lavoro in gruppo e favorire un incremento continuo.
-\end{itemize}
-
-\subsubsection{Strategie}
-Ogni eventuale valore negativo a livello di Schedule o Budget Variance rilevato sarà compensato con la revisione delle attività da svolgere e i \citGloss{requisiti} da ottenere, per valutare se nei tempi di calendario stabiliti la pianificazione sia corretta o se sia necessario rivedere la programmazione.\\
-Il controllo verrà favorito con strumenti come \citGloss{Asana} e i diagrammi di \citGloss{Gantt} in modo tale da verificare l'andamento del progetto, per avere sempre una visione chiara e quantificabile del lavoro in corso affinché il lavoro non subisca ritardi.\\
-Saranno sempre presenti delle finestre di \citGloss{Slack} per evitare sovrapposizioni di task dovute a eventuali ritardi o imprevisti. 
-
-\subsubsection{Metriche} 
-\paragraph{}
-\textlink{MPS001TAB}{MPS001}{\textbf{MPS001 Schedule Variance (SV)}}\\
-Indica se si è in linea, in anticipo o in ritardo, rispetto alla schedulazione delle attività di progetto pianificate nella \citGloss{baseline}.\\
-È un indicatore di efficacia soprattutto nei confronti del Cliente. \\
-Se il valore SV ottenuto è positivo significa che il progetto sta procedendo con una maggiore velocità rispetto a quanto pianificato, viceversa se negativo.\\
-\textbf{Misurazione:}
-\begin{center}
-	 $ SV = BCWP – BCWS $
-\end{center}
-Dove: \begin{itemize}
-	\item \textbf{BCWP (Budgeted Cost of Work Performed)}: \`{E} il valore (in giorni o Euro) delle attività realizzate alla data corrente.
-	Rappresenta il valore prodotto dal progetto ossia la somma di tutte le parti completate e di tutte le porzioni completate delle parti ancora da terminare.
-	\item \textbf{BCWS (Budgeted Cost of Work Scheduled)}: \`{E} il costo pianificato (in giorni o Euro) per realizzare le attività di progetto alla data corrente.
-\end{itemize}
-
-
-\paragraph{}
-\textlink{MPS002TAB}{MPS002}{\textbf{MPS002 Budget Variance (BV)}}\\
-Indica se alla data corrente si è speso di più o di meno rispetto a quanto previsto a budget alla data corrente.\\
-È un indicatore che ha un valore unicamente contabile e finanziario.\\
-Se il valore BV ottenuto è positivo significa che il progetto sta spendendo il proprio budget con minor velocità di quanto pianificato, viceversa se negativo.\\
-\textbf{Misurazione:}
-\begin{center}
-	$ BV = BCWS – ACWP $
-\end{center}
-Dove: \begin{itemize}
-	\item \textbf{BCWS (Budgeted Cost of Work Scheduled)}: \`{E} il costo pianificato (in giorni o Euro) per realizzare le attività di progetto alla data corrente;
-	\item \textbf{ACWP (Actual Cost of Work Performed)}: \`{E} il costo effettivamente sostenuto (in giorni o Euro) alla data corrente.
-\end{itemize}
-
-
-\subsection{PROC002 - Verifica software}
-Il processo punta a verificare se qualsiasi elemento del sistema soddisfa completamente i \citGloss{requisiti} ad esso assegnati.
-\subsubsection{Obiettivi}
-Per poter definire delle \citGloss{baseline} per lo sviluppo del software, è necessario che il codice venga sempre verificato:
- \begin{itemize}
- 	\item \textbf{Commenti al codice:} Ogni unità di codice dovrà essere sufficientemente commentata affinché sia ritenuta verificabile;
- 	\item \textbf{Prevenzione di bug:} Accertarsi per quanto possibile che ogni unità di codice non sia affetta da bug prima dell'utilizzo.
- \end{itemize}
-\subsubsection{Strategie}
-
-Per prevenire bug e vulnerabilità al codice si utilizzano strumenti come Sonarlint e Sonarqube al fine di evitare la propagazione di errori ed avere una panoramica sullo stato generale del codice prodotto.\\
-Si utilizzeranno delle metriche di Code Coverage per avere consapevolezza della quantità di codice testato e poter agire di conseguenza.
- 
-\subsubsection{Metriche}
-\paragraph{Code Coverage}
-Per poter avere una misura di codice testato e verificato si adoreranno determinati coverage criteria:
-
-\begin{itemize}
-	\item \textlink{MPS003TAB}{MPS003}{\textbf{MPS003 Function coverage:}} Verificare che ogni funzione sia stata chiamata;
-	\item \textlink{MPS004TAB}{MPS004}{\textbf{MPS004 Statement coverage:}} Verificare che ogni statement del codice sia stato eseguito; 
-	\item \textlink{MPS005TAB}{MPS004}{\textbf{MPS005 \citGloss{Branch} coverage:}} Verificare se tutti i possibili \citGloss{branch} (derivanti da if e case statement) sono stati eseguiti;
-	\item \textlink{MPS006TAB}{MPS006}{\textbf{MPS006 Condition coverage:}} Verificare se ogni condizione booleana è stata valutata sia nella condizione true che false. 
-
-\end{itemize}
-\textbf{Misurazione:}
-Vengono calcolate in percentuale sulla quantità di codice testato e verificato oltre che sul totale delle linee di codice scritte, tramite tool automatici come IstanbulJS\footnote{\nURI{https://istanbul.js.org/}}.
-
-
-\subsection{PROC003 - Gestione rischi}
-Il processo mira ad identificare nuovi rischi e a monitorare e ridurre la possibilità dell'insorgere di questi durante l'attività di progetto.
-\subsubsection{Obiettivi:}
-\begin{itemize}
-	\item \textbf{Individurare rischi Fase:} Ad ogni nuova fase del progetto verranno analizzati possibili rischi, cercando delle soluzioni automatiche per diminuire l'occorrenza di questi;
-	\item \textbf{Analisi:} I rischi saranno gestiti con una prima analisi che dovrà fornire uno strumento o procedura automatica per ridurre o prevenire le cause scatenanti di questo rischio.
-\end{itemize}
-\subsubsection{Strategie}
-Nel caso dovessero sorgere troppi rischi il gruppo dovrà sospendere i lavori eliminando il maggior numero di questi per permettere la prosecuzione del lavoro.
-Viene utilizzato StatusTicker\footnote{\nURI{https://swe353.statusticker.com}} per avere un cruscotto informativo sullo status dei servizi esterni utilizzati.
-
-\subsubsection{Metriche}
-\paragraph{}
-\textlink{MPS007TAB}{MPS007}{\textbf{MPS007 Indisponibilità servizi esterni:}} numero totale di giorni in cui siano stati offline o bloccati servizi usati.\\
-\textbf{Misurazione:}
-Indice numerico incrementato partendo da zero per ogni giorno in cui i servizi utilizzati dal gruppo siano risultati totalmente offline per la maggior parte del giorno, tramite controllo su \nURI{statusticker.com}.
-
-\paragraph{}
-\textlink{MPS008TAB}{MPS008}{\textbf{MPS008 Rischi non previsti:}} indice numerico indica la quantità di rischi esterni a quelli presenti nell'attività di analisi dei rischi rilevati nella corrente fase di progetto. \\
-\textbf{Misurazione:}
-Indice numerico incrementato partendo da 0 per ogni rischio che si manifesta senza essere stato individuato precedentemente nella lista di rischi.
-Viene resettato all'inizio di ogni nuova fase di progetto.
-
-
-\subsection{PROC004 - Gestione Test}
-% M --> Metrica
-% TS --> Test
-% M/H/A --> Testi di modulo/alto livello/tutti
-% 00n --> Numero progressivo	
-Per garantire una gestione efficacie dell'analisi dinamica è necessario stabilire delle misurazioni sull'esecuzione di essa.
-Le misure elencate qui sotto sono consigliate dal blog di una azienda che produce prodotti di riferimento per la gestione dei test, le informazioni possono essere trovate nei riferimenti informativi.
-\subsubsection{Per tutti i test}
-\paragraph{Tracciamento}
-Questa categoria di misurazioni si occupa di tenere traccia delle esecuzioni dei test e relativi successi fallimenti tramite le seguenti metriche:
-\begin{itemize}
-	\item \textlink{MTSA001TAB}{MTSA001}{\textbf{MTSA001 Percentuale di test case passati:}} indica la percentuale di test case passati, molto utile per capire a che punto si è nella fase di sviluppo della componente. La sua formula di misurazione è la seguente:
-	\[PPT=\dfrac{PT}{ET}*100\]
-	Dove PT indica il numero di test passati e ET il numero di test eseguiti;
-	\item \textlink{MTSA002TAB}{MTSA002}{\textbf{MTSA002 Percentuale di test case falliti:}} complementare della misurazione precedente. La sua formula di misurazione è la seguente:
-	\[PFT=\dfrac{FT}{ET}*100\]
-	Dove FT indica il numero di test falliti ed ET quello di test eseguiti;
-	\item \textlink{MTSA003TAB}{MTSA003}{\textbf{MTSA003 Tempo medio del team di sviluppo per la risoluzione di errori:}} indica la quantità di tempo medio utilizzato per risolvere un bug dal team di sviluppo, utile per capire l'impatto medio dell'introduzione di un bug sui tempi di sviluppo. La sua formula di misurazione è la seguente:
-	\[TMRE=\dfrac{TTBF}{TB}\]
-	Dove TTBF indica il tempo totale speso per la correzione dei difetti (sviluppo e test) e TB il numero totale di bug trovati.
-\end{itemize}
-
-\paragraph{Efficienza}
-Questa categoria di misurazioni mira a valutare l'efficienza di scrittura ed esecuzione dei test.
-\begin{itemize}
-	\item \textlink{MTSA004TAB}{MTSA004}{\textbf{MTSA004 Efficienza della progettazione dei test:}} Indica il tempo medio per la scrittura di un test, un numero troppo elevato potrebbe indicare che si stanno progettando test troppo complessi o che si sta cercando di testare parti del codice superflue. La sua formula di misurazione è la seguente:
-	\[TDE=\dfrac{NTP}{TST}\]
-	Dove NTP indica il numero totale di test progettati e TST il tempo per la loro stesura.
-	\begin{comment}
-	\item \textlink{MTSA005TAB}{MTSA005}{\textbf{MTSA005 Tempo medio per il testing dei bug fix:}} Indica la quantità di tempo medio per testare la risoluzione di un difetto, utile per avere un'idea dell'impatto del testing sull'implementazione di una modifica
-	\[TTCD=\dfrac{BFTT}{NDT}\]
-	Dove BFTT indica il tempo usato per testare le la correzione dei difetti e NDT il numero di difetti trovati.
-	\end{comment}
-\end{itemize}
-\paragraph{Efficacia}
-Questa categoria di misurazioni mira a valutare l'efficacia dell'esecuzione dei test.
-\begin{itemize}
-	\item \textlink{MTSA005TAB}{MTSA005}{\textbf{MTSA005 Contenimento dei difetti:}} Indica il rapporto percentuale tra i bug trovati durante i test e i bug trovati durante l'utilizzo del prodotto. Un numero troppo basso di questo indice suggerisce una scarsa progettazione dei test, richiedendo un intervento di analisi da parte del team di sviluppo. La sua formula di misurazione è la seguente:
-	\[CD=\dfrac{DTT}{TNDT}*100\]
-	Dove DTT indica il numero di difetti trovati durante l'esecuzione dei test, e TNDT la somma dei difetti trovati nei test e quelli trovati durante l'utilizzo del prodotto.
-\end{itemize}
-
-\subsubsection{Per i test ad alto livello}
-\paragraph{Tracciamento}
-Questa categoria di misurazioni mira a tenere traccia delle gestioni dei bug trovati.
-\begin{itemize}
-	\item \textlink{MTSH001TAB}{MTSH001}{\textbf{MTSH001 Percentuale di difetti sistemati:}} indica la percentuale di difetti sistemati sul totale dei difetti rilevati, utile per avere una panoramica dei bug da risolvere: un numero troppo basso potrebbe costringere il team a fermare lo sviluppo di nuove funzionalità per concentrarsi sulla correzione delle parti già esistenti. La sua formula di misurazione è la seguente:
-	\[PDS=\dfrac{DS}{DR}*100\]
-	Dove DS indica i difetti sistemati mentre DR quelli segnalati.	
-\end{itemize}
-\paragraph{Copertura}
-Questa categoria di misurazioni si occupa di tenere traccia dell'esecuzione dei test e della copertura che questi hanno sui \citGloss{requisiti}.
-\begin{itemize}
-	\item \textlink{MTSH002TAB}{MTSH002}{\textbf{MTSH002 Copertura dei test eseguiti:}} Indica la percentuale di test già eseguiti sul totale di test da eseguire, utile per monitorare il lavoro del team dei verificatori. La sua formula di misurazione è la seguente:
-	\[CTE=\dfrac{TE}{TT}*100\]
-	Dove TE indica i test eseguiti e TT il numero di test totali;
-	\item \textlink{MTSH003TAB}{MTSH003}{\textbf{MTSH003 Copertura dei requisiti:}} Indica la percentuale di requisiti coperti dai test sui requisiti totali, utile per capire quante parti del prodotto finale hanno un test associato, non da indicazioni sullo stato di avanzamento del soddisfacimento del requisito. La sua formula di misurazione è la seguente:
-	\[CR=\dfrac{RC}{RT}*100\]
-	Dove RC indica il numero di \citGloss{requisiti} coperti mentre RT quelli totali;
-	\item \textlink{MTSH004TAB}{MTSH004}{\textbf{MTSH004 Difetti per requisito:}} Indica il numero di difetti trovati nel test del requisito, da informazioni sullo stato di soddisfacimento del requisito: se ha 0 difetti, vuol dire che il requisito è stato trovato e considerato senza errori, quindi soddisfatto.
-	Non essendo calcolabile, la misurazione si mostra come una tabella avente nella prima colonna il nome del requisito, e nella seconda i difetti ad esso associati.
-\end{itemize}
-\begin{comment}
-\paragraph{Efficacia dei cambiamenti}
-\begin{itemize}
-\item \textlink{MTSH005TAB}{MTSH005}{\textbf{MTSH005 Tasso di iniezione dei difetti:}} Indica il tasso di errori attribuibili all'introduzione di una modifica, la conoscenza di questo numero aiuta a stimare il tempo medio per la scoperta e correzione di errori introdotti dalle modifiche, aiutando la stima dei costi per l'introduzione di nuove funzionalità
-\[TID=\dfrac{NM}{NDM}\]
-Dove NM indica il numero di modifiche e NDM i difetti attribuibili ad esse.
-\end{itemize}
-\end{comment}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-\section{Tabella dei processi}
+I processi a cui sono applicati i controlli di qualità sono descritti nelle \ndp.
+\subsection{Tabella dei processi}
 % ID Processo
 % PROC --> metrica
 % 00n --> numero incrementale
@@ -236,7 +33,7 @@ Questa tabella indica i processi presenti.
 	\end{center}
 \end{table}
 
-\section{Tabella delle metriche}
+\subsection{Tabella delle metriche}
 % ID METRICA
 % M --> metrica
 % PS--> processo
@@ -279,7 +76,7 @@ Questa tabella indica i \textbf{range} di accettazione e di ottimalità per le m
 	\end{center}
 \end{table}
 
-\section{Tabella delle metriche}
+\section{Tabella delle metriche sui test PROC0004}
 Questa tabella indica i \textbf{range} di accettazione e ottimalità per le misure effettuate sui test, per le misure effettuate su tutti i tipi di test saranno presenti due valori per range, TM, per i test di modulo e TH, per i test ad alto livello.\\
 Una piccola legenda per facilitare la lettura della tabella: \\
 \begin{itemize}

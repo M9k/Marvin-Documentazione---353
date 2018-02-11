@@ -22,49 +22,49 @@ I \citGloss{requisiti} vengono classificati ed assegnati a un identificativo uni
 	\color{CHeaderText} \textbf{Identificatore} & \color{CHeaderText} \textbf{Importanza} & \color{CHeaderText} \textbf{Descrizione} & \color{CHeaderText} \textbf{Fonti} \\
 	\endhead
 	R0F1 & Obbligatorio & L'amministratore può gestire gli utenti & Interno \\
-	R0F1.1 & Obbligatorio & L'amministratore può ottenere una lista di tutti gli utenti non abilitati & Interno \\  
-	R0F1.2 & Obbligatorio & L'amministratore può abilitare un utente & Interno \\  
-	R0F1.3 & Obbligatorio & L'amministratore può rimuovere un utente & Interno \\  
-	R0F1.4 & Obbligatorio & L'amministratore può ottenere una lista di tutti gli studenti & Interno \\  
-	R0F2 & Obbligatorio & L'amministratore può gestire i professori & Interno \\  
-	R0F2.1 & Obbligatorio & L'amministratore può ottenere una lista di tutti i professori & Interno \\  
-	R0F2.2 & Obbligatorio & L'amministratore può assegnare un esame ad un determinato professore & Capitolato \\   
-	R0F3 & Obbligatorio & L'amministratore può gestire i corsi di laurea relativi agli anni accademici & Capitolato \\  
-	R0F3.1 & Obbligatorio & L'amministratore può creare un nuovo \citGloss{corso di laurea} a partire da un \citGloss{anno accademico} & Capitolato \\    
-	R0F3.1.1 & Obbligatorio & L'amministratore deve indicare un codice identificativo per ogni \citGloss{corso di laurea} & Interno \\  
-	R0F3.2 & Obbligatorio & L'amministratore può ottenere una lista di tutti i corsi di laurea dato un \citGloss{anno accademico} & Interno \\  
+	R0F1.1 & Obbligatorio & L'amministratore può ottenere una lista di tutti gli utenti non abilitati & Interno \\
+	R0F1.2 & Obbligatorio & L'amministratore può abilitare un utente & Interno \\
+	R0F1.3 & Obbligatorio & L'amministratore può rimuovere un utente & Interno \\
+	R0F1.4 & Obbligatorio & L'amministratore può ottenere una lista di tutti gli studenti & Interno \\
+	R0F2 & Obbligatorio & L'amministratore può gestire i professori & Interno \\
+	R0F2.1 & Obbligatorio & L'amministratore può ottenere una lista di tutti i professori & Interno \\
+	R0F2.2 & Obbligatorio & L'amministratore può assegnare un esame ad un determinato professore & Capitolato \\
+	R0F3 & Obbligatorio & L'amministratore può gestire i corsi di laurea relativi agli anni accademici & Capitolato \\
+	R0F3.1 & Obbligatorio & L'amministratore può creare un nuovo \citGloss{corso di laurea} a partire da un \citGloss{anno accademico} & Capitolato \\ 
+	R0F3.1.1 & Obbligatorio & L'amministratore deve indicare un codice identificativo per ogni \citGloss{corso di laurea} & Interno \\
+	R0F3.2 & Obbligatorio & L'amministratore può ottenere una lista di tutti i corsi di laurea dato un \citGloss{anno accademico} & Interno \\
 	R0F3.3 & Obbligatorio & L'amministratore può creare nuovi esami & Capitolato \\ 
-	R0F3.4 & Obbligatorio & L'amministratore può ottenere una lista di tutti gli esami dato il \citGloss{corso di laurea} & Interno \\  
-	R0F3.4.1 & Obbligatorio & L'amministratore può ottenere l'informazione di quale professore è assegnato a un determinato esame & Interno \\  
-	R0F3.4.2  & Obbligatorio & L'amministratore può associare ad un esame il relativo professore & Interno \\  
-	R0F4 & Obbligatorio & Un professore può gestire gli esami a lui assegnati & Capitolato \\  
-	R0F4.1 & Obbligatorio & Un professore può ottenere la lista di tutti gli esami a lui assegnati & Capitolato \\  
-	R0F4.2 & Obbligatorio & Un professore può ottenere la lista di tutti gli studenti associati a un determinato esame & Capitolato \\  
-	R0F4.3 & Obbligatorio & Un professore può registrare un esito ad un dato esame ad un dato studente registrato a quell'esame & Capitolato \\  
-	R0F5 & Obbligatorio & Uno studente può gestire l'iscrizione agli esami & Capitolato \\  
-	R0F5.1 & Obbligatorio & Uno studente può vedere l'elenco degli esami ai quali è iscritto & Capitolato \\  
-	R0F5.1.1 & Obbligatorio & Uno studente può ottenere il numero di crediti assegnati agli esame & Interno \\  
-	R0F5.1.2 & Obbligatorio & Uno studente può ottenere l'obbligatorietà degli esame & Interno \\  
-	R0F5.1.3 & Obbligatorio & Uno studente può ottenere lo stato di superamento degli esame & Interno \\  
-	R0F5.1.4 & Obbligatorio & Uno studente può ottenere il totale dei suoi crediti & Interno \\  
-	R0F5.1.5 & Obbligatorio & Uno studente può ottenere il numero di crediti da raggiungere per la laurea & Interno \\  
-	R0F5.2 & Obbligatorio & Uno studente può ottenere l'elenco degli esami opzionali & Capitolato \\  
-	R0F5.2.1 & Obbligatorio & Uno studente può ottenere il numero di crediti degli esami opzionali & Capitolato \\  
-	R0F5.2.2 & Obbligatorio & Uno studente può iscriversi ad un esame opzionale & Capitolato \\  
-	R0F6 & Obbligatorio & L'utente può effettuare il login & Interno \\  
-	R0F6.1 & Obbligatorio & Il login deve avvenire tramite il controllo delle chiavi, senza ulteriori azioni da parte dell'utente & Interno \\  
-	R0F7 & Obbligatorio & L'utente può effettuare il logout & Interno \\  
-	R0F8 & Obbligatorio & L'utente non ancora registrato può registrarsi & Capitolato \\  
-	R0F8.1 & Obbligatorio & La registrazione necessita di nome, cognome, categoria (studente o professore) e selezione del corso di laura se si tratta di uno studente & Capitolato \\  
-	R1F9 & Desiderabile & L'utente può leggere una breve guida sull'uso di MetaMask e sul pagamento delle operazioni & Interno \\  	
-	R0F10 & Obbligatorio & L'utente deve poter vedere preventivamente il costo in \citGloss{Gas}, \citGloss{Ether} e Euro dell'operazione che sta per eseguire & Capitolato, VER-2018-01-09 \\  	
+	R0F3.4 & Obbligatorio & L'amministratore può ottenere una lista di tutti gli esami dato il \citGloss{corso di laurea} & Interno \\
+	R0F3.4.1 & Obbligatorio & L'amministratore può ottenere l'informazione di quale professore è assegnato a un determinato esame & Interno \\
+	R0F3.4.2  & Obbligatorio & L'amministratore può associare ad un esame il relativo professore & Interno \\
+	R0F4 & Obbligatorio & Un professore può gestire gli esami a lui assegnati & Capitolato \\
+	R0F4.1 & Obbligatorio & Un professore può ottenere la lista di tutti gli esami a lui assegnati & Capitolato \\
+	R0F4.2 & Obbligatorio & Un professore può ottenere la lista di tutti gli studenti associati a un determinato esame & Capitolato \\
+	R0F4.3 & Obbligatorio & Un professore può registrare un esito ad un dato esame ad un dato studente registrato a quell'esame & Capitolato \\
+	R0F5 & Obbligatorio & Uno studente può gestire l'iscrizione agli esami & Capitolato \\
+	R0F5.1 & Obbligatorio & Uno studente può vedere l'elenco degli esami ai quali è iscritto & Capitolato \\
+	R0F5.1.1 & Obbligatorio & Uno studente può ottenere il numero di crediti assegnati agli esame & Interno \\
+	R0F5.1.2 & Obbligatorio & Uno studente può ottenere l'obbligatorietà degli esame & Interno \\
+	R0F5.1.3 & Obbligatorio & Uno studente può ottenere lo stato di superamento degli esame & Interno \\
+	R0F5.1.4 & Obbligatorio & Uno studente può ottenere il totale dei suoi crediti & Interno \\
+	R0F5.1.5 & Obbligatorio & Uno studente può ottenere il numero di crediti da raggiungere per la laurea & Interno \\
+	R0F5.2 & Obbligatorio & Uno studente può ottenere l'elenco degli esami opzionali & Capitolato \\
+	R0F5.2.1 & Obbligatorio & Uno studente può ottenere il numero di crediti degli esami opzionali & Capitolato \\
+	R0F5.2.2 & Obbligatorio & Uno studente può iscriversi ad un esame opzionale & Capitolato \\
+	R0F6 & Obbligatorio & L'utente può effettuare il login & Interno \\
+	R0F6.1 & Obbligatorio & Il login deve avvenire tramite il controllo delle chiavi, senza ulteriori azioni da parte dell'utente & Interno \\
+	R0F7 & Obbligatorio & L'utente può effettuare il logout & Interno \\
+	R0F8 & Obbligatorio & L'utente non ancora registrato può registrarsi & Capitolato \\
+	R0F8.1 & Obbligatorio & La registrazione necessita di nome, cognome, categoria (studente o professore) e selezione del corso di laura se si tratta di uno studente & Capitolato \\
+	R1F9 & Desiderabile & L'utente può leggere una breve guida sull'uso di MetaMask e sul pagamento delle operazioni & Interno \\	
+	R0F10 & Obbligatorio & L'utente deve poter vedere preventivamente il costo in \citGloss{Gas}, \citGloss{Ether} e Euro dell'operazione che sta per eseguire & Capitolato, VER-2018-01-09 \\	
 	R0F11 & Obbligatorio & L'università deve poter gestire gli amministratori & VER-2017-12-08.1 \\
-	R0F11.1 & Obbligatorio & L'università deve poter aggiungere amministratori & VER-2017-12-08.1 \\
+	R0F11.1 & Obbligatorio & L'università deve poter aggiungere amministratori attraverso l'inserimento del loro indirizzo & VER-2017-12-08.1 \\
 	R0F11.2 & Obbligatorio & L'università deve poter rimuovere amministratori & VER-2017-12-08.2 \\
 	R0F11.3 & Obbligatorio & L'università deve poter ottenere la lista di tutti gli amministratori & Interno \\
-	R0F12& Obbligatorio & L'università può gestire gli anni accademici & Capitolato \\  
-	R0F12.1 & Obbligatorio & L'università può aggiungere un \citGloss{anno accademico} & Capitolato \\  
-	R0F12.2 & Obbligatorio & L'università può rimuovere un \citGloss{anno accademico} & Capitolato \\  
+	R0F12& Obbligatorio & L'università può gestire gli anni accademici & Capitolato \\
+	R0F12.1 & Obbligatorio & L'università può aggiungere un \citGloss{anno accademico} & Capitolato \\
+	R0F12.2 & Obbligatorio & L'università può rimuovere un \citGloss{anno accademico} & Capitolato \\
 	R0F12.3 & Obbligatorio & L'università può ottenere una lista degli anni accademici & Interno \\ 
 	\hiderowcolors
 	\caption{Tabella dei requisiti funzionali}
@@ -77,16 +77,16 @@ I \citGloss{requisiti} vengono classificati ed assegnati a un identificativo uni
 \renewcommand*{\arraystretch}{1.2}
 \begin{longtable}[H]{p{2.5cm}p{2.5cm}p{5cm}p{2cm}}
 	\rowcolor{CHeader} 
-	\color{CHeaderText} \textbf{Identificatore} & \color{CHeaderText} \textbf{Importanza} & \color{CHeaderText} \textbf{Descrizione} & \color{CHeaderText} \textbf{Fonti} \\  
+	\color{CHeaderText} \textbf{Identificatore} & \color{CHeaderText} \textbf{Importanza} & \color{CHeaderText} \textbf{Descrizione} & \color{CHeaderText} \textbf{Fonti} \\
 	\endhead
 	R0Q1 & Obbligatorio & La progettazione e il codice devono seguire le norme e le metriche riportate nel documento allegato \pdq \vruno & Interno \\
-	R0Q2 & Obbligatorio & L'approccio di scrittura di \citGloss{JavaScript} deve essere promise Centric Approach & Capitolato \\  
-	R0Q2.1 & Obbligatorio & L'applicativo non deve fare uso di callback in presenza di alternative alle ultime & VER-2017-11-22.1 \\  
-	R0Q3 & Obbligatorio & Il codice \citGloss{JavaScript} deve attenersi al \citGloss{airbnb} \citGloss{JavaScript} style guide & Capitolato \\  
-	R0Q4 & Obbligatorio & Lo sviluppo deve essere supportato dall'utilizzo del tool ESLint & Capitolato \\  
-	R0Q5 & Obbligatorio & Dovrà essere fornito un manuale utente in lingua inglese che tratterà l'uso da parte di studenti e professori & VER-2017-11-22.2 \\  
+	R0Q2 & Obbligatorio & L'approccio di scrittura di \citGloss{JavaScript} deve essere promise Centric Approach & Capitolato \\
+	R0Q2.1 & Obbligatorio & L'applicativo non deve fare uso di callback in presenza di alternative alle ultime & VER-2017-11-22.1 \\
+	R0Q3 & Obbligatorio & Il codice \citGloss{JavaScript} deve attenersi al \citGloss{airbnb} \citGloss{JavaScript} style guide & Capitolato \\
+	R0Q4 & Obbligatorio & Lo sviluppo deve essere supportato dall'utilizzo del tool ESLint & Capitolato \\
+	R0Q5 & Obbligatorio & Dovrà essere fornito un manuale utente in lingua inglese che tratterà l'uso da parte di studenti e professori & VER-2017-11-22.2 \\
 	R0Q6 & Obbligatorio & Dovrà essere fornito un manuale di deploy e di utilizzo da parte degli amministratori in lingua inglese & VER-2017-11-22.3 \\
-	R0Q7 & Obbligatorio & Il codice sorgente deve essere pubblicato sulla piattaforma \citGloss{GitHub}, BitBucket o GitLab & Capitolato \\  
+	R0Q7 & Obbligatorio & Il codice sorgente deve essere pubblicato sulla piattaforma \citGloss{GitHub}, BitBucket o GitLab & Capitolato \\
 	R0Q8 & Obbligatorio & Il codice deve attenersi il più possibile alle guide linea de "App a 12 Fattori" & Capitolato \\ 
 	\hiderowcolors
 	\caption{Tabella dei requisiti di qualità}
@@ -99,28 +99,28 @@ I \citGloss{requisiti} vengono classificati ed assegnati a un identificativo uni
 \renewcommand*{\arraystretch}{1.2}
 \begin{longtable}[H]{p{2.5cm}p{2.5cm}p{5cm}p{2cm}}
 	\rowcolor{CHeader} 
-	\color{CHeaderText} \textbf{Identificatore} & \color{CHeaderText} \textbf{Importanza} & \color{CHeaderText} \textbf{Descrizione} & \color{CHeaderText} \textbf{Fonti} \\  
+	\color{CHeaderText} \textbf{Identificatore} & \color{CHeaderText} \textbf{Importanza} & \color{CHeaderText} \textbf{Descrizione} & \color{CHeaderText} \textbf{Fonti} \\
 	\endhead
-	R0V1 & Obbligatorio & L'applicativo dovrà essere sviluppato attraverso l'uso di tecnologie web & Capitolato \\  
-	R0V1.1 & Obbligatorio & L'applicativo necessiterà della piattaforma Node.js per soddisfare le dipendenze delle librerie richieste citate nei \citGloss{requisiti} sottostanti. & Capitolato \\  
-	R0V1.2 & Obbligatorio & L'applicativo dovrà essere sviluppato con \citGloss{JavaScript} 8 (ES8) & Capitolato \\  
-	R0V1.3 & Obbligatorio & L'applicativo dovrà essere sviluppato con il boilerplate \citGloss{Redux} Minimal & Capitolato \\  
-	R0V1.4 & Obbligatorio & L'applicativo dovrà essere sviluppato utilizzando \citGloss{React} 15.x & Capitolato \\  
-	R0V1.5 & Obbligatorio & L'applicativo dovrà essere sviluppato utilizzando \citGloss{Redux} 3.x & Capitolato \\  
-	R0V1.6 & Obbligatorio & Il deploy del sito andrà eseguito utilizzando Surge.sh & Capitolato \\  
-	R0V1.7 & Desiderabile & È desiderabile l'utilizzo di \citGloss{SCSS} in sostituzione a \citGloss{CSS} & Capitolato \\  
-	R0V2 & Obbligatorio & Gli \citGloss{smart contract} dovranno essere scritti in linguaggio \citGloss{Solidity} & Capitolato \\  
-	R0V3 & Obbligatorio & La connessione alla rete \citGloss{Ethereum} deve avvernire tramite MetaMask & Capitolato \\  
-	R0V3.1 & Obbligatorio & I test riguartandi gli \citGloss{smart contract} dovranno essere eseguiti in una rete locale ed almeno in una rete pubblica & Capitolato \\  
-	R0V3.2 & Obbligatorio & Il deploy degli \citGloss{smart contract} dovrà avvenire su rete locale testrpc e rete di test Ropsten & Capitolato \\  
-	R2V3.3 & Opzionale & È apprezzabile un deploy finale sulla rete principale di \citGloss{Ethereum} & Capitolato \\  
-	R0V4 & Obbligatorio & Lo sviluppo degli \citGloss{smart contract} dovrà avvenire utilizzando il framework Truffle & Capitolato \\  
+	R0V1 & Obbligatorio & L'applicativo dovrà essere sviluppato attraverso l'uso di tecnologie web & Capitolato \\
+	R0V1.1 & Obbligatorio & L'applicativo necessiterà della piattaforma Node.js per soddisfare le dipendenze delle librerie richieste citate nei \citGloss{requisiti} sottostanti. & Capitolato \\
+	R0V1.2 & Obbligatorio & L'applicativo dovrà essere sviluppato con \citGloss{JavaScript} 8 (ES8) & Capitolato \\
+	R0V1.3 & Obbligatorio & L'applicativo dovrà essere sviluppato con il boilerplate \citGloss{Redux} Minimal & Capitolato \\
+	R0V1.4 & Obbligatorio & L'applicativo dovrà essere sviluppato utilizzando \citGloss{React} 15.x & Capitolato \\
+	R0V1.5 & Obbligatorio & L'applicativo dovrà essere sviluppato utilizzando \citGloss{Redux} 3.x & Capitolato \\
+	R0V1.6 & Obbligatorio & Il deploy del sito andrà eseguito utilizzando Surge.sh & Capitolato \\
+	R0V1.7 & Desiderabile & È desiderabile l'utilizzo di \citGloss{SCSS} in sostituzione a \citGloss{CSS} & Capitolato \\
+	R0V2 & Obbligatorio & Gli \citGloss{smart contract} dovranno essere scritti in linguaggio \citGloss{Solidity} & Capitolato \\
+	R0V3 & Obbligatorio & La connessione alla rete \citGloss{Ethereum} deve avvernire tramite MetaMask & Capitolato \\
+	R0V3.1 & Obbligatorio & I test riguartandi gli \citGloss{smart contract} dovranno essere eseguiti in una rete locale ed almeno in una rete pubblica & Capitolato \\
+	R0V3.2 & Obbligatorio & Il deploy degli \citGloss{smart contract} dovrà avvenire su rete locale testrpc e rete di test Ropsten & Capitolato \\
+	R2V3.3 & Opzionale & È apprezzabile un deploy finale sulla rete principale di \citGloss{Ethereum} & Capitolato \\
+	R0V4 & Obbligatorio & Lo sviluppo degli \citGloss{smart contract} dovrà avvenire utilizzando il framework Truffle & Capitolato \\
 	R0V5 & Obbligatorio & L'applicativo deve essere accessibile ed utilizzabile dal \citGloss{browser} Mozilla \citGloss{Firefox} a partire dalla versione 52 & Interno \\
 	R0V6 & Obbligatorio & L'applicativo deve essere accessibile ed utilizzabile dal \citGloss{browser} Google \citGloss{Chrome} a partire dalla versione 57 & Interno \\
-	R1V7 & Desiderabile & L'applicativo deve essere accessibile ed utilizzabile da un \citGloss{browser} mobile, per le versioni supportate fare riferimento alle controparti PC di \citGloss{Firefox} e \citGloss{Chrome} & Interno \\  
+	R1V7 & Desiderabile & L'applicativo deve essere accessibile ed utilizzabile da un \citGloss{browser} mobile, per le versioni supportate fare riferimento alle controparti PC di \citGloss{Firefox} e \citGloss{Chrome} & Interno \\
 	R0V8 & Obbligatorio & Un utente non deve poter compiere azioni sul sistema senza aver fatto l'accesso ad esso & Capitolato \\ 
 	R0V9 & Obbligatorio & 'applicazione dei principi de "App a 12 Fattori" deve essere documentato ove possibile l'utilizzo & Capitolato, VER-2018-01-09 \\
-	R0V10 & Obbligatorio & Il codice sorgente deve essere pubblicato con licenza MIT & Capitolato \\  
+	R0V10 & Obbligatorio & Il codice sorgente deve essere pubblicato con licenza MIT & Capitolato \\
 	\hiderowcolors
 	\caption{Tabella dei requisiti di vincolo}
 \end{longtable}
@@ -140,7 +140,7 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 \renewcommand*{\arraystretch}{1.2}
 \begin{longtable}[H]{p{2cm}p{5cm}p{5cm}}
 	\rowcolor{CHeader} 
-	\color{CHeaderText} \textbf{Fonte} & \color{CHeaderText} \textbf{Nome fonte} & \color{CHeaderText} \textbf{Requisiti} \\  
+	\color{CHeaderText} \textbf{Fonte} & \color{CHeaderText} \textbf{Nome fonte} & \color{CHeaderText} \textbf{Requisiti} \\
 	\endhead
 	Capitolato & & \makecell[tl]{ R0F2.2 \\
 	 R0F3 \\
@@ -190,7 +190,7 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 	 R0V10 } \\
 	
 	\rowcolor{CRighePari}
-	Interno & &  \makecell[tl]{ R0F1 \\
+	Interno & & \makecell[tl]{ R0F1 \\
 	 R0F1.1 \\
 	 R0F1.2 \\
 	 R0F1.3 \\
@@ -217,90 +217,90 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 	 R0F12.3 \\
 	 R0Q1 \\
 	 R0V5 \\
-	 R0V6 } \\  
+	 R0V6 } \\
 	
-	VER-2017-11-22 & Verbale &  \makecell[tl]{ R0Q2.1 \\
+	VER-2017-11-22 & Verbale & \makecell[tl]{ R0Q2.1 \\
 	 R0Q5 \\
-	 R0Q6 } \\  
+	 R0Q6 } \\
 	
 	VER-2017-12-08 & Verbale & \makecell[tl]{ R0F11 \\
 	 R0F11.1 \\
-	 R0F11.2 } \\  
+	 R0F11.2 } \\
 	VER-2018-01-09 & Verbale & \makecell[tl]{ R0F10 \\
 	R0V9 } \\ 
 	
-	UC1 & Breve guida & R1F9 \\  
-	UC2 & Login & R0F6 \\  
-	UC2.1 & Login automatico & R0F6.1 \\  
-	UC2.2 & Visualizzazione messaggio di errore riguardo a chiave assente & R0F6.1 \\  
-	UC2.3 & Visualizzazione messaggio di errore riguardo a MetaMask assente & R0F6.1 \\  
-	UC2.4 & Visualizzazione messaggio di errore riguardo a chiave non registrata & R0F6.1 \\  
+	UC1 & Breve guida & R1F9 \\
+	UC2 & Login & R0F6 \\
+	UC2.1 & Login automatico & R0F6.1 \\
+	UC2.2 & Visualizzazione messaggio di errore riguardo a chiave assente & R0F6.1 \\
+	UC2.3 & Visualizzazione messaggio di errore riguardo a MetaMask assente & R0F6.1 \\
+	UC2.4 & Visualizzazione messaggio di errore riguardo a chiave non registrata & R0F6.1 \\
 	UC3 & Registrazione & R0F8 \\
-	UC3.1 & Inserimento nome & R0F8.1 \\  
-	UC3.2 & Inserimento cognome & R0F8.1 \\  
-	UC3.3 & Selezione categoria & R0F8.1 \\  
-	UC3.4 & Selezione corso & R0F8.1 \\  
-	UC3.5 & Visualizzazione errore campo non compilato & R0F8.1 \\  
-	UC3.6 & Visualizzazione errore utente già registrato & R0F8.1 \\  
-	UC3.7 & Visualizzazione errore chiave non presente & R0F8.1 \\  
-	UC3.8 & Visualizzazione errore MetaMask non installato & R0F8.1 \\  
-	UC4 & Logout & R0F7 \\  
-	UC5 & Amministrazione &  R0F1 \\ 
+	UC3.1 & Inserimento nome & R0F8.1 \\
+	UC3.2 & Inserimento cognome & R0F8.1 \\
+	UC3.3 & Selezione categoria & R0F8.1 \\
+	UC3.4 & Selezione corso & R0F8.1 \\
+	UC3.5 & Visualizzazione errore campo non compilato & R0F8.1 \\
+	UC3.6 & Visualizzazione errore utente già registrato & R0F8.1 \\
+	UC3.7 & Visualizzazione errore chiave non presente & R0F8.1 \\
+	UC3.8 & Visualizzazione errore MetaMask non installato & R0F8.1 \\
+	UC4 & Logout & R0F7 \\
+	UC5 & Amministrazione & R0F1 \\
 	& & R0F2 \\
-	& & R0F12\\  
-	UC5 & Gestione Utenti &  R0F1 \\  
-	UC5.1 & Visualizzazione lista di studenti & R0F1.4 \\  
-	UC5.2 & Visualizzazione lista di professori &  R0F2.1\\  
-	UC5.3 & Visualizzazione di utenti non abilitati & R0F1.1 \\  
-	UC5.4 & Abilitazione utente & R0F1.2 \\    
-	UC5.5 & Rimozione utente & R0F1.3 \\  
-	UC6 & Gestione anni accademici &  R0F12\\  
-	UC6.1 & Aggiunta \citGloss{anno accademico} &  R0F12.1 \\  
-	UC6.2 & Visualizzazione lista di tutti gli anni accademici & R0F12.3 \\   
-	UC6.3 & Visualizzazione messaggio anno malformato & R0F12.1 \\  
-	UC6.4 & Visualizzazione messaggio di \citGloss{anno accademico} già presente & R0F12.1 \\  
-	UC6.5 & Visualizzazione messaggio anno non compilato &  R0F12.1 \\
-	UC6.6 & Eliminazione anno accademico vuoto & R0F12.2 \\   
-	UC7 & Gestione corsi di laurea &  R0F3 \\   
+	& & R0F12 \\
+	UC5 & Gestione Utenti & R0F1 \\
+	UC5.1 & Visualizzazione lista di studenti & R0F1.4 \\
+	UC5.2 & Visualizzazione lista di professori & R0F2.1\\
+	UC5.3 & Visualizzazione di utenti non abilitati & R0F1.1 \\
+	UC5.4 & Abilitazione utente & R0F1.2 \\
+	UC5.5 & Rimozione utente & R0F1.3 \\
+	UC6 & Gestione anni accademici & R0F12 \\
+	UC6.1 & Aggiunta \citGloss{anno accademico} & R0F12.1 \\
+	UC6.2 & Visualizzazione lista di tutti gli anni accademici & R0F12.3 \\
+	UC6.3 & Visualizzazione messaggio anno malformato & R0F12.1 \\
+	UC6.4 & Visualizzazione messaggio di \citGloss{anno accademico} già presente & R0F12.1 \\
+	UC6.5 & Visualizzazione messaggio anno non compilato & R0F12.1 \\
+	UC6.6 & Eliminazione anno accademico vuoto & R0F12.2 \\
+	UC7 & Gestione corsi di laurea & R0F3 \\
 	UC7.1 & Creazione \citGloss{corso di laurea} & \makecell[tl]{
 		R0F3.1\\
-		R0F3.1.1 } \\  
+		R0F3.1.1 } \\
 	UC7.2 & Visualizzazione errore sigla invalida & \makecell[tl]{
 		R0F3.1\\
-		R0F3.1.1 } \\  
-	UC7.3 & Visualizzazione lista completa dei corsi &  R0F3.2 \\  
-	UC7.4 & Visualizzazione lista corsi di laurea per \citGloss{anno accademico} & R0F3.2  \\  
-	UC7.5 & Creazione esame in un corso &  R0F3.3\\  
-	UC7.6 & Visualizzazione errore nome esame non valido & R0F3.3  \\  
-	UC7.7 & Visualizzazione lista esami per \citGloss{corso di laurea} & R0F3.4 \\  
-	UC7.8 & Visualizzazione lista esami &  R0F3.4 \\  
-	UC7.9 & Visualizzazione dettagli esame & R0F3.4.1 \\  
+		R0F3.1.1 } \\
+	UC7.3 & Visualizzazione lista completa dei corsi & R0F3.2 \\
+	UC7.4 & Visualizzazione lista corsi di laurea per \citGloss{anno accademico} & R0F3.2  \\
+	UC7.5 & Creazione esame in un corso & R0F3.3\\
+	UC7.6 & Visualizzazione errore nome esame non valido & R0F3.3  \\
+	UC7.7 & Visualizzazione lista esami per \citGloss{corso di laurea} & R0F3.4 \\
+	UC7.8 & Visualizzazione lista esami & R0F3.4 \\
+	UC7.9 & Visualizzazione dettagli esame & R0F3.4.1 \\
 	UC7.10 & Associazione professore a esame & R0F3.4.2 \\
 	UC7.10.1 & Visualizzazione lista di esami non ancora assegnati & R0F3.4.2 \\ 
 	UC7.10.2 & Visualizzazione lista professori selezionato un esame & R0F3.4.2 \\ 
 	UC7.10.3 & Associazione professore all'esame & R0F3.4.2 \\ 
 	%-----------------------------------------------------
-	UC8 & Gestione aspetti relativi agli esami & R0F4 \\  
-	UC8.1 & Visualizzazione lista degli esami & R0F4.1 \\  
-	UC8.2 & Visualizzazione lista degli studenti & R0F4.2  \\  
-	UC8.3 & Registrazione valutazione di un esame & R0F4.3 \\  
-	UC9 & Gestione aspetti relativi allo studente & R0F5 \\  
-	UC9.1 & Visualizzazione lista degli esami & R0F5.1 \\  
-	UC9.1.1 & Visualizzazione dei crediti degli esami ai quali è iscritto & R0F5.1.1 \\  
-	UC9.1.2 & Visualizzazione della obbligatorietà degli esami ai quali è iscritto & R0F5.1.2 \\  
-	UC9.1.3 & Visualizzazione delle valutazioni degli esami ai quali è iscritto	& R0F5.1.3 \\  
-	UC9.2 & Visualizzazione degli esami opzionali e dei loro crediti & R0F5.2 \\  
-	UC9.3 & Iscrizione ad un esame opzionale & R0F5.2.2 \\  
+	UC8 & Gestione aspetti relativi agli esami & R0F4 \\
+	UC8.1 & Visualizzazione lista degli esami & R0F4.1 \\
+	UC8.2 & Visualizzazione lista degli studenti & R0F4.2  \\
+	UC8.3 & Registrazione valutazione di un esame & R0F4.3 \\
+	UC9 & Gestione aspetti relativi allo studente & R0F5 \\
+	UC9.1 & Visualizzazione lista degli esami & R0F5.1 \\
+	UC9.1.1 & Visualizzazione dei crediti degli esami ai quali è iscritto & R0F5.1.1 \\
+	UC9.1.2 & Visualizzazione della obbligatorietà degli esami ai quali è iscritto & R0F5.1.2 \\
+	UC9.1.3 & Visualizzazione delle valutazioni degli esami ai quali è iscritto	& R0F5.1.3 \\
+	UC9.2 & Visualizzazione degli esami opzionali e dei loro crediti & R0F5.2 \\
+	UC9.3 & Iscrizione ad un esame opzionale & R0F5.2.2 \\
 	UC9.4 & Visualizzazione delle informazioni relative ai crediti & R0F5.1.4 \\ 
-	& & R0F5.2.1 \\  
-	UC10 & Gestione degli amministratori & R0F11 \\  
-	UC10.1 & Aggiunta di un amministratore & R0F11.1 \\  
-	UC10.1.1 & Inserimento \citGloss{chiave pubblica} & R0F11.1 \\  
-	UC10.1.2 & Visualizzazione messaggio di errore riguardo a chiave mal formata & R0F11.1 \\  
-	UC10.1.3 & Visualizzazione messaggio di errore riguardo a chiave già registrata & R0F11.1 \\  
-	UC10.2 & Visualizzazione lista degli amministratori & R0F11.3 \\  
-	UC10.3 & Rimozione amministratore & R0F11.2 \\  
-	UC11 & Visualizzazione quantità di \citGloss{Gas}, \citGloss{Ether} e costo delle operazioni & R0F10 \\  
+	& & R0F5.2.1 \\
+	UC10 & Gestione degli amministratori & R0F11 \\
+	UC10.1 & Aggiunta di un amministratore & R0F11.1 \\
+	UC10.1.1 & Inserimento \citGloss{chiave pubblica} & R0F11.1 \\
+	UC10.1.2 & Visualizzazione messaggio di errore riguardo a chiave mal formata & R0F11.1 \\
+	UC10.1.3 & Visualizzazione messaggio di errore riguardo a chiave già registrata & R0F11.1 \\
+	UC10.2 & Visualizzazione lista degli amministratori & R0F11.3 \\
+	UC10.3 & Rimozione amministratore & R0F11.2 \\
+	UC11 & Visualizzazione quantità di \citGloss{Gas}, \citGloss{Ether} e costo delle operazioni & R0F10 \\
 	\hiderowcolors
 	\caption{Tabella di tracciamento fonti-requisiti}
 \end{longtable}
@@ -312,174 +312,174 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 \renewcommand*{\arraystretch}{1.2}
 \begin{longtable}[H]{p{2cm}p{5.2cm}p{5cm}}
 	\rowcolor{CHeader} 
-	\color{CHeaderText} \textbf{Requisito} & \color{CHeaderText} \textbf{Descrizione requisito} & \color{CHeaderText} \textbf{Fonti} \\  
+	\color{CHeaderText} \textbf{Requisito} & \color{CHeaderText} \textbf{Descrizione requisito} & \color{CHeaderText} \textbf{Fonti} \\
 	% REGEX for Notepad++
-	% (.*)&(.*)&(.*)&(.*)      --->       \1& \3&  \\\\ \ 
+	% (.*)&(.*)&(.*)&(.*)      --->       \1& \3& \\\\ \ 
 	\endhead
-	R0F1 &  L'amministratore può gestire gli utenti & \makecell[tl]{
+	R0F1 & L'amministratore può gestire gli utenti & \makecell[tl]{
 		Interno \\
 		UC5 \\
 		UC5
-	} \\  
-	R0F1.1 &  L'amministratore può ottenere una lista di tutti gli utenti non abilitati & \makecell[tl]{
+	} \\
+	R0F1.1 & L'amministratore può ottenere una lista di tutti gli utenti non abilitati & \makecell[tl]{
 		Interno \\ 
-		UC5 \\  
+		UC5 \\
 		UC5.3
-	} \\  
-	R0F1.2 &  L'amministratore può abilitare un utente & \makecell[tl]{
+	} \\
+	R0F1.2 & L'amministratore può abilitare un utente & \makecell[tl]{
 		Interno \\ 
 		UC5 \\ 
 		UC5.4
-	} \\  
-	R0F1.3 &  L'amministratore può rimuovere un utente & \makecell[tl]{
+	} \\
+	R0F1.3 & L'amministratore può rimuovere un utente & \makecell[tl]{
 		Interno \\ 
 		UC5.5
-	} \\  
-	R0F1.4 &  L'amministratore può ottenere una lista di tutti gli studenti & \makecell[tl]{
-		Interno \\  
+	} \\
+	R0F1.4 & L'amministratore può ottenere una lista di tutti gli studenti & \makecell[tl]{
+		Interno \\
 		UC5.1
-	} \\  
-	R0F2 &  L'amministratore può gestire i professori & \makecell[tl]{
+	} \\
+	R0F2 & L'amministratore può gestire i professori & \makecell[tl]{
 		Interno
-	} \\  
-	R0F2.1 &  L'amministratore può ottenere una lista di tutti i professori & \makecell[tl]{
+	} \\
+	R0F2.1 & L'amministratore può ottenere una lista di tutti i professori & \makecell[tl]{
 		Interno \\ 
 		UC5.2 
-	} \\  
-	R0F2.2 &  L'amministratore può assegnare un esame ad un determinato professore & \makecell[tl]{
+	} \\
+	R0F2.2 & L'amministratore può assegnare un esame ad un determinato professore & \makecell[tl]{
 		Capitolato
-	} \\  
-	R0F12&  L'amministratore può gestire gli anni accademici & \makecell[tl]{
+	} \\
+	R0F12& L'amministratore può gestire gli anni accademici & \makecell[tl]{
 		Capitolato \\ 
 		UC6
-	} \\  
-	R0F12.1 &  L'amministratore può aggiungere un \citGloss{anno accademico} & \makecell[tl]{
+	} \\
+	R0F12.1 & L'amministratore può aggiungere un \citGloss{anno accademico} & \makecell[tl]{
 		Capitolato \\ 
 		UC6.1 \\ 
 		UC6.3 \\ 
 		UC6.4 \\ 
 		UC6.5
-	} \\  
-	R0F12.3 &  L'amministratore può ottenere una lista degli anni accademici & \makecell[tl]{
+	} \\
+	R0F12.3 & L'amministratore può ottenere una lista degli anni accademici & \makecell[tl]{
 		Interno \\ 
 		UC6.2
 	} \\ 
-	R0F3 &  L'amministratore può gestire i corsi di laurea relativi agli anni accademici & \makecell[tl]{
+	R0F3 & L'amministratore può gestire i corsi di laurea relativi agli anni accademici & \makecell[tl]{
 		Capitolato \\ 
 		UC7 
-	} \\  
-	R0F3.1 &  L'amministratore può creare un nuovo \citGloss{corso di laurea} a partire da un \citGloss{anno accademico} & \makecell[tl]{
+	} \\
+	R0F3.1 & L'amministratore può creare un nuovo \citGloss{corso di laurea} a partire da un \citGloss{anno accademico} & \makecell[tl]{
 		Capitolato \\ 
-		UC7.1 \\  
+		UC7.1 \\
 		UC7.2
 	} \\
 	R0F3.1.1 & L'amministratore deve indicare un codice identificativo per ogni \citGloss{corso di laurea} & \makecell[tl]{
 		Interno \\ 
-		UC7.1 \\  
+		UC7.1 \\
 		UC7.2
 	} \\ 
-	R0F3.2 &  L'amministratore può ottenere una lista di tutti i corsi di laurea dato un \citGloss{anno accademico} & \makecell[tl]{
+	R0F3.2 & L'amministratore può ottenere una lista di tutti i corsi di laurea dato un \citGloss{anno accademico} & \makecell[tl]{
 		Interno \\ 
-		UC7.3 \\  
+		UC7.3 \\
 		UC7.4
-	} \\  
-	R0F3.3 &  L'amministratore può creare nuovi esami & \makecell[tl]{
+	} \\
+	R0F3.3 & L'amministratore può creare nuovi esami & \makecell[tl]{
 		Capitolato \\ 
-		UC7.5 \\  
+		UC7.5 \\
 		UC7.6
-	} \\  
-	R0F3.4 &  L'amministratore può ottenere una lista di tutti gli esami dato il \citGloss{corso di laurea} & \makecell[tl]{
+	} \\
+	R0F3.4 & L'amministratore può ottenere una lista di tutti gli esami dato il \citGloss{corso di laurea} & \makecell[tl]{
 		Interno \\ 
 		UC7.7 \\ 
 		UC7.8
-	} \\  
-	R0F3.4.1 &  L'amministratore può ottenere l'informazione di quale professore è assegnato a un determinato esame & \makecell[tl]{
+	} \\
+	R0F3.4.1 & L'amministratore può ottenere l'informazione di quale professore è assegnato a un determinato esame & \makecell[tl]{
 		Interno \\ 
 		UC7.9 	
-	} \\  
-	R0F3.4.2  &  L'amministratore può associare ad un esame il relativo professore & \makecell[tl]{
+	} \\
+	R0F3.4.2  & L'amministratore può associare ad un esame il relativo professore & \makecell[tl]{
 		Interno	 \\ 
 		UC7.10 \\ 
 		UC7.10.1 \\ 
 		UC7.10.2 \\ 
 		UC7.10.3 \\ 	
-	} \\  
-	R0F4 &  Un professore può gestire gli esami a lui assegnati & \makecell[tl]{
+	} \\
+	R0F4 & Un professore può gestire gli esami a lui assegnati & \makecell[tl]{
 		Capitolato \\ 
 		UC8
-	} \\  
-	R0F4.1 &  Un professore può ottenere la lista di tutti gli esami a lui assegnati & \makecell[tl]{
+	} \\
+	R0F4.1 & Un professore può ottenere la lista di tutti gli esami a lui assegnati & \makecell[tl]{
 		Capitolato \\ 
 		UC8.1
-	} \\  
-	R0F4.2 &  Un professore può ottenere la lista di tutti gli studenti associati a un determinato esame & \makecell[tl]{
+	} \\
+	R0F4.2 & Un professore può ottenere la lista di tutti gli studenti associati a un determinato esame & \makecell[tl]{
 		Capitolato  \\ 
 		UC8.2
-	} \\  
-	R0F4.3 &  Un professore può registrare un esito ad un dato esame ad un dato studente registrato a quell'esame & \makecell[tl]{
+	} \\
+	R0F4.3 & Un professore può registrare un esito ad un dato esame ad un dato studente registrato a quell'esame & \makecell[tl]{
 		Capitolato \\ 
 		UC8.3
-	} \\  
-	R0F5 &  Uno studente può gestire l'iscrizione agli esami & \makecell[tl]{
+	} \\
+	R0F5 & Uno studente può gestire l'iscrizione agli esami & \makecell[tl]{
 		Capitolato \\ 
 		UC9
-	} \\  
-	R0F5.1 &  Uno studente può vedere l'elenco degli esami ai quali è iscritto & \makecell[tl]{
+	} \\
+	R0F5.1 & Uno studente può vedere l'elenco degli esami ai quali è iscritto & \makecell[tl]{
 		Capitolato \\ 
 		UC9.1
-	} \\  
-	R0F5.1.1 &  Uno studente può ottenere il numero di crediti assegnati agli esame & \makecell[tl]{
+	} \\
+	R0F5.1.1 & Uno studente può ottenere il numero di crediti assegnati agli esame & \makecell[tl]{
 		Interno \\ 
 		UC9.1.1
-	} \\  
-	R0F5.1.2 &  Uno studente può ottenere l'obbligatorietà degli esame & \makecell[tl]{
+	} \\
+	R0F5.1.2 & Uno studente può ottenere l'obbligatorietà degli esame & \makecell[tl]{
 		Interno \\ 
 		UC9.1.2
-	} \\  
-	R0F5.1.3 &  Uno studente può ottenere lo stato di superamento degli esame & \makecell[tl]{
+	} \\
+	R0F5.1.3 & Uno studente può ottenere lo stato di superamento degli esame & \makecell[tl]{
 		Interno \\ 
 		UC9.1.3
-	} \\  
-	R0F5.1.4 &  Uno studente può ottenere il totale dei suoi crediti & \makecell[tl]{
+	} \\
+	R0F5.1.4 & Uno studente può ottenere il totale dei suoi crediti & \makecell[tl]{
 		Interno \\ 
 		UC9.4
-	} \\  
-	R0F5.1.5 &  Uno studente può ottenere il numero di crediti da raggiungere per la laurea & \makecell[tl]{
+	} \\
+	R0F5.1.5 & Uno studente può ottenere il numero di crediti da raggiungere per la laurea & \makecell[tl]{
 		Interno
-	} \\  
-	R0F5.2 &  Uno studente può ottenere l'elenco degli esami opzionali & \makecell[tl]{
+	} \\
+	R0F5.2 & Uno studente può ottenere l'elenco degli esami opzionali & \makecell[tl]{
 		Capitolato \\ 
 		UC9.2
-	} \\  
-	R0F5.2.1 &  Uno studente può ottenere il numero di crediti degli esami opzionali & \makecell[tl]{
+	} \\
+	R0F5.2.1 & Uno studente può ottenere il numero di crediti degli esami opzionali & \makecell[tl]{
 		Capitolato \\ 
 		UC9.4
-	} \\  
-	R0F5.2.2 &  Uno studente può iscriversi ad un esame opzionale & \makecell[tl]{
+	} \\
+	R0F5.2.2 & Uno studente può iscriversi ad un esame opzionale & \makecell[tl]{
 		Capitolato \\ 
 		UC9.3
-	} \\  
-	R0F6 &  L'utente può effettuare il login & \makecell[tl]{
+	} \\
+	R0F6 & L'utente può effettuare il login & \makecell[tl]{
 		Interno \\ 
 		UC2
-	} \\  
-	R0F6.1 &  Il login deve avvenire tramite il controllo delle chiavi, senza ulteriori azioni da parte dell'utente & \makecell[tl]{
+	} \\
+	R0F6.1 & Il login deve avvenire tramite il controllo delle chiavi, senza ulteriori azioni da parte dell'utente & \makecell[tl]{
 		Interno \\ 
 		UC2.1
-	} \\  
-	R0F7 &  L'utente può effettuare il logout & \makecell[tl]{
+	} \\
+	R0F7 & L'utente può effettuare il logout & \makecell[tl]{
 		Capitolato \\ 
 		UC2.1  \\
 		UC2.2 \\
 		UC2.3 \\
 		UC2.4 \\ 
 		UC4
-	} \\  
-	R0F8 &  L'utente non ancora registrato può registrarsi & \makecell[tl]{
+	} \\
+	R0F8 & L'utente non ancora registrato può registrarsi & \makecell[tl]{
 		Capitolato \\ 
 		UC3
-	} \\  
-	R0F8.1 &  La registrazione necessita di nome, cognome, categoria (studente o professore) e selezione del corso di laura se si tratta di uno studente & \makecell[tl]{
+	} \\
+	R0F8.1 & La registrazione necessita di nome, cognome, categoria (studente o professore) e selezione del corso di laura se si tratta di uno studente & \makecell[tl]{
 		Capitolato \\
 		UC3.1 \\
 		UC3.2 \\
@@ -489,121 +489,121 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 		UC3.6 \\
 		UC3.7 \\
 		UC3.8
-	} \\  
-	R1F9 &  L'utente può leggere una breve guida sull'uso di MetaMask e sul pagamento delle operazioni & \makecell[tl]{
+	} \\
+	R1F9 & L'utente può leggere una breve guida sull'uso di MetaMask e sul pagamento delle operazioni & \makecell[tl]{
 		Interno \\ 
 		UC1
-	} \\  
-	R0F10 &  L'utente deve poter vedere preventivamente il costo in \citGloss{Gas}, \citGloss{Ether} e Euro dell'operazione che sta per eseguire & \makecell[tl]{
+	} \\
+	R0F10 & L'utente deve poter vedere preventivamente il costo in \citGloss{Gas}, \citGloss{Ether} e Euro dell'operazione che sta per eseguire & \makecell[tl]{
 		Capitolato \\
 		UC11
-	} \\  
-	R0F11 &  L'università deve poter gestire gli amministratori & \makecell[tl]{
+	} \\
+	R0F11 & L'università deve poter gestire gli amministratori & \makecell[tl]{
 		VER-2017-12-08 \\
 		UC10
-	} \\  
-	R0F11.1 &  L'università deve poter aggiungere amministratori & \makecell[tl]{
+	} \\
+	R0F11.1 & L'università deve poter aggiungere amministratori attraverso l'inserimento del loro indirizzo & \makecell[tl]{
 		VER-2017-12-08 \\
 		UC10.1 \\
 		UC10.1.1 \\ 
 		UC10.1.2 \\
 		UC10.1.3
-	} \\  
-	R0F11.2 &  L'università deve poter rimuovere amministratori & \makecell[tl]{
+	} \\
+	R0F11.2 & L'università deve poter rimuovere amministratori & \makecell[tl]{
 		VER-2017-12-08 \\
 		UC10.3
-	} \\  
-	R0F11.3 &  L'università deve poter ottenere la lista di tutti gli amministratori & \makecell[tl]{
+	} \\
+	R0F11.3 & L'università deve poter ottenere la lista di tutti gli amministratori & \makecell[tl]{
 		Interno \\
 		UC10.2
-	} \\  
-	R0Q1 &  La progettazione e il codice devono seguire le norme e le metriche riportate nei documenti allegati X e Y & \makecell[tl]{
+	} \\
+	R0Q1 & La progettazione e il codice devono seguire le norme e le metriche riportate nei documenti allegati X e Y & \makecell[tl]{
 		Interno
-	} \\  
-	R0Q2 &  L'approccio di scrittura di \citGloss{JavaScript} deve essere promise Centric Approach & \makecell[tl]{
+	} \\
+	R0Q2 & L'approccio di scrittura di \citGloss{JavaScript} deve essere promise Centric Approach & \makecell[tl]{
 		Capitolato
-	} \\  
-	R0Q2.1 &  L'applicativo non deve fare uso di callback in presenza di alternative alle ultime & \makecell[tl]{
+	} \\
+	R0Q2.1 & L'applicativo non deve fare uso di callback in presenza di alternative alle ultime & \makecell[tl]{
 		VER-2017-11-22
-	} \\  
-	R0Q3 &  Il codice \citGloss{JavaScript} deve attenersi al \citGloss{AirBNB} \citGloss{JavaScript} style guide & \makecell[tl]{
+	} \\
+	R0Q3 & Il codice \citGloss{JavaScript} deve attenersi al \citGloss{AirBNB} \citGloss{JavaScript} style guide & \makecell[tl]{
 		Capitolato
-	} \\  
-	R0Q4 &  Lo sviluppo deve essere supportato dall'utilizzo del tool ESLint & \makecell[tl]{
+	} \\
+	R0Q4 & Lo sviluppo deve essere supportato dall'utilizzo del tool ESLint & \makecell[tl]{
 		Capitolato
-	} \\  
-	R0Q5 &  Dovrà essere fornito un manuale utente in lingua inglese che tratterà l'uso da parte di studenti e professori & \makecell[tl]{
+	} \\
+	R0Q5 & Dovrà essere fornito un manuale utente in lingua inglese che tratterà l'uso da parte di studenti e professori & \makecell[tl]{
 		VER-2017-11-22
-	} \\  
-	R0Q6 &  Dovrà essere fornito un manuale di deploy e di utilizzo da parte degli amministratori in lingua inglese & \makecell[tl]{
+	} \\
+	R0Q6 & Dovrà essere fornito un manuale di deploy e di utilizzo da parte degli amministratori in lingua inglese & \makecell[tl]{
 		VER-2017-11-22
-	} \\  
-	R0Q7 &  Il codice sorgente deve essere pubblicato sulla piattaforma \citGloss{GitHub}, BitBucket o GitLab & \makecell[tl]{
+	} \\
+	R0Q7 & Il codice sorgente deve essere pubblicato sulla piattaforma \citGloss{GitHub}, BitBucket o GitLab & \makecell[tl]{
 		Capitolato
-	} \\  
-	R0Q8 &  Il codice deve attenersi il più possibile alle guide linea de "App a 12 Fattori" & \makecell[tl]{
+	} \\
+	R0Q8 & Il codice deve attenersi il più possibile alle guide linea de "App a 12 Fattori" & \makecell[tl]{
 		Capitolato
-	} \\  
-	R0V1 &  L'applicativo dovrà essere sviluppato attraverso l'uso di tecnologie web & \makecell[tl]{
+	} \\
+	R0V1 & L'applicativo dovrà essere sviluppato attraverso l'uso di tecnologie web & \makecell[tl]{
 		Capitolato
-	} \\  
-	R0V1.1 &  L'applicativo dovrà essere sviluppato con Node.js & \makecell[tl]{
+	} \\
+	R0V1.1 & L'applicativo dovrà essere sviluppato con Node.js & \makecell[tl]{
 		Capitolato
-	} \\  
-	R0V1.2 &  L'applicativo dovrà essere sviluppato con \citGloss{JavaScript} 8 (ES8) & \makecell[tl]{
+	} \\
+	R0V1.2 & L'applicativo dovrà essere sviluppato con \citGloss{JavaScript} 8 (ES8) & \makecell[tl]{
 		Capitolato
-	} \\  
-	R0V1.3 &  L'applicativo dovrà essere sviluppato con il boilerplate \citGloss{Redux} Minimal & \makecell[tl]{
+	} \\
+	R0V1.3 & L'applicativo dovrà essere sviluppato con il boilerplate \citGloss{Redux} Minimal & \makecell[tl]{
 		Capitolato
-	} \\  
-	R0V1.4 &  L'applicativo dovrà essere sviluppato utilizzando \citGloss{React} 15.x & \makecell[tl]{
+	} \\
+	R0V1.4 & L'applicativo dovrà essere sviluppato utilizzando \citGloss{React} 15.x & \makecell[tl]{
 		Capitolato
-	} \\  
-	R0V1.5 &  L'applicativo dovrà essere sviluppato utilizzando \citGloss{Redux} 3.x & \makecell[tl]{
+	} \\
+	R0V1.5 & L'applicativo dovrà essere sviluppato utilizzando \citGloss{Redux} 3.x & \makecell[tl]{
 		Capitolato
-	} \\  
-	R0V1.6 &  Il deploy del sito andrà eseguito utilizzando Surge.sh & \makecell[tl]{
+	} \\
+	R0V1.6 & Il deploy del sito andrà eseguito utilizzando Surge.sh & \makecell[tl]{
 		Capitolato
-	} \\  
-	R0V1.7 &  È desiderabile l'utilizzo di S\citGloss{CSS} in sostituzione a \citGloss{CSS} & \makecell[tl]{
+	} \\
+	R0V1.7 & È desiderabile l'utilizzo di S\citGloss{CSS} in sostituzione a \citGloss{CSS} & \makecell[tl]{
 		Capitolato
-	} \\  
-	R0V2 &  Gli \citGloss{smart contract} dovranno essere scritti in linguaggio \citGloss{Solidity} & \makecell[tl]{
+	} \\
+	R0V2 & Gli \citGloss{smart contract} dovranno essere scritti in linguaggio \citGloss{Solidity} & \makecell[tl]{
 		Capitolato
-	} \\  
-	R0V3 &  La connessione alla rete \citGloss{Ethereum} deve avvernire tramite MetaMask & \makecell[tl]{
+	} \\
+	R0V3 & La connessione alla rete \citGloss{Ethereum} deve avvernire tramite MetaMask & \makecell[tl]{
 		Capitolato
-	} \\  
-	R0V3.1 &  I test riguartandi gli \citGloss{smart contract} dovranno essere eseguiti in una rete locale ed almeno in una rete pubblica & \makecell[tl]{
+	} \\
+	R0V3.1 & I test riguartandi gli \citGloss{smart contract} dovranno essere eseguiti in una rete locale ed almeno in una rete pubblica & \makecell[tl]{
 		Capitolato
-	} \\  
-	R0V3.2 &  Il deploy degli \citGloss{smart contract} dovrà avvenire su rete locale testrpc e rete di test Ropsten & \makecell[tl]{
+	} \\
+	R0V3.2 & Il deploy degli \citGloss{smart contract} dovrà avvenire su rete locale testrpc e rete di test Ropsten & \makecell[tl]{
 		Capitolato
-	} \\  
-	R2V3.3 &  È apprezzabile un deploy finale sulla rete principale di \citGloss{Ethereum} & \makecell[tl]{
+	} \\
+	R2V3.3 & È apprezzabile un deploy finale sulla rete principale di \citGloss{Ethereum} & \makecell[tl]{
 		Capitolato
-	} \\  
-	R0V4 &  Lo sviluppo degli \citGloss{smart contract} dovrà avvenire utilizzando il framework Truffle & \makecell[tl]{
+	} \\
+	R0V4 & Lo sviluppo degli \citGloss{smart contract} dovrà avvenire utilizzando il framework Truffle & \makecell[tl]{
 		Capitolato
-	} \\  
-	R0V5 &  L'applicativo deve essere accessibile ed utilizzabile dal \citGloss{browser} Mozilla \citGloss{Firefox} a partire dalla versione 52 & \makecell[tl]{
+	} \\
+	R0V5 & L'applicativo deve essere accessibile ed utilizzabile dal \citGloss{browser} Mozilla \citGloss{Firefox} a partire dalla versione 52 & \makecell[tl]{
 		Interno
-	} \\  
-	R0V6 &  L'applicativo deve essere accessibile ed utilizzabile dal \citGloss{browser} Google \citGloss{Chrome} a partire dalla versione 57 & \makecell[tl]{
+	} \\
+	R0V6 & L'applicativo deve essere accessibile ed utilizzabile dal \citGloss{browser} Google \citGloss{Chrome} a partire dalla versione 57 & \makecell[tl]{
 		Interno
-	} \\  
-	R1V7 &  L'applicativo deve essere accessibile ed utilizzabile da un \citGloss{browser} mobile, per le versioni supportate fare riferimento alle controparti PC di \citGloss{Firefox} e \citGloss{Chrome} & \makecell[tl]{
+	} \\
+	R1V7 & L'applicativo deve essere accessibile ed utilizzabile da un \citGloss{browser} mobile, per le versioni supportate fare riferimento alle controparti PC di \citGloss{Firefox} e \citGloss{Chrome} & \makecell[tl]{
 		Capitolato
-	} \\  
-	R0V8 &  Un utente non deve poter compiere azioni sul sistema senza aver fatto l'accesso ad esso & \makecell[tl]{
+	} \\
+	R0V8 & Un utente non deve poter compiere azioni sul sistema senza aver fatto l'accesso ad esso & \makecell[tl]{
 		Capitolato
-	}\\  
-	R0V9 &  L'applicazione dei principi de "App a 12 Fattori" deve essere documentata & \makecell[tl]{
+	}\\
+	R0V9 & L'applicazione dei principi de "App a 12 Fattori" deve essere documentata & \makecell[tl]{
 		Capitolato 
-	}\\  
-	R0V10 &  Il codice sorgente deve essere pubblicato con licenza MIT & \makecell[tl]{
+	}\\
+	R0V10 & Il codice sorgente deve essere pubblicato con licenza MIT & \makecell[tl]{
 		Capitolato
-	}\\  
+	}\\
 	\hiderowcolors
 	\caption{Tabella di tracciamento requisiti-fonti}
 \end{longtable}
@@ -615,11 +615,11 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 \renewcommand*{\arraystretch}{1.2}
 \begin{longtable}[H]{p{2.8cm}p{2.9cm}p{2.9cm}p{2.9cm}p{1.5cm}}
 	\rowcolor{CHeader}
-	\color{CHeaderText} \textbf{Tipologia} & \color{CHeaderText} \textbf{0 Obbligatori} & \color{CHeaderText} \textbf{1 Desiderabili} & \color{CHeaderText} \textbf{2 Opzionali} & \color{CHeaderText} \textbf{Totale} \\  
-	Funzionali & 44 & 1 & 0 & 45 \\  
-	Di qualità & 9 & 0 & 0 & 9 \\  
-	Di vincolo & 18 & 1 & 1 & 20 \\  
-	Prestazionali & 0 & 0 & 0 & 0 \\  
+	\color{CHeaderText} \textbf{Tipologia} & \color{CHeaderText} \textbf{0 Obbligatori} & \color{CHeaderText} \textbf{1 Desiderabili} & \color{CHeaderText} \textbf{2 Opzionali} & \color{CHeaderText} \textbf{Totale} \\
+	Funzionali & 44 & 1 & 0 & 45 \\
+	Di qualità & 9 & 0 & 0 & 9 \\
+	Di vincolo & 18 & 1 & 1 & 20 \\
+	Prestazionali & 0 & 0 & 0 & 0 \\
 	\hiderowcolors
 	\caption{Riepilogo del numero dei requisiti individuati}
 \end{longtable}

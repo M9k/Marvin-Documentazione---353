@@ -852,13 +852,21 @@
 
 
 \subsection{UC10.2 - Visualizzazione lista degli amministratori}
-	\begin{itemize}
+\begin{itemize}
 	\item \textbf{Attori primari:} università;
-	\item \textbf{Scopo e descrizione:} l'utente che rappresenta l'università visualizza una lista di tutti gli amministratori, con indicata l'\citGloss{indirizzo};
-	\item \textbf{Scenario principale:} l'utente che rappresenta l'università richiede al sistema la lista degli amministratori per poterla consultare;
+	\item \textbf{Scopo e descrizione:} l'utente che rappresenta l'università visualizza una lista di tutti gli amministratori;
+	\item \textbf{Scenario principale:} l'utente che rappresenta l'università richiede al sistema la lista degli amministratori per poterla consultare ed eventualmente compiere altre operazioni su di essi;
 	\item \textbf{Precondizione:} l'utente che rappresenta l'università è già riconosciuto dal sistema come tale e richiede la visualizzazione della lista degli amministratori;
 	\item \textbf{Postcondizione:} l'utente che rappresenta l'università ottiene la lista degli amministratori per poterla consultare.
-	\end{itemize}
+\end{itemize}
+\subsection{UC10.2.1 - Visualizzazione indirizzi degli amministratori}
+\begin{itemize}
+	\item \textbf{Attori primari:} università;
+	\item \textbf{Scopo e descrizione:} l'utente che rappresenta l'università visualizza per ogni amministratore il suo indirizzo;
+	\item \textbf{Scenario principale:} l'utente che rappresenta l'università richiede al sistema la lista dell'indirizzo di ogni amministratore presente;
+	\item \textbf{Precondizione:} l'utente che rappresenta l'università è già riconosciuto dal sistema come tale e richiede la visualizzazione degli indirizzi degli amministratori;
+	\item \textbf{Postcondizione:} l'utente che rappresenta l'università ottiene la lista degli indirizzi degli amministratori.
+\end{itemize}
 \subsection{UC10.3 - Rimozione amministratore}
 \begin{itemize}
 	\item \textbf{Attori primari:} università;

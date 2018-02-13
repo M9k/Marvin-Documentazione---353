@@ -5,14 +5,16 @@
       <packagedElement xmi:type="uml:Component" xmi:id="_cqvYMNO3EeeqiP5Ban4ZWQ" name="Marvin" useCase="_TyPmoNdeEeezH47GVDuBIg _ml2JkNyCEeeh6Z7P8Wq9Wg _wASbcN6KEeeoYNTeb3S4ug">
         <eAnnotations xmi:id="_ADfZANO5EeeqiP5Ban4ZWQ"/>
         <ownedUseCase xmi:id="_Re8uUNdeEeezH47GVDuBIg" name="UC1 - Breve guida"/>
-        <ownedUseCase xmi:id="_VOoFENdeEeezH47GVDuBIg" name="UC5 - Amministrazione"/>
-        <ownedUseCase xmi:id="_VqvZUNdeEeezH47GVDuBIg" name="UC6 - Gestione aspetti relativi agli esami"/>
+        <ownedUseCase xmi:id="_VOoFENdeEeezH47GVDuBIg" name="UC5 - Gestione utenti"/>
+        <ownedUseCase xmi:id="_VqvZUNdeEeezH47GVDuBIg" name="UC6 - Gestione anni accademici"/>
         <ownedUseCase xmi:id="_WGeTENdeEeezH47GVDuBIg" name="UC4 - Logout"/>
         <ownedUseCase xmi:id="_WdMxANdeEeezH47GVDuBIg" name="UC3 - Registrazione"/>
-        <ownedUseCase xmi:id="_brWQ4NdeEeezH47GVDuBIg" name="UC7 - Gestione aspetti relativi allo studente"/>
+        <ownedUseCase xmi:id="_brWQ4NdeEeezH47GVDuBIg" name="UC7 - Gestione corsi di laurea"/>
+        <ownedUseCase xmi:id="_YqmdMBC4Eei8TtBFmmo73Q" name="UC9 - Gestione aspetti relativi allo studente"/>
+        <ownedUseCase xmi:id="_dck-cBC4Eei8TtBFmmo73Q" name="UC10 - Gestione degli amministratori"/>
         <packagedElement xmi:type="uml:UseCase" xmi:id="_TyPmoNdeEeezH47GVDuBIg" name="UC2 - Login" subject="_cqvYMNO3EeeqiP5Ban4ZWQ"/>
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_ml2JkNyCEeeh6Z7P8Wq9Wg" name="UC8 - Gestione degli amministratori" subject="_cqvYMNO3EeeqiP5Ban4ZWQ"/>
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_wASbcN6KEeeoYNTeb3S4ug" name="UC9 - Visualizzazione quantità di Gas, Ether e costo delle operazioni" subject="_cqvYMNO3EeeqiP5Ban4ZWQ"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_ml2JkNyCEeeh6Z7P8Wq9Wg" name="UC8 - Gestione aspetti relativi agli esami" subject="_cqvYMNO3EeeqiP5Ban4ZWQ"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_wASbcN6KEeeoYNTeb3S4ug" name="UC11 - Visualizzazione quantità di Gas, Ether e costo delle operazioni" subject="_cqvYMNO3EeeqiP5Ban4ZWQ"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_buIwkNO4EeeqiP5Ban4ZWQ" memberEnd="_buLM0NO4EeeqiP5Ban4ZWQ _buLM0dO4EeeqiP5Ban4ZWQ">
         <ownedEnd xmi:id="_buLM0NO4EeeqiP5Ban4ZWQ" association="_buIwkNO4EeeqiP5Ban4ZWQ"/>
@@ -68,18 +70,6 @@
       <packagedElement xmi:type="uml:Association" xmi:id="_7Gb-QNO6Eeenzu5FAQRROA" memberEnd="_7Gb-QdO6Eeenzu5FAQRROA _7Gb-QtO6Eeenzu5FAQRROA">
         <ownedEnd xmi:id="_7Gb-QdO6Eeenzu5FAQRROA" type="_hrGeQNO4EeeqiP5Ban4ZWQ" association="_7Gb-QNO6Eeenzu5FAQRROA"/>
         <ownedEnd xmi:id="_7Gb-QtO6Eeenzu5FAQRROA" association="_7Gb-QNO6Eeenzu5FAQRROA"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_n7t2UNdeEeezH47GVDuBIg" memberEnd="_n7t2UddeEeezH47GVDuBIg _n7t2UtdeEeezH47GVDuBIg">
-        <ownedEnd xmi:id="_n7t2UddeEeezH47GVDuBIg" type="_hrGeQNO4EeeqiP5Ban4ZWQ" association="_n7t2UNdeEeezH47GVDuBIg"/>
-        <ownedEnd xmi:id="_n7t2UtdeEeezH47GVDuBIg" type="_VOoFENdeEeezH47GVDuBIg" association="_n7t2UNdeEeezH47GVDuBIg"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_oqxUsNdeEeezH47GVDuBIg" memberEnd="_oqxUsddeEeezH47GVDuBIg _oqxUstdeEeezH47GVDuBIg">
-        <ownedEnd xmi:id="_oqxUsddeEeezH47GVDuBIg" type="_p6BngNO4EeeqiP5Ban4ZWQ" association="_oqxUsNdeEeezH47GVDuBIg"/>
-        <ownedEnd xmi:id="_oqxUstdeEeezH47GVDuBIg" type="_VqvZUNdeEeezH47GVDuBIg" association="_oqxUsNdeEeezH47GVDuBIg"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_psXUkNdeEeezH47GVDuBIg" memberEnd="_psZw0NdeEeezH47GVDuBIg _psZw0ddeEeezH47GVDuBIg">
-        <ownedEnd xmi:id="_psZw0NdeEeezH47GVDuBIg" type="_ro4WANO4EeeqiP5Ban4ZWQ" association="_psXUkNdeEeezH47GVDuBIg"/>
-        <ownedEnd xmi:id="_psZw0ddeEeezH47GVDuBIg" type="_brWQ4NdeEeezH47GVDuBIg" association="_psXUkNdeEeezH47GVDuBIg"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_rm-nINdeEeezH47GVDuBIg" memberEnd="_rnBDYNdeEeezH47GVDuBIg _rnBDYddeEeezH47GVDuBIg">
         <ownedEnd xmi:id="_rnBDYNdeEeezH47GVDuBIg" type="_eOdYQNO4EeeqiP5Ban4ZWQ" association="_rm-nINdeEeezH47GVDuBIg"/>
@@ -168,10 +158,6 @@
         </eAnnotations>
         <generalization xmi:id="_LkDhwNyDEeeh6Z7P8Wq9Wg" general="_2WwdkNyCEeeh6Z7P8Wq9Wg"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_iwM4QNyDEeepgZHwvTg7cg" memberEnd="_iwP7kNyDEeepgZHwvTg7cg _iwP7kdyDEeepgZHwvTg7cg">
-        <ownedEnd xmi:id="_iwP7kNyDEeepgZHwvTg7cg" type="_kUiOQNyCEeeh6Z7P8Wq9Wg" association="_iwM4QNyDEeepgZHwvTg7cg"/>
-        <ownedEnd xmi:id="_iwP7kdyDEeepgZHwvTg7cg" type="_ml2JkNyCEeeh6Z7P8Wq9Wg" association="_iwM4QNyDEeepgZHwvTg7cg"/>
-      </packagedElement>
       <packagedElement xmi:type="uml:Actor" xmi:id="_BxDHUN6LEeeoYNTeb3S4ug" name="Metamask">
         <eAnnotations xmi:id="_BxEVcN6LEeeoYNTeb3S4ug" source="http://www.eclipse.org/uml2/2.0.0/UML">
           <details xmi:id="_BxE8gN6LEeeoYNTeb3S4ug" key="Human"/>
@@ -196,6 +182,38 @@
       <packagedElement xmi:type="uml:Association" xmi:id="_7AXLwN6MEeeoYNTeb3S4ug" memberEnd="_7AXLwd6MEeeoYNTeb3S4ug _7AXLwt6MEeeoYNTeb3S4ug">
         <ownedEnd xmi:id="_7AXLwd6MEeeoYNTeb3S4ug" type="_WdMxANdeEeezH47GVDuBIg" association="_7AXLwN6MEeeoYNTeb3S4ug"/>
         <ownedEnd xmi:id="_7AXLwt6MEeeoYNTeb3S4ug" type="_5oSlkN6MEeeoYNTeb3S4ug" association="_7AXLwN6MEeeoYNTeb3S4ug"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_o6AEABC4Eei8TtBFmmo73Q" memberEnd="_o6AEARC4Eei8TtBFmmo73Q _o6ArEBC4Eei8TtBFmmo73Q">
+        <ownedEnd xmi:id="_o6AEARC4Eei8TtBFmmo73Q" type="_hrGeQNO4EeeqiP5Ban4ZWQ" association="_o6AEABC4Eei8TtBFmmo73Q"/>
+        <ownedEnd xmi:id="_o6ArEBC4Eei8TtBFmmo73Q" type="_VOoFENdeEeezH47GVDuBIg" association="_o6AEABC4Eei8TtBFmmo73Q"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_qFg04BC4Eei8TtBFmmo73Q" memberEnd="_qFg04RC4Eei8TtBFmmo73Q _qFg04hC4Eei8TtBFmmo73Q">
+        <ownedEnd xmi:id="_qFg04RC4Eei8TtBFmmo73Q" type="_hrGeQNO4EeeqiP5Ban4ZWQ" association="_qFg04BC4Eei8TtBFmmo73Q"/>
+        <ownedEnd xmi:id="_qFg04hC4Eei8TtBFmmo73Q" type="_brWQ4NdeEeezH47GVDuBIg" association="_qFg04BC4Eei8TtBFmmo73Q"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_sHxnkBC4Eei8TtBFmmo73Q" memberEnd="_sHxnkRC4Eei8TtBFmmo73Q _sHxnkhC4Eei8TtBFmmo73Q">
+        <ownedEnd xmi:id="_sHxnkRC4Eei8TtBFmmo73Q" type="_kUiOQNyCEeeh6Z7P8Wq9Wg" association="_sHxnkBC4Eei8TtBFmmo73Q"/>
+        <ownedEnd xmi:id="_sHxnkhC4Eei8TtBFmmo73Q" type="_VqvZUNdeEeezH47GVDuBIg" association="_sHxnkBC4Eei8TtBFmmo73Q"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_tcleYBC4Eei8TtBFmmo73Q" memberEnd="_tcmFcBC4Eei8TtBFmmo73Q _tcmFcRC4Eei8TtBFmmo73Q">
+        <ownedEnd xmi:id="_tcmFcBC4Eei8TtBFmmo73Q" type="_kUiOQNyCEeeh6Z7P8Wq9Wg" association="_tcleYBC4Eei8TtBFmmo73Q"/>
+        <ownedEnd xmi:id="_tcmFcRC4Eei8TtBFmmo73Q" type="_dck-cBC4Eei8TtBFmmo73Q" association="_tcleYBC4Eei8TtBFmmo73Q"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_v4h8YBC4Eei8TtBFmmo73Q" memberEnd="_v4h8YRC4Eei8TtBFmmo73Q _v4h8YhC4Eei8TtBFmmo73Q">
+        <ownedEnd xmi:id="_v4h8YRC4Eei8TtBFmmo73Q" type="_p6BngNO4EeeqiP5Ban4ZWQ" association="_v4h8YBC4Eei8TtBFmmo73Q"/>
+        <ownedEnd xmi:id="_v4h8YhC4Eei8TtBFmmo73Q" type="_ml2JkNyCEeeh6Z7P8Wq9Wg" association="_v4h8YBC4Eei8TtBFmmo73Q"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_0M7JwBC4Eei8TtBFmmo73Q" memberEnd="_0M7w0BC4Eei8TtBFmmo73Q _0M7w0RC4Eei8TtBFmmo73Q">
+        <ownedEnd xmi:id="_0M7w0BC4Eei8TtBFmmo73Q" type="_ro4WANO4EeeqiP5Ban4ZWQ" association="_0M7JwBC4Eei8TtBFmmo73Q"/>
+        <ownedEnd xmi:id="_0M7w0RC4Eei8TtBFmmo73Q" type="_YqmdMBC4Eei8TtBFmmo73Q" association="_0M7JwBC4Eei8TtBFmmo73Q"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_1uOkcBC4Eei8TtBFmmo73Q" memberEnd="_1uOkcRC4Eei8TtBFmmo73Q _1uOkchC4Eei8TtBFmmo73Q">
+        <ownedEnd xmi:id="_1uOkcRC4Eei8TtBFmmo73Q" type="_YqmdMBC4Eei8TtBFmmo73Q" association="_1uOkcBC4Eei8TtBFmmo73Q"/>
+        <ownedEnd xmi:id="_1uOkchC4Eei8TtBFmmo73Q" type="_BxDHUN6LEeeoYNTeb3S4ug" association="_1uOkcBC4Eei8TtBFmmo73Q"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_3VWTQBC4Eei8TtBFmmo73Q" memberEnd="_3VWTQRC4Eei8TtBFmmo73Q _3VWTQhC4Eei8TtBFmmo73Q">
+        <ownedEnd xmi:id="_3VWTQRC4Eei8TtBFmmo73Q" type="_dck-cBC4Eei8TtBFmmo73Q" association="_3VWTQBC4Eei8TtBFmmo73Q"/>
+        <ownedEnd xmi:id="_3VWTQhC4Eei8TtBFmmo73Q" type="_BxDHUN6LEeeoYNTeb3S4ug" association="_3VWTQBC4Eei8TtBFmmo73Q"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_vQ5WUNdtEeea54gTi5Qyaw" name="UC2 componenti">

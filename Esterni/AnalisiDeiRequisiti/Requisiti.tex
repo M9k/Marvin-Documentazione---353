@@ -23,11 +23,23 @@ I \citGloss{requisiti} vengono classificati ed assegnati a un identificativo uni
 	\endhead
 	R0F1 & Obbligatorio & L'amministratore può gestire gli utenti & Interno \\
 	R0F1.1 & Obbligatorio & L'amministratore può ottenere una lista di tutti gli utenti non abilitati & Interno \\
+	R0F1.1.1 & Obbligatorio & L'amministratore può ottenere l'indirizzo di tutti gli utenti non abilitati & Interno \\
+	R0F1.1.2 & Obbligatorio & L'amministratore può ottenere il nome di tutti gli utenti non abilitati & Interno \\
+	R0F1.1.3 & Obbligatorio & L'amministratore può ottenere il cognome di tutti gli utenti non abilitati & Interno \\
+	R0F1.1.4 & Obbligatorio & L'amministratore può ottenere il ruolo desiderato di tutti gli utenti non abilitati & Interno \\
+	R0F1.1.5 & Obbligatorio & L'amministratore può ottenere il corso desiderato, ove possibile, di tutti gli utenti non abilitati & Interno \\
 	R0F1.2 & Obbligatorio & L'amministratore può abilitare un utente & Interno \\
 	R0F1.3 & Obbligatorio & L'amministratore può rimuovere un utente & Interno \\
 	R0F1.4 & Obbligatorio & L'amministratore può ottenere una lista di tutti gli studenti & Interno \\
+	R0F1.4.1 & Obbligatorio & L'amministratore può ottenere l'indirizzo di tutti studenti & Interno \\
+	R0F1.4.2 & Obbligatorio & L'amministratore può ottenere il nome di tutti gli studenti & Interno \\
+	R0F1.4.3 & Obbligatorio & L'amministratore può ottenere il cognome di tutti gli studenti & Interno \\
+	R0F1.4.4 & Obbligatorio & L'amministratore può ottenere il corso di tutti gli studenti & Interno \\
 	R0F2 & Obbligatorio & L'amministratore può gestire i professori & Interno \\
 	R0F2.1 & Obbligatorio & L'amministratore può ottenere una lista di tutti i professori & Interno \\
+	R0F2.1.1 & Obbligatorio & L'amministratore può ottenere l'indirizzo di tutti i professori & Interno \\
+	R0F2.1.2 & Obbligatorio & L'amministratore può ottenere il nome di tutti i professori & Interno \\
+	R0F2.1.3 & Obbligatorio & L'amministratore può ottenere il cognome di tutti i professori & Interno \\
 	R0F2.2 & Obbligatorio & L'amministratore può assegnare un esame ad un determinato professore & Capitolato \\
 	R0F3 & Obbligatorio & L'amministratore può gestire i corsi di laurea relativi agli anni accademici & Capitolato \\
 	R0F3.1 & Obbligatorio & L'amministratore può creare un nuovo \citGloss{corso di laurea} a partire da un \citGloss{anno accademico} & Capitolato \\ 
@@ -245,13 +257,25 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 	UC3.7 & Visualizzazione errore chiave non presente & R0F8.1 \\
 	UC3.8 & Visualizzazione errore MetaMask non installato & R0F8.1 \\
 	UC4 & Logout & R0F7 \\
-	UC5 & Amministrazione & R0F1 \\
-	& & R0F2 \\
-	& & R0F12 \\
+	UC5 & Amministrazione & \makecell[tl]{ R0F1 \\
+		R0F2 \\
+		R0F12 } \\
 	UC5 & Gestione Utenti & R0F1 \\
-	UC5.1 & Visualizzazione lista di studenti & R0F1.4 \\
-	UC5.2 & Visualizzazione lista di professori & R0F2.1\\
-	UC5.3 & Visualizzazione di utenti non abilitati & R0F1.1 \\
+	UC5.1 & Visualizzazione lista degli studenti approvati & R0F1.4 \\
+	UC5.1.1 & Visualizzazione indirizzi degli studenti approvati & R0F1.4.1 \\
+	UC5.1.2 & Visualizzazione nomi degli studenti approvati & R0F1.4.2 \\
+	UC5.1.3 & Visualizzazione cognomi degli studenti approvati & R0F1.4.3 \\
+	UC5.1.4 & Visualizzazione corsi degli studenti approvati & R0F1.4.4 \\
+	UC5.2 & Visualizzazione lista dei professori approvati & R0F2.1 \\
+	UC5.2.1 & Visualizzazione indirizzi dei professori approvati & R0F2.1.1 \\
+	UC5.2.2 & Visualizzazione nomi dei professori approvati & R0F2.1.2 \\
+	UC5.2.3 & Visualizzazione cognomi dei professori approvati & R0F2.1.3 \\
+	UC5.3 & Visualizzazione lista utenti in attesa di abilitazione & R0F1.1 \\
+	UC5.3.1 & Visualizzazione indirizzi degli utenti in attesa di abilitazione & R0F1.1.1 \\
+	UC5.3.2 & Visualizzazione nomi degli utenti in attesa di abilitazione & R0F1.1.2 \\
+	UC5.3.3 & Visualizzazione cognomi degli utenti in attesa di abilitazione & R0F1.1.3 \\
+	UC5.3.4 & Visualizzazione ruolo degli utenti in attesa di abilitazione &R0F1.1.4  \\
+	UC5.3.5 & Visualizzazione corsi degli utenti in attesa di abilitazione & R0F1.1.5 \\
 	UC5.4 & Abilitazione utente & R0F1.2 \\
 	UC5.5 & Rimozione utente & R0F1.3 \\
 	UC6 & Gestione anni accademici & R0F12 \\
@@ -616,7 +640,7 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 \begin{longtable}[H]{p{2.8cm}p{2.9cm}p{2.9cm}p{2.9cm}p{1.5cm}}
 	\rowcolor{CHeader}
 	\color{CHeaderText} \textbf{Tipologia} & \color{CHeaderText} \textbf{0 Obbligatori} & \color{CHeaderText} \textbf{1 Desiderabili} & \color{CHeaderText} \textbf{2 Opzionali} & \color{CHeaderText} \textbf{Totale} \\
-	Funzionali & 44 & 1 & 0 & 45 \\
+	Funzionali & 56 & 1 & 0 & 57 \\
 	Di qualità & 9 & 0 & 0 & 9 \\
 	Di vincolo & 18 & 1 & 1 & 20 \\
 	Prestazionali & 0 & 0 & 0 & 0 \\

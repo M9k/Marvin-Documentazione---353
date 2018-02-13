@@ -283,29 +283,128 @@
 	\label{fig:UC5 - Gestione Utenti}
 \end{figure}
 
-\subsection{UC5.1 - Visualizzazione lista di studenti}
+\subsection{UC5.1 - Visualizzazione lista degli studenti approvati}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
-	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti gli studenti registrati nel sistema, visualizzando per ogni studente \citGloss{indirizzo}, nome, cognome e corso;
-	\item \textbf{Scenario principale:} l'amministratore richiede al sistema una lista di studenti per poterli visualizzare e eventualmente gestire;
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti gli studenti registrati nel sistema, visualizzando per ognuno di essi le informazioni basilari;
+	\item \textbf{Scenario principale:} l'amministratore richiede al sistema una lista di studenti per poterli visualizzare ed eventualmente compiere altre operazioni su di essi;
 	\item \textbf{Precondizione:} l'amministratore è nell'area di gestione utenti e richiede una lista di tutti gli studenti; 
 	\item \textbf{Postcondizione:} l'amministratore ottiene la lista.
 \end{itemize}
-\subsection{UC5.2 - Visualizzazione lista di professori}
+%TODO: immagine
+\subsection{UC5.1.1 - Visualizzazione indirizzi degli studenti approvati}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
-	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti i professori registrati nel sistema, visualizzando per ogni professore \citGloss{indirizzo}, nome e cognome;
-	\item \textbf{Scenario principale:} l'amministratore richiede al sistema una lista di professori per poterli visualizzare ed eventualmente gestire;
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti gli \citGloss{indirizzi} della rete \citGloss{Ethereum} degli studenti registrati nel sistema;
+	\item \textbf{Scenario principale:} l'amministratore richiede al sistema una lista di studenti per poterne visualizzare l'\citGloss{indirizzo} ed eventualmente compiere altre operazioni su di essi;
+	\item \textbf{Precondizione:} l'amministratore è nell'area di gestione utenti e richiede una lista di tutti gli studenti per visualizzarne i relativi \citGloss{indirizzi}.
+	\item \textbf{Postcondizione:} l'amministratore ottiene la lista con indicati gli \citGloss{indirizzi}.
+\end{itemize}
+\subsection{UC5.1.2 - Visualizzazione nomi degli studenti approvati}
+\begin{itemize}
+	\item \textbf{Attori primari:} amministratore;
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti i nomi degli studenti registrati nel sistema;
+	\item \textbf{Scenario principale:} l'amministratore richiede al sistema una lista di studenti per poterne visualizzare il nome ed eventualmente compiere altre operazioni su di essi;
+	\item \textbf{Precondizione:} l'amministratore è nell'area di gestione utenti e richiede una lista di tutti gli studenti per visualizzarne i relativi nomi.
+	\item \textbf{Postcondizione:} l'amministratore ottiene la lista con indicati i nomi.
+\end{itemize}
+\subsection{UC5.1.3 - Visualizzazione cognomi degli studenti approvati}
+\begin{itemize}
+	\item \textbf{Attori primari:} amministratore;
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti i cognomi degli studenti registrati nel sistema;
+	\item \textbf{Scenario principale:} l'amministratore richiede al sistema una lista di studenti per poterne visualizzare il cognome ed eventualmente compiere altre operazioni su di essi;
+	\item \textbf{Precondizione:} l'amministratore è nell'area di gestione utenti e richiede una lista di tutti gli studenti per visualizzarne i relativi cognomi.
+	\item \textbf{Postcondizione:} l'amministratore ottiene la lista con indicati i cognomi.
+\end{itemize}
+\subsection{UC5.1.4 - Visualizzazione corsi degli studenti approvati}
+\begin{itemize}
+	\item \textbf{Attori primari:} amministratore;
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti gli studenti registrati nel sistema con indicato il relativo corso universitario;
+	\item \textbf{Scenario principale:} l'amministratore richiede al sistema una lista di studenti per poterne visualizzare il corso universitario ed eventualmente compiere altre operazioni su di essi;
+	\item \textbf{Precondizione:} l'amministratore è nell'area di gestione utenti e richiede una lista di tutti gli studenti per visualizzarne il corso universitario.
+	\item \textbf{Postcondizione:} l'amministratore ottiene la lista con indicati i corsi universitari.
+\end{itemize}
+\subsection{UC5.2 - Visualizzazione lista dei professori approvati}
+\begin{itemize}
+	\item \textbf{Attori primari:} amministratore;
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti i professori registrati nel sistema, visualizzando per ognuno di essi le informazioni basilari;
+	\item \textbf{Scenario principale:} l'amministratore richiede al sistema una lista di professori per poterli visualizzare ed eventualmente compiere altre operazioni su di essi;
 	\item \textbf{Precondizione:} l'amministratore è nell'area di gestione utenti e richiede una lista di tutti i professori; 
 	\item \textbf{Postcondizione:} l'amministratore ottiene la lista.
 \end{itemize}
-\subsection{UC5.3 - Visualizzazione lista di utenti in attesa di abilitazione}
+%TODO: immagine
+\subsection{UC5.2.1 - Visualizzazione indirizzi dei professori approvati}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
-	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti gli utenti ancora non abilitati, ottenendo per ognuno \citGloss{indirizzo}, nome, cognome e ruolo, nel caso si tratti di studenti anche il corso;
-	\item \textbf{Scenario principale:} l'amministratore richiede al sistema una lista di utenti in attesa di abilitazione per poterli gestire;
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti gli \citGloss{indirizzi} della rete \citGloss{Ethereum} dei professori registrati nel sistema;
+	\item \textbf{Scenario principale:} l'amministratore richiede al sistema una lista dei professori per poterne visualizzare l'\citGloss{indirizzo} ed eventualmente compiere altre operazioni su di essi;
+	\item \textbf{Precondizione:} l'amministratore è nell'area di gestione utenti e richiede una lista di tutti i professori per visualizzarne i relativi \citGloss{indirizzi}.
+	\item \textbf{Postcondizione:} l'amministratore ottiene la lista con indicati gli \citGloss{indirizzi}.
+\end{itemize}
+\subsection{UC5.2.2 - Visualizzazione nomi dei professori approvati}
+\begin{itemize}
+	\item \textbf{Attori primari:} amministratore;
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti i nomi dei professori registrati nel sistema;
+	\item \textbf{Scenario principale:} l'amministratore richiede al sistema una lista dei professori per poterne visualizzare il nome ed eventualmente compiere altre operazioni su di essi;
+	\item \textbf{Precondizione:} l'amministratore è nell'area di gestione utenti e richiede una lista di tutti i professori per visualizzarne i relativi nomi.
+	\item \textbf{Postcondizione:} l'amministratore ottiene la lista con indicati i nomi.
+\end{itemize}
+\subsection{UC5.2.3 - Visualizzazione cognomi dei professori approvati}
+\begin{itemize}
+	\item \textbf{Attori primari:} amministratore;
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti i cognomi dei professori registrati nel sistema;
+	\item \textbf{Scenario principale:} l'amministratore richiede al sistema una lista dei professori per poterne visualizzare il cognome ed eventualmente compiere altre operazioni su di essi;
+	\item \textbf{Precondizione:} l'amministratore è nell'area di gestione utenti e richiede una lista di tutti i professori per visualizzarne i relativi cognomi.
+	\item \textbf{Postcondizione:} l'amministratore ottiene la lista con indicati i cognomi.
+\end{itemize}
+\subsection{UC5.3 - Visualizzazione lista utenti in attesa di abilitazione}
+\begin{itemize}
+	\item \textbf{Attori primari:} amministratore;
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti gli utenti ancora non abilitati, ottenendo per ognuno tutte le informazioni utili;
+	\item \textbf{Scenario principale:} l'amministratore richiede al sistema una lista di utenti in attesa di abilitazione per poterli visualizzare ed eventualmente compiere altre operazioni su di essi;
 	\item \textbf{Precondizione:} l'amministratore è nell'area di gestione studenti e richiede una lista di studenti in attesa di abilitazione; 
 	\item \textbf{Postcondizione:} l'amministratore ottiene la lista.
+\end{itemize}
+%TODO: immagine
+\subsection{UC5.3.1 - Visualizzazione indirizzi degli utenti in attesa di abilitazione}
+\begin{itemize}
+	\item \textbf{Attori primari:} amministratore;
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti gli \citGloss{indirizzi} della rete \citGloss{Ethereum} degli utenti in attesa di abilitazione;
+	\item \textbf{Scenario principale:} l'amministratore richiede al sistema una lista degli utenti in attesa di abilitazione per poterne visualizzare l'\citGloss{indirizzo} ed eventualmente compiere altre operazioni su di essi;
+	\item \textbf{Precondizione:} l'amministratore è nell'area di gestione utenti e richiede una lista di tutti gli utenti in attesa di abilitazione per visualizzarne i relativi \citGloss{indirizzi}.
+	\item \textbf{Postcondizione:} l'amministratore ottiene la lista con indicati gli \citGloss{indirizzi}.
+\end{itemize}
+\subsection{UC5.3.2 - Visualizzazione nomi degli utenti in attesa di abilitazione}
+\begin{itemize}
+	\item \textbf{Attori primari:} amministratore;
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti i nomi degli utenti in attesa di abilitazione;
+	\item \textbf{Scenario principale:} l'amministratore richiede al sistema una lista degli utenti in attesa di abilitazione per poterne visualizzare il nome ed eventualmente compiere altre operazioni su di essi;
+	\item \textbf{Precondizione:} l'amministratore è nell'area di gestione utenti e richiede una lista di tutti gli utenti in attesa di abilitazione per visualizzarne i relativi nomi.
+	\item \textbf{Postcondizione:} l'amministratore ottiene la lista con indicati i nomi.
+\end{itemize}
+\subsection{UC5.3.3 - Visualizzazione cognomi degli utenti in attesa di abilitazione}
+\begin{itemize}
+	\item \textbf{Attori primari:} amministratore;
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti i cognomi degli utenti in attesa di abilitazione;
+	\item \textbf{Scenario principale:} l'amministratore richiede al sistema una lista degli utenti in attesa di abilitazione per poterne visualizzare il cognome ed eventualmente compiere altre operazioni su di essi;
+	\item \textbf{Precondizione:} l'amministratore è nell'area di gestione utenti e richiede una lista di tutti gli utenti in attesa di abilitazione per visualizzarne i relativi cognomi.
+	\item \textbf{Postcondizione:} l'amministratore ottiene la lista con indicati i cognomi.
+\end{itemize}
+\subsection{UC5.3.4 - Visualizzazione ruolo degli utenti in attesa di abilitazione}
+\begin{itemize}
+	\item \textbf{Attori primari:} amministratore;
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista degli utenti in attesa di abilitazione ed i relativi ruoli che desiderano ricoprire una volta approvati, cioè professori o studenti.
+	\item \textbf{Scenario principale:} l'amministratore richiede al sistema una lista degli utenti in attesa di abilitazione per poterne visualizzare il ruolo desiderato ed eventualmente compiere altre operazioni su di essi;
+	\item \textbf{Precondizione:} l'amministratore è nell'area di gestione utenti e richiede una lista di tutti gli utenti in attesa di abilitazione per visualizzarne i relativi ruoli.
+	\item \textbf{Postcondizione:} l'amministratore ottiene la lista con indicati i ruoli.
+\end{itemize}
+\subsection{UC5.3.5 - Visualizzazione corsi degli utenti in attesa di abilitazione}
+\begin{itemize}
+	\item \textbf{Attori primari:} amministratore;
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti gli utenti in attesa di abilitazione con indicato il relativo corso universitario nel caso l'utente abbia richiesto di essere uno studente;
+	\item \textbf{Scenario principale:} l'amministratore richiede al sistema una lista degli utenti in attesa di abilitazione per poterne visualizzare il corso universitario ove possibile ed eventualmente compiere altre operazioni su di essi;
+	\item \textbf{Precondizione:} l'amministratore è nell'area di gestione utenti e richiede una lista di tutti gli utenti in attesa di abilitazione per visualizzarne il corso universitario ove possibile.
+	\item \textbf{Postcondizione:} l'amministratore ottiene la lista con indicati i corsi universitari ove possibile.
 \end{itemize}
 \subsection{UC5.4 - Abilitazione utente}
 \begin{itemize}

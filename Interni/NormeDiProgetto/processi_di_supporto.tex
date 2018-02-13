@@ -204,15 +204,15 @@
 	
 	\section{Qualità}
 	\subsection{Descrizione}
-	Questa sezione descrive le classificazioni e procedure per il calcolo delle metriche descritte nel \pdq{}.
+	Questa sezione descrive le classificazioni e procedure per il calcolo delle metriche descritte successivamente.
 	\subsection{Classificazione dei processi}
-	Per garantire la qualità del lavoro gli Amministratori hanno definito la divisone del lavoro in vari processi, riportandoli all'interno del \pdq{}, che devono però rispettare la seguente notazione \textbf{PROC[num]}	dove:
+	Per garantire la qualità del lavoro gli Amministratori hanno definito la divisone del lavoro in vari processi, che devono però rispettare la seguente notazione \textbf{PROC[num]}	dove:
 	\begin{itemize}
 		\item \textbf{num:} indica il codice univoco del processo come numero intero a tre cifre incrementale a partire da 1.
 	\end{itemize}	
 	
 	\subsection{Classificazione delle metriche}
-	Per garantire la qualità del lavoro gli Amministratori hanno definito delle metriche, riportandole all'interno del \pdq{}, che devono però rispettare la seguente notazione \textbf{M[categ][macrocateg][num]}	dove:
+	Per garantire la qualità del lavoro gli Amministratori hanno definito delle metriche, che devono però rispettare la seguente notazione \textbf{M[categ][macrocateg][num]}	dove:
 	\begin{itemize}
 		\item \textbf{categ:} indica la categoria della metrica riferendosi a prodotti o processi assume i valori:
 		\begin{itemize}
@@ -240,6 +240,290 @@
 	\includegraphics[scale=0.25]{../../common/images/MetricaGulpease}
 	 % calcolata tramite lo script "gulpease.py" citato nella sottosezione \textbf{Strumenti di supporto alla documentazione}.\\
 	%L'implementazione di ulteriori metriche tramite procedure verrà studiato con l'avanzare del progetto.
+	
+	\section{Procedure di controllo di qualità di processo}
+	La qualità dei processi verrà garantita dall'applicazione del metodo \citGloss{PDCA}, descritto dell'appendice A. Grazie a questo metodo sarà possibile ottenere un miglioramento continuo della qualità di tutti i processi, inclusa la \citGloss{verifica}, e come diretta conseguenza si otterrà il miglioramento dei prodotti risultanti.\\Per ottenere qualità dei processi, bisogna:
+	\begin{itemize}
+		\item \textbf{Definire il processo}: Affinché sia controllabile;
+		\item \textbf{Controllare il processo}: In funzione dell'ottenimento di efficacia, efficienza ed esperienza;
+		\item \textbf{Usare strumenti di valutazione}: SPICE e \citGloss{PDCA}.
+	\end{itemize}
+	
+	\section{Processi}
+	\subsection{PROC001 - Pianificazione di progetto, impostazione e controllo di processi}
+	Il macro-processo ha lo scopo di produrre dei piani di sviluppo per il progetto, comprendenti la scelta del modello di ciclo di vita del prodotto, descrizioni delle attività e dei compiti da svolgere, pianificazione temporale del lavoro e dei costi da sostenere, allocazione di compiti e responsabilità e misurazioni per rilevare lo stato del progetto rispetto alle pianificazioni prodotte.
+	
+	\subsubsection{Obbiettivi}
+	Lo sviluppo del progetto dovrà porre particolare attenzione a rispettare dei particolari obbiettivi:
+	\begin{itemize}
+		\item \textbf{Budget:} Utilizzando le metriche descritte nella sezione seguente, si deve tenere sempre controllato l'utilizzo del budget, al fine di non avere scarti eccessivi con il costo preventivato;
+		\item \textbf{Task:} Porre attenzione alla pianificazione dei task e al loro completamento, assicurandosi che seguano la metodologia del miglioramento continuo, affinché tutti i compiti ne traggano vantaggio;
+		\item \textbf{Educazione personale:} Avere accortezza che ogni membro del gruppo abbia un livello di preparazione adatto all'esecuzione dei task assegnati, al fine di evitare ritardi sul calendario;
+		\item \textbf{Calendario:} Assicurare una pianificazione adatta ai compiti da svolgere, per evitare scostamenti dal budget preventivato;
+		\item \textbf{Standard:} Definire standard di processo ogni qualvolta sia possibile, per facilitare il lavoro in gruppo e favorire un incremento continuo.
+	\end{itemize}
+	
+	\subsubsection{Strategie}
+	Ogni eventuale valore negativo a livello di Schedule o Budget Variance rilevato sarà compensato con la revisione delle attività da svolgere e i \citGloss{requisiti} da ottenere, per valutare se nei tempi di calendario stabiliti la pianificazione sia corretta o se sia necessario rivedere la programmazione.\\
+	Il controllo verrà favorito con strumenti come \citGloss{Asana} e i diagrammi di \citGloss{Gantt} in modo tale da verificare l'andamento del progetto, per avere sempre una visione chiara e quantificabile del lavoro in corso affinché il lavoro non subisca ritardi.\\
+	Saranno sempre presenti delle finestre di \citGloss{Slack} per evitare sovrapposizioni di task dovute a eventuali ritardi o imprevisti. 
+	
+	\subsubsection{Metriche} 
+	\paragraph{MPS001 Schedule Variance (SV)}
+	Indica se si è in linea, in anticipo o in ritardo, rispetto alla schedulazione delle attività di progetto pianificate nella \citGloss{baseline}.\\
+	È un indicatore di efficacia soprattutto nei confronti del Cliente. \\
+	Se il valore SV ottenuto è positivo significa che il progetto sta procedendo con una maggiore velocità rispetto a quanto pianificato, viceversa se negativo.\\
+	\textbf{Misurazione:}
+	\begin{center}
+		$ SV = BCWP – BCWS $
+	\end{center}
+	Dove: \begin{itemize}
+		\item \textbf{BCWP (Budgeted Cost of Work Performed)}: \`{E} il valore (in giorni o Euro) delle attività realizzate alla data corrente.
+		Rappresenta il valore prodotto dal progetto ossia la somma di tutte le parti completate e di tutte le porzioni completate delle parti ancora da terminare.
+		\item \textbf{BCWS (Budgeted Cost of Work Scheduled)}: \`{E} il costo pianificato (in giorni o Euro) per realizzare le attività di progetto alla data corrente.
+	\end{itemize}
+	
+	
+	\paragraph{MPS002 Budget Variance (BV)}
+	Indica se alla data corrente si è speso di più o di meno rispetto a quanto previsto a budget alla data corrente.\\
+	È un indicatore che ha un valore unicamente contabile e finanziario.\\
+	Se il valore BV ottenuto è positivo significa che il progetto sta spendendo il proprio budget con minor velocità di quanto pianificato, viceversa se negativo.\\
+	\textbf{Misurazione:}
+	\begin{center}
+		$ BV = BCWS – ACWP $
+	\end{center}
+	Dove: \begin{itemize}
+		\item \textbf{BCWS (Budgeted Cost of Work Scheduled)}: \`{E} il costo pianificato (in giorni o Euro) per realizzare le attività di progetto alla data corrente;
+		\item \textbf{ACWP (Actual Cost of Work Performed)}: \`{E} il costo effettivamente sostenuto (in giorni o Euro) alla data corrente.
+	\end{itemize}
+	
+	\subsection{PROC002 - Verifica software}
+	Il processo punta a verificare se qualsiasi elemento del sistema soddisfa completamente i \citGloss{requisiti} ad esso assegnati.
+	\subsubsection{Obiettivi}
+	Per poter definire delle \citGloss{baseline} per lo sviluppo del software, è necessario che il codice venga sempre verificato:
+	\begin{itemize}
+		\item \textbf{Commenti al codice:} Ogni unità di codice dovrà essere sufficientemente commentata affinché sia ritenuta verificabile;
+		\item \textbf{Prevenzione di bug:} Accertarsi per quanto possibile che ogni unità di codice non sia affetta da bug prima dell'utilizzo.
+	\end{itemize}
+	\subsubsection{Strategie}
+	
+	Per prevenire bug e vulnerabilità al codice si utilizzano strumenti come Sonarlint e Sonarqube al fine di evitare la propagazione di errori ed avere una panoramica sullo stato generale del codice prodotto.\\
+	Si utilizzeranno delle metriche di Code Coverage per avere consapevolezza della quantità di codice testato e poter agire di conseguenza.
+	
+	\subsubsection{Metriche}
+	\paragraph{Code Coverage}
+	Per poter avere una misura di codice testato e verificato si adoreranno determinati coverage criteria:
+	
+	\begin{itemize}
+		\item \textlink{MPS003TAB}{MPS003}{\textbf{MPS003 Function coverage:}} Verificare che ogni funzione sia stata chiamata;
+		\item \textlink{MPS004TAB}{MPS004}{\textbf{MPS004 Statement coverage:}} Verificare che ogni statement del codice sia stato eseguito; 
+		\item \textlink{MPS005TAB}{MPS004}{\textbf{MPS005 \citGloss{Branch} coverage:}} Verificare se tutti i possibili \citGloss{branch} (derivanti da if e case statement) sono stati eseguiti;
+		\item \textlink{MPS006TAB}{MPS006}{\textbf{MPS006 Condition coverage:}} Verificare se ogni condizione booleana è stata valutata sia nella condizione true che false. 
+		
+	\end{itemize}
+	\textbf{Misurazione:}
+	Vengono calcolate in percentuale sulla quantità di codice testato e verificato oltre che sul totale delle linee di codice scritte, tramite tool automatici come IstanbulJS\footnote{\nURI{https://istanbul.js.org/}}.
+	
+	\subsection{PROC003 - Gestione rischi}
+	Il processo mira ad identificare nuovi rischi e a monitorare e ridurre la possibilità dell'insorgere di questi durante l'attività di progetto.
+	\subsubsection{Obiettivi:}
+	\begin{itemize}
+		\item \textbf{Individurare rischi Fase:} Ad ogni nuova fase del progetto verranno analizzati possibili rischi, cercando delle soluzioni automatiche per diminuire l'occorrenza di questi;
+		\item \textbf{Analisi:} I rischi saranno gestiti con una prima analisi che dovrà fornire uno strumento o procedura automatica per ridurre o prevenire le cause scatenanti di questo rischio.
+	\end{itemize}
+	\subsubsection{Strategie}
+	Nel caso dovessero sorgere troppi rischi il gruppo dovrà sospendere i lavori eliminando il maggior numero di questi per permettere la prosecuzione del lavoro.
+	Viene utilizzato StatusTicker\footnote{\nURI{https://swe353.statusticker.com}} per avere un cruscotto informativo sullo status dei servizi esterni utilizzati.
+	
+	\subsubsection{Metriche}
+	\paragraph{MPS007 Indisponibilità servizi esterni:} numero totale di giorni in cui siano stati offline o bloccati servizi usati.\\
+	\textbf{Misurazione:}
+	Indice numerico incrementato partendo da zero per ogni giorno in cui i servizi utilizzati dal gruppo siano risultati totalmente offline per la maggior parte del giorno, tramite controllo su \nURI{statusticker.com}.
+	
+	\paragraph{MPS008 Rischi non previsti:} indice numerico indica la quantità di rischi esterni a quelli presenti nell'attività di analisi dei rischi rilevati nella corrente fase di progetto. \\
+	\textbf{Misurazione:}
+	Indice numerico incrementato partendo da 0 per ogni rischio che si manifesta senza essere stato individuato precedentemente nella lista di rischi.
+	Viene resettato all'inizio di ogni nuova fase di progetto.
+	
+	\subsection{PROC004 - Gestione Test}	
+	Per garantire una gestione efficacie dell'analisi dinamica è necessario stabilire delle misurazioni sull'esecuzione di essa.
+	Le misure elencate qui sotto sono consigliate dal blog di una azienda che produce prodotti di riferimento per la gestione dei test, le informazioni possono essere trovate nei riferimenti informativi.
+	\subsubsection{Per tutti i test}
+	\paragraph{Tracciamento}
+	Questa categoria di misurazioni si occupa di tenere traccia delle esecuzioni dei test e relativi successi fallimenti tramite le seguenti metriche:
+	\begin{itemize}
+		\item \textbf{MTSA001 Percentuale di test case passati:} indica la percentuale di test case passati, molto utile per capire a che punto si è nella fase di sviluppo della componente. La sua formula di misurazione è la seguente:
+		\[PPT=\dfrac{PT}{ET}*100\]
+		Dove PT indica il numero di test passati e ET il numero di test eseguiti;
+		\item \textbf{MTSA002 Percentuale di test case falliti:} complementare della misurazione precedente. La sua formula di misurazione è la seguente:
+		\[PFT=\dfrac{FT}{ET}*100\]
+		Dove FT indica il numero di test falliti ed ET quello di test eseguiti;
+		\item \textbf{MTSA003 Tempo medio del team di sviluppo per la risoluzione di errori:} indica la quantità di tempo medio utilizzato per risolvere un bug dal team di sviluppo, utile per capire l'impatto medio dell'introduzione di un bug sui tempi di sviluppo. La sua formula di misurazione è la seguente:
+		\[TMRE=\dfrac{TTBF}{TB}\]
+		Dove TTBF indica il tempo totale speso per la correzione dei difetti (sviluppo e test) e TB il numero totale di bug trovati.
+	\end{itemize}
+	
+	\paragraph{Efficienza}
+	Questa categoria di misurazioni mira a valutare l'efficienza di scrittura ed esecuzione dei test.
+	\begin{itemize}
+		\item \textbf{MTSA004 Efficienza della progettazione dei test:} Indica il tempo medio per la scrittura di un test, un numero troppo elevato potrebbe indicare che si stanno progettando test troppo complessi o che si sta cercando di testare parti del codice superflue. La sua formula di misurazione è la seguente:
+		\[TDE=\dfrac{NTP}{TST}\]
+		Dove NTP indica il numero totale di test progettati e TST il tempo per la loro stesura.
+		\begin{comment}
+		\item \textlink{MTSA005TAB}{MTSA005}{\textbf{MTSA005 Tempo medio per il testing dei bug fix:}} Indica la quantità di tempo medio per testare la risoluzione di un difetto, utile per avere un'idea dell'impatto del testing sull'implementazione di una modifica
+		\[TTCD=\dfrac{BFTT}{NDT}\]
+		Dove BFTT indica il tempo usato per testare le la correzione dei difetti e NDT il numero di difetti trovati.
+		\end{comment}
+	\end{itemize}
+	\paragraph{Efficacia}
+	Questa categoria di misurazioni mira a valutare l'efficacia dell'esecuzione dei test.
+	\begin{itemize}
+		\item \textbf{MTSA005 Contenimento dei difetti:} Indica il rapporto percentuale tra i bug trovati durante i test e i bug trovati durante l'utilizzo del prodotto. Un numero troppo basso di questo indice suggerisce una scarsa progettazione dei test, richiedendo un intervento di analisi da parte del team di sviluppo. La sua formula di misurazione è la seguente:
+		\[CD=\dfrac{DTT}{TNDT}*100\]
+		Dove DTT indica il numero di difetti trovati durante l'esecuzione dei test, e TNDT la somma dei difetti trovati nei test e quelli trovati durante l'utilizzo del prodotto.
+	\end{itemize}
+	
+	\subsubsection{Per i test ad alto livello}
+	\paragraph{Tracciamento}
+	Questa categoria di misurazioni mira a tenere traccia delle gestioni dei bug trovati.
+	\begin{itemize}
+		\item \textbf{MTSH001 Percentuale di difetti sistemati:} indica la percentuale di difetti sistemati sul totale dei difetti rilevati, utile per avere una panoramica dei bug da risolvere: un numero troppo basso potrebbe costringere il team a fermare lo sviluppo di nuove funzionalità per concentrarsi sulla correzione delle parti già esistenti. La sua formula di misurazione è la seguente:
+		\[PDS=\dfrac{DS}{DR}*100\]
+		Dove DS indica i difetti sistemati mentre DR quelli segnalati.	
+	\end{itemize}
+	\paragraph{Copertura}
+	Questa categoria di misurazioni si occupa di tenere traccia dell'esecuzione dei test e della copertura che questi hanno sui \citGloss{requisiti}.
+	\begin{itemize}
+		\item \textbf{MTSH002 Copertura dei test eseguiti:} Indica la percentuale di test già eseguiti sul totale di test da eseguire, utile per monitorare il lavoro del team dei verificatori. La sua formula di misurazione è la seguente:
+		\[CTE=\dfrac{TE}{TT}*100\]
+		Dove TE indica i test eseguiti e TT il numero di test totali;
+		\item \textbf{MTSH003 Copertura dei requisiti:} Indica la percentuale di requisiti coperti dai test sui requisiti totali, utile per capire quante parti del prodotto finale hanno un test associato, non da indicazioni sullo stato di avanzamento del soddisfacimento del requisito. La sua formula di misurazione è la seguente:
+		\[CR=\dfrac{RC}{RT}*100\]
+		Dove RC indica il numero di \citGloss{requisiti} coperti mentre RT quelli totali;
+		\item \textbf{MTSH004 Difetti per requisito:} Indica il numero di difetti trovati nel test del requisito, da informazioni sullo stato di soddisfacimento del requisito: se ha 0 difetti, vuol dire che il requisito è stato trovato e considerato senza errori, quindi soddisfatto.
+		Non essendo calcolabile, la misurazione si mostra come una tabella avente nella prima colonna il nome del requisito, e nella seconda i difetti ad esso associati.
+	\end{itemize}
+	\begin{comment}
+	\paragraph{Efficacia dei cambiamenti}
+	\begin{itemize}
+	\item \textlink{MTSH005TAB}{MTSH005}{\textbf{MTSH005 Tasso di iniezione dei difetti:}} Indica il tasso di errori attribuibili all'introduzione di una modifica, la conoscenza di questo numero aiuta a stimare il tempo medio per la scoperta e correzione di errori introdotti dalle modifiche, aiutando la stima dei costi per l'introduzione di nuove funzionalità
+	\[TID=\dfrac{NM}{NDM}\]
+	Dove NM indica il numero di modifiche e NDM i difetti attribuibili ad esse.
+	\end{itemize}
+	\end{comment}
+	
+	\section{Prodotti}
+	\subsection{Qualità dei documenti}
+	I documenti prodotti dal gruppo \gruppo dovranno essere leggibili, comprensibili e corretti dal punto di vista ortografico, sintattico, logico e semantico.
+	\subsubsection{Obiettivi di qualità: comprensione}
+	\begin{itemize}
+		\item \textbf{Leggibilità:} i documenti prodotti dovranno essere leggibili e comprensibili a persone con licenza di istruzione media;
+		\item \textbf{Correttezza ortografica:} i documenti prodotti non dovranno contenere errori ortografici.
+	\end{itemize}
+	
+	\subsubsection{Metriche}
+	\begin{itemize}
+		\item \textbf{MPDD001 Indice di Gulpease:} è l'indice di leggibilità tarato sulla lingua italiana. Considera due variabili linguistiche: la lunghezza della parola e la lunghezza della frase rispetto al numero di lettere. La formulata per il suo calcolo è la seguente:
+		\[IG=89+\dfrac{300*N_F-10*N_L}{N_P}\] Dove $ N_F $ è il numero delle frasi, $ N_L $ il numero delle lettere e $ N_P $ il numero delle parole. Il risultato $I$ è un numero compreso tra 0 e 100. In generale risulta che i testi con indice inferiore a:
+		\begin{itemize}
+			\item 80 sono difficili da leggere per chi ha una licenza elementare;
+			\item 60 sono difficili da leggere per chi ha una licenza media;
+			\item 40 sono difficili da leggere per chi ha un diploma superiore.
+		\end{itemize}	
+		\item \textbf{MPDD002 Formula di Flesch:} è una formula che serve per misurare la leggibilità di un testo in inglese:
+		\[F=206,835-(0,846*S)-(1,015*P)\] Dove $ S $ è il numero delle sillabe, calcolato su un campione di 100 parole e $ P $ è il numero medio di parole per frase.
+		La leggibilità è alta se $F$ è superiore a 60, media se fra 50 e 60, bassa sotto a 50;
+		\item \textbf{MPDD003 Errori ortografici:} gli errori ortografici possono essere identificati tramite lo strumento \textquoteleft Controllo ortografico\textquoteright\ presente in \citGloss{TexStudio}. Sarà poi compito del Verificatore correggerli.  	
+	\end{itemize}
+	
+	\subsection{Qualità del software}
+	\subsubsection{Funzionalità:} Rappresenta la capacità del prodotto di fornire tutte le funzionalità che sono state individuate attraverso l'\adr.	
+	\paragraph{Obiettivi qualità}
+	Il gruppo \gruppo si impegnerà per perseguire:
+	\begin{itemize}
+		\item \textbf{Adeguatezza}: le funzionalità fornite siano conformi rispetto le aspettative;
+		\item \textbf{Accuratezza}: il prodotto fornisca i risultati attesi, con il livello di dettaglio richiesto. 
+	\end{itemize}	
+	\paragraph{Metriche}
+	\begin{itemize}
+		\item \textbf{MPDS001 Copertura requisiti obbligatori:} indica la percentuale dei requisiti obbligatori coperti dall'implementazione. La sua formula di misurazione è la seguente: \[CRO=(\frac{N_{ROS}}{N_{RO}})*100\] Dove $ N_{ROS} $ è il numero di requisiti obbligatori soddisfatti e $ N_{RO} $ è il numero totale dei requisiti obbligatori;
+		\item \textbf{MPDS002 Copertura requisiti accettati:} indica la percentuale dei requisiti desiderabili e facoltativi coperti dall'implementazione. La sua formula di misurazione è la seguente: \[CRA=(\frac{N_{RAS}}{N_{RA}})*100\] Dove $ N_{RAS} $ è il numero di requisiti accettati soddisfatti e $ N_{RA } $ è il numero totale dei requisiti accettati;
+		\item \textbf{MPDS003 Accuratezza rispetto alle attese:} indica la percentuale di risultati concordi alle attese. La sua formula di misurazione è la seguente: \[ARA=(1-\frac{N_{TD}}{N_{TE}})*100\] Dove $ N_{TD} $ è il numero di test che producono risultati discordi alle attese e $ N_{TE} $ è il numero di test-case eseguiti.
+	\end{itemize}
+	
+	\subsubsection{Affidabilità}
+	Rappresenta la capacità del prodotto software di svolgere correttamente le sue funzioni durante il suo utilizzo, anche in caso in cui si presentino situazioni anomale.
+	\paragraph{Obiettivi di qualità}
+	L'esecuzione del prodotto dovrà presentare le seguenti caratteristiche:
+	\begin{itemize}
+		\item \textbf{Maturità:} evitare che si verifichino malfunzionamenti, operazioni illegali e \citGloss{failure} in seguito a \citGloss{fault};
+		\item \textbf{Tolleranza agli errori:} nel caso in cui si presentino degli \citGloss{errori}, dovuti a guasti o ad un uso scorretto dell'applicativo, questi devo essere gestiti in modo da mantenere alto il livello di prestazioni.
+	\end{itemize}
+	\paragraph{Metriche}
+	\begin{itemize}
+		\item \textlink{MPDS004TAB}{MPDS004}{\textbf{MPDS004 Densità di failure:}} indica la percentuale di testing che si sono concluse in failure. La sua formula di misurazione è la seguente: \[DF=(\frac{N_{FR}}{N_{TE}})*100\] Dove $ N_{FR} $ è il numero di failure rilevati durante l'attività di testing e $ N_{TE} $ è il numero di test-case eseguiti;
+		\item \textlink{MPDS005TAB}{MPDS005}{\textbf{MPDS005 Blocco di operazioni non corrette:}} indica la percentuale di funzionalità in grado di gestire correttamente i fault che potrebbero verificarsi. La sua formula di misurazione è la seguente: \[BNC=(\frac{N_{FE}}{N_{ON}})*100\] Dove $ N_{FE} $ è il numero di failure evitati durante i test effettuati e $ N_{ON} $ è il numero di test-case eseguiti che prevedono l'esecuzione di operazioni non corrette, causa di possibili failure.
+	\end{itemize}
+	\subsubsection{Usabilità}
+	Rappresenta la capacità del prodotto di essere facilmente comprensibile ed attraente in ogni sua parte per qualsiasi utente che lo andrà ad utilizzare.
+	\paragraph{Obiettivi di qualità}
+	Il prodotto dovrà puntare ai seguenti obiettivi di usabilità:
+	\begin{itemize}
+		\item \textbf{Comprensibilità:} l'utente deve essere in grado di riconoscere le funzionalità offerte dal software e deve comprendere le modalità di utilizzo per raggiungere i risultati attesi;
+		\item \textbf{Apprendibilità:} deve essere data la possibilità all'utente di imparare ad utilizzare l'applicazione senza troppo impegno;
+		\item \textbf{Operabilità:} le funzioni presenti devono essere coerenti con le aspettative dell'utente;
+		\item \textbf{Attrattiva:} il software deve essere piacevole per chi ne fa uso.
+	\end{itemize}
+	\paragraph{Metriche}
+	\begin{itemize}
+		\item \textbf{MPDS006 Comprensibilità delle funzioni offerte:} indica la percentuale di operazioni comprese in modo immediato dall'utente, senza la consultazione del manuale. La sua formula di misurazione è la seguente: \[CFC=(\frac{N_{FC}}{N_{FO}})*100\] Dove $ N_{FC} $ è il numero di funzionalità comprese in modo immediato dall'utente durante l'attività di testing del prodotto e $ N_{FO} $ è il numero di funzionalità offerte dal sistema;
+		\item \textbf{MPDS007 Facilità di apprendimento delle funzionalità:} indica il tempo medio impiegato dall'utente nell'imparare ad usare correttamente una data funzionalità. Si misura tramite un indicatore numerico che indica i minuti impiegati da un utente per apprendere il funzionamento di una certa funzionalità;
+		\item \textbf{MPDS008 Consistenza operazionale in uso:} indica la percentuale di messaggi e funzionalità offerte all'utente che rispettano le sue aspettative riguardo al comportamento del software. La sua formula di misurazione è la seguente: \[COU=(\frac{N_{MFU}}{N_{MFO}})*100\] Dove $ N_{MFU} $ è il numero di messaggi e funzionalità che non rispettano le aspettative dell'utente e $ N_{MFO} $ è il numero di messaggi e funzionalità offerte dal sistema.	
+	\end{itemize}	
+	\paragraph{Misurazione}
+	Queste metriche di usabilità misurate tramite sessioni di prova con utenti esterni per dar modo di ottenere feedback reali e misurazioni attendibili.\\ Ogni sessione sarò registrata per uso interno al gruppo tramite screen recorder e microfono, gli utenti sarannò istruiti sul cercare e/o utilizzare una serie di funzionalità tracciate da un Verificatore.
+	Combinando le misurazioni effettuate si determineranno i valori per le metriche sopra descritte.
+	
+	\subsubsection{Efficienza}
+	Rappresenta la capacità di eseguire le funzionalità offerte dal software nel minor tempo possibile utilizzando al tempo stesso il minor numero di risorse disponibili.
+	\paragraph{Obiettivi di qualità}
+	Il prodotto dovrà essere efficiente, in particolare:
+	\begin{itemize}
+		\item \textbf{Comportamento rispetto al tempo:} per svolgere le sue funzioni il software deve fornire adeguati tempi di risposta ed elaborazione;
+		\item \textbf{Utilizzo delle risorse:} il software quando esegue le sue funzionalità deve utilizzare un appropriato numero e tipo di risorse.
+	\end{itemize}
+	\paragraph{Metriche}
+	\begin{itemize}
+		\item \textbf{MPDS009 Tempo di risposta:} indica il tempo medio che intercorre fra la richiesta software di una determinata funzionalità e la restituzione del risultato all'utente. La sua formula di misurazione è la seguente: \[TR=\frac{\sum_{i=1}^n T_i}{n}\] Dove $ T_i $ è il tempo intercorso fra la richiesta $ i $ di una funzionalità ed il comportamento delle operazioni necessarie a restituire un risultato a tale richiesta.	
+	\end{itemize}
+	\subsubsection{Manutenibilità}
+	Rappresenta la capacità del prodotto di essere modificato, tramite correzioni, miglioramenti o adattamenti del software a cambiamenti negli ambienti, nei \citGloss{requisiti} e nelle specifiche funzionali.
+	\paragraph{Obiettivi di qualità}
+	Le operazioni di manutenzione andranno agevolate il più possibile adottando le seguenti caratteristiche:
+	\begin{itemize}
+		\item \textbf{Analizzabilità:} il software deve consentire una rapida identificazione delle possibili cause di errori e malfunzionamenti;
+		\item \textbf{Modificabilità:} il prodotto originale deve permettere eventuali cambiamenti in alcune sue parti;
+		\item \textbf{Stabilità:} non devono insorgere effetti indesiderati in seguito a modifiche effettuate sul software;
+		\item \textbf{Testabilità:} il software deve poter essere facilmente testato per valiare le modifiche effettuate.
+	\end{itemize}
+	\paragraph{Metriche}
+	\begin{itemize}
+		\item \textbf{MPDS010 Capacità di analisi di failure:} indica la percentuale di modifiche effettuate in risposta a failure che hanno portato all'introduzione di nuove failure in altre componenti del sistema. La sua formula di misurazione è la seguente: \[CAF=(\frac{N_{FI}}{N_{FR}})*100\] Dove $ N_{FI} $ è il numero di failure delle quali sono state individuate le cause e $ N_{FR} $ è il numero di failure rilevate;
+		\item \textbf{MPDS011 Impatto delle modifiche:} indica la percentuale di modifiche effettuate in risposta a failure che hanno portato all'introduzione di nuove failure in altre componenti del sistema. La sua formula di misurazione è la seguente: \[IM=(\frac{N_{FRF}}{N_{FR}})*100\] Dove $ N_{FRF} $ è il numero di failure risolte con l'introduzione di nuove failure e $ N_{FR} $ è il numero di failure risolte.
+	\end{itemize}
+	\subsubsection{Portabilità}
+	Rappresenta la capacità del software di poter essere utilizzato su diversi ambienti.
+	\paragraph{Obiettivi di qualità}
+	Sarò agevolata la portabilità del prodotto adottando i seguenti obiettivi:
+	\begin{itemize}
+		\item \textbf{Adattabilità:} il prodotto deve adattarsi a tutti quelli ambienti di lavoro nei quali è stato previsto un suo utilizzo, senza dover apportare modifiche dello stesso;
+		\item \textbf{Sostituibilità:} l'applicativo deve poter sostituire un altro software che ha lo stesso scopo e lavora nel medesimo ambiente.
+	\end{itemize}
+	\paragraph{Metriche}
+	\begin{itemize}
+		\item \textbf{MPDS012 Versioni dei browser supportate:} indica la percentuale di versioni di browser attualmente supportate, fra quelle individuate dai requisiti. La sua formula di misurazione è la seguente: \[VB=(\frac{N_{VS}}{N_{VI}})*100\] Dove $ N_{VS} $ è il numero di versioni di browser supportate dal prodotto e $ N_{VI} $ è il numero di versioni di browser che devono essere supportate dal prodotto;
+		\item \textbf{MPDS013 Inclusione di funzionalità da altri prodotti:} indica la percentuale del software utilizzato in precedenza dall'utente che produce risultati simili a quelli ottenuti dal prodotto in oggetto. La sua formula di misurazione è la seguente: \[IFP=(\frac{N_{FPA}}{N_{FPP}})*100\] Dove $ N_{FPA} $ è il numero di funzionalità del software utilizzato in precedenza dall'utente che produce risultati simili a quelli ottenuti dal prodotto in oggetto e $ N_{FPP} $ è il numero di funzionalità offerte dal software utilizzato in precedenza dall'utente. 
+	\end{itemize}
 	
 	\section{Configurazione}
 	

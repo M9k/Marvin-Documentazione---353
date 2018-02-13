@@ -52,6 +52,9 @@ I \citGloss{requisiti} vengono classificati ed assegnati a un identificativo uni
 	R0F4 & Obbligatorio & Un professore può gestire gli esami a lui assegnati & Capitolato \\
 	R0F4.1 & Obbligatorio & Un professore può ottenere la lista di tutti gli esami a lui assegnati & Capitolato \\
 	R0F4.2 & Obbligatorio & Un professore può ottenere la lista di tutti gli studenti associati a un determinato esame & Capitolato \\
+	R0F4.2.1 & Obbligatorio & Un professore può ottenere l'indirizzi di tutti studenti associati a un determinato esame & Interno \\
+	R0F4.2.2 & Obbligatorio & Un professore può ottenere il nome di tutti gli studenti associati a un determinato esame & Interno \\
+	R0F4.2.3 & Obbligatorio & Un professore può ottenere il cognome di tutti gli studenti associati a un determinato esame & Interno \\
 	R0F4.3 & Obbligatorio & Un professore può registrare un esito ad un dato esame ad un dato studente registrato a quell'esame & Capitolato \\
 	R0F5 & Obbligatorio & Uno studente può gestire l'iscrizione agli esami & Capitolato \\
 	R0F5.1 & Obbligatorio & Uno studente può vedere l'elenco degli esami ai quali è iscritto & Capitolato \\
@@ -230,6 +233,9 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 	& & \makecell[tl]{ %TODO aggiustare alla fine
 	 R0F3.4.1 \\
 	 R0F3.4.2 \\
+	 R0F4.2.1 \\
+	 R0F4.2.2 \\
+	 R0F4.2.3 \\
 	 R0F5.1.1 \\
 	 R0F5.1.2 \\
 	 R0F5.1.3 \\
@@ -317,10 +323,12 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 	UC7.10.1 & Visualizzazione lista di esami non ancora assegnati & R0F3.4.2 \\ 
 	UC7.10.2 & Visualizzazione lista professori selezionato un esame & R0F3.4.2 \\ 
 	UC7.10.3 & Associazione professore all'esame & R0F3.4.2 \\ 
-	%-----------------------------------------------------
 	UC8 & Gestione aspetti relativi agli esami & R0F4 \\
 	UC8.1 & Visualizzazione lista degli esami & R0F4.1 \\
 	UC8.2 & Visualizzazione lista degli studenti & R0F4.2  \\
+	UC8.2.1 & Visualizzazione indirizzi degli studenti dell'esame & R0F4.2.1 \\
+	UC8.2.2 & Visualizzazione nomi degli studenti dell'esame & R0F4.2.2 \\
+	UC8.2.3 & Visualizzazione cognomi degli studenti dell'esame & R0F4.2.3 \\
 	UC8.3 & Registrazione valutazione di un esame & R0F4.3 \\
 	UC9 & Gestione aspetti relativi allo studente & R0F5 \\
 	UC9.1 & Visualizzazione lista degli esami & R0F5.1 \\
@@ -357,14 +365,33 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 	\endhead
 	R0F1 & L'amministratore può gestire gli utenti & \makecell[tl]{
 		Interno \\
-		UC5 \\
 		UC5
 	} \\
 	R0F1.1 & L'amministratore può ottenere una lista di tutti gli utenti non abilitati & \makecell[tl]{
-		Interno \\ 
-		UC5 \\
+		Interno \\
 		UC5.3
 	} \\
+	R0F1.1.1 & L'amministratore può ottenere l'indirizzo di tutti gli utenti non abilitati & \makecell[tl]{
+		Interno \\
+		UC5.3.1
+	} \\
+	R0F1.1.2 & L'amministratore può ottenere il nome di tutti gli utenti non abilitati & \makecell[tl]{
+		Interno \\
+		UC5.3.2
+	} \\
+	R0F1.1.3 & L'amministratore può ottenere il cognome di tutti gli utenti non abilitati & \makecell[tl]{
+		Interno \\
+		UC5.3.3
+	} \\
+	R0F1.1.4 & L'amministratore può ottenere il ruolo desiderato di tutti gli utenti non abilitati & \makecell[tl]{
+		Interno \\
+		UC5.3.4
+	} \\
+	R0F1.1.5 & L'amministratore può ottenere il corso desiderato, ove possibile, di tutti gli utenti non abilitati & \makecell[tl]{
+		Interno \\
+		UC5.3-5
+	} \\
+
 	R0F1.2 & L'amministratore può abilitare un utente & \makecell[tl]{
 		Interno \\ 
 		UC5 \\ 
@@ -374,16 +401,46 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 		Interno \\ 
 		UC5.5
 	} \\
+
 	R0F1.4 & L'amministratore può ottenere una lista di tutti gli studenti & \makecell[tl]{
 		Interno \\
 		UC5.1
 	} \\
+	R0F1.4.1 & L'amministratore può ottenere l'indirizzo di tutti studenti & \makecell[tl]{
+		Interno \\
+		UC5.1.1
+	} \\
+	R0F1.4.2 & L'amministratore può ottenere il nome di tutti gli studenti & \makecell[tl]{
+		Interno \\
+		UC5.1.2
+	} \\
+	R0F1.4.3 & L'amministratore può ottenere il cognome di tutti gli studenti & \makecell[tl]{
+		Interno \\
+		UC5.1.3
+	} \\
+	R0F1.4.4  & L'amministratore può ottenere il corso di tutti gli studenti & \makecell[tl]{
+		Interno \\
+		UC5.1.4
+	} \\
+
 	R0F2 & L'amministratore può gestire i professori & \makecell[tl]{
 		Interno
 	} \\
 	R0F2.1 & L'amministratore può ottenere una lista di tutti i professori & \makecell[tl]{
 		Interno \\ 
 		UC5.2 
+	} \\
+	R0F2.1.1 & L'amministratore può ottenere l'indirizzo di tutti i professori & \makecell[tl]{
+		Interno \\ 
+		UC5.2.1
+	} \\
+	R0F2.1.2 & L'amministratore può ottenere il nome di tutti i professori & \makecell[tl]{
+		Interno \\ 
+		UC5.2.2
+	} \\
+	R0F2.1.3 & L'amministratore può ottenere il cognome di tutti i professori & \makecell[tl]{
+		Interno \\ 
+		UC5.2.3
 	} \\
 	R0F2.2 & L'amministratore può assegnare un esame ad un determinato professore & \makecell[tl]{
 		Capitolato
@@ -454,6 +511,18 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 	R0F4.2 & Un professore può ottenere la lista di tutti gli studenti associati a un determinato esame & \makecell[tl]{
 		Capitolato  \\ 
 		UC8.2
+	} \\
+	R0F4.2.1 & Un professore può ottenere l'indirizzi di tutti studenti associati a un determinato esame & \makecell[tl]{
+		Interno  \\ 
+		UC8.2.1
+	} \\
+	R0F4.2.2 & Un professore può ottenere il nome di tutti gli studenti associati a un determinato esame & \makecell[tl]{
+		Interno  \\ 
+		UC8.2.2
+	} \\
+	R0F4.2.3 & Un professore può ottenere il cognome di tutti gli studenti associati a un determinato esame & \makecell[tl]{
+		Interno  \\ 
+		UC8.2.3
 	} \\
 	R0F4.3 & Un professore può registrare un esito ad un dato esame ad un dato studente registrato a quell'esame & \makecell[tl]{
 		Capitolato \\ 
@@ -556,6 +625,10 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 		Interno \\
 		UC10.2
 	} \\
+	R0F11.3.1& L'università deve poter visualizzare l'indirizzo di ogni amministratore & \makecell[tl]{
+		Interno \\
+		UC10.2.1
+	} \\
 	R0Q1 & La progettazione e il codice devono seguire le norme e le metriche riportate nei documenti allegati X e Y & \makecell[tl]{
 		Interno
 	} \\
@@ -655,7 +728,7 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 \begin{longtable}[H]{p{2.8cm}p{2.9cm}p{2.9cm}p{2.9cm}p{1.5cm}}
 	\rowcolor{CHeader}
 	\color{CHeaderText} \textbf{Tipologia} & \color{CHeaderText} \textbf{0 Obbligatori} & \color{CHeaderText} \textbf{1 Desiderabili} & \color{CHeaderText} \textbf{2 Opzionali} & \color{CHeaderText} \textbf{Totale} \\
-	Funzionali & 57 & 1 & 0 & 58 \\
+	Funzionali & 60 & 1 & 0 & 61 \\
 	Di qualità & 9 & 0 & 0 & 9 \\
 	Di vincolo & 18 & 1 & 1 & 20 \\
 	Prestazionali & 0 & 0 & 0 & 0 \\

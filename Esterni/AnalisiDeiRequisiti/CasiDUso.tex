@@ -584,7 +584,7 @@
 \subsection{UC7.8 - Visualizzazione lista esami}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
-	\item \textbf{Scopo e descrizione:} vengono visualizzati gli esami all'interno del sistema, con indicato per ognuno di essi il nome, il numero di crediti e, se presente, il nome ed il cognome del professore assegnatogli;
+	\item \textbf{Scopo e descrizione:} vengono visualizzati gli esami all'interno del sistema, con indicato per ognuno di essi il codici, il numero di crediti e, se presente, il nome ed il cognome del professore assegnatogli;
 	\item \textbf{Scenario principale:} l'amministratore visualizza la lista di tutti gli esami presenti nel sistema;
 	\item \textbf{Precondizione:} l'amministratore vuole vedere tutti gli esami presenti nel sistema; 
 	\item \textbf{Postcondizione:} l'amministratore ottiene la lista desiderata.
@@ -624,7 +624,7 @@
 \subsection{UC7.10.1 - Visualizzazione lista di esami non ancora assegnati}
 \begin{itemize}
 \item \textbf{Attori primari:} amministratore;
-\item \textbf{Scopo e descrizione:} l'amministratore ottiene una lista dei nomi degli esami che non presentano un professore associato;
+\item \textbf{Scopo e descrizione:} l'amministratore ottiene una lista dei codici e i relativi corsi degli esami che non presentano un professore associato;
 \item \textbf{Scenario principale:} l'amministratore ottiene una lista di esami ai quali può associare un nuovo professore, essendone sprovvisti;
 \item \textbf{Precondizione:} l'amministratore desidera ottenere una lista di esami sprovvisti di professore associato; 
 \item \textbf{Postcondizione:} l'amministratore ottiene la lista richiesta e può procedere a identificare l'esame di suo interesse.
@@ -668,6 +668,22 @@
 	\item \textbf{Scenario principale:} il professore richiede al sistema la lista degli esami di sua competenza per poterla consultare;
 	\item \textbf{Precondizione:} l'utente è già riconosciuto dal sistema come professore e richiede la visualizzazione della lista degli esami di sua competenza;
 	\item \textbf{Postcondizione:} il professore ottiene la lista degli esami ai quali è assegnato per poterla consultare.
+\end{itemize}
+\subsection{UC8.1.1 - Visualizzazione codici degli esami}
+\begin{itemize}
+	\item \textbf{Attori primari:} professore;
+	\item \textbf{Scopo e descrizione:} il professore visualizza per ogni esame il relativo codici;
+	\item \textbf{Scenario principale:} il professore richiede al sistema la lista dei codici degli esami di sua competenza per poterla consultare;
+	\item \textbf{Precondizione:}l'utente è già riconosciuto dal sistema come professore e richiede la visualizzazione dei codici degli esami di sua competenza.
+	\item \textbf{Postcondizione:} il professore ottiene la lista con indicati i codici.
+\end{itemize}
+\subsection{UC8.1.2 - Visualizzazione corsi degli esami}
+\begin{itemize}
+	\item \textbf{Attori primari:} professore;
+	\item \textbf{Scopo e descrizione:} il professore visualizza per ogni esame il relativo corso di laurea;
+	\item \textbf{Scenario principale:} il professore richiede al sistema la lista dei corsi di laurea degli esami di sua competenza per poterla consultare;
+	\item \textbf{Precondizione:}l'utente è già riconosciuto dal sistema come professore e richiede la visualizzazione dei corsi di laurea degli esami di sua competenza.
+	\item \textbf{Postcondizione:} il professore ottiene la lista con indicati i corsi di laurea.
 \end{itemize}
 
 \subsection{UC8.2 - Visualizzazione lista degli studenti}

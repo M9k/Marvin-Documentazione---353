@@ -51,6 +51,8 @@ I \citGloss{requisiti} vengono classificati ed assegnati a un identificativo uni
 	R0F3.4.2  & Obbligatorio & L'amministratore può associare ad un esame il relativo professore & Interno \\
 	R0F4 & Obbligatorio & Un professore può gestire gli esami a lui assegnati & Capitolato \\
 	R0F4.1 & Obbligatorio & Un professore può ottenere la lista di tutti gli esami a lui assegnati & Capitolato \\
+	R0F4.1.1 & Obbligatorio & Un professore può ottenere il codice di tutti gli esami a lui assegnati & Capitolato \\
+	R0F4.1.2 & Obbligatorio & Un professore può ottenere il relativo corso di laurea di tutti gli esami a lui assegnati & Capitolato \\
 	R0F4.2 & Obbligatorio & Un professore può ottenere la lista di tutti gli studenti associati a un determinato esame & Capitolato \\
 	R0F4.2.1 & Obbligatorio & Un professore può ottenere l'indirizzi di tutti studenti associati a un determinato esame & Interno \\
 	R0F4.2.2 & Obbligatorio & Un professore può ottenere il nome di tutti gli studenti associati a un determinato esame & Interno \\
@@ -165,6 +167,8 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 	 R0F3.4 \\
 	 R0F4 \\
 	 R0F4.1 \\
+	 R0F4.1.1 \\
+	 R0F4.1.2 \\
 	 R0F4.2 \\
 	 R0F4.3 \\
 	 R0F5 \\
@@ -325,6 +329,8 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 	UC7.10.3 & Associazione professore all'esame & R0F3.4.2 \\ 
 	UC8 & Gestione aspetti relativi agli esami & R0F4 \\
 	UC8.1 & Visualizzazione lista degli esami & R0F4.1 \\
+	UC8.1.1 & Visualizzazione codici degli esami & R0F4.1.1 \\
+	UC8.1.2 & Visualizzazione corsi degli esami & R0F4.1.2 \\
 	UC8.2 & Visualizzazione lista degli studenti & R0F4.2  \\
 	UC8.2.1 & Visualizzazione indirizzi degli studenti dell'esame & R0F4.2.1 \\
 	UC8.2.2 & Visualizzazione nomi degli studenti dell'esame & R0F4.2.2 \\
@@ -507,6 +513,14 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 	R0F4.1 & Un professore può ottenere la lista di tutti gli esami a lui assegnati & \makecell[tl]{
 		Capitolato \\ 
 		UC8.1
+	} \\
+	R0F4.1.1 & Un professore può ottenere il codice di tutti gli esami a lui assegnati & \makecell[tl]{
+		Capitolato \\ 
+		UC8.1.1
+	} \\
+	R0F4.1.2 & Un professore può ottenere il relativo corso di laurea di tutti gli esami a lui assegnati& \makecell[tl]{
+		Capitolato \\ 
+		UC8.1.2
 	} \\
 	R0F4.2 & Un professore può ottenere la lista di tutti gli studenti associati a un determinato esame & \makecell[tl]{
 		Capitolato  \\ 
@@ -728,7 +742,7 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 \begin{longtable}[H]{p{2.8cm}p{2.9cm}p{2.9cm}p{2.9cm}p{1.5cm}}
 	\rowcolor{CHeader}
 	\color{CHeaderText} \textbf{Tipologia} & \color{CHeaderText} \textbf{0 Obbligatori} & \color{CHeaderText} \textbf{1 Desiderabili} & \color{CHeaderText} \textbf{2 Opzionali} & \color{CHeaderText} \textbf{Totale} \\
-	Funzionali & 60 & 1 & 0 & 61 \\
+	Funzionali & 62 & 1 & 0 & 63 \\
 	Di qualità & 9 & 0 & 0 & 9 \\
 	Di vincolo & 18 & 1 & 1 & 20 \\
 	Prestazionali & 0 & 0 & 0 & 0 \\

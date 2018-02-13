@@ -74,6 +74,7 @@ I \citGloss{requisiti} vengono classificati ed assegnati a un identificativo uni
 	R0F11.1 & Obbligatorio & L'università deve poter aggiungere amministratori attraverso l'inserimento del loro indirizzo & VER-2017-12-08.1 \\
 	R0F11.2 & Obbligatorio & L'università deve poter rimuovere amministratori & VER-2017-12-08.2 \\
 	R0F11.3 & Obbligatorio & L'università deve poter ottenere la lista di tutti gli amministratori & Interno \\
+	R0F11.3.1 & Obbligatorio & L'università deve poter visualizzare l'indirizzo di ogni amministratore & Interno \\
 	R0F12& Obbligatorio & L'università può gestire gli anni accademici & Capitolato \\
 	R0F12.1 & Obbligatorio & L'università può aggiungere un \citGloss{anno accademico} & Capitolato \\
 	R0F12.2 & Obbligatorio & L'università può rimuovere un \citGloss{anno accademico} & Capitolato \\
@@ -179,7 +180,7 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 	 R0Q4 
  	} \\
  	\rowcolor{CRigheDispari}
- 	& & \makecell[tl]{
+ 	& & \makecell[tl]{ %TODO aggiustare alla fine
 	 R0Q7 \\
 	 R0Q8 \\
 	 R0V1 \\
@@ -204,15 +205,29 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 	\rowcolor{CRighePari}
 	Interno & & \makecell[tl]{ R0F1 \\
 	 R0F1.1 \\
+	 R0F1.1.1 \\
+	 R0F1.1.2 \\
+	 R0F1.1.3 \\
+	 R0F1.1.4 \\
+	 R0F1.1.5 \\
 	 R0F1.2 \\
 	 R0F1.3 \\
 	 R0F1.4 \\
+	 R0F1.4.1 \\
+	 R0F1.4.2 \\
+	 R0F1.4.3 \\
+	 R0F1.4.4 \\
 	 R0F2 \\
 	 R0F2.1 \\
+	 R0F2.1.1 \\
+	 R0F2.1.2 \\
+	 R0F2.1.3 \\
 	 R0F3 \\
 	 R0F3.1.1 \\
 	 R0F3.2 \\
-	 R0F3.4 \\
+	 R0F3.4 
+	} \\
+	& & \makecell[tl]{ %TODO aggiustare alla fine
 	 R0F3.4.1 \\
 	 R0F3.4.2 \\
 	 R0F5.1.1 \\
@@ -220,12 +235,11 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 	 R0F5.1.3 \\
 	 R0F5.1.4 \\
 	 R0F5.1.5 \\
-	 R0F6
-	 } \\
-	& & \makecell[tl]{
+	 R0F6 \\
 	 R0F6.1 \\
 	 R1F9 \\
 	 R0F11.3 \\
+	 R0F11.3.1 \\
 	 R0F12.3 \\
 	 R0Q1 \\
 	 R0V5 \\
@@ -323,6 +337,7 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 	UC10.1.2 & Visualizzazione messaggio di errore riguardo a chiave mal formata & R0F11.1 \\
 	UC10.1.3 & Visualizzazione messaggio di errore riguardo a chiave già registrata & R0F11.1 \\
 	UC10.2 & Visualizzazione lista degli amministratori & R0F11.3 \\
+	UC10.2.1 & Visualizzazione indirizzi degli amministratori & R0F11.3.1 \\
 	UC10.3 & Rimozione amministratore & R0F11.2 \\
 	UC11 & Visualizzazione quantità di \citGloss{Gas}, \citGloss{Ether} e costo delle operazioni & R0F10 \\
 	\hiderowcolors
@@ -640,7 +655,7 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 \begin{longtable}[H]{p{2.8cm}p{2.9cm}p{2.9cm}p{2.9cm}p{1.5cm}}
 	\rowcolor{CHeader}
 	\color{CHeaderText} \textbf{Tipologia} & \color{CHeaderText} \textbf{0 Obbligatori} & \color{CHeaderText} \textbf{1 Desiderabili} & \color{CHeaderText} \textbf{2 Opzionali} & \color{CHeaderText} \textbf{Totale} \\
-	Funzionali & 56 & 1 & 0 & 57 \\
+	Funzionali & 57 & 1 & 0 & 58 \\
 	Di qualità & 9 & 0 & 0 & 9 \\
 	Di vincolo & 18 & 1 & 1 & 20 \\
 	Prestazionali & 0 & 0 & 0 & 0 \\

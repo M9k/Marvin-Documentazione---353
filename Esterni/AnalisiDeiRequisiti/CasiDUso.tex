@@ -453,6 +453,7 @@
 	\item \textbf{Precondizione:} l'utente che rappresenta l'università ha scelto di aggiungere un \citGloss{anno accademico}; 
 	\item \textbf{Postcondizione:} l'\citGloss{anno accademico} creato viene inserito nel sistema.
 \end{itemize}
+%TODO: immagine 6.2
 \subsection{UC6.2 - Visualizzazione lista di tutti gli anni accademici}
 \begin{itemize}
 	\item \textbf{Attori primari:} università;
@@ -460,6 +461,14 @@
 	\item \textbf{Scenario principale:} l'utente che rappresenta l'università richiede la lista di tutti gli anni del sistema;
 	\item \textbf{Precondizione:} l'utente che rappresenta l'università è nell'area di gestione Anni Accademici e vuole ottenere la lista di tutti gli anni presenti nel sistema; 
 	\item \textbf{Postcondizione:} l'utente che rappresenta l'università ottiene la lista.
+\end{itemize}
+\subsection{UC6.2.1 - Visualizzazione anni solari relativi agli anni accademici}
+\begin{itemize}
+	\item \textbf{Attori primari:} università;
+	\item \textbf{Scopo e descrizione:} l'utente già riconosciuto dal sistema come rappresentante dell'università visualizza una lista di tutti gli anni solari relativi agli anni accademici inseriti nella rete \citGloss{Ethereum};
+	\item \textbf{Scenario principale:} L'utente che rappresenta l'università richiede al sistema la lista di anni accademici inseriti nel sistema per visualizzarli ed eventualmente compiere operazioni su di esse;
+	\item \textbf{Precondizione:} l'utente che rappresenta l'università è nell'area di gestione Anni Accademici richiede una lista degli ultimi per visualizzarne gli anni solari ad essi associati; 
+	\item \textbf{Postcondizione:} l'utente che rappresenta l'università ottiene la lista con indicati gli anni solari.
 \end{itemize}
 \subsection{UC6.3 - Visualizzazione messaggio anno malformato}
 \begin{itemize}
@@ -527,20 +536,47 @@
 	\item \textbf{Scenario principale:} il sistema avvisa l'amministratore che non è possibile utilizzare la sigla indicata;
 	\item \textbf{Precondizione:} l'amministratore ha tentato di creare un \citGloss{corso di laurea} utilizzando una sigla che non rispetta i \citGloss{requisiti} indicati dal sistema; 
 	\item \textbf{Postcondizione:} l'amministratore è consapevole di non poter utilizzare quella determinata sigla per la creazione di un nuovo corso.
-\end{itemize}\subsection{UC7.3 - Visualizzazione lista completa dei corsi}
+\end{itemize}
+%TODO: immagine 7.3
+\subsection{UC7.3 - Visualizzazione lista completa dei corsi}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
-	\item \textbf{Scopo e descrizione:} vengono mostrati tutti i corsi di laurea presenti nel sistema, visualizzandone la sigla;
+	\item \textbf{Scopo e descrizione:} vengono mostrati tutti i corsi di laurea presenti nel sistema, visualizzandone la sigla e l'anno solare dell'anno accademico associato;
 	\item \textbf{Scenario principale:} l'amministratore visualizza tutti i corsi di laurea presenti nel sistema;
 	\item \textbf{Precondizione:} l'amministratore ha richiesto la visualizzazione di tutti i corsi di laurea; 
 	\item \textbf{Postcondizione:} l'amministratore ottiene la lista.
+\end{itemize}	
+\subsection{UC7.3.1 - Visualizzazione sigle dei corsi di laurea}
+\begin{itemize}
+	\item \textbf{Attori primari:} amministratore;
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza la lista delle sigle relative ai corsi di laurea presenti nel sistema;
+	\item \textbf{Scenario principale:} l'amministratore richiede una lista di corsi di laurea presenti nel sistema;
+	\item \textbf{Precondizione:} l'amministratore ha richiesto la lista dei corsi di laurea presenti nel sistema e vuole visualizzarne le sigle ad essi associate; 
+	\item \textbf{Postcondizione:} l'amministratore ottiene la lista con le sigle associate.
 \end{itemize}
+\subsection{UC7.3.2 - Visualizzazione anni accademici associati ai corsi di laurea}
+\begin{itemize}
+	\item \textbf{Attori primari:} amministratore;
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza la lista degli anni accademici relativi ai corsi di laurea presenti nel sistema;
+	\item \textbf{Scenario principale:} l'amministratore richiede una lista di corsi di laurea presenti nel sistema;
+	\item \textbf{Precondizione:} l'amministratore ha richiesto la lista dei corsi di laurea presenti nel sistema e vuole visualizzarne gli anni accademici ad essi associati; 
+	\item \textbf{Postcondizione:} l'amministratore ottiene la lista con gli anni accademici associati.
+\end{itemize}
+%TODO: immagine 7.4
 \subsection{UC7.4 - Visualizzazione lista corsi di laurea per anno accademico}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
 	\item \textbf{Scopo e descrizione:} vengono visualizzati i corsi di laurea relativi ad un determinato \citGloss{anno accademico}, ottenendone le sigle;
 	\item \textbf{Precondizione:} l'amministratore ha visualizzato una lista di anni accademici [UC7.11] e vuole visualizzare i corsi di laurea all'interno di uno di essi; 
 	\item \textbf{Postcondizione:} l'amministratore ottiene la lista desiderata.
+\end{itemize}
+\subsection{UC7.4.1 - Visualizzazione sigle dei corsi di laurea per anno accademico}
+\begin{itemize}
+	\item \textbf{Attori primari:} amministratore;
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza la lista delle sigle relative ai corsi di laurea presenti nel sistema associati ad un determinato anno accademico;
+	\item \textbf{Scenario principale:} l'amministratore richiede una lista di corsi di laurea associati ad un determinato anno accademico presenti nel sistema;
+	\item \textbf{Precondizione:} l'amministratore ha richiesto la lista dei corsi di laurea presenti nel sistema associati ad un anno accademico e vuole visualizzarne le sigle ad essi associate; 
+	\item \textbf{Postcondizione:} l'amministratore ottiene la lista con le sigle associate.
 \end{itemize}
 \subsection{UC7.5 - Creazione esame in un corso}
 \begin{itemize}
@@ -562,6 +598,7 @@
 	\item \textbf{Precondizione:} l'amministratore tenta di creare un esame utilizzando un nome che non rispetta i \citGloss{requisiti} indicati dal sistema; 
 	\item \textbf{Postcondizione:} l'amministratore è a conoscenza di aver inserito un nome invalido.
 \end{itemize}
+%TODO: immagine 7.7
 \subsection{UC7.7 - Visualizzazione lista esami per corso}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
@@ -574,19 +611,91 @@
 	\item \textbf{Precondizione:} l'amministratore ha visualizzato una lista di corsi di laurea [UC7.3 o UC7.4] e vuole visualizzare gli esami all'interno di uno di essi; 
 	\item \textbf{Postcondizione:} l'amministratore ottiene la lista desiderata.
 \end{itemize}
+\subsection{UC7.7.1 - Visualizzazione nomi esami per corso di laurea}
+\begin{itemize}
+	\item \textbf{Attori primari:} amministratore;
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza la lista dei nomi degli esami presenti nel sistema per visualizzarli ed eventualmente effettuare operazioni su di essi;
+	\item \textbf{Scenario principale:} il sistema mostra la lista di nomi degli esami associati ad un determinato corso di laurea presenti nel sistema;
+	\item \textbf{Precondizione:} l'amministratore ha richiesto una lista di esami associati ad un corso di laurea; 
+	\item \textbf{Postcondizione:} l'amministratore visualizza la lista di nomi degli esami associati ad un determinato corso di laurea.
+\end{itemize}
+\subsection{UC7.7.2 - Visualizzazione crediti esami per corso di laurea}
+\begin{itemize}
+	\item \textbf{Attori primari:} amministratore;
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza la lista dei crediti degli esami presenti nel sistema per visualizzarli ed eventualmente effettuare operazioni su di essi;
+	\item \textbf{Scenario principale:} il sistema mostra la lista di crediti degli esami associati ad un determinato corso di laurea presenti nel sistema;
+	\item \textbf{Precondizione:} l'amministratore ha richiesto una lista di esami associati ad un corso di laurea; 
+	\item \textbf{Postcondizione:} l'amministratore visualizza la lista di crediti degli esami associati ad un determinato corso di laurea.
+\end{itemize}
+\subsection{UC7.7.3 - Visualizzazione nomi dei professori associati agli esami per corso di laurea se presenti}
+\begin{itemize}
+	\item \textbf{Attori primari:} amministratore;
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza la lista dei nomi dei professori degli esami presenti nel sistema per visualizzarli ed eventualmente effettuare operazioni su di essi;
+	\item \textbf{Scenario principale:} il sistema mostra la lista di nomi dei professori degli esami associati ad un determinato corso di laurea presenti nel sistema;
+	\item \textbf{Precondizione:} l'amministratore ha richiesto una lista di esami associati ad un corso di laurea e l'esame di riferimento ha un professore associato; 
+	\item \textbf{Postcondizione:} l'amministratore visualizza la lista di nomi dei professori degli esami associati ad un determinato corso di laurea.
+\end{itemize}
+\subsection{UC7.7.4 - Visualizzazione cognomi dei professori associati agli esami per corso di laurea se presenti}
+\begin{itemize}
+	\item \textbf{Attori primari:} amministratore;
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza la lista dei cognomi dei professori degli esami presenti nel sistema per visualizzarli ed eventualmente effettuare operazioni su di essi;
+	\item \textbf{Scenario principale:} il sistema mostra la lista di cognomi dei professori degli esami associati ad un determinato corso di laurea presenti nel sistema;
+	\item \textbf{Precondizione:} l'amministratore ha richiesto una lista di esami associati ad un corso di laurea e l'esame di riferimento ha un professore associato; 
+	\item \textbf{Postcondizione:} l'amministratore visualizza la lista di cognomi dei professori degli esami associati ad un determinato corso di laurea.
+\end{itemize}
+%TODO: immagine 7.8
 \subsection{UC7.8 - Visualizzazione lista esami}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
-	\item \textbf{Scopo e descrizione:} vengono visualizzati gli esami all'interno del sistema, con indicato per ognuno di essi il codici, il numero di crediti e, se presente, il nome ed il cognome del professore assegnatogli;
+	\item \textbf{Scopo e descrizione:} vengono visualizzati gli esami all'interno del sistema, con indicato per ognuno di essi il nome, il numero di crediti, la sigla del corso ad esso associato e, se presente, il nome ed il cognome del professore assegnatogli;
 	\item \textbf{Scenario principale:} l'amministratore visualizza la lista di tutti gli esami presenti nel sistema;
 	\item \textbf{Precondizione:} l'amministratore vuole vedere tutti gli esami presenti nel sistema; 
 	\item \textbf{Postcondizione:} l'amministratore ottiene la lista desiderata.
 \end{itemize}
-
+\subsection{UC7.8.1 - Visualizzazione nomi esami}
+\begin{itemize}
+	\item \textbf{Attori primari:} amministratore;
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza la lista dei nomi degli esami presenti nel sistema per visualizzarli ed eventualmente effettuare operazioni su di essi;
+	\item \textbf{Scenario principale:} il sistema mostra la lista di nomi degli esami presenti nel sistema;
+	\item \textbf{Precondizione:} l'amministratore ha richiesto una lista di esami; 
+	\item \textbf{Postcondizione:} l'amministratore visualizza la lista di nomi degli esami.
+\end{itemize}
+\subsection{UC7.8.2 - Visualizzazione crediti esami}
+\begin{itemize}
+	\item \textbf{Attori primari:} amministratore;
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza la lista dei crediti degli esami presenti nel sistema per visualizzarli ed eventualmente effettuare operazioni su di essi;
+	\item \textbf{Scenario principale:} il sistema mostra la lista di crediti degli esami presenti nel sistema;
+	\item \textbf{Precondizione:} l'amministratore ha richiesto una lista di esami; 
+	\item \textbf{Postcondizione:} l'amministratore visualizza la lista di crediti degli esami.
+\end{itemize}
+\subsection{UC7.8.2 - Visualizzazione sigle corsi di laurea associati ad esami se presenti}
+\begin{itemize}
+	\item \textbf{Attori primari:} amministratore;
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza la lista delle sigle dei corsi di laurea associati agli esami presenti nel sistema per visualizzarli ed eventualmente effettuare operazioni su di essi;
+	\item \textbf{Scenario principale:} il sistema mostra la lista delle sigle dei corsi di laurea associati agli esami presenti nel sistema;
+	\item \textbf{Precondizione:} l'amministratore ha richiesto una lista di esami e l'esame di riferimento ha un corso di laurea associato; 
+	\item \textbf{Postcondizione:} l'amministratore visualizza la lista delle sigle dei corsi di laurea associati agli esami.
+\end{itemize}
+\subsection{UC7.8.4 - Visualizzazione nomi dei professori associati agli esami se presenti}
+\begin{itemize}
+	\item \textbf{Attori primari:} amministratore;
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza la lista dei nomi dei professori degli esami presenti nel sistema per visualizzarli ed eventualmente effettuare operazioni su di essi;
+	\item \textbf{Scenario principale:} il sistema mostra la lista di nomi dei professori degli esami presenti nel sistema;
+	\item \textbf{Precondizione:} l'amministratore ha richiesto una lista di esami e l'esame di riferimento ha un professore associato; 
+	\item \textbf{Postcondizione:} l'amministratore visualizza la lista di nomi dei professori degli esami.
+\end{itemize}
+\subsection{UC7.8.5 - Visualizzazione cognomi dei professori associati agli esami se presenti}
+\begin{itemize}
+	\item \textbf{Attori primari:} amministratore;
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza la lista dei cognomi dei professori degli esami presenti nel sistema per visualizzarli ed eventualmente effettuare operazioni su di essi;
+	\item \textbf{Scenario principale:} il sistema mostra la lista di cognomi dei professori degli esami presenti nel sistema;
+	\item \textbf{Precondizione:} l'amministratore ha richiesto una lista di esami e l'esame di riferimento ha un professore associato; 
+	\item \textbf{Postcondizione:} l'amministratore visualizza la lista di cognomi dei professori degli esami.
+\end{itemize}
 \subsection{UC7.9 - Visualizzazione dettagli esame}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
-	\item \textbf{Scopo e descrizione:} l'amministratore visualizza il nome dell'esame, la relativa quantità di crediti, il nome, cognome e \citGloss{indirizzo} del professore associato ed il numero di studenti iscritti.
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza il nome dell'esame, la relativa quantità di crediti, la sigla del corso di laurea associato, il nome, cognome e \citGloss{indirizzo} del professore associato ed il numero di studenti iscritti.
 	\item \textbf{Scenario principale:}
 	\begin{enumerate}
 		\item L'amministratore ottiene una lista degli esami e seleziona quello di suo interesse [UC7.7 o UC7.8];
@@ -594,6 +703,54 @@
 	\end{enumerate}
 	\item \textbf{Precondizione:} l'amministratore vuole visualizzare i dettagli di un esame dopo averlo individuato in una elenco di esami [UC7.7 o UC7.8]; 
 	\item \textbf{Postcondizione:} l'amministratore ha ottenuto le informazioni ricercate.
+\end{itemize}
+\subsection{UC7.9.1 - Visualizzazione nome esame}
+\begin{itemize}
+	\item \textbf{Attori primari:} amministratore;
+	\item \textbf{Scopo e descrizione:} l'amministratore vuole visualizzare il nome dell'esame per effettuare, eventualmente, delle operazioni su di esso;
+	\item \textbf{Scenario principale:} l'amministratore visualizza il nome dell'esame;
+	\item \textbf{Precondizione:} l'amministratore ha selezionato un esame e vuole visualizzarne il nome; 
+	\item \textbf{Postcondizione:} l'amministratore ha visualizzato il nome dell'esame.
+\end{itemize}
+\subsection{UC7.9.2 - Visualizzazione crediti esame}
+\begin{itemize}
+	\item \textbf{Attori primari:} amministratore;
+	\item \textbf{Scopo e descrizione:} l'amministratore vuole visualizzare i crediti dell'esame per effettuare, eventualmente, delle operazioni su di esso;
+	\item \textbf{Scenario principale:} l'amministratore visualizza i crediti dell'esame;
+	\item \textbf{Precondizione:} l'amministratore ha selezionato un esame e vuole visualizzarne i crediti; 
+	\item \textbf{Postcondizione:} l'amministratore ha visualizzato i crediti relativi all'esame.
+\end{itemize}
+\subsection{UC7.9.3 - Visualizzazione corso di laurea associato all'esame se presente}
+\begin{itemize}
+	\item \textbf{Attori primari:} amministratore;
+	\item \textbf{Scopo e descrizione:} l'amministratore vuole visualizzare il nome del corso di laurea associato all'esame per effettuare, eventualmente, delle operazioni su di esso;
+	\item \textbf{Scenario principale:} l'amministratore visualizza il nome del corso di laurea associato all'esame;
+	\item \textbf{Precondizione:} l'amministratore ha selezionato un esame e questo ha un corso di laurea associato; 
+	\item \textbf{Postcondizione:} l'amministratore ha visualizzato il nome del corso di laurea associato all'esame.
+\end{itemize}
+\subsection{UC7.9.4 - Visualizzazione nome del professore associato all'esame se presente}
+\begin{itemize}
+	\item \textbf{Attori primari:} amministratore;
+	\item \textbf{Scopo e descrizione:} l'amministratore vuole visualizzare il nome del professore associato all'esame per effettuare, eventualmente, delle operazioni su di esso;
+	\item \textbf{Scenario principale:} l'amministratore visualizza il nome del professore associato all'esame;
+	\item \textbf{Precondizione:} l'amministratore ha selezionato un esame e questo ha un professore associato; 
+	\item \textbf{Postcondizione:} l'amministratore ha visualizzato il nome del professore associato all'esame.
+\end{itemize}
+\subsection{UC7.9.5 - Visualizzazione cognome del professore associato all'esame se presente}
+\begin{itemize}
+	\item \textbf{Attori primari:} amministratore;
+	\item \textbf{Scopo e descrizione:} l'amministratore vuole visualizzare il cognome del professore associato all'esame per effettuare, eventualmente, delle operazioni su di esso;
+	\item \textbf{Scenario principale:} l'amministratore visualizza il cognome del professore associato all'esame;
+	\item \textbf{Precondizione:} l'amministratore ha selezionato un esame e questo ha un professore associato; 
+	\item \textbf{Postcondizione:} l'amministratore ha visualizzato il cognome del professore associato all'esame.
+\end{itemize}
+\subsection{UC7.9.6 - Visualizzazione numero di studenti iscritti all'esame}
+\begin{itemize}
+	\item \textbf{Attori primari:} amministratore;
+	\item \textbf{Scopo e descrizione:} l'amministratore vuole visualizzare il numero di studenti iscritti all'esame per effettuare, eventualmente, delle operazioni su di esso;
+	\item \textbf{Scenario principale:} l'amministratore visualizza il numero di studenti iscritti all'esame;
+	\item \textbf{Precondizione:} l'amministratore ha selezionato un esame e vuole visualizzarne il numero di studenti iscritti; 
+	\item \textbf{Postcondizione:} l'amministratore ha visualizzato il numero di studenti iscritti.
 \end{itemize}
 \subsection{UC7.10 - Associa professore a esame}
 \begin{itemize}
@@ -633,6 +790,7 @@
 	\item \textbf{Precondizione:} l'amministratore ha selezionato un esame sprovvisto di assegnazione a un professore [UC7.10.1] e ha ottenuto una lista di professori [UC7.1.2], volendo associarne uno; 
 	\item \textbf{Postcondizione:} il professore selezionato viene associato all'esame desiderato.
 \end{itemize}
+%TODO: immagine 7.11
 \subsection{UC7.11 - Visualizzazione di tutti gli anni accademici}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
@@ -640,6 +798,14 @@
 	\item \textbf{Scenario principale:} l'amministratore richiede la lista di tutti gli anni del sistema;
 	\item \textbf{Precondizione:} l'amministratore desidera ottenere la lista di tutti gli anni presenti nel sistema; 
 	\item \textbf{Postcondizione:} l'amministratore che rappresenta l'università ottiene la lista.
+\end{itemize}
+\subsection{UC7.11.1 - Visualizzazione anni solari relativi agli anni accademici}
+\begin{itemize}
+	\item \textbf{Attori primari:} amministratore;
+	\item \textbf{Scopo e descrizione:} l'utente già riconosciuto dal sistema come amministratore visualizza una lista di tutti gli anni solari relativi agli anni accademici inseriti nella rete \citGloss{Ethereum};
+	\item \textbf{Scenario principale:} l'amministratore richiede al sistema la lista di anni accademici inseriti nel sistema per visualizzarli ed eventualmente compiere operazioni su di esse;
+	\item \textbf{Precondizione:} l'amministratore richiede una lista di anni accademici per visualizzarne gli anni solari ad essi associati; 
+	\item \textbf{Postcondizione:} l'amministratore ottiene la lista con indicati gli anni solari.
 \end{itemize}
 
 \subsection{UC8 - Gestione aspetti relativi agli esami}

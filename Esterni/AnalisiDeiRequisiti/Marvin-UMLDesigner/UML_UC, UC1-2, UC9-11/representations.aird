@@ -15,23 +15,23 @@
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Capture']/@ownedRepresentations[name='Use%20Case%20Diagram']"/>
         <target xmi:type="uml:Model" href="Marvin.uml#_JV5DYNO3EeeqiP5Ban4ZWQ"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_bPO_wNqXEeeqSNzUEDEsQg" name="UC6" repPath="#_bPL8cNqXEeeqSNzUEDEsQg">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_bPO_wNqXEeeqSNzUEDEsQg" name="UC8" repPath="#_bPL8cNqXEeeqSNzUEDEsQg">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Capture']/@ownedRepresentations[name='Use%20Case%20Diagram']"/>
         <target xmi:type="uml:Model" href="Marvin.uml#_JV5DYNO3EeeqiP5Ban4ZWQ"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_MsqRt9qYEeeqSNzUEDEsQg" name="UC7" repPath="#_MsqRsNqYEeeqSNzUEDEsQg">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_MsqRt9qYEeeqSNzUEDEsQg" name="UC9" repPath="#_MsqRsNqYEeeqSNzUEDEsQg">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Capture']/@ownedRepresentations[name='Use%20Case%20Diagram']"/>
         <target xmi:type="uml:Model" href="Marvin.uml#_JV5DYNO3EeeqiP5Ban4ZWQ"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_wOLpcNqYEeeqSNzUEDEsQg" name="UC7.1" repPath="#_wOLCYNqYEeeqSNzUEDEsQg">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_wOLpcNqYEeeqSNzUEDEsQg" name="UC9.1" repPath="#_wOLCYNqYEeeqSNzUEDEsQg">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Capture']/@ownedRepresentations[name='Use%20Case%20Diagram']"/>
         <target xmi:type="uml:Model" href="Marvin.uml#_JV5DYNO3EeeqiP5Ban4ZWQ"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_XfTuEN6MEeeoYNTeb3S4ug" name="UC8" repPath="#_XfR44N6MEeeoYNTeb3S4ug">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_XfTuEN6MEeeoYNTeb3S4ug" name="UC10" repPath="#_XfR44N6MEeeoYNTeb3S4ug">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Capture']/@ownedRepresentations[name='Use%20Case%20Diagram']"/>
         <target xmi:type="uml:Model" href="Marvin.uml#_JV5DYNO3EeeqiP5Ban4ZWQ"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_YkE9x96MEeeoYNTeb3S4ug" name="UC8.1" repPath="#_YkE9wN6MEeeoYNTeb3S4ug">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_YkE9x96MEeeoYNTeb3S4ug" name="UC10.1" repPath="#_YkE9wN6MEeeoYNTeb3S4ug">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Capture']/@ownedRepresentations[name='Use%20Case%20Diagram']"/>
         <target xmi:type="uml:Model" href="Marvin.uml#_JV5DYNO3EeeqiP5Ban4ZWQ"/>
       </ownedRepresentationDescriptors>
@@ -2013,7 +2013,7 @@
     <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Capture']/@ownedRepresentations[name='Use%20Case%20Diagram']/@defaultLayer"/>
     <target xmi:type="uml:Model" href="Marvin.uml#_JV5DYNO3EeeqiP5Ban4ZWQ"/>
   </diagram:DSemanticDiagram>
-  <diagram:DSemanticDiagram xmi:id="_bPL8cNqXEeeqSNzUEDEsQg" name="UC6">
+  <diagram:DSemanticDiagram xmi:id="_bPL8cNqXEeeqSNzUEDEsQg" name="UC8">
     <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_bPL8cdqXEeeqSNzUEDEsQg" source="DANNOTATION_CUSTOMIZATION_KEY">
       <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_bPL8ctqXEeeqSNzUEDEsQg"/>
     </ownedAnnotationEntries>
@@ -2031,7 +2031,7 @@
                 <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lFsuktqXEeeqSNzUEDEsQg"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_lFmA4dqXEeeqSNzUEDEsQg" fontColor="7490599" fontName="Segoe UI"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lFmA4tqXEeeqSNzUEDEsQg" x="54" y="29" width="241" height="85"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lFmA4tqXEeeqSNzUEDEsQg" x="54" y="41" width="241" height="81"/>
             </children>
             <children xmi:type="notation:Node" xmi:id="_netNUNqXEeeqSNzUEDEsQg" type="3007" element="_nejcUdqXEeeqSNzUEDEsQg">
               <children xmi:type="notation:Node" xmi:id="_net0YNqXEeeqSNzUEDEsQg" type="5003">
@@ -2042,7 +2042,7 @@
                 <layoutConstraint xmi:type="notation:Bounds" xmi:id="_neubctqXEeeqSNzUEDEsQg"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_netNUdqXEeeqSNzUEDEsQg" fontColor="7490599" fontName="Segoe UI"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_netNUtqXEeeqSNzUEDEsQg" x="54" y="125" width="241" height="85"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_netNUtqXEeeqSNzUEDEsQg" x="54" y="137" width="241" height="81"/>
             </children>
             <children xmi:type="notation:Node" xmi:id="_olz_UNqXEeeqSNzUEDEsQg" type="3007" element="_olqOUdqXEeeqSNzUEDEsQg">
               <children xmi:type="notation:Node" xmi:id="_olz_U9qXEeeqSNzUEDEsQg" type="5003">
@@ -2053,7 +2053,7 @@
                 <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ol0mYtqXEeeqSNzUEDEsQg"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_olz_UdqXEeeqSNzUEDEsQg" fontColor="7490599" fontName="Segoe UI"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_olz_UtqXEeeqSNzUEDEsQg" x="54" y="221" width="241" height="85"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_olz_UtqXEeeqSNzUEDEsQg" x="55" y="233" width="241" height="81"/>
             </children>
             <styles xmi:type="notation:SortingStyle" xmi:id="_eTCvAdqXEeeqSNzUEDEsQg"/>
             <styles xmi:type="notation:FilteringStyle" xmi:id="_eTCvAtqXEeeqSNzUEDEsQg"/>
@@ -2075,55 +2075,55 @@
         <styles xmi:type="notation:DiagramStyle" xmi:id="_bPdpQtqXEeeqSNzUEDEsQg"/>
         <edges xmi:type="notation:Edge" xmi:id="_v8U54NqXEeeqSNzUEDEsQg" type="4001" element="_v8IsoNqXEeeqSNzUEDEsQg" source="_lFmA4NqXEeeqSNzUEDEsQg" target="_iTcpYNqXEeeqSNzUEDEsQg">
           <children xmi:type="notation:Node" xmi:id="_v8WIANqXEeeqSNzUEDEsQg" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_v8WIAdqXEeeqSNzUEDEsQg" y="-10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_v8WIAdqXEeeqSNzUEDEsQg" x="-1" y="-8"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_v8WvENqXEeeqSNzUEDEsQg" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_v8WvEdqXEeeqSNzUEDEsQg" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_v8WvEdqXEeeqSNzUEDEsQg" y="11"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_v8XWINqXEeeqSNzUEDEsQg" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_v8XWIdqXEeeqSNzUEDEsQg" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_v8XWIdqXEeeqSNzUEDEsQg" x="1" y="10"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_v8U54dqXEeeqSNzUEDEsQg"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_v8U54tqXEeeqSNzUEDEsQg" fontName="Segoe UI" fontHeight="8"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_v8U549qXEeeqSNzUEDEsQg" points="[318, 41, 318, 41]$[168, 180, 168, 180]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_v8U549qXEeeqSNzUEDEsQg" points="[-107, 41, 154, -65]$[-254, 98, 7, -8]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_v8ZLUNqXEeeqSNzUEDEsQg" id="(0.5,0.5)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_v8ZLUdqXEeeqSNzUEDEsQg" id="(0.5,0.5)"/>
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_w1UXYNqXEeeqSNzUEDEsQg" type="4001" element="_w1LNcNqXEeeqSNzUEDEsQg" source="_iTcpYNqXEeeqSNzUEDEsQg" target="_netNUNqXEeeqSNzUEDEsQg">
           <children xmi:type="notation:Node" xmi:id="_w1U-cNqXEeeqSNzUEDEsQg" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_w1U-cdqXEeeqSNzUEDEsQg" y="-10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_w1U-cdqXEeeqSNzUEDEsQg" x="-2" y="-10"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_w1U-ctqXEeeqSNzUEDEsQg" type="6002">
             <layoutConstraint xmi:type="notation:Bounds" xmi:id="_w1U-c9qXEeeqSNzUEDEsQg" y="10"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_w1U-dNqXEeeqSNzUEDEsQg" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_w1U-ddqXEeeqSNzUEDEsQg" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_w1U-ddqXEeeqSNzUEDEsQg" x="1" y="9"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_w1UXYdqXEeeqSNzUEDEsQg"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_w1UXYtqXEeeqSNzUEDEsQg" fontName="Segoe UI" fontHeight="8"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_w1UXY9qXEeeqSNzUEDEsQg" points="[168, 180, 168, 180]$[318, 137, 318, 137]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_w1UXY9qXEeeqSNzUEDEsQg" points="[2, -2, -259, 8]$[141, -7, -120, 3]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_w1VlgNqXEeeqSNzUEDEsQg" id="(0.5,0.5)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_w1VlgdqXEeeqSNzUEDEsQg" id="(0.5,0.5)"/>
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_xbjQ8NqXEeeqSNzUEDEsQg" type="4001" element="_xbZf8NqXEeeqSNzUEDEsQg" source="_iTcpYNqXEeeqSNzUEDEsQg" target="_olz_UNqXEeeqSNzUEDEsQg">
           <children xmi:type="notation:Node" xmi:id="_xbj4ANqXEeeqSNzUEDEsQg" type="6001">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xbj4AdqXEeeqSNzUEDEsQg" y="-10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xbj4AdqXEeeqSNzUEDEsQg" x="-5" y="-11"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_xbj4AtqXEeeqSNzUEDEsQg" type="6002">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xbj4A9qXEeeqSNzUEDEsQg" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xbj4A9qXEeeqSNzUEDEsQg" x="-2" y="8"/>
           </children>
           <children xmi:type="notation:Node" xmi:id="_xbj4BNqXEeeqSNzUEDEsQg" type="6003">
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xbj4BdqXEeeqSNzUEDEsQg" y="10"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xbj4BdqXEeeqSNzUEDEsQg" x="1" y="10"/>
           </children>
           <styles xmi:type="notation:ConnectorStyle" xmi:id="_xbjQ8dqXEeeqSNzUEDEsQg"/>
           <styles xmi:type="notation:FontStyle" xmi:id="_xbjQ8tqXEeeqSNzUEDEsQg" fontName="Segoe UI" fontHeight="8"/>
-          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_xbjQ89qXEeeqSNzUEDEsQg" points="[168, 180, 168, 180]$[318, 233, 318, 233]"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_xbjQ89qXEeeqSNzUEDEsQg" points="[2, 4, -260, -82]$[142, 48, -120, -38]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_xbj4BtqXEeeqSNzUEDEsQg" id="(0.5,0.5)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_xbj4B9qXEeeqSNzUEDEsQg" id="(0.5,0.5)"/>
         </edges>
       </data>
     </ownedAnnotationEntries>
-    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_eSq7kNqXEeeqSNzUEDEsQg" name="UC6 - Gestione aspetti relativi agli esami" width="12" height="10">
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_eSq7kNqXEeeqSNzUEDEsQg" name="UC8 - Gestione aspetti relativi agli esami" width="12" height="10">
       <target xmi:type="uml:Component" href="Marvin.uml#_eSofUNqXEeeqSNzUEDEsQg"/>
       <semanticElements xmi:type="uml:Component" href="Marvin.uml#_eSofUNqXEeeqSNzUEDEsQg"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -2134,7 +2134,7 @@
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Capture']/@ownedRepresentations[name='Use%20Case%20Diagram']/@defaultLayer/@containerMappings[name='UCD_Subject']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Capture']/@ownedRepresentations[name='Use%20Case%20Diagram']/@defaultLayer/@containerMappings[name='UCD_Subject']"/>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_lFbBwdqXEeeqSNzUEDEsQg" name="UC6.1 - Visualizzazione lista degli esami" outgoingEdges="_v8IsoNqXEeeqSNzUEDEsQg" width="14" height="14" resizeKind="NSEW">
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_lFbBwdqXEeeqSNzUEDEsQg" name="UC8.1 - Visualizzazione lista degli esami" outgoingEdges="_v8IsoNqXEeeqSNzUEDEsQg" width="14" height="14" resizeKind="NSEW">
         <target xmi:type="uml:UseCase" href="Marvin.uml#_lFbBwNqXEeeqSNzUEDEsQg"/>
         <semanticElements xmi:type="uml:UseCase" href="Marvin.uml#_lFbBwNqXEeeqSNzUEDEsQg"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -2145,7 +2145,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Capture']/@ownedRepresentations[name='Use%20Case%20Diagram']/@defaultLayer/@nodeMappings[name='UCD_UseCase']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_nejcUdqXEeeqSNzUEDEsQg" name="UC6.2 - Visualizzazione lista degli studenti" incomingEdges="_w1LNcNqXEeeqSNzUEDEsQg" width="14" height="14" resizeKind="NSEW">
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_nejcUdqXEeeqSNzUEDEsQg" name="UC8.2 - Visualizzazione lista degli studenti" incomingEdges="_w1LNcNqXEeeqSNzUEDEsQg" width="14" height="14" resizeKind="NSEW">
         <target xmi:type="uml:UseCase" href="Marvin.uml#_nejcUNqXEeeqSNzUEDEsQg"/>
         <semanticElements xmi:type="uml:UseCase" href="Marvin.uml#_nejcUNqXEeeqSNzUEDEsQg"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -2156,7 +2156,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Capture']/@ownedRepresentations[name='Use%20Case%20Diagram']/@defaultLayer/@nodeMappings[name='UCD_UseCase']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_olqOUdqXEeeqSNzUEDEsQg" name="UC6.3 - Registrazione valutazione di un esame" incomingEdges="_xbZf8NqXEeeqSNzUEDEsQg" width="14" height="14" resizeKind="NSEW">
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_olqOUdqXEeeqSNzUEDEsQg" name="UC8.3 - Registrazione valutazione di un esame" incomingEdges="_xbZf8NqXEeeqSNzUEDEsQg" width="14" height="14" resizeKind="NSEW">
         <target xmi:type="uml:UseCase" href="Marvin.uml#_olqOUNqXEeeqSNzUEDEsQg"/>
         <semanticElements xmi:type="uml:UseCase" href="Marvin.uml#_olqOUNqXEeeqSNzUEDEsQg"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -2218,7 +2218,7 @@
     <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Capture']/@ownedRepresentations[name='Use%20Case%20Diagram']/@defaultLayer"/>
     <target xmi:type="uml:Model" href="Marvin.uml#_JV5DYNO3EeeqiP5Ban4ZWQ"/>
   </diagram:DSemanticDiagram>
-  <diagram:DSemanticDiagram xmi:id="_MsqRsNqYEeeqSNzUEDEsQg" name="UC7">
+  <diagram:DSemanticDiagram xmi:id="_MsqRsNqYEeeqSNzUEDEsQg" name="UC9">
     <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_MsqRsdqYEeeqSNzUEDEsQg" source="DANNOTATION_CUSTOMIZATION_KEY">
       <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_MsqRstqYEeeqSNzUEDEsQg"/>
     </ownedAnnotationEntries>
@@ -2355,7 +2355,7 @@
         </edges>
       </data>
     </ownedAnnotationEntries>
-    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_RUyTYNqYEeeqSNzUEDEsQg" name="UC7 - Gestione aspetti relativi allo studente" width="12" height="10">
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_RUyTYNqYEeeqSNzUEDEsQg" name="UC9 - Gestione aspetti relativi allo studente" width="12" height="10">
       <target xmi:type="uml:Component" href="Marvin.uml#_RUxsUNqYEeeqSNzUEDEsQg"/>
       <semanticElements xmi:type="uml:Component" href="Marvin.uml#_RUxsUNqYEeeqSNzUEDEsQg"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -2366,7 +2366,7 @@
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Capture']/@ownedRepresentations[name='Use%20Case%20Diagram']/@defaultLayer/@containerMappings[name='UCD_Subject']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Capture']/@ownedRepresentations[name='Use%20Case%20Diagram']/@defaultLayer/@containerMappings[name='UCD_Subject']"/>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_VCR40dqYEeeqSNzUEDEsQg" name="UC7.1 - Visualizzazione delle informazione degli esami ai quali è iscritto" incomingEdges="_fuu0cNqYEeeqSNzUEDEsQg" width="14" height="14" resizeKind="NSEW">
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_VCR40dqYEeeqSNzUEDEsQg" name="UC9.1 - Visualizzazione delle informazione degli esami ai quali è iscritto" incomingEdges="_fuu0cNqYEeeqSNzUEDEsQg" width="14" height="14" resizeKind="NSEW">
         <target xmi:type="uml:UseCase" href="Marvin.uml#_VCR40NqYEeeqSNzUEDEsQg"/>
         <semanticElements xmi:type="uml:UseCase" href="Marvin.uml#_VCR40NqYEeeqSNzUEDEsQg"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -2377,7 +2377,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Capture']/@ownedRepresentations[name='Use%20Case%20Diagram']/@defaultLayer/@nodeMappings[name='UCD_UseCase']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_VR_v0NqYEeeqSNzUEDEsQg" name="UC7.2 - Visualizzazione degli esami opzionali e dei loro crediti" incomingEdges="_gN3ngNqYEeeqSNzUEDEsQg" width="14" height="14" resizeKind="NSEW">
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_VR_v0NqYEeeqSNzUEDEsQg" name="UC9.2 - Visualizzazione degli esami opzionali e dei loro crediti" incomingEdges="_gN3ngNqYEeeqSNzUEDEsQg" width="14" height="14" resizeKind="NSEW">
         <target xmi:type="uml:UseCase" href="Marvin.uml#_VR_IwNqYEeeqSNzUEDEsQg"/>
         <semanticElements xmi:type="uml:UseCase" href="Marvin.uml#_VR_IwNqYEeeqSNzUEDEsQg"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -2388,7 +2388,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Capture']/@ownedRepresentations[name='Use%20Case%20Diagram']/@defaultLayer/@nodeMappings[name='UCD_UseCase']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_VoMpUdqYEeeqSNzUEDEsQg" name="UC7.3 - Registrazione ad un esame opzionale" incomingEdges="_gv9n8NqYEeeqSNzUEDEsQg" width="14" height="14" resizeKind="NSEW">
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_VoMpUdqYEeeqSNzUEDEsQg" name="UC9.3 - Iscrizione ad un esame opzionale" incomingEdges="_gv9n8NqYEeeqSNzUEDEsQg" width="14" height="14" resizeKind="NSEW">
         <target xmi:type="uml:UseCase" href="Marvin.uml#_VoMpUNqYEeeqSNzUEDEsQg"/>
         <semanticElements xmi:type="uml:UseCase" href="Marvin.uml#_VoMpUNqYEeeqSNzUEDEsQg"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -2399,7 +2399,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Capture']/@ownedRepresentations[name='Use%20Case%20Diagram']/@defaultLayer/@nodeMappings[name='UCD_UseCase']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_WGLl0NqYEeeqSNzUEDEsQg" name="UC7.4 - Visualizzazione delle informazioni relative ai crediti" incomingEdges="_hjA1gNqYEeeqSNzUEDEsQg" width="14" height="14" resizeKind="NSEW">
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_WGLl0NqYEeeqSNzUEDEsQg" name="UC9.4 - Visualizzazione delle informazioni relative ai crediti" incomingEdges="_hjA1gNqYEeeqSNzUEDEsQg" width="14" height="14" resizeKind="NSEW">
         <target xmi:type="uml:UseCase" href="Marvin.uml#_WGK-wNqYEeeqSNzUEDEsQg"/>
         <semanticElements xmi:type="uml:UseCase" href="Marvin.uml#_WGK-wNqYEeeqSNzUEDEsQg"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -2469,7 +2469,7 @@
     <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Capture']/@ownedRepresentations[name='Use%20Case%20Diagram']/@defaultLayer"/>
     <target xmi:type="uml:Model" href="Marvin.uml#_JV5DYNO3EeeqiP5Ban4ZWQ"/>
   </diagram:DSemanticDiagram>
-  <diagram:DSemanticDiagram xmi:id="_wOLCYNqYEeeqSNzUEDEsQg" name="UC7.1">
+  <diagram:DSemanticDiagram xmi:id="_wOLCYNqYEeeqSNzUEDEsQg" name="UC9.1">
     <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_wOLCYdqYEeeqSNzUEDEsQg" source="DANNOTATION_CUSTOMIZATION_KEY">
       <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_wOLCYtqYEeeqSNzUEDEsQg"/>
     </ownedAnnotationEntries>
@@ -2591,7 +2591,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Capture']/@ownedRepresentations[name='Use%20Case%20Diagram']/@defaultLayer/@nodeMappings[name='UCD_Actor']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_1sqEUdqYEeeqSNzUEDEsQg" name="UC7.1 - Visualizzazione delle informazione degli esami ai quali è iscritto" width="12" height="10">
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_1sqEUdqYEeeqSNzUEDEsQg" name="UC9.1 - Visualizzazione delle informazione degli esami ai quali è iscritto" width="12" height="10">
       <target xmi:type="uml:Component" href="Marvin.uml#_1sqEUNqYEeeqSNzUEDEsQg"/>
       <semanticElements xmi:type="uml:Component" href="Marvin.uml#_1sqEUNqYEeeqSNzUEDEsQg"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -2602,7 +2602,7 @@
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Capture']/@ownedRepresentations[name='Use%20Case%20Diagram']/@defaultLayer/@containerMappings[name='UCD_Subject']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Capture']/@ownedRepresentations[name='Use%20Case%20Diagram']/@defaultLayer/@containerMappings[name='UCD_Subject']"/>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_4okb0dqYEeeqSNzUEDEsQg" name="UC7.1.1 - Visualizzazione dei crediti degli esami ai quali è iscritto" outgoingEdges="_BUUD8NqZEeeqSNzUEDEsQg" width="14" height="14" resizeKind="NSEW">
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_4okb0dqYEeeqSNzUEDEsQg" name="UC9.1.1 - Visualizzazione dei crediti degli esami ai quali è iscritto" outgoingEdges="_BUUD8NqZEeeqSNzUEDEsQg" width="14" height="14" resizeKind="NSEW">
         <target xmi:type="uml:UseCase" href="Marvin.uml#_4okb0NqYEeeqSNzUEDEsQg"/>
         <semanticElements xmi:type="uml:UseCase" href="Marvin.uml#_4okb0NqYEeeqSNzUEDEsQg"/>
         <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_4okb0tqYEeeqSNzUEDEsQg" labelSize="9" showIcon="false" labelColor="39,76,114" labelPosition="node" workspacePath="/org.obeonetwork.dsl.uml2.design/images/use_case.svg">
@@ -2610,7 +2610,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Capture']/@ownedRepresentations[name='Use%20Case%20Diagram']/@defaultLayer/@nodeMappings[name='UCD_UseCase']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_5HelYdqYEeeqSNzUEDEsQg" name="UC7.1.2 - Visualizzazione della obbligatorietà degli esami ai quali è iscritto" incomingEdges="_Br6EkNqZEeeqSNzUEDEsQg" width="14" height="14" resizeKind="NSEW">
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_5HelYdqYEeeqSNzUEDEsQg" name="UC9.1.2 - Visualizzazione della obbligatorietà degli esami ai quali è iscritto" incomingEdges="_Br6EkNqZEeeqSNzUEDEsQg" width="14" height="14" resizeKind="NSEW">
         <target xmi:type="uml:UseCase" href="Marvin.uml#_5HelYNqYEeeqSNzUEDEsQg"/>
         <semanticElements xmi:type="uml:UseCase" href="Marvin.uml#_5HelYNqYEeeqSNzUEDEsQg"/>
         <ownedStyle xmi:type="diagram:WorkspaceImage" xmi:id="_5HfMcNqYEeeqSNzUEDEsQg" labelSize="9" showIcon="false" labelColor="39,76,114" labelPosition="node" workspacePath="/org.obeonetwork.dsl.uml2.design/images/use_case.svg">
@@ -2618,7 +2618,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Capture']/@ownedRepresentations[name='Use%20Case%20Diagram']/@defaultLayer/@nodeMappings[name='UCD_UseCase']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_5m-k0dqYEeeqSNzUEDEsQg" name="UC7.1.3 - Visualizzazione delle valutazioni degli esami ai quali è iscritto" incomingEdges="_CLotgNqZEeeqSNzUEDEsQg" width="14" height="14" resizeKind="NSEW">
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_5m-k0dqYEeeqSNzUEDEsQg" name="UC9.1.3 - Visualizzazione delle valutazioni degli esami ai quali è iscritto" incomingEdges="_CLotgNqZEeeqSNzUEDEsQg" width="14" height="14" resizeKind="NSEW">
         <target xmi:type="uml:UseCase" href="Marvin.uml#_5m-k0NqYEeeqSNzUEDEsQg"/>
         <semanticElements xmi:type="uml:UseCase" href="Marvin.uml#_5m-k0NqYEeeqSNzUEDEsQg"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -2668,7 +2668,7 @@
     <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Capture']/@ownedRepresentations[name='Use%20Case%20Diagram']/@defaultLayer"/>
     <target xmi:type="uml:Model" href="Marvin.uml#_JV5DYNO3EeeqiP5Ban4ZWQ"/>
   </diagram:DSemanticDiagram>
-  <diagram:DSemanticDiagram xmi:id="_XfR44N6MEeeoYNTeb3S4ug" name="UC8">
+  <diagram:DSemanticDiagram xmi:id="_XfR44N6MEeeoYNTeb3S4ug" name="UC10">
     <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_XfR44d6MEeeoYNTeb3S4ug" source="DANNOTATION_CUSTOMIZATION_KEY">
       <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_XfR44t6MEeeoYNTeb3S4ug"/>
     </ownedAnnotationEntries>
@@ -2790,7 +2790,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Capture']/@ownedRepresentations[name='Use%20Case%20Diagram']/@defaultLayer/@nodeMappings[name='UCD_Actor']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_kw5f8N6MEeeoYNTeb3S4ug" name="UC8 - Gestione degli amministratori" width="12" height="10">
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_kw5f8N6MEeeoYNTeb3S4ug" name="UC10 - Gestione degli amministratori" width="12" height="10">
       <target xmi:type="uml:Component" href="Marvin.uml#_kw4R0N6MEeeoYNTeb3S4ug"/>
       <semanticElements xmi:type="uml:Component" href="Marvin.uml#_kw4R0N6MEeeoYNTeb3S4ug"/>
       <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_kw5f8d6MEeeoYNTeb3S4ug" borderSize="2" borderSizeComputationExpression="2" borderColor="110,132,132" backgroundStyle="Liquid" foregroundColor="255,255,255">
@@ -2798,7 +2798,7 @@
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Capture']/@ownedRepresentations[name='Use%20Case%20Diagram']/@defaultLayer/@containerMappings[name='UCD_Subject']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Capture']/@ownedRepresentations[name='Use%20Case%20Diagram']/@defaultLayer/@containerMappings[name='UCD_Subject']"/>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_wjzQ0N6NEeeoYNTeb3S4ug" name="UC8.1 - Aggiunta di un amministratore" incomingEdges="_JqlIA96OEeeoYNTeb3S4ug" width="14" height="14" resizeKind="NSEW">
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_wjzQ0N6NEeeoYNTeb3S4ug" name="UC10.1 - Aggiunta di un amministratore" incomingEdges="_JqlIA96OEeeoYNTeb3S4ug" width="14" height="14" resizeKind="NSEW">
         <target xmi:type="uml:UseCase" href="Marvin.uml#_wjyCsN6NEeeoYNTeb3S4ug"/>
         <semanticElements xmi:type="uml:UseCase" href="Marvin.uml#_wjyCsN6NEeeoYNTeb3S4ug"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -2809,7 +2809,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Capture']/@ownedRepresentations[name='Use%20Case%20Diagram']/@defaultLayer/@nodeMappings[name='UCD_UseCase']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_xfigUN6NEeeoYNTeb3S4ug" name="UC8.2 - Visualizzazione lista degli amministratori" incomingEdges="_KYrkIN6OEeeoYNTeb3S4ug" width="14" height="14" resizeKind="NSEW">
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_xfigUN6NEeeoYNTeb3S4ug" name="UC10.2 - Visualizzazione lista degli amministratori" incomingEdges="_KYrkIN6OEeeoYNTeb3S4ug" width="14" height="14" resizeKind="NSEW">
         <target xmi:type="uml:UseCase" href="Marvin.uml#_xfh5QN6NEeeoYNTeb3S4ug"/>
         <semanticElements xmi:type="uml:UseCase" href="Marvin.uml#_xfh5QN6NEeeoYNTeb3S4ug"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -2820,7 +2820,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Capture']/@ownedRepresentations[name='Use%20Case%20Diagram']/@defaultLayer/@nodeMappings[name='UCD_UseCase']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_xzNDMd6NEeeoYNTeb3S4ug" name="UC8.3 - Rimozione amministratore" incomingEdges="_LHZrUN6OEeeoYNTeb3S4ug" width="14" height="14" resizeKind="NSEW">
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_xzNDMd6NEeeoYNTeb3S4ug" name="UC10.3 - Rimozione amministratore" incomingEdges="_LHZrUN6OEeeoYNTeb3S4ug" width="14" height="14" resizeKind="NSEW">
         <target xmi:type="uml:UseCase" href="Marvin.uml#_xzNDMN6NEeeoYNTeb3S4ug"/>
         <semanticElements xmi:type="uml:UseCase" href="Marvin.uml#_xzNDMN6NEeeoYNTeb3S4ug"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -2870,7 +2870,7 @@
     <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Capture']/@ownedRepresentations[name='Use%20Case%20Diagram']/@defaultLayer"/>
     <target xmi:type="uml:Model" href="Marvin.uml#_JV5DYNO3EeeqiP5Ban4ZWQ"/>
   </diagram:DSemanticDiagram>
-  <diagram:DSemanticDiagram xmi:id="_YkE9wN6MEeeoYNTeb3S4ug" name="UC8.1">
+  <diagram:DSemanticDiagram xmi:id="_YkE9wN6MEeeoYNTeb3S4ug" name="UC10.1">
     <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_YkE9wd6MEeeoYNTeb3S4ug" source="DANNOTATION_CUSTOMIZATION_KEY">
       <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_YkE9wt6MEeeoYNTeb3S4ug"/>
     </ownedAnnotationEntries>
@@ -3026,7 +3026,7 @@
         </edges>
       </data>
     </ownedAnnotationEntries>
-    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_4rrhcN6OEeeoYNTeb3S4ug" name="UC8.1 - Aggiunta di un amministratore" width="12" height="10">
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_4rrhcN6OEeeoYNTeb3S4ug" name="UC10.1 - Aggiunta di un amministratore" width="12" height="10">
       <target xmi:type="uml:Component" href="Marvin.uml#_4rq6YN6OEeeoYNTeb3S4ug"/>
       <semanticElements xmi:type="uml:Component" href="Marvin.uml#_4rq6YN6OEeeoYNTeb3S4ug"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -3037,7 +3037,7 @@
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Capture']/@ownedRepresentations[name='Use%20Case%20Diagram']/@defaultLayer/@containerMappings[name='UCD_Subject']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Capture']/@ownedRepresentations[name='Use%20Case%20Diagram']/@defaultLayer/@containerMappings[name='UCD_Subject']"/>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_9J9DkN6OEeeoYNTeb3S4ug" name="UC8.1.1 - Inserimento chiave pubblica&#xD;&#xA;-------------------------------&#xD;&#xA;Extension points:&#xD;&#xA;-Errore chiave malformata&#xD;&#xA;-Errore registrazione&#xD;&#xA;chiave già presente" incomingEdges="_UH8CQN6PEeeoYNTeb3S4ug _Y8UXQN6PEeeoYNTeb3S4ug _ZiUnUN6PEeeoYNTeb3S4ug" width="14" height="14" resizeKind="NSEW">
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_9J9DkN6OEeeoYNTeb3S4ug" name="UC10.1.1 - Inserimento chiave pubblica&#xD;&#xA;-------------------------------&#xD;&#xA;Extension points:&#xD;&#xA;-Errore chiave malformata&#xD;&#xA;-Errore registrazione&#xD;&#xA;chiave già presente" incomingEdges="_UH8CQN6PEeeoYNTeb3S4ug _Y8UXQN6PEeeoYNTeb3S4ug _ZiUnUN6PEeeoYNTeb3S4ug" width="14" height="14" resizeKind="NSEW">
         <target xmi:type="uml:UseCase" href="Marvin.uml#_9J8cgN6OEeeoYNTeb3S4ug"/>
         <semanticElements xmi:type="uml:UseCase" href="Marvin.uml#_9J8cgN6OEeeoYNTeb3S4ug"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -3048,7 +3048,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Capture']/@ownedRepresentations[name='Use%20Case%20Diagram']/@defaultLayer/@nodeMappings[name='UCD_UseCase']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_-swTEN6OEeeoYNTeb3S4ug" name="UC8.1.2 - Visualizzazione messaggio di errore riguardo a chiave mal formata" outgoingEdges="_ZiUnUN6PEeeoYNTeb3S4ug" width="14" height="14" resizeKind="NSEW">
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_-swTEN6OEeeoYNTeb3S4ug" name="UC10.1.2 - Visualizzazione messaggio di errore riguardo a chiave mal formata" outgoingEdges="_ZiUnUN6PEeeoYNTeb3S4ug" width="14" height="14" resizeKind="NSEW">
         <target xmi:type="uml:UseCase" href="Marvin.uml#_-svsAN6OEeeoYNTeb3S4ug"/>
         <semanticElements xmi:type="uml:UseCase" href="Marvin.uml#_-svsAN6OEeeoYNTeb3S4ug"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -3059,7 +3059,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Capture']/@ownedRepresentations[name='Use%20Case%20Diagram']/@defaultLayer/@nodeMappings[name='UCD_UseCase']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="__DEhUd6OEeeoYNTeb3S4ug" name="UC8.1.3 - Visualizzazione messaggio di errore riguardo a chiave già registrata" outgoingEdges="_Y8UXQN6PEeeoYNTeb3S4ug" width="14" height="14" resizeKind="NSEW">
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="__DEhUd6OEeeoYNTeb3S4ug" name="UC10.1.3 - Visualizzazione messaggio di errore riguardo a chiave già registrata" outgoingEdges="_Y8UXQN6PEeeoYNTeb3S4ug" width="14" height="14" resizeKind="NSEW">
         <target xmi:type="uml:UseCase" href="Marvin.uml#__DEhUN6OEeeoYNTeb3S4ug"/>
         <semanticElements xmi:type="uml:UseCase" href="Marvin.uml#__DEhUN6OEeeoYNTeb3S4ug"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>

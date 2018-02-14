@@ -266,10 +266,10 @@
           <details xmi:id="_iTOm8dqXEeeqSNzUEDEsQg" key="Human"/>
         </eAnnotations>
       </packagedElement>
-      <packagedElement xmi:type="uml:Component" xmi:id="_eSofUNqXEeeqSNzUEDEsQg" name="UC6 - Gestione aspetti relativi agli esami" useCase="_lFbBwNqXEeeqSNzUEDEsQg _nejcUNqXEeeqSNzUEDEsQg _olqOUNqXEeeqSNzUEDEsQg">
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_lFbBwNqXEeeqSNzUEDEsQg" name="UC6.1 - Visualizzazione lista degli esami" subject="_eSofUNqXEeeqSNzUEDEsQg"/>
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_nejcUNqXEeeqSNzUEDEsQg" name="UC6.2 - Visualizzazione lista degli studenti" subject="_eSofUNqXEeeqSNzUEDEsQg"/>
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_olqOUNqXEeeqSNzUEDEsQg" name="UC6.3 - Registrazione valutazione di un esame" subject="_eSofUNqXEeeqSNzUEDEsQg"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="_eSofUNqXEeeqSNzUEDEsQg" name="UC8 - Gestione aspetti relativi agli esami" useCase="_lFbBwNqXEeeqSNzUEDEsQg _nejcUNqXEeeqSNzUEDEsQg _olqOUNqXEeeqSNzUEDEsQg">
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_lFbBwNqXEeeqSNzUEDEsQg" name="UC8.1 - Visualizzazione lista degli esami" subject="_eSofUNqXEeeqSNzUEDEsQg"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_nejcUNqXEeeqSNzUEDEsQg" name="UC8.2 - Visualizzazione lista degli studenti" subject="_eSofUNqXEeeqSNzUEDEsQg"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_olqOUNqXEeeqSNzUEDEsQg" name="UC8.3 - Registrazione valutazione di un esame" subject="_eSofUNqXEeeqSNzUEDEsQg"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_v8G3cNqXEeeqSNzUEDEsQg" memberEnd="_v8HegNqXEeeqSNzUEDEsQg _v8HegdqXEeeqSNzUEDEsQg">
         <ownedEnd xmi:id="_v8HegNqXEeeqSNzUEDEsQg" type="_iTN_4NqXEeeqSNzUEDEsQg" association="_v8G3cNqXEeeqSNzUEDEsQg"/>
@@ -285,11 +285,11 @@
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_NrAwUNqYEeeqSNzUEDEsQg" name="UC7 componenti">
-      <packagedElement xmi:type="uml:Component" xmi:id="_RUxsUNqYEeeqSNzUEDEsQg" name="UC7 - Gestione aspetti relativi allo studente" useCase="_VCR40NqYEeeqSNzUEDEsQg _VR_IwNqYEeeqSNzUEDEsQg _VoMpUNqYEeeqSNzUEDEsQg _WGK-wNqYEeeqSNzUEDEsQg">
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_VCR40NqYEeeqSNzUEDEsQg" name="UC7.1 - Visualizzazione delle informazione degli esami ai quali è iscritto" subject="_RUxsUNqYEeeqSNzUEDEsQg"/>
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_VR_IwNqYEeeqSNzUEDEsQg" name="UC7.2 - Visualizzazione degli esami opzionali e dei loro crediti" subject="_RUxsUNqYEeeqSNzUEDEsQg"/>
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_VoMpUNqYEeeqSNzUEDEsQg" name="UC7.3 - Registrazione ad un esame opzionale" subject="_RUxsUNqYEeeqSNzUEDEsQg"/>
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_WGK-wNqYEeeqSNzUEDEsQg" name="UC7.4 - Visualizzazione delle informazioni relative ai crediti" subject="_RUxsUNqYEeeqSNzUEDEsQg"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="_RUxsUNqYEeeqSNzUEDEsQg" name="UC9 - Gestione aspetti relativi allo studente" useCase="_VCR40NqYEeeqSNzUEDEsQg _VR_IwNqYEeeqSNzUEDEsQg _VoMpUNqYEeeqSNzUEDEsQg _WGK-wNqYEeeqSNzUEDEsQg">
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_VCR40NqYEeeqSNzUEDEsQg" name="UC9.1 - Visualizzazione delle informazione degli esami ai quali è iscritto" subject="_RUxsUNqYEeeqSNzUEDEsQg"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_VR_IwNqYEeeqSNzUEDEsQg" name="UC9.2 - Visualizzazione degli esami opzionali e dei loro crediti" subject="_RUxsUNqYEeeqSNzUEDEsQg"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_VoMpUNqYEeeqSNzUEDEsQg" name="UC9.3 - Iscrizione ad un esame opzionale" subject="_RUxsUNqYEeeqSNzUEDEsQg"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_WGK-wNqYEeeqSNzUEDEsQg" name="UC9.4 - Visualizzazione delle informazioni relative ai crediti" subject="_RUxsUNqYEeeqSNzUEDEsQg"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Actor" xmi:id="_TPE10NqYEeeqSNzUEDEsQg" name="Studente">
         <eAnnotations xmi:id="_TPE10dqYEeeqSNzUEDEsQg" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -318,10 +318,10 @@
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_yPnVsNqYEeeqSNzUEDEsQg" name="UC7.1 componenti">
-      <packagedElement xmi:type="uml:Component" xmi:id="_1sqEUNqYEeeqSNzUEDEsQg" name="UC7.1 - Visualizzazione delle informazione degli esami ai quali è iscritto" useCase="_4okb0NqYEeeqSNzUEDEsQg _5HelYNqYEeeqSNzUEDEsQg _5m-k0NqYEeeqSNzUEDEsQg">
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_4okb0NqYEeeqSNzUEDEsQg" name="UC7.1.1 - Visualizzazione dei crediti degli esami ai quali è iscritto" subject="_1sqEUNqYEeeqSNzUEDEsQg"/>
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_5HelYNqYEeeqSNzUEDEsQg" name="UC7.1.2 - Visualizzazione della obbligatorietà degli esami ai quali è iscritto" subject="_1sqEUNqYEeeqSNzUEDEsQg"/>
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_5m-k0NqYEeeqSNzUEDEsQg" name="UC7.1.3 - Visualizzazione delle valutazioni degli esami ai quali è iscritto" subject="_1sqEUNqYEeeqSNzUEDEsQg"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="_1sqEUNqYEeeqSNzUEDEsQg" name="UC9.1 - Visualizzazione delle informazione degli esami ai quali è iscritto" useCase="_4okb0NqYEeeqSNzUEDEsQg _5HelYNqYEeeqSNzUEDEsQg _5m-k0NqYEeeqSNzUEDEsQg">
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_4okb0NqYEeeqSNzUEDEsQg" name="UC9.1.1 - Visualizzazione dei crediti degli esami ai quali è iscritto" subject="_1sqEUNqYEeeqSNzUEDEsQg"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_5HelYNqYEeeqSNzUEDEsQg" name="UC9.1.2 - Visualizzazione della obbligatorietà degli esami ai quali è iscritto" subject="_1sqEUNqYEeeqSNzUEDEsQg"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_5m-k0NqYEeeqSNzUEDEsQg" name="UC9.1.3 - Visualizzazione delle valutazioni degli esami ai quali è iscritto" subject="_1sqEUNqYEeeqSNzUEDEsQg"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_Br42cNqZEeeqSNzUEDEsQg" memberEnd="_Br42cdqZEeeqSNzUEDEsQg _Br5dgNqZEeeqSNzUEDEsQg">
         <ownedEnd xmi:id="_Br42cdqZEeeqSNzUEDEsQg" type="_5HelYNqYEeeqSNzUEDEsQg" association="_Br42cNqZEeeqSNzUEDEsQg"/>
@@ -338,10 +338,10 @@
           <details xmi:id="_hzkzMt6MEeeoYNTeb3S4ug" key="Human"/>
         </eAnnotations>
       </packagedElement>
-      <packagedElement xmi:type="uml:Component" xmi:id="_kw4R0N6MEeeoYNTeb3S4ug" name="UC8 - Gestione degli amministratori" useCase="_wjyCsN6NEeeoYNTeb3S4ug _xfh5QN6NEeeoYNTeb3S4ug _xzNDMN6NEeeoYNTeb3S4ug">
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_wjyCsN6NEeeoYNTeb3S4ug" name="UC8.1 - Aggiunta di un amministratore" subject="_kw4R0N6MEeeoYNTeb3S4ug"/>
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_xfh5QN6NEeeoYNTeb3S4ug" name="UC8.2 - Visualizzazione lista degli amministratori" subject="_kw4R0N6MEeeoYNTeb3S4ug"/>
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_xzNDMN6NEeeoYNTeb3S4ug" name="UC8.3 - Rimozione amministratore" subject="_kw4R0N6MEeeoYNTeb3S4ug"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="_kw4R0N6MEeeoYNTeb3S4ug" name="UC10 - Gestione degli amministratori" useCase="_wjyCsN6NEeeoYNTeb3S4ug _xfh5QN6NEeeoYNTeb3S4ug _xzNDMN6NEeeoYNTeb3S4ug">
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_wjyCsN6NEeeoYNTeb3S4ug" name="UC10.1 - Aggiunta di un amministratore" subject="_kw4R0N6MEeeoYNTeb3S4ug"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_xfh5QN6NEeeoYNTeb3S4ug" name="UC10.2 - Visualizzazione lista degli amministratori" subject="_kw4R0N6MEeeoYNTeb3S4ug"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_xzNDMN6NEeeoYNTeb3S4ug" name="UC10.3 - Rimozione amministratore" subject="_kw4R0N6MEeeoYNTeb3S4ug"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Actor" xmi:id="_5oSlkN6MEeeoYNTeb3S4ug" name="Ufficio Universitario">
         <eAnnotations xmi:id="_5oSlkd6MEeeoYNTeb3S4ug" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -362,21 +362,21 @@
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_ekYTUN6MEeeoYNTeb3S4ug" name="UC8.1">
-      <packagedElement xmi:type="uml:Component" xmi:id="_4rq6YN6OEeeoYNTeb3S4ug" name="UC8.1 - Aggiunta di un amministratore" useCase="_9J8cgN6OEeeoYNTeb3S4ug _-svsAN6OEeeoYNTeb3S4ug __DEhUN6OEeeoYNTeb3S4ug">
+      <packagedElement xmi:type="uml:Component" xmi:id="_4rq6YN6OEeeoYNTeb3S4ug" name="UC10.1 - Aggiunta di un amministratore" useCase="_9J8cgN6OEeeoYNTeb3S4ug _-svsAN6OEeeoYNTeb3S4ug __DEhUN6OEeeoYNTeb3S4ug">
         <nestedClassifier xmi:type="uml:Actor" xmi:id="_7IErYN6OEeeoYNTeb3S4ug" name="Università">
           <eAnnotations xmi:id="_7IErYd6OEeeoYNTeb3S4ug" source="http://www.eclipse.org/uml2/2.0.0/UML">
             <details xmi:id="_7IErYt6OEeeoYNTeb3S4ug" key="Human"/>
           </eAnnotations>
         </nestedClassifier>
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_9J8cgN6OEeeoYNTeb3S4ug" name="UC8.1.1 - Inserimento chiave pubblica&#xD;&#xA;-------------------------------&#xD;&#xA;Extension points:&#xD;&#xA;-Errore chiave malformata&#xD;&#xA;-Errore registrazione&#xD;&#xA;chiave già presente" subject="_4rq6YN6OEeeoYNTeb3S4ug">
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_9J8cgN6OEeeoYNTeb3S4ug" name="UC10.1.1 - Inserimento chiave pubblica&#xD;&#xA;-------------------------------&#xD;&#xA;Extension points:&#xD;&#xA;-Errore chiave malformata&#xD;&#xA;-Errore registrazione&#xD;&#xA;chiave già presente" subject="_4rq6YN6OEeeoYNTeb3S4ug">
           <ownedComment xmi:id="_ngpkUN9IEeeasfLQQqBTMg" annotatedElement="_9J8cgN6OEeeoYNTeb3S4ug">
             <body></body>
           </ownedComment>
         </packagedElement>
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_-svsAN6OEeeoYNTeb3S4ug" name="UC8.1.2 - Visualizzazione messaggio di errore riguardo a chiave mal formata" subject="_4rq6YN6OEeeoYNTeb3S4ug">
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_-svsAN6OEeeoYNTeb3S4ug" name="UC10.1.2 - Visualizzazione messaggio di errore riguardo a chiave mal formata" subject="_4rq6YN6OEeeoYNTeb3S4ug">
           <extend xmi:id="_ZiUAQN6PEeeoYNTeb3S4ug" extendedCase="_9J8cgN6OEeeoYNTeb3S4ug"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:UseCase" xmi:id="__DEhUN6OEeeoYNTeb3S4ug" name="UC8.1.3 - Visualizzazione messaggio di errore riguardo a chiave già registrata" subject="_4rq6YN6OEeeoYNTeb3S4ug">
+        <packagedElement xmi:type="uml:UseCase" xmi:id="__DEhUN6OEeeoYNTeb3S4ug" name="UC10.1.3 - Visualizzazione messaggio di errore riguardo a chiave già registrata" subject="_4rq6YN6OEeeoYNTeb3S4ug">
           <extend xmi:id="_Y8R7AN6PEeeoYNTeb3S4ug" extendedCase="_9J8cgN6OEeeoYNTeb3S4ug"/>
         </packagedElement>
       </packagedElement>

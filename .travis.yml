@@ -1,11 +1,17 @@
 sudo: required
 dist: trusty
+python:
+  - "2.7"
 notifications:
   email: false
   slack: 353swe:TBr27Dyzfxr9mmz1qYaWjJiv
 before_install:
+- sudo apt-get install python-pip python-dev
+- sudo pip install unirest
+- git clone git@github.com:pkubowicz/opendetex.git && cd opendetex && sudo apt-get install make gcc flex && sudo make install
 - chmod +x build.sh
 - "sudo apt-get update && sudo apt-get install --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra texlive-latex-recommended texlive-lang-italian dvipng latex-xcolor texlive-full"
 script:
 - mkdir _build
 - ./build.sh
+- python gulpease.py

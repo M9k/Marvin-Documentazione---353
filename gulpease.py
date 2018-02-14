@@ -3,6 +3,8 @@ import sys
 import re
 import subprocess
 import glob, os
+import unirest
+import json
 '''
 Semplice script che calcola il gulpease per ogni documento
 In pratica entra in ogni cartella del documento, cerca tutti i file .tex
@@ -28,6 +30,7 @@ directories = [
     "Interni/StudioDiFattibilità",
     "Interni/NormeDiProgetto",
     "Interni/VER-2017-11-13",
+    "Interni/VER-2018-01-29",
     "Esterni/AnalisiDeiRequisiti",
     "Esterni/PianoDiProgetto",
     "Esterni/PianoDiQualifica",
@@ -37,6 +40,7 @@ directories = [
     "LetteraDiPresentazione"
 ]
 gulpease_indexes = ""
+gulpease_obj = []
 with_intro = ["LetteraDiPresentazione", "Verbale"]
 for directory in directories:
     text = ""
@@ -64,5 +68,7 @@ for directory in directories:
     output, error = subprocess.Popen(gulpease, stdout=subprocess.PIPE).communicate()
     os.remove(TMP_FILE)
     document_index = output.split()[-1]
+    gulpease_obj.append({"documento": document_name, "indice": document_index});
     gulpease_indexes += document_name + " - " + document_index + '\n'
+a = unirest.post("http://api.353swe.ml/metrics/gulpease.php", headers={ "Accept": "application/json" }, params={'indexes': json.dumps(gulpease_obj)})
 print gulpease_indexes

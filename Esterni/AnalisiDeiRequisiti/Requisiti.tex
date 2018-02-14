@@ -83,7 +83,7 @@ I \citGloss{requisiti} vengono classificati ed assegnati a un identificativo uni
 	R0F12& Obbligatorio & L'università può gestire gli anni accademici & Capitolato \\
 	R0F12.1 & Obbligatorio & L'università può aggiungere un \citGloss{anno accademico} & Capitolato \\
 	R0F12.2 & Obbligatorio & L'università può rimuovere un \citGloss{anno accademico} & Capitolato \\
-	R0F12.3 & Obbligatorio & L'università può ottenere una lista degli anni accademici & Interno \\ 
+	R0F12.3 & Obbligatorio & L'università e gli amministratori possono ottenere una lista degli anni accademici & Interno \\ 
 	\hiderowcolors
 	\caption{Tabella dei requisiti funzionali}
 \end{longtable}
@@ -275,7 +275,7 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 	UC3.1 & Inserimento nome & R0F8.1 \\
 	UC3.2 & Inserimento cognome & R0F8.1 \\
 	UC3.3 & Selezione categoria & R0F8.1 \\
-	UC3.4 & Selezione corso & R0F8.1 \\
+	UC3.4 & Selezione corso di laurea & R0F8.1 \\
 	UC3.5 & Visualizzazione errore campo non compilato & R0F8.1 \\
 	UC3.6 & Visualizzazione errore utente già registrato & R0F8.1 \\
 	UC3.7 & Visualizzazione errore chiave non presente & R0F8.1 \\
@@ -327,6 +327,7 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 	UC7.10.1 & Visualizzazione lista di esami non ancora assegnati & R0F3.4.2 \\ 
 	UC7.10.2 & Visualizzazione lista professori selezionato un esame & R0F3.4.2 \\ 
 	UC7.10.3 & Associazione professore all'esame & R0F3.4.2 \\ 
+	UC7.11 & Visualizzazione di tutti gli anni accademici & R0F12.3 \\
 	UC8 & Gestione aspetti relativi agli esami & R0F4 \\
 	UC8.1 & Visualizzazione lista degli esami & R0F4.1 \\
 	UC8.1.1 & Visualizzazione codici degli esami & R0F4.1.1 \\
@@ -451,20 +452,25 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 	R0F2.2 & L'amministratore può assegnare un esame ad un determinato professore & \makecell[tl]{
 		Capitolato
 	} \\
-	R0F12& L'amministratore può gestire gli anni accademici & \makecell[tl]{
+	R0F12& L'università può gestire gli anni accademici & \makecell[tl]{
 		Capitolato \\ 
 		UC6
 	} \\
-	R0F12.1 & L'amministratore può aggiungere un \citGloss{anno accademico} & \makecell[tl]{
+	R0F12.1 & L'università può aggiungere un \citGloss{anno accademico} & \makecell[tl]{
 		Capitolato \\ 
 		UC6.1 \\ 
 		UC6.3 \\ 
 		UC6.4 \\ 
 		UC6.5
 	} \\
-	R0F12.3 & L'amministratore può ottenere una lista degli anni accademici & \makecell[tl]{
+	R0F12.2 & L'università può rimuovere un \citGloss{anno accademico} & \makecell[tl]{
+	Capitolato \\ 
+	UC6.6
+	} \\
+	R0F12.3 &  L'università e gli amministratori possono ottenere una lista degli anni accademici & \makecell[tl]{
 		Interno \\ 
-		UC6.2
+		UC6.2 \\
+		UC7.11
 	} \\ 
 	R0F3 & L'amministratore può gestire i corsi di laurea relativi agli anni accademici & \makecell[tl]{
 		Capitolato \\ 

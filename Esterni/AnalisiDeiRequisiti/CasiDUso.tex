@@ -210,7 +210,7 @@
 	\item \textbf{Precondizione:} l'utente vuole inserire la sua categoria di registrazione;
 	\item \textbf{Postcondizione:} l'utente ha selezionato la sua categoria nel campo fornito dal sistema, se la categoria scelta è quella del professore l'utente termina la procedura di registrazione.
 \end{itemize}
-\subsection{UC3.4 - Selezione corso}
+\subsection{UC3.4 - Selezione corso di laurea}
 \begin{itemize}
 	\item \textbf{Attori Primari:} utente non autenticato;
 	\item \textbf{Scopo e Descrizione} il sistema offre l'interfaccia per selezionare il \citGloss{corso di laurea} desiderato da un elenco, specificando per ognuno la sigla di riferimento;
@@ -260,13 +260,6 @@
 	\item \textbf{Postcondizione:} l'utente è informato riguardo alla modalità di logout dal sistema.
 \end{itemize}
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=1.0\linewidth]{UC5.jpg}
-	\caption{UC5 - Amministrazione}
-	\label{fig:UC5 - Amministrazione}
-\end{figure}
-
 \subsection{UC5 - Gestione Utenti}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
@@ -278,7 +271,7 @@
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1.0\linewidth]{UC5_1.jpg}
+	\includegraphics[width=0.8\linewidth]{UC5.jpg}
 	\caption{UC5 - Gestione Utenti}
 	\label{fig:UC5 - Gestione Utenti}
 \end{figure}
@@ -441,7 +434,7 @@
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1.0\linewidth]{UC5_2.jpg}
+	\includegraphics[width=1.1\linewidth]{UC6.jpg}
 	\caption{UC6 - Gestione Anni Accademici}
 	\label{fig:UC6 - Gestione Anni Accademici}
 \end{figure}
@@ -511,7 +504,7 @@
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1.0\linewidth]{UC5_3.jpg}
+	\includegraphics[width=1.1\linewidth]{UC7.jpg}
 	\caption{UC7 - Gestione Corsi di laurea}
 	\label{fig:UC7 - Gestione Corsi di laurea}
 \end{figure}
@@ -524,7 +517,7 @@
 		\begin{enumerate}
 			\item Se l'amministratore inserisce una sigla invalida viene avvisato con un messaggio [UC7.2].
 		\end{enumerate}
-	\item \textbf{Precondizione:} l'amministratore, dopo aver ottenuto una lista di \citGloss{anni accademici} [UC6.2] ed indicatone uno desidera inserire un nuovo corso di laurea; 
+	\item \textbf{Precondizione:} l'amministratore, dopo aver ottenuto una lista di \citGloss{anni accademici} [UC7.11] ed indicatone uno desidera inserire un nuovo corso di laurea; 
 	\item \textbf{Postcondizione:} il \citGloss{corso di laurea} è stato creato ed inserito nel sistema.
 \end{itemize}
 \subsection{UC7.2 - Visualizzazione errore sigla invalida}
@@ -546,7 +539,7 @@
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
 	\item \textbf{Scopo e descrizione:} vengono visualizzati i corsi di laurea relativi ad un determinato \citGloss{anno accademico}, ottenendone le sigle;
-	\item \textbf{Precondizione:} l'amministratore ha visualizzato una lista di anni accademici [UC6.2] e vuole visualizzare i corsi di laurea all'interno di uno di essi; 
+	\item \textbf{Precondizione:} l'amministratore ha visualizzato una lista di anni accademici [UC7.11] e vuole visualizzare i corsi di laurea all'interno di uno di essi; 
 	\item \textbf{Postcondizione:} l'amministratore ottiene la lista desiderata.
 \end{itemize}
 \subsection{UC7.5 - Creazione esame in un corso}
@@ -615,12 +608,7 @@
 	\item \textbf{Precondizione:} l'amministratore desidera associare un professore ad un esame; 
 	\item \textbf{Postcondizione:} il professore selezionato viene associato all'esame e il loro stato aggiornato nel sistema.
 \end{itemize}
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=1.0\linewidth]{UC5_3_10.jpg}
-	\caption{UC7.10 - Associazione professore a esame}
-	\label{fig:UC7.10 - Associazione professore a esame}
-\end{figure}
+%TODO: immagine
 \subsection{UC7.10.1 - Visualizzazione lista di esami non ancora assegnati}
 \begin{itemize}
 \item \textbf{Attori primari:} amministratore;
@@ -644,6 +632,14 @@
 	\item \textbf{Scenario principale:} l'amministratore associa ad un esame un determinato professore;
 	\item \textbf{Precondizione:} l'amministratore ha selezionato un esame sprovvisto di assegnazione a un professore [UC7.10.1] e ha ottenuto una lista di professori [UC7.1.2], volendo associarne uno; 
 	\item \textbf{Postcondizione:} il professore selezionato viene associato all'esame desiderato.
+\end{itemize}
+\subsection{UC7.11 - Visualizzazione di tutti gli anni accademici}
+\begin{itemize}
+	\item \textbf{Attori primari:} amministratore;
+	\item \textbf{Scopo e descrizione:} l'utente è già riconosciuto dal sistema come amministratore e visualizza una lista di tutti gli anni accademici presenti nel sistema, visualizzandone l'anno solare di riferimento;
+	\item \textbf{Scenario principale:} l'amministratore richiede la lista di tutti gli anni del sistema;
+	\item \textbf{Precondizione:} l'amministratore desidera ottenere la lista di tutti gli anni presenti nel sistema; 
+	\item \textbf{Postcondizione:} l'amministratore che rappresenta l'università ottiene la lista.
 \end{itemize}
 
 \subsection{UC8 - Gestione aspetti relativi agli esami}

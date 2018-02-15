@@ -52,8 +52,9 @@ I \citGloss{requisiti} vengono classificati ed assegnati a un identificativo uni
 	R0F3.4 & Obbligatorio & L'amministratore può ottenere una lista di tutti gli esami dato il \citGloss{corso di laurea} & Capitolato \\
 	R0F3.4.1 & Obbligatorio & Per ogni esame l'amministratore deve visualizzarne la sigla & Interno \\
 	R0F3.4.2 & Obbligatorio & Per ogni esame l'amministratore deve visualizzarne il numero di crediti & Interno \\
-	R0F3.4.3 & Obbligatorio & L'amministratore può ottenere il nome ed il cognome di quale professore è assegnato a un determinato esame & Interno \\
+	R0F3.4.3 & Obbligatorio & L'amministratore può ottenere il nome ed il cognome di quale professore è assegnato o sta per essere assegnato ad un determinato esame & Interno \\
 	R0F3.4.4  & Obbligatorio & L'amministratore può associare ad un esame il relativo professore & Interno \\
+	R0F3.4.4.1  & Obbligatorio & L'amministratore deve poter visualizzare l'indirizzo di un professore prima di assegnarlo ad un determinato esame per evitare problemi in caso di omonimi & Interno \\
 	R0F3.4.5 & Obbligatorio & L'amministratore può ottenere la sigla del corso di laurea al quale appartiene un determinato esame ove non indicato dall'amministratore stesso oppure se richiesto & Interno \\
 	R0F3.4.6 & Obbligatorio & L'amministratore può ottenere il numero degli studenti iscritti a un determinato corso & Interno \\
 	R0F4 & Obbligatorio & Un professore può gestire gli esami a lui assegnati & Capitolato \\
@@ -249,6 +250,7 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 	 R0F3.4.2 \\
 	 R0F3.4.3 \\
 	 R0F3.4.4 \\
+	 R0F3.4.4.1 \\
 	 R0F3.4.5 \\
 	 R0F3.4.6 \\
 	 R0F4.2.1 \\
@@ -356,14 +358,20 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 	UC7.9.4 & Visualizzazione nome del professore associato all'esame se presente & R0F3.4.3 \\
 	UC7.9.5 & Visualizzazione cognome del professore associato all'esame se presente & R0F3.4.3 \\
 	UC7.9.6 & Visualizzazione numero di studenti iscritti all'esame & R0F3.4.6 \\
+	UC7.10 & Visualizzazione di tutti gli anni accademici & R0F12.3 \\
+	UC7.10.1 & Visualizzazione anni solari relativi agli anni accademici & R0F12.3 \\
+	UC7.11 & Visualizzazione lista professori da associare ad un esame &  \\
+	UC7.11.1 & Visualizzazione nome per ogni professore & R0F3.4.3 \\
+	UC7.11.2 & Visualizzazione cognome per ogni professore & R0F3.4.3 \\
+	UC7.11.3 & Visualizzazione indirizzo per ogni professore & R0F3.4.4.1 \\
+	UC7.12 & Associazione professore all'esame & R0F3.4.4 \\
+	
+	
+	
+	
+	
+	
 	%TODO ----------
-	UC7.10 & Associazione professore a esame & R0F3.4.4 \\
-	UC7.10.1 & Visualizzazione lista di esami non ancora assegnati & R0F3.4.4 \\ 
-	UC7.10.2 & Visualizzazione lista professori selezionato un esame & R0F3.4.4 \\ 
-	UC7.10.3 & Associazione professore all'esame & R0F3.4.4 \\ 
-	%TODO ----------
-	UC7.11 & Visualizzazione di tutti gli anni accademici & R0F12.3 \\
-	UC7.11.1 & Visualizzazione anni solari relativi agli anni accademici & R0F12.3 \\
 	UC8 & Gestione aspetti relativi agli esami & R0F4 \\
 	UC8.1 & Visualizzazione lista degli esami & R0F4.1 \\
 	UC8.1.1 & Visualizzazione codici degli esami & R0F4.1.1 \\
@@ -389,7 +397,7 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 	UC10.1.3 & Visualizzazione messaggio di errore riguardo a chiave già registrata & R0F11.1 \\
 	UC10.2 & Visualizzazione lista degli amministratori & R0F11.3 \\
 	UC10.2.1 & Visualizzazione indirizzi degli amministratori & R0F11.3.1 \\
-	UC10.3 & Rimozione amministratore & R0F11.2 \\
+	UC10.3 & Rimozione amministratore & R0F11.2 \\	
 	UC11 & Visualizzazione quantità di \citGloss{Gas}, \citGloss{Ether} e costo delle operazioni & R0F10 \\
 	\hiderowcolors
 	\caption{Tabella di tracciamento fonti-requisiti}
@@ -507,8 +515,8 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 		Interno \\ 
 		UC6.2 \\
 		UC6.2.1 \\
-		UC7.11 \\
-		UC7.11.1
+		UC7.10 \\
+		UC7.10.1
 	} \\ 
 	R0F3 & L'amministratore può gestire i corsi di laurea relativi agli anni accademici & \makecell[tl]{
 		Capitolato \\ 
@@ -564,21 +572,24 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 		UC7.8.2 \\
 		UC7.9.2
 	} \\
-	R0F3.4.3 & L'amministratore può ottenere il nome ed il cognome di quale professore è assegnato a un determinato esame & \makecell[tl]{
+	R0F3.4.3 & L'amministratore può ottenere il nome ed il cognome di quale professore è assegnato o sta per essere assegnato ad un determinato esame & \makecell[tl]{
 		Interno \\ 
 		UC7.7.3 \\
 		UC7.7.4 \\
 		UC7.9.4 \\
 		UC7.8.5 \\
 		UC7.8.4 \\
-		UC7.9.5
+		UC7.9.5 \\
+		UC7.11.1 \\
+		UC7.11.2
 	} \\
 	R0F3.4.4  & L'amministratore può associare ad un esame il relativo professore & \makecell[tl]{
+		Interno	 \\
+		UC7.12 	
+	} \\
+	R0F3.4.4.1 & L'amministratore deve poter visualizzare l'indirizzo di un professore prima di assegnarlo ad un determinato esame per evitare problemi in caso di omonimi & \makecell[tl]{
 		Interno	 \\ 
-		UC7.10 \\ 
-		UC7.10.1 \\
-		UC7.10.2 \\  %TODO correggerli dopo aver sistemato UC7.10
-		UC7.10.3 \\ 	
+		UC7.10.3 \\
 	} \\
 	R0F3.4.5 & L'amministratore può ottenere la sigla del corso di laurea al quale appartiene un determinato esame ove non indicato dall'amministratore stesso oppure se richiesto & \makecell[tl]{
 		Interno	 \\ 
@@ -824,7 +835,7 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 \begin{longtable}[H]{p{2.8cm}p{2.9cm}p{2.9cm}p{2.9cm}p{1.5cm}}
 	\rowcolor{CHeader}
 	\color{CHeaderText} \textbf{Tipologia} & \color{CHeaderText} \textbf{0 Obbligatori} & \color{CHeaderText} \textbf{1 Desiderabili} & \color{CHeaderText} \textbf{2 Opzionali} & \color{CHeaderText} \textbf{Totale} \\
-	Funzionali & 67 & 1 & 0 & 68 \\
+	Funzionali & 68 & 1 & 0 & 69 \\
 	Di qualità & 9 & 0 & 0 & 9 \\
 	Di vincolo & 18 & 1 & 1 & 20 \\
 	Prestazionali & 0 & 0 & 0 & 0 \\

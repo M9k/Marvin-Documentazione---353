@@ -7,6 +7,111 @@
 \section{Scopo}
 Per garantire una buona qualità di prodotto, il gruppo \gruppo ha individuato dallo standard ISO/IEC 9126 le qualità che ritiene più importanti nell’arco del ciclo di vita del prodotto e le ha istanziate individuando obiettivi e metriche coerenti con i livelli di qualità perseguiti.
 
+\section{Prodotti}
+
+\subsection{Qualità dei documenti}
+I documenti prodotti dal gruppo \gruppo dovranno essere leggibili, comprensibili e corretti dal punto di vista ortografico, sintattico, logico e semantico.
+\subsubsection {Obiettivi di qualità: comprensione}
+\begin{itemize}
+	\item \textbf{Leggibilità:} i documenti prodotti dovranno essere leggibili e comprensibili a persone con licenza di istruzione media;
+	\item \textbf{Correttezza ortografica:} i documenti prodotti non dovranno contenere errori ortografici.
+\end{itemize}
+Verranno utilizzate le seguenti metriche definite nelle \ndp alla \S{3.5}:
+\begin{itemize}
+	\item \textlink{MPDD001TAB}{MPDD001}{MPDD001} Indice di Gulpease;
+	\item \textlink{MPDD002TAB}{MPDD002}{MPDD002} Formula di Flesch;
+	\item \textlink{MPDD003TAB}{MPDD003}{MPDD003} Errori ortografici.
+\end{itemize}
+
+\subsection{Qualità del software}
+\subsubsection{Funzionalità:} Rappresenta la capacità del prodotto di fornire tutte le funzionalità che sono state individuate attraverso l'\adr.	
+\paragraph{Obiettivi qualità}
+Il gruppo \gruppo si impegnerà per perseguire:
+\begin{itemize}
+	\item \textbf{Adeguatezza}: le funzionalità fornite siano conformi rispetto le aspettative;
+	\item \textbf{Accuratezza}: il prodotto fornisca i risultati attesi, con il livello di dettaglio richiesto. 
+\end{itemize}
+Verranno utilizzate le seguenti metriche definite nelle \ndp alla \S{3.5}:
+\begin{itemize}
+	\item \textlink{MPDS001}{MPDS001TAB}{MPDS001} Copertura requisiti obbligatori;
+	\item \textlink{MPDS002TAB}{MPDS002}{MPDS002} Copertura requisiti accettati;
+	\item \textlink{MPDS003TAB}{MPDS003}{MPDS003} Accuratezza rispetto alle attese.
+\end{itemize}
+
+\subsubsection{Affidabilità}
+Rappresenta la capacità del prodotto software di svolgere correttamente le sue funzioni durante il suo utilizzo, anche in caso in cui si presentino situazioni anomale.
+\paragraph{Obiettivi di qualità}
+L'esecuzione del prodotto dovrà presentare le seguenti caratteristiche:
+\begin{itemize}
+	\item \textbf{Maturità:} evitare che si verifichino malfunzionamenti, operazioni illegali e \citGloss{failure} in seguito a \citGloss{fault};
+	\item \textbf{Tolleranza agli errori:} nel caso in cui si presentino degli \citGloss{errori}, dovuti a guasti o ad un uso scorretto dell'applicativo, questi devo essere gestiti in modo da mantenere alto il livello di prestazioni.
+\end{itemize}
+Verranno utilizzate le seguenti metriche definite nelle \ndp alla \S{3.5}:
+\begin{itemize}
+	\item \textlink{MPDS004TAB}{MPDS004}{MPDS004} Densità di failure;
+	\item \textlink{MPDS005TAB}{MPDS005}{MPDS005} Blocco di operazioni non corrette.
+\end{itemize}
+
+\subsubsection{Usabilità}
+Rappresenta la capacità del prodotto di essere facilmente comprensibile ed attraente in ogni sua parte per qualsiasi utente che lo andrà ad utilizzare.
+\paragraph{Obiettivi di qualità}
+Il prodotto dovrà puntare ai seguenti obiettivi di usabilità:
+\begin{itemize}
+	\item \textbf{Comprensibilità:} l'utente deve essere in grado di riconoscere le funzionalità offerte dal software e deve comprendere le modalità di utilizzo per raggiungere i risultati attesi;
+	\item \textbf{Apprendibilità:} deve essere data la possibilità all'utente di imparare ad utilizzare l'applicazione senza troppo impegno;
+	\item \textbf{Operabilità:} le funzioni presenti devono essere coerenti con le aspettative dell'utente;
+	\item \textbf{Attrattiva:} il software deve essere piacevole per chi ne fa uso.
+\end{itemize}
+Verranno utilizzate le seguenti metriche definite nelle \ndp alla \S{3.5}:
+\begin{itemize}
+	\item \textlink{MPDS006TAB}{MPDS006}{MPDS006} Comprensibilità delle funzioni offerte;
+	\item \textlink{MPDS007TAB}{MPDS007}{MPDS007} Facilità di apprendimento delle funzionalità;
+	\item \textlink{MPDS008TAB}{MPDS008}{MPDS008} Consistenza operazionale in uso.
+\end{itemize}
+
+\subsubsection{Efficienza}
+Rappresenta la capacità di eseguire le funzionalità offerte dal software nel minor tempo possibile utilizzando al tempo stesso il minor numero di risorse disponibili.
+\paragraph{Obiettivi di qualità}
+Il prodotto dovrà essere efficiente, in particolare:
+\begin{itemize}
+	\item \textbf{Comportamento rispetto al tempo:} per svolgere le sue funzioni il software deve fornire adeguati tempi di risposta ed elaborazione;
+	\item \textbf{Utilizzo delle risorse:} il software quando esegue le sue funzionalità deve utilizzare un appropriato numero e tipo di risorse.
+\end{itemize}
+Verranno utilizzate le seguenti metriche definite nelle \ndp alla \S{3.5}:
+\begin{itemize}
+	\item \textlink{MPDS009TAB}{MPDS009}{MPDS009} Tempo di risposta.
+\end{itemize}
+
+\subsubsection{Manutenibilità}
+Rappresenta la capacità del prodotto di essere modificato, tramite correzioni, miglioramenti o adattamenti del software a cambiamenti negli ambienti, nei \citGloss{requisiti} e nelle specifiche funzionali.
+\paragraph{Obiettivi di qualità}
+Le operazioni di manutenzione andranno agevolate il più possibile adottando le seguenti caratteristiche:
+\begin{itemize}
+	\item \textbf{Analizzabilità:} il software deve consentire una rapida identificazione delle possibili cause di errori e malfunzionamenti;
+	\item \textbf{Modificabilità:} il prodotto originale deve permettere eventuali cambiamenti in alcune sue parti;
+	\item \textbf{Stabilità:} non devono insorgere effetti indesiderati in seguito a modifiche effettuate sul software;
+	\item \textbf{Testabilità:} il software deve poter essere facilmente testato per valiare le modifiche effettuate.
+\end{itemize}
+Verranno utilizzate le seguenti metriche definite nelle \ndp alla \S{3.5}:
+\begin{itemize}
+	\item \textlink{MPDS010TAB}{MPDS010}{MPDS010} Capacità di analisi di failure;
+	\item \textlink{MPDS011TAB}{MPDS011}{MPDS011} Impatto delle modifiche.
+\end{itemize}
+
+\subsubsection{Portabilità}
+Rappresenta la capacità del software di poter essere utilizzato su diversi ambienti.
+\paragraph{Obiettivi di qualità}
+Sarò agevolata la portabilità del prodotto adottando i seguenti obiettivi:
+\begin{itemize}
+	\item \textbf{Adattabilità:} il prodotto deve adattarsi a tutti quelli ambienti di lavoro nei quali è stato previsto un suo utilizzo, senza dover apportare modifiche dello stesso;
+	\item \textbf{Sostituibilità:} l'applicativo deve poter sostituire un altro software che ha lo stesso scopo e lavora nel medesimo ambiente.
+\end{itemize}
+Verranno utilizzate le seguenti metriche definite nelle \ndp alla \S{3.5}:
+\begin{itemize}
+	\item \textlink{MPDS012TAB}{MPDS012}{MPDS012} Versioni dei browser supportate;
+	\item \textlink{MPDS013TAB}{MPDS013}{MPDS013} Inclusione di funzionalità da altri prodotti.
+\end{itemize}
+
 \section{Tabella delle metriche}
 % ID METRICA
 % M --> metrica

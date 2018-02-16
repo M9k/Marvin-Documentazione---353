@@ -1,15 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="diag2" company="" webLink="http://" view-date="2018-04-22" view-index="0" gantt-divider-location="482" resource-divider-location="300" version="2.8.5" locale="it">
+<?xml version="1.0" encoding="UTF-8"?><project name="diag2" company="" webLink="http://" view-date="2018-04-22" view-index="0" gantt-divider-location="482" resource-divider-location="300" version="2.8.5" locale="en_US">
     <description/>
     <view zooming-state="default:0" id="gantt-chart">
-        <field id="tpd3" name="Nome" width="246" order="0"/>
-        <field id="tpd4" name="Data d'inizio" width="93" order="1"/>
-        <field id="tpd5" name="Data di fine" width="86" order="2"/>
-        <field id="tpd6" name="Durata" width="53" order="3"/>
+        <field id="tpd3" name="Name" width="246" order="0"/>
+        <field id="tpd4" name="Begin date" width="93" order="1"/>
+        <field id="tpd5" name="End date" width="86" order="2"/>
+        <field id="tpd6" name="Duration" width="53" order="3"/>
         <option id="color.recent"><![CDATA[#66ff99 #0099cc #cc0033 #000000]]></option>
     </view>
     <view id="resource-table">
-        <field id="0" name="Nome" width="210" order="0"/>
-        <field id="1" name="Ruolo predefinito" width="86" order="1"/>
+        <field id="0" name="Name" width="210" order="0"/>
+        <field id="1" name="Default role" width="86" order="1"/>
     </view>
     <!-- -->
     <calendars>
@@ -87,15 +87,10 @@
             </task>
             <task id="116" name="Verifica" color="#66ff99" meeting="false" start="2018-04-30" duration="4" complete="0" expand="true"/>
         </task>
-        <task id="102" name="LETTERA DI PRESENTAZIONE" meeting="false" start="2018-05-06" duration="1" complete="0" expand="true">
-            <depend id="30" type="2" difference="1" hardness="Strong"/>
-            <task id="103" name="Scrittura lettera" color="#0099cc" meeting="false" start="2018-05-06" duration="1" complete="0" expand="true"/>
-            <task id="104" name="Verifica" color="#66ff99" meeting="false" start="2018-05-06" duration="1" complete="0" expand="true"/>
-        </task>
         <task id="113" name="VALIDAZIONE E COLLAUDO" color="#0099cc" meeting="false" start="2018-04-23" duration="14" complete="0" expand="true">
             <depend id="30" type="2" difference="0" hardness="Strong"/>
         </task>
-        <task id="30" name="CONSEGNA" color="#cc0033" meeting="true" start="2018-05-08" duration="0" complete="0" expand="true"/>
+        <task id="30" name="CONSEGNA" color="#cc0033" meeting="true" start="2018-05-07" duration="0" complete="0" expand="true"/>
     </tasks>
     <resources/>
     <allocations/>

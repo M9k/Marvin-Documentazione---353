@@ -69,6 +69,18 @@ pdflatex -interaction=nonstopmode -halt-on-error VER-2017-11-13.tex && echo "ok"
 cd ..
 cd ..
 
+cd 'Interni'
+cd VER-2018-01-29
+pdflatex -interaction=nonstopmode -halt-on-error VER-2018-01-29.tex && echo "ok" || exit  11
+cd ..
+cd ..
+
+cd 'Interni'
+cd VER-2018-02-05
+pdflatex -interaction=nonstopmode -halt-on-error VER-2018-02-05.tex && echo "ok" || exit  11
+cd ..
+cd ..
+
 cd LetteraDiPresentazione
 pdflatex -interaction=nonstopmode -halt-on-error LetteraDiPresentazione.tex && echo "ok" || exit  11
 cd ..

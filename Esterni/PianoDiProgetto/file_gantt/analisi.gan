@@ -1,15 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2017-11-20" view-index="0" gantt-divider-location="502" resource-divider-location="300" version="2.8.5" locale="it">
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2017-11-19" view-index="0" gantt-divider-location="502" resource-divider-location="300" version="2.8.5" locale="en_US">
     <description/>
     <view zooming-state="default:4" id="gantt-chart">
-        <field id="tpd3" name="Nome" width="251" order="0"/>
-        <field id="tpd4" name="Data d'inizio" width="89" order="1"/>
-        <field id="tpd5" name="Data di fine" width="85" order="2"/>
-        <field id="tpd6" name="Durata" width="58" order="3"/>
+        <field id="tpd3" name="Name" width="255" order="0"/>
+        <field id="tpd4" name="Begin date" width="93" order="1"/>
+        <field id="tpd5" name="End date" width="88" order="2"/>
+        <field id="tpd6" name="Duration" width="62" order="3"/>
         <option id="color.recent"><![CDATA[#0099cc #66ff99 #cc0000 #ff0000 #ff6666 #99ffcc #33ccff #ffff33 #009966 #009900]]></option>
     </view>
     <view id="resource-table">
-        <field id="0" name="Nome" width="210" order="0"/>
-        <field id="1" name="Ruolo predefinito" width="86" order="1"/>
+        <field id="0" name="Name" width="210" order="0"/>
+        <field id="1" name="Default role" width="86" order="1"/>
     </view>
     <!-- -->
     <calendars>
@@ -121,13 +121,6 @@
                 <depend id="34" type="2" difference="0" hardness="Strong"/>
             </task>
             <task id="34" name="Verifica" color="#66ff99" meeting="false" start="2018-01-07" duration="5" complete="0" expand="true"/>
-        </task>
-        <task id="13" name="LETTERA DI PRESENTAZIONE" meeting="false" start="2018-01-09" duration="3" complete="0" expand="true">
-            <depend id="14" type="2" difference="4" hardness="Strong"/>
-            <task id="35" name="Scrittura lettera" color="#0099cc" meeting="false" start="2018-01-09" duration="2" complete="0" expand="true">
-                <depend id="36" type="2" difference="0" hardness="Strong"/>
-            </task>
-            <task id="36" name="Verifica" color="#66ff99" meeting="false" start="2018-01-11" duration="1" complete="0" expand="true"/>
         </task>
         <task id="14" name="CONSEGNA RR" color="#cc0000" meeting="true" start="2018-01-16" duration="0" complete="0" expand="true"/>
     </tasks>

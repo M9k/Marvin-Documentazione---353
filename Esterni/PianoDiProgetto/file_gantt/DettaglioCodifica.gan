@@ -1,15 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Progetto353" company="" webLink="http://" view-date="2018-03-18" view-index="0" gantt-divider-location="559" resource-divider-location="300" version="2.8.5" locale="it">
+<?xml version="1.0" encoding="UTF-8"?><project name="Progetto353" company="" webLink="http://" view-date="2018-03-18" view-index="0" gantt-divider-location="559" resource-divider-location="300" version="2.8.5" locale="en_US">
     <description/>
     <view zooming-state="default:2" id="gantt-chart">
-        <field id="tpd3" name="Nome" width="251" order="0"/>
-        <field id="tpd4" name="Data d'inizio" width="131" order="1"/>
-        <field id="tpd5" name="Data di fine" width="95" order="2"/>
-        <field id="tpd6" name="Durata" width="63" order="3"/>
+        <field id="tpd3" name="Name" width="255" order="0"/>
+        <field id="tpd4" name="Begin date" width="135" order="1"/>
+        <field id="tpd5" name="End date" width="98" order="2"/>
+        <field id="tpd6" name="Duration" width="67" order="3"/>
         <option id="color.recent"><![CDATA[#66ff99 #000000 #cc0033 #0099cc]]></option>
     </view>
     <view id="resource-table">
-        <field id="0" name="Nome" width="148" order="0"/>
-        <field id="1" name="Ruolo predefinito" width="148" order="1"/>
+        <field id="0" name="Name" width="148" order="0"/>
+        <field id="1" name="Default role" width="148" order="1"/>
     </view>
     <!-- -->
     <calendars>
@@ -59,7 +59,6 @@
             <task id="160" name="Verifica" color="#66ff99" meeting="false" start="2018-04-11" duration="3" complete="0" expand="true"/>
         </task>
         <task id="26" name="PIANO DI PROGETTO" color="#000000" meeting="false" start="2018-03-19" duration="26" complete="0" expand="true">
-            <depend id="54" type="2" difference="0" hardness="Strong"/>
             <depend id="164" type="2" difference="0" hardness="Strong"/>
             <task id="28" name="Incremento" color="#0099cc" meeting="false" start="2018-03-19" duration="5" complete="0" expand="true">
                 <depend id="202" type="2" difference="15" hardness="Strong"/>
@@ -106,13 +105,6 @@
                 <depend id="174" type="2" difference="0" hardness="Strong"/>
             </task>
             <task id="174" name="Verifica" color="#66ff99" meeting="false" start="2018-04-12" duration="2" complete="0" expand="true"/>
-        </task>
-        <task id="54" name="LETTERA DI PRESENTAZIONE" meeting="false" start="2018-04-14" duration="2" complete="0" expand="true">
-            <depend id="164" type="2" difference="0" hardness="Strong"/>
-            <task id="152" name="Scrittura lettera" color="#0099cc" meeting="false" start="2018-04-14" duration="1" complete="0" expand="true">
-                <depend id="156" type="2" difference="0" hardness="Strong"/>
-            </task>
-            <task id="156" name="Verifica" color="#66ff99" meeting="false" start="2018-04-15" duration="1" complete="0" expand="true"/>
         </task>
         <task id="175" name="DISCUSSIONE AGILE" color="#cc0033" meeting="true" start="2018-03-27" duration="0" complete="0" expand="true"/>
         <task id="164" name="CONSEGNA" color="#cc0033" meeting="true" start="2018-04-16" duration="0" complete="0" expand="true"/>

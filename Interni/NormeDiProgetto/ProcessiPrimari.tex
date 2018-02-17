@@ -91,6 +91,19 @@ costi fissati. L’architettura definita dovrà:
 	\item Avere componenti semplici, coesi nel raggiungere gli obiettivi, incapsulati e con scarse dipendenze tra loro.
 \end{itemize}
 
+\subsubsection{Sviluppo}
+Lo sviluppo di \progetto avviene seguendo il modello incrementale, spiegato nel dettaglio nel documento \pdp \S 3. Sarà eseguita un'analisi comparativa di varie tecnologie esistenti al fine di capire quali siano le più consone allo sviluppo di \progetto. Nel caso si ritengano più consone tecnologie differenti da quelle proposte dalla proponente, il gruppo \gruppo si riserva di discutere con la stessa per discuterne.\\
+La proponente, tramite capitolato d'appalto, identifica queste tecnologie come obbligatorie per lo sviluppo:\\
+\begin{itemize}
+	\item \textbf{\citGloss{React};}
+	\item \textbf{\citGloss{Redux};}
+	\item \textbf{\citGloss{Metamask};}
+	\item \textbf{Rete \citGloss{Ethereum}.}
+\end{itemize}
+\subsubsection{Integrazione}
+L'attività di integrazione sarà effettuata utilizzando il servizio, compatibile con \citGloss{GitHub}, \textit{\citGloss{Travis}}.\\
+Questo servizio implementa il modello di integrazione continua: ad ogni commit su repository \citGloss{GitHub}, \citGloss{Travis} crea una build ed esegue automaticamente i test di unità. In questo modo sarà possibile identificare immediatamente modifiche od errori che inficiano sul comportamento del prodotto.\\
+Per quanto riguarda il test coverage, cioè il grado di esecuzione del codice sorgente durante l'esecuzione dei test, verrà utilizzato il tool \citGloss{JavaScript} \textit{IstanbulJS}. 
 \subsubsection{Diagrammi}
 Al fine di rendere più chiare le scelte progettuali adottate e
 ridurre le possibili ambiguità, sarà necessario fare largo uso di vari tipi di diagrammi 

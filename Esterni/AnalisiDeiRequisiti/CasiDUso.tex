@@ -284,7 +284,12 @@
 	\item \textbf{Precondizione:} l'amministratore è nell'area di gestione utenti e richiede una lista di tutti gli studenti; 
 	\item \textbf{Postcondizione:} l'amministratore ottiene la lista.
 \end{itemize}
-%TODO: immagine
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\linewidth]{UC5_1.jpg}
+	\caption{UC5.1 - Visualizzazione lista degli studenti approvati}
+	\label{fig:UC5.1 - Visualizzazione lista degli studenti approvati}
+\end{figure}
 \subsection{UC5.1.1 - Visualizzazione indirizzi degli studenti approvati}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
@@ -325,7 +330,12 @@
 	\item \textbf{Precondizione:} l'amministratore è nell'area di gestione utenti e richiede una lista di tutti i professori; 
 	\item \textbf{Postcondizione:} l'amministratore ottiene la lista.
 \end{itemize}
-%TODO: immagine
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\linewidth]{UC5_2.jpg}
+	\caption{UC5.2 - Visualizzazione lista dei professori approvati}
+	\label{fig:UC5.2 - Visualizzazione lista dei professori approvati}
+\end{figure}
 \subsection{UC5.2.1 - Visualizzazione indirizzi dei professori approvati}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
@@ -358,7 +368,12 @@
 	\item \textbf{Precondizione:} l'amministratore è nell'area di gestione studenti e richiede una lista di studenti in attesa di abilitazione; 
 	\item \textbf{Postcondizione:} l'amministratore ottiene la lista.
 \end{itemize}
-%TODO: immagine
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\linewidth]{UC5_3.jpg}
+	\caption{UC5.3 - Visualizzazione lista utenti in attesa di abilitazione}
+	\label{fig:UC5.3 - Visualizzazione lista utenti in attesa di abilitazione}
+\end{figure}
 \subsection{UC5.3.1 - Visualizzazione indirizzi degli utenti in attesa di abilitazione}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
@@ -453,7 +468,6 @@
 	\item \textbf{Precondizione:} l'utente che rappresenta l'università ha scelto di aggiungere un \citGloss{anno accademico}; 
 	\item \textbf{Postcondizione:} l'\citGloss{anno accademico} creato viene inserito nel sistema.
 \end{itemize}
-%TODO: immagine 6.2
 \subsection{UC6.2 - Visualizzazione lista di tutti gli anni accademici}
 \begin{itemize}
 	\item \textbf{Attori primari:} università;
@@ -462,6 +476,12 @@
 	\item \textbf{Precondizione:} l'utente che rappresenta l'università è nell'area di gestione Anni Accademici e vuole ottenere la lista di tutti gli anni presenti nel sistema; 
 	\item \textbf{Postcondizione:} l'utente che rappresenta l'università ottiene la lista.
 \end{itemize}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{UC6_2.jpg}
+	\caption{UC6.2 - Visualizzazione lista di tutti gli anni accademici}
+	\label{fig:UC6.2 - Visualizzazione lista di tutti gli anni accademici}
+\end{figure}
 \subsection{UC6.2.1 - Visualizzazione anni solari relativi agli anni accademici}
 \begin{itemize}
 	\item \textbf{Attori primari:} università;
@@ -537,7 +557,6 @@
 	\item \textbf{Precondizione:} l'amministratore ha tentato di creare un \citGloss{corso di laurea} utilizzando una sigla che non rispetta i \citGloss{requisiti} indicati dal sistema; 
 	\item \textbf{Postcondizione:} l'amministratore è consapevole di non poter utilizzare quella determinata sigla per la creazione di un nuovo corso.
 \end{itemize}
-%TODO: immagine 7.3
 \subsection{UC7.3 - Visualizzazione lista completa dei corsi}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
@@ -545,7 +564,13 @@
 	\item \textbf{Scenario principale:} l'amministratore visualizza tutti i corsi di laurea presenti nel sistema;
 	\item \textbf{Precondizione:} l'amministratore ha richiesto la visualizzazione di tutti i corsi di laurea; 
 	\item \textbf{Postcondizione:} l'amministratore ottiene la lista.
-\end{itemize}	
+\end{itemize}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\linewidth]{UC7_3.jpg}
+	\caption{UC7.3 - Visualizzazione lista completa dei corsi}
+	\label{fig:UC7.3 - Visualizzazione lista completa dei corsi}
+\end{figure}
 \subsection{UC7.3.1 - Visualizzazione sigle dei corsi di laurea}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
@@ -562,7 +587,6 @@
 	\item \textbf{Precondizione:} l'amministratore ha richiesto la lista dei corsi di laurea presenti nel sistema e vuole visualizzarne gli anni accademici ad essi associati; 
 	\item \textbf{Postcondizione:} l'amministratore ottiene la lista con gli anni accademici associati.
 \end{itemize}
-%TODO: immagine 7.4
 \subsection{UC7.4 - Visualizzazione lista corsi di laurea per anno accademico}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
@@ -570,6 +594,12 @@
 	\item \textbf{Precondizione:} l'amministratore ha visualizzato una lista di anni accademici [UC7.10] e vuole visualizzare i corsi di laurea all'interno di uno di essi; 
 	\item \textbf{Postcondizione:} l'amministratore ottiene la lista desiderata.
 \end{itemize}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{UC7_4.jpg}
+	\caption{UC7.4 - Visualizzazione lista corsi di laurea per anno accademico}
+	\label{fig:UC7.4 - Visualizzazione lista corsi di laurea per anno accademico}
+\end{figure}
 \subsection{UC7.4.1 - Visualizzazione sigle dei corsi di laurea per anno accademico}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
@@ -598,7 +628,6 @@
 	\item \textbf{Precondizione:} l'amministratore tenta di creare un esame utilizzando un nome che non rispetta i \citGloss{requisiti} indicati dal sistema; 
 	\item \textbf{Postcondizione:} l'amministratore è a conoscenza di aver inserito un nome invalido.
 \end{itemize}
-%TODO: immagine 7.7
 \subsection{UC7.7 - Visualizzazione lista esami per corso}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
@@ -611,6 +640,12 @@
 	\item \textbf{Precondizione:} l'amministratore ha visualizzato una lista di corsi di laurea [UC7.3 o UC7.4] e vuole visualizzare gli esami all'interno di uno di essi; 
 	\item \textbf{Postcondizione:} l'amministratore ottiene la lista desiderata.
 \end{itemize}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\linewidth]{UC7_7.jpg}
+	\caption{UC7.7 - Visualizzazione lista esami per corso}
+	\label{fig:UC7.7 - Visualizzazione lista esami per corso}
+\end{figure}
 \subsection{UC7.7.1 - Visualizzazione sigle esami per corso di laurea}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
@@ -643,7 +678,6 @@
 	\item \textbf{Precondizione:} l'amministratore ha richiesto una lista di esami associati ad un corso di laurea e l'esame di riferimento ha un professore associato; 
 	\item \textbf{Postcondizione:} l'amministratore visualizza la lista di cognomi dei professori degli esami associati ad un determinato corso di laurea.
 \end{itemize}
-%TODO: immagine 7.8
 \subsection{UC7.8 - Visualizzazione lista esami}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
@@ -652,6 +686,12 @@
 	\item \textbf{Precondizione:} l'amministratore vuole vedere tutti gli esami presenti nel sistema; 
 	\item \textbf{Postcondizione:} l'amministratore ottiene la lista desiderata.
 \end{itemize}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{UC7_8.jpg}
+	\caption{UC7.8 - Visualizzazione lista esami}
+	\label{fig:UC7.8 - Visualizzazione lista esami}
+\end{figure}
 \subsection{UC7.8.1 - Visualizzazione sigla esami}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;

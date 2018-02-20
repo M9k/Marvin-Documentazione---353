@@ -1,0 +1,41 @@
+\documentclass[VER-2018-02-19.tex]{subfiles}
+\begin{document}
+\taburowcolors[2] 2{tableLineOne .. tableLineTwo}
+\tabulinesep = ^3mm_2mm
+\chapter{Riunione}
+\section{Informazioni generali}
+\begin{itemize}
+	\item \textbf{Motivo della riunione:} \'{E} stata indetta questa riunione per fare il punto della situazione sulle modifiche da fare ai documenti in seguito a dei chiarimenti avuti in mattinata ad un incontro con il professore Vardanega e sul \textit{Proof of Concept}, dopo la chiamata Skype avuta il \nData{18}{02}{2018} con la Proponente.
+	\item \textbf{Luogo e data:} Padova, \nData{19}{02}{2018};
+	\item \textbf{Orario:} 10.15 - 11.45;
+	\item \textbf{Partecipanti:} Ogni membro del gruppo \gruppo.
+\end{itemize}
+
+
+\chapter{Resoconto}
+
+\section{Argomenti}
+Di seguito sono riportati i punti dell'ordine del giorno che sono stati discussi:
+\begin{enumerate}
+	\item \textbf{Proof of Concept:} dopo la creazione del wireframe, sono state creati degli scheletri per le parti di React e dei contratti in Solidity. Si è discusso sulla parte di interfaccia tra le due, vale a dire Redux, chiarendo alcuni dubbi espressi alla Proponente durante la chiamata Skype;
+	\item \textbf{Incontro con professore Vardanega:} tutte le modifiche apportate fino ad ora sono risultate corrette rispetto ai chiarimenti avuti in mattinata.\\
+	Durante l'incontro è poi stata posta una domanda sul linguaggio Solidity e la sua rappresentazione in UML. Il professore Vardanega ha risposto che siccome UML è stato progettato quando si pensava che la programmazione si sarebbe fermata agli oggetti, non è facile rappresentare tutto attraverso esso. Quindi ci ha invitato a riflettere su come poterlo fare, e in caso di difficoltà, ci ha invitato a contattare il professore Cardin.\\
+	Sempre in seguito all'incontro, è stato deciso di controllare settimanalmente il numero di ore lavorate da tutti i membri del gruppo così da poter tenere meglio sotto controllo i costi del progetto rispetto al preventivo.
+\end{enumerate}
+
+\section{Tracciamento delle decisioni}
+\begin{table}[H]
+	\begin{center}
+		\begin{tabu} to \textwidth {
+				>{\centering}m{0.25\linewidth}  
+				>{\centering\arraybackslash}m{0.7\linewidth}
+			}
+			\tableHeaderStyle
+			\textbf{Codice} & \textbf{Decisione} \\
+			VER-2018-02-19.1 & Controllo settimanale delle ore lavorate \\
+			VER-2018-02-19.2 & Contattare il professore Cardin in caso di difficoltà con la rappresentazione di Solidity in UML \\
+		\end{tabu}
+		\caption{Tracciamento delle decisioni del verbale}
+	\end{center}
+\end{table}
+\end{document}

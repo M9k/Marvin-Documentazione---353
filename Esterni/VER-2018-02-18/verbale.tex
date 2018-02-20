@@ -1,0 +1,51 @@
+\documentclass[VER-2018-01-09.tex]{subfiles}
+\begin{document}
+\taburowcolors[2] 2{tableLineOne .. tableLineTwo}
+\tabulinesep = ^3mm_2mm
+\chapter{Riunione}
+\section{Informazioni generali}
+\begin{itemize}
+	\item \textbf{Motivo della riunione:} \'{E} stata indetta questa riunione aggiornare la Proponente sul lavoro che stiamo facendo per il progetto e per chiarire alcuni dubbi su delle tecnologie avuti inziando a lavorare sul \textit{Proof of Concept}.
+	\item \textbf{Luogo e data:} Chiamata Skype, \nData{18}{02}{2018};
+	\item \textbf{Orario:} 19.00 - 19.45;
+	\item \textbf{Partecipanti:}
+	\begin{itemize}
+		\item Proponente: Alessandro Maccagnan e Milo Ertola;
+		\item Gruppo \gruppo: tutti i membri tranne \Gianluca.
+	\end{itemize}
+\end{itemize}
+
+\chapter{Resoconto}
+
+\section{Argomenti}
+Di seguito sono riportati i punti dell'ordine del giorno che sono stati discussi:
+\begin{enumerate}
+	\item \textbf{Problema con web3 e Redux:} Realizzando il \textit{Proof of Concept}, provando ad inserire un oggetto di web3 in Redux con Metamask non si riesce a freezare correttamente, quindi l'unica soluzione trovata dal team è quella di tenere l'oggetto di web3 sempre globale. La Proponente ha risposto che se viene utilizzato sempre lo stesso oggetto, va bene tenerlo globale;
+	\item \textbf{Aggiornamenti delle componenti:} Alla richiesta da parte del team se è possibile aggiornare alcuni componenti, la Proponente ha risposto affermativamente, e ha consigliato di aggiornare un pacchetto alla volta. Però, ha suggerito prima di risolvere i problemi con Redux e poi di concentrarci sul resto;
+	\item \textbf{Redux:} \`{E} la parte che al momento è più problematica per il team, perché presenta una logica complessa e non è facile capire se l'approccio utilizzato è corretto. La Proponente ha consigliato un progetto\footnote{\nURI{https://github.com/reactjs/react-redux}} per capire meglio l'iterazione e la connessione tra React e Redux. Inoltre, ha suggerito di prendere un progetto semplice, come ad esempio una To-Do List, e di capire con ciò l'iterazione tra le due tecnologie analizzandolo attraverso l'utilizzo dei plug-in \textquotedblleft React Developer Tools\textquotedblright e \textquotedblleft Redux DevTools\textquotedblright disponibili per i browser Chrome e Firefox;
+	\item \textbf{Documentazione in UML di Solidity:} La Proponente ha chiesto come verrà documentato Solidity in UML, non esistendo uno standard. Il team ha risposto che questa decisione deve ancora essere presa, e che l'argomento sarebbe stato oggetto di discussione con il \Vardanega il giorno seguente;
+	\item \textbf{Variabili private in Solidity:} La Proponente ha chiesto se qualcuno del team aveva mai sentito parlare dell'esistenza di una tecnologia chiamata \textquotedblleft Zksnark\textquotedblright, novità di ottobre che permette di avere variabili private in Solidity. Il team non ne aveva mai sentito parlare prima, e la Proponente ha aggiunto che è una tecnologia interessante ma non prevista nei requisiti, perché prevede un laborioso set-up iniziale;
+	\item \textbf{Applicazione anche da mobile:} La Proponente ha chiesto se sarà possibile utilizzare l'applicativo da dispositivo mobile. Il team ha risposto che questa possibilità è stata inserita tra i requisti desiderabili, in quanto la versione mobile di Firefox supporta i plug-in mentre quella di Chrome ancora no, quindi solo gli utilizzatori di Firefox saranno in grado di utilizzare la DApp da mobile utilizzando Metamask;
+	\item \textbf{Lentezza del sistema:} Siccome è possibile che l'interazione con il back-end sia lenta, la Proponete ha proposto al team di pensare ad un modo alternativo allo solito spinner, dato che è probabile che l'attesa duri 30 secondi o un minuto. Un'idea potrebbe essere quella di un banner che indichi l'avanzamento del processo;
+	\item \textbf{Altri utilizzi interessanti di una blockchain:} La Proponente ha dichiarato di avere proposto Uniweb come progetto perchè era qualcosa che tutti noi conoscevamo, ma ha chiesto al team di riflettere su altri utilizzi interessanti di una blockchain.
+\end{enumerate}
+
+\section{Tracciamento delle decisioni}
+\begin{table}[H]
+	\begin{center}
+		\begin{tabu} to \textwidth {
+				>{\centering}m{0.25\linewidth}  
+				>{\centering\arraybackslash}m{0.7\linewidth}
+			}
+			\tableHeaderStyle
+			\textbf{Codice} & \textbf{Decisione} \\
+			VER-2018-02-18.1 & Aggiornare i pacchetti dopo aver risolto i problemi con Redux \\
+			VER-2018-02-18.2 & Discutere con il \Vardanega dell'utilizzo di UML per Solidiy \\
+			VER-2018-02-18.3 & Informarsi sulla tecnologia \textquotedblleft Zksnark\textquotedblright \\
+			VER-2018-02-18.4 & Pensare ad un modo alternativo al solito spinner a causa della possibile lentezza con l'iterazione con il back-end \\
+			VER-2018-02-18.5 & Pensare ad altri utilizzi interessanti di una blockchain \\
+		\end{tabu}
+	\caption{Tracciamento delle decisioni del verbale}
+	\end{center}
+\end{table}
+\end{document}

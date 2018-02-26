@@ -263,10 +263,10 @@
 \subsection{UC5 - Gestione Utenti}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
-	\item \textbf{Scopo e descrizione:} l'amministratore è in grado di eseguire operazioni sugli studenti all'interno dell'ateneo;
-	\item \textbf{Scenario principale:} l'amministratore visualizza una lista di operazioni eseguibili sugli studenti e sceglie quale fare;
-	\item \textbf{Precondizione:} l'amministratore ha scelto di gestire gli studenti; 
-	\item \textbf{Postcondizione:}l'amministratore è a conoscenza delle operazioni che può eseguire sugli studenti e decide di effettuarne una.
+	\item \textbf{Scopo e descrizione:} l'amministratore è in grado di eseguire operazioni sugli utenti all'interno dell'ateneo che presentano account registrati od in attesa di registrazione nel ruolo di studenti o professori;
+	\item \textbf{Scenario principale:} l'amministratore visualizza una lista di operazioni eseguibili sugli utenti appartenenti alla categoria dei professori o degli studenti e sceglie quale effettuare;
+	\item \textbf{Precondizione:} il sistema ha riconosciuto l'utente nel ruolo dell'amministratore e mette a disposizione una serie di strumenti per la manipolazione degli utenti; 
+	\item \textbf{Postcondizione:} il sistema ha effettuate le operazioni richieste riguardanti la gestione degli utenti.
 \end{itemize}
 
 \begin{figure}[H]
@@ -443,8 +443,8 @@
 	\item \textbf{Attori primari:} università;
 	\item \textbf{Scopo e descrizione:} l'utente è già riconosciuto dal sistema come rappresentante dell'università ed è in grado di eseguire operazioni di amministrazione riguardanti gli anni accademici dell'ateneo;
 	\item \textbf{Scenario principale:} l'utente che rappresenta l'università visualizza una lista di operazioni eseguibili sugli anni accademici e ne sceglie una;
-	\item \textbf{Precondizione:} l'utente che rappresenta l'università ha scelto di effettuare una operazione riguardante gli anni accademici; 
-	\item \textbf{Postcondizione:} l'utente che rappresenta l'università è a conoscenza delle possibili operazioni riguardanti gli anni accademici e può eseguire quella di suo interesse.
+	\item \textbf{Precondizione:} il sistema ha riconosciuto l'utente nel ruolo di rappresentante dell'università e mette a disposizione una serie di operazioni atte alla gestione degli anni accademici; 
+	\item \textbf{Postcondizione:} il sistema ha effettuate le operazioni richieste riguardanti la gestione degli anni accademici.
 \end{itemize}
 
 \begin{figure}[H]
@@ -527,8 +527,8 @@
 	\item \textbf{Attori primari:} amministratore;
 	\item \textbf{Scopo e descrizione:} l'amministratore è in grado di eseguire operazioni sui corsi di laurea. La gestione non è stata assegnata al gestore dell'università in quanto molto onerosa in termini di tempo e quindi difficilmente adempibile da una singola persona;
 	\item \textbf{Scenario principale:} l'amministratore visualizza una lista di operazioni eseguibili sui corsi di laurea e ne sceglie una;
-	\item \textbf{Precondizione:} l'utente ha scelto di gestire i corsi di laurea; 
-	\item \textbf{Postcondizione:} l'utente è a conoscenza delle possibili operazioni da eseguire sui corsi di laurea e ne ha scelta una.
+	\item \textbf{Precondizione:} il sistema ha riconosciuto l'utente nel ruolo di amministratore e ha mette a disposizione una serie di operazioni atte alla gestione dei corsi di laurea; 
+	\item \textbf{Postcondizione:} il sistema ha effettuate le operazioni richieste riguardanti la gestione dei corsi di laurea.
 \end{itemize}
 
 \begin{figure}[H]
@@ -869,10 +869,9 @@
 \begin{itemize}
 	\item \textbf{Attori primari:} professore;
 	\item \textbf{Scopo e descrizione:} l'utente è già riconosciuto dal sistema come professore e sceglie di utilizzare una funzionalità messa a sua disposizione da parte del sistema;
-	\item \textbf{Precondizione:} il professore desidera effettuare delle operazioni relative agli esami a lui assegnati;
-	\item \textbf{Postcondizione:} il professore ha visualizzato le operazioni messe a disposizione dal sistema e sceglie quale effettuare.
+	\item \textbf{Precondizione:} il sistema ha riconosciuto l'utente nel ruolo di professore e mette a disposizione una serie di operazioni atte alla gestione degli esami; 
+	\item \textbf{Postcondizione:} il sistema ha effettuate le operazioni richieste riguardanti la gestione degli esami.
 \end{itemize}
-
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\linewidth]{UC8.jpg}
@@ -976,10 +975,9 @@
 	\item \textbf{Attori primari:} studente;
 	\item \textbf{Attori secondari:} \citGloss{MetaMask};
 	\item \textbf{Scopo e descrizione:} l'utente è già riconosciuto dal sistema come studente e sceglie di utilizzare una funzionalità messa a sua disposizione da parte del sistema;
-	\item \textbf{Precondizione:} lo studente desidera effettuare delle operazioni relative alla scelta di esami opzionali o alla visione delle valutazioni;
-	\item \textbf{Postcondizione:} lo studente ha visualizzato le operazioni messe a disposizione dal sistema e sceglie quale effettuare.
+	\item \textbf{Precondizione:} il sistema ha riconosciuto l'utente nel ruolo di studente e mette a disposizione una serie di operazioni atte alla gestione degli aspetti relativi al perseguimento della laurea;
+	\item \textbf{Postcondizione:} il sistema ha effettuate le operazioni richieste riguardanti il proseguimento della laurea.
 \end{itemize}
-
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\linewidth]{UC9.jpg}
@@ -1067,8 +1065,8 @@
 	\item \textbf{Attori primari:} università;
 	\item \textbf{Attori secondari:} \citGloss{MetaMask};
 	\item \textbf{Scopo e descrizione:} l'utente è già riconosciuto dal sistema come rappresentante dell'università e sceglie di utilizzare una funzionalità messa a sua disposizione da parte del sistema;
-	\item \textbf{Precondizione:} l'utente che rappresenta l'università desidera effettuare delle operazioni relative alla aggiunta o alla rimozione di amministratori;
-	\item \textbf{Postcondizione:} l'utente che rappresenta l'università ha visualizzato le operazioni messe a disposizione dal sistema e sceglie quale effettuare.
+	\item \textbf{Precondizione:} il sistema ha riconosciuto l'utente nel ruolo di rappresentante dell'università e mette a disposizione una serie di operazioni atte alla gestione degli amministratori; 
+	\item \textbf{Postcondizione:} il sistema ha effettuate le operazioni richieste riguardanti la gestione degli amministratori.
 \end{itemize}
 
 \begin{figure}[H]

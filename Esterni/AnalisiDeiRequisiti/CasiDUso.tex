@@ -276,13 +276,15 @@
 	\label{fig:UC5 - Gestione Utenti}
 \end{figure}
 
+//TODO unire UC5.1 e UC5.2?
+
 \subsection{UC5.1 - Visualizzazione lista degli studenti approvati}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
 	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti gli studenti registrati nel sistema, visualizzando per ognuno di essi le informazioni basilari;
 	\item \textbf{Scenario principale:} l'amministratore richiede al sistema una lista di studenti per poterli visualizzare ed eventualmente compiere altre operazioni su di essi;
-	\item \textbf{Precondizione:} l'amministratore è nell'area di gestione utenti e richiede una lista di tutti gli studenti; 
-	\item \textbf{Postcondizione:} l'amministratore ottiene la lista.
+	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di amministratore; 
+	\item \textbf{Postcondizione:} il sistema offre all'amministratore la lista degli studenti approvati.
 \end{itemize}
 \begin{figure}[H]
 	\centering
@@ -295,40 +297,40 @@
 	\item \textbf{Attori primari:} amministratore;
 	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti gli \citGloss{indirizzi} della rete \citGloss{Ethereum} degli studenti registrati nel sistema;
 	\item \textbf{Scenario principale:} l'amministratore richiede al sistema una lista di studenti per poterne visualizzare l'\citGloss{indirizzo} ed eventualmente compiere altre operazioni su di essi;
-	\item \textbf{Precondizione:} l'amministratore è nell'area di gestione utenti e richiede una lista di tutti gli studenti per visualizzarne i relativi \citGloss{indirizzi}.
-	\item \textbf{Postcondizione:} l'amministratore ottiene la lista con indicati gli \citGloss{indirizzi}.
+	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di amministratore ed ha ricevuto la richiesta di visualizzazione della lista degli studenti approvati;
+	\item \textbf{Postcondizione:} il sistema offre all'amministratore la lista degli studenti approvati con indicati gli \citGloss{indirizzi}.
 \end{itemize}
 \subsection{UC5.1.2 - Visualizzazione nomi degli studenti approvati}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
 	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti i nomi degli studenti registrati nel sistema;
 	\item \textbf{Scenario principale:} l'amministratore richiede al sistema una lista di studenti per poterne visualizzare il nome ed eventualmente compiere altre operazioni su di essi;
-	\item \textbf{Precondizione:} l'amministratore è nell'area di gestione utenti e richiede una lista di tutti gli studenti per visualizzarne i relativi nomi.
-	\item \textbf{Postcondizione:} l'amministratore ottiene la lista con indicati i nomi.
+	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di amministratore ed ha ricevuto la richiesta di visualizzazione della lista degli studenti approvati;
+	\item \textbf{Postcondizione:} il sistema offre all'amministratore la lista degli studenti approvati con indicati i nomi.
 \end{itemize}
 \subsection{UC5.1.3 - Visualizzazione cognomi degli studenti approvati}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
 	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti i cognomi degli studenti registrati nel sistema;
 	\item \textbf{Scenario principale:} l'amministratore richiede al sistema una lista di studenti per poterne visualizzare il cognome ed eventualmente compiere altre operazioni su di essi;
-	\item \textbf{Precondizione:} l'amministratore è nell'area di gestione utenti e richiede una lista di tutti gli studenti per visualizzarne i relativi cognomi.
-	\item \textbf{Postcondizione:} l'amministratore ottiene la lista con indicati i cognomi.
+	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di amministratore ed ha ricevuto la richiesta di visualizzazione della lista degli studenti approvati;
+	\item \textbf{Postcondizione:} il sistema offre all'amministratore la lista degli studenti approvati con indicati i cognomi.
 \end{itemize}
 \subsection{UC5.1.4 - Visualizzazione corsi degli studenti approvati}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
 	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti gli studenti registrati nel sistema con indicato il relativo corso universitario;
 	\item \textbf{Scenario principale:} l'amministratore richiede al sistema una lista di studenti per poterne visualizzare il corso universitario ed eventualmente compiere altre operazioni su di essi;
-	\item \textbf{Precondizione:} l'amministratore è nell'area di gestione utenti e richiede una lista di tutti gli studenti per visualizzarne il corso universitario.
-	\item \textbf{Postcondizione:} l'amministratore ottiene la lista con indicati i corsi universitari.
+	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di amministratore ed ha ricevuto la richiesta di visualizzazione della lista degli studenti approvati;
+	\item \textbf{Postcondizione:} il sistema offre all'amministratore la lista degli studenti approvati con indicati i corsi di laurea.
 \end{itemize}
 \subsection{UC5.2 - Visualizzazione lista dei professori approvati}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
 	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti i professori registrati nel sistema, visualizzando per ognuno di essi le informazioni basilari;
 	\item \textbf{Scenario principale:} l'amministratore richiede al sistema una lista di professori per poterli visualizzare ed eventualmente compiere altre operazioni su di essi;
-	\item \textbf{Precondizione:} l'amministratore è nell'area di gestione utenti e richiede una lista di tutti i professori; 
-	\item \textbf{Postcondizione:} l'amministratore ottiene la lista.
+	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di amministratore; 
+	\item \textbf{Postcondizione:} il sistema offre all'amministratore la lista dei professori approvati.
 \end{itemize}
 \begin{figure}[H]
 	\centering
@@ -341,33 +343,32 @@
 	\item \textbf{Attori primari:} amministratore;
 	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti gli \citGloss{indirizzi} della rete \citGloss{Ethereum} dei professori registrati nel sistema;
 	\item \textbf{Scenario principale:} l'amministratore richiede al sistema una lista dei professori per poterne visualizzare l'\citGloss{indirizzo} ed eventualmente compiere altre operazioni su di essi;
-	\item \textbf{Precondizione:} l'amministratore è nell'area di gestione utenti e richiede una lista di tutti i professori per visualizzarne i relativi \citGloss{indirizzi}.
-	\item \textbf{Postcondizione:} l'amministratore ottiene la lista con indicati gli \citGloss{indirizzi}.
+	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di amministratore ed ha ricevuto la richiesta di visualizzazione della lista dei professori approvati;
+	\item \textbf{Postcondizione:} il sistema offre all'amministratore la lista dei professori approvati con indicati gli \citGloss{indirizzi}.
 \end{itemize}
 \subsection{UC5.2.2 - Visualizzazione nomi dei professori approvati}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
 	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti i nomi dei professori registrati nel sistema;
 	\item \textbf{Scenario principale:} l'amministratore richiede al sistema una lista dei professori per poterne visualizzare il nome ed eventualmente compiere altre operazioni su di essi;
-	\item \textbf{Precondizione:} l'amministratore è nell'area di gestione utenti e richiede una lista di tutti i professori per visualizzarne i relativi nomi.
-	\item \textbf{Postcondizione:} l'amministratore ottiene la lista con indicati i nomi.
+	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di amministratore ed ha ricevuto la richiesta di visualizzazione della lista dei professori approvati;
+	\item \textbf{Postcondizione:} il sistema offre all'amministratore la lista dei professori approvati con indicati i nomi.
 \end{itemize}
 \subsection{UC5.2.3 - Visualizzazione cognomi dei professori approvati}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
 	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti i cognomi dei professori registrati nel sistema;
 	\item \textbf{Scenario principale:} l'amministratore richiede al sistema una lista dei professori per poterne visualizzare il cognome ed eventualmente compiere altre operazioni su di essi;
-	\item \textbf{Precondizione:} l'amministratore è nell'area di gestione utenti e richiede una lista di tutti i professori per visualizzarne i relativi cognomi.
-	\item \textbf{Postcondizione:} l'amministratore ottiene la lista con indicati i cognomi.
+	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di amministratore ed ha ricevuto la richiesta di visualizzazione della lista dei professori approvati;
+	\item \textbf{Postcondizione:} il sistema offre all'amministratore la lista dei professori approvati con indicati i cognomi.
 \end{itemize}
 \subsection{UC5.3 - Visualizzazione lista utenti in attesa di abilitazione}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
 	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti gli utenti ancora non abilitati, ottenendo per ognuno tutte le informazioni utili;
 	\item \textbf{Scenario principale:} l'amministratore richiede al sistema una lista di utenti in attesa di abilitazione per poterli visualizzare ed eventualmente compiere altre operazioni su di essi;
-	\item \textbf{Precondizione:} l'amministratore è nell'area di gestione studenti e richiede una lista di studenti in attesa di abilitazione; 
-	\item \textbf{Postcondizione:} l'amministratore ottiene la lista.
-\end{itemize}
+	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di amministratore; 
+	\item \textbf{Postcondizione:} il sistema offre all'amministratore la lista degli utenti in attesa di approvazione.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.9\linewidth]{UC5_3.jpg}
@@ -379,40 +380,40 @@
 	\item \textbf{Attori primari:} amministratore;
 	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti gli \citGloss{indirizzi} della rete \citGloss{Ethereum} degli utenti in attesa di abilitazione;
 	\item \textbf{Scenario principale:} l'amministratore richiede al sistema una lista degli utenti in attesa di abilitazione per poterne visualizzare l'\citGloss{indirizzo} ed eventualmente compiere altre operazioni su di essi;
-	\item \textbf{Precondizione:} l'amministratore è nell'area di gestione utenti e richiede una lista di tutti gli utenti in attesa di abilitazione per visualizzarne i relativi \citGloss{indirizzi}.
-	\item \textbf{Postcondizione:} l'amministratore ottiene la lista con indicati gli \citGloss{indirizzi}.
+	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di amministratore ed ha ricevuto la richiesta di visualizzazione della lista degli uttenti in attesa di approvazione;
+	\item \textbf{Postcondizione:} il sistema offre all'amministratore la lista degli utenti in attesa di approvazione con indicati gli \citGloss{indirizzi}.
 \end{itemize}
 \subsection{UC5.3.2 - Visualizzazione nomi degli utenti in attesa di abilitazione}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
 	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti i nomi degli utenti in attesa di abilitazione;
 	\item \textbf{Scenario principale:} l'amministratore richiede al sistema una lista degli utenti in attesa di abilitazione per poterne visualizzare il nome ed eventualmente compiere altre operazioni su di essi;
-	\item \textbf{Precondizione:} l'amministratore è nell'area di gestione utenti e richiede una lista di tutti gli utenti in attesa di abilitazione per visualizzarne i relativi nomi.
-	\item \textbf{Postcondizione:} l'amministratore ottiene la lista con indicati i nomi.
+	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di amministratore ed ha ricevuto la richiesta di visualizzazione della lista degli uttenti in attesa di approvazione;
+	\item \textbf{Postcondizione:} il sistema offre all'amministratore la lista degli utenti in attesa di approvazione con indicati i nomi.
 \end{itemize}
 \subsection{UC5.3.3 - Visualizzazione cognomi degli utenti in attesa di abilitazione}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
 	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti i cognomi degli utenti in attesa di abilitazione;
 	\item \textbf{Scenario principale:} l'amministratore richiede al sistema una lista degli utenti in attesa di abilitazione per poterne visualizzare il cognome ed eventualmente compiere altre operazioni su di essi;
-	\item \textbf{Precondizione:} l'amministratore è nell'area di gestione utenti e richiede una lista di tutti gli utenti in attesa di abilitazione per visualizzarne i relativi cognomi.
-	\item \textbf{Postcondizione:} l'amministratore ottiene la lista con indicati i cognomi.
+	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di amministratore ed ha ricevuto la richiesta di visualizzazione della lista degli uttenti in attesa di approvazione;
+	\item \textbf{Postcondizione:} il sistema offre all'amministratore la lista degli utenti in attesa di approvazione con indicati i cognomi.
 \end{itemize}
 \subsection{UC5.3.4 - Visualizzazione ruolo degli utenti in attesa di abilitazione}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
 	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista degli utenti in attesa di abilitazione ed i relativi ruoli che desiderano ricoprire una volta approvati, cioè professori o studenti.
 	\item \textbf{Scenario principale:} l'amministratore richiede al sistema una lista degli utenti in attesa di abilitazione per poterne visualizzare il ruolo desiderato ed eventualmente compiere altre operazioni su di essi;
-	\item \textbf{Precondizione:} l'amministratore è nell'area di gestione utenti e richiede una lista di tutti gli utenti in attesa di abilitazione per visualizzarne i relativi ruoli.
-	\item \textbf{Postcondizione:} l'amministratore ottiene la lista con indicati i ruoli.
+	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di amministratore ed ha ricevuto la richiesta di visualizzazione della lista degli uttenti in attesa di approvazione;
+	\item \textbf{Postcondizione:} il sistema offre all'amministratore la lista degli utenti in attesa di approvazione con indicati i ruoli che desiderano ottenere.
 \end{itemize}
 \subsection{UC5.3.5 - Visualizzazione corsi degli utenti in attesa di abilitazione}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
 	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti gli utenti in attesa di abilitazione con indicato il relativo corso universitario nel caso l'utente abbia richiesto di essere uno studente;
 	\item \textbf{Scenario principale:} l'amministratore richiede al sistema una lista degli utenti in attesa di abilitazione per poterne visualizzare il corso universitario ove possibile ed eventualmente compiere altre operazioni su di essi;
-	\item \textbf{Precondizione:} l'amministratore è nell'area di gestione utenti e richiede una lista di tutti gli utenti in attesa di abilitazione per visualizzarne il corso universitario ove possibile.
-	\item \textbf{Postcondizione:} l'amministratore ottiene la lista con indicati i corsi universitari ove possibile.
+	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di amministratore ed ha ricevuto la richiesta di visualizzazione della lista degli uttenti in attesa di approvazione;
+	\item \textbf{Postcondizione:} il sistema offre all'amministratore la lista degli utenti in attesa di approvazione con indicati i corsi universitari ai quali desiderano partecipare nel caso si tratti di studenti, altrimenti verrà restituito un campo vuoto.
 \end{itemize}
 \subsection{UC5.4 - Abilitazione utente}
 \begin{itemize}
@@ -423,8 +424,8 @@
 		\item L'amministratore visualizza la lista degli utenti in attesa di abilitazione [UC7];
 		\item L'amministratore lo abilita [UC5.4].
 	\end{enumerate}
-	\item \textbf{Precondizione:} l'amministratore ha richiesto una lista di utenti non abilitati ed ha individuato l'account che desidera abilitare; 
-	\item \textbf{Postcondizione:} l'utente indicato viene abilitato e il suo stato viene aggiornato nel sistema.
+	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di amministratore e gli ha precedentemente fornito la lista degli utenti in attesa di abilitazione [UC5.3];
+	\item \textbf{Postcondizione:} il sistema abilita un utente, rimuovendolo dalla lista degli utenti in attesa di abilitazione ed aggiungendolo alla relativa lista degli utenti abilitati.
 \end{itemize}
 \subsection{UC5.5 - Rimozione utente}
 \begin{itemize}
@@ -435,9 +436,11 @@
 		\item L'amministratore visualizza gli utenti abilitati o in attesa di abilitazione e ne seleziona uno [UC5.1 o UC6 o UC7];
 		\item L'amministratore rimuove l'utente selezionato [UC5.5].
 	\end{enumerate}
-	\item \textbf{Precondizione:} l'amministratore ha richiesto una lista di studenti o professori ed ha individuato l'account che desidera rimuovere;
-	\item \textbf{Postcondizione:} l'utente indicato viene rimosso dal sistema.
-\end{itemize}
+	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di amministratore e gli ha precedentemente fornito la lista degli utenti, di qualsiasi genere [UC5.1, UC5.2, UC5.3];
+	\item \textbf{Postcondizione:} il sistema rimuove l'utente indicato dall'amministratore.
+
+// TODO - da qui controllare pre e post
+
 \subsection{UC6 - Gestione anni accademici}
 \begin{itemize}
 	\item \textbf{Attori primari:} università;
@@ -1162,8 +1165,8 @@
 	\item \textbf{Attori primari:} utente generico;
 	\item \textbf{Attori secondari:} \citGloss{MetaMask};
 	\item \textbf{Scopo e descrizione:} l'utente generico può vedere la quantità di \citGloss{Gas}, \citGloss{Ether} ed euro che andrà ad utilizzare per svolgere determinate azioni;
-	\item \textbf{Precondizione:} l'utente generico desidera e richiede al sistema i costi delle operazioni;
-	\item \textbf{Postcondizione:} il sistema fornisce all'utente generico le informazioni da lui richieste e l'utente generico acquisisce l'informazione.
+	\item \textbf{Precondizione:} il sistema opera correttamente e riceve una richiesta di visualizzazione della pagina dei costi;
+	\item \textbf{Postcondizione:} il sistema fornisce all'utente generico le informazioni da lui richieste e l'utente generico acquisisce l'informazione desiderata.
 \end{itemize}
 
 \end{document}

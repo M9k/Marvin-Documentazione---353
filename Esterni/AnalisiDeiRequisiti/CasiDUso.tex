@@ -542,8 +542,6 @@
 	\label{fig:UC7 - Gestione Corsi di laurea}
 \end{figure}
 
-% TODO aggiustare pre e post da qui
-
 \subsection{UC7.1 - Creazione corso di laurea}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
@@ -552,24 +550,30 @@
 		\begin{enumerate}
 			\item Se l'amministratore inserisce una sigla invalida viene avvisato con un messaggio [UC7.2].
 		\end{enumerate}
-	\item \textbf{Precondizione:} l'amministratore, dopo aver ottenuto una lista di \citGloss{anni accademici} [UC7.10] ed indicatone uno desidera inserire un nuovo corso di laurea;
-	\item \textbf{Postcondizione:} il \citGloss{corso di laurea} è stato creato ed inserito nel sistema.
+	\item \textbf{Precondizione:} il sistema ha identificato l'utente come amministratore e ha fornito una lista di \citGloss{anni accademici} [UC7.10];
+	\item \textbf{Postcondizione:} è stato creato ed inserito nel sistema un nuovo \citGloss{corso di laurea} relativo all'anno accademico indicato dall'utente.
 \end{itemize}
+
+% TODO 7.1.1 - Inserimento sigla nuovo corso o qualcosa di simile - spostare UC 7.2 in UC 7.1.2 ?
+
 \subsection{UC7.2 - Visualizzazione errore sigla invalida}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
 	\item \textbf{Scopo e descrizione:} viene mostrato un messaggio d'errore per avvisare l'amministratore che non è possibile utilizzare la sigla inserita, in quanto non rispetta il pattern indicato dal sistema oppure risulta già in uso;
 	\item \textbf{Scenario principale:} il sistema avvisa l'amministratore che non è possibile utilizzare la sigla indicata;
-	\item \textbf{Precondizione:} l'amministratore ha tentato di creare un \citGloss{corso di laurea} utilizzando una sigla che non rispetta i \citGloss{requisiti} indicati dal sistema; 
-	\item \textbf{Postcondizione:} l'amministratore è consapevole di non poter utilizzare quella determinata sigla per la creazione di un nuovo corso.
+	\item \textbf{Precondizione:} il sistema ha ricevuto una richiesta di creazione di un \citGloss{corso di laurea} utilizzando una sigla che non rispetta i \citGloss{requisiti} indicati dal sistema; 
+	\item \textbf{Postcondizione:} il sistema ha avvisato l'amministratore dell'impossibilità di utilizzare quella determinata sigla per la creazione di un nuovo corso, indicandogli la forma corretta.
 \end{itemize}
+
+% TODO - UC 7.3, 7.4 come specializzazioni?
+
 \subsection{UC7.3 - Visualizzazione lista completa dei corsi}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
 	\item \textbf{Scopo e descrizione:} vengono mostrati tutti i corsi di laurea presenti nel sistema, visualizzandone la sigla e l'anno solare dell'anno accademico associato;
 	\item \textbf{Scenario principale:} l'amministratore visualizza tutti i corsi di laurea presenti nel sistema;
-	\item \textbf{Precondizione:} l'amministratore ha richiesto la visualizzazione di tutti i corsi di laurea; 
-	\item \textbf{Postcondizione:} l'amministratore ottiene la lista.
+	\item \textbf{Precondizione:} il sistema ha riconosciuto l'utente come amministratore; 
+	\item \textbf{Postcondizione:} il sistema ha fornito all'utente la lista completa dei corsi.
 \end{itemize}
 \begin{figure}[H]
 	\centering
@@ -582,23 +586,23 @@
 	\item \textbf{Attori primari:} amministratore;
 	\item \textbf{Scopo e descrizione:} l'amministratore visualizza la lista delle sigle relative ai corsi di laurea presenti nel sistema;
 	\item \textbf{Scenario principale:} l'amministratore richiede una lista di corsi di laurea presenti nel sistema;
-	\item \textbf{Precondizione:} l'amministratore ha richiesto la lista dei corsi di laurea presenti nel sistema e vuole visualizzarne le sigle ad essi associate; 
-	\item \textbf{Postcondizione:} l'amministratore ottiene la lista con le sigle associate.
+	\item \textbf{Precondizione:} il sistema ha riconosciuto l'utente come amministratore ed ha ricevuto una richiesta di visualizzazione dei corsi di laurea; 
+	\item \textbf{Postcondizione:} il sistema ha fornito all'utente la sigla relativa ad ogni corso di laurea.
 \end{itemize}
 \subsection{UC7.3.2 - Visualizzazione anni accademici associati ai corsi di laurea}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
 	\item \textbf{Scopo e descrizione:} l'amministratore visualizza la lista degli anni accademici relativi ai corsi di laurea presenti nel sistema;
 	\item \textbf{Scenario principale:} l'amministratore richiede una lista di corsi di laurea presenti nel sistema;
-	\item \textbf{Precondizione:} l'amministratore ha richiesto la lista dei corsi di laurea presenti nel sistema e vuole visualizzarne gli anni accademici ad essi associati; 
-	\item \textbf{Postcondizione:} l'amministratore ottiene la lista con gli anni accademici associati.
+	\item \textbf{Precondizione:} il sistema ha riconosciuto l'utente come amministratore ed ha ricevuto una richiesta di visualizzazione dei corsi di laurea; 
+	\item \textbf{Postcondizione:} il sistema ha fornito all'utente l'anno accademico relativo ad ogni corso di laurea.
 \end{itemize}
 \subsection{UC7.4 - Visualizzazione lista corsi di laurea per anno accademico}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
 	\item \textbf{Scopo e descrizione:} vengono visualizzati i corsi di laurea relativi ad un determinato \citGloss{anno accademico}, ottenendone le sigle;
-	\item \textbf{Precondizione:} l'amministratore ha visualizzato una lista di anni accademici [UC7.10] e vuole visualizzare i corsi di laurea all'interno di uno di essi; 
-	\item \textbf{Postcondizione:} l'amministratore ottiene la lista desiderata.
+	\item \textbf{Precondizione:} il sistema ha riconosciuto l'utente come amministratore e ha fornito una lista di anni accademici [UC7.10];
+	\item \textbf{Postcondizione:} il sistema ha fornito all'utente la lista dei corsi di laurea relativi all'anno accademico indicato dall'utente.
 \end{itemize}
 \begin{figure}[H]
 	\centering
@@ -611,9 +615,11 @@
 	\item \textbf{Attori primari:} amministratore;
 	\item \textbf{Scopo e descrizione:} l'amministratore visualizza la lista delle sigle relative ai corsi di laurea presenti nel sistema associati ad un determinato anno accademico;
 	\item \textbf{Scenario principale:} l'amministratore richiede una lista di corsi di laurea associati ad un determinato anno accademico presenti nel sistema;
-	\item \textbf{Precondizione:} l'amministratore ha richiesto la lista dei corsi di laurea presenti nel sistema associati ad un anno accademico e vuole visualizzarne le sigle ad essi associate; 
-	\item \textbf{Postcondizione:} l'amministratore ottiene la lista con le sigle associate.
+	\item \textbf{Precondizione:} il sistema ha riconosciuto l'utente come amministratore ed ha ricevuto una richiesta di visualizzazione dei corsi di laurea relativi ad un determinato anno accademico; 
+	\item \textbf{Postcondizione:} il sistema ha fornito all'utente la sigla relativa ad ogni corso di laurea dell'anno accademico indicatogli.
 \end{itemize}
+
+% UC 7.5.1 inserimento nome, 7.5.2 inserimento crediti, 7.5.3 inserimento obbligatorietà, UC 7.6 come 7.5.4
 \subsection{UC7.5 - Creazione esame in un corso}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
@@ -623,17 +629,20 @@
 	\begin{enumerate}
 		\item Se l'amministratore inserisce un nome invalido ottiene un messaggio d'errore [UC7.6].
 	\end{enumerate}
-	\item \textbf{Precondizione:} l'amministratore ha ottenuto una lista di corsi di laurea per \citGloss{anno accademico} [UC7.3] e ne ha selezionato uno, volendo creare un esame al suo interno; 
-	\item \textbf{Postcondizione:} l'esame viene inserito nel sistema e associato al \citGloss{corso di laurea} selezionato.
+	\item \textbf{Precondizione:} il sistema ha riconosciuto l'utente come amministratore e ha fornito una lista di corsi di laurea per \citGloss{anno accademico} [UC7.3];
+	\item \textbf{Postcondizione:} all'interno del sistema viene creato un nuovo esame associato al \citGloss{corso di laurea} indicato dall'utente.
 \end{itemize}
 \subsection{UC7.6 - Visualizzazione errore nome esame non valido}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
 	\item \textbf{Scopo e descrizione:} viene mostrato un messaggio d'errore relativo all'invalidità del nome del corso, in quanto non rispetta un pattern indicato dal sistema oppure già utilizzato;
 	\item \textbf{Scenario principale:} l'amministratore visualizza il messaggio d'errore;
-	\item \textbf{Precondizione:} l'amministratore tenta di creare un esame utilizzando un nome che non rispetta i \citGloss{requisiti} indicati dal sistema; 
-	\item \textbf{Postcondizione:} l'amministratore è a conoscenza di aver inserito un nome invalido.
+	\item \textbf{Precondizione:} il sistema ha ricevuto come richiesta la creazione di un esame utilizzando un nome che non rispetta i \citGloss{requisiti} indicati; 
+	\item \textbf{Postcondizione:} il sistema indica all'utente che il nome inserito risulta invalido, indicando quali vincoli deve soddisfare.
 \end{itemize}
+
+% TODO aggiustare pre e post da qui
+
 \subsection{UC7.7 - Visualizzazione lista esami per corso}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;

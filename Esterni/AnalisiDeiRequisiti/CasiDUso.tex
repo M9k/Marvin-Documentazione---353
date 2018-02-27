@@ -84,7 +84,7 @@
 	\item \textbf{Scopo e descrizione:} l'utente visualizza una breve guida di introduzione su come installare il plugin \citGloss{MetaMask} e su come gestire le chiavi in modo da istruirlo sulle modalità di accesso al sistema;
 	\item \textbf{Scenario principale:} l'utente accede alla guida;
 	\item \textbf{Precondizione:} il sistema è raggiungibile e funzionante e l'utente desidera aprire la guida;
-	\item \textbf{Postcondizione:} l'utente ha avuto delle nozioni riguardanti l'accesso al sistema.
+	\item \textbf{Postcondizione:} il sistema ha fornito la guida e l'utente ha avuto delle nozioni riguardanti l'accesso al sistema.
 \end{itemize}
 \subsection{UC2 - Login}
 \begin{itemize}
@@ -92,8 +92,8 @@
 	\item \textbf{Attori secondari:} \citGloss{MetaMask};
 	\item \textbf{Scopo e descrizione:} l'utente richiede il login al sistema attraverso il plugin \citGloss{MetaMask};
 	\item \textbf{Scenario principale:} l'utente non ancora riconosciuto dal sistema effettua il login;
-	\item \textbf{Precondizione:} l'utente non è stato riconosciuto dal sistema;
-	\item \textbf{Postcondizione:} l'utente viene riconosciuto da parte del sistema.\\
+	\item \textbf{Precondizione:} il sistema considera l'utilizzatore come un utente non autenticato;
+	\item \textbf{Postcondizione:} il sistema riconosce l'utilizzatore come un utente autenticato\\
 \end{itemize}
 
 \begin{figure}[H]
@@ -116,40 +116,40 @@
 	\item Se l'utente ha a disposizione una \citGloss{chiave} non registrata viene avvisato con un errore a riguardo [UC2.4];
 	\item Se l'utente tenta di fare il login con un account in attesa di approvazione viene avvisato con una schermata informativa a riguardo [UC2.5].
 \end{enumerate}
-\item \textbf{Precondizione:} l'utente ha richiesto al sistema di venire riconosciuto;
-\item \textbf{Postcondizione:} l'utente, tramite una interazione con \citGloss{MetaMask}, viene riconosciuto da parte del sistema.
+\item \textbf{Precondizione:} il sistema considera l'utilizzatore come un utente non autenticato;
+\item \textbf{Postcondizione:} il sistema, grazie ad una interazione con \citGloss{MetaMask}, riconosce l'utente come autenticato.
 \end{itemize}
 \subsection{UC2.2 - Visualizzazione messaggio di errore riguardo a \citGloss{chiave} assente}
 \begin{itemize}
 	\item \textbf{Attori primari:} utente non autenticato;
 	\item \textbf{Scopo e descrizione:} l'utente viene avvisato del fatto che non è stato possibile da parte del sistema il recupero della \citGloss{chiave};
 	\item \textbf{Scenario principale:} l'utente visualizza l'errore relativo all'assenza di una \citGloss{chiave} per accedere al sistema;
-	\item \textbf{Precondizione:} l'utente richiede il login senza possedere una \citGloss{chiave};
-	\item \textbf{Postcondizione:} l'utente è consapevole di dover interagire con \citGloss{MetaMask} per poter fornire una \citGloss{chiave}.
+	\item \textbf{Precondizione:} il sistema riceve una richiesta di login da parte di un utente non in possesso di una \citGloss{chiave};
+	\item \textbf{Postcondizione:} il sistema ha avvisato l'utente di dover interagire con \citGloss{MetaMask} per poter fornire una \citGloss{chiave}.
 \end{itemize}
 \subsection{UC2.3 - Visualizzazione messaggio di errore riguardo a \citGloss{MetaMask} assente}
 \begin{itemize}
 	\item \textbf{Attori primari:} utente non autenticato;
 	\item \textbf{Scopo e descrizione:} l'utente viene avvisato del fatto sta cercando di accedere al sistema senza il plugin \citGloss{MetaMask};
 	\item \textbf{Scenario principale:} l'utente visualizza il messaggio d'errore relativo alla mancanza del plugin \citGloss{MetaMask};
-	\item \textbf{Precondizione:} l'utente richiede il login senza avere a disposizione il plugin \citGloss{MetaMask};
-	\item \textbf{Postcondizione:} l'utente è consapevole della necessità di possedere \citGloss{MetaMask} per poter accedere al sistema.
+	\item \textbf{Precondizione:} il sistema riceve una richiesta di login da parte di un utente che non ha installato nel browser attualmente in uso il plugin \citGloss{MetaMask};
+	\item \textbf{Postcondizione:} il sistema ha avvisato l'utente della necessità di possedere \citGloss{MetaMask} per poter accedere.
 \end{itemize}
 \subsection{UC2.4 - Visualizzazione messaggio di errore riguardo a chiave non registrata}
 \begin{itemize}
 	\item \textbf{Attori primari:} utente non autenticato;
 	\item \textbf{Scopo e descrizione:} l'utente viene avvisato del fatto che ha fornito una \citGloss{chiave} non registrata nel sistema;
 	\item \textbf{Scenario principale:} l'utente viene informato che la sua \citGloss{chiave} non risulta registrata, in quanto il relativo \citGloss{indirizzo} non è presente nel sistema, suggerendone la registrazione;
-	\item \textbf{Precondizione:} l'utente richiede il login utilizzando una \citGloss{chiave} non registrata;
-	\item \textbf{Postcondizione:} l'utente è consapevole di dover effettuare la registrazione per accedere al sistema.
+	\item \textbf{Precondizione:} il sistema riceve una richiesta di login da parte di un utente che sta utilizzando una \citGloss{chiave} non registrata;
+	\item \textbf{Postcondizione:} il sistema ha avvisato l'utente della necessità di dover effettuare la registrazione per accedere al sistema.
 \end{itemize}
 \subsection{UC2.5 - Visualizzazione schermata informativa account non abilitato}
 \begin{itemize}
 	\item \textbf{Attori primari:} utente non autenticato;
 	\item \textbf{Scopo e descrizione:} l'utente viene informato che il suo \citGloss{indirizzo} non è ancora stato abilitato all'uso dei servizi;
 	\item \textbf{Scenario principale:} il sistema mostra una schermata informativa per avvisare l'utente che il suo account è in attesa di essere abilitato;
-	\item \textbf{Precondizione:} l'utente tenta di accedere al sistema senza che il suo account sia stato abilitato da un amministratore;
-	\item \textbf{Postcondizione:} l'utente è consapevole di dover attendere l'abilitazione del suo account da parte di un amministratore per accedere al sistema.
+	\item \textbf{Precondizione:} il sistema riceve una richiesta di login da parte di un utente senza che il suo account sia stato precedentemente abilitato da un amministratore;
+	\item \textbf{Postcondizione:} il sistema ha avvisato l'utente della necessità dover attendere l'abilitazione del suo account da parte di un amministratore per accedere al sistema.
 \end{itemize}
 \subsection{UC3 - Registrazione}
 \begin{itemize}
@@ -163,8 +163,8 @@
 		\item L'utente seleziona la sua categoria [UC3.3];
 		\item L'utente seleziona il corso desiderato [UC3.4].
 	\end{enumerate}
-	\item \textbf{Precondizione:} l'utente è entrato nel sistema e ha scelto di registrarsi;
-	\item \textbf{Postcondizione:} la registrazione è andata a buon fine e la \citGloss{chiave} dell'utente è stata registrata nel sistema, salvandone l'\citGloss{indirizzo}.
+	\item \textbf{Precondizione:} il sistema considera l'utilizzatore come un utente non autenticato, il quale desidera procedere con la registrazione;
+	\item \textbf{Postcondizione:} il sistema ha ricevuto la richiesta di registrazione, registrando le informazioni immesse dall'utente.
 \end{itemize}
 
 \begin{figure}[H]
@@ -187,8 +187,8 @@
 			\item Se la \citGloss{chiave} fornita dall'utente è già presente nel sistema l'utente viene avvisato tramite un messaggio d'errore [UC3.6];
 			\item Se l'utente non compila il campo viene avvisato con un messaggio d'errore [UC3.5].
 		\end{enumerate}
-	\item \textbf{Precondizione:} l'utente vuole inserire il proprio nome per poter proseguire con la procedura di registrazione;
-	\item \textbf{Postcondizione:} l'utente ha inserito il proprio nome nel campo fornito dal sistema e la validità della sua \citGloss{chiave} è stata controllata.
+	\item \textbf{Precondizione:} il sistema, che ha ricevuto la richiesta di registrazione da parte dell'utente, fornisce una interfaccia per l'inserimento del nome e rimane in attesa dell'input;
+	\item \textbf{Postcondizione:} il sistema ha verificato che la \citGloss{chiave} con il quale l'utente sta cercando di registrarsi risulti non utilizzata nel sistema e salva il nome dell'utente.
 \end{itemize}	
 \subsection{UC3.2 - Inserimento cognome}
 \begin{itemize}
@@ -199,24 +199,24 @@
 		\begin{enumerate}
 				\item Se l'utente non compila il campo viene avvisato dal sistema [UC3.5].
 		\end{enumerate}		
-	\item \textbf{Precondizione:} l'utente vuole inserire il proprio cognome;
-	\item \textbf{Postcondizione:} l'utente ha inserito il suo cognome nel campo fornito dal sistema.
+	\item \textbf{Precondizione:} il sistema, che ha ricevuto la richiesta di registrazione da parte dell'utente e ne conosce il nome, fornisce una interfaccia per l'inserimento del cognome e rimane in attesa dell'input;
+	\item \textbf{Postcondizione:} il sistema salva il cognome dell'utente.
 \end{itemize}
 \subsection{UC3.3 - Selezione categoria}
 \begin{itemize}
 	\item \textbf{Attori Primari:} utente non autenticato;
 	\item \textbf{Scopo e Descrizione:} il sistema offre l'interfaccia per selezionare la categoria di registrazione (studente o professore);
 	\item \textbf{Scenario principale:} l'utente seleziona tramite un dispositivo di input la sua categoria;
-	\item \textbf{Precondizione:} l'utente vuole inserire la sua categoria di registrazione;
-	\item \textbf{Postcondizione:} l'utente ha selezionato la sua categoria nel campo fornito dal sistema, se la categoria scelta è quella del professore l'utente termina la procedura di registrazione.
+	\item \textbf{Precondizione:} il sistema, che ha ricevuto la richiesta di registrazione da parte dell'utente e ne conosce il nome ed il cognome, fornisce una interfaccia per la selezione della categoria dell'account che l'utente desidera, a scelta tra professore e studente e rimane in attesa dell'input;
+	\item \textbf{Postcondizione:} il sistema salva la categoria nella quale l'utente desidera registrarsi, se la categoria scelta è quella del professore allora la procedura di registrazione viene terminata ed i dati salvati fino a quel momento vengono resi persistenti.
 \end{itemize}
 \subsection{UC3.4 - Selezione corso di laurea}
 \begin{itemize}
 	\item \textbf{Attori Primari:} utente non autenticato;
 	\item \textbf{Scopo e Descrizione} il sistema offre l'interfaccia per selezionare il \citGloss{corso di laurea} desiderato da un elenco, specificando per ognuno la sigla di riferimento;
 	\item \textbf{Scenario principale:} l'utente seleziona tramite un dispositivo di input il \citGloss{corso di laurea} scelto;
-	\item \textbf{Precondizione:} l'utente ha selezionato la registrazione come studente, il sistema offre un campo per la selezione del \citGloss{corso di laurea} e rimane in attesa dell'input;
-	\item \textbf{Postcondizione:} l'utente ha selezionato il \citGloss{corso di laurea} desiderato e termina la procedura di registrazione.
+	\item \textbf{Precondizione:} il sistema, che ha ricevuto la richiesta di registrazione da parte dell'utente che desidera divenire uno studente, fornisce una interfaccia per la selezione del \citGloss{corso di laurea} e rimane in attesa dell'input;
+	\item \textbf{Postcondizione:} il sistema salva il \citGloss{corso di laurea} nel quale l'utente desidera registrarsi, la procedura di registrazione viene terminata ed i dati salvati fino a quel momento vengono resi persistenti.
 \end{itemize}
 
 \subsection{UC3.5 - Visualizzazione errore campo non compilato}
@@ -224,40 +224,40 @@
 	\item \textbf{Attori Primari:} utente non autenticato;
 	\item \textbf{Scopo e Descrizione} il sistema avvisa l'utente che non ha compilato il campo selezionato;
 	\item \textbf{Scenario principale:} il sistema mostra un messaggio d'errore all'utente che indica la mancata compilazione del campo selezionato;
-	\item \textbf{Precondizione:} l'utente non compila il campo selezionato;
-	\item \textbf{Postcondizione:} l'utente è consapevole di non aver compilato il campo selezionato.
+	\item \textbf{Precondizione:} il sistema ottiene come input da una richiesta di inserimento di un dato una sequenza di caratteri vuota;
+	\item \textbf{Postcondizione:} il sistema avvisa l'utente di non aver compilato il campo selezionato.
 \end{itemize}
 \subsection{UC3.6 - Visualizzazione errore utente già registrato}
 \begin{itemize}
 	\item \textbf{Attori Primari:} utente non autenticato;
 	\item \textbf{Scopo e Descrizione} il sistema avvisa l'utente che la sua \citGloss{chiave} è già presente nel sistema, facendo collidere il suo \citGloss{indirizzo} con uno precedentemente inserito, e che quindi non può procedere alla registrazione;
 	\item \textbf{Scenario principale:} il sistema mostra un messaggio d'errore all'utente che indica che sta tentando di effettuare una registrazione utilizzando una \citGloss{chiave} già utilizzata nel sistema;
-	\item \textbf{Precondizione:} l'utente tenta di registrarsi utilizzando una \citGloss{chiave} precedentemente registrata;
-	\item \textbf{Postcondizione:} l'utente è consapevole di star utilizzando una \citGloss{chiave} che corrisponde ad un account precedentemente registrato nel sistema.
+	\item \textbf{Precondizione:} al sistema viene richiesta una registrazione da parte di un utente che presenta una \citGloss{chiave} precedentemente registrata;
+	\item \textbf{Postcondizione:} il sistema avvisa l'utente di star utilizzando una \citGloss{chiave} che corrisponde ad un account precedentemente registrato nel sistema.
 \end{itemize}
 \subsection{UC3.7 - Visualizzazione errore chiave non presente}
 \begin{itemize}
 	\item \textbf{Attori Primari:} utente non autenticato;
 	\item \textbf{Scopo e Descrizione} il sistema avvisa l'utente che non ha fornito una \citGloss{chiave} e quindi non può procedere alla registrazione;
 	\item \textbf{Scenario principale:} il sistema mostra un messaggio d'errore all'utente indicandogli l'assenza della \citGloss{chiave};
-	\item \textbf{Precondizione:} l'utente tenta di registrarsi senza fornire una \citGloss{chiave};
-	\item \textbf{Postcondizione:} l'utente è consapevole di non possedere una \citGloss{chiave}.
+	\item \textbf{Precondizione:} al sistema viene richiesta una registrazione da parte di un utente che non fornisce una \citGloss{chiave};
+	\item \textbf{Postcondizione:} il sistema avvisa l'utente di possedere una \citGloss{chiave} già registrata all'interno del sistema.
 \end{itemize}
 \subsection{UC3.8 - Visualizzazione errore \citGloss{MetaMask} non installato}
 \begin{itemize}
 	\item \textbf{Attori Primari:} utente non autenticato;
 	\item \textbf{Scopo e Descrizione} il sistema avvisa l'utente del fatto che non possiede il plugin \citGloss{MetaMask};
 	\item \textbf{Scenario principale:} il sistema mostra un messaggio d'errore all'utente indicandogli che non ha il plugin \citGloss{MetaMask} installato;
-	\item \textbf{Precondizione:} l'utente inizia la procedura di registrazione senza possedere \citGloss{MetaMask};
-	\item \textbf{Postcondizione:} l'utente è consapevole di dover installare il plugin \citGloss{MetaMask} per potersi registrare.
+	\item \textbf{Precondizione:} al sistema viene richiesta una registrazione da parte di un utente che non possiede il plugin \citGloss{MetaMask};
+	\item \textbf{Postcondizione:} il sistema avvisa l'utente della necessità di dover installare il plugin \citGloss{MetaMask} per potersi registrare.
 \end{itemize}
 \subsection{UC4 - Logout}
 \begin{itemize}
 	\item \textbf{Attori primari:} utente Autenticato;
 	\item \textbf{Scopo e descrizione:} l'utente desidera effettuare il logout dal sistema e gli vengono fornite le istruzioni per effettuarlo, in quanto per completare l'operazione l'utente deve interagire direttamente con il plugin \citGloss{MetaMask};
 	\item \textbf{Scenario principale:} l'utente autenticato richiede il logout dal sistema;
-	\item \textbf{Precondizione:} l'utente è autenticato e vuole effettuare il logout;
-	\item \textbf{Postcondizione:} l'utente è informato riguardo alla modalità di logout dal sistema.
+	\item \textbf{Precondizione:} il sistema riconosce l'utente come autenticato e riceve una richiesta di logout.
+	\item \textbf{Postcondizione:} il sistema informa l'utente riguardo alla modalità di logout dal sistema.
 \end{itemize}
 
 \subsection{UC5 - Gestione Utenti}

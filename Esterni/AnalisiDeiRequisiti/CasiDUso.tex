@@ -1000,17 +1000,13 @@
 	\label{fig:UC9 - Gestione aspetti relativi allo studente}
 \end{figure}
 
-
-
-% TODO aggiustare pre e post da qui
-
 \subsection{UC9.1 - Visualizzazione delle informazione degli esami ai quali è iscritto}
 \begin{itemize}
 	\item \textbf{Attori primari:} studente;
 	\item \textbf{Scopo e descrizione:} lo studente visualizza una lista di tutti gli esami ai quali è iscritto indicati dal nome;
 	\item \textbf{Scenario principale:} lo studente richiede al sistema la lista degli esami ai quali è iscritto per poterla consultare;
-	\item \textbf{Precondizione:} l'utente è già riconosciuto dal sistema come studente e richiede la visualizzazione della lista degli esami ai quali è iscritto ed le relative informazioni;
-	\item \textbf{Postcondizione:} lo studente ottiene la lista per poterla consultare.
+	\item \textbf{Precondizione:} il sistema ha riconosciuto l'utente nel ruolo di studente e ha fornito la lista delle funzionalità alle quali ha accesso relative alla gestione degli esami secondo le restrizioni permesse dal suo ruolo; 
+	\item \textbf{Postcondizione:} il sistema fornisce allo studente la lista degli esami al quale è iscritto.
 \end{itemize}
 
 \begin{figure}[H]
@@ -1022,20 +1018,20 @@
 
 \subsection{UC9.1.1 - Visualizzazione dei crediti degli esami ai quali è iscritto}
 \begin{itemize}
-\item \textbf{Attori primari:} studente;
-\item \textbf{Scopo e descrizione:} lo studente visualizza il numero di crediti per ogni esame al quale è iscritto;
-\item \textbf{Scenario principale:} lo studente richiede al sistema il numero di crediti degli esami ai quali è iscritto per consultarli;
-\item \textbf{Precondizione:} l'utente è già riconosciuto dal sistema come studente e richiede il numero di crediti per ogni esame ai quale è iscritto;
-\item \textbf{Postcondizione:} lo studente ottiene le informazioni richieste.
+	\item \textbf{Attori primari:} studente;
+	\item \textbf{Scopo e descrizione:} lo studente visualizza il numero di crediti per ogni esame al quale è iscritto;
+	\item \textbf{Scenario principale:} lo studente richiede al sistema il numero di crediti degli esami ai quali è iscritto per consultarli;
+	\item \textbf{Precondizione:} il sistema ha riconosciuto l'utente nel ruolo di studente, il quale ha richiesto la lista degli esami ai quali risulta iscritto. 
+	\item \textbf{Postcondizione:} il sistema ha fornito, per ogni esame al quale lo studente risulta iscritto, il relativo numero di crediti.
 \end{itemize}
 
 \subsection{UC9.1.2 - Visualizzazione della obbligatorietà degli esami ai quali è iscritto}
 \begin{itemize}
 	\item \textbf{Attori primari:} studente;
-	\item \textbf{Scopo e descrizione:} lo studente visualizza il numero di crediti di per ogni esame al quale è iscritto;
-	\item \textbf{Scenario principale:} lo studente richiede al sistema il numero di crediti degli esami ai quali è iscritto per consultarli;
-	\item \textbf{Precondizione:} l'utente è già riconosciuto dal sistema come studente e richiede il numero di crediti per ogni esame ai quale è iscritto;
-	\item \textbf{Postcondizione:} lo studente ottiene le informazioni richieste.
+	\item \textbf{Scopo e descrizione:} lo studente visualizza l'obbligatorietà di per ogni esame al quale è iscritto;
+	\item \textbf{Scenario principale:} lo studente richiede al sistema l'obbligatorietà degli esami ai quali è iscritto;
+	\item \textbf{Precondizione:} il sistema ha riconosciuto l'utente nel ruolo di studente, il quale ha richiesto la lista degli esami ai quali risulta iscritto. 
+	\item \textbf{Postcondizione:} il sistema ha fornito, per ogni esame al quale lo studente risulta iscritto, la relativa l'obbligatorietà.
 \end{itemize}
 
 \subsection{UC9.1.3 - Visualizzazione delle valutazioni degli esami ai quali è iscritto}
@@ -1043,8 +1039,8 @@
 	\item \textbf{Attori primari:} studente;
 	\item \textbf{Scopo e descrizione:} lo studente visualizza la valutazione, in formato numerico con l'indicazione di averlo superato se il voto è superiore a 18, per ogni esame al quale è iscritto;
 	\item \textbf{Scenario principale:} lo studente richiede al sistema le informazioni riguardanti le valutazioni degli esami ai quali è iscritto per consultarle;
-	\item \textbf{Precondizione:} l'utente è già riconosciuto dal sistema come studente e richiede le informazioni riguardanti le valutazioni degli esami ai quali è iscritto;
-	\item \textbf{Postcondizione:} lo studente ottiene le informazioni richieste.
+	\item \textbf{Precondizione:} il sistema ha riconosciuto l'utente nel ruolo di studente, il quale ha richiesto la lista degli esami ai quali risulta iscritto. 
+	\item \textbf{Postcondizione:} il sistema ha fornito, per ogni esame al quale lo studente risulta iscritto, la relativa valutazione, ove presente.
 \end{itemize}
 
 \subsection{UC9.2 - Visualizzazione degli esami opzionali e dei loro crediti}
@@ -1052,8 +1048,8 @@
 	\item \textbf{Attori primari:} studente;
 	\item \textbf{Scopo e descrizione:} lo studente visualizza una lista di tutti gli esami opzionali del suo corso, con indicati nomi e crediti, ai quali ha possibilità di iscriversi;
 	\item \textbf{Scenario principale:} lo studente richiede al sistema la lista di tutti gli esami opzionali ai quali ha possibilità di iscriversi per poterla consultare;
-	\item \textbf{Precondizione:} l'utente è già riconosciuto dal sistema come studente e richiede la visualizzazione della lista di tutti gli esami opzionali ai quali ha possibilità di iscriversi;
-	\item \textbf{Postcondizione:} lo studente ottiene la lista per poterla consultare.
+	\item \textbf{Precondizione:} il sistema ha riconosciuto l'utente nel ruolo di studente e ha fornito la lista delle funzionalità alle quali ha accesso relative alla gestione degli esami secondo le restrizioni permesse dal suo ruolo; 
+\item \textbf{Postcondizione:} il sistema ha fornito allo studente la lista degli esami opzionali ai quali può iscriversi.
 \end{itemize}
 
 \subsection{UC9.3 - Iscrizione ad un esame opzionale}
@@ -1066,18 +1062,20 @@
 		\item Lo studente individua l'esame al quale è interessato iscriversi;
 		\item Lo studente compie l'operazione di iscrizione.
 	\end{enumerate}
-	\item \textbf{Precondizione:} lo studente ha individuato l'esame opzionale al quale desidera iscriversi;
-	\item \textbf{Postcondizione:} lo studente viene registrato ad un esame opzionale.
+	\item \textbf{Postcondizione:} il sistema ha fornito allo studente la lista degli esami opzionali ai quali può iscriversi e quest'ultimo ne ha individuato uno di suo interesse.
+	\item \textbf{Postcondizione:} il sistema ha iscritto l'utente all'esame opzionale da lui scelto.
 \end{itemize}
 
+% TODO specificare in UC9.4.1 etc quali informazini (somma dei crediti, crediti da raggiungere, crediti che gli servono, crediti acquisibili con gli esami ai quali è iscritto)
 \subsection{UC9.4 - Visualizzazione delle informazioni relative ai crediti}
 \begin{itemize}
 	\item \textbf{Attori primari:} studente;
 	\item \textbf{Scopo e descrizione:} lo studente visualizza un riepilogo del numero dei crediti che possiede e dell'obiettivo per poter conseguire la laurea;
 	\item \textbf{Scenario principale:} lo studente richiede al sistema le informazioni riguardanti i suoi crediti;
-	\item \textbf{Precondizione:} l'utente è già riconosciuto dal sistema come studente e richiede la visualizzazione delle informazioni relative ai suoi crediti;
-	\item \textbf{Postcondizione:} lo studente ottiene le informazioni richieste per poterle consultare.
+	\item \textbf{Precondizione:} il sistema ha riconosciuto l'utente nel ruolo di studente e ha fornito la lista delle funzionalità alle quali ha accesso relative alla gestione degli esami secondo le restrizioni permesse dal suo ruolo; 
+	\item \textbf{Postcondizione:} il sistema fornisce allo studente delle informazioni riguardanti la sua attuale situazione universitaria.
 \end{itemize}
+
 \subsection{UC10 - Gestione degli amministratori}
 \begin{itemize}
 	\item \textbf{Attori primari:} università;
@@ -1098,8 +1096,8 @@
 \begin{itemize}
 	\item \textbf{Attori primari:} università;
 	\item \textbf{Scopo e descrizione:} l'utente che rappresenta l'università aggiunge un nuovo amministratore nel sistema, abilitandolo ad operare come definito dal sistema;
-	\item \textbf{Precondizione:} l'utente che rappresenta l'università desidera l'aggiunta di un nuovo amministratore e possiede già l'indirizzo dell'amministratore, comunicatogli precedentemente. L'indirizzo si suppone essere precedentemente generato dall'amministratore utilizzando \citGloss{MetaMask} o un qualsiasi altro generatore; 
-	\item \textbf{Postcondizione:} il nuovo amministratore è stato inserito nel sistema e può operare come tale.
+	\item \textbf{Precondizione:} il sistema ha riconosciuto l'utente nel ruolo di rappresentante dell'università e mette a disposizione una serie di operazioni atte alla gestione degli amministratori; 
+	\item \textbf{Postcondizione:} all'interno del sistema è stato aggiunto un nuovo amministratore.
 \end{itemize}
 
 \begin{figure}[H]
@@ -1118,23 +1116,23 @@
 		\item Se la \citGloss{chiave pubblica} è già registrata nel sistema in un altro ruolo l'utente viene avvisato un relativo messaggio d'errore [UC10.1.3].
 	\end{enumerate}
 	\item \textbf{Precondizione:} il sistema offre un campo per la compilazione della \citGloss{chiave pubblica} del nuovo amministratore e rimane in attesa dell'input;
-	\item \textbf{Postcondizione:} l'utente che rappresenta l'università ha inserito la \citGloss{chiave pubblica} del nuovo amministratore nel campo fornito dal sistema.
+	\item \textbf{Postcondizione:} il sistema ha ricevuto la \citGloss{chiave pubblica} del nuovo amministratore attraverso il campo precedentemente fornito all'utente.
 \end{itemize}
 \subsection{UC10.1.2 - Visualizzazione messaggio di errore riguardo a chiave mal formata}
 \begin{itemize}
 	\item \textbf{Attori primari:} università;
 	\item \textbf{Scopo e descrizione:} l'utente viene avvisato del fatto che ha fornito una \citGloss{chiave} ma formata, ad esempio di lunghezza invalida oppure non in caratteri esadecimali;
 	\item \textbf{Scenario principale:} l'utente viene informato che la sua \citGloss{chiave} risulta mal formata, invitandolo a ricontrollarla;
-	\item \textbf{Precondizione:} l'utente cerca di registrare nel sistema una \citGloss{chiave} mal formata;
-	\item \textbf{Postcondizione:} l'utente è consapevole di aver tentato l'inserimento di una \citGloss{chiave} mal formata.
+	\item \textbf{Precondizione:} il sistema riceve la richiesta di registrazione di una \citGloss{chiave} mal formata;
+	\item \textbf{Postcondizione:} il sistema avvisa l'utente di aver richiesto la registrazione di una \citGloss{chiave} mal formata.
 \end{itemize}
 \subsection{UC10.1.3 - Visualizzazione messaggio di errore riguardo a chiave già registrata}
 \begin{itemize}
 	\item \textbf{Attori primari:} università;
 	\item \textbf{Scopo e descrizione:} l'utente viene avvisato del fatto che ha fornito una \citGloss{chiave} già registrata in un altro ruolo all'interno dell'università, in quanto il suo \citGloss{indirizzo} collide con un secondo precedentemente inserito;
 	\item \textbf{Scenario principale:} l'utente viene informato che la sua \citGloss{chiave} risulta già registrata;
-	\item \textbf{Precondizione:} l'utente cerca di registrare nel sistema una \citGloss{chiave} precedentemente registrata in un altro ruolo;
-	\item \textbf{Postcondizione:} l'utente è consapevole di aver tentato l'inserimento di una \citGloss{chiave} già registrata nell'università in un altro ruolo.
+	\item \textbf{Precondizione:} il sistema riceve la richiesta di registrazione di una \citGloss{chiave} precedentemente registrata;
+	\item \textbf{Postcondizione:} il sistema avvisa l'utente di aver richiesto la registrazione di una \citGloss{chiave} precedentemente registrata.
 \end{itemize}
 
 
@@ -1143,8 +1141,8 @@
 	\item \textbf{Attori primari:} università;
 	\item \textbf{Scopo e descrizione:} l'utente che rappresenta l'università visualizza una lista di tutti gli amministratori;
 	\item \textbf{Scenario principale:} l'utente che rappresenta l'università richiede al sistema la lista degli amministratori per poterla consultare ed eventualmente compiere altre operazioni su di essi;
-	\item \textbf{Precondizione:} l'utente che rappresenta l'università è già riconosciuto dal sistema come tale e richiede la visualizzazione della lista degli amministratori;
-	\item \textbf{Postcondizione:} l'utente che rappresenta l'università ottiene la lista degli amministratori per poterla consultare.
+	\item \textbf{Precondizione:} il sistema ha riconosciuto l'utente nel ruolo di rappresentante dell'università e mette a disposizione una serie di operazioni atte alla gestione degli amministratori; 
+	\item \textbf{Postcondizione:} il sistema ha fornito la lista di tutti gli amministratori presenti.
 \end{itemize}
 
 \begin{figure}[H]
@@ -1158,8 +1156,8 @@
 	\item \textbf{Attori primari:} università;
 	\item \textbf{Scopo e descrizione:} l'utente che rappresenta l'università visualizza per ogni amministratore il suo indirizzo;
 	\item \textbf{Scenario principale:} l'utente che rappresenta l'università richiede al sistema la lista dell'indirizzo di ogni amministratore presente;
-	\item \textbf{Precondizione:} l'utente che rappresenta l'università è già riconosciuto dal sistema come tale e richiede la visualizzazione degli indirizzi degli amministratori;
-	\item \textbf{Postcondizione:} l'utente che rappresenta l'università ottiene la lista degli indirizzi degli amministratori.
+	\item \textbf{Precondizione:} il sistema ha riconosciuto l'utente nel ruolo di rappresentante dell'università, il quale ha richiesto la visualizzazione della lista degli amministratori;
+	\item \textbf{Postcondizione:} il sistema ha fornito, per ogni amministratore presente, il relativo indirizzo.
 \end{itemize}
 \subsection{UC10.3 - Rimozione amministratore}
 \begin{itemize}
@@ -1171,8 +1169,8 @@
 		\item L'utente che rappresenta l'università, una volta ottenuta la lista degli amministratori, individua quale desidera rimuovere [UC10.2];
 		\item L'utente che rappresenta l'università richiede al sistema l'eliminazione dell'amministratore [UC10.3].
 	\end{enumerate}
-	\item \textbf{Precondizione:} l'utente che rappresenta l'università desidera eliminare un amministratore dal sistema;
-	\item \textbf{Postcondizione:} l'amministratore indicato viene rimosso dal ruolo nell'università e non può più autenticarsi come tale.
+	\item \textbf{Precondizione:} il sistema ha riconosciuto l'utente nel ruolo di rappresentante dell'università e ha precedentemente fornito la lista degli amministratori presenti [UC10.2]; 
+	\item \textbf{Postcondizione:} il sistema ha rimosso l'amministratore indicato.
 \end{itemize}
 
 \subsection{UC11 - Visualizzazione quantità di Gas, Ether e costo delle operazioni}

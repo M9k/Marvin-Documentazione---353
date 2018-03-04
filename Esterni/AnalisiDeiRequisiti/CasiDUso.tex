@@ -835,16 +835,13 @@
 	\item \textbf{Precondizione:} il sistema ha riconosciuto l'utente come amministratore, il quale ha richiesto la lista di tutti gli anni accademici presenti nel sistema.
 	\item \textbf{Postcondizione:} il sistema, per ogni anno accademico, ha visualizzato il relativo anno solare.
 \end{itemize}
-
-% TODO aggiustare pre e post da qui
-
 \subsection{UC7.11 - Visualizzazione lista professori da associare ad un esame}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
 	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista dei nomi, cognomi e indirizzi dei professori per identificare quale assegnare all'esame precedentemente indicato;
 	\item \textbf{Scenario principale:} il sistema mostra all'amministratore una lista di professori in modo da consentire la scelta di quale associare all'esame precedentemente indicato;
-	\item \textbf{Precondizione:} l'amministratore ha selezionato l'esame desiderato senza un professore associato [UC7.8] e desidera ottenere la lista dei professori per poterne associare uno;  
-	\item \textbf{Postcondizione:} l'amministratore è a conoscenza dell'elenco dei professori presenti nel sistema che possono essere assegnati ad un dato esame precedentemente indicato.
+	\item \textbf{Precondizione:} il sistema ha riconosciuto l'utente come amministratore e ha fornito la lista degli esami [UC7.8];  
+	\item \textbf{Postcondizione:} il sistema ha fornito all'amministratore la lista dei professori per permettere l'assegnazione di uno di essi ad un dato esame indicato dall'utente.
 \end{itemize}
 \begin{figure}[H]
 	\centering
@@ -856,33 +853,33 @@
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
 	\item \textbf{Scopo e descrizione:} l'amministratore visualizza la lista dei nomi dei professori degli esami presenti nel sistema per poter determinare quale associare all'esame precedentemente indicato;
-	\item \textbf{Scenario principale:} il sistema mostra la lista di nomi dei professori presenti nel sistema;
-	\item \textbf{Precondizione:} l'amministratore ha richiesto una lista di professori, con lo scopo di ottenere per ognuno di esso il relativo nome; 
-	\item \textbf{Postcondizione:} l'amministratore visualizza la lista di nomi dei professori presenti nel sistema.
+	\item \textbf{Scenario principale:} all'amministratore viene fornita la lista dei nomi dei professori presenti nel sistema;
+	\item \textbf{Precondizione:} il sistema ha riconosciuto l'utente come amministratore e ha ricevuto una richiesta di visualizzazione dei professori per poterne assegnare uno a un dato esame precedentemente indicato; 
+	\item \textbf{Postcondizione:} il sistema ha fornito per ogni professore il relativo nome.
 \end{itemize}
 \subsection{UC7.11.2 - Visualizzazione cognome per ogni professore}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
 	\item \textbf{Scopo e descrizione:} l'amministratore visualizza la lista dei cognome dei professori degli esami presenti nel sistema per poter determinare quale associare all'esame precedentemente indicato;
-	\item \textbf{Scenario principale:} il sistema mostra la lista di cognome dei professori presenti nel sistema;
-	\item \textbf{Precondizione:} l'amministratore ha richiesto una lista di professori, con lo scopo di ottenere per ognuno di esso il relativo cognome; 
-	\item \textbf{Postcondizione:} l'amministratore visualizza la lista di cognome dei professori presenti nel sistema.
+	\item \textbf{Scenario principale:} all'amministratore viene fornita la lista dei cognomi dei professori presenti nel sistema;
+	\item \textbf{Precondizione:} il sistema ha riconosciuto l'utente come amministratore e ha ricevuto una richiesta di visualizzazione dei professori per poterne assegnare uno a un dato esame precedentemente indicato; 
+	\item \textbf{Postcondizione:} il sistema ha fornito per ogni professore il relativo cognome.
 \end{itemize}
 \subsection{UC7.11.3 - Visualizzazione indirizzo per ogni professore}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
 	\item \textbf{Scopo e descrizione:} l'amministratore visualizza la lista degli indirizzi dei professori degli esami presenti nel sistema per poter determinare quale associare all'esame precedentemente indicato;
-	\item \textbf{Scenario principale:} il sistema mostra la lista degli indirizzi dei professori presenti nel sistema;
-	\item \textbf{Precondizione:} l'amministratore ha richiesto una lista di professori, con lo scopo di ottenere per ognuno di esso il relativo indirizzo; 
-	\item \textbf{Postcondizione:} l'amministratore visualizza la lista degli indirizzi dei professori presenti nel sistema.
+	\item \textbf{Scenario principale:} all'amministratore viene fornita la lista degli indirizzi dei professori presenti nel sistema;
+	\item \textbf{Precondizione:} il sistema ha riconosciuto l'utente come amministratore e ha ricevuto una richiesta di visualizzazione dei professori per poterne assegnare uno a un dato esame precedentemente indicato; 
+	\item \textbf{Postcondizione:} il sistema ha fornito per ogni professore il relativo indirizzo.
 \end{itemize}
 \subsection{UC7.12 - Associazione professore all'esame}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
 	\item \textbf{Scopo e descrizione:} l'amministratore associa un professore dopo averlo individuato in una lista contenente tutti i professori ad un esame che ne è ancora sprovvisto;
 	\item \textbf{Scenario principale:} l'amministratore associa ad un esame un determinato professore;
-	\item \textbf{Precondizione:} l'amministratore ha selezionato un esame sprovvisto di assegnazione a un professore [UC7.11] e ha ottenuto una lista di professori [UC7.11], volendo associarne uno; 
-	\item \textbf{Postcondizione:} il professore selezionato viene associato all'esame desiderato.
+	\item \textbf{Precondizione:} il sistema ha già fornito una lista di esami all'amministratore [UC7.11], il quale ha indicato un determinato esame e successivamente ha fornito una seconda lista contenete i professori [UC7.11]; 
+	\item \textbf{Postcondizione:} il sistema assegna il professore indicato dall'utente all'esame precedentemente selezionato.
 \end{itemize}
 \subsection{UC8 - Gestione aspetti relativi agli esami}
 \begin{itemize}
@@ -897,14 +894,13 @@
 	\caption{UC8 - Gestione aspetti relativi agli esami}
 	\label{fig:UC8 - Gestione aspetti relativi agli esami}
 \end{figure}
-
 \subsection{UC8.1 - Visualizzazione lista degli esami}
 \begin{itemize}
 	\item \textbf{Attori primari:} professore;
 	\item \textbf{Scopo e descrizione:} il professore visualizza una lista di tutti gli esami ai quali è assegnato;
 	\item \textbf{Scenario principale:} il professore richiede al sistema la lista degli esami di sua competenza per poterla consultare;
-	\item \textbf{Precondizione:} l'utente è già riconosciuto dal sistema come professore e richiede la visualizzazione della lista degli esami di sua competenza;
-	\item \textbf{Postcondizione:} il professore ottiene la lista degli esami ai quali è assegnato per poterla consultare.
+	\item \textbf{Precondizione:} il sistema ha riconosciuto l'utente nel ruolo del professore e ha fornito la lista delle funzionalità alle quali ha accesso relative all'amministrazione degli esami secondo le restrizioni permesse dal suo ruolo; 
+	\item \textbf{Postcondizione:} il sistema fornisce al professore la lista degli esami di sua competenza.
 \end{itemize}
 \begin{figure}[H]
 	\centering
@@ -917,16 +913,16 @@
 	\item \textbf{Attori primari:} professore;
 	\item \textbf{Scopo e descrizione:} il professore visualizza per ogni esame il relativo codici;
 	\item \textbf{Scenario principale:} il professore richiede al sistema la lista dei codici degli esami di sua competenza per poterla consultare;
-	\item \textbf{Precondizione:}l'utente è già riconosciuto dal sistema come professore e richiede la visualizzazione dei codici degli esami di sua competenza.
-	\item \textbf{Postcondizione:} il professore ottiene la lista con indicati i codici.
+	\item \textbf{Precondizione:} il sistema ha riconosciuto l'utente nel ruolo del professore, il quale ha richiesto la visualizzazione degli esami di sua competenza.
+	\item \textbf{Postcondizione:} il sistema ha fornito per ogni esame di competenza del professore il relativo codice.
 \end{itemize}
 \subsection{UC8.1.2 - Visualizzazione corsi degli esami}
 \begin{itemize}
 	\item \textbf{Attori primari:} professore;
 	\item \textbf{Scopo e descrizione:} il professore visualizza per ogni esame il relativo corso di laurea;
 	\item \textbf{Scenario principale:} il professore richiede al sistema la lista dei corsi di laurea degli esami di sua competenza per poterla consultare;
-	\item \textbf{Precondizione:}l'utente è già riconosciuto dal sistema come professore e richiede la visualizzazione dei corsi di laurea degli esami di sua competenza.
-	\item \textbf{Postcondizione:} il professore ottiene la lista con indicati i corsi di laurea.
+	\item \textbf{Precondizione:} il sistema ha riconosciuto l'utente nel ruolo del professore, il quale ha richiesto la visualizzazione degli esami di sua competenza.
+	\item \textbf{Postcondizione:} il sistema ha fornito per ogni esame di competenza del professore il corso di laurea al quale appartiene.
 \end{itemize}
 
 \subsection{UC8.2 - Visualizzazione lista degli studenti}
@@ -939,8 +935,8 @@
 		\item Il professore visualizza la lista degli esami di sua competenza [UC8.1];
 		\item Il professore, una volta individuato l'esame al quale è interessato, ne richiede la lista degli studenti registrati [UC8.2].
 	\end{enumerate}
-	\item \textbf{Precondizione:} l'utente è già riconosciuto dal sistema come professore e richiede la visualizzazione della lista degli studenti iscritti a un determinato esame di sua competenza;
-	\item \textbf{Postcondizione:} il professore ottiene la lista degli studenti iscritti all'esame richiesto per poterla consultare.
+	\item \textbf{Precondizione:} il sistema ha riconosciuto l'utente nel ruolo del professore e ha fornito la lista degli esami di sua competenza [UC8.1]; 
+	\item \textbf{Postcondizione:} il sistema ha fornito al professore la lista degli studenti iscritti a un dato esame da lui indicatogli.
 \end{itemize}
 \begin{figure}[H]
 	\centering
@@ -953,25 +949,27 @@
 	\item \textbf{Attori primari:} professore;
 	\item \textbf{Scopo e descrizione:} il professore visualizza una lista di tutti gli \citGloss{indirizzi} della rete \citGloss{Ethereum} degli studenti registrati all'esame;
 	\item \textbf{Scenario principale:} il professore richiede al sistema una lista di studenti per poterne visualizzare l'\citGloss{indirizzo} ed eventualmente compiere altre operazioni su di essi;
-	\item \textbf{Precondizione:}l'utente è già riconosciuto dal sistema come professore e richiede la visualizzazione della lista degli studenti iscritti a un determinato esame di sua competenza per visualizzarne i relativi \citGloss{indirizzi}.
-	\item \textbf{Postcondizione:} il professore ottiene la lista con indicati gli \citGloss{indirizzi}.
+	\item \textbf{Precondizione:} il sistema ha riconosciuto l'utente nel ruolo del professore, il quale ha richiesto la visualizzazione degli studenti registrati ad un dato esame.
+	\item \textbf{Postcondizione:} il sistema ha fornito per ogni studente il relativo \citGloss{indirizzo}.
 \end{itemize}
 \subsection{UC8.2.2 - Visualizzazione nomi degli studenti dell'esame}
 \begin{itemize}
 	\item \textbf{Attori primari:} professore;
 	\item \textbf{Scopo e descrizione:} il professore visualizza una lista di tutti i nomi degli studenti registrati all'esame;
 	\item \textbf{Scenario principale:} il professore richiede al sistema una lista di studenti per poterne visualizzare il nome ed eventualmente compiere altre operazioni su di essi;
-	\item \textbf{Precondizione:}l'utente è già riconosciuto dal sistema come professore e richiede la visualizzazione della lista degli studenti iscritti a un determinato esame di sua competenza per visualizzarne i relativi nomi.
-	\item \textbf{Postcondizione:} il professore ottiene la lista con indicati i relativi nomi.
+	\item \textbf{Precondizione:} il sistema ha riconosciuto l'utente nel ruolo del professore, il quale ha richiesto la visualizzazione degli studenti registrati ad un dato esame.
+	\item \textbf{Postcondizione:} il sistema ha fornito per ogni studente il relativo nome.
 \end{itemize}
 \subsection{UC8.2.3 - Visualizzazione cognomi degli studenti dell'esame}
 \begin{itemize}
 	\item \textbf{Attori primari:} professore;
 	\item \textbf{Scopo e descrizione:} il professore visualizza una lista di tutti i cognomi degli studenti registrati all'esame;
 	\item \textbf{Scenario principale:} il professore richiede al sistema una lista di studenti per poterne visualizzare il cognomi ed eventualmente compiere altre operazioni su di essi;
-	\item \textbf{Precondizione:}l'utente è già riconosciuto dal sistema come professore e richiede la visualizzazione della lista degli studenti iscritti a un determinato esame di sua competenza per visualizzarne i relativi cognomi.
-	\item \textbf{Postcondizione:} il professore ottiene la lista con indicati i relativi cognomi.
+	\item \textbf{Precondizione:} il sistema ha riconosciuto l'utente nel ruolo del professore, il quale ha richiesto la visualizzazione degli studenti registrati ad un dato esame.
+	\item \textbf{Postcondizione:} il sistema ha fornito per ogni studente il relativo cognome.
 \end{itemize}
+
+% TODO UC8.3.1 inserimento voto numerico
 
 \subsection{UC8.3 - Registrazione valutazione di un esame}
 \begin{itemize}
@@ -984,11 +982,9 @@
 		\item Il professore consulta la lista degli studenti ed individua la persona alla quale deve inserire la valutazione [UC8.2];
 		\item Il professore inserisce la valutazione allo studente [UC8.3].
 	\end{enumerate}
-	\item \textbf{Precondizione:} il professore possiede una valutazione da assegnare a uno studente riguardante un determinato esame e desidera registrarlo;
-	\item \textbf{Postcondizione:} il voto è stato inserito nella \citGloss{blockchain} universitaria.
+	\item \textbf{Precondizione:} il sistema ha fornito al professore la lista degli esami di sua competenza [UC8.1] e, dopo che l'utente ne ha indicato uno, ha fornito la lista degli studenti registrati ad esso [UC8.2];
+	\item \textbf{Postcondizione:} il sistema ha registrato il voto all'interno della \citGloss{blockchain}.
 \end{itemize}
-
-
 \subsection{UC9 - Gestione aspetti relativi allo studente}
 \begin{itemize}
 	\item \textbf{Attori primari:} studente;
@@ -1004,6 +1000,9 @@
 	\label{fig:UC9 - Gestione aspetti relativi allo studente}
 \end{figure}
 
+
+
+% TODO aggiustare pre e post da qui
 
 \subsection{UC9.1 - Visualizzazione delle informazione degli esami ai quali è iscritto}
 \begin{itemize}

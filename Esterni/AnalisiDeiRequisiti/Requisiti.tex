@@ -393,6 +393,9 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 	UC9.2 & Visualizzazione degli esami opzionali e dei loro crediti & R0F5.2 \\
 	UC9.3 & Iscrizione ad un esame opzionale & R0F5.2.2 \\
 	UC9.4 & Visualizzazione delle informazioni relative ai crediti & R0F5.1.4 \\ 
+	UC9.4.1 & Visualizzazione somma dei crediti & R0F5.1.4 \\ 
+	UC9.4.2 & Visualizzazione crediti mancanti & R0F5.1.4 \\ 
+	UC9.4.3 & Visualizzazione crediti ottenibili dagli esami a cui è iscritto & R0F5.1.4 \\ 
 	& & R0F5.2.1 \\
 	UC10 & Gestione degli amministratori & R0F11 \\
 	UC10.1 & Aggiunta di un amministratore & R0F11.1 \\
@@ -665,10 +668,13 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 	} \\
 	R0F5.1.4 & Uno studente può ottenere il totale dei suoi crediti & \makecell[tl]{
 		Interno \\ 
-		UC9.4
+		UC9.4 \\
+		UC9.4.1 \\
+		UC9.4.3
 	} \\
 	R0F5.1.5 & Uno studente può ottenere il numero di crediti da raggiungere per la laurea & \makecell[tl]{
-		Interno
+		Interno \\
+		UC9.4.2
 	} \\
 	R0F5.2 & Uno studente può ottenere l'elenco degli esami opzionali & \makecell[tl]{
 		Capitolato \\ 

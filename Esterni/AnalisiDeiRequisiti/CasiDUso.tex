@@ -1093,7 +1093,6 @@
 	\item \textbf{Postcondizione:} il sistema ha iscritto l'utente all'esame opzionale da lui scelto.
 \end{itemize}
 
-% TODO specificare in UC9.4.1 etc quali informazini (somma dei crediti, crediti da raggiungere, crediti che gli servono, crediti acquisibili con gli esami ai quali è iscritto)
 \subsection{UC9.4 - Visualizzazione delle informazioni relative ai crediti}
 \begin{itemize}
 	\item \textbf{Attori primari:} studente;
@@ -1101,6 +1100,30 @@
 	\item \textbf{Scenario principale:} lo studente richiede al sistema le informazioni riguardanti i suoi crediti;
 	\item \textbf{Precondizione:} il sistema ha riconosciuto l'utente nel ruolo di studente e ha fornito la lista delle funzionalità alle quali ha accesso relative alla gestione degli esami secondo le restrizioni permesse dal suo ruolo; 
 	\item \textbf{Postcondizione:} il sistema fornisce allo studente delle informazioni riguardanti la sua attuale situazione universitaria.
+\end{itemize}
+\subsection{UC9.4.1 - Visualizzazione somma dei crediti}
+\begin{itemize}
+	\item \textbf{Attori primari:} studente;
+	\item \textbf{Scopo e descrizione:} lo studente visualizza il numero di crediti totalizzati nel suo percorso di studi;
+	\item \textbf{Scenario principale:} lo studente richiede al sistema la somma totale dei crediti a lui assegnati;
+	\item \textbf{Precondizione:} il sistema ha mostrato allo studente il riepilogo del suo percorso accademico;
+	\item \textbf{Postcondizione:} il sistema fornisce allo studente le informazioni relative al numero di crediti realizzati.
+\end{itemize}
+\subsection{UC9.4.2 - Visualizzazione crediti mancanti}
+\begin{itemize}
+	\item \textbf{Attori primari:} studente;
+	\item \textbf{Scopo e descrizione:} lo studente visualizza il numero di crediti mancanti per completare il suo percorso di studi;
+	\item \textbf{Scenario principale:} lo studente richiede al sistema il numero crediti a lui mancanti;
+	\item \textbf{Precondizione:} il sistema ha mostrato allo studente il riepilogo del suo percorso accademico;
+	\item \textbf{Postcondizione:} il sistema fornisce allo studente le informazioni relative al numero di crediti mancanti.
+\end{itemize}
+\subsection{UC9.4.3 - Visualizzazione crediti ottenibili dagli esami a cui è iscritto}
+\begin{itemize}
+	\item \textbf{Attori primari:} studente;
+	\item \textbf{Scopo e descrizione:} lo studente visualizza il numero di crediti ottenibili in caso di esito positivo agli esami in cui è iscritto;
+	\item \textbf{Scenario principale:} lo studente richiede al sistema la somma totale dei crediti ottenibili dagli esami a cui è iscritto;
+	\item \textbf{Precondizione:} il sistema ha mostrato allo studente il riepilogo del suo percorso accademico;
+	\item \textbf{Postcondizione:} il sistema fornisce allo studente le informazioni relative al numero di crediti ottenibili in caso di esito positivo agli esami in cui è iscritto.
 \end{itemize}
 
 \subsection{UC10 - Gestione degli amministratori}

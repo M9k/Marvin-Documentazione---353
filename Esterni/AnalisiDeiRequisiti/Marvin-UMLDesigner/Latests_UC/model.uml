@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_TAgdECFfEeit2OXmT_Uz3A" name="NewModel">
+  <packagedElement xmi:type="uml:Component" xmi:id="_aTtk8CFfEeit2OXmT_Uz3A" name="UC8.3 - Registrazione valutazione di un esame" useCase="_gjm1sCFfEeit2OXmT_Uz3A _gzg58CFfEeit2OXmT_Uz3A _hJXOICFfEeit2OXmT_Uz3A">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_gjm1sCFfEeit2OXmT_Uz3A" name="UC8.3.1 - Inserimento voto numerico&#xA;----------------------&#xA;Extension points:&#xA;- Visualizzazione errore voto inferiore a 18&#xA;- Visualizzazione errore voto non numerico" subject="_aTtk8CFfEeit2OXmT_Uz3A"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_gzg58CFfEeit2OXmT_Uz3A" name="UC8.3.2 - Visualizzazione errore voto inferiore a 18" subject="_aTtk8CFfEeit2OXmT_Uz3A">
+      <extend xmi:id="_33GKUCFfEeit2OXmT_Uz3A" extendedCase="_gjm1sCFfEeit2OXmT_Uz3A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_hJXOICFfEeit2OXmT_Uz3A" name="UC8.3.3 - Visualizzazione errore voto non numerico" subject="_aTtk8CFfEeit2OXmT_Uz3A">
+      <extend xmi:id="_4VaeACFfEeit2OXmT_Uz3A" extendedCase="_gjm1sCFfEeit2OXmT_Uz3A"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_eZAmYCFfEeit2OXmT_Uz3A" name="Amministratore">
+    <eAnnotations xmi:id="_eZB0gCFfEeit2OXmT_Uz3A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details xmi:id="_eZB0gSFfEeit2OXmT_Uz3A" key="Human"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Iu84QCFgEeit2OXmT_Uz3A" memberEnd="_Iu9fUCFgEeit2OXmT_Uz3A _Iu9fUSFgEeit2OXmT_Uz3A">
+    <ownedEnd xmi:id="_Iu9fUCFgEeit2OXmT_Uz3A" type="_eZAmYCFfEeit2OXmT_Uz3A" association="_Iu84QCFgEeit2OXmT_Uz3A"/>
+    <ownedEnd xmi:id="_Iu9fUSFgEeit2OXmT_Uz3A" type="_gjm1sCFfEeit2OXmT_Uz3A" association="_Iu84QCFgEeit2OXmT_Uz3A"/>
+  </packagedElement>
+</uml:Model>

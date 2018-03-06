@@ -1758,7 +1758,7 @@
               <styles xmi:type="notation:ShapeStyle" xmi:id="_d8ELgd9PEeeVgP8NQIMk7g" fontColor="7490599" fontName="Cantarell"/>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_d8ELgt9PEeeVgP8NQIMk7g" x="396" y="62" width="205" height="69"/>
             </children>
-            <children xmi:type="notation:Shape" xmi:id="_7m94sN9QEeeVgP8NQIMk7g" type="Note" fontName="Cantarell" description="Condition: L'amministratore ha inserisce un nome non valido&#xD;&#xA;Extension Point: Visualizzazione errore nome esame non valido" fillColor="13369343" transparency="0" lineColor="6737151" lineWidth="1">
+            <children xmi:type="notation:Shape" xmi:id="_7m94sN9QEeeVgP8NQIMk7g" type="Note" fontName="Cantarell" description="Condition: L'amministratore ha inserisce un nome non valido&#xD;&#xA;Extension Point: Visualizzazione errore esame non valido" fillColor="13369343" transparency="0" lineColor="6737151" lineWidth="1">
               <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7m94sd9QEeeVgP8NQIMk7g" source="specificStyles">
                 <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7m94st9QEeeVgP8NQIMk7g" key="verticalAlignment" value="8"/>
               </eAnnotations>
@@ -2137,7 +2137,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Capture']/@ownedRepresentations[name='Use%20Case%20Diagram']/@defaultLayer/@nodeMappings[name='UCD_UseCase']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_doYagd9PEeeVgP8NQIMk7g" name="UC7.5 - Creazione esame in un corso&#xD;&#xA;-------------------------------&#xD;&#xA;Extension points:&#xD;&#xA;-Visualizzazione errore nome esame non valido" outgoingEdges="_ZyrCUN9REeeVgP8NQIMk7g" incomingEdges="_5YICkN9QEeeVgP8NQIMk7g" width="14" height="14" resizeKind="NSEW">
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_doYagd9PEeeVgP8NQIMk7g" name="UC7.5 - Creazione esame in un corso&#xD;&#xA;-------------------------------&#xD;&#xA;Extension points:&#xD;&#xA;-Visualizzazione errore esame non valido" outgoingEdges="_ZyrCUN9REeeVgP8NQIMk7g" incomingEdges="_5YICkN9QEeeVgP8NQIMk7g" width="14" height="14" resizeKind="NSEW">
         <target xmi:type="uml:UseCase" href="Marvin.uml#_doYagN9PEeeVgP8NQIMk7g"/>
         <semanticElements xmi:type="uml:UseCase" href="Marvin.uml#_doYagN9PEeeVgP8NQIMk7g"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -2148,7 +2148,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Capture']/@ownedRepresentations[name='Use%20Case%20Diagram']/@defaultLayer/@nodeMappings[name='UCD_UseCase']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_d7uNQd9PEeeVgP8NQIMk7g" name="UC7.6 - Visualizzazione errore nome esame non valido" outgoingEdges="_5YICkN9QEeeVgP8NQIMk7g" width="14" height="14" resizeKind="NSEW">
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_d7uNQd9PEeeVgP8NQIMk7g" name="UC7.6 - Visualizzazione errore esame non valido" outgoingEdges="_5YICkN9QEeeVgP8NQIMk7g" width="14" height="14" resizeKind="NSEW">
         <target xmi:type="uml:UseCase" href="Marvin.uml#_d7uNQN9PEeeVgP8NQIMk7g"/>
         <semanticElements xmi:type="uml:UseCase" href="Marvin.uml#_d7uNQN9PEeeVgP8NQIMk7g"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>

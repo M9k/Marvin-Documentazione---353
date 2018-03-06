@@ -534,8 +534,8 @@
       <packagedElement xmi:type="uml:UseCase" xmi:id="_dOQDQN9PEeeVgP8NQIMk7g" name="UC7.2 - Visualizzazione errore sigla invalida" subject="_MSZmIN9PEeeVgP8NQIMk7g">
         <extend xmi:id="_6ZRWgN9QEeeVgP8NQIMk7g" extendedCase="_bJO3gN9PEeeVgP8NQIMk7g"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_doYagN9PEeeVgP8NQIMk7g" name="UC7.5 - Creazione esame in un corso&#xD;&#xA;-------------------------------&#xD;&#xA;Extension points:&#xD;&#xA;-Visualizzazione errore nome esame non valido" subject="_MSZmIN9PEeeVgP8NQIMk7g"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_d7uNQN9PEeeVgP8NQIMk7g" name="UC7.6 - Visualizzazione errore nome esame non valido" subject="_MSZmIN9PEeeVgP8NQIMk7g">
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_doYagN9PEeeVgP8NQIMk7g" name="UC7.5 - Creazione esame in un corso&#xD;&#xA;-------------------------------&#xD;&#xA;Extension points:&#xD;&#xA;-Visualizzazione errore esame non valido" subject="_MSZmIN9PEeeVgP8NQIMk7g"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_d7uNQN9PEeeVgP8NQIMk7g" name="UC7.6 - Visualizzazione errore esame non valido" subject="_MSZmIN9PEeeVgP8NQIMk7g">
         <extend xmi:id="_5YG0cN9QEeeVgP8NQIMk7g" extendedCase="_doYagN9PEeeVgP8NQIMk7g"/>
       </packagedElement>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_-CjCcBPWEeit3JTnlaW4wQ" name="UC7.11 - Visualizzazione lista professori da associare ad un esame" subject="_MSZmIN9PEeeVgP8NQIMk7g"/>

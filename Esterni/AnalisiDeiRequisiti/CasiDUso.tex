@@ -1025,8 +1025,14 @@
 		\item Il professore inserisce la valutazione allo studente [UC8.3].
 	\end{enumerate}
 	\item \textbf{Precondizione:} il sistema ha fornito al professore la lista degli esami di sua competenza [UC8.1] e, dopo che l'utente ne ha indicato uno, ha fornito la lista degli studenti registrati ad esso [UC8.2];
-	\item \textbf{Postcondizione:} il sistema ha registrato il voto all'interno della \citGloss{blockchain}.
+	\item \textbf{Postcondizione:} il sistema fornisce gli elementi necessari per registrare l'esame sulla \citGloss{blockchain}.
 \end{itemize}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{UC8_3.jpg}
+	\caption{UC8.3 - Registrazione valutazione di un esame}
+	\label{UC8.3 - Registrazione valutazione di un esame}
+\end{figure}
 \subsection{UC8.3.1 - Inserimento voto numerico}
 \begin{itemize}
 	\item \textbf{Attori primari:} professore;

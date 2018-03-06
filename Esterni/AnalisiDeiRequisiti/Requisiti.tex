@@ -94,6 +94,7 @@ I \citGloss{requisiti} vengono classificati ed assegnati a un identificativo uni
 	R0F11.3.1 & Obbligatorio & L'università deve poter visualizzare l'indirizzo di ogni amministratore & Interno \\
 	R0F12 & Obbligatorio & L'università può gestire gli anni accademici & Capitolato \\
 	R0F12.1 & Obbligatorio & L'università può aggiungere un \citGloss{anno accademico} & Capitolato \\
+	R0F12.1.1 & Obbligatorio & I nuovi anni accademici devono aver indicato il relativo anno solare & Capitolato \\
 	R0F12.2 & Obbligatorio & L'università può rimuovere un \citGloss{anno accademico} & Capitolato \\
 	R0F12.3 & Obbligatorio & L'università e gli amministratori possono ottenere una lista degli anni accademici, con indicato l'anno solare & Interno \\
 	\hiderowcolors
@@ -196,6 +197,7 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 	 R0F10 \\
 	 R0F12\\
 	 R0F12.1 \\
+	 R0F12.1.1 \\
 	 R0Q2 \\
 	 R0Q3 \\
 	 R0Q4 \\
@@ -327,12 +329,13 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 	UC5.6 & Rimozione utente & R0F1.3 \\
 	UC6 & Gestione anni accademici & R0F12 \\
 	UC6.1 & Aggiunta \citGloss{anno accademico} & R0F12.1 \\
+	UC6.1.1 & Inserimento anno solare di riferimento & R0F12.1.1 \\
+	UC6.1.2 & Visualizzazione messaggio di \citGloss{anno accademico} già presente & R0F12.1.1 \\
+	UC6.1.3 & Visualizzazione messaggio anno non compilato & R0F12.1.1 \\
+	UC6.1.4 & Visualizzazione messaggio anno malformato & R0F12.1.1 \\
 	UC6.2 & Visualizzazione lista di tutti gli anni accademici & R0F12.3 \\
 	UC6.2.1 & Visualizzazione anni solari relativi agli anni accademici & R0F12.3 \\
-	UC6.3 & Visualizzazione messaggio anno malformato & R0F12.1 \\
-	UC6.4 & Visualizzazione messaggio di \citGloss{anno accademico} già presente & R0F12.1 \\
-	UC6.5 & Visualizzazione messaggio anno non compilato & R0F12.1 \\
-	UC6.6 & Eliminazione anno accademico vuoto & R0F12.2 \\
+	UC6.3 & Eliminazione anno accademico vuoto & R0F12.2 \\
 	UC7 & Gestione corsi di laurea & R0F3 \\
 	UC7.1 & Creazione \citGloss{corso di laurea} & \makecell[tl]{
 		R0F3.1\\
@@ -523,13 +526,17 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 	R0F12.1 & L'università può aggiungere un \citGloss{anno accademico} & \makecell[tl]{
 		Capitolato \\ 
 		UC6.1 \\ 
-		UC6.3 \\ 
-		UC6.4 \\ 
-		UC6.5
+	} \\
+	R0F12.1.1 & I nuovi anni accademici devono aver indicato il relativo anno solare  & \makecell[tl]{
+		Capitolato \\ 
+		UC6.1.1 \\
+		UC6.1.2 \\ 
+		UC6.1.3
+		UC6.1.4
 	} \\
 	R0F12.2 & L'università può rimuovere un \citGloss{anno accademico} & \makecell[tl]{
 	Capitolato \\ 
-	UC6.6
+	UC6.3
 	} \\
 	R0F12.3 &  L'università e gli amministratori possono ottenere una lista degli anni accademici, con indicato l'anno solare & \makecell[tl]{
 		Interno \\ 

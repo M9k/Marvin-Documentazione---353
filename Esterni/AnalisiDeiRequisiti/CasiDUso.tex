@@ -450,24 +450,55 @@
 	\label{fig:UC6 - Gestione Anni Accademici}
 \end{figure}
 
-
-% TODO aggiungere 6.1.1 inserimento anno solare di riferimento
-% TODO spostare UC6.3, UC6.4, UC6.5 sotto a UC6.1
-% TODO rinominare UC6.6 a UC6.3
 \subsection{UC6.1 - Aggiunta anno accademico}
 \begin{itemize}
 	\item \textbf{Attori primari:} università;
-	\item \textbf{Scopo e descrizione:} l'utente è già riconosciuto dal sistema come rappresentante dell'università ed aggiunge un \citGloss{anno accademico} nel sistema fornendo l'anno solare di riferimento;
-	\item \textbf{Scenario principale:} l'utente che rappresenta l'università inserisce il numero dell'anno solare da aggiungere in un campo fornito dal sistema;
-	\item \textbf{Estensioni:}
-	\begin{enumerate}
-		\item Se l'utente che rappresenta l'università inserisce un anno non numerico viene mostrato un messaggio d'errore relativo alla invalidità del dato fornito [UC6.4];
-		\item Se l'utente che rappresenta l'università inserisce un'anno già presente nel sistema viene mostrato un messaggio d'errore relativo alla non univocità dell'anno [UC6.5];
-		\item Se l'utente che rappresenta l'università lascia il campo vuoto l'utente viene avvisato con un relativo messaggio d'errore [UC6.6].
-	\end{enumerate}
+	\item \textbf{Scopo e descrizione:} l'utente è già riconosciuto dal sistema come rappresentante dell'università ed aggiunge un \citGloss{anno accademico};
+	\item \textbf{Scenario principale:} l'utente che rappresenta l'università inserisce un nuovo anno accademico nel sistema;
 	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di gestore dell'università; 
 	\item \textbf{Postcondizione:} all'interno del sistema è stato aggiunto un nuovo l'\citGloss{anno accademico} da parte dell'utente che rappresenta l'università.
 \end{itemize}
+
+%TODO immagine 6.1
+\subsection{UC6.1.1 - Inserimento anno solare di riferimento}
+	\begin{itemize}
+	\item \textbf{Attori primari:} università;
+	\item \textbf{Scopo e descrizione:} l'utente è già riconosciuto dal sistema come rappresentante dell'università inserisce l'anno solare di riferimento per l'inserimento di un anno accademico;
+	\item \textbf{Scenario principale:} l'utente che rappresenta l'università inserisce il numero dell'anno solare da aggiungere in un campo fornito dal sistema;
+	\item \textbf{Estensioni:}
+	\begin{enumerate}
+		\item Se l'utente che rappresenta l'università inserisce un anno non numerico viene mostrato un messaggio d'errore relativo alla invalidità del dato fornito [UC6.1.2];
+		\item Se l'utente che rappresenta l'università inserisce un'anno già presente nel sistema viene mostrato un messaggio d'errore relativo alla non univocità dell'anno [UC6.1.3];
+		\item Se l'utente che rappresenta l'università lascia il campo vuoto l'utente viene avvisato con un relativo messaggio d'errore [UC6.1.4].
+	\end{enumerate}
+	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di gestore dell'università, al quale viene fornito un campo di testo per permettere l'inserimento dell'anno solare di riferimento; 
+	\item \textbf{Postcondizione:} all'interno del sistema è stato aggiunto un nuovo l'\citGloss{anno accademico} da parte dell'utente che rappresenta l'università con l'anno solare di riferimento indicato.
+\end{itemize}
+\subsection{UC6.1.2 - Visualizzazione messaggio di anno accademico già presente}
+\begin{itemize}
+	\item \textbf{Attori primari:} università;
+	\item \textbf{Scopo e descrizione:} l'utente che rappresenta l'università visualizza un messaggio che indica che un \citGloss{anno accademico} come quello inserito è già presente nel sistema;
+	\item \textbf{Scenario principale:} il sistema mostra all'utente che rappresenta l'università un messaggio d'errore relativo alla non univocità dell'\citGloss{anno accademico} inserito;
+	\item \textbf{Precondizione:} il sistema ha ricevuto una richiesta di creazione di un nuovo anno accademico da parte dell'utente che gestisce l'università con indicato un anno già presente;
+	\item \textbf{Postcondizione:} il sistema ha avvisato l'utente che non è possibile inserire un anno già presente.
+\end{itemize}
+\subsection{UC6.1.3 - Visualizzazione messaggio anno non compilato}
+\begin{itemize}
+	\item \textbf{Attori primari:} università;
+	\item \textbf{Scopo e descrizione:} l'utente che rappresenta l'università visualizza un messaggio che lo avvisa di aver lasciato vuoto il campo dell'\citGloss{anno accademico};
+	\item \textbf{Scenario principale:} il sistema mostra un messaggio d'errore relativo alla non compilazione dell'\citGloss{anno accademico};
+	\item \textbf{Precondizione:} il sistema ha ricevuto una richiesta di creazione di un nuovo anno accademico da parte dell'utente che gestisce l'università con l'indicazione dell'anno solare lasciata da compilare; 
+	\item \textbf{Postcondizione:} il sistema ha avvisato l'utente che non è possibile inserire un anno accademico senza indicarne l'anno solare.
+\end{itemize}
+\subsection{UC6.1.4 - Visualizzazione messaggio anno malformato}
+\begin{itemize}
+	\item \textbf{Attori primari:} università;
+	\item \textbf{Scopo e descrizione:} l'utente che rappresenta l'università visualizza un messaggio che lo informa che l'anno inserito non è numerico;
+	\item \textbf{Scenario principale:} il sistema mostra all'utente che rappresenta l'università un messaggio d'errore relativo alla malformazione dell'anno inserito;
+	\item \textbf{Precondizione:} il sistema ha ricevuto una richiesta di creazione di un nuovo anno accademico da parte dell'utente che gestisce l'università con indicato un anno non numerico; 
+	\item \textbf{Postcondizione:} il sistema ha avvisato l'utente che non è possibile inserire un anno non numerico.
+\end{itemize}
+
 \subsection{UC6.2 - Visualizzazione lista di tutti gli anni accademici}
 \begin{itemize}
 	\item \textbf{Attori primari:} università;
@@ -490,31 +521,8 @@
 	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di gestore dell'università ed ha ricevuto una richiesta di visualizzazione di tutti gli anni accademici;
 	\item \textbf{Postcondizione:} il sistema offre all'utente che gestisce l'università la lista degli anni solari relativi agli anni accademici.
 \end{itemize}
-\subsection{UC6.3 - Visualizzazione messaggio anno malformato}
-\begin{itemize}
-	\item \textbf{Attori primari:} università;
-	\item \textbf{Scopo e descrizione:} l'utente che rappresenta l'università visualizza un messaggio che lo informa che l'anno inserito non è numerico;
-	\item \textbf{Scenario principale:} il sistema mostra all'utente che rappresenta l'università un messaggio d'errore relativo alla malformazione dell'anno inserito;
-	\item \textbf{Precondizione:} il sistema ha ricevuto una richiesta di creazione di un nuovo anno accademico da parte dell'utente che gestisce l'università con indicato un anno non numerico; 
-	\item \textbf{Postcondizione:} il sistema ha avvisato l'utente che non è possibile inserire un anno non numerico.
-\end{itemize}
-\subsection{UC6.4 - Visualizzazione messaggio di anno accademico già presente}
-\begin{itemize}
-	\item \textbf{Attori primari:} università;
-	\item \textbf{Scopo e descrizione:} l'utente che rappresenta l'università visualizza un messaggio che indica che un \citGloss{anno accademico} come quello inserito è già presente nel sistema;
-	\item \textbf{Scenario principale:} il sistema mostra all'utente che rappresenta l'università un messaggio d'errore relativo alla non univocità dell'\citGloss{anno accademico} inserito;
-	\item \textbf{Precondizione:} il sistema ha ricevuto una richiesta di creazione di un nuovo anno accademico da parte dell'utente che gestisce l'università con indicato un anno già presente;
-	\item \textbf{Postcondizione:} il sistema ha avvisato l'utente che non è possibile inserire un anno già presente.
-\end{itemize}
-\subsection{UC6.5 - Visualizzazione messaggio anno non compilato}
-\begin{itemize}
-	\item \textbf{Attori primari:} università;
-	\item \textbf{Scopo e descrizione:} l'utente che rappresenta l'università visualizza un messaggio che lo avvisa di aver lasciato vuoto il campo dell'\citGloss{anno accademico};
-	\item \textbf{Scenario principale:} il sistema mostra un messaggio d'errore relativo alla non compilazione dell'\citGloss{anno accademico};
-	\item \textbf{Precondizione:} il sistema ha ricevuto una richiesta di creazione di un nuovo anno accademico da parte dell'utente che gestisce l'università con l'indicazione dell'anno solare lasciata da compilare; 
-	\item \textbf{Postcondizione:} il sistema ha avvisato l'utente che non è possibile inserire un anno accademico senza indicarne l'anno solare.
-\end{itemize}
-\subsection{UC6.6 - Eliminazione anno accademico vuoto}
+
+\subsection{UC6.3 - Eliminazione anno accademico vuoto}
 \begin{itemize}
 	\item \textbf{Attori primari:} università;
 	\item \textbf{Scopo e descrizione:} l'utente che rappresenta l'università desidera la rimozione di un anno accademico che non presenta ancora dei corsi di laurea al suo interno, ad esempio per rimediare ad un inserimento con informazioni errate;
@@ -522,6 +530,7 @@
 	\item \textbf{Precondizione:} il sistema ha fornito una lista degli \citGloss{anni accademici} [UC6.2] all'utente.
 	\item \textbf{Postcondizione:} L'\citGloss{anno accademico} che l'utente desidera cancellare è stato rimosso dal sistema.
 \end{itemize}
+
 \subsection{UC7 - Gestione corsi di laurea}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;

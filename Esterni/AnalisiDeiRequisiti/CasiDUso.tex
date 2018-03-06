@@ -269,14 +269,13 @@
 	\item \textbf{Postcondizione:} il sistema ha effettuate le operazioni richieste riguardanti la gestione degli utenti.
 \end{itemize}
 
+%TODO rifare immagine
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\linewidth]{UC5.jpg}
 	\caption{UC5 - Gestione Utenti}
 	\label{fig:UC5 - Gestione Utenti}
 \end{figure}
-
-% TODO unire UC5.1 e UC5.2?
 
 \subsection{UC5.1 - Visualizzazione lista degli utenti approvati}
 \begin{itemize}
@@ -285,8 +284,8 @@
 	\item \textbf{Scenario principale:} l'amministratore richiede al sistema una lista di utenti per poterli visualizzare ed eventualmente compiere altre operazioni su di essi;
 	\item \textbf{Specializzazioni:}
 	\begin{enumerate}
-		\item UC5.6 - Visualizzazione lista degli studenti approvati;
-		\item UC5.2 - Visualizzazione lista dei professori approvati.
+		\item UC5.2 - Visualizzazione lista degli studenti approvati;
+		\item UC5.3 - Visualizzazione lista dei professori approvati.
 	\end{enumerate}
 	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di amministratore; 
 	\item \textbf{Postcondizione:} il sistema offre all'amministratore la lista degli utenti approvati.
@@ -321,7 +320,7 @@
 	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di amministratore ed ha ricevuto la richiesta di visualizzazione della lista degli utenti approvati;
 	\item \textbf{Postcondizione:} il sistema offre all'amministratore la lista degli utenti approvati con indicati i cognomi.
 \end{itemize}
-\subsection{UC5.6 - Visualizzazione lista degli studenti approvati}
+\subsection{UC5.2 - Visualizzazione lista degli studenti approvati}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
 	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti gli studenti registrati nel sistema, visualizzando per ognuno di essi le informazioni basilari;
@@ -330,13 +329,14 @@
 	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di amministratore; 
 	\item \textbf{Postcondizione:} il sistema offre all'amministratore la lista degli studenti approvati.
 \end{itemize}
+% TODO rifare immagine
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.9\linewidth]{UC5_6.jpg}
-	\caption{UC5.6 - Visualizzazione lista degli studenti approvati}
-	\label{fig:UC5.6 - Visualizzazione lista degli studenti approvati}
+	\caption{UC5.2 - Visualizzazione lista degli studenti approvati}
+	\label{fig:UC5.2 - Visualizzazione lista degli studenti approvati}
 \end{figure}
-\subsection{UC5.6.1 - Visualizzazione corsi degli studenti approvati}
+\subsection{UC5.2.1 - Visualizzazione corsi degli studenti approvati}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
 	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti gli studenti registrati nel sistema con indicato il relativo corso universitario;
@@ -344,7 +344,7 @@
 	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di amministratore ed ha ricevuto la richiesta di visualizzazione della lista degli studenti approvati;
 	\item \textbf{Postcondizione:} il sistema offre all'amministratore la lista degli studenti approvati con indicati i corsi di laurea.
 \end{itemize}
-\subsection{UC5.2 - Visualizzazione lista dei professori approvati}
+\subsection{UC5.3 - Visualizzazione lista dei professori approvati}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
 	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti i professori registrati nel sistema, visualizzando per ognuno di essi le informazioni basilari;
@@ -353,7 +353,7 @@
 	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di amministratore; 
 	\item \textbf{Postcondizione:} il sistema offre all'amministratore la lista dei professori approvati.
 \end{itemize}
-\subsection{UC5.3 - Visualizzazione lista utenti in attesa di abilitazione}
+\subsection{UC5.4 - Visualizzazione lista utenti in attesa di abilitazione}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
 	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti gli utenti ancora non abilitati, ottenendo per ognuno tutte le informazioni utili;
@@ -361,13 +361,14 @@
 	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di amministratore; 
 	\item \textbf{Postcondizione:} il sistema offre all'amministratore la lista degli utenti in attesa di approvazione.
 \end{itemize}
+%TODO rifare immagine
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.9\linewidth]{UC5_3.jpg}
-	\caption{UC5.3 - Visualizzazione lista utenti in attesa di abilitazione}
-	\label{fig:UC5.3 - Visualizzazione lista utenti in attesa di abilitazione}
+	\caption{UC5.4 - Visualizzazione lista utenti in attesa di abilitazione}
+	\label{fig:UC5.4 - Visualizzazione lista utenti in attesa di abilitazione}
 \end{figure}
-\subsection{UC5.3.1 - Visualizzazione indirizzi degli utenti in attesa di abilitazione}
+\subsection{UC5.4.1 - Visualizzazione indirizzi degli utenti in attesa di abilitazione}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
 	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti gli \citGloss{indirizzi} della rete \citGloss{Ethereum} degli utenti in attesa di abilitazione;
@@ -375,7 +376,7 @@
 	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di amministratore ed ha ricevuto la richiesta di visualizzazione della lista degli uttenti in attesa di approvazione;
 	\item \textbf{Postcondizione:} il sistema offre all'amministratore la lista degli utenti in attesa di approvazione con indicati gli \citGloss{indirizzi}.
 \end{itemize}
-\subsection{UC5.3.2 - Visualizzazione nomi degli utenti in attesa di abilitazione}
+\subsection{UC5.4.2 - Visualizzazione nomi degli utenti in attesa di abilitazione}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
 	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti i nomi degli utenti in attesa di abilitazione;
@@ -383,7 +384,7 @@
 	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di amministratore ed ha ricevuto la richiesta di visualizzazione della lista degli uttenti in attesa di approvazione;
 	\item \textbf{Postcondizione:} il sistema offre all'amministratore la lista degli utenti in attesa di approvazione con indicati i nomi.
 \end{itemize}
-\subsection{UC5.3.3 - Visualizzazione cognomi degli utenti in attesa di abilitazione}
+\subsection{UC5.4.3 - Visualizzazione cognomi degli utenti in attesa di abilitazione}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
 	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti i cognomi degli utenti in attesa di abilitazione;
@@ -391,7 +392,7 @@
 	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di amministratore ed ha ricevuto la richiesta di visualizzazione della lista degli uttenti in attesa di approvazione;
 	\item \textbf{Postcondizione:} il sistema offre all'amministratore la lista degli utenti in attesa di approvazione con indicati i cognomi.
 \end{itemize}
-\subsection{UC5.3.4 - Visualizzazione ruolo degli utenti in attesa di abilitazione}
+\subsection{UC5.4.4 - Visualizzazione ruolo degli utenti in attesa di abilitazione}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
 	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista degli utenti in attesa di abilitazione ed i relativi ruoli che desiderano ricoprire una volta approvati, cioè professori o studenti.
@@ -399,7 +400,7 @@
 	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di amministratore ed ha ricevuto la richiesta di visualizzazione della lista degli uttenti in attesa di approvazione;
 	\item \textbf{Postcondizione:} il sistema offre all'amministratore la lista degli utenti in attesa di approvazione con indicati i ruoli che desiderano ottenere.
 \end{itemize}
-\subsection{UC5.3.5 - Visualizzazione corsi degli utenti in attesa di abilitazione}
+\subsection{UC5.4.5 - Visualizzazione corsi degli utenti in attesa di abilitazione}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
 	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti gli utenti in attesa di abilitazione con indicato il relativo corso universitario nel caso l'utente abbia richiesto di essere uno studente;
@@ -407,28 +408,28 @@
 	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di amministratore ed ha ricevuto la richiesta di visualizzazione della lista degli uttenti in attesa di approvazione;
 	\item \textbf{Postcondizione:} il sistema offre all'amministratore la lista degli utenti in attesa di approvazione con indicati i corsi universitari ai quali desiderano partecipare nel caso si tratti di studenti, altrimenti verrà restituito un campo vuoto.
 \end{itemize}
-\subsection{UC5.4 - Abilitazione utente}
+\subsection{UC5.5 - Abilitazione utente}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
 	\item \textbf{Scopo e descrizione:} l'amministratore abilita la registrazione di un utente;
 	\item \textbf{Scenario principale:}
 	\begin{enumerate}
 		\item L'amministratore visualizza la lista degli utenti in attesa di abilitazione [UC7];
-		\item L'amministratore lo abilita [UC5.4].
+		\item L'amministratore lo abilita [UC5.5].
 	\end{enumerate}
-	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di amministratore e gli ha precedentemente fornito la lista degli utenti in attesa di abilitazione [UC5.3];
+	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di amministratore e gli ha precedentemente fornito la lista degli utenti in attesa di abilitazione [UC5.4];
 	\item \textbf{Postcondizione:} il sistema abilita un utente, rimuovendolo dalla lista degli utenti in attesa di abilitazione ed aggiungendolo alla relativa lista degli utenti abilitati.
 \end{itemize}
-\subsection{UC5.5 - Rimozione utente}
+\subsection{UC5.6 - Rimozione utente}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
 	\item \textbf{Scopo e descrizione:} l'amministratore rimuove dal sistema un utente non ancora abilitato o già abilitato;
 	\item \textbf{Scenario principale:}
 	\begin{enumerate}
 		\item L'amministratore visualizza gli utenti abilitati o in attesa di abilitazione e ne seleziona uno [UC5.1 o UC6 o UC7];
-		\item L'amministratore rimuove l'utente selezionato [UC5.5].
+		\item L'amministratore rimuove l'utente selezionato [UC5.6].
 	\end{enumerate}
-	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di amministratore e gli ha precedentemente fornito la lista degli utenti, di qualsiasi genere [UC5.1, UC5.2, UC5.3];
+	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di amministratore e gli ha precedentemente fornito la lista degli utenti, di qualsiasi genere [UC5.1, UC5.3, UC5.4];
 	\item \textbf{Postcondizione:} il sistema rimuove l'utente indicato dall'amministratore.
 \end{itemize}
 
@@ -441,6 +442,7 @@
 	\item \textbf{Postcondizione:} il sistema ha effettuate le operazioni richieste riguardanti la gestione degli anni accademici.
 \end{itemize}
 
+% TODO rifare immagine
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1.1\linewidth]{UC6.jpg}
@@ -448,6 +450,10 @@
 	\label{fig:UC6 - Gestione Anni Accademici}
 \end{figure}
 
+
+% TODO aggiungere 6.1.1 inserimento anno solare di riferimento
+% TODO spostare UC6.3, UC6.4, UC6.5 sotto a UC6.1
+% TODO rinominare UC6.6 a UC6.3
 \subsection{UC6.1 - Aggiunta anno accademico}
 \begin{itemize}
 	\item \textbf{Attori primari:} università;
@@ -508,14 +514,13 @@
 	\item \textbf{Precondizione:} il sistema ha ricevuto una richiesta di creazione di un nuovo anno accademico da parte dell'utente che gestisce l'università con l'indicazione dell'anno solare lasciata da compilare; 
 	\item \textbf{Postcondizione:} il sistema ha avvisato l'utente che non è possibile inserire un anno accademico senza indicarne l'anno solare.
 \end{itemize}
-% estendere?
 \subsection{UC6.6 - Eliminazione anno accademico vuoto}
 \begin{itemize}
-\item \textbf{Attori primari:} università;
-\item \textbf{Scopo e descrizione:} l'utente che rappresenta l'università desidera la rimozione di un anno accademico che non presenta ancora dei corsi di laurea al suo interno, ad esempio per rimediare ad un inserimento con informazioni errate;
-\item \textbf{Scenario principale:} l'utente che rappresenta l'università desidera rimuovere un anno accademico che non presenta corsi collegati dal sistema;
-\item \textbf{Precondizione:} il sistema ha fornito una lista degli \citGloss{anni accademici} [UC6.2] all'utente.
-\item \textbf{Postcondizione:} L'\citGloss{anno accademico} che l'utente desidera cancellare è stato rimosso dal sistema.
+	\item \textbf{Attori primari:} università;
+	\item \textbf{Scopo e descrizione:} l'utente che rappresenta l'università desidera la rimozione di un anno accademico che non presenta ancora dei corsi di laurea al suo interno, ad esempio per rimediare ad un inserimento con informazioni errate;
+	\item \textbf{Scenario principale:} l'utente che rappresenta l'università desidera rimuovere un anno accademico che non presenta corsi collegati dal sistema;
+	\item \textbf{Precondizione:} il sistema ha fornito una lista degli \citGloss{anni accademici} [UC6.2] all'utente.
+	\item \textbf{Postcondizione:} L'\citGloss{anno accademico} che l'utente desidera cancellare è stato rimosso dal sistema.
 \end{itemize}
 \subsection{UC7 - Gestione corsi di laurea}
 \begin{itemize}
@@ -526,7 +531,7 @@
 	\item \textbf{Postcondizione:} il sistema ha effettuate le operazioni richieste riguardanti la gestione dei corsi di laurea.
 \end{itemize}
 
-%TODO rifare immagine
+%TODO rifare immagine, UC 7.11 illeggibile e font diverso
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1.1\linewidth]{UC7.jpg}
@@ -562,8 +567,6 @@
 	\item \textbf{Precondizione:} il sistema ha ricevuto una richiesta di creazione di un \citGloss{corso di laurea} utilizzando una sigla che non rispetta i \citGloss{requisiti} indicati dal sistema; 
 	\item \textbf{Postcondizione:} il sistema ha avvisato l'amministratore dell'impossibilità di utilizzare quella determinata sigla per la creazione di un nuovo corso, indicandogli la forma corretta.
 \end{itemize}
-
-% TODO - UC 7.3, 7.4 come specializzazioni?
 
 \subsection{UC7.3 - Visualizzazione lista completa dei corsi}
 \begin{itemize}
@@ -678,7 +681,6 @@
 	\item \textbf{Postcondizione:} il sistema indica all'utente che il numero di crediti inserito non è valido, indicando quali vincoli deve soddisfare.
 \end{itemize}
 
-% TODO 7.7 e 7.8 come estensioni di uno stesso UC?
 \subsection{UC7.6 - Visualizzazione lista esami per corso}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
@@ -795,6 +797,7 @@
 	\item \textbf{Precondizione:} il sistema ha riconosciuto l'utente come amministratore e ha precedentemente fornito un elenco di esami [UC7.6 o UC7.7]; 
 	\item \textbf{Postcondizione:} il sistema he fornito all'amministratore informazioni maggiormente dettagliare riguardanti un esame richiesto.
 \end{itemize}
+% TODO aggiungere 7.8.7 all'immagine
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\linewidth]{UC7_9.jpg}
@@ -833,7 +836,6 @@
 	\item \textbf{Precondizione:} il sistema ha riconosciuto l'utente come amministratore e quest'ultimo ha richiesto la visualizzazione dei dettagli relativi ad un esame; 
 	\item \textbf{Postcondizione:} il sistema ha visualizzato il nome del professore assegnato all'esame indicato.
 \end{itemize}
-% TODO visualizzare anche l'indirizzo del professore per evitare problemi di omonimi
 \subsection{UC7.8.5 - Visualizzazione cognome del professore associato all'esame se presente}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
@@ -849,6 +851,14 @@
 	\item \textbf{Scenario principale:} l'amministratore visualizza il numero di studenti iscritti all'esame;
 	\item \textbf{Precondizione:} il sistema ha riconosciuto l'utente come amministratore e quest'ultimo ha richiesto la visualizzazione dei dettagli relativi ad un esame; 
 	\item \textbf{Postcondizione:} il sistema ha visualizzato il numero di studenti iscritti all'esame indicato.
+\end{itemize}
+\subsection{UC7.8.7 - Visualizzazione indirizzo del professore associato all'esame se presente}
+\begin{itemize}
+	\item \textbf{Attori primari:} amministratore;
+	\item \textbf{Scopo e descrizione:} l'amministratore vuole visualizzare l'indirizzo del professore associato all'esame per effettuare, eventualmente, delle operazioni su di esso;
+	\item \textbf{Scenario principale:} l'amministratore visualizza l'indirizzo del professore associato all'esame;
+	\item \textbf{Precondizione:} il sistema ha riconosciuto l'utente come amministratore e quest'ultimo ha richiesto la visualizzazione dei dettagli relativi ad un esame; 
+	\item \textbf{Postcondizione:} il sistema ha visualizzato l'indirizzo del professore assegnato all'esame indicato.
 \end{itemize}
 \subsection{UC7.9 - Visualizzazione di tutti gli anni accademici}
 \begin{itemize}

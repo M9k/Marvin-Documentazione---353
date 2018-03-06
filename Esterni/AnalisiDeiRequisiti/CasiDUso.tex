@@ -969,8 +969,6 @@
 	\item \textbf{Postcondizione:} il sistema ha fornito per ogni studente il relativo cognome.
 \end{itemize}
 
-% TODO UC8.3.1 inserimento voto numerico
-
 \subsection{UC8.3 - Registrazione valutazione di un esame}
 \begin{itemize}
 	\item \textbf{Attori primari:} professore;
@@ -984,6 +982,35 @@
 	\end{enumerate}
 	\item \textbf{Precondizione:} il sistema ha fornito al professore la lista degli esami di sua competenza [UC8.1] e, dopo che l'utente ne ha indicato uno, ha fornito la lista degli studenti registrati ad esso [UC8.2];
 	\item \textbf{Postcondizione:} il sistema ha registrato il voto all'interno della \citGloss{blockchain}.
+\end{itemize}
+\subsection{UC8.3.1 - Inserimento voto numerico}
+\begin{itemize}
+	\item \textbf{Attori primari:} professore;
+	\item \textbf{Scopo e descrizione:} il professore inserisce la valutazione numerica relativa all'esame;
+	\item \textbf{Scenario principale:} il professore riempie il campo dati relativo alla valutazione con un voto superiore a 17;
+	\item \textbf{Estensioni:}
+	\begin{itemize}
+		\item Se il professore inserisce un voto inferiore a 18 viene avvisato con un messaggio d'errore a riguardo [UC8.3.2];
+		\item Se il professore inserisce un voto non numerico viene avvisato con un errore a riguardo [UC8.3.3].
+	\end{itemize}
+	\item \textbf{Precondizione:} Il sistema fornisce al professore un campo dati per inserire il voto; 
+	\item \textbf{Postcondizione:} Il sistema riceve il voto e lo inserisce all'interno della \citGloss{blockchain}.
+\end{itemize}
+\subsection{UC8.3.2 - Visualizzazione errore voto inferiore a 18}
+\begin{itemize}
+	\item \textbf{Attori primari:} professore;
+	\item \textbf{Scopo e descrizione:} il professore viene avvisato che ha inserito un voto inferiore a 18;
+	\item \textbf{Scenario principale:} il professore visualizza una schermata d'errore relativa all'inserimento del voto;
+	\item \textbf{Precondizione:} il sistema ha ricevuto un voto inferiore a 18; 
+	\item \textbf{Postcondizione:} il sistema mostra una schermata d'errore per avvisare il professore.
+\end{itemize}
+\subsection{UC8.3.3 - Visualizzazione errore voto non numerico}
+\begin{itemize}
+	\item \textbf{Attori primari:} professore;
+	\item \textbf{Scopo e descrizione:} il professore viene avvisato che ha inserito un voto non numerico;
+	\item \textbf{Scenario principale:} il professore visualizza una schermata d'errore relativa all'inserimento del voto;
+	\item \textbf{Precondizione:} il sistema ha ricevuto un voto non numerico; 
+	\item \textbf{Postcondizione:} il sistema mostra una schermata d'errore per avvisare il professore.
 \end{itemize}
 \subsection{UC9 - Gestione aspetti relativi allo studente}
 \begin{itemize}

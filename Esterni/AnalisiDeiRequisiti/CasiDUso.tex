@@ -553,8 +553,14 @@
 	\item \textbf{Precondizione:} il sistema ha identificato l'utente come amministratore e ha fornito una lista di \citGloss{anni accademici} [UC7.10];
 	\item \textbf{Postcondizione:} è stato creato ed inserito nel sistema un nuovo \citGloss{corso di laurea} relativo all'anno accademico indicato dall'utente.
 \end{itemize}
-
-% TODO 7.1.1 - Inserimento sigla nuovo corso o qualcosa di simile - spostare UC 7.2 in UC 7.1.2 ?
+\subsection{UC7.1.1 - Inserimento sigla corso di laurea}
+\begin{itemize}
+	\item \textbf{Attori primari:} amministratore;
+	\item \textbf{Scopo e descrizione:} l'amministratore specifica la sigla del corso di laurea che vuole inserire;
+	\item \textbf{Scenario principale:} l'amministratore inserisce ila sigla del corso di laurea;
+	\item \textbf{Precondizione:} il sistema offre all'amministratore un campo dati per inserire la sigla; 
+	\item \textbf{Postcondizione:} il sistema ha ricevuto la sigla del corso di laurea.
+\end{itemize}
 
 \subsection{UC7.2 - Visualizzazione errore sigla invalida}
 \begin{itemize}
@@ -619,7 +625,6 @@
 	\item \textbf{Postcondizione:} il sistema ha fornito all'utente la sigla relativa ad ogni corso di laurea dell'anno accademico indicatogli.
 \end{itemize}
 
-% UC 7.5.1 inserimento nome, 7.5.2 inserimento crediti, 7.5.3 inserimento obbligatorietà, UC 7.6 come 7.5.4
 \subsection{UC7.5 - Creazione esame in un corso}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
@@ -627,18 +632,66 @@
 	\item \textbf{Scenario principale:} l'amministratore inserisce un nuovo esame all'interno di un corso;
 	\item \textbf{Estensioni:}
 	\begin{enumerate}
-		\item Se l'amministratore inserisce un nome invalido ottiene un messaggio d'errore [UC7.6].
+		\item Se l'amministratore inserisce dei campi non validi ottiene un messaggio d'errore [UC7.6].
 	\end{enumerate}
 	\item \textbf{Precondizione:} il sistema ha riconosciuto l'utente come amministratore e ha fornito una lista di corsi di laurea per \citGloss{anno accademico} [UC7.3];
 	\item \textbf{Postcondizione:} all'interno del sistema viene creato un nuovo esame associato al \citGloss{corso di laurea} indicato dall'utente.
 \end{itemize}
-\subsection{UC7.6 - Visualizzazione errore nome esame non valido}
+\subsection{UC7.5.1 - Inserimento nome esame}
+\begin{itemize}
+	\item \textbf{Attori primari:} amministratore;
+	\item \textbf{Scopo e descrizione:} l'amministratore specifica il nome dell'esame da inserire nel corso;
+	\item \textbf{Scenario principale:} l'amministratore inserisce il nome dell'esame;
+	\item \textbf{Estensioni:}
+	\begin{enumerate}
+		\item Se il nome non rispetta i vincoli indicati dal sistema l'amministratore viene avvisato con un messaggio d'errore [UC7.5.4].
+	\end{enumerate}
+	\item \textbf{Precondizione:} il sistema offre all'amministratore un campo da compilare con il nome dell'esame; 
+	\item \textbf{Postcondizione:} il sistema ha ricevuto il nome immesso dall'amministratore.
+\end{itemize}
+\subsection{UC7.5.2 - Inserimento numero crediti esami}
+\begin{itemize}
+	\item \textbf{Attori primari:} amministratore;
+	\item \textbf{Scopo e descrizione:} l'amministratore specifica il numero di crediti dell'esame da inserire nel corso;
+	\item \textbf{Scenario principale:} l'amministratore inserisce il numero di crediti dell'esame;
+	\item \textbf{Estensioni:}
+	\begin{enumerate}
+		\item Se il numero di crediti non rispetta i vincoli indicati dal sistema l'amministratore viene avvisato con un messaggio d'errore [UC7.5.5].
+	\end{enumerate}
+	\item \textbf{Precondizione:} il sistema offre all'amministratore un campo da compilare con il numero di crediti dell'esame; 
+	\item \textbf{Postcondizione:} il sistema ha ricevuto il numero di crediti immesso dall'amministratore.
+\end{itemize}
+\subsection{UC7.5.3 - Inserimento obbligatorietà esame}
+\begin{itemize}
+	\item \textbf{Attori primari:} amministratore;
+	\item \textbf{Scopo e descrizione:} l'amministratore indica se l'esame da inserire nel corso è obbligatorio o meno;
+	\item \textbf{Scenario principale:} l'amministratore inserisce l'obbligatorietà dell'esame;
+	\item \textbf{Precondizione:} il sistema offre all'amministratore un campo per specificare l'obbigatorietà dell'esame; 
+	\item \textbf{Postcondizione:} il sistema ha ricevuto la specifica di obbligatorietà immessa dall'amministratore.
+\end{itemize}
+\subsection{UC7.5.4 - Visualizzazione errore nome esame non valido}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
 	\item \textbf{Scopo e descrizione:} viene mostrato un messaggio d'errore relativo all'invalidità del nome del corso, in quanto non rispetta un pattern indicato dal sistema oppure già utilizzato;
 	\item \textbf{Scenario principale:} l'amministratore visualizza il messaggio d'errore;
-	\item \textbf{Precondizione:} il sistema ha ricevuto come richiesta la creazione di un esame utilizzando un nome che non rispetta i \citGloss{requisiti} indicati; 
-	\item \textbf{Postcondizione:} il sistema indica all'utente che il nome inserito risulta invalido, indicando quali vincoli deve soddisfare.
+	\item \textbf{Precondizione:} il sistema ha ricevuto un nome che non rispetta i \citGloss{requisiti} indicati; 
+	\item \textbf{Postcondizione:} il sistema indica all'utente che il nome inserito non è valido, indicando quali vincoli deve soddisfare.
+\end{itemize}
+\subsection{UC7.5.5 - Visualizzazione errore numero crediti esame non valido}
+\begin{itemize}
+	\item \textbf{Attori primari:} amministratore;
+	\item \textbf{Scopo e descrizione:} viene mostrato un messaggio d'errore relativo all'invalidità del numero di crediti del corso, in quanto non rispetta un pattern indicato dal sistema oppure già utilizzato;
+	\item \textbf{Scenario principale:} l'amministratore visualizza il messaggio d'errore;
+	\item \textbf{Precondizione:} il sistema ha ricevuto un numero di crediti che non rispetta i \citGloss{requisiti} indicati; 
+	\item \textbf{Postcondizione:} il sistema indica all'utente che il numero di crediti inserito non è valido, indicando quali vincoli deve soddisfare.
+\end{itemize}
+\subsection{UC7.6 - Visualizzazione errore esame non valido}
+\begin{itemize}
+	\item \textbf{Attori primari:} amministratore;
+	\item \textbf{Scopo e descrizione:} viene mostrato un messaggio d'errore relativo all'invalidità di alcuni campi;
+	\item \textbf{Scenario principale:} l'amministratore visualizza il messaggio d'errore;
+	\item \textbf{Precondizione:} il sistema ha ricevuto come richiesta la creazione di un esame utilizzando campi che non rispettano i \citGloss{requisiti} indicati; 
+	\item \textbf{Postcondizione:} il sistema indica all'utente i campi non validi, indicando quali vincoli deve soddisfare.
 \end{itemize}
 
 % TODO 7.7 e 7.8 come estensioni di uno stesso UC?

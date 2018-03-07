@@ -51,6 +51,12 @@ pdflatex -interaction=nonstopmode -halt-on-error VER-2018-01-09.tex && echo "ok"
 cd ..
 cd ..
 
+cd 'Esterni'
+cd VER-2018-02-18
+pdflatex -interaction=nonstopmode -halt-on-error VER-2018-02-18.tex && echo "ok" || exit  8
+cd ..
+cd ..
+
 cd 'Interni'
 cd NormeDiProgetto
 pdflatex -interaction=nonstopmode -halt-on-error NormeDiProgetto.tex && echo "ok" || exit  9
@@ -78,6 +84,24 @@ cd ..
 cd 'Interni'
 cd VER-2018-02-05
 pdflatex -interaction=nonstopmode -halt-on-error VER-2018-02-05.tex && echo "ok" || exit  11
+cd ..
+cd ..
+
+cd 'Interni'
+cd VER-2018-02-19
+pdflatex -interaction=nonstopmode -halt-on-error VER-2018-02-19.tex && echo "ok" || exit  11
+cd ..
+cd ..
+
+cd 'Interni'
+cd VER-2018-03-02
+pdflatex -interaction=nonstopmode -halt-on-error VER-2018-03-02.tex && echo "ok" || exit  11
+cd ..
+cd ..
+
+cd 'Interni'
+cd VER-2018-03-06
+pdflatex -interaction=nonstopmode -halt-on-error VER-2018-03-06.tex && echo "ok" || exit  11
 cd ..
 cd ..
 

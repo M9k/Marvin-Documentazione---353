@@ -2,11 +2,11 @@
 \begin{document}
 
 \chapter{Attualizzazione dei rischi }
-\taburowcolors[2] 2{tableLineOne .. tableLineTwo}
+\taburowcolors [2] 2{tableLineOne .. tableLineTwo}
 \tabulinesep = ^3mm_2mm
 \begin{longtabu} to \linewidth {
-		 >{\centering}m{.17\linewidth} 
-		 >{\centering}m{.17\linewidth} 
+		 >{\centering}m{.13\linewidth} 
+		 >{\centering}m{.22\linewidth} 
 		 >{\raggedright}m{.57\linewidth} 
 	 }
 	\caption[Attualizzazione dell'analisi dei rischi]{Attualizzazione dell'analisi dei rischi}
@@ -16,15 +16,19 @@
 	\textbf{Codice} & \textbf{Periodo} & \textbf{Mitigazione} \\
 	\endhead
 	
-	\rowcolor{tableLineOne} \textbf{RT001} & \textbf{Analisi} &  {
-		Si è verificato un piccolo problema legato all'ambiente \citGloss{GitHub}. Alcuni membri non avendo esperienza con quest'ambiente, hanno avuto necessità di dedicare più tempo per imparare ad utilizzare questa tecnologia.
-	}\\
-	\hline
+	\textbf{RT001} & \textbf{Analisi} &  {Si è verificato un piccolo problema legato all'ambiente \citGloss{GitHub}. Alcuni membri non avendo esperienza con quest'ambiente, hanno avuto necessità di dedicare più tempo per imparare ad utilizzare questa tecnologia.}\\
+	
+	\multicolumn{2}{c}{\textbf{Miglioramenti:}} & {Problem solving in coppia tra due membri.
+	L'affiancamento anche remoto servirà a trasmettere conoscenze da membri più produttivi con altri in difficoltà dovendo essere chiari e concisi nella spiegazioni che altrimenti con video o guide potrebbero non rimuovere dubbi o incertezze.} \\ 	
+	
+	\textbf{RT001} & \textbf{Progettazione della base tecnologica} &  {A causa della difficoltà di alcuni membri del gruppo nell'utilizzo della libreria Javascript Redux, il lavoro è stato leggermente rallentato.}\\
+	
+	\multicolumn{2}{c}{\textbf{Miglioramenti:}} & {Le task riguardanti quel tipo di libreria sono state assegnate a più persone di quelle inizialmente assegnate. Grazie però all'ottima organizzazione del gruppo, si è riusciti a evitare un ritardo nello sviluppo rispetto alla pianificazione.}\\
+	
+	\textbf{RT004} & \textbf{Progettazione della base tecnologica} &  {Un membro del gruppo ha subito dei disservizi da parte della compagnia telefonica, impedendogli di lavorare efficacemente e di partecipare in modo attivo ad alcune delle riunioni del gruppo.}\\
+	
+	\multicolumn{2}{c}{\textbf{Miglioramenti:}} & {Purtroppo il problema è esterno e non risolvibile direttamente dal gruppo, ma il membro disconnesso ha avvisato in tempo ed è stato aggiornato riguardo alle riunioni successivamente, leggendo anche i verbali interni redatti. Inoltre il membro del gruppo si è adoperato per lavorare trovando soluzioni alternative.}\\
 
-	\multicolumn{2}{c}{\textbf{Miglioramenti:}} & Problem solving in coppia tra due membri.
-	 L'affiancamento anche remoto servirà a trasmettere conoscenze da membri più produttivi con altri in difficoltà dovendo essere chiari e concisi nella spiegazioni che altrimenti con video o guide potrebbero non rimuovere dubbi o incertezze.  
-
-\\
 \end{longtabu}
 
 \end{document}

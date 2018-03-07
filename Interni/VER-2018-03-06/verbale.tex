@@ -1,0 +1,39 @@
+\documentclass[VER-2018-03-06.tex]{subfiles}
+\begin{document}
+\taburowcolors[2] 2{tableLineOne .. tableLineTwo}
+\tabulinesep = ^3mm_2mm
+\chapter{Riunione}
+\section{Informazioni generali}
+\begin{itemize}
+	\item \textbf{Motivo della riunione:} \'{E} stata indetta questa riunione a seguito della \tb.
+	\item \textbf{Luogo e data:} Padova, \nData{06}{03}{2018};
+	\item \textbf{Orario:} 13.00 - 13.30;
+	\item \textbf{Partecipanti:} Tutti i membri del gruppo \gruppo.
+\end{itemize}
+
+
+\chapter{Resoconto}
+
+\section{Argomenti}
+Di seguito sono riportati i punti dell'ordine del giorno che sono stati discussi:
+\begin{enumerate}
+	\item \textbf{Revisione di Progettazione:} il gruppo, dopo la discussione col prof. Cardin della \tb, si prepara ad entrare nella fase di preparazione della presentazione per la Revisione di Progetto;
+	\item \textbf{Periodi futuri:} i componenti del gruppo hanno espresso il proprio parere in merito a come affrontare le successive fasi di avanzamento del progetto.
+\end{enumerate}
+
+\section{Tracciamento delle decisioni}
+\begin{table}[H]
+	\begin{center}
+		\begin{tabu} to \textwidth {
+				>{\centering}m{0.25\linewidth}  
+				>{\centering\arraybackslash}m{0.7\linewidth}
+			}
+			\tableHeaderStyle
+			\textbf{Codice} & \textbf{Decisione} \\
+			VER-2018-03-06.1 & Preparare la presentazione dopo il \nData{12}{03}{2018} \\
+			VER-2018-03-06.2 &  Dopo la Revisione di Progettazione, il gruppo spiegherà agli altri le tecnologie su cui si è specializzato durante la preparazione del PoC \\
+		\end{tabu}
+		\caption{Tracciamento delle decisioni del verbale}
+	\end{center}
+\end{table}
+\end{document}

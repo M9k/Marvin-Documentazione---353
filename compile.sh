@@ -106,5 +106,7 @@ cd ..
 cd ..
 
 cd LetteraDiPresentazione
+cd RP
 pdflatex -interaction=nonstopmode -halt-on-error LetteraDiPresentazione.tex && echo "ok" || exit  11
+cd ..
 cd ..

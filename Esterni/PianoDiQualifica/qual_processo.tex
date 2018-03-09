@@ -77,7 +77,8 @@ Vengono utilizzate le seguenti metriche definite nelle \ndp alla \S{3.4}:
 Per garantire la correttezza per costruzione, verranno monitorati i \citGloss{commit}, sia per numero che per contenuto. Inoltre le \citGloss{build} effettuate con lo strumento di integrazione continua \citGloss{Travis} sono l'indicatore della correttezza e aderenza alle norme del codice.
 \subsubsection{Obiettivi:}
 \begin{itemize}
-	\item \textbf{Commit frequenti:} I commit effettuati dai membri gruppo devono essere frequenti affinchè il codice sia sempre aggiornato;
+	\item \textbf{Commit frequenti:} I commit effettuati dai membri gruppo devono essere frequenti affinchè il codice sia sempre aggiornato.
+	Questo permette ad ogni componente del gruppo di comprendere come procede lo sviluppo potendo anche dare consigli;
 	\item \textbf{Commit con poche modifiche:} I commit effettuati dai membri del gruppo devono contenere poche modifiche, affinché il ciclo di vita del codice sia facilmente monitorabile e verificabile;
 	\item \textbf{Build positive:} Ogni commit deve portare al successo della build, per evitare la propagazione di errori.
 \end{itemize}
@@ -85,7 +86,7 @@ Vengono utilizzate le seguenti metriche definite nelle \ndp alla \S{3.4}:
 \begin{itemize}
 	\item \textlink{MPS009TAB}{MPS009}{MPS009} Media numero commit per settimana;
 	\item \textlink{MPS010TAB}{MPS010}{MPS010} Media numero build Travis per settimana;
-	\item \textlink{MPS011TAB}{MPS011}{MPS011} Percentuale build fallite.
+	\item \textlink{MPS011TAB}{MPS011}{MPS011} Percentuale build Travis superate.
 \end{itemize}
 
 \subsection{Tabella delle metriche}
@@ -125,9 +126,10 @@ Questa tabella indica i \textbf{range} di accettazione e di ottimalità per le m
 			
 			\hline
 			\multicolumn{4}{c}{\textbf{PROC005}}\\
-			\textlink{MPS009}{MPS009TAB}{MPS009} & Media numero commit per settimana & & \\
-			\item \textlink{MPS010}{MPS010TAB}{MPS010} & Media numero build Travis per settimana & & \\
-			\item \textlink{MPS011}{MPS011TAB}{MPS011} & Percentuale build fallite & & \\
+			\textlink{MPS009}{MPS009TAB}{MPS009} & Media commit per settimana & 20 & 30 \\
+			\item \textlink{MPS010}{MPS010TAB}{MPS010} & Media build Travis per settimana & 20 & 30 \\
+			\item \textlink{MPS011}{MPS011TAB}{MPS011} & Percentuale build superate & $ \geq 75\% $ & $ \geq 85\% $ \\
+			
 				
 		\end{tabu}
 		\caption{Tabella delle metriche della qualità di processo}

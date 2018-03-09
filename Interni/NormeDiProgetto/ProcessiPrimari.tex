@@ -229,14 +229,19 @@ Gli elementi indicati con \textbf{*} sono stati analizzati per l'utilizzo nelle 
 	\item \textbf{Creazione diagrammi UML:} {UML Designer}\footnote{\nURI{http://www.umldesigner.org/}};
 	\item \textbf{Scrittura del codice:} Webstorm by Jetbrains\footnote{\nURI{https://www.jetbrains.com/webstorm/}} per \citGloss{JavaScript} e Visual Studio Code\footnote{\nURI{https://code.visualstudio.com/}} per \citGloss{Solidity}; 
 	\item \textbf{Toolkit sviluppo:} si utilizzano i pacchetti installabili tramite Node.js con gestore di pacchetti npm per risolvere dipendenze delle librerie e tool richiesti;
-	\item \textbf{Tracciamento e copertura dei test:} Codeclimate\textbf{*}\footnote{\nURI{https://codeclimate.com/}};
 	\item \textbf{Esecuzione dei test:}
 	\begin{itemize}
 		\item \citGloss{React}: Mocha\footnote{\nURI{https://github.com/mochajs/mocha}}, Chai\footnote{\nURI{http://chaijs.com/}} e Enzyme\footnote{\nURI{https://github.com/airbnb/enzyme}};
 		\item \citGloss{Redux}: Mocha e Chai;
-		\item Web3/Truffle: Mocha e Chai.
+		\item \citGloss{Solidity}: Mocha e Chai.
 	\end{itemize}
 	\item \textbf{Continuos Integration:} Travis\footnote{\nURI{http://travis-ci.com/}};
+	\item \textbf{Tracciamento e copertura dei test:} 
+	\begin{itemize}
+		\item \textbf{Generazione copertura React e Redux:} Istanbul.JS \footnote{\nURI{https://istanbul.js.org}};
+		\item \textbf{Generazione copertura Solidity:} Solidity-Coverage\footnote{\nURI{https://github.com/sc-forks/solidity-coverage}};
+		\item \textbf{Visione online copertura test:} Codeclimate\footnote{\nURI{https://codeclimate.com/}}.
+	\end{itemize}
 	\item \textbf{Tool di supporto:} Scss-lint\footnote{\nURI{https://github.com/brigade/scss-lint}}. 	
 \end{itemize}
 

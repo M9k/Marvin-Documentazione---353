@@ -1,0 +1,1 @@
+git log --date=format:'%Y-%m-%d %H:%M:%S' --pretty=format:'%H;%an;%ad;%f;doc' > log.csv 

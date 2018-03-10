@@ -20,7 +20,7 @@
 	Si riferisce a un utente generico che non ha ancora effettuato il login.\\
 	
 	\item \textbf{Utente autenticato}\\
-	 Si riferisce a un utente generico con \citGloss{indirizzo} valido ed autenticato nel sistema tramite la procedura di login.\\
+	 Si riferisce a un utente generico con \citGloss{indirizzo} valido e autenticato nel sistema tramite la procedura di login.\\
 	
 	\item \textbf{Amministratore}\\
 	Si riferisce a un utente autenticato nel sistema nel ruolo di amministratore, ha i permessi per gestire i professori.\\
@@ -178,7 +178,7 @@
 \subsection{UC3.1 - Inserimento nome}
 \begin{itemize}
 	\item \textbf{Attori Primari:} utente non autenticato;
-	\item \textbf{Scopo e Descrizione:} il sistema \citGloss{verifica} la validità della \citGloss{chiave} ed offre l'interfaccia per inserire il nome dell'utente. Il nome unito al cognome non necessita sia univoco, essendo solamente un' indicazione per facilitare l'identificazione, in quanto a definire univocamente l'account ci pensa la chiave pubblica, che andrà a sostituire la matricola di UniWeb;
+	\item \textbf{Scopo e Descrizione:} il sistema \citGloss{verifica} la validità della \citGloss{chiave} e offre l'interfaccia per inserire il nome dell'utente. Il nome unito al cognome non necessita sia univoco, essendo solamente un' indicazione per facilitare l'identificazione, in quanto a definire univocamente l'account ci pensa la chiave pubblica, che andrà a sostituire la matricola di UniWeb;
 	\item \textbf{Scenario principale:} l'utente fornisce tramite un dispositivo di input il suo nome;
 	\item \textbf{Estensioni:}
 		\begin{enumerate}
@@ -187,7 +187,7 @@
 			\item Se la \citGloss{chiave} fornita dall'utente è già presente nel sistema l'utente viene avvisato tramite un messaggio d'errore [UC3.6];
 			\item Se l'utente non compila il campo viene avvisato con un messaggio d'errore [UC3.5].
 		\end{enumerate}
-	\item \textbf{Precondizione:} il sistema, che ha ricevuto la richiesta di registrazione da parte dell'utente, fornisce una interfaccia per l'inserimento del nome e rimane in attesa dell'input;
+	\item \textbf{Precondizione:} il sistema, che ha ricevuto la richiesta di registrazione da parte dell'utente, fornisce un'interfaccia per l'inserimento del nome e rimane in attesa dell'input;
 	\item \textbf{Postcondizione:} il sistema verifica che la \citGloss{chiave} con il quale l'utente sta cercando di registrarsi risulti non utilizzata nel sistema e salva il nome dell'utente.
 \end{itemize}	
 \subsection{UC3.2 - Inserimento cognome}
@@ -199,7 +199,7 @@
 		\begin{enumerate}
 				\item Se l'utente non compila il campo viene avvisato dal sistema [UC3.5].
 		\end{enumerate}		
-	\item \textbf{Precondizione:} il sistema, che ha ricevuto la richiesta di registrazione da parte dell'utente e ne conosce il nome, fornisce una interfaccia per l'inserimento del cognome e rimane in attesa dell'input;
+	\item \textbf{Precondizione:} il sistema, che ha ricevuto la richiesta di registrazione da parte dell'utente e ne conosce il nome, fornisce un'interfaccia per l'inserimento del cognome e rimane in attesa dell'input;
 	\item \textbf{Postcondizione:} il sistema salva il cognome dell'utente.
 \end{itemize}
 \subsection{UC3.3 - Selezione categoria}
@@ -207,7 +207,7 @@
 	\item \textbf{Attori Primari:} utente non autenticato;
 	\item \textbf{Scopo e Descrizione:} il sistema offre l'interfaccia per selezionare la categoria di registrazione (studente o professore);
 	\item \textbf{Scenario principale:} l'utente seleziona tramite un dispositivo di input la sua categoria;
-	\item \textbf{Precondizione:} il sistema, che ha ricevuto la richiesta di registrazione da parte dell'utente e ne conosce il nome e il cognome, fornisce un' interfaccia per la selezione della categoria dell'account che l'utente desidera, a scelta tra professore e studente e rimane in attesa dell'input;
+	\item \textbf{Precondizione:} il sistema, che ha ricevuto la richiesta di registrazione da parte dell'utente e ne conosce il nome e il cognome, fornisce un'interfaccia per la selezione della categoria dell'account che l'utente desidera, a scelta tra professore e studente e rimane in attesa dell'input;
 	\item \textbf{Postcondizione:} il sistema salva la categoria nella quale l'utente desidera registrarsi. Se la categoria scelta è quella del professore allora la procedura di registrazione viene terminata e i dati salvati fino a quel momento vengono resi persistenti.
 \end{itemize}
 \subsection{UC3.4 - Selezione corso di laurea}
@@ -215,7 +215,7 @@
 	\item \textbf{Attori Primari:} utente non autenticato;
 	\item \textbf{Scopo e Descrizione} il sistema offre l'interfaccia per selezionare il \citGloss{corso di laurea} desiderato da un elenco, specificando per ognuno la sigla di riferimento;
 	\item \textbf{Scenario principale:} l'utente seleziona tramite un dispositivo di input il \citGloss{corso di laurea} scelto;
-	\item \textbf{Precondizione:} il sistema, che ha ricevuto la richiesta di registrazione da parte dell'utente che desidera divenire uno studente, fornisce un' interfaccia per la selezione del \citGloss{corso di laurea} e rimane in attesa dell'input;
+	\item \textbf{Precondizione:} il sistema, che ha ricevuto la richiesta di registrazione da parte dell'utente che desidera divenire uno studente, fornisce un'interfaccia per la selezione del \citGloss{corso di laurea} e rimane in attesa dell'input;
 	\item \textbf{Postcondizione:} il sistema salva il \citGloss{corso di laurea} nel quale l'utente desidera registrarsi, la procedura di registrazione viene terminata e i dati salvati fino a quel momento vengono resi persistenti.
 \end{itemize}
 
@@ -263,7 +263,7 @@
 \subsection{UC5 - Gestione Utenti}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
-	\item \textbf{Scopo e descrizione:} l'amministratore è in grado di eseguire operazioni sugli utenti all'interno dell'ateneo che presentano account registrati od in attesa di registrazione nel ruolo di studenti o professori;
+	\item \textbf{Scopo e descrizione:} l'amministratore è in grado di eseguire operazioni sugli utenti all'interno dell'ateneo che presentano account registrati o in attesa di registrazione nel ruolo di studenti o professori;
 	\item \textbf{Scenario principale:} l'amministratore visualizza una lista di operazioni eseguibili sugli utenti appartenenti alla categoria dei professori o degli studenti e sceglie quale effettuare;
 	\item \textbf{Precondizione:} il sistema ha riconosciuto l'utente nel ruolo dell'amministratore e mette a disposizione una serie di strumenti per la manipolazione degli utenti; 
 	\item \textbf{Postcondizione:} il sistema ha effettuate le operazioni richieste riguardanti la gestione degli utenti.

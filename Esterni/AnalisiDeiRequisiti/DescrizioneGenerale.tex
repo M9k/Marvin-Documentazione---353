@@ -11,40 +11,40 @@ Lo scopo fondamentale è dimostrare la concreta possibilità di sviluppare appli
 \section{Funzionalità del prodotto}
 Le funzioni del prodotto si avvicinano a quelle basilari offerte dal sistema \citGloss{Uniweb} dell'Università di Padova:
 \begin{itemize}
-	\item La possibilità per gli studenti di iscriversi ad un \citGloss{corso di laurea} e gestire il proprio percorso accademico;
+	\item La possibilità per gli studenti di iscriversi a un \citGloss{corso di laurea} e gestire il proprio percorso accademico;
 	\item La possibilità per i professori di gestire i propri corsi di laurea e gli esami erogati agli studenti;
 	\item La possibilità per il gestore dell'università e per gli amministratori di gestire gli account degli studenti e dei professori e di inserire anni accademici, corsi di laurea ed esami.
 \end{itemize}
-Data la particolarità della rete \citGloss{Ethereum}, in cui ogni operazione di scrittura ha un costo economico, l'applicativo fornirà all'utente, in maniera preventiva, la possibilità di visualizzare la stima del prezzo di ogni operazione da effettuare.
+Data la particolarità della rete \citGloss{Ethereum}, in cui ogni operazione di scrittura ha un costo economico, l'applicativo fornisce all'utente, in maniera preventiva, la possibilità di visualizzare la stima del prezzo di ogni operazione da effettuare.
 
 \subsection{Funzionalità offerte agli studenti}
-Gli studenti avranno la possibilità di consultare gli esiti dei propri esami e, ove il corso lo prevede, l'iscrizione ad esami opzionali.\\
-Oltre a ciò sarà presente una schermata riassuntiva che permetta allo studente di conoscere il numero di crediti che ha accumulato fino a quel momento e quanti ne servono per raggiungere la laurea.
+Gli studenti hanno la possibilità di consultare gli esiti dei propri esami e, ove il corso lo prevede, l'iscrizione ad esami opzionali.\\
+Inoltre è presente una schermata riassuntiva che permetta allo studente di conoscere il numero di crediti che ha accumulato fino a quel momento e quanti ne servono per raggiungere la laurea.
 
 \subsection{Funzionalità offerte ai professori}
-I professori avranno la possibilità di consultare l'elenco degli esami di loro competenza, visualizzando per ognuno gli studenti iscritti ed assegnare le valutazioni ad essi.
+I professori hanno la possibilità di consultare l'elenco degli esami di loro competenza, visualizzando per ognuno gli studenti iscritti e assegnare le valutazioni ad essi.
 
 \subsection{Funzionalità offerte agli amministratori}
-Gli amministratori avranno il compito di gestire l'inserimento dei corsi di laurea all'interno degli anni accademici e la creazione di esami all'interno dei corsi.\\
-Questo compito è stato delegato a loro e non viene gestito direttamente dal gestore dell'università soprattutto per motivi pratici e di sicurezza, in quanto l'aggiunta degli esami sarebbe un lavoro oneroso da svolgere singolarmente e la condivisione della chiave privata relativa alla gestione dell'università avrebbe portato a problemi di sicurezza.\\
-Ulteriormente avranno il compito di approvare o declinare le richieste di sottoscrizione all'università da parte di professori e studenti ed avranno la possibilità di rimuoverli successivamente.
+Gli amministratori hanno il compito di gestire l'inserimento dei corsi di laurea all'interno degli anni accademici e la creazione di esami all'interno dei corsi.\\
+Questo compito è stato delegato a loro e non viene gestito direttamente dal gestore dell'università soprattutto per motivi pratici e di sicurezza, in quanto l'aggiunta degli esami sarebbe un lavoro oneroso da svolgere singolarmente e la condivisione della chiave privata relativa alla gestione dell'università porterebbe problemi di sicurezza.\\
+Inoltre, hanno il compito di approvare o declinare le richieste di sottoscrizione all'università da parte di professori e studenti e hanno la possibilità di rimuoverli successivamente.
 
 
 \subsection{Funzionalità offerte al gestore dell'università}
-L'università avrà il compito di gestire gli amministratori, inserendoli e rimuovendoli dal sistema.\\
-Un secondo compito di sua competenza è la creazione degli anni accademici, ed in caso di errato inserimento può anche eliminarne, ma solamente se non sono stati inseriti corsi associati a quel determinato anno.\\
-Come precedentemente accennato non sarà il gestore dell'università a doversi occupare direttamente dell'inserimento dei corsi di laurea e degli esami, in quanto sarebbe un compito davvero oneroso per un singolo individuo, quindi deve delegare altre persone, cioè gli amministratori, per l'esecuzione e la suddivisione di questo impegno.\\
-Ovviamente nulla vieta al gestore dell'università la creazione di un secondo account da registrare come amministratore per svolgere, od aiutare nello svolgimento, il ruolo di amministratore.
+L'università ha il compito di gestire gli amministratori, inserendoli e rimuovendoli dal sistema.\\
+Un secondo compito di sua competenza è la creazione degli anni accademici, e in caso di errato inserimento può anche eliminarne, ma solamente se non sono stati inseriti corsi associati a quel determinato anno.\\
+Come precedentemente accennato non è il gestore dell'università a doversi occupare direttamente dell'inserimento dei corsi di laurea e degli esami, in quanto sarebbe un compito davvero oneroso per un singolo individuo. Per questo motivo vengono delegate altre persone, cioè gli amministratori, per l'esecuzione e la suddivisione di questo impegno.\\
+Ovviamente nulla vieta al gestore dell'università la creazione di un secondo account da registrare come amministratore per svolgere quel ruolo o per aiutare gli attuali amministratori.
 
 \section{Caratteristiche degli utenti}
-Il prodotto si rivolge ad una classe d'utenza collusa con il mondo accademico.\\
-L'utente, per accedere al sistema, dovrà possedere alcune nozioni base sul funzionamento della rete \citGloss{Ethereum} e del plugin \citGloss{Metamask}, conoscenze che potranno essere acquisite tramite una breve guida fornita dall'applicazione.
+Il prodotto si rivolge a una classe d'utenza collusa con il mondo accademico.\\
+L'utente, per accedere al sistema, deve possedere alcune nozioni base sul funzionamento della rete \citGloss{Ethereum} e del plugin \citGloss{Metamask}, conoscenze che possono essere acquisite tramite una breve guida fornita dall'applicazione.
 
 \section{Piattaforma d'esecuzione}
-Il prodotto finale può essere suddiviso in due macro parti con due diverse piattaforme d'esecuzione: il backend verrà ospitato dalla rete \citGloss{Ethereum}, l'interfacciamento ad esso (frontend) sarà fruibile tramite un qualsiasi \citGloss{browser} web predisposto all'installazione del plugin \citGloss{Metamask}.
+Il prodotto finale può essere suddiviso in due macro parti con due diverse piattaforme d'esecuzione: il back-end è ospitato dalla rete \citGloss{Ethereum}, l'interfacciamento a esso (front-end) è fruibile tramite un qualsiasi \citGloss{browser} web predisposto all'installazione del plugin \citGloss{Metamask}.
 
 \section{Vincoli generali}
-L'utente, per usufruire del servizio, dovrà possedere un \citGloss{browser} con installato il plugin \citGloss{Metamask}, una connessione a internet e una coppia di chiavi (pubblica-privata) compatibile con la rete \citGloss{Ethereum}.\\
-La coppia di chiavi viene fornita automaticamente alla accettazione della licenza di \citGloss{Metamask}, ma se l'utente desidera potrà utilizzare chiavi già in suo possesso o generate utilizzando altre procedure.	
+L'utente, per usufruire del servizio, deve possedere un \citGloss{browser} con installato il plugin \citGloss{Metamask}, una connessione a internet e una coppia di chiavi (pubblica-privata) compatibile con la rete \citGloss{Ethereum}.\\
+La coppia di chiavi viene fornita automaticamente alla accettazione della licenza di \citGloss{Metamask}, ma se l'utente desidera può utilizzare chiavi già in suo possesso o generate utilizzando altre procedure.	
 
 \end{document}

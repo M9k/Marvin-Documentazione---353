@@ -297,7 +297,7 @@
 		
 	\end{itemize}
 	\textbf{Misurazione:}
-	Vengono calcolate in percentuale sulla quantità di codice testato e verificato oltre che sul totale delle linee di codice scritte, tramite tool automatici come IstanbulJS\footnote{\nURI{https://istanbul.js.org/}}.
+	Vengono calcolate in percentuale sulla quantità di codice testato e verificato oltre che sul totale delle linee di codice scritte, tramite tool automatici descritti nella sezione \S 2.2.5 del presente documento.
 	
 	\paragraph{Strategie}
 	
@@ -306,16 +306,19 @@
 	
 	\subsection{MPS007 Indisponibilità servizi esterni} Numero totale di giorni in cui siano stati offline o bloccati servizi usati.\\
 	\textbf{Misurazione:}
-	Indice numerico incrementato partendo da zero per ogni giorno in cui i servizi utilizzati dal gruppo siano risultati totalmente offline per la maggior parte del giorno, tramite controllo su \nURI{statusticker.com}.
+	Indice numerico incrementato partendo da zero per ogni giorno in cui i servizi utilizzati dal gruppo siano risultati totalmente offline per la maggior parte del giorno, tramite controllo automatico orario su \nURI{statusticker.com} tramite un bot.
 	
 	\subsection{MPS008 Rischi non previsti} Indice numerico indica la quantità di rischi esterni a quelli presenti nell'attività di analisi dei rischi rilevati nella corrente fase di progetto. \\
 	\textbf{Misurazione:}
 	Indice numerico incrementato partendo da 0 per ogni rischio che si manifesta senza essere stato individuato precedentemente nella lista di rischi.
 	Viene resettato all'inizio di ogni nuova fase di progetto.
 	
-	\subsection{MPS009 Media numero commit per settimana};
-	\subsection{MPS010 Media numero build Travis per settimana};
-	\subsection{MPS011 Percentuale build fallite};
+	\subsection{MPS009 Media commit per settimana} Media dei commit effettuati settimanalmente sulle diverse repository utilizzate dal gruppo.
+	\textbf{Misurazione:} generato automaticamente tramite bot connesso a Github con servizio gitlog.
+	\subsection{MPS010 Media build Travis per settimana} Media delle build effettuati settimanalmente sulle diverse repository utilizzate dal gruppo. Potrebbe non coincidere con media dei commit siccome Travis è stato istanziato successivamente all'inizio del progetto.
+	\textbf{Misurazione:} generato automaticamente tramite bot connesso a Travis. 
+	\subsection{MPS011 Percentuale build Travis superate} Indica la percentuale totale delle build Travis superate per le due repository Github per documentazione e per il prodotto. 
+	\textbf{Misurazione:} generato automaticamente tramite bot connesso a Travis. 
 	
 	\paragraph{Strategie}
 	Nel caso dovessero sorgere troppi rischi il gruppo dovrà sospendere i lavori eliminando il maggior numero di questi per permettere la prosecuzione del lavoro.

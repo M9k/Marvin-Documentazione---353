@@ -14,22 +14,22 @@
 	\end{figure}
 	
 	\item \textbf{Utente generico}\\
-	Si riferisce a un utente generico che accede al sito.\\
+	Si riferisce a un utente generico che accede al sito;\\
 	
 	\item \textbf{Utente non autenticato}\\
-	Si riferisce a un utente generico che non ha ancora effettuato il login.\\
+	Si riferisce a un utente generico che non ha ancora effettuato il login;\\
 	
 	\item \textbf{Utente autenticato}\\
-	 Si riferisce a un utente generico con \citGloss{indirizzo} valido e autenticato nel sistema tramite la procedura di login.\\
+	 Si riferisce a un utente generico con \citGloss{indirizzo} valido e autenticato nel sistema tramite la procedura di login;\\
 	
 	\item \textbf{Amministratore}\\
-	Si riferisce a un utente autenticato nel sistema nel ruolo di amministratore, ha i permessi per gestire i professori.\\
+	Si riferisce a un utente autenticato nel sistema nel ruolo di amministratore, ha i permessi per gestire i professori;\\
 	
 	\item \textbf{Professore}\\
-	Si riferisce a un utente autenticato nel sistema nel ruolo di professore.\\
+	Si riferisce a un utente autenticato nel sistema nel ruolo di professore;\\
 	
 	\item \textbf{Studente}\\
-	Si riferisce a un utente autenticato nel sistema nel ruolo di studente.\\
+	Si riferisce a un utente autenticato nel sistema nel ruolo di studente;\\
 		
 	\item \textbf{Università}\\
 	Si riferisce a un utente autenticato nel sistema nel ruolo di fondatore e rappresentante dell'università, ha i permessi per gestire gli amministratori.\\	
@@ -38,7 +38,7 @@
 \subsection{Attori secondari}
 \begin{enumerate}
 	\item \textbf{\citGloss{MetaMask}}\\
-	Plugin per \citGloss{browser} che permette di interfacciarsi a una rete \citGloss{Ethereum}.\\
+	Plugin per \citGloss{browser} che permette di interfacciarsi a una rete \citGloss{Ethereum};\\
 	
 	\item \textbf{Ufficio Universitario}\\
 	Entità fisica che consente l'immatricolazione degli studenti e la registrazione dei professori.\\
@@ -84,7 +84,7 @@
 	\item \textbf{Scopo e descrizione:} l'utente visualizza una breve guida di introduzione su come installare il plugin \citGloss{MetaMask} e su come gestire le chiavi in modo da istruirlo sulle modalità di accesso al sistema;
 	\item \textbf{Scenario principale:} l'utente accede alla guida;
 	\item \textbf{Precondizione:} il sistema è raggiungibile e funzionante e l'utente desidera aprire la guida;
-	\item \textbf{Postcondizione:} il sistema fornisce la guida e l'utente ha avuto delle nozioni riguardanti l'accesso al sistema.
+	\item \textbf{Postcondizione:} il sistema fornisce la guida e l'utente riceve delle nozioni riguardanti l'accesso al sistema.
 \end{itemize}
 \subsection{UC2 - Login}
 \begin{itemize}
@@ -93,7 +93,7 @@
 	\item \textbf{Scopo e descrizione:} l'utente richiede il login al sistema attraverso il plugin \citGloss{MetaMask};
 	\item \textbf{Scenario principale:} l'utente non ancora riconosciuto dal sistema effettua il login;
 	\item \textbf{Precondizione:} il sistema considera l'utilizzatore come un utente non autenticato;
-	\item \textbf{Postcondizione:} il sistema riconosce l'utilizzatore come un utente autenticato\\
+	\item \textbf{Postcondizione:} il sistema riconosce l'utilizzatore come un utente autenticato.\\
 \end{itemize}
 
 \begin{figure}[H]
@@ -256,7 +256,7 @@
 	\item \textbf{Attori primari:} utente autenticato;
 	\item \textbf{Scopo e descrizione:} l'utente desidera effettuare il logout dal sistema e gli vengono fornite le istruzioni per effettuarlo, in quanto per completare l'operazione l'utente deve interagire direttamente con il plugin \citGloss{MetaMask};
 	\item \textbf{Scenario principale:} l'utente autenticato richiede il logout dal sistema;
-	\item \textbf{Precondizione:} il sistema riconosce l'utente come autenticato e riceve una richiesta di logout.
+	\item \textbf{Precondizione:} il sistema riconosce l'utente come autenticato e riceve una richiesta di logout;
 	\item \textbf{Postcondizione:} il sistema informa l'utente riguardo alla modalità di logout dal sistema.
 \end{itemize}
 
@@ -390,7 +390,7 @@
 \subsection{UC5.4.4 - Visualizzazione ruolo degli utenti in attesa di abilitazione}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
-	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista degli utenti in attesa di abilitazione e i relativi ruoli che desiderano ricoprire una volta approvati, cioè professori o studenti.
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista degli utenti in attesa di abilitazione e i relativi ruoli che desiderano ricoprire una volta approvati, cioè professori o studenti;
 	\item \textbf{Scenario principale:} l'amministratore richiede al sistema una lista degli utenti in attesa di abilitazione per poterne visualizzare il ruolo desiderato ed eventualmente compiere altre operazioni su di essi;
 	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di amministratore e riceve la richiesta di visualizzazione della lista degli utenti in attesa di approvazione;
 	\item \textbf{Postcondizione:} il sistema offre all'amministratore la lista degli utenti in attesa di approvazione con indicati i ruoli che desiderano ottenere.
@@ -526,7 +526,7 @@
 	\item \textbf{Attori primari:} università;
 	\item \textbf{Scopo e descrizione:} l'utente che rappresenta l'università desidera la rimozione di un anno accademico che non presenta ancora dei corsi di laurea al suo interno, ad esempio per rimediare a un inserimento con informazioni errate;
 	\item \textbf{Scenario principale:} l'utente che rappresenta l'università desidera rimuovere un anno accademico che non presenta corsi collegati dal sistema;
-	\item \textbf{Precondizione:} il sistema fornisce una lista degli \citGloss{anni accademici} [UC6.2] all'utente.
+	\item \textbf{Precondizione:} il sistema fornisce una lista degli \citGloss{anni accademici} [UC6.2] all'utente;
 	\item \textbf{Postcondizione:} L'\citGloss{anno accademico} che l'utente desidera cancellare viene rimosso dal sistema.
 \end{itemize}
 
@@ -895,8 +895,8 @@
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
 	\item \textbf{Scopo e descrizione:} l'utente già riconosciuto dal sistema come amministratore visualizza una lista di tutti gli anni solari relativi agli anni accademici inseriti nella rete \citGloss{Ethereum};
-	\item \textbf{Scenario principale:} l'amministratore richiede al sistema la lista di anni accademici inseriti nel sistema per visualizzarli ed eventualmente compiere operazioni su di esse;
-	\item \textbf{Precondizione:} il sistema riconosce l'utente come amministratore, il quale richiede la lista di tutti gli anni accademici presenti nel sistema.
+	\item \textbf{Scenario principale:} l'amministratore richiede al sistema la lista di anni accademici inseriti nel sistema per visualizzarli ed eventualmente compiere operazioni su di essi;
+	\item \textbf{Precondizione:} il sistema riconosce l'utente come amministratore, il quale richiede la lista di tutti gli anni accademici presenti nel sistema;
 	\item \textbf{Postcondizione:} il sistema, per ogni anno accademico, visualizza il relativo anno solare.
 \end{itemize}
 \subsection{UC7.9 - Visualizzazione lista professori da associare a un esame}
@@ -942,7 +942,7 @@
 	\item \textbf{Attori primari:} amministratore;
 	\item \textbf{Scopo e descrizione:} l'amministratore associa un professore dopo averlo individuato in una lista contenente tutti i professori a un esame che ne è ancora sprovvisto;
 	\item \textbf{Scenario principale:} l'amministratore associa a un esame un determinato professore;
-	\item \textbf{Precondizione:} il sistema ha già fornito una lista di esami all'amministratore [UC7.9], il quale ha indicato un determinato esame e successivamente ha fornito una seconda lista contenete i professori [UC7.9]; 
+	\item \textbf{Precondizione:} il sistema ha già fornito una lista di esami all'amministratore [UC7.9], il quale indica un determinato esame e successivamente fornisce una seconda lista contenete i professori [UC7.9]; 
 	\item \textbf{Postcondizione:} il sistema assegna il professore indicato dall'utente all'esame precedentemente selezionato.
 \end{itemize}
 \subsection{UC8 - Gestione aspetti relativi agli esami}
@@ -950,7 +950,7 @@
 	\item \textbf{Attori primari:} professore;
 	\item \textbf{Scopo e descrizione:} l'utente è già riconosciuto dal sistema come professore e sceglie di utilizzare una funzionalità messa a sua disposizione da parte del sistema;
 	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di professore e mette a disposizione una serie di operazioni atte alla gestione degli esami; 
-	\item \textbf{Postcondizione:} il sistema ha effettuate le operazioni richieste riguardanti la gestione degli esami.
+	\item \textbf{Postcondizione:} il sistema effettua le operazioni richieste riguardanti la gestione degli esami.
 \end{itemize}
 \begin{figure}[H]
 	\centering
@@ -975,9 +975,9 @@
 \subsection{UC8.1.1 - Visualizzazione codici degli esami}
 \begin{itemize}
 	\item \textbf{Attori primari:} professore;
-	\item \textbf{Scopo e descrizione:} il professore visualizza per ogni esame il relativo codici;
+	\item \textbf{Scopo e descrizione:} il professore visualizza per ogni esame il relativo codice;
 	\item \textbf{Scenario principale:} il professore richiede al sistema la lista dei codici degli esami di sua competenza per poterla consultare;
-	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo del professore, il quale richiede la visualizzazione degli esami di sua competenza.
+	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo del professore, il quale richiede la visualizzazione degli esami di sua competenza;
 	\item \textbf{Postcondizione:} il sistema fornisce per ogni esame di competenza del professore il relativo codice.
 \end{itemize}
 \subsection{UC8.1.2 - Visualizzazione corsi degli esami}
@@ -985,7 +985,7 @@
 	\item \textbf{Attori primari:} professore;
 	\item \textbf{Scopo e descrizione:} il professore visualizza per ogni esame il relativo corso di laurea;
 	\item \textbf{Scenario principale:} il professore richiede al sistema la lista dei corsi di laurea degli esami di sua competenza per poterla consultare;
-	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo del professore, il quale richiede la visualizzazione degli esami di sua competenza.
+	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo del professore, il quale richiede la visualizzazione degli esami di sua competenza;
 	\item \textbf{Postcondizione:} il sistema fornisce per ogni esame di competenza del professore il corso di laurea al quale appartiene.
 \end{itemize}
 
@@ -1013,7 +1013,7 @@
 	\item \textbf{Attori primari:} professore;
 	\item \textbf{Scopo e descrizione:} il professore visualizza una lista di tutti gli \citGloss{indirizzi} della rete \citGloss{Ethereum} degli studenti registrati all'esame;
 	\item \textbf{Scenario principale:} il professore richiede al sistema una lista di studenti per poterne visualizzare l'\citGloss{indirizzo} ed eventualmente compiere altre operazioni su di essi;
-	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo del professore, il quale richiede la visualizzazione degli studenti registrati a un dato esame.
+	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo del professore, il quale richiede la visualizzazione degli studenti registrati a un dato esame;
 	\item \textbf{Postcondizione:} il sistema fornisce per ogni studente il relativo \citGloss{indirizzo}.
 \end{itemize}
 \subsection{UC8.2.2 - Visualizzazione nomi degli studenti dell'esame}
@@ -1021,7 +1021,7 @@
 	\item \textbf{Attori primari:} professore;
 	\item \textbf{Scopo e descrizione:} il professore visualizza una lista di tutti i nomi degli studenti registrati all'esame;
 	\item \textbf{Scenario principale:} il professore richiede al sistema una lista di studenti per poterne visualizzare il nome ed eventualmente compiere altre operazioni su di essi;
-	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo del professore, il quale richiede la visualizzazione degli studenti registrati a un dato esame.
+	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo del professore, il quale richiede la visualizzazione degli studenti registrati a un dato esame;
 	\item \textbf{Postcondizione:} il sistema fornisce per ogni studente il relativo nome.
 \end{itemize}
 \subsection{UC8.2.3 - Visualizzazione cognomi degli studenti dell'esame}
@@ -1029,7 +1029,7 @@
 	\item \textbf{Attori primari:} professore;
 	\item \textbf{Scopo e descrizione:} il professore visualizza una lista di tutti i cognomi degli studenti registrati all'esame;
 	\item \textbf{Scenario principale:} il professore richiede al sistema una lista di studenti per poterne visualizzare il cognome ed eventualmente compiere altre operazioni su di essi;
-	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo del professore, il quale richiede la visualizzazione degli studenti registrati a un dato esame.
+	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo del professore, il quale richiede la visualizzazione degli studenti registrati a un dato esame;
 	\item \textbf{Postcondizione:} il sistema fornisce per ogni studente il relativo cognome.
 \end{itemize}
 
@@ -1088,7 +1088,7 @@
 	\item \textbf{Attori secondari:} \citGloss{MetaMask};
 	\item \textbf{Scopo e descrizione:} l'utente è già riconosciuto dal sistema come studente e sceglie di utilizzare una funzionalità messa a sua disposizione da parte del sistema;
 	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di studente e mette a disposizione una serie di operazioni atte alla gestione degli aspetti relativi al perseguimento della laurea;
-	\item \textbf{Postcondizione:} il sistema effettua le operazioni richieste riguardanti il proseguimento della laurea.
+	\item \textbf{Postcondizione:} il sistema effettua le operazioni richieste riguardanti il perseguimento della laurea.
 \end{itemize}
 \begin{figure}[H]
 	\centering
@@ -1118,7 +1118,7 @@
 	\item \textbf{Attori primari:} studente;
 	\item \textbf{Scopo e descrizione:} lo studente visualizza il numero di crediti per ogni esame al quale è iscritto;
 	\item \textbf{Scenario principale:} lo studente richiede al sistema il numero di crediti degli esami ai quali è iscritto per consultarli;
-	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di studente, il quale richiede la lista degli esami ai quali risulta iscritto. 
+	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di studente, il quale richiede la lista degli esami ai quali risulta iscritto; 
 	\item \textbf{Postcondizione:} il sistema fornisce, per ogni esame al quale lo studente risulta iscritto, il relativo numero di crediti.
 \end{itemize}
 
@@ -1127,7 +1127,7 @@
 	\item \textbf{Attori primari:} studente;
 	\item \textbf{Scopo e descrizione:} lo studente visualizza l'obbligatorietà di per ogni esame al quale è iscritto;
 	\item \textbf{Scenario principale:} lo studente richiede al sistema l'obbligatorietà degli esami ai quali è iscritto;
-	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di studente, il quale richiede la lista degli esami ai quali risulta iscritto. 
+	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di studente, il quale richiede la lista degli esami ai quali risulta iscritto; 
 	\item \textbf{Postcondizione:} il sistema fornisce, per ogni esame al quale lo studente risulta iscritto, la relativa obbligatorietà.
 \end{itemize}
 
@@ -1136,7 +1136,7 @@
 	\item \textbf{Attori primari:} studente;
 	\item \textbf{Scopo e descrizione:} lo studente visualizza la valutazione, in formato numerico con l'indicazione di averlo superato se il voto è superiore a 18, per ogni esame al quale è iscritto;
 	\item \textbf{Scenario principale:} lo studente richiede al sistema le informazioni riguardanti le valutazioni degli esami ai quali è iscritto per consultarle;
-	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di studente, il quale richiede la lista degli esami ai quali risulta iscritto. 
+	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di studente, il quale richiede la lista degli esami ai quali risulta iscritto; 
 	\item \textbf{Postcondizione:} il sistema fornisce, per ogni esame al quale lo studente risulta iscritto, la relativa valutazione, ove presente.
 \end{itemize}
 
@@ -1159,7 +1159,7 @@
 		\item Lo studente individua l'esame al quale è interessato iscriversi;
 		\item Lo studente compie l'operazione di iscrizione.
 	\end{enumerate}
-	\item \textbf{Postcondizione:} il sistema fornisce allo studente la lista degli esami opzionali ai quali può iscriversi e quest'ultimo ne ha individuato uno di suo interesse.
+	\item \textbf{Postcondizione:} il sistema fornisce allo studente la lista degli esami opzionali ai quali può iscriversi e quest'ultimo ne individua uno di suo interesse;
 	\item \textbf{Postcondizione:} il sistema iscrive l'utente all'esame opzionale da lui scelto.
 \end{itemize}
 

@@ -22,9 +22,9 @@ Una volta stabilita la scelta del capitolato per il quale proporsi come fornitor
 \subsection{Analisi dei Requisiti}
 L'analisi dei requisiti ha l'obbiettivo di individuare ed elencare tutti i \citGloss{requisiti} del capitolato. I requisiti possono essere estrapolati da più fonti:
 \begin{itemize}
-	\item \textbf{Capitolato d’appalto};
+	\item \textbf{Capitolato d'appalto};
 	\item \textbf{Verbali di riunioni esterne};
-	\item \textbf{Casi d’uso}.
+	\item \textbf{Casi d'uso}.
 \end{itemize}
 Il risultato di quest'analisi sarà il documento \adr \vruno redatto dagli \alisti, dopo essere stato verificato, al fine di:
 \begin{itemize}
@@ -34,7 +34,7 @@ Il risultato di quest'analisi sarà il documento \adr \vruno redatto dagli \alis
 \item Fornire una base per raffinamenti successivi al fine di garantire un
 miglioramento continuo del prodotto e del processo di sviluppo;
 \item Facilitare le revisioni del codice;
-\item Fornire ai verificatori riferimenti per l’attività di test circa i casi d’uso principali e alternativi;
+\item Fornire ai verificatori riferimenti per l'attività di test circa i casi d'uso principali e alternativi;
 \item Stimare i costi.
 \end{itemize}
 Ogni requisito dovrà essere meno ambiguo possibile e rispettare le seguenti norme.
@@ -58,22 +58,22 @@ Ogni requisito è identificato da un codice, costruito come descritto di seguito
 	\item L'\textbf{identificativo} indica invece un numero progressivo.
 	\end{itemize}
 
-\subsubsection{Classificazione casi d'uso} Gli \alisti hanno anche il compito di identificare i casi d’uso, elencandoli con un grado di precisione che va dal generico verso il dettaglio. Ogni caso d’uso è descritto dalla seguente struttura:\\
+\subsubsection{Classificazione casi d'uso} Gli \alisti hanno anche il compito di identificare i casi d'uso, elencandoli con un grado di precisione che va dal generico verso il dettaglio. Ogni caso d'uso è descritto dalla seguente struttura:\\
 \begin{itemize}
 	\item \textbf{Codice identificativo e nome:} ogni caso d'uso è identificato da una serie di cifre separate dal punto. L'ultima cifra indica il numero del figlio, la penultima cifra indica il numero del padre e UC è l'abbreviazione di Use Case (caso d'uso in inglese). Queste cifre sono seguite dopo il trattino (-) dal nome del caso d'uso: \\\\
 	\centerline{\textbf{UC[Codice padre].[Codice figlio] - Nome}}
-	\item \textbf{Attori:} indica gli attori principali (ad esempio l’utente generico) e
-	secondari (ad esempio ufficio universitario) del caso d’uso;
-	\item \textbf{Scopo e descrizione:} riporta una breve descrizione del caso d’uso;
+	\item \textbf{Attori:} indica gli attori principali (ad esempio l'utente generico) e
+	secondari (ad esempio ufficio universitario) del caso d'uso;
+	\item \textbf{Scopo e descrizione:} riporta una breve descrizione del caso d'uso;
 	\item \textbf{Scenario principale:} rappresenta il flusso degli eventi come lista
 	numerata, specificando per ciascun evento il caso d'uso di riferimento;
 	\item \textbf{Precondizione:} specifica le condizioni che sono identificate come vere
-	prima del verificarsi degli eventi del caso d’uso;
+	prima del verificarsi degli eventi del caso d'uso;
 	\item \textbf{Postcondizione:} specifica le condizioni che sono identificate come
-	vere dopo il verificarsi degli eventi del caso d’uso;
+	vere dopo il verificarsi degli eventi del caso d'uso;
 	\item \textbf{Inclusioni (se presenti):} usate per non descrivere più volte lo stesso flusso di eventi,
-	inserendo il comportamento comune in un caso d’uso a parte;
-	\item \textbf{Estensioni (se presenti):} descrivono i casi d’uso che non fanno parte del flusso
+	inserendo il comportamento comune in un caso d'uso a parte;
+	\item \textbf{Estensioni (se presenti):} descrivono i casi d'uso che non fanno parte del flusso
 	principale degli eventi, allo stesso modo di quanto descritto in “Scenario
 	principale”.
 \end{itemize}
@@ -81,11 +81,9 @@ Ogni requisito è identificato da un codice, costruito come descritto di seguito
 \subsection{Progettazione}
 
 \subsubsection{Scopo}
-L’attività di Progettazione consiste nel descrivere una soluzione del problema
+L'attività di Progettazione consiste nel descrivere una soluzione del problema
 che sia soddisfacente per tutti gli stakeholders.
-\`{E} compito dei \progi svolgere tale attività, definendo l’architettura logica
-del prodotto identificando componenti chiare, riusabili e coese rimanendo nei
-costi fissati. L’architettura definita dovrà:
+I \progi hanno il compito di svolgere tale attività, definendo l'architettura logica del prodotto identificando componenti chiare, riusabili e coese rimanendo nei costi fissati. L'architettura definita dovrà:
 \begin{itemize}
 	\item Soddisfare i \citGloss{requisiti} definiti nel documento \adr e adattarsi facilmente nel caso essi evolvano o se ne aggiungano di nuovi; 
 	\item Essere comprensibile, modulare e robusta riuscendo a gestire situazioni erronee improvvise;
@@ -131,7 +129,7 @@ Essa serve a garantire che il prodotto sviluppato soddisfi le proprietà e i bis
 	\item Rendere chiara e comprensibile ogni parte dell' architettura ai differenti stakeholders;
 	\item Mantenere nascosti i dettagli implementativi, seguendo il principio dell' \textit{information hiding};
 	\item Mantenere bassa la dipendenza tra le varie parti del prodotto, seguendo il principio della \textit{modularità};
-	\item Ottimizzare l’uso di risorse.
+	\item Ottimizzare l'uso di risorse.
 \end{itemize}
 
 \subsection{Codifica}
@@ -187,12 +185,12 @@ Autore || Data || breve descrizione delle modifiche
 \end{minipage}
 }
 \end{center}
-	\item La \textbf{versione} del codice viene inserita all’interno dell’intestazione del file e rispetta il
+	\item La \textbf{versione} del codice viene inserita all'interno dell'intestazione del file e rispetta il
 	seguente formalismo:
 	\begin{center}{\textbf{X.Y}}\end{center}	
 	\begin{itemize}
-		\item \textbf{X}: è l’indice di versione principale, un incremento di tale indice rappresenta un avanzamento della versione stabile, che porta il valore dell’indice Y ad essere azzerato;
-		\item \textbf{Y}: è l’indice di modifica parziale, un incremento di tale indice rappresenta una \citGloss{verifica} o una modifica rilevante, come per esempio la rimozione o l’aggiunta di una istruzione.
+		\item \textbf{X}: è l'indice di versione principale, un incremento di tale indice rappresenta un avanzamento della versione stabile, che porta il valore dell'indice Y ad essere azzerato;
+		\item \textbf{Y}: è l'indice di modifica parziale, un incremento di tale indice rappresenta una \citGloss{verifica} o una modifica rilevante, come per esempio la rimozione o l'aggiunta di una istruzione.
 	\end{itemize}
 	La versione \textit{1.0} deve rappresentare la prima versione del file completo e stabile, cioè quando le sue funzionalità obbligatorie sono state definite e si considerano funzionanti. Solo dalla versione \textit{1.0} è possibile testare il file, con degli appositi test predefiniti, per validarne la qualità.
 \end{itemize}

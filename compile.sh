@@ -57,6 +57,18 @@ pdflatex -interaction=nonstopmode -halt-on-error VER-2018-02-18.tex && echo "ok"
 cd ..
 cd ..
 
+cd 'Esterni'
+cd ManualeSviluppatore
+pdflatex -interaction=nonstopmode -halt-on-error ManualeSviluppatore.tex && echo "ok" || exit  8
+cd ..
+cd ..
+
+cd 'Esterni'
+cd ManualeUtente
+pdflatex -interaction=nonstopmode -halt-on-error ManualeUtente.tex && echo "ok" || exit  8
+cd ..
+cd ..
+
 cd 'Interni'
 cd NormeDiProgetto
 pdflatex -interaction=nonstopmode -halt-on-error NormeDiProgetto.tex && echo "ok" || exit  9

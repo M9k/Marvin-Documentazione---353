@@ -1,0 +1,79 @@
+\documentclass[openany, a4paper, 12pt]{report}
+\usepackage{subfiles}
+\usepackage{../../common/style}
+\usepackage{lscape}
+\usepackage{pdflscape}
+\usepackage{eurosym}
+\usepackage{longtable}
+\usepackage{subfigure}
+\setfoot{User guide}{\vruno}
+\setcounter{secnumdepth}{3}
+\loadglsentries{"./../../Esterni/Glossario/Definizioni.tex"}
+
+\begin{document}
+	
+	% per tabelle
+	\taburowcolors[2] 2{tableLineOne .. tableLineTwo}
+	\tabulinesep = ^2.5mm_1.5mm
+	
+	\begin{titlepage}
+		\centering
+		\vfill
+		{
+			\bfseries
+			\vskip2cm
+			\includegraphics[width=9cm]{../../common/images/logo.png} \\
+			\vfill
+			\Huge{USER GUIDE}\\
+			\vfill
+			% TODO: fix
+			\Large Version 1.0.0 of date XX-04-2018\\ 
+			\large Group 353 - Project \progetto \\
+			\vfill
+			\normalsize Document information\\
+			\begin{table}[htbp]
+				\centering
+				\renewcommand\arraystretch{1.2}
+				\begin{tabular}{r|l}
+					\hline
+					% TODO: fix
+					\textbf{Responsible}	& \Parwinder \\
+					
+					\textbf{Drafting} 		& \Elena \\
+											& \Gianluca \\
+											& \Valentina \\
+											
+					\textbf{Check} 			& \Riccardo \\	
+											& \Davide \\
+											
+					\textbf{State} 			& Approved\\
+					\textbf{Use}			& External\\
+					\textbf{Destined to}   	& \Proponente\\
+										& Group 353\\
+										& \Vardanega\\
+										& \Cardin\\
+					
+					\textbf{Email for contracts}	& \mailgroup
+				\end{tabular}
+			\end{table}
+			\vfill
+		}    
+	\end{titlepage}
+	\pagenumbering{roman}
+	% TODO: tenere diario modifiche oppure no?
+	\subfile{diariomodifiche}
+	\renewcommand{\contentsname}{Index}
+	\tableofcontents
+	\renewcommand{\listtablename}{List of Tables}
+	\listoftables
+	\newpage
+	\pagenumbering{arabic}
+	
+	\subfile{introduzione}
+	\subfile{studente}
+	\subfile{professore}
+	\subfile{admin}
+	\subfile{universita}
+	
+
+\end{document}

@@ -95,22 +95,27 @@
 
 \newcommand{\amme}{Amministratore\xspace}
 \newcommand{\ammi}{Amministratori\xspace}
+\newcommand{\ammeEN}{Administrator\xspace}
 
 \newcommand{\alista}{Analista\xspace}
 \newcommand{\alisti}{Analisti\xspace}
+\newcommand{\alistaEN}{Analyst\xspace}
 
 \newcommand{\proga}{Progettista\xspace}
 \newcommand{\progi}{Progettisti\xspace}
+\newcommand{\progaEN}{Designer\xspace}
 
 \newcommand{\progre}{Programmatore\xspace}
 \newcommand{\progri}{Programmatori\xspace}
+\newcommand{\progreEN}{Programmer\xspace}
 
 \newcommand{\vere}{Verificatore\xspace}
 \newcommand{\veri}{Verificatori\xspace}
+\newcommand{\vereEN}{Verifier\xspace}
 
 \newcommand{\resp}{Responsabile\xspace}
- 
 \newcommand{\respi}{Responsabili\xspace}
+\newcommand{\respEN}{Responsible\xspace}
  
 
 \newcommand{\pdp}{\textit{Piano di progetto}\xspace}
@@ -154,6 +159,14 @@
 	Il \citGloss{front-end} del sistema consisterà in una applicazione web realizzata con \citGloss{React} e \citGloss{Redux}, mentre il \citGloss{back-end} sarà composto da un insieme di \citGloss{smart contract} scritti in linguaggio \citGloss{Solidity} che andranno a girare su una rete \citGloss{Ethereum}.\xspace
 }
 
+% product objective
+\newcommand{\scopoProdottoEN}{
+
+\section{Purpose of the product}
+	The purpose of the product is the creation of a DAPP available from web and usable with the plugin MetaMask to manage a system which can simulate the basic functionality of UniWeb.\\
+	The front-end of the system consist in a web application developed with React and Redux, while the back-end is a composition of multiple smart contract written in Solidity, whom will run on a Ethereum Blockchain.\xspace
+}
+
 
 \newcommand{\nData}[3]{#1-#2-#3} % GG MM AAAA
 \newcommand{\nURI}[1]{{\color{blue}\url{#1}}}
@@ -181,6 +194,27 @@
 			
 			\hline
 			\textbf{Versione} & \textbf{Data} & \textbf{Descrizione} & \textbf{Autore} & \textbf{Ruolo}\\
+			\endhead
+			
+		
+	}
+	{
+	%\restoregeometry
+	\end{document}
+		
+}%end DiarioModifiche
+
+% document diario delle modifiche enviroment
+\newenvironment{DiarioModificheEN}{
+	%\newgeometry{margin=3cm}
+	\begin{document}
+	{\huge \textbf{Diary of changes}}\\
+		\renewcommand\arraystretch{1.2}
+		
+		\begin{longtable}[htbp]{p{1.6cm}|p{2cm}|p{4.2cm}|p{2cm}|p{2.5cm}}
+			
+			\hline
+			\textbf{Version} & \textbf{Date} & \textbf{Description} & \textbf{Author} & \textbf{Role}\\
 			\endhead
 			
 		

@@ -7,26 +7,26 @@
 \chapter{Solidity}
 \section{Architecture}
 \subsection{Architecture Overview}
-The main contract, University, consisted in a hierarchy of small contract, each other manage a part of the overall features that must be offered all together.\\
-University use two more contract to define users, Teacher and Student, these two share some functionality, so they are made from specialization of another contract, User, who contain the basic functionality for a user.\\
-Administrators doesn't need a contract, because they doesn't have to keep trace of an list or complex information, the University only have to keep their address.\\
-University keep a list of academic years, represented by the contract "Year", who have a list of courses, represented by the contract "Course", who finally have a list of exam, represented by "Exam".\\
+The main contract, University, consisted in a hierarchy of small contracts, each other manage a part of the overall features that must be offered all together.\\
+University contract uses two more contracts to define users: Teacher and Student. These two contracts share some functionality, because they are made from specialization of another contract, User, which contains the basic functionality for a user.\\
+Administrators don't need a contract, because they don't have to keep trace of a list or complex information, the University only has to keep their addresses.\\
+University keeps a list of academic years, represented by the contract "Year", who has a list of courses, represented by the contract "Course", which finally has a list of the exams, represented by "Exam".\\
 
-A responsibility of the university is control who can do what, preventing unauthorized user to do actions not within their competence, but this check can be done indirectly from contract subsequently instantiated to have more performance and reduce the cost.\\
+Is University contract responsibility to stabilize the rules, preventing unauthorized user to do actions not within their competence. This control is also can be done indirectly from contract subsequently instantiated to have more performance and reduce the cost.\\
 
 \subsection{Chebotko Diagram}
 \subsubsection{Overview of data structure}
-The organization of data in the Blockchain cannot be comparable to a relational database, because it's impossible to recover in a quick way the data and/or make query on it.\\
+The organization of data in the Blockchain cannot be comparable to a relational database, because it's impossible to recover in a quick way the data and/or make a query on it.\\
 The structure of the data can be assimilable, which opportune consideration, to some not relational database, also called NoSQL, "Not Only SQL".\\
 
-A database identified similar to our case is Cassandra, which is distributed, with no single point of failure, high availability and guarantees a fast recover of data only if they are recoverable without join between tables, operation that are not even supported.\\
+A database identified similar to our case is Cassandra, which is distributed with no single point of failure, high availability and guarantees a fast recovery of data only if they are recoverable without join between tables, an operation that is not even supported.\\
 
 \subsubsection{Overview of Chebotko Diagram}
 To get a better understanding of the architecture and to get a consistent design a Chetbotko diagram was created.\\
 This diagram was designed for CassandraDB, but it can be used, with some shrewdness, to the data saved using maps in the Ethereum contracts.\\
 The goal of this diagram is demonstrate which data can be accessible using certain keys.\\
 A second goal is demonstrating that all needed data are accessible quickly starting from an information that leads to it and visually check that no data is inaccessible.\\
-Every map has two arrow, one that enter from above and one that come out from under: the first one indicate the key that can be used in those map to get other data, the second one indicate the information that can be recover from it and used in other map as keys.\\
+Every map has two arrows, one that enter from above and one that come out from under: the first one indicate the key that can be used in those maps to get other data, the second one indicates the information that can be recovered from it and used in another map as keys.\\
 
 \begin{landscape}
 \newpage
@@ -40,11 +40,11 @@ Every map has two arrow, one that enter from above and one that come out from un
 \end{landscape}
 \newpage
 
-In this diagram the divisions of responsibilities is still ignored, as it will be the task of the next phase to detect the best subdivision.\\
+In this diagram, the divisions of responsibilities are still ignored, as it will be the task of the next phase to detect the best subdivision.\\
 The current focus is only the understanding of data provision and their connection.\\
 
 A difference compared to the standard Chebotko diagram used on CassandraDB is the presence of containers, highlighted by different colors, which represent multiple instances of the same data schema.\\
-An arrow entering a map belonging to a different container must therefore know, in addition to the information to be used as key for the map itself, the address to which that container is positioned, obtainable through other maps of the previous container.\\
+An arrow entering a map belonging to a different container must therefore know, in addition to the information to be used a key for the map itself, the address to which that container is positioned, obtainable through other maps of the previous container.\\
 The only exception of access is the university container, as the address must be available to access the system itself.\\
 
 \subsection{UML Diagram}

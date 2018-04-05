@@ -11,10 +11,11 @@ The following requirements are required to run Marvin:
 	\item Yarn or NPM (recommended Yarn on Windows)
 \end{enumerate}
 In addition to these there is the need to have a C language compiler, which is used for the compilation of web3 library.\\
-Under Linux system it uses GCC, under *BSD system it can use both GCC or Clang, 	
+
+Under Linux system the compilation uses GCC, under *BSD system it can use both GCC or Clang, 	
 either works fine, the default one provided with the system should work without any problem, otherwise install GCC. \\
+
 Under Windows the required C compiler is MSCV, other compilers will not be recognized. To install MSVC, the required library and Python automatically you can run the following command after the installation of Node and Yarn (or NPM): \\
-\\
 \begin{ttfamily}
 yarn install --global --production windows-build-tools \\
 \end{ttfamily}
@@ -26,14 +27,12 @@ npm install --global --production windows-build-tools \\
 If the last version of node doesn't work correctly, especially under *BSD system, update and upgrade the system itself by following their respective support guides on official websites, because it can require some new library not present in older system.
 
 \section{Set up}
-Download and unzip Marvin folder, copy it from the CD attached to the documentation if present or download it using Git using the following command:
-\\
+Download and unzip Marvin folder, copy it from the CD attached to the documentation if present or download it using Git using the following command: \\
 \begin{ttfamily}
 	git clone https://github.com/353swe/Marvin-353.git \\
 \end{ttfamily}
 
 Then enter the folder and download all the required node modules using npm or yarn: \\
-\\
 \begin{ttfamily}
 	cd Marvin-353 \\
 	yarn install \\
@@ -47,11 +46,34 @@ In case of problems check that all the requirements are present, work fine and a
 
 
 \section{Run}
+For run Marvin, first run a local Ethereum blockchain with the following command, if on Windows: \\
+\begin{ttfamily} yarn run testrpc-win \end{ttfamily} \\
+or, on Linux or BSD: \\
+\begin{ttfamily} yarn run testrpc \end{ttfamily} \\
+If do you prefer npm to yarn, just change \begin{ttfamily}yarn\end{ttfamily}  with \begin{ttfamily}npm\end{ttfamily} in the commands.\\
 
-TODO
+Then migrate the university contract on the blockchain: \\
+\begin{ttfamily} yarn run migrate \end{ttfamily} \\
+Finally compile and start Marvin in develop mode: \\
+\begin{ttfamily} yarn run start \end{ttfamily} \\
 
-\section{Deploy}
+At this point the default browser will open on the page \nURI{http://127.0.0.1:8080}, if it doesn't happen open it manually.\\
+MetaMask has to been set to use the local network, for further info read the user guide.
 
-TODO
+\section{Deploy on Ropsten Infura}
+First sing up an Infura account using this link: \nURI{https://infura.io/signup}. \\
+Once done write down the personal Api Key given by Infura for the Ropsten Network, it can be read in the given URL, for example http://ropsten.infura.io/XXXX, where the XXXX is the key. \\
+
+Then open the file "truffle.js" in the root of Marvin and insert the Api Key after infura\_apikey and insert a mnemonic of an Ethereum address with some funds on the Ropsten network.\\
+Free Eth for the Ropsten network can be acquired from \nURI{https://faucet.metamask.io}.\\
+
+Now all is ready to migrate the university contract on the Ropsten blockchain: \\
+\begin{ttfamily} yarn run migrateropsten \end{ttfamily} \\
+
+To build Marvin in such a way that it can use the deployed contract just run:  \\
+\begin{ttfamily} yarn run build-prod \end{ttfamily} \\
+It will generate the static page into the folder "dist", ready to be uploaded on any host, for example \nURI{http://Surge.sh}. \\
+
+To get further info about Surge.sh you can read the official guide on \nURI{https://surge.sh/help/getting-started-with-surge}, the deploy can be automatically done from Travis or other CI platform.
 
 \end{document}

@@ -3,6 +3,55 @@
 \begin{document}
 
 \chapter{Installation}
+\section{Requirements}
+The following requirements are required to run Marvin:
+\begin{enumerate}
+	\item Python 2.X (NOT 3.X)
+	\item Node
+	\item Yarn or NPM (recommended Yarn on Windows)
+\end{enumerate}
+In addition to these there is the need to have a C language compiler, which is used for the compilation of web3 library.\\
+Under Linux system it uses GCC, under *BSD system it can use both GCC or Clang, 	
+either works fine, the default one provided with the system should work without any problem, otherwise install GCC. \\
+Under Windows the required C compiler is MSCV, other compilers will not be recognized. To install MSVC, the required library and Python automatically you can run the following command after the installation of Node and Yarn (or NPM): \\
+\\
+\begin{ttfamily}
+yarn install --global --production windows-build-tools \\
+\end{ttfamily}
+or \\
+\begin{ttfamily}
+npm install --global --production windows-build-tools \\
+\end{ttfamily}
 
+If the last version of node doesn't work correctly, especially under *BSD system, update and upgrade the system itself by following their respective support guides on official websites, because it can require some new library not present in older system.
+
+\section{Set up}
+Download and unzip Marvin folder, copy it from the CD attached to the documentation if present or download it using Git using the following command:
+\\
+\begin{ttfamily}
+	git clone https://github.com/353swe/Marvin-353.git \\
+\end{ttfamily}
+
+Then enter the folder and download all the required node modules using npm or yarn: \\
+\\
+\begin{ttfamily}
+	cd Marvin-353 \\
+	yarn install \\
+\end{ttfamily}
+or \\
+\begin{ttfamily}
+npm install \\
+\end{ttfamily}
+
+In case of problems check that all the requirements are present, work fine and are included in the PATH environment variable. For more information about environment variables see the help of your operating system. \\
+
+
+\section{Run}
+
+TODO
+
+\section{Deploy}
+
+TODO
 
 \end{document}

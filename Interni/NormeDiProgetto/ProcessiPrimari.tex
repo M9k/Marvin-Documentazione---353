@@ -83,15 +83,46 @@ Ogni requisito è identificato da un codice, costruito come descritto di seguito
 \subsubsection{Scopo}
 L'attività di Progettazione consiste nel descrivere una soluzione del problema
 che sia soddisfacente per tutti gli stakeholders.
-I \progi hanno il compito di svolgere tale attività, definendo l'architettura logica del prodotto identificando componenti chiare, riusabili e coese rimanendo nei costi fissati. L'architettura definita dovrà:
+I \progi hanno il compito di svolgere tale attività, definendo l'architettura logica del prodotto identificando componenti chiare, riusabili e coese rimanendo nei costi fissati. La progettazione verrà fatta in due momenti: una prima parte ad alto livello sarà fatta durante il periodo di Progettazione della base tecnologica, dove verranno studiati i design pattern che potrebbero essere utilizzati durante il periodo seguente di Progettazione di dettaglio e codifica, durante il quale la progettazione diverrà atomica per ogni componente del sistema, in modo che i \progri possano sviluppare il codice eseguendo task focalizzate e singolari.\\
+L'architettura definita dovrà avere le seguenti qualità:
 \begin{itemize}
-	\item Soddisfare i \citGloss{requisiti} definiti nel documento \adr e adattarsi facilmente nel caso essi evolvano o se ne aggiungano di nuovi; 
-	\item Essere comprensibile, modulare e robusta riuscendo a gestire situazioni erronee improvvise;
-	\item Essere affidabile, cioè avere una elevata capacità di rispettare le specifiche nel tempo;
-	\item Essere sicura rispetto ad intrusioni e malfunzionamenti;
-	\item Avere una elevata disponibilità, riducendo al minimo i tempi di manutenzione;
-	\item Avere componenti semplici, coesi nel raggiungere gli obiettivi, incapsulati e con scarse dipendenze tra loro.
+	\item \textbf{Sufficienza:} deve soddisfare i \citGloss{requisiti} definiti nel documento \adr;
+	\item \textbf{Comprensibilità:} affinchè possa essere capita dagli stakeholder;
+	\item \textbf{Modularità:} deve essere suddivisa in parti chiare e ben distinte, così che possa essere facilmente manutenibile;
+	\item \textbf{Robustezza:} deve essere capace di sopportare ingressi diversi, sia da parte di utenti che dall'ambiente;
+	\item \textbf{Flessibilità:} deve poter permettere modifiche al variare o all'aggiunta di requisiti senza perdite di performance o doverla restaurare profondamente;
+	\item \textbf{Riusabilità:} le sue parti devono poter essere usate in altre applicazioni;
+	\item \textbf{Efficienza:} deve essere pensata in modo da poter ridurre gli sprechi di tempo e spazio;
+	\item \textbf{Affidabilità:} deve avere una elevata capacità di rispettare le specifiche nel tempo;
+	\item \textbf{Disponibilità:} la manutenzione delle sue parti non dovrà inabilitare il funzionamento di tutto il sistema;
+	\item \textbf{Sicurezza:} rispetto ad intrusioni e malfunzionamenti;
+	\item \textbf{Semplicità:} ogni parte contiene solo il necessario e nulla di superfluo;
+	\item \textbf{Incapsulazione:} le componenti dovranno essere progettate in modo che le informazioni interne siano nascoste;
+	\item \textbf{Coesione:} in modo che le parti che hanno gli stessi obiettivi stanno insieme;
+	\item \textbf{Basso accoppiamento:} parti distinte devono essere poco dipendenti l'una dalle altre, in modo da poter essere facilmente manutenibili.
 \end{itemize}
+
+Per svolgere al meglio il processo di progettazione, verrà utilizzato il software PlantUML\footnote{\nURI{http://plantuml.com/}}, che permette di creare diagrammi UML in maniera semplice e veloce. Infatti mette a disposizione strumenti adatti per creare tutti i tipi di diagrammi utili alla progettazione, come i diagrammi delle classi, di sequenza e di attività.
+Per fare ciò, verrà seguito lo standard \citGloss{UML} 2.0, documentato nella versione 2.0 di Luglio 2005.
+
+\subsubsection{Diagrammi delle classi}
+Lo scopo dei diagrammi delle classi può essere sintetizzato in:
+\begin{itemize}
+	\item Analisi e progettazione della visione statica di un'applicazione;
+	\item Descrizione delle responsabilità di un sistema;
+	\item Base per diagrammi dei componenti e di rilascio;
+	\item Ingegneria diretta e inversa.
+\end{itemize}
+Per creare facilmente i diagrammi delle classi, dovrà essere creato un file per ogni classe o raggruppamento di classi che dovrà avere estensione \texttt{.iuml}. In questo modo saranno più facilmente manutenibili e modificabili.\\
+Per stabilire le relazioni tra le classi verrà creato un'altro file con estensione \texttt{.puml} in modo da avere il diagramma completo.\\
+\subsubsection{React}
+Ogni componente React verrà rappresentato attraverso un rettangolo 
+
+
+
+
+\subsubsection{Diagrammi di sequenza}
+
 
 \subsubsection{Sviluppo}
 Lo sviluppo di \progetto avviene seguendo il modello incrementale, spiegato nel dettaglio nel documento \pdp \S 3. Sarà eseguita un'analisi comparativa di varie tecnologie esistenti al fine di capire quali siano le più consone allo sviluppo di \progetto. Nel caso si ritengano più consone tecnologie differenti da quelle proposte dalla proponente, il gruppo \gruppo la contatterà per discuterne insieme.\\

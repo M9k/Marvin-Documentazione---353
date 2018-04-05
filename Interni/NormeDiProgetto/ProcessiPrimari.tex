@@ -83,7 +83,7 @@ Ogni requisito è identificato da un codice, costruito come descritto di seguito
 \subsubsection{Scopo}
 L'attività di Progettazione consiste nel descrivere una soluzione del problema
 che sia soddisfacente per tutti gli stakeholders.
-I \progi hanno il compito di svolgere tale attività, definendo l'architettura logica del prodotto identificando componenti chiare, riusabili e coese rimanendo nei costi fissati. La progettazione verrà fatta in due momenti: una prima parte ad alto livello sarà fatta durante il periodo di Progettazione della base tecnologica, dove verranno studiati i design pattern che potrebbero essere utilizzati durante il periodo seguente di Progettazione di dettaglio e codifica, durante il quale la progettazione diverrà atomica per ogni componente del sistema, in modo che i \progri possano sviluppare il codice eseguendo task focalizzate e singolari.\\
+I \progi hanno il compito di svolgere tale attività, definendo l'architettura logica del prodotto identificando componenti chiare, riusabili e coese rimanendo nei costi fissati. La progettazione viene fatta in due momenti: una prima parte ad alto livello viene fatta durante il periodo di Progettazione della base tecnologica, dove verranno studiati i design pattern che potrebbero essere utilizzati durante il periodo seguente di Progettazione di dettaglio e codifica, durante il quale la progettazione diventa atomica per ogni componente del sistema, in modo che i \progri possano sviluppare il codice eseguendo task focalizzate e singolari.\\
 L'architettura definita dovrà avere le seguenti qualità:
 \begin{itemize}
 	\item \textbf{Sufficienza:} deve soddisfare i \citGloss{requisiti} definiti nel documento \adr;
@@ -102,53 +102,6 @@ L'architettura definita dovrà avere le seguenti qualità:
 	\item \textbf{Basso accoppiamento:} parti distinte devono essere poco dipendenti l'una dalle altre, in modo da poter essere facilmente manutenibili.
 \end{itemize}
 
-Per svolgere al meglio il processo di progettazione, verrà utilizzato il software PlantUML\footnote{\nURI{http://plantuml.com/}}, che permette di creare diagrammi UML in maniera semplice e veloce. Infatti mette a disposizione strumenti adatti per creare tutti i tipi di diagrammi utili alla progettazione, come i diagrammi delle classi, di sequenza e di attività.
-Per fare ciò, verrà seguito lo standard \citGloss{UML} 2.0, documentato nella versione 2.0 di Luglio 2005.
-
-\subsubsection{Diagrammi delle classi}
-Lo scopo dei diagrammi delle classi può essere sintetizzato in:
-\begin{itemize}
-	\item Analisi e progettazione della visione statica di un'applicazione;
-	\item Descrizione delle responsabilità di un sistema;
-	\item Base per diagrammi dei componenti e di rilascio;
-	\item Ingegneria diretta e inversa.
-\end{itemize}
-Per creare facilmente i diagrammi delle classi, dovrà essere creato un file per ogni classe o raggruppamento di classi che dovrà avere estensione \texttt{.iuml}. In questo modo saranno più facilmente manutenibili e modificabili.\\
-Per stabilire le relazioni tra le classi verrà creato un'altro file con estensione \texttt{.puml} in modo da avere il diagramma completo.\\
-\subsubsection{React}
-Ogni componente React verrà rappresentato attraverso un rettangolo 
-
-
-
-
-\subsubsection{Diagrammi di sequenza}
-
-
-\subsubsection{Sviluppo}
-Lo sviluppo di \progetto avviene seguendo il modello incrementale, spiegato nel dettaglio nel documento \pdp \S 3. Sarà eseguita un'analisi comparativa di varie tecnologie esistenti al fine di capire quali siano le più consone allo sviluppo di \progetto. Nel caso si ritengano più consone tecnologie differenti da quelle proposte dalla proponente, il gruppo \gruppo la contatterà per discuterne insieme.\\
-La proponente, tramite capitolato d'appalto, identifica queste tecnologie come obbligatorie per lo sviluppo:\\
-\begin{itemize}
-	\item \textbf{\citGloss{React};}
-	\item \textbf{\citGloss{Redux};}
-	\item \textbf{\citGloss{Metamask};}
-	\item \textbf{Rete \citGloss{Ethereum}.}
-\end{itemize}
-\subsubsection{Integrazione}
-L'attività di integrazione sarà effettuata utilizzando il servizio, compatibile con \citGloss{GitHub}, \textit{\citGloss{Travis}}.\\
-Questo servizio implementa il modello di integrazione continua: ad ogni commit su repository \citGloss{GitHub}, \citGloss{Travis} crea una build ed esegue automaticamente i test di unità. In questo modo sarà possibile identificare immediatamente modifiche od errori che inficiano sul comportamento del prodotto.\\
-Per quanto riguarda il test coverage, cioè il grado di esecuzione del codice sorgente durante l'esecuzione dei test, verrà utilizzato il tool \citGloss{JavaScript} \textit{IstanbulJS}. 
-\subsubsection{Diagrammi}
-Al fine di rendere più chiare le scelte progettuali adottate e
-ridurre le possibili ambiguità, sarà necessario fare largo uso di vari tipi di diagrammi 
-\textbf{UML 2.0}, realizzandone secondo le seguenti rappresentazioni:
-\begin{itemize}
-	\item \textbf{Diagrammi dei casi d'uso:} dedicati alla descrizione delle funzioni offerte dal sistema;
-	\item \textbf{Diagrammi delle classi:} dedicati alla descrizione degli oggetti che fanno parte di un sistema e delle loro dipendenze;
-	\item \textbf{Diagrammi dei package:} dedicati alla descrizione della dipendenza tra classi raggruppate in package;
-	\item \textbf{Diagrammi di sequenza:} dedicati a descrivere la collaborazione nel tempo tra un gruppo di oggetti;
-	\item \textbf{Diagrammi di attività:} dedicati a descrivere la logica procedurale.
-\end{itemize}
-
 \subsubsection{Obiettivi della progettazione}
 Essa serve a garantire che il prodotto sviluppato soddisfi le proprietà e i bisogni specificati nell'attività di analisi ponendo i seguenti obiettivi:
 \begin{itemize}
@@ -162,6 +115,82 @@ Essa serve a garantire che il prodotto sviluppato soddisfi le proprietà e i bis
 	\item Mantenere bassa la dipendenza tra le varie parti del prodotto, seguendo il principio della \textit{modularità};
 	\item Ottimizzare l'uso di risorse.
 \end{itemize}
+
+\subsubsection{Diagrammi}
+Al fine di rendere più chiare le scelte progettuali adottate e
+ridurre le possibili ambiguità, sarà necessario fare largo uso di vari tipi di diagrammi 
+\textbf{UML 2.0}, realizzandone secondo le seguenti rappresentazioni:
+\begin{itemize}
+	\item \textbf{Diagrammi dei casi d'uso:} dedicati alla descrizione delle funzioni offerte dal sistema;
+	\item \textbf{Diagrammi delle classi:} dedicati alla descrizione degli oggetti che fanno parte di un sistema e delle loro dipendenze;
+	\item \textbf{Diagrammi dei package:} dedicati alla descrizione della dipendenza tra classi raggruppate in package;
+	\item \textbf{Diagrammi di sequenza:} dedicati a descrivere la collaborazione nel tempo tra un gruppo di oggetti;
+	\item \textbf{Diagrammi di attività:} dedicati a descrivere la logica procedurale.
+\end{itemize}
+Per svolgere al meglio il processo di progettazione, viene utilizzato il software PlantUML\footnote{\nURI{http://plantuml.com/}}, che permette di creare diagrammi UML in maniera semplice e veloce. Infatti mette a disposizione strumenti adatti per creare tutti i tipi di diagrammi utili alla progettazione, come i diagrammi delle classi, di sequenza e di attività.
+
+\subsubsection{Diagrammi delle classi}
+Lo scopo dei diagrammi delle classi può essere sintetizzato in:
+\begin{itemize}
+	\item Analisi e progettazione della visione statica di un'applicazione;
+	\item Descrizione delle responsabilità di un sistema;
+	\item Base per diagrammi dei componenti e di rilascio;
+	\item Ingegneria diretta e inversa.
+\end{itemize}
+Per creare facilmente i diagrammi delle classi, deve essere creato un file per ogni classe o raggruppamento di classi che dovrà avere estensione \texttt{.iuml}. In questo modo saranno più facilmente manutenibili e modificabili.\\
+Per stabilire le relazioni tra le classi viene creato un'altro file con estensione \texttt{.puml} in modo da avere il diagramma completo.
+\paragraph{React}
+Ogni componente React viene rappresentato attraverso un rettangolo tripartito orizzontalmente, così suddiviso:
+\begin{enumerate}
+	\item \textbf{Nome componente:} deve essere univoco, scritto seguendo la notazione CamelCase, in inglese;
+	\item \textbf{Props:} se presenti, devono essere elencate seguendo la notazione
+	\begin{center}
+		\texttt{propName: type};
+	\end{center}
+	\item \textbf{Render:} breve descrizione della renderizzazione del componente.
+\end{enumerate}
+I componenti di routing vengono invece rappresentati attraverso un rettangolo bipartito orizzontalmente. La prima sezione è sempre occupata dal nome seguendo le norme valide per i componenti React, mentre la seconda sezione elenca le routes.
+
+\paragraph{Redux}
+Le sagas Redux sono rappresentate attraverso un rettangolo diviso orizzontalmente in quattro sezioni:
+\begin{enumerate}
+	\item \textbf{Nome saga:} deve essere univoco, scritto seguendo la notazione CamelCase, in inglese;
+	\item \textbf{Types:} deve elencare la lista secondo la notazione 
+	\begin{center}
+		\texttt{modifier NAME\_TYPE: type}
+	\end{center}
+	\item \textbf{Sagas:} elenca la lista di metodi secondo la notazione 
+	\begin{center}
+		\texttt{modifier methodName(types): type}
+	\end{center}
+	\item \textbf{Actions:} elenca la lista delle azioni secondo la notazione 
+	\begin{center}
+		\texttt{modifier methodName(types): type}
+	\end{center}
+
+\end{enumerate}
+
+\paragraph{Solidity}
+
+
+\subsubsection{Diagrammi di sequenza}
+\subsubsection{Diagrammi di attività}
+
+
+\subsubsection{Sviluppo}
+Lo sviluppo di \progetto avviene seguendo il modello incrementale, spiegato nel dettaglio nel documento \pdp \S 3. Sarà eseguita un'analisi comparativa di varie tecnologie esistenti al fine di capire quali siano le più consone allo sviluppo di \progetto. Nel caso si ritengano più consone tecnologie differenti da quelle proposte dalla proponente, il gruppo \gruppo la contatterà per discuterne insieme.\\
+La proponente, tramite capitolato d'appalto, identifica queste tecnologie come obbligatorie per lo sviluppo:\\
+\begin{itemize}
+	\item \textbf{\citGloss{React};}
+	\item \textbf{\citGloss{Redux};}
+	\item \textbf{\citGloss{Metamask};}
+	\item \textbf{Rete \citGloss{Ethereum}.}
+\end{itemize}
+
+\subsubsection{Integrazione}
+L'attività di integrazione sarà effettuata utilizzando il servizio, compatibile con \citGloss{GitHub}, \textit{\citGloss{Travis}}.\\
+Questo servizio implementa il modello di integrazione continua: ad ogni commit su repository \citGloss{GitHub}, \citGloss{Travis} crea una build ed esegue automaticamente i test di unità. In questo modo sarà possibile identificare immediatamente modifiche od errori che inficiano sul comportamento del prodotto.\\
+Per quanto riguarda il test coverage, cioè il grado di esecuzione del codice sorgente durante l'esecuzione dei test, verrà utilizzato il tool \citGloss{JavaScript} \textit{IstanbulJS}. 
 
 \subsection{Codifica}
 In questa sotto-sezione vengono elencate le norme alle quali i \progri devono attenersi durante l'attività di programmazione e implementazione.\\

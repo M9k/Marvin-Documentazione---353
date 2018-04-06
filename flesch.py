@@ -53,5 +53,5 @@ for directory in directories:
     flesch_obj.append({"documento": document_name, "indice": document_index});
     flesch_indexes += document_name + " - " + document_index + '\n'
 if "TRAVIS" in os.environ:
-    a = unirest.post("http://api.353swe.ml/metrics/flesch.php", headers={ "Accept": "application/json" }, params={'indexes': json.dumps(flesch_obj)})
+    a = unirest.post("http://api.353swe.ml/metrics/gulpease.php", headers={ "Accept": "application/json" }, params={'indexes': json.dumps(flesch_obj)})
 print flesch_indexes

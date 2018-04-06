@@ -10,14 +10,18 @@
 		\item \textbf{TeacherPages: } pages for manage courses and for add grades to students;
 		\item \textbf{StudentPages: } pages for manage the university career.
 	\end{enumerate}
-	
+
 	\subsection{Connection to Redux}
-		
+	Every page that needs to take or send some data to the blockchain, have to use a container to do it between the Redux store.\\
+	The connection is done with \texttt{mapStateToProps}, \texttt{mapDispatchToProps} and a \texttt{connect}.\\
+
 	\subsubsection{UML}
 	\nImg{diagrammi/react/publicpages}{PublicPages package}{14.5}
 	\nImg{diagrammi/react/universitypages}{UniversityPages package}{10}
 	\nImg{diagrammi/react/adminpages}{AdminPages package}{14.5}
 	\nImg{diagrammi/react/teacherpages}{TeacherPages package}{10}
 	\nImg{diagrammi/react/studentpages}{StudentPages package}{10}
+	\nImg{diagrammi/react/react-redux}{Connection React-Redux}{13}
+
 
 \end{document}

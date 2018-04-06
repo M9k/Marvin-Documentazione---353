@@ -101,21 +101,20 @@ L'architettura definita dovrà avere le seguenti qualità:
 	\item \textbf{Coesione:} in modo che le parti che hanno gli stessi obiettivi stanno insieme;
 	\item \textbf{Basso accoppiamento:} parti distinte devono essere poco dipendenti l'una dalle altre, in modo da poter essere facilmente manutenibili.
 \end{itemize}
-
+%TODO questa parte sotto la teniamo o è un po' ripetitiva?
 \subsubsection{Obiettivi della progettazione}
 Essa serve a garantire che il prodotto sviluppato soddisfi le proprietà e i bisogni specificati nell'attività di analisi ponendo i seguenti obiettivi:
 \begin{itemize}
-	\item Garantire la qualità di prodotto sviluppato, perseguendo la \textit{correttezza
-		per costruzione};
+	\item Garantire la qualità di prodotto sviluppato, perseguendo la \textit{correttezza per costruzione};
 	\item Organizzare e ripartire compiti implementativi, riducendo la
 	complessità del problema originale fino alle singole componenti
 	facilitandone la codifica da parte dei singoli \progri;
-	\item Rendere chiara e comprensibile ogni parte dell' architettura ai differenti stakeholders;
-	\item Mantenere nascosti i dettagli implementativi, seguendo il principio dell' \textit{information hiding};
+	\item Rendere chiara e comprensibile ogni parte dell'architettura ai differenti stakeholders;
+	\item Mantenere nascosti i dettagli implementativi, seguendo il principio dell'\textit{information hiding};
 	\item Mantenere bassa la dipendenza tra le varie parti del prodotto, seguendo il principio della \textit{modularità};
 	\item Ottimizzare l'uso di risorse.
 \end{itemize}
-
+%TODO fino a qua
 \subsubsection{Diagrammi}
 Al fine di rendere più chiare le scelte progettuali adottate e
 ridurre le possibili ambiguità, sarà necessario fare largo uso di vari tipi di diagrammi 
@@ -142,37 +141,85 @@ Per stabilire le relazioni tra le classi viene creato un'altro file con estensio
 \paragraph{React}
 Ogni componente React viene rappresentato attraverso un rettangolo tripartito orizzontalmente, così suddiviso:
 \begin{enumerate}
-	\item \textbf{Nome componente:} deve essere univoco, scritto seguendo la notazione CamelCase, in inglese;
+	\item \textbf{Nome componente:} deve essere univoco, scritto seguendo la notazione \citGloss{CamelCase}, in inglese;
 	\item \textbf{Props:} se presenti, devono essere elencate seguendo la notazione
 	\begin{center}
-		\texttt{propName: type};
+		\texttt{propName : type};
 	\end{center}
 	\item \textbf{Render:} breve descrizione della renderizzazione del componente.
 \end{enumerate}
 I componenti di routing vengono invece rappresentati attraverso un rettangolo bipartito orizzontalmente. La prima sezione è sempre occupata dal nome seguendo le norme valide per i componenti React, mentre la seconda sezione elenca le routes.
 
 \paragraph{Redux}
-Le sagas Redux sono rappresentate attraverso un rettangolo diviso orizzontalmente in quattro sezioni:
+Le \citGloss{Sagas} e i \citGloss{Ducks} Redux sono rappresentati attraverso un rettangolo diviso orizzontalmente in quattro sezioni:
 \begin{enumerate}
-	\item \textbf{Nome saga:} deve essere univoco, scritto seguendo la notazione CamelCase, in inglese;
+	\item \textbf{Nome saga/duck:} deve essere univoco, scritto seguendo la notazione \citGloss{CamelCase}, in inglese;
 	\item \textbf{Types:} deve elencare la lista secondo la notazione 
 	\begin{center}
-		\texttt{modifier NAME\_TYPE: type}
+		\texttt{modifier NAME\_TYPE : type};
 	\end{center}
-	\item \textbf{Sagas:} elenca la lista di metodi secondo la notazione 
+	\item \textbf{Sagas/Selectors:} elenca la lista di metodi secondo la notazione 
 	\begin{center}
-		\texttt{modifier methodName(types): type}
+		\texttt{modifier methodName(parameterTypes) : returnType};
 	\end{center}
 	\item \textbf{Actions:} elenca la lista delle azioni secondo la notazione 
 	\begin{center}
-		\texttt{modifier methodName(types): type}
+		\texttt{modifier methodName(parameterTypes) : returnType}.
 	\end{center}
-
 \end{enumerate}
+Ogni membro del duck dovrà inserire obbligatoriamente il modificatore d'accesso e deve essere uno di questa lista:
+\begin{itemize}
+	\item +: visibilità pubblica;
+	\item -: visibilità privata;
+	\item *: per indicare funzioni di tipo \texttt{generators}.
+\end{itemize}
+Ogni Duck dovrà essere accompagnato da una nota che indichi lo stato iniziale secondo la notazione
+\begin{center}
+	\texttt{initialState: \{name : type = default\}}
+\end{center}
+Le interfacce vengono rappresentate con un rettangolo tripartito orizzontalmente così suddiviso:
+\begin{enumerate}
+	\item \textbf{Nome interfaccia:} deve essere univoco, scritto seguendo la notazione \citGloss{CamelCase}, in inglese;
+	\item \textbf{Metodi:} 	
+	\begin{center}
+		\texttt{modifier methodName(parameterTypes) : returnType}.
+	\end{center}
+	\item \textbf{Purpouse:} piccola descrizione dell'interfaccia.
+\end{enumerate}
+I modificatori antecedenti ai nomi 
 
 \paragraph{Solidity}
+I contratti in Solidity vengono rappresentati con un rettangolo quadripartito orizzontalmente così suddiviso:
+\begin{enumerate}
+	\item \textbf{Nome contratto:} deve essere univoco, scritto seguendo la notazione \citGloss{CamelCase}, in inglese;
+	\item \textbf{Campi dati:} elenco dei campi dati del contratto, secondo la notazione: \texttt{modifier name : type}. Il modificatore d'accesso dovrà essere obbligatoriamente inserito e deve essere uno di questi:
+	\begin{itemize}
+		\item +: visibilità pubblica;
+		\item -: visibilità privata;
+		\item \#: visibilità interna;
+	\end{itemize}
+	\item \textbf{Modifiers:} elenco dei modificatori di quel contratto, secondo la notazione:
+		\texttt{modifierName(value : type)};
+	\item \textbf{Metodi:} elenco dei metodi del contratto, secondo la notazione:
+	\begin{center}
+		\texttt{modifier methodName(value : type) : type}
+	\end{center}
+	e il modificatore d'accesso dovrà essere obbligatoriamente inserito, e oltre a quelli utilizzabili per i campi dati, può essere utilizzato contemporaneamente anche il simbolo \texttt{@} per indicare che si tratta di una \texttt{view}.
+\end{enumerate}
 
+Per tutti i linguaggi, nel caso in cui una classe non dovesse possedere variabili e/o metodi, apparirà nel diagramma comunque, seppur vuota, la sezione ad esse dedicata.
 
+I diagrammi delle classi sono collegati fra loro da frecce che esplicitano le dipendenze.
+In particolare, verranno utilizzati i seguenti tipi di freccia:
+\begin{itemize}
+	\item Freccia semplice, da classe A a classe B: indica che la classe A ha fra i propri campi dati una o più istanze della classe B;
+	\item Freccia tratteggiata, da classe A a classe B: indica una dipendenza, significa che A dipende da B secondo una primitiva che andrà esplicitata vicino alla freccia;
+	\item Freccia a diamante vuota, da classe A a classe B: indica un'aggregazione, ovvero la relazione "B é parte di A". A non ha senso di esistere senza B;
+	\item Freccia a diamante piena, da classe A a classe B: indica la composizione, corrisponde ad un'aggregazione con cardinalità (1, 1);
+	\item Freccia vuota, da classe A a classe B: indica l'ereditarietà/generalizzazione ed è il massimo grado di dipendenza fra classi. Indica che ogni oggetto di A è anche un oggetto di B.
+\end{itemize}
+\subsubsection{Diagramma dei package}
+Ogni package verrà rappresentato tramite un rettangolo con un'etichetta per il nome, che dovrà contenere i diagrammi delle classi appartenenti al package ed eventuali sotto-package. Le dipendenze fra i vari package dovranno essere segnalate con una freccia tratteggiata. Tale freccia, disegnata dal package A al package B, indica una dipendenza di A ne confronti di B.
 \subsubsection{Diagrammi di sequenza}
 \subsubsection{Diagrammi di attività}
 

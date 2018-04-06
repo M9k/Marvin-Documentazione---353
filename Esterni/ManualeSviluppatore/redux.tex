@@ -3,6 +3,27 @@
 \begin{document}
 
 \chapter{Redux}
+\section{Overview}
+Redux is a javaScripy library that allow us to manage an application's state. \\ 
+Combined with React, it store the state in a single object that can't be modify directly. When the state changes, a new object is created. \\
+Some benefits to this approach are:
+\begin{itemize}
+	\item Predictability of outcome;
+	\item Maintainability;
+	\item Ease of testing.
+\end{itemize}
 
+\section{Marvin's Redux organization} %TODO titolo molto provvisorio
+	\subsection{Ducks}
+	To keep our app as simple as possible, we decided to use a modular approach to describe all the logical components.\\
+	With Redux, we opted to use Ducks.\\
+	Ducks is a proposal for bundling reducers, action types and actions in a single file.
+		\subsubsection{UML}
+			\begin{figure}[h]
+			\centering
+			\includegraphics[width=1\linewidth]{"diagrammi/ducks"}
+			\caption{Ducks components}
+			\label{fig:Ducks components}
+		\end{figure}
 
 \end{document}

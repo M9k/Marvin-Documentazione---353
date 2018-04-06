@@ -70,5 +70,6 @@ for directory in directories:
     document_index = output.split()[-1]
     gulpease_obj.append({"documento": document_name, "indice": document_index});
     gulpease_indexes += document_name + " - " + document_index + '\n'
-a = unirest.post("http://api.353swe.ml/metrics/gulpease.php", headers={ "Accept": "application/json" }, params={'indexes': json.dumps(gulpease_obj)})
+if "TRAVIS" in os.environ:
+    a = unirest.post("http://api.353swe.ml/metrics/gulpease.php", headers={ "Accept": "application/json" }, params={'indexes': json.dumps(gulpease_obj)})
 print gulpease_indexes

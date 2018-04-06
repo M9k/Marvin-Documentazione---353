@@ -10,6 +10,7 @@ before_install:
 - python --version
 - pip --version
 - sudo pip install unirest
+- sudo pip install textstat
 - git clone git@github.com:pkubowicz/opendetex.git && cd opendetex && sudo apt-get install make gcc flex && sudo make install && cd ..
 - chmod +x build.sh
 - "sudo apt-get update && sudo apt-get install --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra texlive-latex-recommended texlive-lang-italian dvipng latex-xcolor texlive-full"
@@ -17,3 +18,4 @@ script:
 - mkdir _build
 - ./build.sh
 - python gulpease.py
+- python flesch.py

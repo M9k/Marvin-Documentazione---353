@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_HjZ3oDp5Eei8z6Pd1Mthdw" name="NewModel">
+  <packagedElement xmi:type="uml:Component" xmi:id="_Le1LYDp5Eei8z6Pd1Mthdw" name="Marvin - Scenario Utente Generico" useCase="_l36_ADp5Eei8z6Pd1Mthdw _mLW4YDp5Eei8z6Pd1Mthdw">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_l36_ADp5Eei8z6Pd1Mthdw" name="UC1 - Breve Guida" subject="_Le1LYDp5Eei8z6Pd1Mthdw"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_mLW4YDp5Eei8z6Pd1Mthdw" name="UC11 - Visualizzazione quantità di Gas, Ether e costo delle operazioni" subject="_Le1LYDp5Eei8z6Pd1Mthdw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_jvxmwDp5Eei8z6Pd1Mthdw" name="Metamask">
+    <eAnnotations xmi:id="_jvyN0Dp5Eei8z6Pd1Mthdw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details xmi:id="_jvyN0Tp5Eei8z6Pd1Mthdw" key="Human"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_0M_AEDp5Eei8z6Pd1Mthdw" memberEnd="_0M_AETp5Eei8z6Pd1Mthdw _0M_nIDp5Eei8z6Pd1Mthdw">
+    <ownedEnd xmi:id="_0M_AETp5Eei8z6Pd1Mthdw" association="_0M_AEDp5Eei8z6Pd1Mthdw"/>
+    <ownedEnd xmi:id="_0M_nIDp5Eei8z6Pd1Mthdw" type="_l36_ADp5Eei8z6Pd1Mthdw" association="_0M_AEDp5Eei8z6Pd1Mthdw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_0vLuMDp5Eei8z6Pd1Mthdw" memberEnd="_0vLuMTp5Eei8z6Pd1Mthdw _0vLuMjp5Eei8z6Pd1Mthdw">
+    <ownedEnd xmi:id="_0vLuMTp5Eei8z6Pd1Mthdw" association="_0vLuMDp5Eei8z6Pd1Mthdw"/>
+    <ownedEnd xmi:id="_0vLuMjp5Eei8z6Pd1Mthdw" type="_mLW4YDp5Eei8z6Pd1Mthdw" association="_0vLuMDp5Eei8z6Pd1Mthdw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_1MJXADp5Eei8z6Pd1Mthdw" memberEnd="_1MJ-EDp5Eei8z6Pd1Mthdw _1MJ-ETp5Eei8z6Pd1Mthdw">
+    <ownedEnd xmi:id="_1MJ-EDp5Eei8z6Pd1Mthdw" type="_jvxmwDp5Eei8z6Pd1Mthdw" association="_1MJXADp5Eei8z6Pd1Mthdw"/>
+    <ownedEnd xmi:id="_1MJ-ETp5Eei8z6Pd1Mthdw" type="_mLW4YDp5Eei8z6Pd1Mthdw" association="_1MJXADp5Eei8z6Pd1Mthdw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_CXk2gDp6Eei8z6Pd1Mthdw" name="Marvin - Scenario Utente Non Autenticato" useCase="_XBCN0Dp6Eei8z6Pd1Mthdw _XL6BEDp6Eei8z6Pd1Mthdw">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_XBCN0Dp6Eei8z6Pd1Mthdw" name="UC2 - Login" subject="_CXk2gDp6Eei8z6Pd1Mthdw"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_XL6BEDp6Eei8z6Pd1Mthdw" name="UC3 - Registrazione" subject="_CXk2gDp6Eei8z6Pd1Mthdw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_QDAEsDp6Eei8z6Pd1Mthdw" name="Utente Generico">
+    <eAnnotations xmi:id="_QDAEsTp6Eei8z6Pd1Mthdw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details xmi:id="_QDAEsjp6Eei8z6Pd1Mthdw" key="Human"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_SBwQYDp6Eei8z6Pd1Mthdw" memberEnd="_SBwQYTp6Eei8z6Pd1Mthdw _SBw3cDp6Eei8z6Pd1Mthdw">
+    <ownedEnd xmi:id="_SBwQYTp6Eei8z6Pd1Mthdw" type="_QDAEsDp6Eei8z6Pd1Mthdw" association="_SBwQYDp6Eei8z6Pd1Mthdw"/>
+    <ownedEnd xmi:id="_SBw3cDp6Eei8z6Pd1Mthdw" type="_l36_ADp5Eei8z6Pd1Mthdw" association="_SBwQYDp6Eei8z6Pd1Mthdw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_SfjmsDp6Eei8z6Pd1Mthdw" memberEnd="_SfjmsTp6Eei8z6Pd1Mthdw _Sfjmsjp6Eei8z6Pd1Mthdw">
+    <ownedEnd xmi:id="_SfjmsTp6Eei8z6Pd1Mthdw" type="_QDAEsDp6Eei8z6Pd1Mthdw" association="_SfjmsDp6Eei8z6Pd1Mthdw"/>
+    <ownedEnd xmi:id="_Sfjmsjp6Eei8z6Pd1Mthdw" type="_mLW4YDp5Eei8z6Pd1Mthdw" association="_SfjmsDp6Eei8z6Pd1Mthdw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_UGE4kDp6Eei8z6Pd1Mthdw" name="Utente Non Autenticato">
+    <eAnnotations xmi:id="_UGE4kTp6Eei8z6Pd1Mthdw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details xmi:id="_UGE4kjp6Eei8z6Pd1Mthdw" key="Human"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_dtMj0Dp6Eei8z6Pd1Mthdw" memberEnd="_dtMj0Tp6Eei8z6Pd1Mthdw _dtNK4Dp6Eei8z6Pd1Mthdw">
+    <ownedEnd xmi:id="_dtMj0Tp6Eei8z6Pd1Mthdw" type="_UGE4kDp6Eei8z6Pd1Mthdw" association="_dtMj0Dp6Eei8z6Pd1Mthdw"/>
+    <ownedEnd xmi:id="_dtNK4Dp6Eei8z6Pd1Mthdw" type="_XBCN0Dp6Eei8z6Pd1Mthdw" association="_dtMj0Dp6Eei8z6Pd1Mthdw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_eOLJ8Dp6Eei8z6Pd1Mthdw" memberEnd="_eOLxADp6Eei8z6Pd1Mthdw _eOLxATp6Eei8z6Pd1Mthdw">
+    <ownedEnd xmi:id="_eOLxADp6Eei8z6Pd1Mthdw" type="_UGE4kDp6Eei8z6Pd1Mthdw" association="_eOLJ8Dp6Eei8z6Pd1Mthdw"/>
+    <ownedEnd xmi:id="_eOLxATp6Eei8z6Pd1Mthdw" type="_XL6BEDp6Eei8z6Pd1Mthdw" association="_eOLJ8Dp6Eei8z6Pd1Mthdw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_epNgIDp6Eei8z6Pd1Mthdw" memberEnd="_epNgITp6Eei8z6Pd1Mthdw _epNgIjp6Eei8z6Pd1Mthdw">
+    <ownedEnd xmi:id="_epNgITp6Eei8z6Pd1Mthdw" type="_jvxmwDp5Eei8z6Pd1Mthdw" association="_epNgIDp6Eei8z6Pd1Mthdw"/>
+    <ownedEnd xmi:id="_epNgIjp6Eei8z6Pd1Mthdw" type="_XBCN0Dp6Eei8z6Pd1Mthdw" association="_epNgIDp6Eei8z6Pd1Mthdw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_fF9GgDp6Eei8z6Pd1Mthdw" memberEnd="_fF9GgTp6Eei8z6Pd1Mthdw _fF9Ggjp6Eei8z6Pd1Mthdw">
+    <ownedEnd xmi:id="_fF9GgTp6Eei8z6Pd1Mthdw" type="_jvxmwDp5Eei8z6Pd1Mthdw" association="_fF9GgDp6Eei8z6Pd1Mthdw"/>
+    <ownedEnd xmi:id="_fF9Ggjp6Eei8z6Pd1Mthdw" type="_XL6BEDp6Eei8z6Pd1Mthdw" association="_fF9GgDp6Eei8z6Pd1Mthdw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_n1j68Dp6Eei8z6Pd1Mthdw" name="Marvin - Scenario Utente Autenticato" useCase="_sDqTEDp6Eei8z6Pd1Mthdw">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_sDqTEDp6Eei8z6Pd1Mthdw" name="UC4 - Logout" subject="_n1j68Dp6Eei8z6Pd1Mthdw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_tqnCwDp6Eei8z6Pd1Mthdw" name="Utente Autenticato">
+    <eAnnotations xmi:id="_tqnCwTp6Eei8z6Pd1Mthdw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details xmi:id="_tqnCwjp6Eei8z6Pd1Mthdw" key="Human"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_wZjVQDp6Eei8z6Pd1Mthdw" name="Metamask">
+    <eAnnotations xmi:id="_wZjVQTp6Eei8z6Pd1Mthdw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details xmi:id="_wZjVQjp6Eei8z6Pd1Mthdw" key="Human"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_yRK-MDp6Eei8z6Pd1Mthdw" memberEnd="_yRLlQDp6Eei8z6Pd1Mthdw _yRLlQTp6Eei8z6Pd1Mthdw">
+    <ownedEnd xmi:id="_yRLlQDp6Eei8z6Pd1Mthdw" type="_tqnCwDp6Eei8z6Pd1Mthdw" association="_yRK-MDp6Eei8z6Pd1Mthdw"/>
+    <ownedEnd xmi:id="_yRLlQTp6Eei8z6Pd1Mthdw" type="_sDqTEDp6Eei8z6Pd1Mthdw" association="_yRK-MDp6Eei8z6Pd1Mthdw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_yuX3kDp6Eei8z6Pd1Mthdw" memberEnd="_yuX3kTp6Eei8z6Pd1Mthdw _yuX3kjp6Eei8z6Pd1Mthdw">
+    <ownedEnd xmi:id="_yuX3kTp6Eei8z6Pd1Mthdw" type="_wZjVQDp6Eei8z6Pd1Mthdw" association="_yuX3kDp6Eei8z6Pd1Mthdw"/>
+    <ownedEnd xmi:id="_yuX3kjp6Eei8z6Pd1Mthdw" type="_sDqTEDp6Eei8z6Pd1Mthdw" association="_yuX3kDp6Eei8z6Pd1Mthdw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_7GQIgDp6Eei8z6Pd1Mthdw" name="Marvin - Scenario Amministratore" useCase="_Fc3XADp7Eei8z6Pd1Mthdw _F9A2sDp7Eei8z6Pd1Mthdw">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_Fc3XADp7Eei8z6Pd1Mthdw" name="UC5 - Gestione Utenti" subject="_7GQIgDp6Eei8z6Pd1Mthdw"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_F9A2sDp7Eei8z6Pd1Mthdw" name="UC7 - Gestione Corsi di Laurea" subject="_7GQIgDp6Eei8z6Pd1Mthdw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_PoGb8Dp7Eei8z6Pd1Mthdw" name="Amministratore">
+    <eAnnotations xmi:id="_PoHDADp7Eei8z6Pd1Mthdw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details xmi:id="_PoHDATp7Eei8z6Pd1Mthdw" key="Human"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_SzCG4Dp7Eei8z6Pd1Mthdw" memberEnd="_SzCG4Tp7Eei8z6Pd1Mthdw _SzCG4jp7Eei8z6Pd1Mthdw">
+    <ownedEnd xmi:id="_SzCG4Tp7Eei8z6Pd1Mthdw" type="_PoGb8Dp7Eei8z6Pd1Mthdw" association="_SzCG4Dp7Eei8z6Pd1Mthdw"/>
+    <ownedEnd xmi:id="_SzCG4jp7Eei8z6Pd1Mthdw" type="_Fc3XADp7Eei8z6Pd1Mthdw" association="_SzCG4Dp7Eei8z6Pd1Mthdw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_TNRL0Dp7Eei8z6Pd1Mthdw" memberEnd="_TNRL0Tp7Eei8z6Pd1Mthdw _TNRL0jp7Eei8z6Pd1Mthdw">
+    <ownedEnd xmi:id="_TNRL0Tp7Eei8z6Pd1Mthdw" type="_PoGb8Dp7Eei8z6Pd1Mthdw" association="_TNRL0Dp7Eei8z6Pd1Mthdw"/>
+    <ownedEnd xmi:id="_TNRL0jp7Eei8z6Pd1Mthdw" type="_F9A2sDp7Eei8z6Pd1Mthdw" association="_TNRL0Dp7Eei8z6Pd1Mthdw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_TpWq4Dp7Eei8z6Pd1Mthdw" memberEnd="_TpWq4Tp7Eei8z6Pd1Mthdw _TpWq4jp7Eei8z6Pd1Mthdw">
+    <ownedEnd xmi:id="_TpWq4Tp7Eei8z6Pd1Mthdw" type="_jvxmwDp5Eei8z6Pd1Mthdw" association="_TpWq4Dp7Eei8z6Pd1Mthdw"/>
+    <ownedEnd xmi:id="_TpWq4jp7Eei8z6Pd1Mthdw" type="_Fc3XADp7Eei8z6Pd1Mthdw" association="_TpWq4Dp7Eei8z6Pd1Mthdw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_UNAKgDp7Eei8z6Pd1Mthdw" memberEnd="_UNAKgTp7Eei8z6Pd1Mthdw _UNAxkDp7Eei8z6Pd1Mthdw">
+    <ownedEnd xmi:id="_UNAKgTp7Eei8z6Pd1Mthdw" type="_jvxmwDp5Eei8z6Pd1Mthdw" association="_UNAKgDp7Eei8z6Pd1Mthdw"/>
+    <ownedEnd xmi:id="_UNAxkDp7Eei8z6Pd1Mthdw" type="_F9A2sDp7Eei8z6Pd1Mthdw" association="_UNAKgDp7Eei8z6Pd1Mthdw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_XzKY4Dp7Eei8z6Pd1Mthdw" name="Marvin - Scenario Professore" useCase="_bRSFkDp7Eei8z6Pd1Mthdw">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_bRSFkDp7Eei8z6Pd1Mthdw" name="UC8 - Gestione aspetti relativi agli esami" subject="_XzKY4Dp7Eei8z6Pd1Mthdw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_hVlxYDp7Eei8z6Pd1Mthdw" name="Professore">
+    <eAnnotations xmi:id="_hVlxYTp7Eei8z6Pd1Mthdw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details xmi:id="_hVmYcDp7Eei8z6Pd1Mthdw" key="Human"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_m4jDoDp7Eei8z6Pd1Mthdw" memberEnd="_m4jDoTp7Eei8z6Pd1Mthdw _m4jqsDp7Eei8z6Pd1Mthdw">
+    <ownedEnd xmi:id="_m4jDoTp7Eei8z6Pd1Mthdw" type="_hVlxYDp7Eei8z6Pd1Mthdw" association="_m4jDoDp7Eei8z6Pd1Mthdw"/>
+    <ownedEnd xmi:id="_m4jqsDp7Eei8z6Pd1Mthdw" type="_bRSFkDp7Eei8z6Pd1Mthdw" association="_m4jDoDp7Eei8z6Pd1Mthdw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_nVhTgDp7Eei8z6Pd1Mthdw" memberEnd="_nVhTgTp7Eei8z6Pd1Mthdw _nVhTgjp7Eei8z6Pd1Mthdw">
+    <ownedEnd xmi:id="_nVhTgTp7Eei8z6Pd1Mthdw" type="_jvxmwDp5Eei8z6Pd1Mthdw" association="_nVhTgDp7Eei8z6Pd1Mthdw"/>
+    <ownedEnd xmi:id="_nVhTgjp7Eei8z6Pd1Mthdw" type="_bRSFkDp7Eei8z6Pd1Mthdw" association="_nVhTgDp7Eei8z6Pd1Mthdw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_0qZp8Dp7Eei8z6Pd1Mthdw" name="Marvin - Scenario Studente" useCase="_5aKksDp7Eei8z6Pd1Mthdw">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_5aKksDp7Eei8z6Pd1Mthdw" name="UC9 - Gestione aspetti relativi allo studente" subject="_0qZp8Dp7Eei8z6Pd1Mthdw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="__KC4oDp7Eei8z6Pd1Mthdw" name="Studente">
+    <eAnnotations xmi:id="__KC4oTp7Eei8z6Pd1Mthdw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details xmi:id="__KC4ojp7Eei8z6Pd1Mthdw" key="Human"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Cyg0IDp8Eei8z6Pd1Mthdw" memberEnd="_Cyg0ITp8Eei8z6Pd1Mthdw _Cyg0Ijp8Eei8z6Pd1Mthdw">
+    <ownedEnd xmi:id="_Cyg0ITp8Eei8z6Pd1Mthdw" type="_jvxmwDp5Eei8z6Pd1Mthdw" association="_Cyg0IDp8Eei8z6Pd1Mthdw"/>
+    <ownedEnd xmi:id="_Cyg0Ijp8Eei8z6Pd1Mthdw" type="_5aKksDp7Eei8z6Pd1Mthdw" association="_Cyg0IDp8Eei8z6Pd1Mthdw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_DPWhIDp8Eei8z6Pd1Mthdw" memberEnd="_DPWhITp8Eei8z6Pd1Mthdw _DPWhIjp8Eei8z6Pd1Mthdw">
+    <ownedEnd xmi:id="_DPWhITp8Eei8z6Pd1Mthdw" type="__KC4oDp7Eei8z6Pd1Mthdw" association="_DPWhIDp8Eei8z6Pd1Mthdw"/>
+    <ownedEnd xmi:id="_DPWhIjp8Eei8z6Pd1Mthdw" type="_5aKksDp7Eei8z6Pd1Mthdw" association="_DPWhIDp8Eei8z6Pd1Mthdw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_Kz5QoDp8Eei8z6Pd1Mthdw" name="Marvin - Scenario Università" useCase="_OqLlsDp8Eei8z6Pd1Mthdw _O9eVIDp8Eei8z6Pd1Mthdw">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_OqLlsDp8Eei8z6Pd1Mthdw" name="UC6 - Gestione anni accademici" subject="_Kz5QoDp8Eei8z6Pd1Mthdw"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_O9eVIDp8Eei8z6Pd1Mthdw" name="UC10 - Gestione degli amministratori" subject="_Kz5QoDp8Eei8z6Pd1Mthdw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_VyMKMDp8Eei8z6Pd1Mthdw" name="Università">
+    <eAnnotations xmi:id="_VyMKMTp8Eei8z6Pd1Mthdw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details xmi:id="_VyMKMjp8Eei8z6Pd1Mthdw" key="Human"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_YycPIDp8Eei8z6Pd1Mthdw" memberEnd="_Yyc2MDp8Eei8z6Pd1Mthdw _Yyc2MTp8Eei8z6Pd1Mthdw">
+    <ownedEnd xmi:id="_Yyc2MDp8Eei8z6Pd1Mthdw" type="_VyMKMDp8Eei8z6Pd1Mthdw" association="_YycPIDp8Eei8z6Pd1Mthdw"/>
+    <ownedEnd xmi:id="_Yyc2MTp8Eei8z6Pd1Mthdw" type="_OqLlsDp8Eei8z6Pd1Mthdw" association="_YycPIDp8Eei8z6Pd1Mthdw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ZSkgsDp8Eei8z6Pd1Mthdw" memberEnd="_ZSkgsTp8Eei8z6Pd1Mthdw _ZSkgsjp8Eei8z6Pd1Mthdw">
+    <ownedEnd xmi:id="_ZSkgsTp8Eei8z6Pd1Mthdw" type="_VyMKMDp8Eei8z6Pd1Mthdw" association="_ZSkgsDp8Eei8z6Pd1Mthdw"/>
+    <ownedEnd xmi:id="_ZSkgsjp8Eei8z6Pd1Mthdw" type="_O9eVIDp8Eei8z6Pd1Mthdw" association="_ZSkgsDp8Eei8z6Pd1Mthdw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Zq7WUDp8Eei8z6Pd1Mthdw" memberEnd="_Zq7WUTp8Eei8z6Pd1Mthdw _Zq7WUjp8Eei8z6Pd1Mthdw">
+    <ownedEnd xmi:id="_Zq7WUTp8Eei8z6Pd1Mthdw" type="_jvxmwDp5Eei8z6Pd1Mthdw" association="_Zq7WUDp8Eei8z6Pd1Mthdw"/>
+    <ownedEnd xmi:id="_Zq7WUjp8Eei8z6Pd1Mthdw" type="_OqLlsDp8Eei8z6Pd1Mthdw" association="_Zq7WUDp8Eei8z6Pd1Mthdw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_aJBnkDp8Eei8z6Pd1Mthdw" memberEnd="_aJBnkTp8Eei8z6Pd1Mthdw _aJCOoDp8Eei8z6Pd1Mthdw">
+    <ownedEnd xmi:id="_aJBnkTp8Eei8z6Pd1Mthdw" type="_jvxmwDp5Eei8z6Pd1Mthdw" association="_aJBnkDp8Eei8z6Pd1Mthdw"/>
+    <ownedEnd xmi:id="_aJCOoDp8Eei8z6Pd1Mthdw" type="_O9eVIDp8Eei8z6Pd1Mthdw" association="_aJBnkDp8Eei8z6Pd1Mthdw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_rnLggDp8Eei8z6Pd1Mthdw" name="Ufficio Universitario">
+    <eAnnotations xmi:id="_rnLggTp8Eei8z6Pd1Mthdw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details xmi:id="_rnMHkDp8Eei8z6Pd1Mthdw" key="Human"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_t8a5kDp8Eei8z6Pd1Mthdw" memberEnd="_t8a5kTp8Eei8z6Pd1Mthdw _t8bgoDp8Eei8z6Pd1Mthdw">
+    <ownedEnd xmi:id="_t8a5kTp8Eei8z6Pd1Mthdw" type="_rnLggDp8Eei8z6Pd1Mthdw" association="_t8a5kDp8Eei8z6Pd1Mthdw"/>
+    <ownedEnd xmi:id="_t8bgoDp8Eei8z6Pd1Mthdw" type="_XL6BEDp6Eei8z6Pd1Mthdw" association="_t8a5kDp8Eei8z6Pd1Mthdw"/>
+  </packagedElement>
+</uml:Model>

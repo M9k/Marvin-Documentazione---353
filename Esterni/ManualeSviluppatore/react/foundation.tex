@@ -13,7 +13,7 @@
 			\label{fig:React-Bootstrap components for Marvin}
 		\end{figure}
 	\newpage
-	\subsection{Custom Components} Now let's talk about custom components, most of these components are made from React-Bootstrap components as said in the previous section. These components are mainly used to create different pages, which in their turn create a template for different users (we will discuss about this in detail in the next section). \\The following UML diagram shows how the custom components are made and from which React-Bootstrap components.  
+	\subsection{Basic custom Components} Let's talk about custom components, most of these components are made from React-Bootstrap components as said in the previous section. These components are mainly used to create template components, which in their turn create pages structure for different users. \\The following UML diagram shows how the custom components are made and from which React-Bootstrap components.  
 	\\ 
 		\subsubsection{UML}
 			\begin{figure}[h]
@@ -22,5 +22,17 @@
 			\caption{Custom components for Marvin}
 			\label{fig:Custom components for Marvin}
 		\end{figure}
+	\subsection{Template Components} The custom components are used to create a pages structure. These components are made using Facade pattern, so 
+	they provide all the pages with a unique interface to the basic custom components. They are only two template components: \begin{enumerate}
+		\item \textbf{PageContainer: } it contains dynamic navbar(which changes depending on the user type) and all other basic components such as footer, panel etc;
+		\item \textbf{PageTableForm: }this is a dynamic table form, which contains all the information about users/exams (depending on the page and user type).
+	\end{enumerate} 
+	\subsubsection{UML}
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=15.5cm,height=12cm]{"diagrammi/react/template"}
+		\caption{Custom components for Marvin}
+		\label{fig:Custom components for Marvin}
+	\end{figure}
 	
 \end{document}

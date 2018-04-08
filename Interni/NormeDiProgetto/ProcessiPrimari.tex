@@ -160,11 +160,11 @@ Le \citGloss{Sagas} e i \citGloss{Ducks} Redux sono rappresentati attraverso un 
 	\end{center}
 	\item \textbf{Sagas/Selectors:} elenca la lista di metodi secondo la notazione 
 	\begin{center}
-		\texttt{modifier methodName(parameterTypes) : returnType};
+		\texttt{modifier methodName( parameterTypes ) : returnType};
 	\end{center}
 	\item \textbf{Actions:} elenca la lista delle azioni secondo la notazione 
 	\begin{center}
-		\texttt{modifier methodName(parameterTypes) : returnType}.
+		\texttt{modifier methodName( parameterTypes ) : returnType}.
 	\end{center}
 \end{enumerate}
 Ogni membro del duck dovrà inserire obbligatoriamente il modificatore d'accesso e deve essere uno di questa lista:
@@ -182,27 +182,27 @@ Le interfacce vengono rappresentate con un rettangolo tripartito orizzontalmente
 	\item \textbf{Nome interfaccia:} deve essere univoco, scritto seguendo la notazione \citGloss{CamelCase}, in inglese;
 	\item \textbf{Metodi:} 	
 	\begin{center}
-		\texttt{modifier methodName(parameterTypes) : returnType}.
+		\texttt{modifier methodName( parameterTypes ) : returnType}.
 	\end{center}
 	\item \textbf{Purpouse:} piccola descrizione dell'interfaccia.
 \end{enumerate}
 I modificatori antecedenti ai nomi 
 
 \paragraph{Solidity}
-I contratti in Solidity vengono rappresentati con un rettangolo quadripartito orizzontalmente così suddiviso:
+I contratti in Solidity vengono rappresentati con un rettangolo suddiviso in quattro parti orizzontalmente così descritto:
 \begin{enumerate}
 	\item \textbf{Nome contratto:} deve essere univoco, scritto seguendo la notazione \citGloss{CamelCase}, in inglese;
 	\item \textbf{Campi dati:} elenco dei campi dati del contratto, secondo la notazione: \texttt{modifier name : type}. Il modificatore d'accesso dovrà essere obbligatoriamente inserito e deve essere uno di questi:
 	\begin{itemize}
 		\item +: visibilità pubblica;
-		\item -: visibilità privata;
+		\item \textendash: visibilità privata;
 		\item \#: visibilità interna;
 	\end{itemize}
 	\item \textbf{Modifiers:} elenco dei modificatori di quel contratto, secondo la notazione:
-		\texttt{modifierName(value : type)};
+		\texttt{modifierName( value : type )};
 	\item \textbf{Metodi:} elenco dei metodi del contratto, secondo la notazione:
 	\begin{center}
-		\texttt{modifier methodName(value : type) : type}
+		\texttt{modifier methodName( value : type ) : type}
 	\end{center}
 	e il modificatore d'accesso dovrà essere obbligatoriamente inserito, e oltre a quelli utilizzabili per i campi dati, può essere utilizzato contemporaneamente anche il simbolo \texttt{@} per indicare che si tratta di una \texttt{view}.
 \end{enumerate}
@@ -213,16 +213,104 @@ I diagrammi delle classi sono collegati fra loro da frecce che esplicitano le di
 In particolare, verranno utilizzati i seguenti tipi di freccia:
 \begin{itemize}
 	\item Freccia semplice, da classe A a classe B: indica che la classe A ha fra i propri campi dati una o più istanze della classe B;
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.4\linewidth]{progettazione/dip}
+		\caption{Relazione di dipendenza forte in diagramma delle classi.}
+		\label{fig:dip}
+	\end{figure}
+	\newpage
 	\item Freccia tratteggiata, da classe A a classe B: indica una dipendenza, significa che A dipende da B secondo una primitiva che andrà esplicitata vicino alla freccia;
-	\item Freccia a diamante vuota, da classe A a classe B: indica un'aggregazione, ovvero la relazione "B é parte di A". A non ha senso di esistere senza B;
-	\item Freccia a diamante piena, da classe A a classe B: indica la composizione, corrisponde ad un'aggregazione con cardinalità (1, 1);
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.4\linewidth]{progettazione/dipdebole}
+		\caption{Relazione di dipendenza debole in diagramma delle classi.}
+		\label{fig:dipdebole}
+	\end{figure}
+	
+	\item Freccia a diamante vuota, da classe A a classe B: indica un'aggregazione, una relazione non forte ovvero una relazione nella quale le classi parte hanno un significato anche senza che sia presente la classe tutto;
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.4\linewidth]{progettazione/aggreg}
+		\caption{Relazione di aggregazione in diagramma delle classi.}
+		\label{fig:aggreg}
+	\end{figure}
+	
+	\item Freccia a diamante piena, da classe A a classe B: indica la composizione, definita come una relazione forte cioè una relazione nella quale le classi parte hanno un reale significato solo se sono legate alla classe tutto;
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.4\linewidth]{progettazione/compos}
+		\caption{Relazione di composizione in diagramma delle classi.}
+		\label{fig:compos}
+	\end{figure}
+	
 	\item Freccia vuota, da classe A a classe B: indica l'ereditarietà/generalizzazione ed è il massimo grado di dipendenza fra classi. Indica che ogni oggetto di A è anche un oggetto di B.
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.4\linewidth]{progettazione/ered}
+		\caption{Relazione di ereditarietà in diagramma delle classi.}
+		\label{fig:ered}
+	\end{figure}
+	
 \end{itemize}
+\newpage
 \subsubsection{Diagramma dei package}
 Ogni package verrà rappresentato tramite un rettangolo con un'etichetta per il nome, che dovrà contenere i diagrammi delle classi appartenenti al package ed eventuali sotto-package. Le dipendenze fra i vari package dovranno essere segnalate con una freccia tratteggiata. Tale freccia, disegnata dal package A al package B, indica una dipendenza di A ne confronti di B.
-\subsubsection{Diagrammi di sequenza}
-\subsubsection{Diagrammi di attività}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.4\linewidth]{progettazione/package}
+	\caption{Relazione di dipendenza di package.}
+	\label{fig:package}
+\end{figure}
 
+\subsubsection{Diagrammi di sequenza}
+Ogni diagramma di sequenza avrà un senso di lettura verticale dall'alto al basso (verso che indica lo scorrere del tempo). Gli oggetti coinvolti verranno rappresentati tramite un rettangolo, al cui interno si troverà un nome per identificarli nel formato istanza: NomeClasse. Sotto ad ogni istanza si troverà una linea della vita tratteggiata, che sarà sormontata in alcuni tratti da una barra di attivazione che indica i momenti in cui l'oggetto e attivo. Da una barra di attivazione partiranno delle frecce, che rappresentano un messaggio/segnale, verso la linea della vita di oggetti già instanziati o, in alternativa, verso una nuova istanza di classe per crearla. In particolare, verranno utilizzati i seguenti tipi di frecce:
+\begin{itemize}
+\item  Freccia piena, per indicare un messaggio sincrono: corrisponde alla chiamata di un
+metodo. Sopra tale freccia si dovrà specificare il metodo invocato secondo il formato
+nomeMetodo(lista parametri formali);
+\item  Freccia, per indicare un messaggio asincrono (chi invoca il metodo non attende il
+return);
+\item  Freccia tratteggiata, per indicare il ritorno di un metodo chiamato. Sopra tale
+freccia si dovrà indicare il tipo di ritorno secondo il formato TipoRitorno;
+\item  Freccia tratteggiata sormontata da <<create>>, indica la creazione di un nuovo
+oggetto e termina sempre in un rettangolo che ne contiene il nome nel formato
+istanza: NomeClasse;
+\item  Freccia piena sormontata da <<destroy>>, indica la distruzione di un oggetto e
+termina sempre in una X, nella quale muore anche la linea della vita dell'oggetto.
+\end{itemize}
+Sarà inoltre possibile determinare sui diagrammi di sequenza dei frame di interazione associati ad una guardia (o condizione):
+\begin{itemize}
+\item  alt: indica dei frammenti in alternativa fra loro, verrà eseguito quello per cui la guardia è verificata;
+\item  opt: indica un frammento che viene eseguito solo se la guardia è specificata;
+\item  par: indica frammenti eseguiti in parallelo;
+\item  loop: indica un frammento che viene eseguito più volte, la condizione di arresto del ciclo è la guardia;
+\item region: indica un frammento critico che deve essere eseguito in mutua esclusione.
+\end{itemize}
+
+\subsubsection{Diagrammi di attività}
+I diagrammi delle attività conterranno, collegati sempre da frecce, i seguenti elementi, che verranno indicati con i formalismi indicati:
+\begin{itemize}
+\item  Nodo iniziale, rappresentato da un pallino pieno. \'E il punto da cui inizia l'esecuzione. Genera un token;
+\item  Activity, rappresentata da un rettangolo che ne contiene la descrizione. La descrizione dovrà essere il più breve e concisa possibile, è possibile una sintassi sincopata della frase, composta per lo più da parole chiave. Consuma e produce un token;
+\item Subactivity, rappresentata da un rettangolo che ne contiene il nome (sempre indicato con la lettera maiuscola) e un piccolo tridente nell'angolo in basso a destra. \'E un riferimento ad una sottoattività il cui diagramma viene descritto separatamente. Ogni sottoattività ha un input ed un output;
+\item Branch, rappresentato da un rombo con una freccia in ingresso e n in uscita. \'E
+un punto in cui si può prendere solo uno degli n rami, ognuno dei quali deve avere
+scritta in prossimità la guardia, secondo il formato [guardia]. Consuma e produce
+un token;
+\item Merge, rappresentato da un rombo con n frecce in ingresso e una in uscita. \'E
+un punto in cui gli n rami generati da un Branch tornano ad unirsi. Consuma e produce un token;
+\item Fork, rappresentato da una linea lunga orizzontale o verticale. \'E un punto in cui l'attività si parallelizza senza vincoli di esecuzione temporale, ha una freccia in ingresso e n in uscita. Consuma un token e ne genera n;
+\item Join, rappresentato da una linea lunga orizzontale o verticale. \'E un punto in cui avviene la sincronizzazione fra processi paralleli, ha n frecce in ingresso e una in uscita. Consuma n token e ne genera uno;
+\item Pin, rappresentato da un piccolo quadratino dove entrano/escono frecce dalle Activity. Indica il passaggio di un parametro, il cui tipo va indicato di fianco secondo il formato TipoParametro;
+\item Segnali, rappresentati da due figure a incastro, la prima (non bloccante) per
+l'emissione del segnale, la seconda (bloccante) per la ricezione dello stesso. Al loro
+interno devono contenere <<signal sending>> o <<signal receipt>>, seguiti da una
+descrizione breve e concisa con sintassi sincopata;
+\item Timeout, rappresentato da una clessidra, serve per modellare timeout o eventi ripetuti. I timeout hanno frecce entranti e frecce uscenti, al contrario degli eventi ripetuti che possono avere solo archi uscenti. Di fianco devono avere una descrizione così composta: i timeout devono cominciare con "wait" e le azioni ripetute con "every", di seguito dovrà trovarsi un indicazione temporale o una descrizione in linguaggio naturale breve e concisa;
+\item Nodo di fine flusso, rappresentato da un cerchio vuoto con una X al centro. \'E
+un punto in cui uno dei rami di esecuzione va a morire, ma l'esecuzione continua comunque sugli altri rami paralleli. Consuma un token;
+\item Nodo finale, rappresentato da due cerchi concentrici di cui il più esterno vuoto e il più interno pieno. \'E il punto da cui termina l'esecuzione. Consuma un token.
 
 \subsubsection{Sviluppo}
 Lo sviluppo di \progetto avviene seguendo il modello incrementale, spiegato nel dettaglio nel documento \pdp \S 3. Sarà eseguita un'analisi comparativa di varie tecnologie esistenti al fine di capire quali siano le più consone allo sviluppo di \progetto. Nel caso si ritengano più consone tecnologie differenti da quelle proposte dalla proponente, il gruppo \gruppo la contatterà per discuterne insieme.\\

@@ -264,53 +264,89 @@ Ogni package verrà rappresentato tramite un rettangolo con un'etichetta per il 
 \end{figure}
 
 \subsubsection{Diagrammi di sequenza}
-Ogni diagramma di sequenza avrà un senso di lettura verticale dall'alto al basso (verso che indica lo scorrere del tempo). Gli oggetti coinvolti verranno rappresentati tramite un rettangolo, al cui interno si troverà un nome per identificarli nel formato istanza: NomeClasse. Sotto ad ogni istanza si troverà una linea della vita tratteggiata, che sarà sormontata in alcuni tratti da una barra di attivazione che indica i momenti in cui l'oggetto e attivo. Da una barra di attivazione partiranno delle frecce, che rappresentano un messaggio/segnale, verso la linea della vita di oggetti già instanziati o, in alternativa, verso una nuova istanza di classe per crearla. In particolare, verranno utilizzati i seguenti tipi di frecce:
+Ogni diagramma di sequenza avrà un senso di lettura verticale dall'alto al basso (verso che indica lo scorrere del tempo). Gli oggetti coinvolti verranno rappresentati tramite un rettangolo, al cui interno si troverà un nome per identificarli nel formato istanza: \texttt{NomeClasse}. Sotto ad ogni istanza si troverà una linea della vita tratteggiata, che sarà sormontata in alcuni tratti da una barra di attivazione che indica i momenti in cui l'oggetto è attivo. Da una barra di attivazione partiranno delle frecce, che rappresentano un messaggio/segnale, verso la linea della vita di oggetti già instanziati o, in alternativa, verso una nuova istanza di classe per crearla. In particolare, verranno utilizzati i seguenti tipi di frecce:
 \begin{itemize}
-\item  Freccia piena, per indicare un messaggio sincrono: corrisponde alla chiamata di un
-metodo. Sopra tale freccia si dovrà specificare il metodo invocato secondo il formato
-nomeMetodo(lista parametri formali);
-\item  Freccia, per indicare un messaggio asincrono (chi invoca il metodo non attende il
-return);
+\item  Freccia piena, per indicare un messaggio sincrono: corrisponde alla chiamata di un metodo. Sopra tale freccia si dovrà specificare il metodo invocato secondo il formato \texttt{nomeMetodo(lista parametri formali)};
+\item  Freccia, per indicare un messaggio asincrono (chi invoca il metodo non attende il return);
 \item  Freccia tratteggiata, per indicare il ritorno di un metodo chiamato. Sopra tale
-freccia si dovrà indicare il tipo di ritorno secondo il formato TipoRitorno;
-\item  Freccia tratteggiata sormontata da <<create>>, indica la creazione di un nuovo
+freccia si dovrà indicare il tipo di ritorno secondo il formato \texttt{tipoRitorno};
+\item  Freccia tratteggiata sormontata da $\ll create \gg$, indica la creazione di un nuovo
 oggetto e termina sempre in un rettangolo che ne contiene il nome nel formato
 istanza: NomeClasse;
-\item  Freccia piena sormontata da <<destroy>>, indica la distruzione di un oggetto e
+\item  Freccia piena sormontata da $\ll destroy \gg$, indica la distruzione di un oggetto e
 termina sempre in una X, nella quale muore anche la linea della vita dell'oggetto.
 \end{itemize}
 Sarà inoltre possibile determinare sui diagrammi di sequenza dei frame di interazione associati ad una guardia (o condizione):
 \begin{itemize}
-\item  alt: indica dei frammenti in alternativa fra loro, verrà eseguito quello per cui la guardia è verificata;
-\item  opt: indica un frammento che viene eseguito solo se la guardia è specificata;
-\item  par: indica frammenti eseguiti in parallelo;
-\item  loop: indica un frammento che viene eseguito più volte, la condizione di arresto del ciclo è la guardia;
+\item alt: indica dei frammenti in alternativa fra loro, verrà eseguito quello per cui la guardia è verificata;
+\item opt: indica un frammento che viene eseguito solo se la guardia è specificata;
+\item par: indica frammenti eseguiti in parallelo;
+\item loop: indica un frammento che viene eseguito più volte, la condizione di arresto del ciclo è la guardia;
 \item region: indica un frammento critico che deve essere eseguito in mutua esclusione.
 \end{itemize}
+Potranno essere inseriti dei commenti nelle sezioni del diagramma che necessitano di ulteriori informazioni o per indicare particolari stati del diagramma.
 
 \subsubsection{Diagrammi di attività}
-I diagrammi delle attività conterranno, collegati sempre da frecce, i seguenti elementi, che verranno indicati con i formalismi indicati:
+I diagrammi delle attività conterranno i seguenti elementi collegati sempre da frecce, che verranno indicati con i formalismi indicati:
 \begin{itemize}
 \item  Nodo iniziale, rappresentato da un pallino pieno. \'E il punto da cui inizia l'esecuzione. Genera un token;
 \item  Activity, rappresentata da un rettangolo che ne contiene la descrizione. La descrizione dovrà essere il più breve e concisa possibile, è possibile una sintassi sincopata della frase, composta per lo più da parole chiave. Consuma e produce un token;
-\item Subactivity, rappresentata da un rettangolo che ne contiene il nome (sempre indicato con la lettera maiuscola) e un piccolo tridente nell'angolo in basso a destra. \'E un riferimento ad una sottoattività il cui diagramma viene descritto separatamente. Ogni sottoattività ha un input ed un output;
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.2\linewidth]{progettazione/activity}
+	\caption{Rappresentazione del nodo iniziale e attività del diagramma attività.}
+	\label{fig:activity}
+\end{figure}
+
+\item Subactivity, rappresentata da un rettangolo che ne contiene il nome (sempre indicato con la lettera maiuscola) e un piccolo tridente nell'angolo in basso a destra. \'E un riferimento ad una sotto attività il cui diagramma viene descritto separatamente. Ogni sottoattività ha un input ed un output;
+
 \item Branch, rappresentato da un rombo con una freccia in ingresso e n in uscita. \'E
 un punto in cui si può prendere solo uno degli n rami, ognuno dei quali deve avere
 scritta in prossimità la guardia, secondo il formato [guardia]. Consuma e produce
 un token;
 \item Merge, rappresentato da un rombo con n frecce in ingresso e una in uscita. \'E
 un punto in cui gli n rami generati da un Branch tornano ad unirsi. Consuma e produce un token;
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.4\linewidth]{progettazione/activitybranch}
+	\caption{Rappresentazione di branch e merge in diagramma di attività.}
+	\label{fig:activitybranch}
+\end{figure}
+
 \item Fork, rappresentato da una linea lunga orizzontale o verticale. \'E un punto in cui l'attività si parallelizza senza vincoli di esecuzione temporale, ha una freccia in ingresso e n in uscita. Consuma un token e ne genera n;
 \item Join, rappresentato da una linea lunga orizzontale o verticale. \'E un punto in cui avviene la sincronizzazione fra processi paralleli, ha n frecce in ingresso e una in uscita. Consuma n token e ne genera uno;
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.4\linewidth]{progettazione/activityparall}
+	\caption{Rappresentazione di fork e join diagramma attività.}
+	\label{fig:activityparall}
+\end{figure}
+
 \item Pin, rappresentato da un piccolo quadratino dove entrano/escono frecce dalle Activity. Indica il passaggio di un parametro, il cui tipo va indicato di fianco secondo il formato TipoParametro;
 \item Segnali, rappresentati da due figure a incastro, la prima (non bloccante) per
-l'emissione del segnale, la seconda (bloccante) per la ricezione dello stesso. Al loro
-interno devono contenere <<signal sending>> o <<signal receipt>>, seguiti da una
-descrizione breve e concisa con sintassi sincopata;
+l'emissione del segnale, la seconda (bloccante) per la ricezione dello stesso.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.3\linewidth]{progettazione/message}
+	\caption{Rappresentazione di invio e ricezione messaggi in diagramma di attività.}
+	\label{fig:message}
+\end{figure}
+
 \item Timeout, rappresentato da una clessidra, serve per modellare timeout o eventi ripetuti. I timeout hanno frecce entranti e frecce uscenti, al contrario degli eventi ripetuti che possono avere solo archi uscenti. Di fianco devono avere una descrizione così composta: i timeout devono cominciare con "wait" e le azioni ripetute con "every", di seguito dovrà trovarsi un indicazione temporale o una descrizione in linguaggio naturale breve e concisa;
 \item Nodo di fine flusso, rappresentato da un cerchio vuoto con una X al centro. \'E
 un punto in cui uno dei rami di esecuzione va a morire, ma l'esecuzione continua comunque sugli altri rami paralleli. Consuma un token;
 \item Nodo finale, rappresentato da due cerchi concentrici di cui il più esterno vuoto e il più interno pieno. \'E il punto da cui termina l'esecuzione. Consuma un token.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.2\linewidth]{progettazione/endact}
+	\quad
+	\includegraphics[width=0.2\linewidth]{progettazione/stopact}
+	\label{fig:endact}
+	\caption{Rappresentazione di nodo di fine flusso e finale.}
+\end{figure}
+
+
+\end{itemize}
 
 \subsubsection{Sviluppo}
 Lo sviluppo di \progetto avviene seguendo il modello incrementale, spiegato nel dettaglio nel documento \pdp \S 3. Sarà eseguita un'analisi comparativa di varie tecnologie esistenti al fine di capire quali siano le più consone allo sviluppo di \progetto. Nel caso si ritengano più consone tecnologie differenti da quelle proposte dalla proponente, il gruppo \gruppo la contatterà per discuterne insieme.\\

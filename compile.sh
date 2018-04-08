@@ -57,11 +57,13 @@ pdflatex -interaction=nonstopmode -halt-on-error VER-2018-02-18.tex && echo "ok"
 cd ..
 cd ..
 
+<<STOPFAILBUILD
 cd 'Esterni'
 cd ManualeSviluppatore
 pdflatex -interaction=nonstopmode -halt-on-error ManualeSviluppatore.tex && echo "ok" || exit  8
 cd ..
 cd ..
+STOPFAILBUILD
 
 cd 'Esterni'
 cd ManualeUtente

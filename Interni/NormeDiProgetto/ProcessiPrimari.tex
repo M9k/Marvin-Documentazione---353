@@ -17,6 +17,14 @@ Una volta stabilita la scelta del capitolato per il quale proporsi come fornitor
 	\item \textbf{Tecnologie richieste:} rappresenta il dominio Tecnologico richiesto dal capitolato, raggruppando le tecnologie da impiegare nello sviluppo del progetto;
 	\item \textbf{Valutazione finale:} racchiude le motivazioni, i rischi, le criticità evidenziate per le quali il capitolato in questione è stato respinto o accettato.
 \end{itemize}
+Per discutere in dettaglio i requisiti richiesti dalla proponente e poter arrivare ad un accordo finale che sancisca il contratto a cui le due parti devono attenersi e rispettare, il gruppo \gruppo si impegna a mantenere un colloquio costante e uno spirito di collaborazione al fine di agevolare entrambe le parti per la miglior riuscita del prodotto. 
+Questo permetterà un continuo colloquio al fine di far fronte:
+\begin{itemize} 
+	\item A determinati bisogni da parte della proponente, per soddisfare, se possibile, le richieste avanzate;
+	\item Alla determinazione dei vincoli sul prodotto;
+	\item Alla determinazione della qualità che il prodotto dovrà perseguire.
+\end{itemize}
+A seguito della consegna del prodotto, il gruppo \gruppo, salvo diversi accordi con la proponente RedBabel, non intraprenderà attività di manutenzione del prodotto. 
 
 \section{Sviluppo}
 \subsection{Analisi dei Requisiti}
@@ -180,19 +188,23 @@ Ogni Duck dovrà essere accompagnato da una nota che indichi lo stato iniziale s
 Le interfacce vengono rappresentate con un rettangolo tripartito orizzontalmente così suddiviso:
 \begin{enumerate}
 	\item \textbf{Nome interfaccia:} deve essere univoco, scritto seguendo la notazione \citGloss{CamelCase}, in inglese e in corsivo;
-	\item \textbf{Metodi:} 	
+	\item \textbf{Metodi:} elenco dei metodi, secondo la notazione:
 	\begin{center}
-		\texttt{modifier methodName( parameterTypes ) : returnType}.
+		\texttt{visibility methodName( parameterTypes ) : returnType}.
 	\end{center}
 	\item \textbf{Purpouse:} piccola descrizione dell'interfaccia.
 \end{enumerate}
-I modificatori antecedenti ai nomi 
+I modificatori d'accesso antecedenti ai nomi dovranno essere obbligatoriamente inseriti e scelti da questa lista:
+\begin{itemize}
+	\item +: visibilità pubblica;
+	\item -: visibilità privata.
+\end{itemize}
 
 \paragraph{Solidity}
 I contratti in Solidity vengono rappresentati con un rettangolo suddiviso in quattro parti orizzontalmente così descritto:
 \begin{enumerate}
 	\item \textbf{Nome contratto:} deve essere univoco, scritto seguendo la notazione \citGloss{CamelCase}, in inglese;
-	\item \textbf{Campi dati:} elenco dei campi dati del contratto, secondo la notazione: \texttt{modifier name : type}. Il modificatore d'accesso dovrà essere obbligatoriamente inserito e deve essere uno di questi:
+	\item \textbf{Campi dati:} elenco dei campi dati del contratto, secondo la notazione: \texttt{visibility name : type}. Il modificatore d'accesso dovrà essere obbligatoriamente inserito e deve essere uno di questi:
 	\begin{itemize}
 		\item +: visibilità pubblica;
 		\item \textendash: visibilità privata;
@@ -202,7 +214,7 @@ I contratti in Solidity vengono rappresentati con un rettangolo suddiviso in qua
 		\texttt{modifierName( value : type )};
 	\item \textbf{Metodi:} elenco dei metodi del contratto, secondo la notazione:
 	\begin{center}
-		\texttt{modifier methodName( value : type ) : type \{modifier( var : type )\}}
+		\texttt{visibility methodName( value : type ) : type \{modifier( var : type )\}}
 	\end{center}
 	e il modificatore d'accesso dovrà essere obbligatoriamente inserito, e oltre a quelli utilizzabili per i campi dati, può essere utilizzato contemporaneamente anche il simbolo \texttt{@} per indicare che si tratta di una \texttt{view}.
 \end{enumerate}

@@ -2904,7 +2904,7 @@
                 <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HIfQFxPTEeit3JTnlaW4wQ"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_HIfQERPTEeit3JTnlaW4wQ" fontColor="7490599" fontName="Segoe UI"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HIfQEhPTEeit3JTnlaW4wQ" x="42" y="365" width="217" height="73"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HIfQEhPTEeit3JTnlaW4wQ" x="42" y="365" width="229" height="85"/>
             </children>
             <styles xmi:type="notation:SortingStyle" xmi:id="_3esQtRPSEeit3JTnlaW4wQ"/>
             <styles xmi:type="notation:FilteringStyle" xmi:id="_3esQthPSEeit3JTnlaW4wQ"/>
@@ -3002,11 +3002,11 @@
           <styles xmi:type="notation:FontStyle" xmi:id="_P6TrAhPTEeit3JTnlaW4wQ" fontName="Segoe UI" fontHeight="8"/>
           <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_P6TrAxPTEeit3JTnlaW4wQ" points="[8, 20, -140, -177]$[140, 207, -8, 10]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_P6TrChPTEeit3JTnlaW4wQ" id="(0.5,0.5)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_P6TrCxPTEeit3JTnlaW4wQ" id="(0.08755760368663594,0.0958904109589041)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_P6TrCxPTEeit3JTnlaW4wQ" id="(0.08296943231441048,0.08235294117647059)"/>
         </edges>
       </data>
     </ownedAnnotationEntries>
-    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_3egDcRPSEeit3JTnlaW4wQ" name="UC5.3 - Visualizzazione lista utenti in attesa di abilitazione" width="12" height="10">
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_3egDcRPSEeit3JTnlaW4wQ" name="UC5.4 - Visualizzazione lista utenti in attesa di abilitazione" width="12" height="10">
       <target xmi:type="uml:Component" href="Marvin.uml#_3egDcBPSEeit3JTnlaW4wQ"/>
       <semanticElements xmi:type="uml:Component" href="Marvin.uml#_3egDcBPSEeit3JTnlaW4wQ"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -3017,7 +3017,7 @@
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Capture']/@ownedRepresentations[name='Use%20Case%20Diagram']/@defaultLayer/@containerMappings[name='UCD_Subject']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Capture']/@ownedRepresentations[name='Use%20Case%20Diagram']/@defaultLayer/@containerMappings[name='UCD_Subject']"/>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_8nKmYRPSEeit3JTnlaW4wQ" name="UC5.3.2 - Visualizzazione nomi degli utenti in attesa di abilitazione" incomingEdges="_N1Ec0xPTEeit3JTnlaW4wQ" width="14" height="14" resizeKind="NSEW">
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_8nKmYRPSEeit3JTnlaW4wQ" name="UC5.4.2 - Visualizzazione nomi degli utenti in attesa di abilitazione" incomingEdges="_N1Ec0xPTEeit3JTnlaW4wQ" width="14" height="14" resizeKind="NSEW">
         <target xmi:type="uml:UseCase" href="Marvin.uml#_8nKmYBPSEeit3JTnlaW4wQ"/>
         <semanticElements xmi:type="uml:UseCase" href="Marvin.uml#_8nKmYBPSEeit3JTnlaW4wQ"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -3028,7 +3028,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Capture']/@ownedRepresentations[name='Use%20Case%20Diagram']/@defaultLayer/@nodeMappings[name='UCD_UseCase']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_AQhSsRPTEeit3JTnlaW4wQ" name="UC5.3.1 - Visualizzazione indirizzi degli utenti in attesa di abilitazione" outgoingEdges="_NOFVUxPTEeit3JTnlaW4wQ" width="14" height="14" resizeKind="NSEW">
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_AQhSsRPTEeit3JTnlaW4wQ" name="UC5.4.1 - Visualizzazione indirizzi degli utenti in attesa di abilitazione" outgoingEdges="_NOFVUxPTEeit3JTnlaW4wQ" width="14" height="14" resizeKind="NSEW">
         <target xmi:type="uml:UseCase" href="Marvin.uml#_AQhSsBPTEeit3JTnlaW4wQ"/>
         <semanticElements xmi:type="uml:UseCase" href="Marvin.uml#_AQhSsBPTEeit3JTnlaW4wQ"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -3039,7 +3039,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Capture']/@ownedRepresentations[name='Use%20Case%20Diagram']/@defaultLayer/@nodeMappings[name='UCD_UseCase']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_DMJ9YRPTEeit3JTnlaW4wQ" name="UC5.3.3 - Visualizzazione cognomi degli utenti in attesa di abilitazione" incomingEdges="_ORQpkBPTEeit3JTnlaW4wQ" width="14" height="14" resizeKind="NSEW">
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_DMJ9YRPTEeit3JTnlaW4wQ" name="UC5.4.3 - Visualizzazione cognomi degli utenti in attesa di abilitazione" incomingEdges="_ORQpkBPTEeit3JTnlaW4wQ" width="14" height="14" resizeKind="NSEW">
         <target xmi:type="uml:UseCase" href="Marvin.uml#_DMJ9YBPTEeit3JTnlaW4wQ"/>
         <semanticElements xmi:type="uml:UseCase" href="Marvin.uml#_DMJ9YBPTEeit3JTnlaW4wQ"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -3050,7 +3050,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Capture']/@ownedRepresentations[name='Use%20Case%20Diagram']/@defaultLayer/@nodeMappings[name='UCD_UseCase']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_GNMFcRPTEeit3JTnlaW4wQ" name="UC5.3.4 - Visualizzazione ruolo degli utenti in attesa di abilitazione" incomingEdges="_O5PPkBPTEeit3JTnlaW4wQ" width="14" height="14" resizeKind="NSEW">
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_GNMFcRPTEeit3JTnlaW4wQ" name="UC5.4.4 - Visualizzazione ruolo degli utenti in attesa di abilitazione" incomingEdges="_O5PPkBPTEeit3JTnlaW4wQ" width="14" height="14" resizeKind="NSEW">
         <target xmi:type="uml:UseCase" href="Marvin.uml#_GNMFcBPTEeit3JTnlaW4wQ"/>
         <semanticElements xmi:type="uml:UseCase" href="Marvin.uml#_GNMFcBPTEeit3JTnlaW4wQ"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -3061,7 +3061,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Capture']/@ownedRepresentations[name='Use%20Case%20Diagram']/@defaultLayer/@nodeMappings[name='UCD_UseCase']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_HITp4RPTEeit3JTnlaW4wQ" name="UC5.3.5 - Visualizzazione corsi degli utenti in attesa di abilitazione" incomingEdges="_P6IE0xPTEeit3JTnlaW4wQ" width="14" height="14" resizeKind="NSEW">
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_HITp4RPTEeit3JTnlaW4wQ" name="UC5.4.5 - Visualizzazione nomi dei corsi degli utenti in attesa di abilitazione" incomingEdges="_P6IE0xPTEeit3JTnlaW4wQ" width="14" height="14" resizeKind="NSEW">
         <target xmi:type="uml:UseCase" href="Marvin.uml#_HITp4BPTEeit3JTnlaW4wQ"/>
         <semanticElements xmi:type="uml:UseCase" href="Marvin.uml#_HITp4BPTEeit3JTnlaW4wQ"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>

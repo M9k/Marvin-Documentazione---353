@@ -8,13 +8,13 @@ Obviously, if you are not contributing to this project but you are only using it
 
 \section{Requiments}
 \subsection{WebStorm}
-The chosen IDE for the develop of this project is JetBrains Webstorm. It can be obtained for free for a period of one year using a university email from the official site. \\
+The chosen IDE for the development of this project is JetBrains Webstorm. It can be obtained for free for a period of one year using a university email from the official site. \\
 This software is available for Microsoft Windows, Linux and MacOS. \\
 There is no official support for *BSD, but it can run Linux version without the compatibility layer with some edits to the configuration, for further information refer to the unofficial guide relate to the correct operative system.
 
 \subsection{VSCode}
-For writing contracts it is advisable to use Microsoft VSCode, because it supports a useful plugin for the lint of Solidity code. \\
-It can be obtain for free from the official site and it support Microsoft Windows, macOS and Linux. \\
+For writing contracts, it is advisable to use Microsoft VSCode, because it supports a useful plugin for the lint of Solidity code. \\
+It can be obtained for free from the official site and it supports Microsoft Windows, macOS and Linux. \\
 *BSD user can obtain an unofficial build compiled for their system or use the Linux compatibility layer. \\
 
 \section{ESLint}
@@ -22,12 +22,12 @@ ESLint will be automatically installed with the \begin{ttfamily}yarn install \en
 To enable it into WebStorm launch the IDE, go to File \textgreater{} Settings \textgreater{} ESLint, tick "Enable". \\
 Into the "Node interpreter" field insert the path of the Node executable, for example "C:\textbackslash Program Files\textbackslash nodejs\textbackslash node.exe" under Windows. \\
 If not automatically filled, insert the ESLint executable path and specify to automatically use the .eslintrc configuration file in the project root.\\
-To check if your code follow the style guide run \begin{ttfamily}yarn run eslint\end{ttfamily} or \begin{ttfamily} yarn run eslint-fix\end{ttfamily} to correct errors fixable by the eslint utility.
-Those scripts automatically check all the files inside the \begin{ttfamily}src, testnpm\end{ttfamily} and \begin{ttfamily}test\end{ttfamily} directories, using the rules specified by the \begin{ttfamily}.eslint\end{ttfamily} files placed in the root of each directories.\\
+To check if your code follows the style guide run \begin{ttfamily}yarn run eslint\end{ttfamily} or \begin{ttfamily} yarn run eslint-fix\end{ttfamily} to correct errors fixable by the eslint utility.
+Those scripts automatically check all the files inside the \begin{ttfamily}src, testnpm\end{ttfamily} and \begin{ttfamily}test\end{ttfamily} directories, using the rules specified by the \begin{ttfamily}.eslint\end{ttfamily} files placed in the root of each directory.\\
 If you want to run the linter on a single file follow the hints written in the \href{https://eslint.org/docs/user-guide/getting-started}{eslint documentation}.
 
 \subsection{Carriage return - Only on Windows}
-On Windows there may be some problem with the default carriage return, because ESLint require LF, not CRLF. \\
+On Windows there may be some problem with the default carriage return, because ESLint requires LF, not CRLF. \\
 To fix this problem on Webstorm go to File \textgreater{} Settings \textgreater{} Code Style, on "Line Separator" set "Unix and OS X (\textbackslash{}n)". \\
 As well Git on Windows can be misconfigured to force only CRLF as carriage return, to fix this problem run in a console: \\
 \begin{ttfamily}git config --global core.autocrlf false \end{ttfamily}

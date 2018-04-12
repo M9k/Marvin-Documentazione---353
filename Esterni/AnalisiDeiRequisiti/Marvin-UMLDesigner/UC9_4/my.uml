@@ -22,4 +22,21 @@
     <ownedEnd xmi:id="_5kzjkT5OEeiC4LU6w4RErg" type="_r7ZuoD5OEeiC4LU6w4RErg" association="_5kzjkD5OEeiC4LU6w4RErg"/>
     <ownedEnd xmi:id="_5kzjkj5OEeiC4LU6w4RErg" type="_uVnHQD5OEeiC4LU6w4RErg" association="_5kzjkD5OEeiC4LU6w4RErg"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_OE7YsD5PEeiC4LU6w4RErg" name="UC8.1 - Visualizzazione lista degli esami" useCase="_WsENoD5PEeiC4LU6w4RErg _W5iB4D5PEeiC4LU6w4RErg">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_WsENoD5PEeiC4LU6w4RErg" name="UC8.1.1 - Visualizzazione codici degli esami" subject="_OE7YsD5PEeiC4LU6w4RErg"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_W5iB4D5PEeiC4LU6w4RErg" name="UC8.1.2 - Visualizzazione nomi dei corsi degli esami" subject="_OE7YsD5PEeiC4LU6w4RErg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_Uds4oD5PEeiC4LU6w4RErg" name="Professore">
+    <eAnnotations xmi:id="_UdtfsD5PEeiC4LU6w4RErg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <details xmi:id="_UdtfsT5PEeiC4LU6w4RErg" key="Human"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_fTn5UD5PEeiC4LU6w4RErg" memberEnd="_fTogYD5PEeiC4LU6w4RErg _fTogYT5PEeiC4LU6w4RErg">
+    <ownedEnd xmi:id="_fTogYD5PEeiC4LU6w4RErg" type="_Uds4oD5PEeiC4LU6w4RErg" association="_fTn5UD5PEeiC4LU6w4RErg"/>
+    <ownedEnd xmi:id="_fTogYT5PEeiC4LU6w4RErg" type="_WsENoD5PEeiC4LU6w4RErg" association="_fTn5UD5PEeiC4LU6w4RErg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_fy1k4D5PEeiC4LU6w4RErg" memberEnd="_fy1k4T5PEeiC4LU6w4RErg _fy1k4j5PEeiC4LU6w4RErg">
+    <ownedEnd xmi:id="_fy1k4T5PEeiC4LU6w4RErg" type="_Uds4oD5PEeiC4LU6w4RErg" association="_fy1k4D5PEeiC4LU6w4RErg"/>
+    <ownedEnd xmi:id="_fy1k4j5PEeiC4LU6w4RErg" type="_W5iB4D5PEeiC4LU6w4RErg" association="_fy1k4D5PEeiC4LU6w4RErg"/>
+  </packagedElement>
 </uml:Model>

@@ -1,0 +1,51 @@
+\documentclass[openany, a4paper, 12pt]{report}
+\usepackage{subfiles}
+\usepackage{../../common/style}
+\usepackage{geometry}
+\setfoot{Verbale interno del}{\nData{09}{04}{2018}}
+\loadglsentries{"./../../Esterni/Glossario/Definizioni.tex"}
+ 
+\begin{document}
+
+\begin{titlepage}
+	\centering
+	\vfill
+	{
+		\bfseries
+		\vskip2cm
+		\includegraphics[width=9cm]{../../common/images/logo.png} \\
+		\vfill
+		\Huge{VERBALE INTERNO\\DEL \nData{09}{04}{2018}}\\
+		\vfill
+		\Large Versione 1.0.0 in data \nData{11}{04}{2018}\\
+		\large Gruppo 353 - Progetto \progetto \\
+		\vfill
+		\normalsize Informazioni sul documento\\
+		\begin{table}[htbp]
+			\centering
+			\renewcommand\arraystretch{1.2}
+			\begin{tabular}{r|l}
+				\hline
+				\textbf{Responsabili}	& \Mirco\\
+				
+				\textbf{Redazione} 		& \Parwinder \\
+				\textbf{Verifica} 		& \Riccardo \\	
+				
+				\textbf{Stato} 			& In uso\\
+				\textbf{Uso}			& Interno\\
+				\textbf{Destinato a}   	& Gruppo 353\\
+										& \Vardanega\\
+										& \Cardin\\
+				
+				\textbf{Email di contatto}	& \mailgroup
+			\end{tabular}
+		\end{table}
+		\vfill 
+	}    
+\end{titlepage}
+\pagenumbering{roman}
+\newpage
+\pagenumbering{arabic}
+\subfile{verbale}
+ 
+\end{document}

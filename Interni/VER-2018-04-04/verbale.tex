@@ -1,0 +1,43 @@
+\documentclass[VER-2018-04-04.tex]{subfiles}
+\begin{document}
+\taburowcolors[2] 2{tableLineOne .. tableLineTwo}
+\tabulinesep = ^3mm_2mm
+\chapter{Informazioni sulla riunione}
+\begin{itemize}
+	\item \textbf{Motivo della riunione:} \'E stata indetta questa riunione per verificare l'avanzamento della progettazione;
+	\item \textbf{Luogo e data:} Padova, 04-04-2018;
+	\item \textbf{Orario:} 10.00 - 12.00;
+	\item \textbf{Partecipanti:} Tutti i membri del gruppo \gruppo.
+\end{itemize}
+
+
+
+\chapter{Resoconto}
+\section{Argomenti}
+Di seguito sono riportati i punti dell'ordine del giorno che sono stati discussi:
+\begin{enumerate}
+	\item \textbf{Product baseline:} il gruppo ha deciso di chiedere al prof. Cardin la disponibilità per il colloquio per il giorno lunedì 09-04-2018;
+	\item \textbf{Presentazione:} il gruppo ha discusso in che modo e quali contenuti presentare al prof. Cardin durante il colloquio per la \pb, in dettaglio: 
+	\begin{itemize}
+		\item L'ordine di presentazione delle varie parti della progettazione, in particolare Solidity-React-Redux;
+		\item Mostrare i diagrammi UML della progettazione sotto forma di slide.
+	\end{itemize}
+\item \textbf{Sviluppo software:} il gruppo ha deciso quali membri dovranno occuparsi dello sviluppo della parte front-end e back-end in base alla progettazione.
+\end{enumerate}
+\section{Tracciamento delle decisioni}
+\begin{table}[H]
+	\begin{center}
+		\begin{tabu} to \textwidth {
+				>{\centering}m{0.25\linewidth}  
+				>{\centering\arraybackslash}m{0.7\linewidth}
+			}
+			\tableHeaderStyle
+			\textbf{Codice} & \textbf{Decisione} \\
+			VER-2018-04-04.1 & Richiesta colloquio \pb a \Cardin per il 09-04-2018 \\
+			VER-2018-04-04.2 & Contenuto presentazione per \pb \\
+			VER-2018-04-04.3 & Divisione compiti per lo sviluppo software \\
+		\end{tabu}
+		\caption{Tracciamento delle decisioni del verbale}
+	\end{center}
+\end{table}
+\end{document}

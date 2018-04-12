@@ -21,7 +21,10 @@ It can be obtain for free from the official site and it support Microsoft Window
 ESLint will be automatically installed with the \begin{ttfamily}yarn install \end{ttfamily}command. \\
 To enable it into WebStorm launch the IDE, go to File \textgreater{} Settings \textgreater{} ESLint, tick "Enable". \\
 Into the "Node interpreter" field insert the path of the Node executable, for example "C:\textbackslash Program Files\textbackslash nodejs\textbackslash node.exe" under Windows. \\
-If not automatically filled, insert the ESLint executable path and specify to automatically use the .eslintrc configuration file in the project root.
+If not automatically filled, insert the ESLint executable path and specify to automatically use the .eslintrc configuration file in the project root.\\
+To check if your code follow the style guide run \begin{ttfamily}yarn run eslint\end{ttfamily} or \begin{ttfamily} yarn run eslint-fix\end{ttfamily} to correct errors fixable by the eslint utility.
+Those scripts automatically check all the files inside the \begin{ttfamily}src, testnpm\end{ttfamily} and \begin{ttfamily}test\end{ttfamily} directories, using the rules specified by the \begin{ttfamily}.eslint\end{ttfamily} files placed in the root of each directories.\\
+If you want to run the linter on a single file follow the hints written in the \href{https://eslint.org/docs/user-guide/getting-started}{eslint documentation}.
 
 \subsection{Carriage return - Only on Windows}
 On Windows there may be some problem with the default carriage return, because ESLint require LF, not CRLF. \\
@@ -43,10 +46,11 @@ For Mozilla Firefox: \\
 For Google Chrome: \\
 \nURI{https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd} \\
 
-\section{Solidity plugin}
+\section{Solidity plugins}
 VSCode has a useful plugin to check Solidity syntax and lint, called "Solidity".\\
 It can been installed from the internal store of the program (accessible with Ctrl+Shift+X), searching "JuanBlanco Solidity". \\
 For further info about the installation and the configuration please visit the official guide on GitHub, accessible from the following link:
-\nURI{https://github.com/juanfranblanco/vscode-solidity}
+\nURI{https://github.com/juanfranblanco/vscode-solidity}\\
+Like the javascript code, solidity files have to follow the \href{https://solidity.readthedocs.io/en/v0.3.1/style-guide.html}{strictly style guide} provided by the official Solidity Documentation. To ensure you're following it just run \sni{yarn run solhint} that will execute the \sni{solhint} utility on all your contract files placed inside the \sni{contracts} directory.
 
 \end{document}

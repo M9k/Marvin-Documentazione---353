@@ -364,19 +364,20 @@ Ogni scenario possibile per un attore è disponibile anche ai suoi derivati.
 	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di amministratore; 
 	\item \textbf{Postcondizione:} il sistema offre all'amministratore la lista degli studenti approvati.
 \end{itemize}
+%TODO: modificare diagramma UC5.2
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.9\linewidth]{UC5_2.jpg}
 	\caption{UC5.2 - Visualizzazione lista degli studenti approvati}
 	\label{fig:UC5.2 - Visualizzazione lista degli studenti approvati}
 \end{figure}
-\subsection{UC5.2.1 - Visualizzazione corsi degli studenti approvati}
+\subsection{UC5.2.1 - Visualizzazione nomi dei corsi degli studenti approvati}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
-	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti gli studenti registrati nel sistema con indicato il relativo corso universitario;
-	\item \textbf{Scenario principale:} l'amministratore richiede al sistema una lista di studenti per poterne visualizzare il corso universitario ed eventualmente compiere altre operazioni su di essi;
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti gli studenti registrati nel sistema con indicato il nome del relativo corso universitario;
+	\item \textbf{Scenario principale:} l'amministratore richiede al sistema una lista di studenti per poterne visualizzare il nome del corso universitario ed eventualmente compiere altre operazioni su di essi;
 	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di amministratore e riceve la richiesta di visualizzazione della lista degli studenti approvati;
-	\item \textbf{Postcondizione:} il sistema offre all'amministratore la lista degli studenti approvati con indicati i corsi di laurea.
+	\item \textbf{Postcondizione:} il sistema offre all'amministratore la lista degli studenti approvati con indicati i nomi dei corsi di laurea.
 \end{itemize}
 \subsection{UC5.3 - Visualizzazione lista dei professori approvati}
 \begin{itemize}
@@ -395,6 +396,7 @@ Ogni scenario possibile per un attore è disponibile anche ai suoi derivati.
 	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di amministratore; 
 	\item \textbf{Postcondizione:} il sistema offre all'amministratore la lista degli utenti in attesa di approvazione.
 \end{itemize}
+%TODO: modificare diagramma UC5.4
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\linewidth]{UC5_4.jpg}
@@ -433,13 +435,13 @@ Ogni scenario possibile per un attore è disponibile anche ai suoi derivati.
 	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di amministratore e riceve la richiesta di visualizzazione della lista degli utenti in attesa di approvazione;
 	\item \textbf{Postcondizione:} il sistema offre all'amministratore la lista degli utenti in attesa di approvazione con indicati i ruoli che desiderano ottenere.
 \end{itemize}
-\subsection{UC5.4.5 - Visualizzazione corsi degli utenti in attesa di abilitazione}
+\subsection{UC5.4.5 - Visualizzazione nomi dei corsi degli utenti in attesa di abilitazione}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
-	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti gli utenti in attesa di abilitazione con indicato il relativo corso universitario nel caso l'utente abbia richiesto di essere uno studente;
-	\item \textbf{Scenario principale:} l'amministratore richiede al sistema una lista degli utenti in attesa di abilitazione per poterne visualizzare il corso universitario ove possibile ed eventualmente compiere altre operazioni su di essi;
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti gli utenti in attesa di abilitazione con indicato il nome del relativo corso universitario nel caso l'utente abbia richiesto di essere uno studente;
+	\item \textbf{Scenario principale:} l'amministratore richiede al sistema una lista degli utenti in attesa di abilitazione per poterne visualizzare il nome del corso universitario ove possibile ed eventualmente compiere altre operazioni su di essi;
 	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di amministratore e riceve la richiesta di visualizzazione della lista degli utenti in attesa di approvazione;
-	\item \textbf{Postcondizione:} il sistema offre all'amministratore la lista degli utenti in attesa di approvazione con indicati i corsi universitari ai quali desiderano partecipare nel caso si tratti di studenti, altrimenti viene restituito un campo vuoto.
+	\item \textbf{Postcondizione:} il sistema offre all'amministratore la lista degli utenti in attesa di approvazione con indicati i nomi relativi ai corsi universitari ai quali desiderano partecipare nel caso si tratti di studenti, altrimenti viene restituito un campo vuoto.
 \end{itemize}
 \subsection{UC5.5 - Abilitazione utente}
 \begin{itemize}

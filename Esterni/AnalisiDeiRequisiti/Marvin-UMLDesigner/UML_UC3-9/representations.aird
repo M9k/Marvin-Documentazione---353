@@ -2803,7 +2803,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Capture']/@ownedRepresentations[name='Use%20Case%20Diagram']/@defaultLayer/@nodeMappings[name='UCD_Actor']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_kP780RPSEeit3JTnlaW4wQ" name="UC5.6 - Visualizzazione lista degli studenti approvati" width="12" height="10">
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_kP780RPSEeit3JTnlaW4wQ" name="UC5.2 - Visualizzazione lista degli studenti approvati" width="12" height="10">
       <target xmi:type="uml:Component" href="Marvin.uml#_kP780BPSEeit3JTnlaW4wQ"/>
       <semanticElements xmi:type="uml:Component" href="Marvin.uml#_kP780BPSEeit3JTnlaW4wQ"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -2814,7 +2814,7 @@
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Capture']/@ownedRepresentations[name='Use%20Case%20Diagram']/@defaultLayer/@containerMappings[name='UCD_Subject']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Capture']/@ownedRepresentations[name='Use%20Case%20Diagram']/@defaultLayer/@containerMappings[name='UCD_Subject']"/>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_mNTocRPSEeit3JTnlaW4wQ" name="UC5.6.1 - Visualizzazione corsi degli studenti approvati" incomingEdges="_wcR94xPSEeit3JTnlaW4wQ" width="14" height="14" resizeKind="NSEW">
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_mNTocRPSEeit3JTnlaW4wQ" name="UC5.2.1 - Visualizzazione nomi dei corsi degli studenti approvati" incomingEdges="_wcR94xPSEeit3JTnlaW4wQ" width="14" height="14" resizeKind="NSEW">
         <target xmi:type="uml:UseCase" href="Marvin.uml#_mNTocBPSEeit3JTnlaW4wQ"/>
         <semanticElements xmi:type="uml:UseCase" href="Marvin.uml#_mNTocBPSEeit3JTnlaW4wQ"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>

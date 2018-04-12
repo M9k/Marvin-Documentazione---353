@@ -613,8 +613,8 @@
           <details xmi:id="_iAg34hPSEeit3JTnlaW4wQ" key="Human"/>
         </eAnnotations>
       </packagedElement>
-      <packagedElement xmi:type="uml:Component" xmi:id="_kP780BPSEeit3JTnlaW4wQ" name="UC5.6 - Visualizzazione lista degli studenti approvati" useCase="_mNTocBPSEeit3JTnlaW4wQ">
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_mNTocBPSEeit3JTnlaW4wQ" name="UC5.6.1 - Visualizzazione corsi degli studenti approvati" subject="_kP780BPSEeit3JTnlaW4wQ"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="_kP780BPSEeit3JTnlaW4wQ" name="UC5.2 - Visualizzazione lista degli studenti approvati" useCase="_mNTocBPSEeit3JTnlaW4wQ">
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_mNTocBPSEeit3JTnlaW4wQ" name="UC5.2.1 - Visualizzazione nomi dei corsi degli studenti approvati" subject="_kP780BPSEeit3JTnlaW4wQ"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_wcR94BPSEeit3JTnlaW4wQ" memberEnd="_wcR94RPSEeit3JTnlaW4wQ _wcR94hPSEeit3JTnlaW4wQ">
         <ownedEnd xmi:id="_wcR94RPSEeit3JTnlaW4wQ" type="_mNTocBPSEeit3JTnlaW4wQ" association="_wcR94BPSEeit3JTnlaW4wQ"/>

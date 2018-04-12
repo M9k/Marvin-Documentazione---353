@@ -3,8 +3,8 @@
 	
 	\section{Foundation Components}
 
-	\subsection{Bootstrap Components} For simplicity in front-end we decided to use the React-Bootstrap framework, which allowed us to define UI style very easily. React-Bootstrap is a complete re-implementation of the Bootstrap components using React. It doesn't depend on a precise version of Bootstrap, so there is no pre-included CSS file. However, some stylesheet is required to use these components, in our case we inclueded Material-UI CSS file in \textit{public/index.html}. \\ All React-Bootstrap components are tested and perfectly work with any kind of modern desktop/mobile browser. We used many React-Bootstrap components for the creation of Marvin. The components are mainly used to create our custom and dynamic components 
-	of which we will discuss in the next section. \\ \\ The following UML diagram shows which components and which properties of specific component we used to create our custom components. 
+	\subsection{Bootstrap Components} For simplicity in front-end we decided to use the React-Bootstrap framework, which allowed us to define UI style very easily. React-Bootstrap is a complete re-implementation of the Bootstrap components using React. It doesn't depend on a precise version of Bootstrap, so there is no pre-included CSS file. However, some stylesheet is required to use these components, in our case we included Material-UI CSS file in \textit{public/index.html}. \\ All React-Bootstrap components are tested and perfectly work with any kind of modern desktop/mobile browser. We used many React-Bootstrap components for the creation of Marvin. The components are mainly used to create our custom and dynamic components 
+	of which we will discuss in the next section. \\ \\ The following UML diagram shows which components and which properties to specific component we used to create our custom components. 
 		\subsubsection{UML}
 		\begin{figure}[h]
 			\centering
@@ -22,7 +22,7 @@
 			\caption{Custom components for Marvin}
 			\label{fig:Custom components for Marvin}
 		\end{figure}
-	\subsection{Template Components} The custom components are used to create a pages structure. These components are made using Facade pattern, so 
+	\subsection{Template Components} The custom components are used to create the page structure. These components are made using Facade pattern, so 
 	they provide all the pages with a unique interface to the basic custom components. They are only two template components: \begin{enumerate}
 		\item \textbf{PageContainer: } it contains dynamic navbar(which changes depending on the user type) and all other basic components such as footer, panel etc;
 		\item \textbf{PageTableForm: }this is a dynamic table form, which contains all the information about users/exams (depending on the page and user type).
@@ -31,8 +31,8 @@
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=15.5cm,height=12cm]{"diagrammi/react/template"}
-		\caption{Custom components for Marvin}
-		\label{fig:Custom components for Marvin}
+		\caption{Page template}
+		\label{fig:Page template}
 	\end{figure}
 	
 \end{document}

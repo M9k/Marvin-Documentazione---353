@@ -613,8 +613,8 @@
           <details xmi:id="_iAg34hPSEeit3JTnlaW4wQ" key="Human"/>
         </eAnnotations>
       </packagedElement>
-      <packagedElement xmi:type="uml:Component" xmi:id="_kP780BPSEeit3JTnlaW4wQ" name="UC5.6 - Visualizzazione lista degli studenti approvati" useCase="_mNTocBPSEeit3JTnlaW4wQ">
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_mNTocBPSEeit3JTnlaW4wQ" name="UC5.6.1 - Visualizzazione corsi degli studenti approvati" subject="_kP780BPSEeit3JTnlaW4wQ"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="_kP780BPSEeit3JTnlaW4wQ" name="UC5.2 - Visualizzazione lista degli studenti approvati" useCase="_mNTocBPSEeit3JTnlaW4wQ">
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_mNTocBPSEeit3JTnlaW4wQ" name="UC5.2.1 - Visualizzazione nomi dei corsi degli studenti approvati" subject="_kP780BPSEeit3JTnlaW4wQ"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_wcR94BPSEeit3JTnlaW4wQ" memberEnd="_wcR94RPSEeit3JTnlaW4wQ _wcR94hPSEeit3JTnlaW4wQ">
         <ownedEnd xmi:id="_wcR94RPSEeit3JTnlaW4wQ" type="_mNTocBPSEeit3JTnlaW4wQ" association="_wcR94BPSEeit3JTnlaW4wQ"/>
@@ -630,12 +630,12 @@
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_cJHC0BPWEeit3JTnlaW4wQ" name="UC5.3">
-      <packagedElement xmi:type="uml:Component" xmi:id="_3egDcBPSEeit3JTnlaW4wQ" name="UC5.3 - Visualizzazione lista utenti in attesa di abilitazione" useCase="_8nKmYBPSEeit3JTnlaW4wQ _AQhSsBPTEeit3JTnlaW4wQ _DMJ9YBPTEeit3JTnlaW4wQ _GNMFcBPTEeit3JTnlaW4wQ _HITp4BPTEeit3JTnlaW4wQ">
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_8nKmYBPSEeit3JTnlaW4wQ" name="UC5.3.2 - Visualizzazione nomi degli utenti in attesa di abilitazione" subject="_3egDcBPSEeit3JTnlaW4wQ"/>
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_AQhSsBPTEeit3JTnlaW4wQ" name="UC5.3.1 - Visualizzazione indirizzi degli utenti in attesa di abilitazione" subject="_3egDcBPSEeit3JTnlaW4wQ"/>
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_DMJ9YBPTEeit3JTnlaW4wQ" name="UC5.3.3 - Visualizzazione cognomi degli utenti in attesa di abilitazione" subject="_3egDcBPSEeit3JTnlaW4wQ"/>
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_GNMFcBPTEeit3JTnlaW4wQ" name="UC5.3.4 - Visualizzazione ruolo degli utenti in attesa di abilitazione" subject="_3egDcBPSEeit3JTnlaW4wQ"/>
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_HITp4BPTEeit3JTnlaW4wQ" name="UC5.3.5 - Visualizzazione corsi degli utenti in attesa di abilitazione" subject="_3egDcBPSEeit3JTnlaW4wQ"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="_3egDcBPSEeit3JTnlaW4wQ" name="UC5.4 - Visualizzazione lista utenti in attesa di abilitazione" useCase="_8nKmYBPSEeit3JTnlaW4wQ _AQhSsBPTEeit3JTnlaW4wQ _DMJ9YBPTEeit3JTnlaW4wQ _GNMFcBPTEeit3JTnlaW4wQ _HITp4BPTEeit3JTnlaW4wQ">
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_8nKmYBPSEeit3JTnlaW4wQ" name="UC5.4.2 - Visualizzazione nomi degli utenti in attesa di abilitazione" subject="_3egDcBPSEeit3JTnlaW4wQ"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_AQhSsBPTEeit3JTnlaW4wQ" name="UC5.4.1 - Visualizzazione indirizzi degli utenti in attesa di abilitazione" subject="_3egDcBPSEeit3JTnlaW4wQ"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_DMJ9YBPTEeit3JTnlaW4wQ" name="UC5.4.3 - Visualizzazione cognomi degli utenti in attesa di abilitazione" subject="_3egDcBPSEeit3JTnlaW4wQ"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_GNMFcBPTEeit3JTnlaW4wQ" name="UC5.4.4 - Visualizzazione ruolo degli utenti in attesa di abilitazione" subject="_3egDcBPSEeit3JTnlaW4wQ"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_HITp4BPTEeit3JTnlaW4wQ" name="UC5.4.5 - Visualizzazione nomi dei corsi degli utenti in attesa di abilitazione" subject="_3egDcBPSEeit3JTnlaW4wQ"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Actor" xmi:id="_34yywBPSEeit3JTnlaW4wQ" name="Amministratore">
         <eAnnotations xmi:id="_34yywRPSEeit3JTnlaW4wQ" source="http://www.eclipse.org/uml2/2.0.0/UML">

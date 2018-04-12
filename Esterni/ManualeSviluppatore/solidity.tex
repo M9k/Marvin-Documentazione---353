@@ -49,8 +49,70 @@ The only exception of access is the university container, as the address must be
 
 \subsection{UML Diagram}
 
-\section{Extend the university contract}
-\section{Provide custom user type}
-\section{Provide custom relationship}
+\subsubsection{University contract}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\linewidth]{"diagrammi/solidity/university"}
+	\caption{University contract}
+	\label{fig:University contract}
+\end{figure}
+The University contract is decomposed into a hierarchy to guarantee a better manageability, but when it will be placed in the blockchain it will be a single one containing all the aspects. \\
+The base contract, University, has the role of maintaining information about the founder and checking if an address already has a role within the contract, thus blocking double accounts. \\
+The second one, UniversityAdmin, maintains the list of the administrator and allows its management by the founder. \\
+UniversityStuden and UniversityTeacher are responsible for maintaining the list of users and professors and providing access to their contracts. \\
+UniversityYear contains the list of years and links with related contracts and UniversityExam offers the method to associate exams with professors. \\
+The hierarchy order is not significant, as some contracts can be reversed without causing problems and without compromising the logic. \\
+
+\subsubsection{User contracts}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\linewidth]{"diagrammi/solidity/user"}
+	\caption{User contracts}
+	\label{fig:User contracts}
+\end{figure}
+Unlike the university, in this case the hierarchy is used similarly to the object-oriented programming, and not only to compose a larger contract. \\
+The User contract offers the basic characteristics of a user, containing his public key to verify his identity, his name and his surname. \\
+The Student contract extends the basic contract by adding information about the course and the exams, also providing methods for their manipulation. \\
+The Teacher contract, in the same way as the Student contract, extends the basic contract by adding the exam list pertaining to the professor. \\
+
+\subsubsection{Year contract}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"diagrammi/solidity/year"}
+	\caption{Year contract}
+	\label{fig:Year contract}
+\end{figure}
+The Year contract keeps the information of the solar year and contains the related courses. \\
+
+\subsubsection{Course contract}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{"diagrammi/solidity/course"}
+\caption{Course contract}
+\label{fig:Course contract}
+\end{figure}
+The Course contract keeps the information about his details and contains the related exams. \\
+
+\subsubsection{Exam contract}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{"diagrammi/solidity/exam"}
+\caption{Exam contract}
+\label{fig:Exam contract}
+\end{figure}
+The Exam contract keeps the information about his details, the contract of the assigned professor and the list of student enrolled to him. \\
+
+\newpage
+\section{Extend the contracts}
+
+\subsection{Provide custom user type}
+New user type can be added simply extending User contract, or directly use it there is no need for extra information. \\
+
+\subsection{Extend the university contract}
+To extend the University contract is sufficient to create a new contract that inherits from the last one of the current hierarchy. \\
+Once the new contract is added, open "migration" folder in the Marvin root, then open the migration for the university and change the artifacts.require parameter, inserting the name of the new contract. \\
+Care must be taken about the size of the overall contract, because it may exceed the gas limit for the Ethereum network, in this case the contract has to be separated into two, deployed together and then linked to each other. \\
+The actual gas limit can be checked on \nURI{https://ethstats.net}, in the moment in which this document is being written it is about 8'000'000 gas and the University contract uses just over half of this limit. \\
+
 
 \end{document}

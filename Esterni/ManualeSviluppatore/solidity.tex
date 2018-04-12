@@ -102,9 +102,17 @@ The Course contract keeps the information about his details and contains the rel
 \end{figure}
 The Exam contract keeps the information about his details, the contract of the assigned professor and the list of student enrolled to him. \\
 
+\newpage
+\section{Extend the contracts}
 
+\subsection{Provide custom user type}
+New user type can be added simply extending User contract, or directly use it there is no need for extra information. \\
 
-\section{Extend the university contract}
-\section{Provide custom user type}
+\subsection{Extend the university contract}
+To extend the University contract is sufficient to create a new contract that inherits from the last one of the current hierarchy. \\
+Once the new contract is added, open "migration" folder in the Marvin root, then open the migration for the university and change the artifacts.require parameter, inserting the name of the new contract. \\
+Care must be taken about the size of the overall contract, because it may exceed the gas limit for the Ethereum network, in this case the contract has to be separated into two, deployed together and then linked to each other. \\
+The actual gas limit can be checked on \nURI{https://ethstats.net}, in the moment in which this document is being written it is about 8'000'000 gas and the University contract uses just over half of this limit. \\
+
 
 \end{document}

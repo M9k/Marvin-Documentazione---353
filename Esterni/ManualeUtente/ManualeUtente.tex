@@ -6,6 +6,10 @@
 \usepackage{eurosym}
 \usepackage{longtable}
 \usepackage{subfigure}
+\usepackage{xcolor}
+% configurazione per xcolor
+\fboxrule=1pt
+
 \setfoot{User guide}{\vruno}
 \setcounter{secnumdepth}{3}
 \loadglsentries{"./../../Esterni/Glossario/Definizioni.tex"}
@@ -60,12 +64,13 @@
 		}    
 	\end{titlepage}
 	\pagenumbering{roman}
-	% TODO: tenere diario modifiche oppure no?
 	\subfile{diariomodifiche}
 	\renewcommand{\contentsname}{Index}
 	\tableofcontents
-	\renewcommand{\listtablename}{List of Tables}
-	\listoftables
+	%	\renewcommand{\listtablename}{List of Tables}
+	%	\listoftables
+	\renewcommand{\listfigurename}{List of Figures}
+	\listoffigures
 	\newpage
 	\pagenumbering{arabic}
 	

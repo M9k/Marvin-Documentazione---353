@@ -9,7 +9,7 @@ The following requirements are required to run Marvin:
 	\item Node
 	\item Yarn or NPM (recommended Yarn on Windows)
 \end{enumerate}
-In addition to these there is the need to have a C language compiler, which is used for the compilation of web3 library.\\
+In addition to these, there is the need to have a C language compiler, which is used for the compilation of web3 library.\\
 
 Under Linux system the compilation uses GCC, under *BSD system it can use both GCC or Clang, 	
 either works fine, the default one provided with the system should work without any problem, otherwise install GCC. \\
@@ -41,11 +41,11 @@ or \\
 npm install \\
 \end{ttfamily}
 
-In case of problems check that all the requirements are present, work fine and are included in the PATH environment variable. For more information about environment variables see the help of your operating system. \\
+In case of problems check that all the requirements are present, work fine and are included in the PATH environment variable. For more information about the environment variables see the help of your operating system. \\
 
 
 \section{Run}
-For run Marvin, first run a local Ethereum blockchain with the following command, if on Windows: \\
+For run Marvin, at first run a local Ethereum blockchain with the following command, if on Windows: \\
 \begin{ttfamily} yarn run testrpc-win \end{ttfamily} \\
 or, on Linux or BSD: \\
 \begin{ttfamily} yarn run testrpc \end{ttfamily} \\
@@ -56,8 +56,8 @@ Then migrate the university contract on the blockchain: \\
 Finally compile and start Marvin in develop mode: \\
 \begin{ttfamily} yarn run start \end{ttfamily} \\
 
-At this point the default browser will open on the page \nURI{http://127.0.0.1:8080}, if it doesn't happen open it manually.\\
-MetaMask has to been set to use the local network, for further info read the user guide.
+At this point the default browser will open on the page \nURI{http://127.0.0.1:8080}, if it doesn't happen then open it manually.\\
+MetaMask has to be set to use the local network, for further info read the user guide.
 
 \section{Deploy on Ropsten Infura}
 First sing up an Infura account using this link: \nURI{https://infura.io/signup}. \\

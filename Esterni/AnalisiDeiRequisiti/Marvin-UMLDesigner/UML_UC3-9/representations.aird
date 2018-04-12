@@ -3292,7 +3292,7 @@
                 <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2BjyFxPXEeit3JTnlaW4wQ"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_2BjyERPXEeit3JTnlaW4wQ" fontColor="7490599" fontName="Segoe UI"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2BjyEhPXEeit3JTnlaW4wQ" x="66" y="113" width="193" height="65"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2BjyEhPXEeit3JTnlaW4wQ" x="66" y="113" width="209" height="82"/>
             </children>
             <styles xmi:type="notation:SortingStyle" xmi:id="_x9SrYhPXEeit3JTnlaW4wQ"/>
             <styles xmi:type="notation:FilteringStyle" xmi:id="_x9SrYxPXEeit3JTnlaW4wQ"/>
@@ -3331,7 +3331,7 @@
           <styles xmi:type="notation:FontStyle" xmi:id="_6FYM0hPXEeit3JTnlaW4wQ" fontName="Segoe UI" fontHeight="8"/>
           <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_6FYM0xPXEeit3JTnlaW4wQ" points="[36, 240, 36, 240]$[186, 257, 186, 257]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_6FYM2hPXEeit3JTnlaW4wQ" id="(0.5,0.5)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_6FYM2xPXEeit3JTnlaW4wQ" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_6FYM2xPXEeit3JTnlaW4wQ" id="(0.46172248803827753,0.39634146341463417)"/>
         </edges>
       </data>
     </ownedAnnotationEntries>
@@ -3347,7 +3347,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Capture']/@ownedRepresentations[name='Use%20Case%20Diagram']/@defaultLayer/@nodeMappings[name='UCD_Actor']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_x8638RPXEeit3JTnlaW4wQ" name="UC7.3 - Visualizzazione lista completa dei corsi" width="12" height="10">
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_x8638RPXEeit3JTnlaW4wQ" name="UC7.2 - Visualizzazione lista completa dei corsi" width="12" height="10">
       <target xmi:type="uml:Component" href="Marvin.uml#_x8638BPXEeit3JTnlaW4wQ"/>
       <semanticElements xmi:type="uml:Component" href="Marvin.uml#_x8638BPXEeit3JTnlaW4wQ"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -3358,7 +3358,7 @@
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Capture']/@ownedRepresentations[name='Use%20Case%20Diagram']/@defaultLayer/@containerMappings[name='UCD_Subject']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Capture']/@ownedRepresentations[name='Use%20Case%20Diagram']/@defaultLayer/@containerMappings[name='UCD_Subject']"/>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_z2Ex8BPXEeit3JTnlaW4wQ" name="UC7.3.1 - Visualizzazione sigle dei corsi di laurea" incomingEdges="_5oWSkBPXEeit3JTnlaW4wQ" width="14" height="14" resizeKind="NSEW">
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_z2Ex8BPXEeit3JTnlaW4wQ" name="UC7.2.1 - Visualizzazione sigle dei corsi di laurea" incomingEdges="_5oWSkBPXEeit3JTnlaW4wQ" width="14" height="14" resizeKind="NSEW">
         <target xmi:type="uml:UseCase" href="Marvin.uml#_z2EK4BPXEeit3JTnlaW4wQ"/>
         <semanticElements xmi:type="uml:UseCase" href="Marvin.uml#_z2EK4BPXEeit3JTnlaW4wQ"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -3369,7 +3369,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Capture']/@ownedRepresentations[name='Use%20Case%20Diagram']/@defaultLayer/@nodeMappings[name='UCD_UseCase']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_2BPB8RPXEeit3JTnlaW4wQ" name="UC7.3.2 - Visualizzazione anni accademici associati ai corsi di laurea" incomingEdges="_6FHHEBPXEeit3JTnlaW4wQ" width="14" height="14" resizeKind="NSEW">
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_2BPB8RPXEeit3JTnlaW4wQ" name="UC7.2.2 - Visualizzazione anni solari degli anni accademici associati ai corsi di laurea" incomingEdges="_6FHHEBPXEeit3JTnlaW4wQ" width="14" height="14" resizeKind="NSEW">
         <target xmi:type="uml:UseCase" href="Marvin.uml#_2BPB8BPXEeit3JTnlaW4wQ"/>
         <semanticElements xmi:type="uml:UseCase" href="Marvin.uml#_2BPB8BPXEeit3JTnlaW4wQ"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>

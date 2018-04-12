@@ -683,9 +683,9 @@
           <details xmi:id="_tYJsQRPXEeit3JTnlaW4wQ" key="Human"/>
         </eAnnotations>
       </packagedElement>
-      <packagedElement xmi:type="uml:Component" xmi:id="_x8638BPXEeit3JTnlaW4wQ" name="UC7.3 - Visualizzazione lista completa dei corsi" useCase="_z2EK4BPXEeit3JTnlaW4wQ _2BPB8BPXEeit3JTnlaW4wQ">
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_z2EK4BPXEeit3JTnlaW4wQ" name="UC7.3.1 - Visualizzazione sigle dei corsi di laurea" subject="_x8638BPXEeit3JTnlaW4wQ"/>
-        <packagedElement xmi:type="uml:UseCase" xmi:id="_2BPB8BPXEeit3JTnlaW4wQ" name="UC7.3.2 - Visualizzazione anni accademici associati ai corsi di laurea" subject="_x8638BPXEeit3JTnlaW4wQ"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="_x8638BPXEeit3JTnlaW4wQ" name="UC7.2 - Visualizzazione lista completa dei corsi" useCase="_z2EK4BPXEeit3JTnlaW4wQ _2BPB8BPXEeit3JTnlaW4wQ">
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_z2EK4BPXEeit3JTnlaW4wQ" name="UC7.2.1 - Visualizzazione sigle dei corsi di laurea" subject="_x8638BPXEeit3JTnlaW4wQ"/>
+        <packagedElement xmi:type="uml:UseCase" xmi:id="_2BPB8BPXEeit3JTnlaW4wQ" name="UC7.2.2 - Visualizzazione anni solari degli anni accademici associati ai corsi di laurea" subject="_x8638BPXEeit3JTnlaW4wQ"/>
       </packagedElement>
       <packagedElement xmi:type="uml:Association" xmi:id="_5oVEcBPXEeit3JTnlaW4wQ" memberEnd="_5oVEcRPXEeit3JTnlaW4wQ _5oVrgBPXEeit3JTnlaW4wQ">
         <ownedEnd xmi:id="_5oVEcRPXEeit3JTnlaW4wQ" type="_z2EK4BPXEeit3JTnlaW4wQ" association="_5oVEcBPXEeit3JTnlaW4wQ"/>

@@ -644,13 +644,13 @@ Ogni scenario possibile per un attore è disponibile anche ai suoi derivati.
 	\item \textbf{Precondizione:} il sistema riconosce l'utente come amministratore e riceve una richiesta di visualizzazione dei corsi di laurea; 
 	\item \textbf{Postcondizione:} il sistema fornisce all'utente la sigla relativa a ogni corso di laurea.
 \end{itemize}
-\subsection{UC7.2.2 - Visualizzazione anni accademici associati ai corsi di laurea}
+\subsection{UC7.2.2 - Visualizzazione anni solari degli anni accademici associati ai corsi di laurea}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
-	\item \textbf{Scopo e descrizione:} l'amministratore visualizza la lista degli anni accademici relativi ai corsi di laurea presenti nel sistema;
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza la lista degli anni solari degli anni accademici relativi ai corsi di laurea presenti nel sistema;
 	\item \textbf{Scenario principale:} l'amministratore richiede una lista di corsi di laurea presenti nel sistema;
 	\item \textbf{Precondizione:} il sistema riconosce l'utente come amministratore e riceve una richiesta di visualizzazione dei corsi di laurea; 
-	\item \textbf{Postcondizione:} il sistema fornisce all'utente l'anno accademico relativo a ogni corso di laurea.
+	\item \textbf{Postcondizione:} il sistema fornisce all'utente l'anno solare dell'anno accademico relativo a ogni corso di laurea.
 \end{itemize}
 \subsection{UC7.3 - Visualizzazione lista corsi di laurea per anno accademico}
 \begin{itemize}
@@ -1018,13 +1018,13 @@ Ogni scenario possibile per un attore è disponibile anche ai suoi derivati.
 	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo del professore, il quale richiede la visualizzazione degli esami di sua competenza;
 	\item \textbf{Postcondizione:} il sistema fornisce per ogni esame di competenza del professore il relativo codice.
 \end{itemize}
-\subsection{UC8.1.2 - Visualizzazione corsi degli esami}
+\subsection{UC8.1.2 - Visualizzazione nomi dei corsi degli esami}
 \begin{itemize}
 	\item \textbf{Attori primari:} professore;
-	\item \textbf{Scopo e descrizione:} il professore visualizza per ogni esame il relativo corso di laurea;
-	\item \textbf{Scenario principale:} il professore richiede al sistema la lista dei corsi di laurea degli esami di sua competenza per poterla consultare;
+	\item \textbf{Scopo e descrizione:} il professore visualizza per ogni esame il relativo nome del corso di laurea associato;
+	\item \textbf{Scenario principale:} il professore richiede al sistema la lista dei nomi dei corsi di laurea degli esami di sua competenza per poterla consultare;
 	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo del professore, il quale richiede la visualizzazione degli esami di sua competenza;
-	\item \textbf{Postcondizione:} il sistema fornisce per ogni esame di competenza del professore il corso di laurea al quale appartiene.
+	\item \textbf{Postcondizione:} il sistema fornisce per ogni esame di competenza del professore il nome del corso di laurea al quale appartiene.
 \end{itemize}
 
 \subsection{UC8.2 - Visualizzazione lista degli studenti}
@@ -1209,6 +1209,12 @@ Ogni scenario possibile per un attore è disponibile anche ai suoi derivati.
 	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di studente e fornisce la lista delle funzionalità alle quali ha accesso relative alla gestione degli esami secondo le restrizioni permesse dal suo ruolo; 
 	\item \textbf{Postcondizione:} il sistema fornisce allo studente delle informazioni riguardanti la sua attuale situazione universitaria.
 \end{itemize}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.0\linewidth]{UC9_4.jpg}
+	\caption{UC9.4 - Visualizzazione delle informazioni relative ai crediti}
+	\label{fig:UC9.4 - Visualizzazione delle informazioni relative ai crediti}
+\end{figure}
 \subsection{UC9.4.1 - Visualizzazione somma dei crediti}
 \begin{itemize}
 	\item \textbf{Attori primari:} studente;

@@ -7,9 +7,9 @@
 \chapter{Solidity}
 \section{Architecture}
 \subsection{Architecture Overview}
-The main contract, University, consisted in a hierarchy of small contracts, each other manage a part of the overall features that must be offered all together.\\
+The main contract, University, consisted in a hierarchy of small contracts, each other manage a part of the overall features that must be offered altogether.\\
 University contract uses two more contracts to define users: Teacher and Student. These two contracts share some functionality, because they are made from specialization of another contract, User, which contains the basic functionality for a user.\\
-Administrators don't need a contract, because they don't have to keep trace of a list or complex information, the University only has to keep their addresses.\\
+Administrators don't need a contract because they don't have to keep track of a list or complex information, the University only has to keep their addresses.\\
 University keeps a list of academic years, represented by the contract "Year", who has a list of courses, represented by the contract "Course", which finally has a list of the exams, represented by "Exam".\\
 
 Is University contract responsibility to stabilize the rules, preventing unauthorized user to do actions not within their competence. This control is also can be done indirectly from contract subsequently instantiated to have more performance and reduce the cost.\\
@@ -24,9 +24,9 @@ A database identified similar to our case is Cassandra, which is distributed wit
 \subsubsection{Overview of Chebotko Diagram}
 To get a better understanding of the architecture and to get a consistent design a Chetbotko diagram was created.\\
 This diagram was designed for CassandraDB, but it can be used, with some shrewdness, to the data saved using maps in the Ethereum contracts.\\
-The goal of this diagram is demonstrate which data can be accessible using certain keys.\\
+The goal of this diagram is to demonstrate which data can be accessed using certain keys.\\
 A second goal is demonstrating that all needed data are accessible quickly starting from an information that leads to it and visually check that no data is inaccessible.\\
-Every map has two arrows, one that enter from above and one that come out from under: the first one indicate the key that can be used in those maps to get other data, the second one indicates the information that can be recovered from it and used in another map as keys.\\
+Every map has two arrows, one that enters from above and one that comes out from under: the first one indicates the key that can be used in those maps to get other data, the second one indicates the information that can be recovered from it and used on another map as keys.\\
 
 \begin{landscape}
 \newpage
@@ -112,7 +112,7 @@ New user type can be added simply extending User contract, or directly use it th
 To extend the University contract is sufficient to create a new contract that inherits from the last one of the current hierarchy. \\
 Once the new contract is added, open "migration" folder in the Marvin root, then open the migration for the university and change the artifacts.require parameter, inserting the name of the new contract. \\
 Care must be taken about the size of the overall contract, because it may exceed the gas limit for the Ethereum network, in this case the contract has to be separated into two, deployed together and then linked to each other. \\
-The actual gas limit can be checked on \nURI{https://ethstats.net}, in the moment in which this document is being written it is about 8'000'000 gas and the University contract uses just over half of this limit. \\
+The actual gas limit can be checked on \nURI{https://ethstats.net}, at the moment in which this document is being written it is about 8'000'000 gas and the University contract uses just over half of this limit. \\
 
 
 \end{document}

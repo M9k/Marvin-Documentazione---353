@@ -26,4 +26,17 @@ Like the JavaScript code, solidity files have to follow the \href{https://solidi
 \sni{yarn run solhint} \\
 that will execute the \sni{solhint} utility on all your contract files placed inside the \sni{contracts} directory.
 
+\section{Code coverage}
+Marvin is equipped with code coverage utilities for both the Javascript and Solidity codebases.
+To run the utilities separately run: \\
+\sni{yarn run solidity-coverage} \\
+or \\
+\sni{yarn run js-coverage} \\
+They will generate the reports on the terminal and also in the \sni{coverage} and \sni{js-coverage} directories. \\
+If you want to have a single report for the two codbases run: \\
+\sni{yarn run make-coverage \&\& yarn run merge-coverage} \\
+It will create a file inside the root directory called \sni{report.lcov} that you can use to upload on any code coverage service (we use coveralls\footnote{\nURI{https://coveralls.io}}) that support lcov\footnote{\nURI{http://ltp.sourceforge.net/coverage/lcov.php}} report style. \\
+Unfortunately the package we are using for solidity's coverage not work out of the box with Windows and is not really stable, so is possibile that it won't work on your machine. \\
+To have more information about the package, visit \nURI{https://github.com/sc-forks/solidity-coverage}.
+
 \end{document}

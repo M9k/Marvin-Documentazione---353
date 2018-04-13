@@ -1,14 +1,29 @@
-\documentclass[ManualeSviluppatore.tex]{subfiles}
+\documentclass[ManualeSviluppatore]{subfiles}
 \begin{document}
 
 \chapter{Test}
 \section{Chapter purpose}
-
+This chapter has the purpose to indicate to the developers how to check the operation of their code and its syntax. \\
 
 \section{Test on JavaScript Code}
-
+To run the tests on the code, you must execute the following command: \\
+\begin{ttfamily} yarn run test \end{ttfamily} \\
+It will run all the test in the \sni{testnpm} directory. \\
+Remember that if you prefer npm over yarn you just need to replace "\begin{ttfamily}yarn\end{ttfamily}" with "\begin{ttfamily}npm\end{ttfamily}". \\
+To check if your code follows the style guide run: \\
+\begin{ttfamily}yarn run eslint\end{ttfamily} \\
+or \\
+\begin{ttfamily} yarn run eslint-fix\end{ttfamily} \\
+to also correct errors fixable by the ESLint utility. \\
+Those scripts automatically check all the files inside the \begin{ttfamily}src, testnpm\end{ttfamily} and \begin{ttfamily}test\end{ttfamily} directories, using the rules specified by the \begin{ttfamily}.eslint\end{ttfamily} files placed in the root of each directory.\\
+If you want to run the linter on a single file follow the hints written in the \href{https://eslint.org/docs/user-guide/getting-started}{eslint documentation}.
 
 \section{Test on Solidity Code}
-
+To run the tests on the contracts, you must execute the following command: \\
+\begin{ttfamily} yarn run soltest \end{ttfamily} \\
+It will create a local Ethereum blockchain and run all the test in the \sni{test} directory. \\
+Like the JavaScript code, solidity files have to follow the \href{https://solidity.readthedocs.io/en/v0.3.1/style-guide.html}{strict style guide} provided by the official Solidity Documentation. To ensure you're following it just run: \\
+\sni{yarn run solhint} \\
+that will execute the \sni{solhint} utility on all your contract files placed inside the \sni{contracts} directory.
 
 \end{document}

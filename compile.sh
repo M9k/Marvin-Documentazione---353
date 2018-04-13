@@ -59,13 +59,13 @@ cd ..
 
 cd 'Esterni'
 cd ManualeSviluppatore
-pdflatex -interaction=nonstopmode -halt-on-error ManualeSviluppatore.tex && echo "ok" || exit  11
+pdflatex -interaction=nonstopmode -halt-on-error -file-line-error ManualeSviluppatore.tex && echo "ok" || exit  11
 cd ..
 cd ..
 
 cd 'Esterni'
 cd ManualeUtente
-pdflatex -interaction=nonstopmode -halt-on-error ManualeUtente.tex && echo "ok" || exit  12
+pdflatex -interaction=nonstopmode -halt-on-error -file-line-error ManualeUtente.tex && echo "ok" || exit  12
 cd ..
 cd ..
 

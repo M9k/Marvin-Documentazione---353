@@ -1,6 +1,8 @@
 \begin{document}
 	\subsection{Ducks-Sagas connection}
-	In the UML diagram aren't showed the Duck and Saga interfaces, for more readability.
+	As mentioned above, we tried to keep our sagas divided into the ducks components of our application.\\
+	Almost all our sagas are connected with a single duck. After the data fetching, a saga could call the connected duck's actions, for example to set a list in the store.
+	In the UML diagram below aren't shown the Duck and Saga interfaces, for more readability.
 	\subsubsection{UML}
 	\begin{figure}[H]
 		\centering

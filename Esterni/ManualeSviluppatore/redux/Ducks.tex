@@ -3,6 +3,22 @@
 	To keep our app as simple as possible, we decided to use a modular approach to describe all the logical components.\\
 	With Redux, we opted to use Ducks\footnote{\nURI{https://github.com/erikras/ducks-modular-redux}}.\\
 	Ducks is a proposal for bundling reducers, action types and actions in a single file. To have the possibility to extend and reuse our ducks, we decided to use extensible-duck\footnote{\nURI{https://github.com/investtools/extensible-duck}} implementation.
+
+	\subsubsection{Ducks list}
+	In this section are reported all the ducks, with a little explanation of their function.
+	\begin{itemize}
+		\item Admin: used by an admin to manage teachers and students;
+		\item AdminEmployer: used by the founder to manage the admins;
+		\item Booking: used to log-in to Marvin;
+		\item Course: used to insert and manage degree courses;
+		\item Evaluator: used to assign votes;
+		\item manageExam: used to manage the exams in a degree course;
+		\item manageYears: used to manage all the academic years;
+		\item Session: used to set up an user's session;
+		\item Student: used by a student to manage their course of study;
+		\item TeacherExam: used by a teacher to manage their exams.
+	\end{itemize}
+
 	\subsubsection{UML}
 	\begin{figure}[H]
 		\centering

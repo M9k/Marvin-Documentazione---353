@@ -3,6 +3,21 @@
 	Redux-saga is a redux library that aims to make application side effects. We use it to do asynchronous calls, for example to fetch data.\\
 	It is also a redux middleware, which means that a saga can be started, paused and cancelled with redux actions, that it has full access to redux's state and that it can dispatch redux actions.\\
 	Our sagas work with generators, javaScript functions that can provide for functions that can provide for asynchronous flow. We tried to keep our sagas divided into the ducks components of our application
+	
+	\subsubsection{Sagas list}
+	\begin{itemize}
+		\item AdminSaga: used fetch students and teachers;
+		\item AdminEmployerSaga: used by the founder to add and remove the admins;
+		\item BookingSaga: used to sign-up to Marvin;
+		\item CourseSaga: used to add and get a course;
+		\item EvaluatorSaga: used to assign a vote;
+		\item manageExamSaga: used to manage an exam in a degree course;
+		\item manageYearsSaga: used to add an academic year, or to get them;
+		\item SessionSaga: used to set up an user's session;
+		\item StudentSaga: used to get informations about a student's career;
+		\item TeacherExamSaga: used to get a list of a teacher's exams.
+	\end{itemize}
+
 	\subsubsection{UML}
 	\begin{figure}[H]
 		\centering

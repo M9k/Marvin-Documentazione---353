@@ -1,5 +1,5 @@
 \begin{document}
-	\subsection{Connection with the redux store}
+	\subsection{Connection with the store}
 	We opted to use a strategy pattern to create a layer between ducks components, sagas and the redux store.\\
 	All our ducks and sagas implement one of two different interfaces, called Duck or Saga, to manage the interaction with the store.\\
 	In particular, a saga can be used only by its handler() method inherited by the Saga interface

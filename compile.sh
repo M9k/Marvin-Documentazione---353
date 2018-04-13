@@ -57,13 +57,11 @@ pdflatex -interaction=nonstopmode -halt-on-error VER-2018-02-18.tex && echo "ok"
 cd ..
 cd ..
 
-<<STOPFAILBUILD
 cd 'Esterni'
 cd ManualeSviluppatore
 pdflatex -interaction=nonstopmode -halt-on-error ManualeSviluppatore.tex && echo "ok" || exit  8
 cd ..
 cd ..
-STOPFAILBUILD
 
 cd 'Esterni'
 cd ManualeUtente
@@ -116,6 +114,24 @@ cd ..
 cd 'Interni'
 cd VER-2018-03-06
 pdflatex -interaction=nonstopmode -halt-on-error VER-2018-03-06.tex && echo "ok" || exit  11
+cd ..
+cd ..
+
+cd 'Interni'
+cd VER-2018-03-26
+pdflatex -interaction=nonstopmode -halt-on-error VER-2018-03-26.tex && echo "ok" || exit  11
+cd ..
+cd ..
+
+cd 'Interni'
+cd VER-2018-04-04
+pdflatex -interaction=nonstopmode -halt-on-error VER-2018-04-04.tex && echo "ok" || exit  11
+cd ..
+cd ..
+
+cd 'Interni'
+cd VER-2018-04-11
+pdflatex -interaction=nonstopmode -halt-on-error VER-2018-04-11.tex && echo "ok" || exit  11
 cd ..
 cd ..
 

@@ -1,0 +1,131 @@
+\documentclass[openany, a4paper, 12pt]{letter}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[italian]{babel}
+\graphicspath{{images/}{./images/}}
+%\usepackage{lipsum}
+%\usepackage{tabularx}
+%\usepackage{hyperref} 
+\usepackage{fancyhdr}
+\usepackage{eurosym}
+\usepackage{longtable}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage[table]{xcolor}
+\usepackage{xspace}
+
+%---------------------------- COPIATI DA STYLE.STY ------------------------------
+
+\definecolor{tableHeader}{RGB}{211, 47, 47}
+\definecolor{tableLineOne}{RGB}{245, 245, 245}
+\definecolor{tableLineTwo}{RGB}{224, 224, 224}
+
+% commands for team members name
+\newcommand{\Valentina}{Valentina Marcon\xspace}
+\newcommand{\Mirco}{Mirco Cailotto\xspace}
+\newcommand{\Riccardo}{Riccardo E. Giorato\xspace}
+\newcommand{\Davide}{Davide Stocco\xspace}
+\newcommand{\Parwinder}{Parwinder Singh\xspace}
+\newcommand{\Elena}{Elena Mattiazzo\xspace}
+\newcommand{\Gianluca}{Gianluca Marraffa\xspace}
+
+\fancyhf{}
+\fancyhead[L]{\includegraphics[width=2cm]{../../common/images/logo.png}}
+\fancyhead[R]{Lettera di presentazione}
+\fancyfoot[R]{\thepage}
+
+\newcommand{\setfoot}[2]{\newcommand{\@one}{#1}\newcommand{\@two}{#2}}
+
+%\makeatletter \@title \space \textit{v \ver{}.0.0} \makeatother
+\fancypagestyle{plain}{
+	\renewcommand{\headrulewidth}{0.4pt}
+	\renewcommand{\footrulewidth}{0.4pt}
+}
+
+\pagestyle{plain}
+\setlength{\headheight}{50pt}
+
+\newcommand{\vruno}{\textit{v 1.0.0}\xspace} %revisione uno RR
+\newcommand{\vrdue}{\textit{v 2.0.0}\xspace} %revisione uno RP
+\newcommand{\vrtre}{\textit{v 3.0.0}\xspace} %revisione uno RQ
+\newcommand{\vrquattro}{\textit{v 4.0.0}\xspace} %revisione uno RA
+
+%---------------------------- COPIATI DA ADR/Requsiti ----------------------------
+\definecolor{CHeader}{HTML}{D22E2E}
+\definecolor{CHeaderText}{HTML}{FFFFFF}
+\definecolor{CRighePari}{HTML}{DFDFDF}
+\definecolor{CRigheDispari}{HTML}{F4F4F4}
+%---------------------------------------------------------------------------------
+
+\address{Via Trieste, 63 35131 Padova (PD)\\Email: 353swe@gmail.com}
+
+\begin{document}	
+	\begin{letter}{
+			Alla cortese attenzione del Committente:\\
+			\smallskip
+			Prof. Tullio Vardanega\\
+			Prof. Riccardo Cardin\\
+			\medskip
+			Università degli Studi di Padova \\
+			Dipartimento di Matematica\\
+			Via Trieste, 62, 35131 Padova (PD)}
+		\opening{Egregio Prof. Tullio Vardanega, \\
+			Egregio Prof. Riccardo Cardin,}
+		\thispagestyle{plain}
+		Con la presente, il gruppo 353 intende comunicarVi la partecipazione alla Revisione di Qualifica prevista il giorno \textit{Lunedì 23 Aprile 2018}, al fine di esporVi la progettazione e la beta del prodotto da Voi commissionato, denominato: \\
+		\begin{center}
+			\emph{\textbf{Marvin: dimostratore di Uniweb su Ethereum}}\medskip \\
+		\end{center}
+		proposto da Red Babel.\medskip\\
+		Allegati alla presente potrete trovare i seguenti documenti che illustrano in dettaglio l'analisi del prodotto, di pianificazione ed i relativi criteri a garanzia della qualità: 
+		\begin{itemize}
+			\item Analisi dei Requisiti \vrtre;
+			\item Glossario \vrtre;
+			\item Piano di Progetto \vrtre;
+			\item Piano di Qualifica \vrtre;
+			\item User manual \vruno, redatto in lingua inglese;
+			\item Developer manual \vruno, redatto in lingua inglese;
+			\item Verbali esterni:
+			\begin{itemize}
+				\item VER-2018-04-04;
+			\end{itemize}
+			\item Norme di Progetto \vrtre;
+			\item Verbali interni:
+			\begin{itemize}
+				\item VER-2018-03-26;
+				\item VER-2018-04-04;
+				\item VER-2018-04-09;
+			\end{itemize}
+		\end{itemize}
+		
+		
+		Il gruppo 353 ha stimato di consegnare il prodotto richiesto entro il giorno 07/05/2018,
+		con relativo collaudo, salvo ulteriori accordi, per il giorno 14/05/2018. Il preventivo di costo
+		fissato è pari a 13.176,00 \euro, come descritto all'interno del documento Piano di Progetto \vrtre.
+		\medskip \\
+		Si riportano di seguito i nomi dei componenti del gruppo:\\
+		
+		\rowcolors{2}{CRighePari}{CRigheDispari}
+		\renewcommand*{\arraystretch}{1.2}
+		\begin{longtable}[H]{p{6cm}p{2.5cm}}
+			\rowcolor{CHeader}   
+			\color{CHeaderText} \textbf{Nominativo} & \color{CHeaderText} \textbf{Matricola}\\
+			\endhead
+			\Mirco & 1123521 \\
+			\Riccardo & 1122158 \\
+			\Valentina & 1122461 \\
+			\Gianluca & 1121080 \\
+			\Elena & 1122273 \\
+			\Parwinder & 1073318 \\
+			\Davide & 1097631 \\
+			\hiderowcolors
+		\end{longtable}
+		
+		Rimaniamo a Vostra completa disposizione per qualsiasi chiarimento in merito ai documenti presentati.
+		\begin{flushleft}
+			Cordiali saluti,\\
+			\includegraphics[width=0.4\textwidth]{firmaResp}\\
+			\Mirco \\
+			Responsabile di Progetto\\
+		\end{flushleft}
+	\end{letter}
+\end{document}

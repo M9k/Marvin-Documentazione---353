@@ -1,10 +1,10 @@
 \documentclass[../redux]{subfiles}
 \begin{document}
 	\section{Develop new features}
-	Undestood the concept above it's easy to expand new features inside the application, but reading this section can help you to develop functionalities even faster.
+	Understood the concept above, it's easy to expand new features inside the application, but reading this section can help you to develop functionalities even faster.
 	Before starting, take a look inside the directory tree of the project. \\
-	For the redux layer the interesting part is under two folders: \sni{ducks} and \sni{sagas}.\\
-	As you can immagine inside the \sni{ducks} folder are placed the ducks module's files and inside the \sni{sagas} folder are placed the sagas' files. On the root level of the \sni{src} folder there are \sni{sagas.js} and \sni{reducers.js} files that deal with the aggregation of the single modules. \\
+	For the Redux layer, the interesting part is under two folders: \sni{ducks} and \sni{sagas}.\\
+	As you can imagine inside the \sni{ducks} folder are placed the ducks module's files and inside the \sni{sagas} folder are placed the sagas' files. On the root level of the \sni{src} folder there are \sni{sagas.js} and \sni{reducers.js} files that deal with the aggregation of the single modules. \\
 	We can assume that when you want to add a new feature to the application the standard workflow is (according to the development strategy you're adopting the order may vary):
 	\begin{itemize}
 		\item Creating the duck modules to manage store logic;
@@ -14,7 +14,7 @@
 	\end{itemize}
 	To remove all this manual work and speed up the development process you can use a scaffolding utility that do all the thing listed above with a single command line. \\
 	Running \sni{yarn run scaffold [TYPE] [NAME]} will create duck, saga and integration test files with a standard skeleton allowing you to focus only to the concrete part of you feature and avoiding you to write manually a lot of boilerplate code. \\
-	Right now the additional work you have to do is update the reducers'aggregator and create the unit tests file, but we are working to satisfy all the elements in the list above. \\
+	Right now the additional work you have to do is update the reducers' aggregator and create the unit tests file, but we are working to satisfy all the elements in the list above. \\
 	To get more information about the usage of this command run: \\ \sni{yarn run scaffold --help}.
 	
 	

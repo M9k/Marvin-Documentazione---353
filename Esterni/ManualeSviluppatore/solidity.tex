@@ -7,19 +7,19 @@
 \chapter{Solidity}
 \section{Architecture}
 \subsection{Architecture Overview}
-The main contract, University, consisted in a hierarchy of small contracts, each other manage a part of the overall features that must be offered altogether.\\
+The main contract, University, consist in a hierarchy of small contracts, and each one manages a part of the overall features that must be offered altogether.\\
 University contract uses two more contracts to define users: Teacher and Student. These two contracts share some functionality, because they are made from specialization of another contract, User, which contains the basic functionality for a user.\\
 Administrators don't need a contract because they don't have to keep track of a list or complex information, the University only has to keep their addresses.\\
-University keeps a list of academic years, represented by the contract "Year", who has a list of courses, represented by the contract "Course", which finally has a list of the exams, represented by "Exam".\\
+University keeps a list of academic years, represented by the contract "Year", who has a list of courses, represented by the contract "Course", which has a list of the exams, represented by "Exam".\\
 
-Is University contract responsibility to stabilize the rules, preventing unauthorized user to do actions not within their competence. This control is also can be done indirectly from contract subsequently instantiated to have more performance and reduce the cost.\\
+The University contract is responsible to stabilize the rules, preventing unauthorized user to do actions not within their competence. This control is also indirectly done from the subsequent instantiation of the contracts, providing more performance and reducing the costs.\\
 
 \subsection{Chebotko Diagram}
 \subsubsection{Overview of data structure}
 The organization of data in the Blockchain cannot be comparable to a relational database, because it's impossible to recover in a quick way the data and/or make a query on it.\\
-The structure of the data can be assimilable, which opportune consideration, to some not relational database, also called NoSQL, "Not Only SQL".\\
+The structure of the data can be compared, which opportune consideration, to some non-relational database, also called NoSQL, "Not Only SQL".\\
 
-A database identified similar to our case is Cassandra, which is distributed with no single point of failure, high availability and guarantees a fast recovery of data only if they are recoverable without join between tables, an operation that is not even supported.\\
+A database identified similar to our case is Cassandra, which is distributed with no single point of failure, with high availability and guarantees a fast recovery of data only if they are recoverable without join between tables, an operation that is not even supported.\\
 
 \subsubsection{Overview of Chebotko Diagram}
 To get a better understanding of the architecture and to get a consistent design a Chetbotko diagram was created.\\
@@ -59,7 +59,7 @@ The only exception of access is the university container, as the address must be
 The University contract is decomposed into a hierarchy to guarantee a better manageability, but when it will be placed in the blockchain it will be a single one containing all the aspects. \\
 The base contract, University, has the role of maintaining information about the founder and checking if an address already has a role within the contract, thus blocking double accounts. \\
 The second one, UniversityAdmin, maintains the list of the administrator and allows its management by the founder. \\
-UniversityStuden and UniversityTeacher are responsible for maintaining the list of users and professors and providing access to their contracts. \\
+UniversityStudent and UniversityTeacher are responsible for maintaining the list of users and professors and providing access to their contracts. \\
 UniversityYear contains the list of years and links with related contracts and UniversityExam offers the method to associate exams with professors. \\
 The hierarchy order is not significant, as some contracts can be reversed without causing problems and without compromising the logic. \\
 
@@ -104,14 +104,14 @@ The Exam contract keeps the information about his details, the contract of the a
 
 \newpage
 \section{Extend the contracts}
-
+%TODO chiedere
 \subsection{Provide custom user type}
-New user type can be added simply extending User contract, or directly use it there is no need for extra information. \\
+New user types can be added simply extending the User contract, or it can be directly used if there is no need for extra information. \\
 
 \subsection{Extend the university contract}
 To extend the University contract is sufficient to create a new contract that inherits from the last one of the current hierarchy. \\
-Once the new contract is added, open "migration" folder in the Marvin root, then open the migration for the university and change the artifacts.require parameter, inserting the name of the new contract. \\
-Care must be taken about the size of the overall contract, because it may exceed the gas limit for the Ethereum network, in this case the contract has to be separated into two, deployed together and then linked to each other. \\
+Once the new contract is added, open \texttt{migration} folder in the Marvin root, then open the migration for the university and change the artifacts.require parameter, inserting the name of the new contract. \\
+Care must be taken about the size of the overall contract, because it may exceed the gas limit for the Ethereum network. In this case, the contract has to be separated into two, deployed together and then linked to each other. \\
 The actual gas limit can be checked on \nURI{https://ethstats.net}, at the moment in which this document is being written it is about 8'000'000 gas and the University contract uses just over half of this limit. \\
 
 

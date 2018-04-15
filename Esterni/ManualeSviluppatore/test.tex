@@ -33,10 +33,10 @@ To run the utilities separately run: \\
 or \\
 \sni{yarn run js-coverage} \\
 They will generate the reports on the terminal and also in the \sni{coverage} and \sni{js-coverage} directories. \\
-If you want to have a single report for the two codbases run: \\
+If you want to have a single report for the two codebases run: \\
 \sni{yarn run make-coverage \&\& yarn run merge-coverage} \\
 It will create a file inside the root directory called \sni{report.lcov} that you can use to upload on any code coverage service (we use coveralls\footnote{\nURI{https://coveralls.io}}) that support lcov\footnote{\nURI{http://ltp.sourceforge.net/coverage/lcov.php}} report style. \\
-Unfortunately the package we are using for solidity's coverage not work out of the box with Windows and is not really stable, so is possibile that it won't work on your machine. \\
+Unfortunately the package we are using for solidity's coverage does not work out of the box with Windows and is not really stable, so it is possibile that it won't work on your machine. \\
 To have more information about the package, visit \nURI{https://github.com/sc-forks/solidity-coverage}.
 
 \end{document}

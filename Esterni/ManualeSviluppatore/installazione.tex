@@ -23,15 +23,15 @@ or \\
 npm install --global --production windows-build-tools \\
 \end{ttfamily}
 
-If the last version of node doesn't work correctly, especially under *BSD system, update and upgrade the system itself by following their respective support guides on official websites, because it can require some new library not present in older system.
+If the last version of Node doesn't work correctly, especially under *BSD system, update and upgrade the system itself by following their respective support guides on official websites, because it can require some new library not present in older systems.
 
 \section{Set up}
-Download and unzip Marvin folder, copy it from the CD attached to the documentation if present or download it using Git using the following command: \\
+Download and unzip Marvin folder, copy it from the CD attached to the documentation, if present, or download it through Git using the following command: \\
 \begin{ttfamily}
 	git clone https://github.com/353swe/Marvin-353.git \\
 \end{ttfamily}
 
-Then enter the folder and download all the required node modules using npm or yarn: \\
+Then enter the folder and download all the required node-modules using npm or yarn: \\
 \begin{ttfamily}
 	cd Marvin-353 \\
 	yarn install \\
@@ -41,11 +41,11 @@ or \\
 npm install \\
 \end{ttfamily}
 
-In case of problems check that all the requirements are present, work fine and are included in the PATH environment variable. For more information about the environment variables see the help of your operating system. \\
+In case of problems check that all the requirements are fulfilled, work fine and are included in the PATH environment variable. For more information about the environment variables see the help of your operating system. \\
 
 
 \section{Run}
-For run Marvin, at first run a local Ethereum blockchain with the following command, if on Windows: \\
+To run Marvin, at first run a local Ethereum blockchain with the following command, if on Windows: \\
 \begin{ttfamily} yarn run testrpc-win \end{ttfamily} \\
 or, on Linux or BSD: \\
 \begin{ttfamily} yarn run testrpc \end{ttfamily} \\
@@ -60,10 +60,10 @@ At this point the default browser will open on the page \nURI{http://127.0.0.1:8
 MetaMask has to be set to use the local network, for further info read the user guide.
 
 \section{Deploy on Ropsten Infura}
-First sing up an Infura account using this link: \nURI{https://infura.io/signup}. \\
-Once done write down the personal Api Key given by Infura for the Ropsten Network, it can be read in the given URL, for example http://ropsten.infura.io/XXXX, where the XXXX is the key. \\
+First sign up an Infura account using this link: \nURI{https://infura.io/signup}. \\
+Once it's done, write down the personal Api Key given by Infura for the Ropsten Network. It can be read in the given URL, for example http://ropsten.infura.io/XXXX, where the XXXX is the key. \\
 
-Then open the file "truffle.js" in the root of Marvin and insert the Api Key after infura\_apikey and insert a mnemonic of an Ethereum address with some funds on the Ropsten network.\\
+Then open the file "truffle.js" in the root of Marvin, insert the Api Key after infura\_apikey and insert a mnemonic of an Ethereum address with some funds on the Ropsten network.\\
 Free Eth for the Ropsten network can be acquired from \nURI{https://faucet.metamask.io}.\\
 
 Now all is ready to migrate the university contract on the Ropsten blockchain: \\

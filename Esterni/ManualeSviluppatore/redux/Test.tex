@@ -1,0 +1,12 @@
+\documentclass[../redux]{subfiles}
+\begin{document}
+	\subsection{Tests}
+	To narrowly test the redux layer and provide a good coverage percentage we adopted a three point strategy:
+	\begin{itemize}
+		\item \textbf{Ducks-Sagas Integration}: Using a black-box type integration test we run single sagas and check if the state is updated properly (checking final and interludes state changes). This type of check assure the complete coverage of the business logic between sagas and ducks. You can find them inside the \sni{testnpm/integration/redux} directory;
+		\item \textbf{Ducks unit test}: Every ducks'feature not coupled with the sagas is tested with black-box unit tests, included the action creators. You can find them inside the \sni{testnpm/ducks} directory;
+		\item \textbf{Sagas unit test}: To verify that the single sagas are triggered with the correct action we make unit tests on the sagas handler. You can find them inside the \sni{testnpm/sagas} directory.
+	\end{itemize}
+	This approach almost provide a full coverage of the redux layer, the correct integration with the store (aggregators) will be done in the future with the integration with the React layer.\\
+	To make the test's development easier and faster we use the \sni{redux-saga-test-plan}\footnote{\nURI{http://redux-saga-test-plan.jeremyfairbank.com/}} package that provides good abstraction of the redux implementation.
+\end{document}

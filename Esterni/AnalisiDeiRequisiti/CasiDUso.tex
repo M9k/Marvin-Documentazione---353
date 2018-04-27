@@ -684,7 +684,7 @@ Ogni scenario possibile per un attore è disponibile anche ai suoi derivati.
 \item \textbf{Attori primari:} amministratore;
 \item \textbf{Scopo e descrizione:} viene mostrato un singolo corso, visualizzandone la sigla e l'anno solare dell'anno accademico associato;
 \item \textbf{Scenario principale:} l'amministratore visualizza un corso di laurea presente nel sistema;
-\item \textbf{Precondizione:} il sistema riconosce l'utente come amministratore e riceve una richiesta di visualizzazione di un corso di laurea; 
+\item \textbf{Precondizione:} il sistema riconosce l'utente come amministratore e riceve una richiesta di visualizzazione di un corso di laurea;
 \item \textbf{Postcondizione:} il sistema fornisce all'utente le informazioni riguardanti il corso richiesto.
 \end{itemize}
 \subsection{UC7.2.1.1 - Visualizzazione sigla del corso di laurea}
@@ -716,21 +716,21 @@ Ogni scenario possibile per un attore è disponibile anche ai suoi derivati.
 	\caption{UC7.3 - Visualizzazione lista corsi di laurea per anno accademico}
 	\label{fig:UC7.3 - Visualizzazione lista corsi di laurea per anno accademico}
 \end{figure}
-\subsection{UC7.3.1 - Visualizzazione corso}
+\subsection{UC7.3.1 - Visualizzazione corso di un anno accademico}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
 	\item \textbf{Scopo e descrizione:} viene mostrato un singolo corso, visualizzandone la sigla e l'anno solare dell'anno accademico associato;
 	\item \textbf{Scenario principale:} l'amministratore visualizza un corso di laurea presente nel sistema;
-	\item \textbf{Precondizione:} il sistema riconosce l'utente come amministratore e riceve una richiesta di visualizzazione di un corso di laurea; 
+	\item \textbf{Precondizione:} il sistema riconosce l'utente come amministratore e riceve una richiesta di visualizzazione di un corso di laurea di un determinato anno accademico; 
 	\item \textbf{Postcondizione:} il sistema fornisce all'utente le informazioni riguardanti il corso richiesto.
 \end{itemize}
-\subsection{UC7.3.1.1 - Visualizzazione sigle dei corsi di laurea per anno accademico}
+\subsection{UC7.3.1.1 - Visualizzazione sigla del corsi di laurea di un determinato anno accademico}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
-	\item \textbf{Scopo e descrizione:} l'amministratore visualizza la lista delle sigle relative ai corsi di laurea presenti nel sistema associati a un determinato anno accademico;
-	\item \textbf{Scenario principale:} l'amministratore richiede una lista di corsi di laurea associati a un determinato anno accademico presenti nel sistema;
-	\item \textbf{Precondizione:} il sistema riconosce l'utente come amministratore e riceve una richiesta di visualizzazione dei corsi di laurea relativi a un determinato anno accademico; 
-	\item \textbf{Postcondizione:} il sistema fornisce all'utente la sigla relativa a ogni corso di laurea dell'anno accademico indicatogli.
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza la sigla relativa al corso di laurea di un determinato anno accademico;
+	\item \textbf{Scenario principale:} l'amministratore richiede la sigla di un determinato anno accademico per poterla visionare;
+	\item \textbf{Precondizione:} il sistema riconosce l'utente come amministratore e riceve una richiesta di visualizzazione delle informazioni di un corso di laurea appartenente a un determinato anno accademico; 
+	\item \textbf{Postcondizione:} il sistema fornisce all'utente la sigla relativa al corso di laurea dell'anno accademico indicatogli.
 \end{itemize}
 
 \subsection{UC7.4 - Creazione esame in un corso}
@@ -1032,29 +1032,37 @@ Ogni scenario possibile per un attore è disponibile anche ai suoi derivati.
 	\caption{UC7.9 - Visualizzazione lista professori da associare a un esame}
 	\label{UC7.9 - Visualizzazione lista professori da associare a un esame}
 \end{figure}
-\subsection{UC7.9.1 - Visualizzazione nome per ogni professore}
+\subsection{UC7.9.1 - Visualizzazione professore}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
-	\item \textbf{Scopo e descrizione:} l'amministratore visualizza la lista dei nomi dei professori degli esami presenti nel sistema per poter determinare quale associare all'esame precedentemente indicato;
-	\item \textbf{Scenario principale:} all'amministratore viene fornita la lista dei nomi dei professori presenti nel sistema;
-	\item \textbf{Precondizione:} il sistema riconosce l'utente come amministratore e riceve una richiesta di visualizzazione dei professori per poterne assegnare uno a un dato esame precedentemente indicato; 
-	\item \textbf{Postcondizione:} il sistema fornisce per ogni professore il relativo nome.
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza le informazioni basilari di un professore per poter determinare se associarlo all'esame precedentemente indicato;
+	\item \textbf{Scenario principale:} all'amministratore vengono fornite le informazioni basilari riguardanti il professore indicato;
+	\item \textbf{Precondizione:} il sistema riconosce l'utente come amministratore e riceve una richiesta di visualizzazione delle informazioni basilari relative al professore per poterlo eventualmente assegnare ad un dato esame precedentemente indicato; 
+	\item \textbf{Postcondizione:} il sistema fornisce per il professore le relative informazioni.
 \end{itemize}
-\subsection{UC7.9.2 - Visualizzazione cognome per ogni professore}
+\subsection{UC7.9.1.1 - Visualizzazione nome professore}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
-	\item \textbf{Scopo e descrizione:} l'amministratore visualizza la lista dei cognomi dei professori degli esami presenti nel sistema per poter determinare quale associare all'esame precedentemente indicato;
-	\item \textbf{Scenario principale:} all'amministratore viene fornita la lista dei cognomi dei professori presenti nel sistema;
-	\item \textbf{Precondizione:} il sistema riconosce l'utente come amministratore e riceve una richiesta di visualizzazione dei professori per poterne assegnare uno a un dato esame precedentemente indicato; 
-	\item \textbf{Postcondizione:} il sistema fornisce per ogni professore il relativo cognome.
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza il nome del professore indicatogli per poter determinare se associarlo o meno all'esame precedentemente indicato;
+	\item \textbf{Scenario principale:} all'amministratore viene fornito il nome del professore indicatogli;
+	\item \textbf{Precondizione:} il sistema riconosce l'utente come amministratore e riceve una richiesta di visualizzazione delle informazioni del professore per poter determinare se è quello che desidera assegnare al dato esame; 
+	\item \textbf{Postcondizione:} il sistema fornisce per il nome del professore indicato.
 \end{itemize}
-\subsection{UC7.9.3 - Visualizzazione indirizzo per ogni professore}
+\subsection{UC7.9.1.2 - Visualizzazione cognome professore}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
-	\item \textbf{Scopo e descrizione:} l'amministratore visualizza la lista degli indirizzi dei professori degli esami presenti nel sistema per poter determinare quale associare all'esame precedentemente indicato;
-	\item \textbf{Scenario principale:} all'amministratore viene fornita la lista degli indirizzi dei professori presenti nel sistema;
-	\item \textbf{Precondizione:} il sistema riconosce l'utente come amministratore e riceve una richiesta di visualizzazione dei professori per poterne assegnare uno a un dato esame precedentemente indicato; 
-	\item \textbf{Postcondizione:} il sistema fornisce per ogni professore il relativo indirizzo.
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza il cognome del professore indicatogli per poter determinare se associarlo o meno all'esame precedentemente indicato;
+	\item \textbf{Scenario principale:} all'amministratore viene fornito il cognome del professore indicatogli;
+	\item \textbf{Precondizione:} il sistema riconosce l'utente come amministratore e riceve una richiesta di visualizzazione delle informazioni del professore per poter determinare se è quello che desidera assegnare al dato esame; 
+	\item \textbf{Postcondizione:} il sistema fornisce per il cognome del professore indicato.
+\end{itemize}
+\subsection{UC7.9.1.3 - Visualizzazione indirizzo professore}
+\begin{itemize}
+	\item \textbf{Attori primari:} amministratore;
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza l'indirizzo del professore indicatogli per poter determinare se associarlo o meno all'esame precedentemente indicato;
+	\item \textbf{Scenario principale:} all'amministratore viene fornito l'indirizzo del professore indicatogli;
+	\item \textbf{Precondizione:} il sistema riconosce l'utente come amministratore e riceve una richiesta di visualizzazione delle informazioni del professore per poter determinare se è quello che desidera assegnare al dato esame; 
+	\item \textbf{Postcondizione:} il sistema fornisce per l'indirizzo del professore indicato.
 \end{itemize}
 \subsection{UC7.10 - Associazione professore all'esame}
 \begin{itemize}

@@ -361,7 +361,7 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 	UC7.2.1.2 & Visualizzazione anno solare dell'anno accademico associato al corso di laurea & R0F3.2.3 \\
 	UC7.3 & Visualizzazione lista corsi di laurea per \citGloss{anno accademico} & R0F3.2.1  \\
 	UC7.3.1 & Visualizzazione corso & R0F3.2.1\\
-	UC7.3.1.1 & Visualizzazione sigle dei corsi di laurea per \citGloss{anno accademico} & R0F3.2.2  \\
+	UC7.3.1.1 & Visualizzazione sigla del corsi di laurea di un determinato anno accademico & R0F3.2.2  \\
 	UC7.4 & Creazione esame in un corso & R0F3.3\\
 	UC7.4.1 & Inserimento nome esame & R0F3.3.1\\
 	UC7.4.2 & Inserimento numero crediti esami & R0F3.3.2\\
@@ -393,9 +393,10 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 	UC7.8.1 & Visualizzazione anno accademico & R0F12.3 \\
 	UC7.8.1.1 & Visualizzazione anno solare relativo ad un anno accademico & R0F12.3.1 \\
 	UC7.9 & Visualizzazione lista professori da associare ad un esame & R0F3.4.3 \\
-	UC7.9.1 & Visualizzazione nome per ogni professore & R0F3.4.3 \\
-	UC7.9.2 & Visualizzazione cognome per ogni professore & R0F3.4.3 \\
-	UC7.9.3 & Visualizzazione indirizzo per ogni professore & R0F3.4.4.1 \\
+	UC7.9.1 & Visualizzazione professore & R0F3.4.3 \\
+	UC7.9.1.1 & Visualizzazione nome professore & R0F3.4.3 \\
+	UC7.9.1.2 & Visualizzazione cognome professore & R0F3.4.3 \\
+	UC7.9.1.3 & Visualizzazione indirizzo professore & R0F3.4.4.1 \\
 	UC7.10 & Associazione professore all'esame & R0F3.4.4 \\
 	UC8 & Gestione aspetti relativi agli esami & R0F4 \\
 	UC8.1 & Visualizzazione lista degli esami & R0F4.1 \\
@@ -644,7 +645,8 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 		UC7.7.5 \\
 		UC7.9 \\
 		UC7.9.1 \\
-		UC7.9.2
+		UC7.9.1.1 \\
+		UC7.9.1.2
 	} \\
 	R0F3.4.4  & L'amministratore può associare a un esame il relativo professore & \makecell[tl]{
 		Interno	 \\
@@ -652,7 +654,7 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 	} \\
 	R0F3.4.4.1 & L'amministratore deve poter visualizzare l'indirizzo di un professore prima di assegnarlo a un determinato esame per evitare problemi in caso di omonimi & \makecell[tl]{
 		Interno	 \\ 
-		UC7.9.3 \\
+		UC7.9.1.3 \\
 	} \\
 	R0F3.4.5 & L'amministratore può ottenere la sigla del corso di laurea al quale appartiene un determinato esame ove non indicato dall'amministratore stesso oppure se richiesto & \makecell[tl]{
 		Interno	 \\ 

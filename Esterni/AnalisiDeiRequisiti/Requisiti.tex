@@ -356,10 +356,12 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 		R0F3.1\\
 		R0F3.1.1 } \\
 	UC7.2 & Visualizzazione lista completa dei corsi & R0F3.2 \\
-	UC7.2.1 & Visualizzazione sigle dei \citGloss{corsi di laurea} & R0F3.2.2 \\
-	UC7.2.2 & Visualizzazione anni accademici associati ai \citGloss{corsi di laurea} & R0F3.2.3 \\
+	UC7.2.1 & Visualizzazione corso & R0F3.2 \\
+	UC7.2.1.1 & Visualizzazione sigla del corso di laurea & R0F3.2.2 \\
+	UC7.2.1.2 & Visualizzazione anno solare dell'anno accademico associato al corso di laurea & R0F3.2.3 \\
 	UC7.3 & Visualizzazione lista corsi di laurea per \citGloss{anno accademico} & R0F3.2.1  \\
-	UC7.3.1 & Visualizzazione sigle dei corsi di laurea per \citGloss{anno accademico} & R0F3.2.2  \\
+	UC7.3.1 & Visualizzazione corso & R0F3.2.1\\
+	UC7.3.1.1 & Visualizzazione sigle dei corsi di laurea per \citGloss{anno accademico} & R0F3.2.2  \\
 	UC7.4 & Creazione esame in un corso & R0F3.3\\
 	UC7.4.1 & Inserimento nome esame & R0F3.3.1\\
 	UC7.4.2 & Inserimento numero crediti esami & R0F3.3.2\\
@@ -581,12 +583,12 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 	} \\
 	R0F3.2.2 & Ogni corso di laurea deve essere visualizzato tramite la sua sigla & \makecell[tl]{
 		Interno \\ 
-		UC7.2.1 \\
-		UC7.3.1
+		UC7.2.1.1 \\
+		UC7.3.1.1
 	} \\
 	R0F3.2.3 & Ogni corso di laurea mostrato deve essere accompagnato dall'anno di riferimento ove non indicato dall'utente stesso & \makecell[tl]{
 		Interno \\ 
-		UC7.2.2 \\
+		UC7.2.1.2 \\
 	} \\
 	R0F3.3 & L'amministratore può creare nuovi esami & \makecell[tl]{
 		Capitolato \\ 
@@ -646,7 +648,7 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 	} \\
 	R0F3.4.5 & L'amministratore può ottenere la sigla del corso di laurea al quale appartiene un determinato esame ove non indicato dall'amministratore stesso oppure se richiesto & \makecell[tl]{
 		Interno	 \\ 
-		UC7.3.5
+		UC7.7.5
 	} \\
 	R0F3.4.6 & L'amministratore può ottenere il numero degli studenti iscritti a un determinato corso  & \makecell[tl]{
 		Interno	 \\ 

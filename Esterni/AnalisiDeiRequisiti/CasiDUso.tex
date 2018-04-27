@@ -676,24 +676,32 @@ Ogni scenario possibile per un attore è disponibile anche ai suoi derivati.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\linewidth]{UC7_2.jpg}
-	\caption{UC7.2 - Visualizzazione lista completa dei corsi}
-	\label{fig:UC7.2 - Visualizzazione lista completa dei corsi}
+	\caption{UC7.2.1 - Visualizzazione lista completa dei corsi}
+	\label{fig:UC7.2.1 - Visualizzazione lista completa dei corsi}
 \end{figure}
-\subsection{UC7.2.1 - Visualizzazione sigle dei corsi di laurea}
+\subsection{UC7.2.1 - Visualizzazione corso}
 \begin{itemize}
-	\item \textbf{Attori primari:} amministratore;
-	\item \textbf{Scopo e descrizione:} l'amministratore visualizza la lista delle sigle relative ai corsi di laurea presenti nel sistema;
-	\item \textbf{Scenario principale:} l'amministratore richiede una lista di corsi di laurea presenti nel sistema;
-	\item \textbf{Precondizione:} il sistema riconosce l'utente come amministratore e riceve una richiesta di visualizzazione dei corsi di laurea; 
-	\item \textbf{Postcondizione:} il sistema fornisce all'utente la sigla relativa a ogni corso di laurea.
+\item \textbf{Attori primari:} amministratore;
+\item \textbf{Scopo e descrizione:} viene mostrato un singolo corso, visualizzandone la sigla e l'anno solare dell'anno accademico associato;
+\item \textbf{Scenario principale:} l'amministratore visualizza un corso di laurea presente nel sistema;
+\item \textbf{Precondizione:} il sistema riconosce l'utente come amministratore e riceve una richiesta di visualizzazione di un corso di laurea; 
+\item \textbf{Postcondizione:} il sistema fornisce all'utente le informazioni riguardanti il corso richiesto.
 \end{itemize}
-\subsection{UC7.2.2 - Visualizzazione anni solari degli anni accademici associati ai corsi di laurea}
+\subsection{UC7.2.1.1 - Visualizzazione sigla del corso di laurea}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
-	\item \textbf{Scopo e descrizione:} l'amministratore visualizza la lista degli anni solari, visualizzandoli come numero, degli anni accademici relativi ai corsi di laurea presenti nel sistema;
-	\item \textbf{Scenario principale:} l'amministratore richiede una lista di corsi di laurea presenti nel sistema;
-	\item \textbf{Precondizione:} il sistema riconosce l'utente come amministratore e riceve una richiesta di visualizzazione dei corsi di laurea; 
-	\item \textbf{Postcondizione:} il sistema fornisce all'utente l'anno solare dell'anno accademico relativo a ogni corso di laurea.
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza la sigla relativa al corso di laurea;
+	\item \textbf{Scenario principale:} l'amministratore richiede la sigla del corso di laurea;
+	\item \textbf{Precondizione:} il sistema riconosce l'utente come amministratore e riceve una richiesta di visualizzazione di un corso di laurea; 
+	\item \textbf{Postcondizione:} il sistema fornisce all'utente la sigla relativa al corso di laurea.
+\end{itemize}
+\subsection{UC7.2.1.2 - Visualizzazione anno solare dell'anno accademico associato al corso di laurea}
+\begin{itemize}
+	\item \textbf{Attori primari:} amministratore;
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza l'anno solare relativo al corso di laurea;
+	\item \textbf{Scenario principale:} l'amministratore richiede l'anno solare del corso di laurea;
+	\item \textbf{Precondizione:} il sistema riconosce l'utente come amministratore e riceve una richiesta di visualizzazione di un corso di laurea; 
+	\item \textbf{Postcondizione:} il sistema fornisce all'utente l'anno solare relativa al corso di laurea.
 \end{itemize}
 \subsection{UC7.3 - Visualizzazione lista corsi di laurea per anno accademico}
 \begin{itemize}
@@ -708,7 +716,15 @@ Ogni scenario possibile per un attore è disponibile anche ai suoi derivati.
 	\caption{UC7.3 - Visualizzazione lista corsi di laurea per anno accademico}
 	\label{fig:UC7.3 - Visualizzazione lista corsi di laurea per anno accademico}
 \end{figure}
-\subsection{UC7.3.1 - Visualizzazione sigle dei corsi di laurea per anno accademico}
+\subsection{UC7.3.1 - Visualizzazione corso}
+\begin{itemize}
+	\item \textbf{Attori primari:} amministratore;
+	\item \textbf{Scopo e descrizione:} viene mostrato un singolo corso, visualizzandone la sigla e l'anno solare dell'anno accademico associato;
+	\item \textbf{Scenario principale:} l'amministratore visualizza un corso di laurea presente nel sistema;
+	\item \textbf{Precondizione:} il sistema riconosce l'utente come amministratore e riceve una richiesta di visualizzazione di un corso di laurea; 
+	\item \textbf{Postcondizione:} il sistema fornisce all'utente le informazioni riguardanti il corso richiesto.
+\end{itemize}
+\subsection{UC7.3.1.1 - Visualizzazione sigle dei corsi di laurea per anno accademico}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
 	\item \textbf{Scopo e descrizione:} l'amministratore visualizza la lista delle sigle relative ai corsi di laurea presenti nel sistema associati a un determinato anno accademico;

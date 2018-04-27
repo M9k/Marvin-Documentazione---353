@@ -1167,6 +1167,12 @@ Ogni scenario possibile per un attore è disponibile anche ai suoi derivati.
 	\item \textbf{Precondizione:} il sistema riconosce l'utente come professore e riceve una richiesta di visualizzazione delle informazioni di un esame; 
 	\item \textbf{Postcondizione:} il sistema fornisce al professore le informazioni basilari dell'esame indicatogli.
 \end{itemize}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{UC8_1_1.jpg}
+	\caption{UC8.1.1 - Visualizzazione esame}
+	\label{UC8.1.1 - Visualizzazione esame}
+\end{figure}
 \subsection{UC8.1.1.1 - Visualizzazione sigla esame}
 \begin{itemize}
 	\item \textbf{Attori primari:} professore;
@@ -1212,7 +1218,12 @@ Ogni scenario possibile per un attore è disponibile anche ai suoi derivati.
 	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di professore e riceve la richiesta di visualizzazione delle informazioni di uno studente;
 	\item \textbf{Postcondizione:} il sistema offre al professore le informazioni basilari dello studente indicato.
 \end{itemize}
-%TODO immagine
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{UC8_2_1.jpg}
+\caption{UC8.2.1 - Visualizzazione singolo studente}
+\label{UC8.2.1 - Visualizzazione singolo studente}
+\end{figure}
 \subsection{UC8.2.1.1 - Visualizzazione indirizzo dello studente}
 \begin{itemize}
 	\item \textbf{Attori primari:} professore;
@@ -1326,6 +1337,12 @@ Ogni scenario possibile per un attore è disponibile anche ai suoi derivati.
 	\item \textbf{Precondizione:} il sistema riconosce l'utente come studente e riceve una richiesta di visualizzazione delle informazioni di un esame; 
 	\item \textbf{Postcondizione:} il sistema fornisce allo studente le informazioni basilari dell'esame indicatogli.
 \end{itemize}
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.0\linewidth]{UC9_1_1.jpg}
+\caption{UC9.1.1 - Visualizzazione esame}
+\label{fig:UC9.1.1 - Visualizzazione esame}
+\end{figure}
 \subsection{UC9.1.1.1 - Visualizzazione sigla dell'esame}
 \begin{itemize}
 	\item \textbf{Attori primari:} studente;
@@ -1367,6 +1384,12 @@ Ogni scenario possibile per un attore è disponibile anche ai suoi derivati.
 	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di studente e fornisce la lista delle funzionalità alle quali ha accesso relative alla gestione degli esami secondo le restrizioni permesse dal suo ruolo; 
 	\item \textbf{Postcondizione:} il sistema fornisce allo studente la lista degli esami opzionali ai quali può iscriversi.
 \end{itemize}
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.0\linewidth]{UC9_2.jpg}
+\caption{UC9.2 - Visualizzazione degli esami opzionali e dei loro crediti}
+\label{fig:UC9.2 - Visualizzazione degli esami opzionali e dei loro crediti}
+\end{figure}
 \subsection{UC9.2.1 - Visualizzazione esame sottoscrivibile}
 \begin{itemize}
 	\item \textbf{Attori primari:} studente;
@@ -1374,6 +1397,12 @@ Ogni scenario possibile per un attore è disponibile anche ai suoi derivati.
 	\item \textbf{Precondizione:} il sistema riconosce l'utente come studente e riceve una richiesta di visualizzazione delle informazioni di un esame sottoscrivibile; 
 	\item \textbf{Postcondizione:} il sistema fornisce allo studente le informazioni basilari dell'esame indicatogli.
 \end{itemize}
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.0\linewidth]{UC9_2_1.jpg}
+\caption{UC9.2.1 - Visualizzazione esame sottoscrivibile}
+\label{fig:UC9.2.1 - Visualizzazione esame sottoscrivibile}
+\end{figure}
 \subsection{UC9.2.1.1 - Visualizzazione sigla dell'esame sottoscrivibile}
 \begin{itemize}
 	\item \textbf{Attori primari:} studente;
@@ -1529,7 +1558,13 @@ Ogni scenario possibile per un attore è disponibile anche ai suoi derivati.
 	\item \textbf{Postcondizione:} il sistema fornisce i dettagli dell'amministratore.
 \end{itemize}
 
-%TODO immagine
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{UC10_2_1.jpg}
+	\caption{UC10.2.1 - Visualizzazione singolo amministratore}
+	\label{UC10.2.1 - Visualizzazione singolo amministratore}
+\end{figure}
 
 \subsection{UC10.2.1.1 - Visualizzazione indirizzi degli amministratori}
 \begin{itemize}
@@ -1547,7 +1582,7 @@ Ogni scenario possibile per un attore è disponibile anche ai suoi derivati.
 	\begin{enumerate}
 		\item L'utente che rappresenta l'università  visualizza la lista degli amministratori [UC10.2.1];
 		\item L'utente che rappresenta l'università, una volta ottenuta la lista degli amministratori, individua quale desidera rimuovere [UC10.2.1];
-		\item L'utente che rappresenta l'università richiede al sistema l'eliminazione dell'amministratore [UC10.3].
+		\item L'utente che rappresenta l'università richiede al sistema l'eliminazione dell'amministratore [UC10.3].5
 	\end{enumerate}
 	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di rappresentante dell'università e ha precedentemente fornito la lista degli amministratori presenti [UC10.2.1]; 
 	\item \textbf{Postcondizione:} il sistema rimuove l'amministratore indicato.

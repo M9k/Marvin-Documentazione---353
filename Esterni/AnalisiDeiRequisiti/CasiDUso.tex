@@ -325,43 +325,43 @@ Ogni scenario possibile per un attore è disponibile anche ai suoi derivati.
 	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di amministratore; 
 	\item \textbf{Postcondizione:} il sistema offre all'amministratore la lista degli utenti approvati.
 \end{itemize}
-\subsection{UC5.1.1 - Visualizzazione singolo utente approvato}
-\begin{itemize}
-	\item \textbf{Attori primari:} amministratore;
-	\item \textbf{Scopo e descrizione:} l'amministratore visualizza le informazioni basilari di un utente registrato nel sistema;
-	\item \textbf{Scenario principale:} l'amministratore richiede al sistema le informazioni basilari di un utente per poterle visualizzare ed eventualmente compiere altre operazioni su di esso;	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di amministratore e riceve la richiesta di visualizzazione di un utente aprovato;
-	\item \textbf{Postcondizione:} il sistema offre all'amministratore le informazioni basilari dell'utente indicato.
-\end{itemize}
-%TODO immagine
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.9\linewidth]{UC5_1.jpg}
-	\caption{UC5.1.1 - Visualizzazione lista degli utenti approvati}
-	\label{fig:UC5.1.1 - Visualizzazione lista degli utenti approvati}
+	\caption{UC5.1 - Visualizzazione lista degli utenti approvati}
+	\label{fig:UC5.1 - Visualizzazione lista degli utenti approvati}
 \end{figure}
-\subsection{UC5.1.1.1 - Visualizzazione indirizzi degli utenti approvati}
+\subsection{UC5.1.1 - Visualizzazione singolo utente approvato}
 \begin{itemize}
-	\item \textbf{Attori primari:} amministratore;
-	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti gli \citGloss{indirizzi} della rete \citGloss{Ethereum} degli utenti registrati nel sistema;
-	\item \textbf{Scenario principale:} l'amministratore richiede al sistema una lista di utenti per poterne visualizzare l'\citGloss{indirizzo} ed eventualmente compiere altre operazioni su di essi;
-	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di amministratore e riceve la richiesta di visualizzazione della lista degli utenti approvati;
-	\item \textbf{Postcondizione:} il sistema offre all'amministratore la lista degli utenti approvati con indicati gli \citGloss{indirizzi}.
+\item \textbf{Attori primari:} amministratore;
+\item \textbf{Scopo e descrizione:} l'amministratore visualizza le informazioni basilari di un utente registrato nel sistema;
+\item \textbf{Scenario principale:} l'amministratore richiede al sistema le informazioni basilari di un utente per poterle visualizzare ed eventualmente compiere altre operazioni su di esso;	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di amministratore e riceve la richiesta di visualizzazione di un utente aprovato;
+\item \textbf{Postcondizione:} il sistema offre all'amministratore le informazioni basilari dell'utente indicato.
 \end{itemize}
-\subsection{UC5.1.1.2 - Visualizzazione nomi degli utenti approvati}
+%TODO immagine
+\subsection{UC5.1.1.1 - Visualizzazione indirizzo dell'utente approvato}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
-	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti i nomi degli utenti registrati nel sistema;
-	\item \textbf{Scenario principale:} l'amministratore richiede al sistema una lista di utenti per poterne visualizzare il nome ed eventualmente compiere altre operazioni su di essi;
-	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di amministratore e riceve la richiesta di visualizzazione della lista degli utenti approvati;
-	\item \textbf{Postcondizione:} il sistema offre all'amministratore la lista degli utenti approvati con indicati i nomi.
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza l'\citGloss{indirizzo} della rete \citGloss{Ethereum} riguardante l'utente indicatogli;
+	\item \textbf{Scenario principale:} l'amministratore richiede al sistema le informazioni di un determinato utente per poterne visualizzarne l'\citGloss{indirizzo} ed eventualmente compiere altre operazioni su di esso;
+	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di amministratore e riceve la richiesta di visualizzazione di un utente approvato;
+	\item \textbf{Postcondizione:} il sistema offre all'amministratore l'indirizzo relativo all'utente approvato indicato.
 \end{itemize}
-\subsection{UC5.1.1.3 - Visualizzazione cognomi degli utenti approvati}
+\subsection{UC5.1.1.2 - Visualizzazione nome dell'utente approvato}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
-	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti i cognomi degli utenti registrati nel sistema;
-	\item \textbf{Scenario principale:} l'amministratore richiede al sistema una lista di utenti per poterne visualizzare il cognome ed eventualmente compiere altre operazioni su di essi;
-	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di amministratore e riceve la richiesta di visualizzazione della lista degli utenti approvati;
-	\item \textbf{Postcondizione:} il sistema offre all'amministratore la lista degli utenti approvati con indicati i cognomi.
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza il nome riguardante l'utente indicatogli;
+	\item \textbf{Scenario principale:} l'amministratore richiede al sistema le informazioni di un determinato utente per poterne visualizzarne il nome ed eventualmente compiere altre operazioni su di esso;
+	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di amministratore e riceve la richiesta di visualizzazione di un utente approvato;
+	\item \textbf{Postcondizione:} il sistema offre all'amministratore il nome relativo all'utente approvato indicato.
+\end{itemize}
+\subsection{UC5.1.1.3 - Visualizzazione cognome dell'utente approvato}
+\begin{itemize}
+	\item \textbf{Attori primari:} amministratore;
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza il cognome riguardante l'utente indicatogli;
+	\item \textbf{Scenario principale:} l'amministratore richiede al sistema le informazioni di un determinato utente per poterne visualizzarne il cognome ed eventualmente compiere altre operazioni su di esso;
+	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di amministratore e riceve la richiesta di visualizzazione di un utente approvato;
+	\item \textbf{Postcondizione:} il sistema offre all'amministratore il cognome relativo all'utente approvato indicato.
 \end{itemize}
 \subsection{UC5.2 - Visualizzazione lista degli studenti approvati}
 \begin{itemize}
@@ -387,7 +387,7 @@ Ogni scenario possibile per un attore è disponibile anche ai suoi derivati.
 	\item \textbf{Postcondizione:} il sistema offre all'amministratore le informazioni basilari dell'studente indicato.
 \end{itemize}
 %TODO immagine
-\subsection{UC5.2.1.1 - Visualizzazione nomi dei corsi degli studenti approvati}
+\subsection{UC5.2.1.1 - Visualizzazione nome del corsi di uno studenti approvati}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
 	\item \textbf{Scopo e descrizione:} l'amministratore visualizza una lista di tutti gli studenti registrati nel sistema con indicato il nome del relativo corso universitario;
@@ -1123,6 +1123,7 @@ Ogni scenario possibile per un attore è disponibile anche ai suoi derivati.
 	\item \textbf{Postcondizione:} il sistema fornisce al professore la sigla del corso di laurea che contiene l'esame indicato.
 \end{itemize}
 
+
 \subsection{UC8.2 - Visualizzazione lista degli studenti}
 \begin{itemize}
 	\item \textbf{Attori primari:} professore;
@@ -1142,29 +1143,38 @@ Ogni scenario possibile per un attore è disponibile anche ai suoi derivati.
 	\caption{UC8.2 - Visualizzazione lista degli studenti}
 	\label{UC8.2 - Visualizzazione lista degli studenti}
 \end{figure}
-\subsection{UC8.2.1 - Visualizzazione indirizzi degli studenti dell'esame}
+\subsection{UC8.2.1 - Visualizzazione singolo studente}
 \begin{itemize}
 	\item \textbf{Attori primari:} professore;
-	\item \textbf{Scopo e descrizione:} il professore visualizza una lista di tutti gli \citGloss{indirizzi} della rete \citGloss{Ethereum} degli studenti registrati all'esame;
-	\item \textbf{Scenario principale:} il professore richiede al sistema una lista di studenti per poterne visualizzare l'\citGloss{indirizzo} ed eventualmente compiere altre operazioni su di essi;
-	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo del professore, il quale richiede la visualizzazione degli studenti registrati a un dato esame;
-	\item \textbf{Postcondizione:} il sistema fornisce per ogni studente il relativo \citGloss{indirizzo}.
+	\item \textbf{Scopo e descrizione:} il professore visualizza le informazioni basilari di uno studente;
+	\item \textbf{Scenario principale:} il professore richiede al sistema le informazioni basilari di uno studente per poterle visualizzare ed eventualmente compiere altre operazioni su di esso;
+	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di professore e riceve la richiesta di visualizzazione delle informazioni di uno studente;
+	\item \textbf{Postcondizione:} il sistema offre al professore le informazioni basilari dello studente indicato.
 \end{itemize}
-\subsection{UC8.2.2 - Visualizzazione nomi degli studenti dell'esame}
+%TODO immagine
+\subsection{UC8.2.1.1 - Visualizzazione indirizzo dello studente}
 \begin{itemize}
 	\item \textbf{Attori primari:} professore;
-	\item \textbf{Scopo e descrizione:} il professore visualizza una lista di tutti i nomi degli studenti registrati all'esame;
-	\item \textbf{Scenario principale:} il professore richiede al sistema una lista di studenti per poterne visualizzare il nome ed eventualmente compiere altre operazioni su di essi;
-	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo del professore, il quale richiede la visualizzazione degli studenti registrati a un dato esame;
-	\item \textbf{Postcondizione:} il sistema fornisce per ogni studente il relativo nome.
+	\item \textbf{Scopo e descrizione:} il professore visualizza l'\citGloss{indirizzo} della rete \citGloss{Ethereum} riguardante lo studente desiderato;
+	\item \textbf{Scenario principale:} il professore richiede al sistema le informazioni di un determinato studente per poterne visualizzarne l'\citGloss{indirizzo} ed eventualmente compiere altre operazioni su di esso;
+	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di professore e riceve la richiesta di visualizzazione di un studente;
+	\item \textbf{Postcondizione:} il sistema offre al professore l'indirizzo relativo all'utente approvato indicato.
 \end{itemize}
-\subsection{UC8.2.3 - Visualizzazione cognomi degli studenti dell'esame}
+\subsection{UC8.2.1.2 - Visualizzazione nomi degli studenti dell'esame}
 \begin{itemize}
 	\item \textbf{Attori primari:} professore;
-	\item \textbf{Scopo e descrizione:} il professore visualizza una lista di tutti i cognomi degli studenti registrati all'esame;
-	\item \textbf{Scenario principale:} il professore richiede al sistema una lista di studenti per poterne visualizzare il cognome ed eventualmente compiere altre operazioni su di essi;
-	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo del professore, il quale richiede la visualizzazione degli studenti registrati a un dato esame;
-	\item \textbf{Postcondizione:} il sistema fornisce per ogni studente il relativo cognome.
+	\item \textbf{Scopo e descrizione:} il professore visualizza il nome dello studente desiderato;
+	\item \textbf{Scenario principale:} il professore richiede al sistema le informazioni di un determinato studente per poterne visualizzarne il nome ed eventualmente compiere altre operazioni su di esso;
+	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di professore e riceve la richiesta di visualizzazione di un studente;
+	\item \textbf{Postcondizione:} il sistema offre al professore il nome relativo all'utente approvato indicato.
+\end{itemize}
+\subsection{UC8.2.1.3 - Visualizzazione cognomi degli studenti dell'esame}
+\begin{itemize}
+	\item \textbf{Attori primari:} professore;
+	\item \textbf{Scopo e descrizione:} il professore visualizza il cognome dello studente desiderato;
+	\item \textbf{Scenario principale:} il professore richiede al sistema le informazioni di un determinato studente per poterne visualizzarne il cognome ed eventualmente compiere altre operazioni su di esso;
+	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di professore e riceve la richiesta di visualizzazione di un studente;
+	\item \textbf{Postcondizione:} il sistema offre al professore il cognome relativo all'utente approvato indicato.
 \end{itemize}
 
 \subsection{UC8.3 - Registrazione valutazione di un esame}

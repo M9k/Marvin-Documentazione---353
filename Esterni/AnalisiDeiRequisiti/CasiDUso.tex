@@ -1099,21 +1099,28 @@ Ogni scenario possibile per un attore è disponibile anche ai suoi derivati.
 	\caption{UC8.1 - Visualizzazione lista degli esami}
 	\label{UC8.1 - Visualizzazione lista degli esami}
 \end{figure}
-\subsection{UC8.1.1 - Visualizzazione codici degli esami}
+\subsection{UC8.1.1 - Visualizzazione esame}
 \begin{itemize}
 	\item \textbf{Attori primari:} professore;
-	\item \textbf{Scopo e descrizione:} il professore visualizza per ogni esame il relativo codice;
-	\item \textbf{Scenario principale:} il professore richiede al sistema la lista dei codici degli esami di sua competenza per poterla consultare;
-	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo del professore, il quale richiede la visualizzazione degli esami di sua competenza;
-	\item \textbf{Postcondizione:} il sistema fornisce per ogni esame di competenza del professore il relativo codice.
+	\item \textbf{Scopo e descrizione:} vengono visualizzate le informazioni basilari relative ad un esame richiesto; 
+	\item \textbf{Precondizione:} il sistema riconosce l'utente come professore e riceve una richiesta di visualizzazione delle informazioni di un esame; 
+	\item \textbf{Postcondizione:} il sistema fornisce al professore le informazioni basilari dell'esame indicatogli.
 \end{itemize}
-\subsection{UC8.1.2 - Visualizzazione nomi dei corsi degli esami}
+\subsection{UC8.1.1.1 - Visualizzazione sigla esame}
 \begin{itemize}
 	\item \textbf{Attori primari:} professore;
-	\item \textbf{Scopo e descrizione:} il professore visualizza per ogni esame il relativo nome del corso di laurea associato;
-	\item \textbf{Scenario principale:} il professore richiede al sistema la lista dei nomi dei corsi di laurea degli esami di sua competenza per poterla consultare;
-	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo del professore, il quale richiede la visualizzazione degli esami di sua competenza;
-	\item \textbf{Postcondizione:} il sistema fornisce per ogni esame di competenza del professore il nome del corso di laurea al quale appartiene.
+	\item \textbf{Scopo e descrizione:} il professore visualizza la sigla dell'esame indicato;
+	\item \textbf{Scenario principale:} il sistema mostra la sigla dell'esame indicato;
+	\item \textbf{Precondizione:} il sistema riconosce l'utente come professore e riceve una richiesta di visualizzazione di un esame; 
+	\item \textbf{Postcondizione:} il sistema fornisce al professore la sigla dell'esame richiesto.
+\end{itemize}
+\subsection{UC8.1.1.2 - Visualizzazione sigla del corso di laurea associato}
+\begin{itemize}
+	\item \textbf{Attori primari:} professore;
+	\item \textbf{Scopo e descrizione:} il professore visualizza la sigla del corso di laurea che contiene l'esame indicato;
+	\item \textbf{Scenario principale:} il sistema mostra la sigla del corso di laurea che contiene l'esame indicato;
+	\item \textbf{Precondizione:} il sistema riconosce l'utente come professore e riceve una richiesta di visualizzazione di un esame; 
+	\item \textbf{Postcondizione:} il sistema fornisce al professore la sigla del corso di laurea che contiene l'esame indicato.
 \end{itemize}
 
 \subsection{UC8.2 - Visualizzazione lista degli studenti}

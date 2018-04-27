@@ -317,18 +317,22 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 		R0F12 } \\
 	UC5 & Gestione Utenti & R0F1 \\
 	UC5.1 & Visualizzazione lista degli studenti approvati & R0F1.4, R0F2.1 \\
-	UC5.1.1 & Visualizzazione indirizzi degli studenti approvati & R0F1.4.1, R0F2.1.1 \\
-	UC5.1.2 & Visualizzazione nomi degli studenti approvati & R0F1.4.2, R0F2.1.2 \\
-	UC5.1.3 & Visualizzazione cognomi degli studenti approvati & R0F1.4.3, R0F2.1.3 \\
+	UC5.1.1 & Visualizzazione singolo utente approvato & R0F1.4, R0F2.1 \\
+	UC5.1.1.1 & Visualizzazione indirizzi degli studenti approvati & R0F1.4.1, R0F2.1.1 \\
+	UC5.1.1.2 & Visualizzazione nomi degli studenti approvati & R0F1.4.2, R0F2.1.2 \\
+	UC5.1.1.3 & Visualizzazione cognomi degli studenti approvati & R0F1.4.3, R0F2.1.3 \\
 	UC5.2 & Visualizzazione lista degli studenti approvati & R0F1.4 \\
-	UC5.2.1 & Visualizzazione corsi degli studenti approvati & R0F1.4.4 \\
+	UC5.2.1 & Visualizzazione singolo studente approvato & R0F1.4 \\
+	UC5.2.1.1 & Visualizzazione corsi degli studenti approvati & R0F1.4.4 \\
 	UC5.3 & Visualizzazione lista dei professori approvati & R0F2.1 \\
+	UC5.3.1 & Visualizzazione singolo professore approvato & R0F2.1 \\
 	UC5.4 & Visualizzazione lista utenti in attesa di abilitazione & R0F1.1 \\
-	UC5.4.1 & Visualizzazione indirizzi degli utenti in attesa di abilitazione & R0F1.1.1 \\
-	UC5.4.2 & Visualizzazione nomi degli utenti in attesa di abilitazione & R0F1.1.2 \\
-	UC5.4.3 & Visualizzazione cognomi degli utenti in attesa di abilitazione & R0F1.1.3 \\
-	UC5.4.4 & Visualizzazione ruolo degli utenti in attesa di abilitazione &R0F1.1.4  \\
-	UC5.4.5 & Visualizzazione corsi degli utenti in attesa di abilitazione & R0F1.1.5 \\
+	UC5.4.1 & Visualizzazione singolo utente in attesa di abilizatione & R0F1.1 \\
+	UC5.4.1.1 & Visualizzazione indirizzi degli utenti in attesa di abilitazione & R0F1.1.1 \\
+	UC5.4.1.2 & Visualizzazione nomi degli utenti in attesa di abilitazione & R0F1.1.2 \\
+	UC5.4.1.3 & Visualizzazione cognomi degli utenti in attesa di abilitazione & R0F1.1.3 \\
+	UC5.4.1.4 & Visualizzazione ruolo degli utenti in attesa di abilitazione &R0F1.1.4  \\
+	UC5.4.1.5 & Visualizzazione corsi degli utenti in attesa di abilitazione & R0F1.1.5 \\
 	UC5.5 & Abilitazione utente & R0F1.2 \\
 	UC5.6 & Rimozione utente & R0F1.3 \\
 	UC6 & Gestione anni accademici & R0F12 \\
@@ -338,7 +342,8 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 	UC6.1.3 & Visualizzazione messaggio anno non compilato & R0F12.1.1 \\
 	UC6.1.4 & Visualizzazione messaggio anno malformato & R0F12.1.1 \\
 	UC6.2 & Visualizzazione lista di tutti gli anni accademici & R0F12.3 \\
-	UC6.2.1 & Visualizzazione anni solari relativi agli anni accademici & R0F12.3.1 \\
+	UC6.2.1 & Visualizzazione singolo anno accademico & R0F12.3.1 \\
+	UC6.2.1.1 & Visualizzazione anni solari relativo ad un anno accademico & R0F12.3.1 \\
 	UC6.3 & Eliminazione anno accademico vuoto & R0F12.2 \\
 	UC7 & Gestione corsi di laurea & R0F3 \\
 	UC7.1 & Creazione \citGloss{corso di laurea} & \makecell[tl]{
@@ -418,7 +423,8 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 	UC10.1.2 & Visualizzazione messaggio di errore riguardo a chiave mal formata & R0F11.1 \\
 	UC10.1.3 & Visualizzazione messaggio di errore riguardo a chiave già registrata & R0F11.1 \\
 	UC10.2 & Visualizzazione lista degli amministratori & R0F11.3 \\
-	UC10.2.1 & Visualizzazione indirizzi degli amministratori & R0F11.3.1 \\
+	UC10.2.1 & Visualizzazione singolo amministratore & R0F11.3 \\
+	UC10.2.1.1 & Visualizzazione indirizzi degli amministratori & R0F11.3.1 \\
 	UC10.3 & Rimozione amministratore & R0F11.2 \\	
 	UC11 & Visualizzazione quantità di \citGloss{Gas}, \citGloss{Ether} e costo delle operazioni & R0F10 \\
 	\hiderowcolors
@@ -441,29 +447,29 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 		Interno \\
 		UC5
 	} \\
-	R0F1.1 & L'amministratore può ottenere una lista di tutti gli utenti non abilitati & \makecell[tl]{
+	R0F1.1 & L'amministratore può ottenere una lista degli utenti non abilitati & \makecell[tl]{
 		Interno \\
 		UC5.4
 	} \\
-	R0F1.1.1 & L'amministratore può ottenere l'indirizzo di tutti gli utenti non abilitati & \makecell[tl]{
+	R0F1.1.1 & L'amministratore può ottenere l'indirizzo degli utenti non abilitati & \makecell[tl]{
 		Interno \\
-		UC5.4.1
+		UC5.4.1.1
 	} \\
-	R0F1.1.2 & L'amministratore può ottenere il nome di tutti gli utenti non abilitati & \makecell[tl]{
+	R0F1.1.2 & L'amministratore può ottenere il nome degli utenti non abilitati & \makecell[tl]{
 		Interno \\
-		UC5.4.2
+		UC5.4.1.2
 	} \\
-	R0F1.1.3 & L'amministratore può ottenere il cognome di tutti gli utenti non abilitati & \makecell[tl]{
+	R0F1.1.3 & L'amministratore può ottenere il cognome degli utenti non abilitati & \makecell[tl]{
 		Interno \\
-		UC5.4.3
+		UC5.4.1.3
 	} \\
-	R0F1.1.4 & L'amministratore può ottenere il ruolo desiderato di tutti gli utenti non abilitati & \makecell[tl]{
+	R0F1.1.4 & L'amministratore può ottenere il ruolo desiderato degli utenti non abilitati & \makecell[tl]{
 		Interno \\
-		UC5.4.4
+		UC5.4.1.4
 	} \\
-	R0F1.1.5 & L'amministratore può ottenere il corso desiderato, ove possibile, di tutti gli utenti non abilitati & \makecell[tl]{
+	R0F1.1.5 & L'amministratore può ottenere il corso desiderato, ove possibile, degli utenti non abilitati & \makecell[tl]{
 		Interno \\
-		UC5.4-5
+		UC5.4.1.5
 	} \\
 
 	R0F1.2 & L'amministratore può abilitare un utente & \makecell[tl]{
@@ -476,26 +482,26 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 		UC5.6
 	} \\
 
-	R0F1.4 & L'amministratore può ottenere una lista di tutti gli studenti & \makecell[tl]{
+	R0F1.4 & L'amministratore può ottenere una lista degli studenti & \makecell[tl]{
 		Interno \\
-		UC5.1 \\
+		UC5.1.1 \\
 		UC5.2
 	} \\
-	R0F1.4.1 & L'amministratore può ottenere l'indirizzo di tutti gli studenti & \makecell[tl]{
+	R0F1.4.1 & L'amministratore può ottenere l'indirizzo degli studenti & \makecell[tl]{
 		Interno \\
-		UC5.1.1
+		UC5.1.1.1
 	} \\
-	R0F1.4.2 & L'amministratore può ottenere il nome di tutti gli studenti & \makecell[tl]{
+	R0F1.4.2 & L'amministratore può ottenere il nome degli studenti & \makecell[tl]{
 		Interno \\
-		UC5.1.2
+		UC5.1.1.2
 	} \\
-	R0F1.4.3 & L'amministratore può ottenere il cognome di tutti gli studenti & \makecell[tl]{
+	R0F1.4.3 & L'amministratore può ottenere il cognome degli studenti & \makecell[tl]{
 		Interno \\
-		UC5.1.3
+		UC5.1.1.3
 	} \\
-	R0F1.4.4  & L'amministratore può ottenere il corso di tutti gli studenti & \makecell[tl]{
+	R0F1.4.4  & L'amministratore può ottenere il corso degli studenti & \makecell[tl]{
 		Interno \\
-		UC5.2.1
+		UC5.2.1.1
 	} \\
 
 	R0F2 & L'amministratore può gestire i professori & \makecell[tl]{
@@ -506,17 +512,17 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 		UC5.1 \\
 		UC5.3 
 	} \\
-	R0F2.1.1 & L'amministratore può ottenere l'indirizzo di tutti i professori & \makecell[tl]{
+	R0F2.1.1 & L'amministratore può ottenere l'indirizzo dei professori & \makecell[tl]{
 		Interno \\ 
-		UC5.1.1
+		UC5.1.1.1
 	} \\
-	R0F2.1.2 & L'amministratore può ottenere il nome di tutti i professori & \makecell[tl]{
+	R0F2.1.2 & L'amministratore può ottenere il nome dei professori & \makecell[tl]{
 		Interno \\ 
-		UC5.1.2
+		UC5.1.1.2
 	} \\
-	R0F2.1.3 & L'amministratore può ottenere il cognome di tutti i professori & \makecell[tl]{
+	R0F2.1.3 & L'amministratore può ottenere il cognome dei professori & \makecell[tl]{
 		Interno \\ 
-		UC5.1.3
+		UC5.1.1.3
 	} \\
 	R0F2.2 & L'amministratore può assegnare un esame a un determinato professore & \makecell[tl]{
 		Capitolato
@@ -787,11 +793,11 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 	} \\
 	R0F11.3 & L'università deve poter ottenere la lista di tutti gli amministratori & \makecell[tl]{
 		Interno \\
-		UC10.2
+		UC10.2.1
 	} \\
 	R0F11.3.1& L'università deve poter visualizzare l'indirizzo di ogni amministratore & \makecell[tl]{
 		Interno \\
-		UC10.2.1
+		UC10.2.1.1
 	} \\
 	R0Q1 & La progettazione e il codice devono seguire le norme e le metriche riportate nei documenti allegati X e Y & \makecell[tl]{
 		Interno

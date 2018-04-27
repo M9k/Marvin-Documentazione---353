@@ -1257,31 +1257,45 @@ Ogni scenario possibile per un attore è disponibile anche ai suoi derivati.
 	\label{fig:UC9.1 - Visualizzazione delle informazione degli esami ai quali 'e iscritto}
 \end{figure}
 
-\subsection{UC9.1.1 - Visualizzazione dei crediti degli esami ai quali è iscritto}
-\begin{itemize}
-	\item \textbf{Attori primari:} studente;
-	\item \textbf{Scopo e descrizione:} lo studente visualizza il numero di crediti per ogni esame al quale è iscritto;
-	\item \textbf{Scenario principale:} lo studente richiede al sistema il numero di crediti degli esami ai quali è iscritto per consultarli;
-	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di studente, il quale richiede la lista degli esami ai quali risulta iscritto; 
-	\item \textbf{Postcondizione:} il sistema fornisce, per ogni esame al quale lo studente risulta iscritto, il relativo numero di crediti.
-\end{itemize}
 
-\subsection{UC9.1.2 - Visualizzazione della obbligatorietà degli esami ai quali è iscritto}
+\subsection{UC9.1.1 - Visualizzazione esame}
 \begin{itemize}
 	\item \textbf{Attori primari:} studente;
-	\item \textbf{Scopo e descrizione:} lo studente visualizza l'obbligatorietà di per ogni esame al quale è iscritto;
-	\item \textbf{Scenario principale:} lo studente richiede al sistema l'obbligatorietà degli esami ai quali è iscritto;
-	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di studente, il quale richiede la lista degli esami ai quali risulta iscritto; 
-	\item \textbf{Postcondizione:} il sistema fornisce, per ogni esame al quale lo studente risulta iscritto, la relativa obbligatorietà.
+	\item \textbf{Scopo e descrizione:} vengono visualizzate le informazioni basilari relative ad un esame richiesto; 
+	\item \textbf{Precondizione:} il sistema riconosce l'utente come studente e riceve una richiesta di visualizzazione delle informazioni di un esame; 
+	\item \textbf{Postcondizione:} il sistema fornisce allo studente le informazioni basilari dell'esame indicatogli.
 \end{itemize}
-
-\subsection{UC9.1.3 - Visualizzazione delle valutazioni degli esami ai quali è iscritto}
+\subsection{UC9.1.1.1 - Visualizzazione sigla dell'esame}
 \begin{itemize}
 	\item \textbf{Attori primari:} studente;
-	\item \textbf{Scopo e descrizione:} lo studente visualizza la valutazione, in formato numerico con l'indicazione di averlo superato se il voto è superiore a 18, per ogni esame al quale è iscritto;
-	\item \textbf{Scenario principale:} lo studente richiede al sistema le informazioni riguardanti le valutazioni degli esami ai quali è iscritto per consultarle;
-	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di studente, il quale richiede la lista degli esami ai quali risulta iscritto; 
-	\item \textbf{Postcondizione:} il sistema fornisce, per ogni esame al quale lo studente risulta iscritto, la relativa valutazione, ove presente.
+	\item \textbf{Scopo e descrizione:} lo studente visualizza la sigla dell'esame indicato;
+	\item \textbf{Scenario principale:} il sistema mostra la sigla dell'esame indicato;
+	\item \textbf{Precondizione:} il sistema riconosce l'utente come studente e riceve una richiesta di visualizzazione di un esame; 
+	\item \textbf{Postcondizione:} il sistema fornisce allo studente la sigla dell'esame richiesto.
+\end{itemize}
+\subsection{UC9.1.1.2 - Visualizzazione numero di crediti dell'esame}
+\begin{itemize}
+	\item \textbf{Attori primari:} studente;
+	\item \textbf{Scopo e descrizione:} lo studente visualizza il numero di crediti dell'esame indicato;
+	\item \textbf{Scenario principale:} il sistema mostra il numero di crediti dell'esame indicato;
+	\item \textbf{Precondizione:} il sistema riconosce l'utente come studente e riceve una richiesta di visualizzazione di un esame; 
+	\item \textbf{Postcondizione:} il sistema fornisce allo studente il numero di crediti dell'esame richiesto.
+\end{itemize}
+\subsection{UC9.1.1.3 - Visualizzazione obbligatorietà dell'esame}
+\begin{itemize}
+	\item \textbf{Attori primari:} studente;
+	\item \textbf{Scopo e descrizione:} lo studente visualizza l'obbligatorietà dell'esame indicato;
+	\item \textbf{Scenario principale:} il sistema mostra l'obbligatorietà dell'esame indicato;
+	\item \textbf{Precondizione:} il sistema riconosce l'utente come studente e riceve una richiesta di visualizzazione di un esame; 
+	\item \textbf{Postcondizione:} il sistema fornisce allo studente l'obbligatorietà dell'esame richiesto.
+\end{itemize}
+\subsection{UC9.1.1.4 - Visualizzazione della valutazione dell'esame}
+\begin{itemize}
+	\item \textbf{Attori primari:} studente;
+	\item \textbf{Scopo e descrizione:} lo studente visualizza la valutazione dell'esame indicato;
+	\item \textbf{Scenario principale:} il sistema mostra la valutazione dell'esame indicato;
+	\item \textbf{Precondizione:} il sistema riconosce l'utente come studente e riceve una richiesta di visualizzazione di un esame; 
+	\item \textbf{Postcondizione:} il sistema fornisce allo studente la valutazione dell'esame richiesto.
 \end{itemize}
 
 \subsection{UC9.2 - Visualizzazione degli esami opzionali e dei loro crediti}
@@ -1290,7 +1304,30 @@ Ogni scenario possibile per un attore è disponibile anche ai suoi derivati.
 	\item \textbf{Scopo e descrizione:} lo studente visualizza una lista di tutti gli esami opzionali del suo corso, con indicati nomi e crediti, ai quali ha possibilità di iscriversi;
 	\item \textbf{Scenario principale:} lo studente richiede al sistema la lista di tutti gli esami opzionali ai quali ha possibilità di iscriversi per poterla consultare;
 	\item \textbf{Precondizione:} il sistema riconosce l'utente nel ruolo di studente e fornisce la lista delle funzionalità alle quali ha accesso relative alla gestione degli esami secondo le restrizioni permesse dal suo ruolo; 
-\item \textbf{Postcondizione:} il sistema fornisce allo studente la lista degli esami opzionali ai quali può iscriversi.
+	\item \textbf{Postcondizione:} il sistema fornisce allo studente la lista degli esami opzionali ai quali può iscriversi.
+\end{itemize}
+\subsection{UC9.2.1 - Visualizzazione esame sottoscrivibile}
+\begin{itemize}
+	\item \textbf{Attori primari:} studente;
+	\item \textbf{Scopo e descrizione:} vengono visualizzate le informazioni basilari relative ad un esame sottoscrivibile richiesto, in modo da permettere eventualmente una sottoscrizione ad esso; 
+	\item \textbf{Precondizione:} il sistema riconosce l'utente come studente e riceve una richiesta di visualizzazione delle informazioni di un esame sottoscrivibile; 
+	\item \textbf{Postcondizione:} il sistema fornisce allo studente le informazioni basilari dell'esame indicatogli.
+\end{itemize}
+\subsection{UC9.2.1.1 - Visualizzazione sigla dell'esame sottoscrivibile}
+\begin{itemize}
+	\item \textbf{Attori primari:} studente;
+	\item \textbf{Scopo e descrizione:} lo studente visualizza la sigla dell'esame indicato;
+	\item \textbf{Scenario principale:} il sistema mostra la sigla dell'esame indicato;
+	\item \textbf{Precondizione:} il sistema riconosce l'utente come studente e riceve una richiesta di visualizzazione di un esame sottoscrivibile;
+	\item \textbf{Postcondizione:} il sistema fornisce allo studente la sigla dell'esame richiesto.
+\end{itemize}
+\subsection{UC9.2.1.2 - Visualizzazione numero di crediti dell'esame sottoscrivibile}
+\begin{itemize}
+	\item \textbf{Attori primari:} studente;
+	\item \textbf{Scopo e descrizione:} lo studente visualizza il numero di crediti dell'esame indicato;
+	\item \textbf{Scenario principale:} il sistema mostra il numero di crediti dell'esame indicato;
+	\item \textbf{Precondizione:} il sistema riconosce l'utente come studente e riceve una richiesta di visualizzazione di un esame sottoscrivibile;
+	\item \textbf{Postcondizione:} il sistema fornisce allo studente il numero di crediti dell'esame richiesto.
 \end{itemize}
 
 \subsection{UC9.3 - Iscrizione a un esame opzionale}

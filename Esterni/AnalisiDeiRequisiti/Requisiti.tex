@@ -369,16 +369,18 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 	UC7.4.4 & Visualizzazione errore nome esame non valido & R0F3.3.1\\
 	UC7.4.5 & Visualizzazione errore numero crediti esame non valido & R0F3.3.2\\
 	UC7.5 & Visualizzazione lista esami per \citGloss{corso di laurea} & R0F3.4 \\
-	UC7.5.1 & Visualizzazione sigla esami per \citGloss{corso di laurea} & R0F3.4.1 \\
-	UC7.5.2 & Visualizzazione crediti esami per \citGloss{corso di laurea} & R0F3.4.2 \\
-	UC7.5.3 & Visualizzazione nomi dei professori associati agli esami per \citGloss{corso di laurea} se presenti & R0F3.4.3 \\
-	UC7.5.4 & Visualizzazione cognomi dei professori associati agli esami per \citGloss{corso di laurea} se presenti & R0F3.4.3 \\
+	UC7.5.1 & Visualizzazione esame appartenente a un determinato corso & R0F3.4 \\
+	UC7.5.1.1 & Visualizzazione sigla esame & R0F3.4.1 \\
+	UC7.5.1.2 & Visualizzazione crediti esame & R0F3.4.2 \\
+	UC7.5.1.3 & Visualizzazione nome del professori associato se presente & R0F3.4.3 \\
+	UC7.5.1.4 & Visualizzazione cognome del professore associato se presente & R0F3.4.3 \\
 	UC7.6 & Visualizzazione lista esami & R0F3.4 \\
-	UC7.6.1 & Visualizzazione sigla esami & R0F3.4.1 \\
-	UC7.6.2 & Visualizzazione crediti esami & R0F3.4.2 \\
-	UC7.6.3 & Visualizzazione sigle \citGloss{corsi di laurea} associati a esami se presenti & R0F3.4.5 \\
-	UC7.6.4 & Visualizzazione nomi dei professori associati agli esami se presenti & R0F3.4.3 \\
-	UC7.6.5 & Visualizzazione cognomi dei professori associati agli esami se presenti & R0F3.4.3 \\
+	UC7.6.1 & Visualizzazione esame & R0F3.4 \\
+	UC7.6.1.1 & Visualizzazione sigla esame & R0F3.4.1 \\
+	UC7.6.1.2 & Visualizzazione crediti esame & R0F3.4.2 \\
+	UC7.6.1.3 & Visualizzazione sigla del corso di laurea associato & R0F3.4.5 \\
+	UC7.6.1.4 & Visualizzazione nome del professori associato se presente & R0F3.4.3 \\
+	UC7.6.1.5 & Visualizzazione cognome del professore associato se presente & R0F3.4.3 \\
 	UC7.7 & Visualizzazione dettagli esame & R0F3.4 \\
 	UC7.7.1 & Visualizzazione sigla esame & R0F3.4.1 \\
 	UC7.7.2 & Visualizzazione crediti esame & R0F3.4.2 \\
@@ -616,23 +618,23 @@ Qualsiasi operazione effettuata in una rete \citGloss{Ethereum} reale ha un temp
 	} \\
 	R0F3.4.1 & Per ogni esame l'amministratore deve visualizzarne la sigla & \makecell[tl]{
 		Interno \\
-		UC7.5.1 \\
-		UC7.6.1 \\
+		UC7.5.1.1 \\
+		UC7.6.1.1 \\
 		UC7.7.1
 	} \\
 	R0F3.4.2 & Per ogni esame l'amministratore deve visualizzarne il numero di crediti & \makecell[tl]{
 		Interno \\
-		UC7.5.2 \\
-		UC7.6.2 \\
+		UC7.5.1.2 \\
+		UC7.6.1.2 \\
 		UC7.7.2
 	} \\
 	R0F3.4.3 & L'amministratore può ottenere il nome e il cognome di quale professore è assegnato o sta per essere assegnato a un determinato esame & \makecell[tl]{
 		Interno \\ 
-		UC7.5.3 \\
-		UC7.5.4 \\
+		UC7.5.1.3 \\
+		UC7.5.1.4 \\
 		UC7.7.4 \\
-		UC7.6.5 \\
-		UC7.6.4 \\
+		UC7.6.1.5 \\
+		UC7.6.1.4 \\
 		UC7.7.5 \\
 		UC7.9 \\
 		UC7.9.1 \\

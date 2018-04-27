@@ -814,37 +814,44 @@ Ogni scenario possibile per un attore è disponibile anche ai suoi derivati.
 	\caption{UC7.5 - Visualizzazione lista esami per corso}
 	\label{fig:UC7.5 - Visualizzazione lista esami per corso}
 \end{figure}
-\subsection{UC7.5.1 - Visualizzazione sigle esami per corso di laurea}
+\subsection{UC7.5.1 - Visualizzazione esame appartenente a un determinato corso}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
-	\item \textbf{Scopo e descrizione:} l'amministratore visualizza la lista dei nomi degli esami presenti nel sistema per effettuare, eventualmente, delle operazioni su di esso;
-	\item \textbf{Scenario principale:} il sistema mostra la lista di nomi degli esami associati a un determinato corso di laurea presenti nel sistema;
-	\item \textbf{Precondizione:} il sistema riconosce l'utente come amministratore e riceve una richiesta di visualizzazione degli esami appartenenti a un determinato corso di laurea; 
-	\item \textbf{Postcondizione:} il sistema fornisce all'amministratore la sigla di ogni esame presente nel corso di laurea indicatogli.
+	\item \textbf{Scopo e descrizione:} vengono visualizzate le informazioni basilari relative ad un esame richiesto; 
+	\item \textbf{Precondizione:} il sistema riconosce l'utente come amministratore e riceve una richiesta di visualizzazione delle informazioni di un esame; 
+	\item \textbf{Postcondizione:} il sistema fornisce all'amministratore le informazioni basilari dell'esame indicatogli.
 \end{itemize}
-\subsection{UC7.5.2 - Visualizzazione crediti esami per corso di laurea}
+\subsection{UC7.5.1.1 - Visualizzazione sigla esame}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
-	\item \textbf{Scopo e descrizione:} l'amministratore visualizza la lista dei crediti degli esami presenti nel sistema per effettuare, eventualmente, delle operazioni su di essa;
-	\item \textbf{Scenario principale:} il sistema mostra la lista di crediti degli esami associati  un determinato corso di laurea presenti nel sistema;
-	\item \textbf{Precondizione:} il sistema riconosce l'utente come amministratore e riceve una richiesta di visualizzazione degli esami appartenenti a un determinato corso di laurea; 
-	\item \textbf{Postcondizione:} il sistema fornisce all'amministratore il numero di crediti relativi a ogni esame presente nel corso di laurea indicatogli.
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza la sigla dell'esame indicato;
+	\item \textbf{Scenario principale:} il sistema mostra la sigla dell'esame indicato;
+	\item \textbf{Precondizione:} il sistema riconosce l'utente come amministratore e riceve una richiesta di visualizzazione di un esame; 
+	\item \textbf{Postcondizione:} il sistema fornisce all'amministratore la sigla dell'esame richiesto.
 \end{itemize}
-\subsection{UC7.5.3 - Visualizzazione nomi dei professori associati agli esami per corso di laurea se presenti}
+\subsection{UC7.5.1.2 - Visualizzazione crediti esame}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
-	\item \textbf{Scopo e descrizione:} l'amministratore visualizza la lista dei nomi dei professori degli esami presenti nel sistema per effettuare, eventualmente, delle operazioni su di esso;
-	\item \textbf{Scenario principale:} il sistema mostra la lista di nomi dei professori degli esami associati a un determinato corso di laurea presenti nel sistema;
-	\item \textbf{Precondizione:} il sistema riconosce l'utente come amministratore e riceve una richiesta di visualizzazione degli esami appartenenti a un determinato corso di laurea; 
-	\item \textbf{Postcondizione:} il sistema fornisce per ogni esame presente nel corso di laurea indicatogli il nome del professore assegnato.
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza il numero di crediti dell'esame indicato;
+	\item \textbf{Scenario principale:} il sistema mostra il numero di crediti dell'esame indicato;
+	\item \textbf{Precondizione:} il sistema riconosce l'utente come amministratore e riceve una richiesta di visualizzazione di un esame; 
+	\item \textbf{Postcondizione:} il sistema fornisce all'amministratore il numero di crediti dell'esame richiesto.
 \end{itemize}
-\subsection{UC7.5.4 - Visualizzazione cognomi dei professori associati agli esami per corso di laurea se presenti}
+\subsection{UC7.5.1.3 - Visualizzazione nome del professori associato se presente}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
-	\item \textbf{Scopo e descrizione:} l'amministratore visualizza la lista dei cognomi dei professori degli esami presenti nel sistema per effettuare, eventualmente, delle operazioni su di esso;
-	\item \textbf{Scenario principale:} il sistema mostra la lista di cognomi dei professori degli esami associati a un determinato corso di laurea presenti nel sistema;
-	\item \textbf{Precondizione:} il sistema riconosce l'utente come amministratore e riceve una richiesta di visualizzazione degli esami appartenenti a un determinato corso di laurea; 
-	\item \textbf{Postcondizione:} il sistema fornisce per ogni esame presente nel corso di laurea indicatogli il cognome del professore assegnato.
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza il nome del professore assegnato all'esame indicato;
+	\item \textbf{Scenario principale:} il sistema mostra il nome del professore assegnato all'esame indicato;
+	\item \textbf{Precondizione:} il sistema riconosce l'utente come amministratore e riceve una richiesta di visualizzazione di un esame; 
+	\item \textbf{Postcondizione:} il sistema fornisce all'amministratore il nome del professore, ove presente, associato all'esame richiesto.
+\end{itemize}
+\subsection{UC7.5.1.4 - Visualizzazione cognome del professore associato se presente}
+\begin{itemize}
+	\item \textbf{Attori primari:} amministratore;
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza il cognome del professore assegnato all'esame indicato;
+	\item \textbf{Scenario principale:} il sistema mostra il cognome del professore assegnato all'esame indicato;
+	\item \textbf{Precondizione:} il sistema riconosce l'utente come amministratore e riceve una richiesta di visualizzazione di un esame; 
+	\item \textbf{Postcondizione:} il sistema fornisce all'amministratore il cognome del professore, ove presente, associato all'esame richiesto.
 \end{itemize}
 \subsection{UC7.6 - Visualizzazione lista esami}
 \begin{itemize}
@@ -860,45 +867,52 @@ Ogni scenario possibile per un attore è disponibile anche ai suoi derivati.
 	\caption{UC7.6 - Visualizzazione lista esami}
 	\label{fig:UC7.6 - Visualizzazione lista esami}
 \end{figure}
-\subsection{UC7.6.1 - Visualizzazione sigla esami}
+\subsection{UC7.6.1 - Visualizzazione esame}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
-	\item \textbf{Scopo e descrizione:} l'amministratore visualizza la lista dei nomi degli esami presenti nel sistema per effettuare, eventualmente, delle operazioni su di essa;
-	\item \textbf{Scenario principale:} il sistema mostra la lista di nomi degli esami presenti nel sistema;
-	\item \textbf{Precondizione:} il sistema riconosce l'utente come amministratore e riceve una richiesta di visualizzazione di tutti gli esami; 
-	\item \textbf{Postcondizione:} il sistema fornisce all'amministratore la sigla di ogni esame presente nel sistema.
+	\item \textbf{Scopo e descrizione:} vengono visualizzate le informazioni basilari relative ad un esame richiesto; 
+	\item \textbf{Precondizione:} il sistema riconosce l'utente come amministratore e riceve una richiesta di visualizzazione delle informazioni di un esame; 
+	\item \textbf{Postcondizione:} il sistema fornisce all'amministratore le informazioni basilari dell'esame indicatogli.
 \end{itemize}
-\subsection{UC7.6.2 - Visualizzazione crediti esami}
+\subsection{UC7.6.1.1 - Visualizzazione sigla esame}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
-	\item \textbf{Scopo e descrizione:} l'amministratore visualizza la lista dei crediti degli esami presenti nel sistema per effettuare, eventualmente, delle operazioni su di esso;
-	\item \textbf{Scenario principale:} il sistema mostra la lista di crediti degli esami presenti nel sistema;
-	\item \textbf{Precondizione:} il sistema riconosce l'utente come amministratore e riceve una richiesta di visualizzazione di tutti gli esami; 
-	\item \textbf{Postcondizione:} il sistema fornisce all'amministratore il numero di crediti relativi a ogni esame presente.
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza la sigla dell'esame indicato;
+	\item \textbf{Scenario principale:} il sistema mostra la sigla dell'esame indicato;
+	\item \textbf{Precondizione:} il sistema riconosce l'utente come amministratore e riceve una richiesta di visualizzazione di un esame; 
+	\item \textbf{Postcondizione:} il sistema fornisce all'amministratore la sigla dell'esame richiesto.
 \end{itemize}
-\subsection{UC7.6.3 - Visualizzazione sigla corsi di laurea associati a esami se presenti}
+\subsection{UC7.6.1.2 - Visualizzazione crediti esame}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
-	\item \textbf{Scopo e descrizione:} l'amministratore visualizza la lista delle sigle dei corsi di laurea associati agli esami presenti nel sistema per effettuare, eventualmente, delle operazioni su di esso;
-	\item \textbf{Scenario principale:} il sistema mostra la lista delle sigle dei corsi di laurea associati agli esami presenti nel sistema;
-	\item \textbf{Precondizione:} il sistema riconosce l'utente come amministratore e riceve una richiesta di visualizzazione di tutti gli esami;  
-	\item \textbf{Postcondizione:} il sistema fornisce per ogni esame presente la sigla del corso di laurea che lo contiene.
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza il numero di crediti dell'esame indicato;
+	\item \textbf{Scenario principale:} il sistema mostra il numero di crediti dell'esame indicato;
+	\item \textbf{Precondizione:} il sistema riconosce l'utente come amministratore e riceve una richiesta di visualizzazione di un esame; 
+	\item \textbf{Postcondizione:} il sistema fornisce all'amministratore il numero di crediti dell'esame richiesto.
 \end{itemize}
-\subsection{UC7.6.4 - Visualizzazione nomi dei professori associati agli esami se presenti}
+\subsection{UC7.6.1.3 - Visualizzazione sigla del corso di laurea associato}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
-	\item \textbf{Scopo e descrizione:} l'amministratore visualizza la lista dei nomi dei professori degli esami presenti nel sistema per effettuare, eventualmente, delle operazioni su di essa;
-	\item \textbf{Scenario principale:} il sistema mostra la lista di nomi dei professori degli esami presenti nel sistema;
-	\item \textbf{Precondizione:} il sistema riconosce l'utente come amministratore e riceve una richiesta di visualizzazione di tutti gli esami; 
-	\item \textbf{Postcondizione:} il sistema fornisce per ogni esame il nome del professore assegnato.
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza la sigla del corso di laurea che contiene l'esame indicato;
+	\item \textbf{Scenario principale:} il sistema mostra la sigla del corso di laurea che contiene l'esame indicato;
+	\item \textbf{Precondizione:} il sistema riconosce l'utente come amministratore e riceve una richiesta di visualizzazione di un esame; 
+	\item \textbf{Postcondizione:} il sistema fornisce all'amministratore la sigla del corso di laurea che contiene l'esame indicato.
 \end{itemize}
-\subsection{UC7.6.5 - Visualizzazione cognomi dei professori associati agli esami se presenti}
+\subsection{UC7.6.1.4 - Visualizzazione nome del professori associato se presente}
 \begin{itemize}
 	\item \textbf{Attori primari:} amministratore;
-	\item \textbf{Scopo e descrizione:} l'amministratore visualizza la lista dei cognomi dei professori degli esami presenti nel sistema per effettuare, eventualmente, delle operazioni su di essa;
-	\item \textbf{Scenario principale:} il sistema mostra la lista di cognomi dei professori degli esami presenti nel sistema;
-	\item \textbf{Precondizione:} il sistema riconosce l'utente come amministratore e riceve una richiesta di visualizzazione di tutti gli esami; 
-	\item \textbf{Postcondizione:} il sistema fornisce per ogni esame il cognome del professore assegnato.
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza il nome del professore assegnato all'esame indicato;
+	\item \textbf{Scenario principale:} il sistema mostra il nome del professore assegnato all'esame indicato;
+	\item \textbf{Precondizione:} il sistema riconosce l'utente come amministratore e riceve una richiesta di visualizzazione di un esame; 
+	\item \textbf{Postcondizione:} il sistema fornisce all'amministratore il nome del professore, ove presente, associato all'esame richiesto.
+\end{itemize}
+\subsection{UC7.6.1.5 - Visualizzazione cognome del professore associato se presente}
+\begin{itemize}
+	\item \textbf{Attori primari:} amministratore;
+	\item \textbf{Scopo e descrizione:} l'amministratore visualizza il cognome del professore assegnato all'esame indicato;
+	\item \textbf{Scenario principale:} il sistema mostra il cognome del professore assegnato all'esame indicato;
+	\item \textbf{Precondizione:} il sistema riconosce l'utente come amministratore e riceve una richiesta di visualizzazione di un esame; 
+	\item \textbf{Postcondizione:} il sistema fornisce all'amministratore il cognome del professore, ove presente, associato all'esame richiesto.
 \end{itemize}
 \subsection{UC7.7 - Visualizzazione dettagli esame}
 \begin{itemize}

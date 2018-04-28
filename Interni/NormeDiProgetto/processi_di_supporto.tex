@@ -194,9 +194,9 @@
 	\begin{itemize}
 		\item \textbf{gupdate.sh [termine]:} si occupa di controllare le parole inserite nel glossario e, per ognuna di esse, aggiornare con il comando di glossario tutti i .tex file che le contengono. Se viene specificato un termine, lo script aggiorna solo quello indicato;
 		\item \textbf{addterm.sh:} aggiunge un termine nel glossario ed esegue gupdate.sh per il termine appena inserito;
-		\item \textbf{rmterm.sh [termine]:} rimuove un termine dal glossario e il corrispondente comando di glossario in tutte le occorenze presenti nei file .tex;
+		\item \textbf{rmterm.sh [termine]:} rimuove un termine dal glossario e il corrispondente comando di glossario in tutte le occorrenze presenti nei file .tex;
 		\item \textbf{compile.sh:} effettua la compilazione di tutti i file .tex presenti nelle sottocartelle, segnalando eventuali fallimenti;
-		\item \textbf{build.sh:} esegue lo script compile.sh, aggiorna le occorenze di glossario tramite gupdate.sh e compila nuovamente. In caso di errori durante il procedimento si blocca ed avvisa il suo esecutore. Questo script è necessario per l'approvazione del \citGloss{commit} da parte di \citGloss{Travis};
+		\item \textbf{build.sh:} esegue lo script compile.sh, aggiorna le occorrenze di glossario tramite gupdate.sh e compila nuovamente. In caso di errori durante il procedimento si blocca ed avvisa il suo esecutore. Questo script è necessario per l'approvazione del \citGloss{commit} da parte di \citGloss{Travis};
 		\item \textbf{gulpease.py:} calcola l'indice di leggibilità Gulpease per tutti i documenti prodotti e mostra i risultati. Lo script, per essere eseguito, necessita dell'installazione di python\footnote{\nURI{https://www.python.org/}} (con versione minima richiesta 2.7) e del programma OpenDetex\footnote{\nURI{https://github.com/pkubowicz/opendetex}}.	
 	\end{itemize}
 	
@@ -219,7 +219,7 @@
 			\item \textbf{PD:} per indicare i prodotti;
 			\item \textbf{TS:} per indicare i test.
 		\end{itemize}
-		\item \textbf{macrocateg:} indica la macrocategoria della metrica, se esiste altrimenti non compare.\\
+		\item \textbf{macrocateg:} indica la macro categoria della metrica, se esiste altrimenti non compare.\\
 		Per le metriche di Prodotto \textbf{PD} può assumere i valori:
 		\begin{itemize}
 			\item \textbf{D:} per indicare i documenti;
@@ -341,7 +341,7 @@
 	\subsection{Strumenti}
 	\begin{itemize}
 		\item \textbf{Software:}
-		sono stati scelti per la verifica Mocha e la libreria Chai per React, Redux e Solidity. Inoltre per verficare il codice in React viene utilizzato anche Enzyme;
+		sono stati scelti per la verifica Mocha e la libreria Chai per React, Redux e Solidity. Inoltre per verificare il codice in React viene utilizzato anche Enzyme;
 		\item \textbf{Documenti:} per il controllo dei documenti prodotti utilizzeremo le funzionalità di TeXstudio assieme a script bash eseguiti automaticamente da \citGloss{Travis} per controllare che non ci siano errori nei file \citGloss{LaTeX}, per assicurarsi che il Glossario non presenti mancanze o duplicati e verificare l'assenza di errori ortografici;
 		\item \textbf{Gestione processi e feedback:} è stato scelto di utilizzare il sistema integrato di issues\footnote{\nURI{https://guides.github.com/features/issues/}} presente su \citGloss{GitHub} per permettere un dialogo maggiore per ogni singola issue. 
 		\item \textbf{Gestione tasklist:} Todo353swe\footnote{\nURI{https://todo353swe.netlify.com}} semplice sito per gestione tasklist realizzato dai membri del gruppo per utilizzo interno.

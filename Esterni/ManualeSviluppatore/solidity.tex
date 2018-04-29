@@ -28,24 +28,57 @@ The goal of this diagram is to demonstrate which data can be accessed using cert
 A second goal is demonstrating that all needed data are accessible quickly starting from an information that leads to it and visually check that no data is inaccessible.\\
 Every map has two arrows, one that enters from above and one that comes out from under: the first one indicates the key that can be used in those maps to get other data, the second one indicates the information that can be recovered from it and used on another map as keys.\\
 
-\begin{landscape}
-\newpage
-\subsubsection{Chebotko Diagram for Marvin}
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=1\linewidth]{"diagrammi/Chebotko Diagram"}
-	\caption{Chebotko diagram for Marvin}
-	\label{fig:Chebotko diagram for Marvin}
-\end{figure}
-\end{landscape}
-\newpage
-
 In this diagram, the divisions of responsibilities are still ignored, as it will be the task of the next phase to detect the best subdivision.\\
 The current focus is only the understanding of data provision and their connection.\\
 
 A difference compared to the standard Chebotko diagram used on CassandraDB is the presence of containers, highlighted by different colors, which represent multiple instances of the same data schema.\\
 An arrow entering a map belonging to a different container must therefore know, in addition to the information to be used a key for the map itself, the address to which that container is positioned, obtainable through other maps of the previous container.\\
 The only exception of access is the university container, as the address must be available to access the system itself.\\
+
+\subsubsection{Chebotko Diagram for registered addresses and admin}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"diagrammi/chebotko/registered_and_admin"}
+	\caption{Chebotko diagram for registered addresses and admin}
+	\label{fig:Chebotko diagram for registered addresses and admin}
+\end{figure}
+TODO
+
+\subsubsection{Chebotko Diagram for teachers}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{"diagrammi/chebotko/teacher"}
+	\caption{Chebotko diagram for teachers}
+	\label{fig:Chebotko diagram for teachers}
+\end{figure}
+TODO
+
+\subsubsection{Chebotko Diagram for students}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{"diagrammi/chebotko/student"}
+	\caption{Chebotko diagram for students}
+	\label{fig:Chebotko diagram for students}
+\end{figure}
+TODO
+
+\subsubsection{Chebotko Diagram for years and courses}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\linewidth]{"diagrammi/chebotko/year_course"}
+	\caption{Chebotko diagram for years and courses}
+	\label{fig:Chebotko diagram for years and courses}
+\end{figure}
+TODO
+
+\subsubsection{Chebotko Diagram for exams}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{"diagrammi/chebotko/exam"}
+	\caption{Chebotko diagram for exams}
+	\label{fig:Chebotko diagram for exams}
+\end{figure}
+TODO
 
 \subsection{UML Diagram}
 

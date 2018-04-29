@@ -42,7 +42,8 @@ The only exception of access is the university container, as the address must be
 	\caption{Chebotko diagram for registered addresses and admin}
 	\label{fig:Chebotko diagram for registered addresses and admin}
 \end{figure}
-TODO
+You can check if a public address is already used within the application using the map "registered",	contrariwise  it is not possible to obtain the list of registered addresses because it isn't a useful information for the application. \\
+On the contrary, the administrators, besides being verifiable through their address, can be listed using a progressive index until their term, determined by a value contained in the contract itself. \\
 
 \subsubsection{Chebotko Diagram for teachers}
 \begin{figure}[H]
@@ -51,7 +52,10 @@ TODO
 	\caption{Chebotko diagram for teachers}
 	\label{fig:Chebotko diagram for teachers}
 \end{figure}
-TODO
+The teachers, in addition to being verifiable by their public address, also need to obtain the address of the contract that represent them in order to perform actions on the system.
+To allow this there is a map that contains the addresses of the contracts associated with the public addresses. \\
+As for the enumeration, it is useful to be able to retrieve the list of professors' contracts, and not their public addresses. \\
+The entire structure is duplicated, as one must keep the teachers confirmed and the other one who makes the registration request. \\
 
 \subsubsection{Chebotko Diagram for students}
 \begin{figure}[H]
@@ -60,7 +64,7 @@ TODO
 	\caption{Chebotko diagram for students}
 	\label{fig:Chebotko diagram for students}
 \end{figure}
-TODO
+The structure of the students is exactly mirrored to that of the professors, for further information refer to the Chebotko Diagram for teachers.
 
 \subsubsection{Chebotko Diagram for years and courses}
 \begin{figure}[H]
@@ -69,7 +73,8 @@ TODO
 	\caption{Chebotko diagram for years and courses}
 	\label{fig:Chebotko diagram for years and courses}
 \end{figure}
-TODO
+The management of academic years within the university is mirrored to that of professors and students. \\
+The contract for the year offers the list of courses it contains in the form of a course contract, which can be used to obtain a list of exam contracts. \\
 
 \subsubsection{Chebotko Diagram for exams}
 \begin{figure}[H]
@@ -78,7 +83,8 @@ TODO
 	\caption{Chebotko diagram for exams}
 	\label{fig:Chebotko diagram for exams}
 \end{figure}
-TODO
+The exam contract, accessible from student, teacher and course contracts, represent a university exam and keeps the list of students registered for that exam. \\
+Obviously the exam will also contain a reference to the responsible teacher and the course of affiliation, but this information can not be represented in this diagram. \\
 
 \subsection{UML Diagram}
 

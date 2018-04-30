@@ -234,16 +234,7 @@
 		\item \textbf{num:} indica il codice univoco della metrica come numero intero a tre cifre incrementale a partire da 1.
 	\end{itemize}	
 	
-	\subsection{Procedure}
-	In questa fase del progetto, l'unica metrica che è stata implementata tramite procedura esterna è "MPDD001 - Indice di Gulpease":\\
-	\includegraphics[scale=0.25]{../../common/images/MetricaGulpease}
-	
-	%VERI_GIORAT: errato il diagramma devi spiegare che ad ogni commit in automatico vengono inseriti valori gulpease su database. Quindi dopo inserimento automatico metabase realizza report aggiornato 
-	
-	 % calcolata tramite lo script "gulpease.py" citato nella sottosezione \textbf{Strumenti di supporto alla documentazione}.\\
-	%L'implementazione di ulteriori metriche tramite procedure verrà studiato con l'avanzare del progetto.
-	
-	\section{Procedure di controllo di qualità di processo}
+	\subsection{Controllo di qualità di processo}
 	La qualità dei processi verrà garantita dall'applicazione del metodo \citGloss{PDCA}, descritto dell'appendice A. Grazie a questo metodo sarà possibile ottenere un miglioramento continuo della qualità di tutti i processi, inclusa la \citGloss{verifica}, e come diretta conseguenza si otterrà il miglioramento dei prodotti risultanti.\\Per ottenere qualità dei processi, bisogna:
 	\begin{itemize}
 		\item \textbf{Definire il processo}: Affinché sia controllabile;
@@ -251,19 +242,28 @@
 		\item \textbf{Usare strumenti di valutazione}: SPICE e \citGloss{PDCA}.
 	\end{itemize}
 
+	\subsection{Controllo qualità dei documenti}
+	Affinché i documenti soddisfino la qualità imposta, si utilizza la metrica "MPDD001 - Indice di Gulpease" la cui valutazione segue questa procedura:
+	\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{../../common/images/MetricaGulpease}
+	\end{figure}
+
 	\section{Configurazione}
 	
 	\subsection{Controllo di versione}
 	
 	\subsubsection{Descrizione}
-	Per le parti versionabili del progetto e per i documenti ufficiali si è scelto l'utilizzo della tecnologia Git.
+	Per le parti versionabili del progetto e per i documenti ufficiali si è scelto l'utilizzo della tecnologia Git\footnote{\nURI{https://github.com/}} per l'affidabilità e la possibilità di integrazione con strumenti esterni come \citGloss{Travis}. Era stato inoltre suggerito dal Referente oltre ad essere già utilizzato dalla maggior parte dei membri del gruppo.
 	La condivisione dei documenti informali e delle parti non versionabili è invece effettuata tramite l'uso di una cartella Google Drive condivisa.
+	Affinché ogni membro del gruppo abbia una repository aggiornata, verranno usati due client Git secondo le preferenze personali di ogni membro del gruppo tra Github Desktop\footnote{\nURI{https://desktop.github.com/}} e GitKraken\footnote{\nURI{https://www.gitkraken.com/}}, gratuito con licenza studenti.
 	
 	\subsubsection{Struttura delle repository}
-	Sono state create due repository:
+	Sono state create tre repository:
 	\begin{itemize}
 		\item \textquotedblleft Documentazione 353\textquotedblright, contenete i documenti ufficiali del progetto;
-		\item \textquotedblleft PoC Marvin\textquotedblright, contenente il \poc sviluppato per la \tb.
+		\item \textquotedblleft PoC Marvin\textquotedblright, contenente il \poc sviluppato per la \tb, successivamente rinominata \textquotedblleft Marvin-353" nelle fasi successive;
+		\item \textquotedblleft Marvin-uml" contenente tutti i diagrammi UML per la \pb.
 	\end{itemize}
 	
 	I file interni al \citGloss{repository} \textquotedblleft Documentazione 353\textquotedblright\ sono organizzati secondo questa struttura:
@@ -307,11 +307,6 @@
 		\item Dare il comando \textquotedblleft git commit" e successivamente riassumere le modifiche effettuate, in caso sia utile si può aggiungere un messaggio esteso di descrizione;
 		\item Dare il comando \textquotedblleft git push" per completare l'operazione e fornire le modifiche agli altri membri del gruppo.
 	\end{itemize}
-	\subsection{Strumenti}
-	\begin{itemize}
-		\item \textbf{Client git:} verrano usati due client secondo le preferenze personali di ogni membro del gruppo tra Github Desktop\footnote{\nURI{https://desktop.github.com/}} e GitKraken\footnote{\nURI{https://www.gitkraken.com/}}, gratuito con licenza studenti;
-		\item \textbf{Server git:} sarà utilizzato Github\footnote{\nURI{https://github.com/}} per affidabilità ed integrazione con strumenti esterni come \citGloss{Travis} facilitata. Era stato inoltre suggerito dal Referente oltre ad essere già utilizzato dalla maggior parte dei membri del gruppo.
-	\end{itemize}
 
 	
 	\section{Verifica}
@@ -329,35 +324,26 @@
 			Viene sempre svolto per la \citGloss{verifica} dei contenuti dei documenti;
 						
 			\item \textbf{Inspection:} tecnica da applicare quando si ha idea delle possibili problematiche che si stanno cercando e si attua leggendo in modo mirato il documento/codice sulla base di una lista di possibili errori precedentemente stilata.\\
-			Viene realizzata tramite la checklist presente sul sito Todo353swe.
+			Viene realizzata tramite la checklist presente sul sito Todo353swe\footnote{\nURI{https://todo353swe.netlify.com}}.
 		\end{itemize}
+	
+	Per il controllo dei documenti prodotti utilizzeremo le funzionalità di TeXstudio assieme a script bash eseguiti automaticamente da \citGloss{Travis} per controllare che non ci siano errori nei file \citGloss{LaTeX}, per assicurarsi che il Glossario non presenti mancanze o duplicati e verificare l'assenza di errori ortografici.
+	Per la gestione dei processi e feedback è stato scelto di utilizzare il sistema integrato di issues\footnote{\nURI{https://guides.github.com/features/issues/}} presente su \citGloss{GitHub} per permettere un dialogo maggiore per ogni singola issue. 
 	
 	\subsection{Analisi dinamica}
 	Il processo di analisi dinamica consiste nella realizzazione ed esecuzione di una serie di test sul codice del software di varie tipologie. Questa tecnica non è applicabile per trovare errori nella documentazione.
+	Per l'analisi dinamica locale è stato scelto ESLint\footnote{\nURI{https://eslint.org/}} come soluzione per risolvere tutte le necessità di analisi del codice locale, mentre per l'analisi dinamica remota è stato individuato Sonarqube\footnote{\nURI{https://www.sonarqube.org/}}.
 	
 	\subsection{Verifica Diagrammi UML}
 	I verificatori devono controllare tutti i diagrammi UML prodotti rispettino lo standard UML e che siano corretti semanticamente.
-	
-	\subsection{Strumenti}
-	\begin{itemize}
-		\item \textbf{Software:}
-		sono stati scelti per la verifica Mocha e la libreria Chai per React, Redux e Solidity. Inoltre per verificare il codice in React viene utilizzato anche Enzyme;
-		\item \textbf{Documenti:} per il controllo dei documenti prodotti utilizzeremo le funzionalità di TeXstudio assieme a script bash eseguiti automaticamente da \citGloss{Travis} per controllare che non ci siano errori nei file \citGloss{LaTeX}, per assicurarsi che il Glossario non presenti mancanze o duplicati e verificare l'assenza di errori ortografici;
-		\item \textbf{Gestione processi e feedback:} è stato scelto di utilizzare il sistema integrato di issues\footnote{\nURI{https://guides.github.com/features/issues/}} presente su \citGloss{GitHub} per permettere un dialogo maggiore per ogni singola issue. 
-		\item \textbf{Gestione tasklist:} Todo353swe\footnote{\nURI{https://todo353swe.netlify.com}} semplice sito per gestione tasklist realizzato dai membri del gruppo per utilizzo interno.
-		\item \textbf{Analisi dinamica locale:} è stato scelto ESLint\footnote{\nURI{https://eslint.org/}} come soluzione iniziale per risolvere tutte le necessità di analisi del codice locale.
-		\item \textbf{Analisi dinamica remota:} è stato individuato Sonarqube\footnote{\nURI{https://www.sonarqube.org/}} come soluzione iniziale da accertare, per risolvere tutte le necessità di analisi del codice del gruppo. Maggiori dettagli sarannò introdotti durante la creazione dei \poc per la Technology \citGloss{baseline}.
-	\end{itemize}
-
 
 	\section{Validazione}
 	\subsection{Descrizione}
-		Il processo di \citGloss{validazione} ha l'obiettivo di verificare che il prodotto sia conforme a quanto pianificato e sia abile nel gestire e minimizzare gli effetti degli errori.
-	\subsection{Procedure}
-		I passi per compiere l’attività di \citGloss{validazione} sono i seguenti:\\
-		\includegraphics[scale=0.2]{../../common/images/Validation}
+		Il processo di \citGloss{validazione} ha l'obiettivo di verificare che il prodotto sia conforme a quanto pianificato e sia abile nel gestire e minimizzare gli effetti degli errori.\\
+		I passi per compiere l’attività di \citGloss{validazione} sono i seguenti:
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=1\linewidth]{../../common/images/Validation}
+		\end{figure}
 
-	 
-	
-	
 \end{document}

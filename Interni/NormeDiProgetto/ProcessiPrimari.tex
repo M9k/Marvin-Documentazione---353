@@ -85,6 +85,27 @@ Ogni requisito è identificato da un codice, costruito come descritto di seguito
 	principale degli eventi, allo stesso modo di quanto descritto in “Scenario
 	principale”.
 \end{itemize}
+Per la creazione dei diagrammi UML dei casi d'uso, è stato scelto il software UML Designer\footnote{\nURI{http://www.umldesigner.org/}}.
+
+\subsubsection{Tracciamento componenti-requisiti}
+Si è scelto di utilizzare il software \citGloss{Trender}\footnote{\nURI{https://github.com/campagna91/Trender}} per il tracciamento automatizzato di tutte le informazioni ricavate dall'analisi dei \citGloss{requisiti}.\\
+Il database MySQL che garantisce la persistenza e l'accesso ai dati si trova su un server remoto, in modo tale da rendere sempre disponibile a tutti le informazioni che esso contiene.\\
+Qualsiasi componente del gruppo, utilizzando la parte \citGloss{front-end} dell'applicazione scritta in PHP e \citGloss{JavaScript}, può accedervi utilizzando l'account comune predisposto.\\
+Una volta effettuato l'accesso si ha a disposizione le funzionalità di modifica e di esportazione in codice \citGloss{LaTeX} dei dati presenti.\\
+
+%VERI_GIORAT aggiunta di Diagramma tracciamento componenti requisiti per rimpiazzare paragrafo precedente.
+
+%	\citGloss{Trender} consente di mantenere il tracciamento di:\\
+%	\begin{itemize}
+%		\item \citGloss{requisiti};
+%		\item Casi d'uso;
+%		\item Attori;
+%		\item Verbali;
+%		\item Package;
+%		\item Classi;
+%		\item Test;
+%		\item Voci del glossario.
+%	\end{itemize}
 
 \subsection{Progettazione}
 
@@ -109,7 +130,7 @@ L'architettura definita dovrà avere le seguenti qualità:
 	\item \textbf{Coesione:} in modo che le parti che hanno gli stessi obiettivi stanno insieme;
 	\item \textbf{Basso accoppiamento:} parti distinte devono essere poco dipendenti l'una dalle altre, in modo da poter essere facilmente manutenibili.
 \end{itemize}
-%TODO questa parte sotto la teniamo o è un po' ripetitiva?
+
 \subsubsection{Obiettivi della progettazione}
 Essa serve a garantire che il prodotto sviluppato soddisfi le proprietà e i bisogni specificati nell'attività di analisi ponendo i seguenti obiettivi:
 \begin{itemize}
@@ -122,7 +143,7 @@ Essa serve a garantire che il prodotto sviluppato soddisfi le proprietà e i bis
 	\item Mantenere bassa la dipendenza tra le varie parti del prodotto, seguendo il principio della \textit{modularità};
 	\item Ottimizzare l'uso di risorse.
 \end{itemize}
-%TODO fino a qua
+
 \subsubsection{Diagrammi}
 Al fine di rendere più chiare le scelte progettuali adottate e
 ridurre le possibili ambiguità, sarà necessario fare largo uso di vari tipi di diagrammi 
@@ -371,15 +392,18 @@ La proponente, tramite capitolato d'appalto, identifica queste tecnologie come o
 \end{itemize}
 
 \subsubsection{Integrazione}
-L'attività di integrazione sarà effettuata utilizzando il servizio, compatibile con \citGloss{GitHub}, \textit{\citGloss{Travis}}.\\
+L'attività di integrazione sarà effettuata utilizzando il servizio, compatibile con \citGloss{GitHub}, \textit{\citGloss{Travis}}\footnote{\nURI{http://travis-ci.com/}}.\\
 Questo servizio implementa il modello di integrazione continua: ad ogni commit su repository \citGloss{GitHub}, \citGloss{Travis} crea una build ed esegue automaticamente i test di unità. In questo modo sarà possibile identificare immediatamente modifiche od errori che inficiano sul comportamento del prodotto.\\
-Per quanto riguarda il test coverage, cioè il grado di esecuzione del codice sorgente durante l'esecuzione dei test, verrà utilizzato il tool \citGloss{JavaScript} \textit{IstanbulJS}. 
+Per quanto riguarda il test coverage, cioè il grado di esecuzione del codice sorgente durante l'esecuzione dei test, verrà utilizzato il tool \citGloss{JavaScript} \textit{IstanbulJS}\footnote{\nURI{https://istanbul.js.org}}, mentre per la parte scritta in Solidity verrà utilizzato Solidity-Coverage\footnote{\nURI{https://github.com/sc-forks/solidity-coverage}}.\\
+Le percentuali di coverage potranno essere consultate online su Metabase \footnote{\nURI{https://www.metabase.com/}}.
 
 \subsection{Codifica}
 In questa sotto-sezione vengono elencate le norme alle quali i \progri devono attenersi durante l'attività di programmazione e implementazione.\\
 All'inizio verranno elencate delle norme generali a cui i \progri devono attenersi con qualsiasi linguaggio di programmazione utilizzato, mentre di seguito verranno elencate delle norme specifiche per i linguaggi \citGloss{JavaScript}, \citGloss{JavaScript} Syntax eXtension, Solidity e \citGloss{SCSS}.\\
 Ogni norma è rappresentata da un paragrafo; ciascuna ha un titolo, una breve descrizione e, se necessario, un esempio che illustri le convenzioni da applicare. Alcune di esse includono inoltre una lista di possibili eccezioni d'uso.\\
 L'uso di norme e convenzioni è fondamentale per permettere la generazione di codice leggibile e uniforme, agevolando così le fasi di manutenzione, \citGloss{verifica} e \citGloss{validazione} e migliorando la qualità del prodotto.
+Vengono utilizzati Webstorm by Jetbrains\footnote{\nURI{https://www.jetbrains.com/webstorm/}} per \citGloss{JavaScript} e Visual Studio Code\footnote{\nURI{https://code.visualstudio.com/}} per \citGloss{Solidity}.
+Inoltre si utilizzano i pacchetti installabili tramite Node.js con gestore di pacchetti npm per risolvere dipendenze delle librerie e tool richiesti;
 
 \paragraph*{Convenzioni per i nomi: }
 \begin{itemize}
@@ -444,51 +468,36 @@ Autore || Data || breve descrizione delle modifiche
 \subfile{Codifica/Solidity.tex}
 \subfile{Codifica/Scss.tex}
 
+\subsection{Test}
 
-\subsection{Procedure}
+%\subsection{Strumenti}
+%Gli elementi indicati con \textbf{*} sono stati analizzati per l'utilizzo nelle fasi successive del progetto ma potrebbero essere cambiati in caso di necessità differenti da quanto pianificato.
+%\begin{itemize}
+%	\item \textbf{Tracciamento requisiti:} il gruppo \gruppo ha deciso di utilizzare il software \textbf{Trender}\footnote{\nURI{https://github.com/campagna91/Trender}} installato su server remoto condiviso;
+%	\item \textbf{Creazione diagrammi UML:} {UML Designer}\footnote{\nURI{http://www.umldesigner.org/}};
+%	\item \textbf{Scrittura del codice:} Webstorm by Jetbrains\footnote{\nURI{https://www.jetbrains.com/webstorm/}} per \citGloss{JavaScript} e Visual Studio Code\footnote{\nURI{https://code.visualstudio.com/}} per \citGloss{Solidity}; 
+%	\item \textbf{Toolkit sviluppo:} si utilizzano i pacchetti installabili tramite Node.js con gestore di pacchetti npm per risolvere dipendenze delle librerie e tool richiesti;
+%	\item \textbf{Continuous Integration:} Travis\footnote{\nURI{http://travis-ci.com/}};
 
-\subsubsection{Tracciamento componenti-requisiti}
-	Si è scelto di utilizzare il software \citGloss{Trender} per il tracciamento automatizzato di tutte le informazioni ricavate dall'analisi dei \citGloss{requisiti}.\\
-	Il database MySQL che garantisce la persistenza e l'accesso ai dati si trova su un server remoto, in modo tale da rendere sempre disponibile a tutti le informazioni che esso contiene.\\
-	Qualsiasi componente del gruppo, utilizzando la parte \citGloss{front-end} dell'applicazione scritta in PHP e \citGloss{JavaScript}, può accedervi utilizzando l'account comune predisposto.\\
-	Una volta effettuato l'accesso si ha a disposizione le funzionalità di modifica e di esportazione in codice \citGloss{LaTeX} dei dati presenti.\\
-	
-	%VERI_GIORAT aggiunta di Diagramma tracciamento componenti requisiti per rimpiazzare paragrafo precedente.
-	
-%	\citGloss{Trender} consente di mantenere il tracciamento di:\\
+
+
+%	\item \textbf{Esecuzione dei test:}
 %	\begin{itemize}
-%		\item \citGloss{requisiti};
-%		\item Casi d'uso;
-%		\item Attori;
-%		\item Verbali;
-%		\item Package;
-%		\item Classi;
-%		\item Test;
-%		\item Voci del glossario.
+%		\item \citGloss{React}: Mocha\footnote{\nURI{https://github.com/mochajs/mocha}}, Chai\footnote{\nURI{http://chaijs.com/}} e Enzyme\footnote{\nURI{https://github.com/airbnb/enzyme}};
+%		\item \citGloss{Redux}: Mocha e Chai;
+%		\item \citGloss{Solidity}: Mocha e Chai.
 %	\end{itemize}
 
-\subsection{Strumenti}
-Gli elementi indicati con \textbf{*} sono stati analizzati per l'utilizzo nelle fasi successive del progetto ma potrebbero essere cambiati in caso di necessità differenti da quanto pianificato.
-\begin{itemize}
-	\item \textbf{Tracciamento requisiti:} il gruppo \gruppo ha deciso di utilizzare il software \textbf{Trender}\footnote{\nURI{https://github.com/campagna91/Trender}} installato su server remoto condiviso;
-	\item \textbf{Creazione diagrammi UML:} {UML Designer}\footnote{\nURI{http://www.umldesigner.org/}};
-	\item \textbf{Scrittura del codice:} Webstorm by Jetbrains\footnote{\nURI{https://www.jetbrains.com/webstorm/}} per \citGloss{JavaScript} e Visual Studio Code\footnote{\nURI{https://code.visualstudio.com/}} per \citGloss{Solidity}; 
-	\item \textbf{Toolkit sviluppo:} si utilizzano i pacchetti installabili tramite Node.js con gestore di pacchetti npm per risolvere dipendenze delle librerie e tool richiesti;
-	\item \textbf{Esecuzione dei test:}
-	\begin{itemize}
-		\item \citGloss{React}: Mocha\footnote{\nURI{https://github.com/mochajs/mocha}}, Chai\footnote{\nURI{http://chaijs.com/}} e Enzyme\footnote{\nURI{https://github.com/airbnb/enzyme}};
-		\item \citGloss{Redux}: Mocha e Chai;
-		\item \citGloss{Solidity}: Mocha e Chai.
-	\end{itemize}
-	\item \textbf{Continuous Integration:} Travis\footnote{\nURI{http://travis-ci.com/}};
-	\item \textbf{Tracciamento e copertura dei test:} 
-	\begin{itemize}
-		\item \textbf{Generazione copertura React e Redux:} Istanbul.JS \footnote{\nURI{https://istanbul.js.org}};
-		\item \textbf{Generazione copertura Solidity:} Solidity-Coverage\footnote{\nURI{https://github.com/sc-forks/solidity-coverage}};
-		\item \textbf{Visione online copertura test:} Codeclimate\footnote{\nURI{https://codeclimate.com/}}.
-	\end{itemize}
-	\item \textbf{Tool di supporto:} Scss-lint\footnote{\nURI{https://github.com/brigade/scss-lint}}. 	
-\end{itemize}
+
+
+%	\item \textbf{Tracciamento e copertura dei test:} 
+%	\begin{itemize}
+%		\item \textbf{Generazione copertura React e Redux:} Istanbul.JS \footnote{\nURI{https://istanbul.js.org}};
+%		\item \textbf{Generazione copertura Solidity:} Solidity-Coverage\footnote{\nURI{https://github.com/sc-forks/solidity-coverage}};
+%		\item \textbf{Visione online copertura test:} Codeclimate\footnote{\nURI{https://codeclimate.com/}}.
+%	\end{itemize}
+%	\item \textbf{Tool di supporto:} Scss-lint\footnote{\nURI{https://github.com/brigade/scss-lint}}. 	
+%\end{itemize}
 
 
 \end{document}

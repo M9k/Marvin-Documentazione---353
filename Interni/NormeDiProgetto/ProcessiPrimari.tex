@@ -4,10 +4,6 @@
 \section{Fornitura}
 In questa sezione vengono trattate le norme che i membri del gruppo \gruppo sono tenuti a rispettare al fine di proporsi e diventare fornitori nei confronti della Proponente Red Babel e dei committenti \Vardanega e \Cardin nell'ambito della progettazione, sviluppo e consegna del prodotto \progetto.
 
-
-% TODO Rimuovere studio di fattibilità descrivendo cosa produrremo come grupo per la fine di questo periodo
-
-
 \subsection{Studio di fattibilità}
 In seguito alla presentazione ufficiale dei \textbf{Capitolati d'appalto} avvenuta Venerdì 10 novembre 2017 alle ore 10.30 presso l'aula 1C150 di Torre Archimede è stata convocata una riunione interna al gruppo per discutere in merito alla varie proposte presentate.\\
 Una volta stabilita la scelta del capitolato per il quale proporsi come fornitori, gli analisti hanno condotto un'ulteriore e approfondita attività di analisi dei rischi e delle opportunità culminata con la redazione del documento \sdf \vruno. Tale documento include le motivazioni che hanno portato il gruppo \gruppo a proporsi come fornitore per il prodotto indicato e riporta per ciascun capitolato:
@@ -48,7 +44,7 @@ miglioramento continuo del prodotto e del processo di sviluppo;
 Ogni requisito dovrà essere meno ambiguo possibile e rispettare le seguenti norme.
 
 \subsubsection{Classificazione dei requisiti}
-Ogni requisito è identificato da un codice, costruito come descritto di seguito:\\ \\
+Ogni requisito è identificato da un codice, costruito come descritto di seguito:\\\\
 \textbf{\centerline{R[Importanza][Classificazione][Identificativo]}}\\
 	\begin{itemize}
 	\item La prima lettera (R) è l'abbreviazione di requisito;
@@ -246,7 +242,7 @@ I diagrammi delle classi sono collegati fra loro da frecce che esplicitano le di
 In particolare, verranno utilizzati i seguenti tipi di freccia:
 \begin{itemize}
 	\item Freccia semplice, da classe A a classe B: indica che la classe A ha fra i propri campi dati una o più istanze della classe B;
-	\begin{figure}[h]
+	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.4\linewidth]{progettazione/dip}
 		\caption{Relazione di dipendenza forte in diagramma delle classi.}
@@ -254,7 +250,7 @@ In particolare, verranno utilizzati i seguenti tipi di freccia:
 	\end{figure}
 	\newpage
 	\item Freccia tratteggiata, da classe A a classe B: indica una dipendenza, significa che A dipende da B secondo una primitiva che andrà esplicitata vicino alla freccia;
-	\begin{figure}[h]
+	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.4\linewidth]{progettazione/dipdebole}
 		\caption{Relazione di dipendenza debole in diagramma delle classi.}
@@ -262,7 +258,7 @@ In particolare, verranno utilizzati i seguenti tipi di freccia:
 	\end{figure}
 	
 	\item Freccia a diamante vuota, da classe A a classe B: indica un'aggregazione, una relazione non forte ovvero una relazione nella quale le classi parte hanno un significato anche senza che sia presente la classe tutto;
-	\begin{figure}[h]
+	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.4\linewidth]{progettazione/aggreg}
 		\caption{Relazione di aggregazione in diagramma delle classi.}
@@ -270,7 +266,7 @@ In particolare, verranno utilizzati i seguenti tipi di freccia:
 	\end{figure}
 	
 	\item Freccia a diamante piena, da classe A a classe B: indica la composizione, definita come una relazione forte cioè una relazione nella quale le classi parte hanno un reale significato solo se sono legate alla classe tutto;
-	\begin{figure}[h]
+	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.4\linewidth]{progettazione/compos}
 		\caption{Relazione di composizione in diagramma delle classi.}
@@ -278,7 +274,7 @@ In particolare, verranno utilizzati i seguenti tipi di freccia:
 	\end{figure}
 	
 	\item Freccia vuota, da classe A a classe B: indica l'ereditarietà/generalizzazione ed è il massimo grado di dipendenza fra classi. Indica che ogni oggetto di A è anche un oggetto di B.
-	\begin{figure}[h]
+	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.4\linewidth]{progettazione/ered}
 		\caption{Relazione di ereditarietà in diagramma delle classi.}
@@ -289,7 +285,7 @@ In particolare, verranno utilizzati i seguenti tipi di freccia:
 \newpage
 \subsubsection{Diagramma dei package}
 Ogni package verrà rappresentato tramite un rettangolo con un'etichetta per il nome, che dovrà contenere i diagrammi delle classi appartenenti al package ed eventuali sotto-package. Le dipendenze fra i vari package dovranno essere segnalate con una freccia tratteggiata. Tale freccia, disegnata dal package A al package B, indica una dipendenza di A ne confronti di B.
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.4\linewidth]{progettazione/package}
 	\caption{Relazione di dipendenza di package.}
@@ -324,7 +320,7 @@ I diagrammi delle attività conterranno i seguenti elementi collegati sempre da 
 \begin{itemize}
 \item  Nodo iniziale, rappresentato da un pallino pieno. \'E il punto da cui inizia l'esecuzione. Genera un token;
 \item  Activity, rappresentata da un rettangolo che ne contiene la descrizione. La descrizione dovrà essere il più breve e concisa possibile, è possibile una sintassi sincopata della frase, composta per lo più da parole chiave. Consuma e produce un token;
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.2\linewidth]{progettazione/activity}
 	\caption{Rappresentazione del nodo iniziale e attività del diagramma attività.}
@@ -339,7 +335,7 @@ scritta in prossimità la guardia, secondo il formato [guardia]. Consuma e produ
 un token;
 \item Merge, rappresentato da un rombo con n frecce in ingresso e una in uscita. \'E
 un punto in cui gli n rami generati da un Branch tornano ad unirsi. Consuma e produce un token;
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.4\linewidth]{progettazione/activitybranch}
 	\caption{Rappresentazione di branch e merge in diagramma di attività.}
@@ -348,7 +344,7 @@ un punto in cui gli n rami generati da un Branch tornano ad unirsi. Consuma e pr
 
 \item Fork, rappresentato da una linea lunga orizzontale o verticale. \'E un punto in cui l'attività si parallelizza senza vincoli di esecuzione temporale, ha una freccia in ingresso e n in uscita. Consuma un token e ne genera n;
 \item Join, rappresentato da una linea lunga orizzontale o verticale. \'E un punto in cui avviene la sincronizzazione fra processi paralleli, ha n frecce in ingresso e una in uscita. Consuma n token e ne genera uno;
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.4\linewidth]{progettazione/activityparall}
 	\caption{Rappresentazione di fork e join diagramma attività.}
@@ -358,7 +354,7 @@ un punto in cui gli n rami generati da un Branch tornano ad unirsi. Consuma e pr
 \item Pin, rappresentato da un piccolo quadratino dove entrano/escono frecce dalle Activity. Indica il passaggio di un parametro, il cui tipo va indicato di fianco secondo il formato TipoParametro;
 \item Segnali, rappresentati da due figure a incastro, la prima (non bloccante) per
 l'emissione del segnale, la seconda (bloccante) per la ricezione dello stesso.
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.3\linewidth]{progettazione/message}
 	\caption{Rappresentazione di invio e ricezione messaggi in diagramma di attività.}
@@ -369,7 +365,7 @@ l'emissione del segnale, la seconda (bloccante) per la ricezione dello stesso.
 \item Nodo di fine flusso, rappresentato da un cerchio vuoto con una X al centro. \'E
 un punto in cui uno dei rami di esecuzione va a morire, ma l'esecuzione continua comunque sugli altri rami paralleli. Consuma un token;
 \item Nodo finale, rappresentato da due cerchi concentrici di cui il più esterno vuoto e il più interno pieno. \'E il punto da cui termina l'esecuzione. Consuma un token.
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.2\linewidth]{progettazione/endact}
 	\quad
@@ -467,37 +463,5 @@ Autore || Data || breve descrizione delle modifiche
 \subfile{Codifica/React.tex}
 \subfile{Codifica/Solidity.tex}
 \subfile{Codifica/Scss.tex}
-
-\subsection{Test}
-
-%\subsection{Strumenti}
-%Gli elementi indicati con \textbf{*} sono stati analizzati per l'utilizzo nelle fasi successive del progetto ma potrebbero essere cambiati in caso di necessità differenti da quanto pianificato.
-%\begin{itemize}
-%	\item \textbf{Tracciamento requisiti:} il gruppo \gruppo ha deciso di utilizzare il software \textbf{Trender}\footnote{\nURI{https://github.com/campagna91/Trender}} installato su server remoto condiviso;
-%	\item \textbf{Creazione diagrammi UML:} {UML Designer}\footnote{\nURI{http://www.umldesigner.org/}};
-%	\item \textbf{Scrittura del codice:} Webstorm by Jetbrains\footnote{\nURI{https://www.jetbrains.com/webstorm/}} per \citGloss{JavaScript} e Visual Studio Code\footnote{\nURI{https://code.visualstudio.com/}} per \citGloss{Solidity}; 
-%	\item \textbf{Toolkit sviluppo:} si utilizzano i pacchetti installabili tramite Node.js con gestore di pacchetti npm per risolvere dipendenze delle librerie e tool richiesti;
-%	\item \textbf{Continuous Integration:} Travis\footnote{\nURI{http://travis-ci.com/}};
-
-
-
-%	\item \textbf{Esecuzione dei test:}
-%	\begin{itemize}
-%		\item \citGloss{React}: Mocha\footnote{\nURI{https://github.com/mochajs/mocha}}, Chai\footnote{\nURI{http://chaijs.com/}} e Enzyme\footnote{\nURI{https://github.com/airbnb/enzyme}};
-%		\item \citGloss{Redux}: Mocha e Chai;
-%		\item \citGloss{Solidity}: Mocha e Chai.
-%	\end{itemize}
-
-
-
-%	\item \textbf{Tracciamento e copertura dei test:} 
-%	\begin{itemize}
-%		\item \textbf{Generazione copertura React e Redux:} Istanbul.JS \footnote{\nURI{https://istanbul.js.org}};
-%		\item \textbf{Generazione copertura Solidity:} Solidity-Coverage\footnote{\nURI{https://github.com/sc-forks/solidity-coverage}};
-%		\item \textbf{Visione online copertura test:} Codeclimate\footnote{\nURI{https://codeclimate.com/}}.
-%	\end{itemize}
-%	\item \textbf{Tool di supporto:} Scss-lint\footnote{\nURI{https://github.com/brigade/scss-lint}}. 	
-%\end{itemize}
-
 
 \end{document}

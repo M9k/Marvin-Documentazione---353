@@ -330,11 +330,11 @@
 		\end{itemize}
 	
 	Per il controllo dei documenti prodotti utilizzeremo le funzionalità di TeXstudio assieme a script bash eseguiti automaticamente da \citGloss{Travis} per controllare che non ci siano errori nei file \citGloss{LaTeX}, per assicurarsi che il Glossario non presenti mancanze o duplicati e verificare l'assenza di errori ortografici.
-	Per la gestione dei processi e feedback è stato scelto di utilizzare il sistema integrato di issues\footnote{\nURI{https://guides.github.com/features/issues/}} presente su \citGloss{GitHub} per permettere un dialogo maggiore per ogni singola issue. 
+	Per la gestione dei processi e feedback è stato scelto di utilizzare il sistema integrato di issues\footnote{\nURI{https://guides.github.com/features/issues/}} presente su \citGloss{GitHub} per permettere un dialogo maggiore per ogni singola issue.
+	Per l'analisi locale è stato scelto ESLint\footnote{\nURI{https://eslint.org/}} come soluzione per risolvere tutte le necessità di analisi del codice locale, mentre per l'analisi dinamica remota è stato individuato Sonarqube\footnote{\nURI{https://www.sonarqube.org/}}.
 	
 	\subsection{Analisi dinamica}
 	Il processo di analisi dinamica consiste nella realizzazione ed esecuzione di una serie di test sul codice del software di varie tipologie. Questa tecnica non è applicabile per trovare errori nella documentazione.
-	Per l'analisi dinamica locale è stato scelto ESLint\footnote{\nURI{https://eslint.org/}} come soluzione per risolvere tutte le necessità di analisi del codice locale, mentre per l'analisi dinamica remota è stato individuato Sonarqube\footnote{\nURI{https://www.sonarqube.org/}}.
 
 	\subsubsection{Test di unità}
 	Il test di unità si pone come obiettivo primario l'isolare dal resto del codice la parte più piccola di software testabile nell'applicazione, chiamata unità, per stabilire se essa funziona esattamente come previsto. Ogni unità deve essere sottoposta a test prima di integrarla in modulo per l'esecuzione del test delle interfacce tra i diversi moduli.

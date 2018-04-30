@@ -20,15 +20,38 @@ The following are some actions that must be performed before reporting any error
 If after having performed all the previously indicated actions the problem persists then it can be considered an application error and it would be advisable to notify us following the procedure indicated below.
 
 \section{Report an error}
-\subsection{DOVE}
-EMAIL o ISSUES GITHUB
+\subsection{Where to send the message}
+The message containing the error description can be sent via email at \href{mailto: 353swe@gmail.com}{ 353swe@gmail.com} or sent as an issue on the official GitHub repository at \href{https://github.com/353swe/Marvin-353/issues}{https://github.com/353swe/Marvin-353/issues}. \\
+If you use the email please start the subject field with "[BUG]", meanwhile if you use GitHub add the label "bug".
 
-\subsection{CONVENUTO MESSAGGIO}
--Sito web in uso (Marvin potrebbe essere istanziato più volte) \\
--Proprio ruolo \\
--Passi per far sorgere l'errore \\
--Comportamento di Metamask al sorgere dell'errore (Mostra una finesta? Quantità di gas che segnala? Fallisce?) \\
--Log dalla console (istruzioni Firefox + Chrome) \\
--Eventuali note personali
+\subsection{Content of the message}
+In order for the message to be useful to identify the problem and its resolution it is required to report the information indicated below.
+
+\subsubsection{Website}
+Marvin can be instantiated by different universities, so you should not take for granted the web address of the site where the problem was found but need to make it explicit.
+
+\subsubsection{Role}
+it is advisable to indicate the role that is covered within the site, such as administrator, student, etc.
+
+\subsubsection{Description}
+Please describe the bug in one sentence.
+
+\subsubsection{Steps to reproduce}
+Please provide detailed steps to reproduce the bug. It will help devs to define the problem.
+
+\subsubsection{Metamask behavior}
+Please indicate the behavior of Metamask when the error arises, for example if it shows a window where it indicates as gas quantity 0 or signals a failed transition. In that case, copy the error and include it in the message.
+
+\subsubsection{Console log}
+Please include the browser console log in the message.
+\subsubsection{Get the console log on Firefox}
+On Mozilla Firefox press Ctrl + Shift + K (or Cmd + Opt + K on MacOS) to show the console, then right-click on it, press "select all", right-click again and press copy. \\
+Then you can paste it into the message.
+\subsubsection{Get the console log on Chrome}
+On Google Chrome press Ctrl + Shift + J (or Cmd + Opt + J on MacOS) to show the console, then right-click on it, press "save as...", select the destination folder and press "save". \\
+Then you can attach it on the message, both on the email or on GitHub.
+
+\subsubsection{Note}
+Please indicate any other information that you think may be useful for solving the problem.
 
 \end{document}

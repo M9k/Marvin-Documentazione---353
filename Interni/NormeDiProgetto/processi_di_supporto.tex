@@ -314,7 +314,9 @@
 	\subsection{Descrizione}
 	Un processo fondamentale per il proseguimento e l'evoluzione di un progetto è la \citGloss{verifica} su ogni suo sottoprodotto che porta alla creazione di un singolo componente.\\
 	In questa sezione si descriveranno gli strumenti e i metodi che verranno usati per la \citGloss{verifica} del codice e dei documenti durante la loro realizzazione.\\
-	Per quanto riguarda questa prima parte di progetto la \citGloss{verifica} si è concentrata essenzialmente su documenti e diagrammi.
+	
+	\subsection{Verifica Diagrammi UML}
+	I verificatori devono controllare tutti i diagrammi UML prodotti rispettino lo standard UML e che siano corretti semanticamente.
 	
 	\subsection{Analisi statica}
 	L'analisi statica è una tecnica di analisi applicabile sia alla documentazione che al codice e permette di effettuare la \citGloss{verifica} di quanto prodotto individuando errori ed anomalie.\\
@@ -328,19 +330,65 @@
 		\end{itemize}
 	
 	Per il controllo dei documenti prodotti utilizzeremo le funzionalità di TeXstudio assieme a script bash eseguiti automaticamente da \citGloss{Travis} per controllare che non ci siano errori nei file \citGloss{LaTeX}, per assicurarsi che il Glossario non presenti mancanze o duplicati e verificare l'assenza di errori ortografici.
-	Per la gestione dei processi e feedback è stato scelto di utilizzare il sistema integrato di issues\footnote{\nURI{https://guides.github.com/features/issues/}} presente su \citGloss{GitHub} per permettere un dialogo maggiore per ogni singola issue. 
+	Per la gestione dei processi e feedback è stato scelto di utilizzare il sistema integrato di issues\footnote{\nURI{https://guides.github.com/features/issues/}} presente su \citGloss{GitHub} per permettere un dialogo maggiore per ogni singola issue.
+	Per l'analisi locale è stato scelto ESLint\footnote{\nURI{https://eslint.org/}} come soluzione per risolvere tutte le necessità di analisi del codice locale, mentre per l'analisi dinamica remota è stato individuato Sonarqube\footnote{\nURI{https://www.sonarqube.org/}}.
 	
 	\subsection{Analisi dinamica}
 	Il processo di analisi dinamica consiste nella realizzazione ed esecuzione di una serie di test sul codice del software di varie tipologie. Questa tecnica non è applicabile per trovare errori nella documentazione.
-	Per l'analisi dinamica locale è stato scelto ESLint\footnote{\nURI{https://eslint.org/}} come soluzione per risolvere tutte le necessità di analisi del codice locale, mentre per l'analisi dinamica remota è stato individuato Sonarqube\footnote{\nURI{https://www.sonarqube.org/}}.
+
+	\subsubsection{Test di unità}
+	Il test di unità si pone come obiettivo primario l'isolare dal resto del codice la parte più piccola di software testabile nell'applicazione, chiamata unità, per stabilire se essa funziona esattamente come previsto. Ogni unità deve essere sottoposta a test prima di integrarla in modulo per l'esecuzione del test delle interfacce tra i diversi moduli.
+	L'approccio più comune al test di unità necessità della scrittura di \citGloss{driver} e \citGloss{stub}, dove il driver simula un'unità chiamante mentre lo stub simula un'unità chiamata.
+	\subsubsection{Test di integrazione}
+	Il test di integrazione rappresenta l'estensione logica del test di unità. La forma più semplice di questo tipo di test prevede la combinazione di due unità già sottoposte a test in un unico componente e il test dell'interfaccia presente tra le due. Il concetto alla base in questo approccio consiste nell'esecuzione di test per la combinazione di più parti, espandendo progressivamente il processo al test di moduli di un gruppo con quelli di altri gruppi. L'obiettivo finale è di sottoporre al test tutti i moduli che compongono un processo contemporaneamente.
+	\subsubsection{Test di sistema}
+	Il test di sistema sancisce la validazione del prodotto software finale, giunto ad una versione definitiva, e verifica dunque che esso soddisfi in modo completo i requisiti.
+	\subsubsection{Tracciamento test}
+	Ogni test è strutturato come segue:
+	\begin{itemize}
+		\item Codice identificativo;
+		\item Descrizione;
+		\item Stato.
+	\end{itemize}
+	Il codice identificativo segue la sintassi 
+	\begin{center}
+		\textbf{T\{tipo\}\{codice\}}
+	\end{center}
+dove 
+\begin{itemize}
+	\item \textbf{Tipo}: può essere 
+	\begin{itemize}
+		\item U se di unità, seguito da S se di Solidity, R se di React o X se di Redux;
+		\item I se di integrazione;
+		\item S se di sistema.
+	\end{itemize}
+	\item \textbf{Codice}: può essere 
+	\begin{itemize}
+		\item \textbf{Numerico}: incrementale a partire da 1, associato a test di unità e integrazione;
+		\item \textbf{Di requisito}: cioè riportare il numero del requisito che testa secondo il tracciamento requisiti presente in \adr \vrquattro.
+	\end{itemize}
+
+Lo stato dei test può essere:
+\begin{itemize}
+	\item implementato;
+	\item non implementato;
+	\item non eseguito;
+	\item superato;
+	\item non superato.
+\end{itemize}
+\end{itemize}
+	Per l'esecuzione dei test sono stati scelti:
+	\begin{itemize}
+		\item Per \citGloss{React}: Mocha\footnote{\nURI{https://github.com/mochajs/mocha}}, Chai\footnote{\nURI{http://chaijs.com/}} e Enzyme\footnote{\nURI{https://github.com/airbnb/enzyme}};
+		\item Per \citGloss{Redux}: Mocha e Chai;
+		\item Per \citGloss{Solidity}: Mocha e Chai.
+	\end{itemize}
 	
-	\subsection{Verifica Diagrammi UML}
-	I verificatori devono controllare tutti i diagrammi UML prodotti rispettino lo standard UML e che siano corretti semanticamente.
 
 	\section{Validazione}
 	\subsection{Descrizione}
 		Il processo di \citGloss{validazione} ha l'obiettivo di verificare che il prodotto sia conforme a quanto pianificato e sia abile nel gestire e minimizzare gli effetti degli errori.\\
-		I passi per compiere l’attività di \citGloss{validazione} sono i seguenti:
+		I passi per compiere l'attività di \citGloss{validazione} sono i seguenti:
 		\begin{figure}[H]
 			\centering
 			\includegraphics[width=1\linewidth]{../../common/images/Validation}

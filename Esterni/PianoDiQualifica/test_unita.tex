@@ -28,6 +28,21 @@
 	TUS15 & Viene verificato che solo il fondatore possa aggiungere un admin  & Superato \\
 	TUS16 & Viene verificato che solo il fondatore possa rimuovere un admin & Superato \\
 	TUS17 & Viene verificato che non sia possibile rimuovere un admin non valido & Superato \\
+	TUS18 & Viene verificato che l'account del founder non sia rilevato come account teacher & Superato \\
+	TUS19 & Viene verificato che non vengano contati il numero di account teacher se non ci sono attualmente account teacher oppure account teacher non ancora approvati & Superato \\
+	TUS20 & Viene verificato che se viene fatta una richiesta di un nuovo account teacher, il numero di account non ancora approvati incrementi di uno. Viene verificato che l'indirizzo sia di  & Superato \\
+	TUS21 & Viene verificato che un utente già registrato non possa richiedere un account teacher & Superato \\
+	TUS22 & Viene verificato che un utente non possa richiedere due volte un account & Superato \\
+	TUS23 & Viene verificato che un admin possa confermare un account & Superato \\
+	TUS24 & Viene verificato che solo un admin possa confermare un account & Superato \\
+	TUS25 & Viene verificato che indirizzi non validi non vengano confermati & Superato \\
+	TUS26 & Viene verificato che un contratto teacher non valido non possa essere rimosso & Superato \\
+	TUS27 & Viene verificato che un contratto teacher non approvato non possa essere rimosso & Superato \\
+	TUS28 & Viene verificato che possa venir richiesto, approvato e rimosso un account teacher & Superato \\
+	TUS29 & Viene verificato che possa venir richiesto un account teacher e che, se rifiutata l'approvazione, non rimanga tra gli account non approvati & Superato \\
+	TUS30 & Viene verificato che un account teacher confermato abbia ruolo 3 mentre uno non confermato abbia ruolo 13 & Superato \\
+	TUS31 & Viene verificato che non si possa rimuovere un account teacher con indirizzo non valido & Superato \\
+	TUS32 & Viene verificato che non si possa confermare un account teacher con indirizzo non valido & Superato \\
 	\hiderowcolors
 	\caption{Test di unità Solidity}
 \end{longtable}
@@ -82,6 +97,21 @@
 	TUS15 & UniversityAdmin::addNewAdmin() \\
 	TUS16 & UniversityAdmin::removeAdmin() \\
 	TUS17 & UniversityAdmin::removeAdmin() \\
+	TUS18 & UniversityTeacher::isTeacher(), UniversityAdmin::isAdmin() \\
+	TUS19 & UniversityTeacher::getTeacherNumber(), UniversityTeacher::getNonApprovedTeacherNumber() \\
+	TUS20 & UniversityTeacher::requestTeacherAccount(), UniversityTeacher::getNonApprovedTeacherNumber(), UniversityTeacher::getNotApprovedTeacherContractAddressAt(), UniversityTeacher::getTeacherNumber() \\
+	TUS21 & UniversityTeacher::requestTeacherAccount() \\
+	TUS22 & UniversityTeacher::requestTeacherAccount() \\
+	TUS23 & UniversityTeacher::confirmTeacher() \\
+	TUS24 & UniversityTeacher::confirmTeacher() \\
+	TUS25 & UniversityTeacher::confirmTeacher() \\
+	TUS26 & UniversityTeacher::removeTeacher() \\
+	TUS27 & UniversityTeacher::requestTeacherAccount(), UniversityTeacher::removeTeacher() \\
+	TUS28 & UniversityTeacher::requestTeacherAccount(), UniversityTeacher::isNotConfirmedTeacher(), UniversityTeacher::confirmTeacher(), UniversityTeacher::getTeacherContractFromPublicAddress(), UniversityTeacher::removeTeacher() \\
+	TUS29 & UniversityTeacher::denyTeacher(), UniversityTeacher::requestTeacherAccount() \\
+	TUS30 & UniversityTeacher::getRoleByAddress() \\
+	TUS31 & UniversityTeacher::removeTeacher() \\
+	TUS32 & University::confirmTeacher() \\
 	\hiderowcolors
 	\caption{Tracciamento test di unità - metodi}
 \end{longtable}

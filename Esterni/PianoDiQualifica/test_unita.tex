@@ -51,6 +51,13 @@
 	TUS38 & Viene verificato che non possa essere confermato un account studente non valido & Superato \\
 	TUS39 & Viene verificato che non possa essere rimosso un account studente non valido & Superato \\
 	TUS40 & Viene verificato che non possa essere rifiutato un account studente non valido & Superato \\
+	TUS41 & Viene verificato che venga aggiunto un nuovo anno accademico & Superato\\
+	TUS42 & Viene verificato che si possa aggiungere e rimuovere un anno accademico& Superato\\
+	TUS43 & Viene verificato che non sia permesso aggiungere lo stesso anno due volte & Superato\\
+	TUS44 & Viene verificato che non si possa rimuovere un anno accademico invalido & Superato\\
+	TUS45 & Viene verificato che non sia permesso rimuovere un anno accademico non vuoto & Superato\\
+	TUS46 & Viene verificato che si ottenga lo stesso indirizzo sia cercando per anno che per posizione & Superato\\
+	TUS47 & Viene verificato che vengano aggiunti e rimossi anni accademici, e che rimangano con indice corretto i rimanenti & Superato\\
 	
 	\hiderowcolors
 	\caption{Test di unità Solidity}
@@ -121,15 +128,22 @@
 	TUS30 & UniversityTeacher::getRoleByAddress() \\
 	TUS31 & UniversityTeacher::removeTeacher() \\
 	TUS32 & UniversityTeacher::confirmTeacher() \\
-	TUS33 & UniversityStudent::getStudentNumber, UniversityStudent::getNotApprovedStudentNumber \\
-	TUS34 & UniversityStudent::requestStudentAccount, UniversityStudent::confirmStudent, UniversityStudent::getNotApprovedStudentContractAddressAt, UniversityStudent::getStudentContractFromPublicAddress, UniversityStudent::getStudentContractAddressAt
+	TUS33 & UniversityStudent::getStudentNumber(), UniversityStudent::getNotApprovedStudentNumber() \\
+	TUS34 & UniversityStudent::requestStudentAccount(), UniversityStudent::confirmStudent(), UniversityStudent::getNotApprovedStudentContractAddressAt(), UniversityStudent::getStudentContractFromPublicAddress(), UniversityStudent::getStudentContractAddressAt()
 	\\
-	TUS35 & UniversityStudent::requestStudentAccount, UniversityStudent::confirmStudent  \\
-	TUS36 & UniversityStudent::confirmStudent, UniversityStudent::requestStudentAccount, UniversityStudent::removeStudent  \\
-	TUS37 & UniversityStudent::denyStudent \\
-	TUS38 & UniversityStudent::confirmStudent \\
-	TUS39 & UniversityStudent::denyStudent \\
-	TUS40 & UniversityStudent::denyStudent \\
+	TUS35 & UniversityStudent::requestStudentAccount(), UniversityStudent::confirmStudent()  \\
+	TUS36 & UniversityStudent::confirmStudent(), UniversityStudent::requestStudentAccount(), UniversityStudent::removeStudent()  \\
+	TUS37 & UniversityStudent::denyStudent() \\
+	TUS38 & UniversityStudent::confirmStudent() \\
+	TUS39 & UniversityStudent::denyStudent() \\
+	TUS40 & UniversityStudent::denyStudent() \\
+	TUS41 & UniversityYear::getAcademicYearNumber(), UniversityYear::addNewAcademicYear(), UniversityYear::getAcademicYearContractByYear(), UniversityYear::getSolarYear()\\
+	TUS42 & UniversityYear::addNewAcademicYear(), UniversityYear::removeAcademicYear() \\
+	TUS43 & UniversityYear::addNewAcademicYear()\\
+	TUS44 & UniversityYear::removeAcademicYear()\\
+	TUS45 & UniversityYear::removeAcademicYear()\\
+	TUS46 & UniversityYear::getAcademicYearContractByYear(), UniversityYear::getAcademicYearContractAt()\\
+	TUS47 & UniversityYear::addNewAcademicYear(), UniversityYear::removeAcademicYear(), UniversityYear::getAcademicYearContractAt(), UniversityYear::getSolarYear(), UniversityYear::getAcademicYearNumber()\\
 	\hiderowcolors
 	\caption{Tracciamento test di unità - metodi}
 \end{longtable}

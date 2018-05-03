@@ -43,6 +43,15 @@
 	TUS30 & Viene verificato che un account teacher confermato abbia ruolo 3 mentre uno non confermato abbia ruolo 13 & Superato \\
 	TUS31 & Viene verificato che non si possa rimuovere un account teacher con indirizzo non valido & Superato \\
 	TUS32 & Viene verificato che non si possa confermare un account teacher con indirizzo non valido & Superato \\
+	TUS33 & Viene verificato che il numero di studdenti confermati e non sia uguale a zero di default & Superato \\
+	TUS34 & Viene verificato che la richiesta di un account studente e la sua conferma vengano correttamente eseguite. & Superato \\
+	TUS35 & Viene verificato che la richiesta di un account studente e la sua conferma vengano correttamente eseguite, istanziando un nuovo corso & Superato \\
+	TUS36 & Viene verificato che la rimozione di un account studente confermato venga effettuata correttamente & Superato \\
+	TUS37 & Viene verificato che una richiesta di account studente venga possa venir rifiutata & Superato \\
+	TUS38 & Viene verificato che non possa essere confermato un account studente non valido & Superato \\
+	TUS39 & Viene verificato che non possa essere rimosso un account studente non valido & Superato \\
+	TUS40 & Viene verificato che non possa essere rifiutato un account studente non valido & Superato \\
+	
 	\hiderowcolors
 	\caption{Test di unità Solidity}
 \end{longtable}
@@ -75,7 +84,7 @@
 
 \section{Tracciamento test di unità - metodi}
 \rowcolors{2}{CRighePari}{CRigheDispari}
-\begin{longtable}[H]{P{5cm}P{8.5cm}}
+\begin{longtable}[H]{P{5cm}P{9cm}}
 	\rowcolor{CHeader} 
 	\color{CHeaderText}\textbf{Codice} & 
 	\color{CHeaderText}\textbf{Metodo} \\
@@ -111,7 +120,16 @@
 	TUS29 & UniversityTeacher::denyTeacher(), UniversityTeacher::requestTeacherAccount() \\
 	TUS30 & UniversityTeacher::getRoleByAddress() \\
 	TUS31 & UniversityTeacher::removeTeacher() \\
-	TUS32 & University::confirmTeacher() \\
+	TUS32 & UniversityTeacher::confirmTeacher() \\
+	TUS33 & UniversityStudent::getStudentNumber, UniversityStudent::getNotApprovedStudentNumber \\
+	TUS34 & UniversityStudent::requestStudentAccount, UniversityStudent::confirmStudent, UniversityStudent::getNotApprovedStudentContractAddressAt, UniversityStudent::getStudentContractFromPublicAddress, UniversityStudent::getStudentContractAddressAt
+	\\
+	TUS35 & UniversityStudent::requestStudentAccount, UniversityStudent::confirmStudent  \\
+	TUS36 & UniversityStudent::confirmStudent, UniversityStudent::requestStudentAccount, UniversityStudent::removeStudent  \\
+	TUS37 & UniversityStudent::denyStudent \\
+	TUS38 & UniversityStudent::confirmStudent \\
+	TUS39 & UniversityStudent::denyStudent \\
+	TUS40 & UniversityStudent::denyStudent \\
 	\hiderowcolors
 	\caption{Tracciamento test di unità - metodi}
 \end{longtable}

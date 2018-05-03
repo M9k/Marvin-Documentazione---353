@@ -58,6 +58,11 @@
 	TUS45 & Viene verificato che non sia permesso rimuovere un anno accademico non vuoto & Superato\\
 	TUS46 & Viene verificato che si ottenga lo stesso indirizzo sia cercando per anno che per posizione & Superato\\
 	TUS47 & Viene verificato che vengano aggiunti e rimossi anni accademici, e che rimangano con indice corretto i rimanenti & Superato\\
+	TUS48 & Viene verificato che un admin possa associare un professore a un esame & Superato \\
+	TUS49 & Viene verificato che se un esame viene assegnato a un altro professore, questo sia prima rimosso dal professore che lo teneva precedentemente & Superato \\
+	TUS50 & Viene verificato che solo un admin possa associare un esame a un professore & Superato \\
+	TUS51 & Viene verificato che non venga fatta l'associazione se questa viene fatta da un indirizzo admin sbagliato & Superato \\
+	TUS52 & Viene verificato che non vengano associati indirizzi sbagliati di esami a professori & Superato \\
 	
 	\hiderowcolors
 	\caption{Test di unità Solidity}
@@ -145,6 +150,11 @@
 	TUS46 & UniversityYear::getAcademicYearContractByYear(), UniversityYear::getAcademicYearContractAt()\\
 	TUS47 & UniversityYear::addNewAcademicYear(), UniversityYear::removeAcademicYear(), UniversityYear::getAcademicYearContractAt(), UniversityYear::getSolarYear(), UniversityYear::getAcademicYearNumber()\\
 	\hiderowcolors
+	TUS48 & UniversityExam::associateTeacherToExam() \\
+	TUS49 & UniversityExam::associateTeacherToExam \\
+	TUS50 & UniversityExam::associateTeacherToExam \\
+	TUS51 & UniversityExam::associateTeacherToExam \\
+	TUS52 & UniversityExam::associateTeacherToExam \\
 	\caption{Tracciamento test di unità - metodi}
 \end{longtable}
 	

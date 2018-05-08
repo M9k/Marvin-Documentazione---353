@@ -154,6 +154,36 @@
 	TUX31 & Viene verificato che vengano ritornati i dati corretti di un singolo esame & Superato \\
 	TUX32 & Viene verificato che se il ritorno di dati di un singolo esame fallisce, allora l'aziona fallisca in modo controllato & Superato \\
 	TUX33 & Viene verificato che vengano ritornati tutti gli esami & Superato \\
+	TUX34 & Viene verificato che venga aggiunto un corso & Superato \\
+	TUX35 & Viene verificato che non possa essere aggiunto un corso se è già nella lista dei corsi & Superato \\
+	TUX36 & Viene verificato che venga ritornata la lista dei corsi & Superato \\
+	TUX37 & Viene verificato che vengano caricati tutti gli esami & Superato \\
+	TUX38 & Viene verificato che vengano dati tutti i crediti dello studenti & Superato \\
+	TUX39 & Viene verificato che i crediti vengano settati a 0 & Superato \\
+	TUX40 & Viene verificato che uno studente possa iscriversi a un esame & Superato \\
+	TUX41 & Viene verificato che venga rimosso uno studente & Superato \\
+	TUX42 & Viene verificato che venga rimosso un professore & Superato \\
+	TUX43 & Viene verificato che venga rifiutato uno studente & Superato \\
+	TUX44 & Viene verificato che venga rifiutato un professore & Superato \\
+	TUX45 & Viene verificato che venga confermato lo studente selezionato & Superato \\
+	TUX46 & Viene verificato che venga confermato il professore selezionato & Superato \\
+	TUX47 & Viene verificato che fallisca l'accettazione di uno studente se non è in lista d'attesa & Superato \\
+	TUX48 & Viene verificato che fallisca l'accettazione di un professore se non è in lista d'attesa & Superato \\
+	TUX49 & Viene verificato che se web3 non è funzionante, fallisca in modo controllato & Superato \\
+	TUX50 & Viene verificato che se i parametri non sono validi venga lanciato un errore & Superato \\
+	TUX51 & Viene verificato che se non sono passati parametri, l'intervallo sia da 0 a 0 & Superato \\
+	TUX52 & Viene verificato che se viene passato un parametro, vengano ritornati mono intervalli  & Superato \\
+	TUX53 & Viene verificato che ritorni intervalli & Superato \\
+	TUX54 & Viene verificato che venga ritornata una copia identica dell'elemento se questo è \texttt{undefined} & Superato \\
+	TUX55 & Viene verificato che l'elemento venga inserito alla fine dell'array & Superato \\
+	TUX56 & Viene verificato che se il primo parametro non contiene una funzione push allora viene lanciata un'eccezione & Superato \\
+	TUX57 & Viene verificato che venga ritornata una copia identica se la funzione fornita ritorna \texttt{false} & Superato \\
+	TUX58 & Viene verificato che se la funzione fornita ritorna \texttt{true} allora venga tolto l'elemento dall'array & Superato \\
+	TUX59 & Viene verificato che se l'obiettivo non ha i metodi necessari allora venga lanciata un'eccezione & Superato \\
+	TUX60 & Viene verificato che se la funzione fornita ritorna \texttt{false} allora venga ritornata una copia identica & Superato \\
+	TUX61 & Viene verificato che se la funzione ritorna \texttt{true} vengano aggiornati solo i campi specificati & Superato \\
+	TUX62 & Viene verificato che venga lanciata un'eccezione \texttt{TypeError} se la funzione specificata non è una funzione & Superato \\
+	TUX63 & Viene verificato che venga lanciata un'eccezione \texttt{TypeError} se l'obiettivo specificato non ha il metodo \texttt{findIndex} & Superato \\
 	\hiderowcolors
 	\caption{Test di unità Redux}
 \end{longtable}
@@ -285,6 +315,36 @@
 	TUX31 & TeacherExamSaga::getExamData() \\
 	TUX32 & TeacherExamSaga::getList() \\
 	TUX33 & TeacherExamSaga::getList() \\
+	TUX34 & CourseSaga::addCourse() \\
+	TUX35 & CourseSaga::addCourse() \\
+	TUX36 & CourseSaga::getCourses() \\
+	TUX37 & StudentSaga::getExams() \\
+	TUX38 & StudentSaga::getExamsCredits() \\
+	TUX39 & StudentSaga::getExamsCredits() \\
+	TUX40 & StudentSaga::enrollToExam() \\
+	TUX41 & AdminSaga::deleteUser() \\
+	TUX42 & AdminSaga::deleteUser() \\
+	TUX43 & AdminSaga::denyUser() \\
+	TUX44 & AdminSaga::denyUser() \\
+	TUX45 & AdminSaga::approveUser() \\
+	TUX46 & AdminSaga::approveUser() \\
+	TUX47 & AdminSaga::approveUser() \\
+	TUX48 & AdminSaga::approveUser() \\
+	TUX49 & -- \\
+	TUX50 & js\_helpers::range() \\
+	TUX51 & js\_helpers::range() \\
+	TUX52 & js\_helpers::range() \\
+	TUX53 & js\_helpers::range() \\
+	TUX54 & js\_helpers::copyNPush() \\
+	TUX55 & js\_helpers::copyNPush() \\
+	TUX56 & js\_helpers::copyNPush() \\
+	TUX57 & js\_helpers::copyNPop() \\
+	TUX58 & js\_helpers::copyNPop() \\
+	TUX59 & js\_helpers::copyNPop() \\
+	TUX60 & js\_helpers::updateObjInArr() \\
+	TUX61 & js\_helpers::updateObjInArr() \\
+	TUX62 & js\_helpers::updateObjInArr() \\
+	TUX63 & js\_helpers::updateObjInArr() \\
 	\hiderowcolors
 	\caption{Tracciamento test di unità - metodi}
 \end{longtable}

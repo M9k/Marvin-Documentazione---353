@@ -95,32 +95,9 @@
 	TUS82 & Viene verificato ch il corso abbia i dati corretti & Superato \\
 	TUS83 & Viene verificato che possa essere aggiunto un esame & Superato \\
 	TUS84 & Viene verificato che solo l'admin possa aggiungere un esame & Superato \\
-	
-	\hiderowcolors
-	\caption{Test di unità Solidity}
-\end{longtable}
-
-\section{React}
-\rowcolors{2}{CRighePari}{CRigheDispari}
-\begin{longtable}[H]{P{2cm}P{8.5cm}P{3cm}}
-	\rowcolor{CHeader} 
-	\color{CHeaderText}\textbf{Codice} & 
-	\color{CHeaderText}\textbf{Descrizione} & 
-	\color{CHeaderText}\textbf{Stato}\\
-	\endhead
+	\hhline{===}
 	TUR1 & React & Superato \\ 
-	\hiderowcolors
-	\caption{Test di unità React}
-\end{longtable}
-
-\section{Redux}
-\rowcolors{2}{CRighePari}{CRigheDispari}
-\begin{longtable}[H]{P{2cm}P{8.5cm}P{3cm}}
-	\rowcolor{CHeader} 
-	\color{CHeaderText}\textbf{Codice} & 
-	\color{CHeaderText}\textbf{Descrizione} & 
-	\color{CHeaderText}\textbf{Stato}\\
-	\endhead
+	\hhline{===}
 	TUX1 & Viene verificato che venga aggiunto correttamente l'admin fornito & Superato \\ 
 	TUX2 & Viene verificato che se viene aggiunto un admin che esiste già, questo fallisca in maniera controllata & Superato \\
 	TUX3 & Viene verificato che venga rimosso l'admin corretto & Superato \\
@@ -185,7 +162,7 @@
 	TUX62 & Viene verificato che venga lanciata un'eccezione \texttt{TypeError} se la funzione specificata non è una funzione & Superato \\
 	TUX63 & Viene verificato che venga lanciata un'eccezione \texttt{TypeError} se l'obiettivo specificato non ha il metodo \texttt{findIndex} & Superato \\
 	\hiderowcolors
-	\caption{Test di unità Redux}
+	\caption{Test di unità}
 \end{longtable}
 
 \section{Tracciamento test di unità - metodi}
@@ -280,8 +257,8 @@
 	TUS82 & Course::getExamNumber(), Course::getName(), Course::getCreditsToGraduate, Course::getSolarYear\\
 	TUS83 & Course::getExamNumber(), Course::addNewExam()\\
 	TUS84 & Course::addNewExam()\\
-	\hhline
-	\hhline
+	\hhline{==}
+	\hhline{==}
 	TUX1 & AdminEmployerSaga::addAdmin() \\
 	TUX2 & AdminEmployerSaga::addAdmin() \\
 	TUX3 & AdminEmployerSaga::removeAdmin() \\

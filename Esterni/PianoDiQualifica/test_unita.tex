@@ -127,6 +127,36 @@
 	TUX27 & Viene verificato che vengano gestiti gli errori & Superato \\
 	TUX28 & Viene verificato che se tutto va bene vengano ritornati i dati del professore & Superato \\
 	TUX29 & Viene verificato che non venga catturato l'errore se qualcosa va male & Superato \\
+	TUX30 & Viene verificato che venga assegnato il voto all'utente corretto & Superato \\
+	TUX31 & Viene verificato che venga settata la lista corretta & Superato \\
+	TUX32 & Viene verificato che se la lista è \texttt{null} o \texttt{undefined} venga settata una lista vuota & Superato \\
+	TUX33 & Viene verificato che non fallisca se la lista è vuota & Superato \\
+	TUX34 & Viene verificato che ritorni la lista ordinata in ordine alfabetico per nome & Superato \\
+	TUX35 & Viene verificato che non fallisca se la lista è vuota & Superato \\
+	TUX36 & Viene verificato che ritorni la lista ordinata in ordine alfabetico per cognome & Superato \\
+	TUX37 & Viene verificato che non fallisca se la lista è vuota & Superato \\
+	TUX38 & Viene verificato che ritorni la lista ordinata per cognome in maniera discendente senza voto & Superato \\
+	TUX39 & Viene verificato che non fallisca se la lista è vuota & Superato \\
+	TUX40 & Viene verificato che ritorni la lista contenente voti non nulli ordinati per voto decrescente & Superato \\
+	TUX41 & Viene verificato che venga composta l'azione corretta & Superato \\
+	TUX42 & Viene verificato che lo stato venga aggiornato in maniera corretta & Superato \\
+	TUX43 & Viene verificato che se metamask non è presente, allora ritorni \texttt{false} & Superato \\
+	TUX44 & Viene verificato che se metamask è presente ma non viene fornito alcun account ritorni \texttt{false} & Superato \\
+	TUX45 & Viene verificato che se metamask non è presente ma viene fornito un account ritorni \texttt{false} & Superato \\
+	TUX46 & Viene verificato che se metamask è presente e viene fornito un account ritorni \texttt{true} & Superato \\
+	TUX47 & Viene verificato che venga ritornato l'\texttt{initialState} corretto & Superato \\
+	TUX48 & Viene verificato che quando viene fatto il dispatch dell'azione \texttt{NOT\_FOUND} il campo present venga settato a \texttt{false}  & Superato \\
+	TUX49 & Viene verificato che quando viene fatto il dispatch dell'azione \texttt{SET\_ADDRESS} venga settato l'indirizzo & Superato \\
+	TUX50 & Viene verificato che quando viene fatto il dispatch dell'azione \texttt{LOGOUT} venga settato lo stato allo stato iniziale & Superato \\
+	TUX51 & Viene verificato che quando viene fatto il dispatch dell'azione \texttt{LOGIN} venga settato il campo present a \texttt{true} & Superato \\
+	TUX52 & Viene verificato che quando non è fornito un indirizzo ritorni lo stato non mutato & Superato \\
+	TUX53 & Viene verificato che venga settata la lista corretta & Superato \\
+	TUX54 & Viene verificato che se la lista è \texttt{null} o \texttt{undefined} allora sia settata una lista vuota & Superato \\
+	TUX55 & Viene verificato che vengano ritornati gli esami ordinati per codice crescente & Superato \\
+	TUX56 & Viene verificato che vengano ritornati gli esami ordinati per codice decrescente & Superato \\
+	TUX57 & Viene verificato che vengano ritornati gli esami ordinati per corso in ordine crescente & Superato \\
+	TUX58 & Viene verificato che vengano ritornati gli esami ordinati per corso in ordine decrescente & Superato \\
+	
 	\hiderowcolors
 	\caption{Test di unità}
 \end{longtable}
@@ -224,6 +254,8 @@
 	TUS83 & Course::getExamNumber(), Course::addNewExam()\\
 	TUS84 & Course::addNewExam()\\
 	\hhline{==}
+	
+	
 	\hhline{==}
 	TUX1 & js\_helpers::range() \\
 	TUX2 & js\_helpers::range() \\
@@ -254,6 +286,35 @@
 	TUX27 & AdminEmployerSaga::getAllAdmins() \\
 	TUX28 & ManageExamsSaga::associateProfessor() \\
 	TUX29 & ManageExamsSaga::associateProfessor() \\
+	TUX30 & Evaluator::creators::setVote() \\
+	TUX31 & Evaluator::creators::setList() \\
+	TUX32 & Evaluator::creators::setList() \\
+	TUX33 & Evaluator::selectors::studentByName() \\
+	TUX34 & Evaluator::selectors::studentByName() \\
+	TUX35 & Evaluator::selectors::studentBySurname()\\
+	TUX36 & Evaluator::selectors::studentBySurname() \\
+	TUX37 & Evaluator::selectors::studentWithoutVote() \\
+	TUX38 & Evaluator::selectors::studentWithoutVote() \\
+	TUX39 & Evaluator::selectors::studentByVotePresence() \\
+	TUX40 & Evaluator::selectors::studentByVotePresence() \\
+	TUX41 & Evaluator::creators::setExam() \\
+	TUX42 & Evaluator::creators::setExam() \\
+	TUX43 & Metamask::selectors::logged() \\
+	TUX44 & Metamask::selectors::logged() \\
+	TUX45 & Metamask::selectors::logged() \\
+	TUX46 & Metamask::selectors::logged() \\
+	TUX47 & Metamask::reducer() \\
+	TUX48 & Metamask::reducer() \\
+	TUX49 & Metamask::reducer() \\
+	TUX50 & Metamask::reducer() \\
+	TUX51 & Metamask::reducer() \\
+	TUX52 & Metamask::reducer() \\
+	TUX53 & TeacherExam::creators::setList() \\
+	TUX54 & TeacherExam::creators::setList() \\
+	TUX55 & TeacherExam::selectors::examsByCode() \\
+	TUX56 & TeacherExam::selectors::examsByCode() \\
+	TUX57 & TeacherExam::selectors::examsByCourse() \\
+	TUX58 & TeacherExam::selectors::examsByCourse() \\
 	\hiderowcolors
 	\caption{Tracciamento test di unità - metodi}
 \end{longtable}

@@ -121,39 +121,39 @@
 	\color{CHeaderText}\textbf{Descrizione} & 
 	\color{CHeaderText}\textbf{Stato}\\
 	\endhead
-	TUX1 & Redux & Superato \\ 
-	TUX2 & Redux & Superato \\
-	TUX3 & Redux & Superato \\
-	TUX4 & Redux & Superato \\
-	TUX5 & Redux & Superato \\
-	TUX6 & Redux & Superato \\
-	TUX7 & Redux & Superato \\
-	TUX8 & Redux & Superato \\
-	TUX9 & Redux & Superato \\
-	TUX10 & Redux & Superato \\
-	TUX11 & Redux & Superato \\
-	TUX12 & Redux & Superato \\
-	TUX13 & Redux & Superato \\
-	TUX14 & Redux & Superato \\
-	TUX15 & Redux & Superato \\
-	TUX16 & Redux & Superato \\
-	TUX17 & Redux & Superato \\
-	TUX18 & Redux & Superato \\
-	TUX19 & Redux & Superato \\
-	TUX20 & Redux & Superato \\
-	TUX21 & Redux & Superato \\
-	TUX22 & Redux & Superato \\
-	TUX23 & Redux & Superato \\
-	TUX24 & Redux & Superato \\
-	TUX25 & Redux & Superato \\
-	TUX26 & Redux & Superato \\
-	TUX27 & Redux & Superato \\
-	TUX28 & Redux & Superato \\
-	TUX29 & Redux & Superato \\
-	TUX30 & Redux & Superato \\
-	TUX31 & Redux & Superato \\
-	TUX32 & Redux & Superato \\
-	TUX33 & Redux & Superato \\
+	TUX1 & Viene verificato che venga aggiunto correttamente l'admin fornito & Superato \\ 
+	TUX2 & Viene verificato che se viene aggiunto un admin che esiste già, questo fallisca in maniera controllata & Superato \\
+	TUX3 & Viene verificato che venga rimosso l'admin corretto & Superato \\
+	TUX4 & Viene verificato che non possa essere rimosso un admin che non esiste & Superato \\
+	TUX5 & Viene verificato che venga ritornata la lista degli admin & Superato \\
+	TUX6 & Viene verificato che se non ci sono corsi, venga ritornata una lista vuota & Superato \\
+	TUX7 & Viene verificato che venga ritornata la lista dei corsi corretta & Superato \\
+	TUX8 & Viene verificato che quando il fallimento della registrazione fallisce venga chiamato il reducer & Superato \\
+	TUX9 & Viene verificato che venga fatto il login di uno studente dopo che abbia fatto la registrazione & Superato \\
+	TUX10 & Viene verificato che venga fatto il login di un professore dopo che abbia fatto la registrazione & Superato \\
+	TUX11 & Viene verificato che venga lanciato un errore se uno studente non esiste & Superato \\
+	TUX12 & Viene verificato che i dati di uno studente, se esiste, vengano correttamente riuniti & Superato \\
+	TUX13 & Viene verificato che se non si riesce a ottenere uno studente, allora fallisca & Superato \\
+	TUX14 & Viene verificato che venga ritornata una lista vuota & Superato \\
+	TUX15 & Viene verificato che venga ritornata una lista & Superato \\
+	TUX16 & Viene verificato che se alcuni parametri non sono corretti, allora fallisca in modo controllato & Superato \\
+	TUX17 & Viene verificato che l'aggiornamento della lista sia fatto in modo corretto e che venga assegnato il voto & Superato \\
+	TUX18 & Viene verificato che venga ritornata la lista di tutti gli esami presenti nell'anno solare fornito & Superato \\
+	TUX19 & Viene verificato che venga ritornata la lista di tutti gli esami di un corso dato l'indirizzo & Superato \\
+	TUX20 & Viene verificato che venga ritornata la lista di tutti i professori attivi & Superato \\
+	TUX21 & Viene verificato che venga creato un nuovo esame e che venga notificato il successo dell'operazione & Superato \\
+	TUX22 & Viene verificato che possa venir assegnato un professore a un esame presente nella lista degli esami dei corsi & Superato \\
+	TUX23 & Viene verificato che possa venir associato un professore a un esame presente nella lista di tutti gli esami & Superato \\
+	TUX24 & Viene verificato che venga ritornata una lista vuota & Superato \\
+	TUX25 & Viene verificato che venga ritornata la lista corretta & Superato \\
+	TUX26 & Viene verificato che venga aggiunto l'anno dato & Superato \\
+	TUX27 & Viene verificato che venga rimosso un anno vuoto & Superato \\
+	TUX28 & Viene verificato che venga effettuato il login con il ruolo corretto & Superato \\
+	TUX29 & Viene verificato che se l'utente non ha il permesso l'azione fallisca & Superato \\
+	TUX30 & Viene verificato che venga lanciato un errore se il ritorno di dati di un esame fallisce & Superato \\
+	TUX31 & Viene verificato che vengano ritornati i dati corretti di un singolo esame & Superato \\
+	TUX32 & Viene verificato che se il ritorno di dati di un singolo esame fallisce, allora l'aziona fallisca in modo controllato & Superato \\
+	TUX33 & Viene verificato che vengano ritornati tutti gli esami & Superato \\
 	\hiderowcolors
 	\caption{Test di unità Redux}
 \end{longtable}
@@ -250,6 +250,41 @@
 	TUS82 & Course::getExamNumber(), Course::getName(), Course::getCreditsToGraduate, Course::getSolarYear\\
 	TUS83 & Course::getExamNumber(), Course::addNewExam()\\
 	TUS84 & Course::addNewExam()\\
+	\hhline
+	\hhline
+	TUX1 & AdminEmployerSaga::addAdmin() \\
+	TUX2 & AdminEmployerSaga::addAdmin() \\
+	TUX3 & AdminEmployerSaga::removeAdmin() \\
+	TUX4 & AdminEmployerSaga::removeAdmin() \\
+	TUX5 & AdminEmployerSaga::getAllAdmins() \\
+	TUX6 & BookingSaga::loadCourses() \\
+	TUX7 & BookingSaga::loadCourses() \\
+	TUX8 & BookingSaga::signUp() \\
+	TUX9 & BookingSaga::signUp() \\
+	TUX10 & BookingSaga::signUp() \\
+	TUX11 & EvaluatorSaga::getStudentData() \\
+	TUX12 & EvaluatorSaga::getStudentData() \\
+	TUX13 & EvaluatorSaga::getList() \\
+	TUX14 & EvaluatorSaga::getList() \\
+	TUX15 & EvaluatorSaga::getList() \\
+	TUX16 & EvaluatorSaga::assignVote() \\
+	TUX17 & EvaluatorSaga::assignVote() \\
+	TUX18 & ManageExamsSaga::getAllExams() \\
+	TUX19 & ManageExamsSaga::getExamsByCourse() \\
+	TUX20 & ManageExamsSaga::getTeachers() \\
+	TUX21 & ManageExamsSaga::addNewExam() \\
+	TUX22 & ManageExamsSaga::associateProfessorToCourseExam() \\
+	TUX23 & ManageExamsSaga::associateProfessorToExam() \\
+	TUX24 & ManageYearsSaga::getAllYears() \\
+	TUX25 & ManageYearsSaga::getAllYears() \\
+	TUX26 & ManageYearsSaga::addYear() \\
+	TUX27 & ManageYearsSaga::removeEmptyYear() \\
+	TUX28 & SessionSaga::performLogin() \\
+	TUX29 & TeacherExamSaga::getList() \\
+	TUX30 & TeacherExamSaga::getExamData() \\
+	TUX31 & TeacherExamSaga::getExamData() \\
+	TUX32 & TeacherExamSaga::getList() \\
+	TUX33 & TeacherExamSaga::getList() \\
 	\hiderowcolors
 	\caption{Tracciamento test di unità - metodi}
 \end{longtable}

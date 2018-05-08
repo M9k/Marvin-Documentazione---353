@@ -357,6 +357,170 @@ Misurazione periodo RQ: \textbf{76\%}
 \end{figure}
 
 \section{Revisione di Accettazione}
-Questa sezione verrà implementata alla fine del periodo indicato.
+
+\subsection{Qualità di processo}
+In questa sezione del documento vengono analizzati i processi, gli esiti delle attività di \citGloss{verifica} svolte su tutti i documenti che vengono consegnati nelle revisioni di progetto e sul prodotto software in sviluppo.
+
+\subsubsection{Metriche processi}
+
+\textbf{MPS001 Schedule Variance}\\
+In ogni periodo di incremento il valore è rimasto all'interno del range di accettabilità.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{RA/SV}
+	\caption{MPS001}
+	\label{fig:processi}
+\end{figure}
+\newpage
+
+\textbf{MPS002 Budget Variance}\\
+In ogni periodo di incremento il valore è rimasto all'interno del range di accettabilità.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\linewidth]{RA/BV}
+	\caption{MPS002}
+	\label{fig:processi}
+\end{figure}
+\newpage
+\textbf{Coverage}
+\\
+\textbf{MPS003, MPS004, MPS005 e MPS006}
+\\\\
+\textbf{Solidity Coverage}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\linewidth]{RQ/SolidityCoverage1}
+	\caption{Solidity coverage: statements e lines}
+	\label{fig:processi}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\linewidth]{RQ/SolidityCoverage2}
+	\caption{Solidity coverage: branches e functions}
+	\label{fig:processi}
+\end{figure}
+\newpage
+
+\textbf{Javascript Coverage}\\
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{RQ/JsCoverage1}
+	\caption{Javascript coverage: statements e lines}
+	\label{fig:processi}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{RQ/JsCoverage2}
+	\caption{Javascript coverage: branches e functions}
+	\label{fig:processi}
+\end{figure}
+\newpage
+\textbf{MPS007 Indisponibilità servizi esterni}\\
+Misurazione periodo RA: \textbf{4}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{RQ/MPS007}
+	\caption{MPS007}
+	\label{fig:processi}
+\end{figure}
+Come si nota dalla figura la maggior parte degli strumenti esterni usati non hanno avuti giornate di indisponibilità.
+Solamente IFTTT è rimasto offline per 4 giorni, ma essendo un servizio secondario allo svolgimento del progetto, non influenza per nulla la sua esecuzione. \\
+
+\textbf{MPS008 Rischi non previsti}\\
+Misurazione periodo RA: \textbf{0}\\
+In questo periodo non è incorso nessun rischio imprevisto.\\
+
+
+\textbf{MPS009 Media commit Github per settimana}\\
+Misurazione periodo RA: \textbf{?}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{RQ/MPS009}
+	\caption{MPS009}
+	\label{fig:processi}
+\end{figure}
+
+\newpage
+
+\textbf{MPS010 Media build Travis per settimana}\\
+Misurazione periodo RA: \textbf{?}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{RQ/MPS010}
+	\caption{MPS010}
+	\label{fig:processi}
+\end{figure}
+Nel periodo centrale il numero di build è stato minore del resto perché ci si è focalizzati sulla progettazione dell'architettura del prodotto e della creazione dei corrispettivi diagrammi UML.\\
+
+
+\textbf{MPS011 Percentuale build superate}\\
+Misurazione periodo RA: \textbf{?\%}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{RQ/MPS011}
+	\caption{MPS011}
+	\label{fig:processi}
+\end{figure}
+
+\subsubsection{Maturità processi ISO 15504}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{RA/Processi}
+	\caption{Maturità processi}
+	\label{fig:processi}
+\end{figure}
+
+\textbf{MTSA001 e MTSA002}
+
+\textbf{MTSA003}
+\textbf{MTSA004}
+\textbf{MTSA005}
+\textbf{MTSH001}
+\textbf{MTSH002}
+\textbf{MTSH003}
+\textbf{MTSH004}
+
+
+\newpage
+\subsection{Qualità di prodotto}
+
+\subsubsection{Metriche prodotto}
+
+\textbf{MPDD001 Indice di Gulpease}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{RQ/gulpease}
+	\caption{Ultimo valore Gulpease prima consegna RA}
+	\label{fig:processi}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{RQ/gulpeasegrid}
+	\caption{Andamento valore Gulpease documenti successivo consegna RQ}
+	\label{fig:processi}
+\end{figure}
+
+\textbf{MPDD002 Indice di Flesch}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{RQ/flesch}
+	\caption{Ultimo valore Flesch prima consegna RA}
+	\label{fig:processi}
+\end{figure}
+
+\textbf{MPDS001 Copertura requisiti obbligatori}
+\textbf{MPDS002 Copertura requisiti accettati}
+\textbf{MPDS003 Accuratezza rispetto alle attese}
+\textbf{MPDS004 Percentuale di failure}
+\textbf{MPDS005 Blocco di operazioni non corrette}
+\textbf{MPDS006 Comprensibilità delle funzioni offerte}
+\textbf{MPDS007 Facilità di apprendimento delle funzionalità}
+\textbf{MPDS008 Consistenza operazionale in uso}
+\textbf{MPDS009 Tempo di risposta}
+\textbf{MPDS010 Capacità di analisi di failure}
+\textbf{MPDS011 Impatto delle modifiche}
+\textbf{MPDS012 Versioni dei browser supportate}
+\textbf{MPDS013 Inclusione di funzionalità da altri prodotti}
 
 \end{document}

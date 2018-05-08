@@ -95,35 +95,74 @@
 	TUS82 & Viene verificato ch il corso abbia i dati corretti & Superato \\
 	TUS83 & Viene verificato che possa essere aggiunto un esame & Superato \\
 	TUS84 & Viene verificato che solo l'admin possa aggiungere un esame & Superato \\
-	
-	\hiderowcolors
-	\caption{Test di unità Solidity}
-\end{longtable}
-
-\section{React}
-\rowcolors{2}{CRighePari}{CRigheDispari}
-\begin{longtable}[H]{P{2cm}P{8.5cm}P{3cm}}
-	\rowcolor{CHeader} 
-	\color{CHeaderText}\textbf{Codice} & 
-	\color{CHeaderText}\textbf{Descrizione} & 
-	\color{CHeaderText}\textbf{Stato}\\
-	\endhead
+	\hhline{===}
 	TUR1 & React & Superato \\ 
+	\hhline{===}
+	TUX1 & Viene verificato che venga aggiunto correttamente l'admin fornito & Superato \\ 
+	TUX2 & Viene verificato che se viene aggiunto un admin che esiste già, questo fallisca in maniera controllata & Superato \\
+	TUX3 & Viene verificato che venga rimosso l'admin corretto & Superato \\
+	TUX4 & Viene verificato che non possa essere rimosso un admin che non esiste & Superato \\
+	TUX5 & Viene verificato che venga ritornata la lista degli admin & Superato \\
+	TUX6 & Viene verificato che se non ci sono corsi, venga ritornata una lista vuota & Superato \\
+	TUX7 & Viene verificato che venga ritornata la lista dei corsi corretta & Superato \\
+	TUX8 & Viene verificato che quando il fallimento della registrazione fallisce venga chiamato il reducer & Superato \\
+	TUX9 & Viene verificato che venga fatto il login di uno studente dopo che abbia fatto la registrazione & Superato \\
+	TUX10 & Viene verificato che venga fatto il login di un professore dopo che abbia fatto la registrazione & Superato \\
+	TUX11 & Viene verificato che venga lanciato un errore se uno studente non esiste & Superato \\
+	TUX12 & Viene verificato che i dati di uno studente, se esiste, vengano correttamente riuniti & Superato \\
+	TUX13 & Viene verificato che se non si riesce a ottenere uno studente, allora fallisca & Superato \\
+	TUX14 & Viene verificato che venga ritornata una lista vuota & Superato \\
+	TUX15 & Viene verificato che venga ritornata una lista & Superato \\
+	TUX16 & Viene verificato che se alcuni parametri non sono corretti, allora fallisca in modo controllato & Superato \\
+	TUX17 & Viene verificato che l'aggiornamento della lista sia fatto in modo corretto e che venga assegnato il voto & Superato \\
+	TUX18 & Viene verificato che venga ritornata la lista di tutti gli esami presenti nell'anno solare fornito & Superato \\
+	TUX19 & Viene verificato che venga ritornata la lista di tutti gli esami di un corso dato l'indirizzo & Superato \\
+	TUX20 & Viene verificato che venga ritornata la lista di tutti i professori attivi & Superato \\
+	TUX21 & Viene verificato che venga creato un nuovo esame e che venga notificato il successo dell'operazione & Superato \\
+	TUX22 & Viene verificato che possa venir assegnato un professore a un esame presente nella lista degli esami dei corsi & Superato \\
+	TUX23 & Viene verificato che possa venir associato un professore a un esame presente nella lista di tutti gli esami & Superato \\
+	TUX24 & Viene verificato che venga ritornata una lista vuota & Superato \\
+	TUX25 & Viene verificato che venga ritornata la lista corretta & Superato \\
+	TUX26 & Viene verificato che venga aggiunto l'anno dato & Superato \\
+	TUX27 & Viene verificato che venga rimosso un anno vuoto & Superato \\
+	TUX28 & Viene verificato che venga effettuato il login con il ruolo corretto & Superato \\
+	TUX29 & Viene verificato che se l'utente non ha il permesso l'azione fallisca & Superato \\
+	TUX30 & Viene verificato che venga lanciato un errore se il ritorno di dati di un esame fallisce & Superato \\
+	TUX31 & Viene verificato che vengano ritornati i dati corretti di un singolo esame & Superato \\
+	TUX32 & Viene verificato che se il ritorno di dati di un singolo esame fallisce, allora l'aziona fallisca in modo controllato & Superato \\
+	TUX33 & Viene verificato che vengano ritornati tutti gli esami & Superato \\
+	TUX34 & Viene verificato che venga aggiunto un corso & Superato \\
+	TUX35 & Viene verificato che non possa essere aggiunto un corso se è già nella lista dei corsi & Superato \\
+	TUX36 & Viene verificato che venga ritornata la lista dei corsi & Superato \\
+	TUX37 & Viene verificato che vengano caricati tutti gli esami & Superato \\
+	TUX38 & Viene verificato che vengano dati tutti i crediti dello studenti & Superato \\
+	TUX39 & Viene verificato che i crediti vengano settati a 0 & Superato \\
+	TUX40 & Viene verificato che uno studente possa iscriversi a un esame & Superato \\
+	TUX41 & Viene verificato che venga rimosso uno studente & Superato \\
+	TUX42 & Viene verificato che venga rimosso un professore & Superato \\
+	TUX43 & Viene verificato che venga rifiutato uno studente & Superato \\
+	TUX44 & Viene verificato che venga rifiutato un professore & Superato \\
+	TUX45 & Viene verificato che venga confermato lo studente selezionato & Superato \\
+	TUX46 & Viene verificato che venga confermato il professore selezionato & Superato \\
+	TUX47 & Viene verificato che fallisca l'accettazione di uno studente se non è in lista d'attesa & Superato \\
+	TUX48 & Viene verificato che fallisca l'accettazione di un professore se non è in lista d'attesa & Superato \\
+	TUX49 & Viene verificato che se web3 non è funzionante, fallisca in modo controllato & Superato \\
+	TUX50 & Viene verificato che se i parametri non sono validi venga lanciato un errore & Superato \\
+	TUX51 & Viene verificato che se non sono passati parametri, l'intervallo sia da 0 a 0 & Superato \\
+	TUX52 & Viene verificato che se viene passato un parametro, vengano ritornati mono intervalli  & Superato \\
+	TUX53 & Viene verificato che ritorni intervalli & Superato \\
+	TUX54 & Viene verificato che venga ritornata una copia identica dell'elemento se questo è \texttt{undefined} & Superato \\
+	TUX55 & Viene verificato che l'elemento venga inserito alla fine dell'array & Superato \\
+	TUX56 & Viene verificato che se il primo parametro non contiene una funzione push allora viene lanciata un'eccezione & Superato \\
+	TUX57 & Viene verificato che venga ritornata una copia identica se la funzione fornita ritorna \texttt{false} & Superato \\
+	TUX58 & Viene verificato che se la funzione fornita ritorna \texttt{true} allora venga tolto l'elemento dall'array & Superato \\
+	TUX59 & Viene verificato che se l'obiettivo non ha i metodi necessari allora venga lanciata un'eccezione & Superato \\
+	TUX60 & Viene verificato che se la funzione fornita ritorna \texttt{false} allora venga ritornata una copia identica & Superato \\
+	TUX61 & Viene verificato che se la funzione ritorna \texttt{true} vengano aggiornati solo i campi specificati & Superato \\
+	TUX62 & Viene verificato che venga lanciata un'eccezione \texttt{TypeError} se la funzione specificata non è una funzione & Superato \\
+	TUX63 & Viene verificato che venga lanciata un'eccezione \texttt{TypeError} se l'obiettivo specificato non ha il metodo \texttt{findIndex} & Superato \\
 	\hiderowcolors
-	\caption{Test di unità React}
-\end{longtable}
-
-\section{Redux}
-\rowcolors{2}{CRighePari}{CRigheDispari}
-\begin{longtable}[H]{P{2cm}P{8.5cm}P{3cm}}
-	\rowcolor{CHeader} 
-	\color{CHeaderText}\textbf{Codice} & 
-	\color{CHeaderText}\textbf{Descrizione} & 
-	\color{CHeaderText}\textbf{Stato}\\
-	\endhead
-	TUX1 & Redux & Superato \\ 
-	\hiderowcolors
-	\caption{Test di unità Redux}
+	\caption{Test di unità}
 \end{longtable}
 
 \section{Tracciamento test di unità - metodi}
@@ -218,6 +257,71 @@
 	TUS82 & Course::getExamNumber(), Course::getName(), Course::getCreditsToGraduate, Course::getSolarYear\\
 	TUS83 & Course::getExamNumber(), Course::addNewExam()\\
 	TUS84 & Course::addNewExam()\\
+	\hhline{==}
+	\hhline{==}
+	TUX1 & AdminEmployerSaga::addAdmin() \\
+	TUX2 & AdminEmployerSaga::addAdmin() \\
+	TUX3 & AdminEmployerSaga::removeAdmin() \\
+	TUX4 & AdminEmployerSaga::removeAdmin() \\
+	TUX5 & AdminEmployerSaga::getAllAdmins() \\
+	TUX6 & BookingSaga::loadCourses() \\
+	TUX7 & BookingSaga::loadCourses() \\
+	TUX8 & BookingSaga::signUp() \\
+	TUX9 & BookingSaga::signUp() \\
+	TUX10 & BookingSaga::signUp() \\
+	TUX11 & EvaluatorSaga::getStudentData() \\
+	TUX12 & EvaluatorSaga::getStudentData() \\
+	TUX13 & EvaluatorSaga::getList() \\
+	TUX14 & EvaluatorSaga::getList() \\
+	TUX15 & EvaluatorSaga::getList() \\
+	TUX16 & EvaluatorSaga::assignVote() \\
+	TUX17 & EvaluatorSaga::assignVote() \\
+	TUX18 & ManageExamsSaga::getAllExams() \\
+	TUX19 & ManageExamsSaga::getExamsByCourse() \\
+	TUX20 & ManageExamsSaga::getTeachers() \\
+	TUX21 & ManageExamsSaga::addNewExam() \\
+	TUX22 & ManageExamsSaga::associateProfessorToCourseExam() \\
+	TUX23 & ManageExamsSaga::associateProfessorToExam() \\
+	TUX24 & ManageYearsSaga::getAllYears() \\
+	TUX25 & ManageYearsSaga::getAllYears() \\
+	TUX26 & ManageYearsSaga::addYear() \\
+	TUX27 & ManageYearsSaga::removeEmptyYear() \\
+	TUX28 & SessionSaga::performLogin() \\
+	TUX29 & TeacherExamSaga::getList() \\
+	TUX30 & TeacherExamSaga::getExamData() \\
+	TUX31 & TeacherExamSaga::getExamData() \\
+	TUX32 & TeacherExamSaga::getList() \\
+	TUX33 & TeacherExamSaga::getList() \\
+	TUX34 & CourseSaga::addCourse() \\
+	TUX35 & CourseSaga::addCourse() \\
+	TUX36 & CourseSaga::getCourses() \\
+	TUX37 & StudentSaga::getExams() \\
+	TUX38 & StudentSaga::getExamsCredits() \\
+	TUX39 & StudentSaga::getExamsCredits() \\
+	TUX40 & StudentSaga::enrollToExam() \\
+	TUX41 & AdminSaga::deleteUser() \\
+	TUX42 & AdminSaga::deleteUser() \\
+	TUX43 & AdminSaga::denyUser() \\
+	TUX44 & AdminSaga::denyUser() \\
+	TUX45 & AdminSaga::approveUser() \\
+	TUX46 & AdminSaga::approveUser() \\
+	TUX47 & AdminSaga::approveUser() \\
+	TUX48 & AdminSaga::approveUser() \\
+	TUX49 & -- \\
+	TUX50 & js\_helpers::range() \\
+	TUX51 & js\_helpers::range() \\
+	TUX52 & js\_helpers::range() \\
+	TUX53 & js\_helpers::range() \\
+	TUX54 & js\_helpers::copyNPush() \\
+	TUX55 & js\_helpers::copyNPush() \\
+	TUX56 & js\_helpers::copyNPush() \\
+	TUX57 & js\_helpers::copyNPop() \\
+	TUX58 & js\_helpers::copyNPop() \\
+	TUX59 & js\_helpers::copyNPop() \\
+	TUX60 & js\_helpers::updateObjInArr() \\
+	TUX61 & js\_helpers::updateObjInArr() \\
+	TUX62 & js\_helpers::updateObjInArr() \\
+	TUX63 & js\_helpers::updateObjInArr() \\
 	\hiderowcolors
 	\caption{Tracciamento test di unità - metodi}
 \end{longtable}

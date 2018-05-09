@@ -24,7 +24,7 @@
 	TUS11 & Viene verificato che il numero dell'admin sia quello corretto & Superato \\
 	TUS12 & Viene verificato che venga ritornato l'admin corretto & Superato \\
 	TUS13 & Viene verificato che l'admin venga rimosso & Superato \\
-	TUS14 & Viene verificato che non venga aggiunto un nuovo admin se un altro admin con lo stesso indirizzo è gia presente & Superato \\
+	TUS14 & Viene verificato che non venga aggiunto un nuovo admin se un altro admin con lo stesso indirizzo è già presente & Superato \\
 	TUS15 & Viene verificato che solo il fondatore possa aggiungere un admin  & Superato \\
 	TUS16 & Viene verificato che solo il fondatore possa rimuovere un admin & Superato \\
 	TUS17 & Viene verificato che non sia possibile rimuovere un admin non valido & Superato \\
@@ -81,7 +81,7 @@
 	TUS68 & Viene verificato che uno studente non possa iscriversi a un esame che non sia opzionale & Superato \\
 	TUS69 & Viene verificato che uno studente non possa iscriversi due volte allo stesso esame & Superato \\
 	TUS70 & Viene verificato che solo lo studente possa iscriversi a un esame opzionale & Superato \\
-	TUS71 & Viene verificato che venga ritornato l'indice dell'esame corretto & Superato \\
+	TUS71 & Viene verificato che venga ritornato l'index dell'esame corretto & Superato \\
 	TUS72 & Viene verificato che se un esame non esiste venga interrotta l'operazione & Superato \\
 	TUS73 & Viene verificato che non possa essere registrato un voto se non dal professore corretto & Superato \\
 	TUS74 & Viene verificato che vengano inseriti i dati di default & Superato \\
@@ -95,72 +95,292 @@
 	TUS82 & Viene verificato ch il corso abbia i dati corretti & Superato \\
 	TUS83 & Viene verificato che possa essere aggiunto un esame & Superato \\
 	TUS84 & Viene verificato che solo l'admin possa aggiungere un esame & Superato \\
+	
 	\hhline{===}
-	TUR1 & React & Superato \\ 
+	TUR1 & Viene verificato che renderizzi il componente & Superato \\ 
+	TUR2 & Viene verificato che non renderizzi \texttt{AlertDismissable} se non sono settati i parametri della query & Superato \\ 
+	TUR3 & Viene verificato che vengano ritornate le university routes  & Superato \\ 
+	TUR4 & Viene verificato che vengano ritornate le admin routes  & Superato \\ 
+	TUR5 & Viene verificato che vengano ritornate le teacher routes  & Superato \\ 
+	TUR6 & Viene verificato che vengano ritornate le student routes  & Superato \\ 
+	TUR7 & Viene verificato che vengano ritornate le routes pubbliche & Superato \\ 
+	TUR8 & Viene verificato che vengano ritornate le routes pubbliche per \texttt{UNCONFIRMED\_STUDENT} & Superato \\ 
+	TUR9 & Viene verificato che vengano ritornate le routes pubbliche per \texttt{UNCONFIRMED\_TEACHER} & Superato \\ 
+	TUR10 & Viene verificato che venga renderizzato il componente & Superato \\ 
+	TUR11 & Viene verificato che abbia il corretto stato iniziale & Superato \\ 
+	TUR12 & Viene verificato che lo stato cambi quando il bottone \texttt{Details} viene cliccato & Superato \\ 
+	TUR13 & Viene verificato che venga chiamato \texttt{addExamBuilder(objForm)} & Superato \\ 
+	TUR14 & Viene verificato che venga chiamato \texttt{getExamsByAddress()} & Superato \\ 
+	TUR15 & Viene verificato che venga connesso in maniera corretta alle props & Superato \\ 
+	TUR16 & Viene verificato che venga eseguita l'azione corretta & Superato \\ 
+	TUR17 & Viene verificato che venga renderizzato il componente & Superato \\ 
+	TUR18 & Viene verificato che abbia lo stato iniziale corretto & Superato \\ 
+	TUR19 & Viene verificato che venga chiamato \texttt{tableData()} & Superato \\ 
+	TUR20 & Viene verificato che venga chiamato \texttt{validateCourse()} e che aggiunga l'esame & Superato \\ 
+	TUR21 & Viene verificato che venga chiamato \texttt{validateCourse()} e che non  aggiunga l'esame & Superato \\ 
+	TUR22 & Viene verificato che vengano connesse in maniera corretta le props & Superato \\ 
+	TUR23 & Viene verificato che venga lanciata l'azione giusta & Superato \\ 
+	TUR24 & Viene verificato che venga renderizzato il componente & Superato \\ 
+	TUR25 & Viene verificato che non venga renderizzata la tabella se non sta caricando & Superato \\ 
+	TUR26 & Viene verificato che non vengano renderizzate le opzioni degli anni se la lista degli anni non sta caricando & Superato \\ 
+	TUR27 & Viene verificato che abbia lo stato iniziale corretto & Superato \\ 
+	TUR28 & Viene verificato che venga chiamata \texttt{componentWillReceiveProps()} & Superato \\ 
+	TUR29 & Viene verificato che venga chiamata \texttt{viewDetails()} & Superato \\ 
+	TUR30 & Viene verificato che vengano connesse in maniera corretta le props & Superato \\ 
+	TUR31 & Viene verificato che venga lanciata l'azione corretta & Superato \\ 
+	TUR32 & Viene verificato che venga renderizzato il componente semplice & Superato \\ 
+	TUR33 & Viene verificato che venga renderizzato il componente figlio & Superato \\ 
+	TUR34 & Viene verificato che abbia il corretto stato iniziale & Superato \\ 
+	TUR35 & Viene verificato che lo stato abbia valori corretti dopo aver eseguito \texttt{viewConfirm()} & Superato \\ 
+	TUR36 & Viene verificato che lo stato abbia valori corretti dopo aver eseguito \texttt{closeConfirm()}  & Superato \\ 
+	TUR37 & Viene verificato che lo stato abbia valori corretti dopo aver eseguito \texttt{viewDeny()} & Superato \\ 
+	TUR38 & Viene verificato che lo stato abbia valori corretti dopo aver eseguito \texttt{closeDeny()} & Superato \\ 
+	TUR39 & Viene verificato che connetta le props in modo corretto & Superato \\ 
+	TUR40 & Viene verificato che vengano lanciate le azioni corrette & Superato \\ 
+	TUR41 & Viene verificato che venga renderizzato il componente semplice & Superato \\ 
+	TUR42 & Viene verificato che venga renderizzato il componente figlio & Superato \\ 
+	TUR43 & Viene verificato che abbia il corretto stato iniziale & Superato \\ 
+	TUR44 & Viene verificato che lo stato abbia valori corretti dopo aver eseguito \texttt{viewConfirm()} & Superato \\ 
+	TUR45 & Viene verificato che lo stato abbia valori corretti dopo aver eseguito \texttt{closeConfirm()} & Superato \\ 
+	TUR46 & Viene verificato che lo stato abbia valori corretti dopo aver eseguito \texttt{viewDeny()} & Superato \\ 
+	TUR47 & Viene verificato che lo stato abbia valori corretti dopo aver eseguito \texttt{closeDeny()} & Superato \\ 
+	TUR48 & Viene verificato che connetta le props in modo corretto & Superato \\ 
+	TUR49 & Viene verificato che vengano lanciate le azioni corrette & Superato \\ 
+	TUR50 & Viene verificato che venga renderizzato il componente & Superato \\ 
+	TUR51 & Viene verificato che abbia il corretto stato iniziale & Superato \\ 
+	TUR52 & Viene verificato che venga renderizzato il bottone per assegnare un professore se non è già assegnato un professore & Superato \\ 
+	TUR53 & Viene verificato che venga chiamato \texttt{componentWillReceiveProps()} & Superato \\ 
+	TUR54 & Viene verificato che venga chiamato \texttt{teacher()} e non venga renderizzato il bottone per assegnare un professore & Superato \\ 
+	TUR55 & Viene verificato che venga chiamato \texttt{teacher()} e venga renderizzato il bottone per assegnare un professore & Superato \\ 
+	TUR56 & Viene verificato che venga chiamato \texttt{showAssignTeacher()} e che cambi lo stato & Superato \\ 
+	TUR57 & Viene verificato che venga chiamato \texttt{notDelete()} e che cambi lo stato & Superato \\ 
+	TUR58 & Viene verificato che venga chiamato \texttt{assTeacher()} & Superato \\ 
+	TUR59 & Viene verificato che venga chiamato \texttt{moreDetails()} & Superato \\ 
+	TUR60 & Viene verificato che connetta le props in modo corretto & Superato \\ 
+	TUR61 & Viene verificato che vengano lanciate le azioni corrette & Superato \\ 
+	TUR62 & Viene verificato che venga renderizzato l'index con il giusto numero di tessere & Superato \\ 
+	TUR63 & Viene verificato che venga renderizzato il componente semplice & Superato \\ 
+	TUR64 & Viene verificato che venga renderizzato il componente figlio & Superato \\ 
+	TUR65 & Viene verificato che abbia corretto stato iniziale & Superato \\ 
+	TUR66 & Viene verificato che abbia valori dello stato corretti dopo aver eseguito \texttt{viewDeleteTeacher()} \\ 
+	TUR67 & Viene verificato che abbia valori dello stato corretti dopo aver eseguito \texttt{closeDeleteTeacher()} & Superato \\ 
+	TUR68 & Viene verificato che abbia valori dello stato corretti dopo aver eseguito \texttt{viewDeleteStudent()} & Superato \\ 
+	TUR69 & Viene verificato che abbia valori dello stato corretti dopo aver eseguito \texttt{closeDeleteStudent()} & Superato \\ 
+	TUR70 & Viene verificato che connetta le props in modo corretto & Superato \\ 
+	TUR71 & Viene verificato che venga lanciata l'azione corretta per ottenere le liste & Superato \\ 
+	TUR72 & Viene verificato che venga lanciata l'azione dell'utente studente per la cancellazione & Superato \\ 
+	TUR73 & Viene verificato che venga lanciata l'azione dell'utente professore per la cancellazione & Superato \\ 
+	TUR74 & Viene verificato che venga renderizzato il componente con titolo "successo" & Superato \\ 
+	TUR75 & Viene verificato che venga renderizzato il componente con titolo "pericolo" & Superato \\ 
+	TUR76 & Viene verificato che venga renderizzato il componente "attenzione"  & Superato \\ 
+	TUR77 & Viene verificato che venga renderizzato il componente con titolo "info"  & Superato \\ 
+	TUR78 & Viene verificato che venga renderizzato il componente con titolo nullo & Superato \\ 
+	TUR79 & Viene verificato che venga chiamato \texttt{handleDismiss()} e che cambi stato & Superato \\ 
+	TUR80 & Viene verificato che renderizzi il componente con più di un link & Superato \\ 
+	TUR81 & Viene verificato che renderizzi il componente con solo un link & Superato \\ 
+	TUR82 & Viene verificato che renderizzi il componente & Superato \\ 
+	TUR83 & Viene verificato che abbia un titolo & Superato \\ 
+	TUR84 & Viene verificato che abbia un testo & Superato \\ 
+	TUR85 & Viene verificato che salvi le props corrette & Superato \\ 
+	TUR86 & Viene verificato che renderizzi il componente & Superato \\ 
+	TUR87 & Viene verificato che renderizzi il messaggio d'errore & Superato \\ 
+	TUR88 & Viene verificato che venga chiamato \texttt{componentDidCatch()} e che cambi stato & Superato \\ 
+	TUR89 & Viene verificato che venga ritornato un array di tipi & Superato \\ 
+	TUR90 & Viene verificato che vengano salvate le props corrette & Superato \\ 
+	TUR91 & Viene verificato che vengano passate le funzioni corrette richieste & Superato \\ 
+	TUR92 & Viene verificato che vengano renderizzati il gruppo corretto, etichetta e sezione d'aiuto & Superato \\ 
+	TUR93 & Viene verificato che venga fatto il cast di \texttt{validationState} da int a string & Superato \\ 
+	TUR94 & Viene verificato che venga renderizzato il componente & Superato \\ 
+	TUR95 & Viene verificato che ci sia il link alla pagina della licenza & Superato \\ 
+	TUR96 & Viene verificato che renderizzi il componente & Superato \\ 
+	TUR97 & Viene verificato che venga chiamato \texttt{allValidFields} & Superato \\ 
+	TUR98 & Viene verificato che il componente venga renderizzato quando \texttt{isLoading} è \texttt{true} & Superato \\ 
+	TUR99 & Viene verificato che il componente non venga renderizzato quando \texttt{isLoading} è \texttt{false} & Superato \\ 
+	TUR100 & Viene verificato che renderizzi la \texttt{messagebox} di successo & Superato \\ 
+	TUR101 & Viene verificato che renderizzi la \texttt{messagebox} di errore & Superato \\ 
+	TUR102 & Viene verificato che renderizzi la \texttt{messagebox} di default & Superato \\ 
+	TUR103 & Viene verificato che abbia un titolo & Superato \\ 
+	TUR104 & Viene verificato che abbia un messaggio & Superato \\ 
+	TUR105 & Viene verificato che abbia un bottone per la chiusura & Superato \\ 
+	TUR106 & Viene verificato che abbia le props corrette & Superato \\ 
+	TUR107 & Viene verificato che venga renderizzato il componente & Superato \\ 
+	TUR108 & Viene verificato che vengano salvate le props corrette & Superato \\ 
+	TUR109 & Viene verificato che abbia uno stato iniziale corretto & Superato \\ 
+	TUR110 & Viene verificato che la chiamata a \texttt{componentWillReceiveProps()} faccia cambiare lo stato & Superato \\ 
+	TUR111 & Viene verificato che la chiamata a \texttt{handle()} faccia cambiare lo stato & Superato \\ 
+	TUR112 & Viene verificato che la chiamata a \texttt{close()} faccia cambiare lo stato & Superato \\ 
+	TUR113 & Viene verificato che venga renderizzato un bottone per scegliere sì e no con \texttt{yesFunction()} & Superato \\ 
+	TUR114 & Viene verificato che venga renderizzato solo il bottone per scegliere no con \texttt{noFunction()} & Superato \\ 
+	TUR115 & Viene verificato che venga renderizzato il componente & Superato \\ 
+	TUR116 & Viene verificato che renderizzi il componente & Superato \\ 
+	TUR117 & Viene verificato che abbia i link & Superato \\ 
+	TUR118 & Viene verificato che abbia l'header & Superato \\ 
+	TUR119 & Viene verificato che abbia il logo & Superato \\ 
+	TUR120 & Viene verificato che abbia i link& Superato \\ 
+	TUR121 & Viene verificato che renderizzi il componente & Superato \\ 
+	TUR122 & Viene verificato che vengano salvate le props corrette & Superato \\ 
+	TUR123 & Viene verificato che venga chiamato \texttt{handleClick()} & Superato \\ 
+	TUR124 & Viene verificato che venga generata la chiave corretta & Superato \\ 
+	TUR125 & Viene verificato che esista il valore & Superato \\ 
+	TUR126 & Viene verificato che non esiste il valore & Superato \\ 
+	TUR127 & Viene verificato che il valore non sia nullo & Superato \\ 
+	TUR128 & Viene verificato che il valore sia nullo & Superato \\ 
+	TUR129 & Viene verificato che funzioni il controllo sugli indirizzi Ethereum & Superato \\ 
+	TUR130 & Viene verificato che funzioni \texttt{moreThanCurrentYear} & Superato \\ 
+	TUR131 & Viene verificato che i voti vadano dallo 0 al 31 & Superato \\ 
+	TUR132 & Viene verificato che sia sempre vero & Superato \\ 
+	TUR133 & Viene verificato che venga renderizzato il componente & Superato \\ 
+	TUR134 & Viene verificato che venga renderizzato il componente & Superato \\ 
+	TUR135 & Viene verificato che venga renderizzato un messaggio d'errore se Metamask non è installato & Superato \\ 
+	TUR136 & Viene verificato che venga renderizzato un messaggio d'errore se Metamask è bloccato & Superato \\ 
+	TUR137 & Viene verificato che venga renderizzato un messaggio d'errore se Metamask è bloccato & Superato \\ 
+	TUR138 & Viene verificato che vengano connesse le giuste props & Superato \\ 
+	TUR139 & Viene verificato che vengano lanciate le azioni corrette & Superato \\ 
+	TUR140 & Viene verificato che venga renderizzato il componente & Superato \\ 
+	TUR141 & Viene verificato che venga renderizzato il componente con \texttt{loginLoading} & Superato \\ 
+	TUR142 & Viene verificato che venga renderizzato il componente con \texttt{loginFailed} & Superato \\ 
+	TUR143 & Viene verificato che venga renderizzato il componente con ruolo 0 & Superato \\ 
+	TUR144 & Viene verificato che venga renderizzato il componente con ruolo 13 & Superato \\ 
+	TUR145 & Viene verificato che venga renderizzato il componente con ruolo 14 & Superato \\ 
+	TUR146 & Viene verificato che venga renderizzato il componente con ruolo 1 & Superato \\ 
+	TUR147 & Viene verificato che venga renderizzato il componente & Superato \\ 
+	TUR148 & Viene verificato che vengano connesse le giuste props & Superato \\ 
+	TUR149 & Viene verificato che vengano lanciate le azioni corrette & Superato \\ 
+	TUR150 & Viene verificato che venga renderizzato il componente & Superato \\ 
+	TUR151 & Viene verificato che venga renderizzato il componente & Superato \\ 
+	TUR152 & Viene verificato che venga renderizzato il componente & Superato \\ 
+	TUR153 & Viene verificato che abbia lo stato iniziale corretto & Superato \\ 
+	TUR154 & Viene verificato che venga chiamato \texttt{componentDidMount()} & Superato \\ 
+	TUR155 & Viene verificato che venga renderizzato il componente & Superato \\ 
+	TUR156 & Viene verificato che venga chiamato \texttt{componentDidMount()} & Superato \\ 
+	TUR157 & Viene verificato che venga renderizzato il componente & Superato \\ 
+	TUR158 & Viene verificato che abbia lo stato iniziale corretto & Superato \\ 
+	TUR159 & Viene verificato che venga chiamato \texttt{componentDidMount()} & Superato \\ 
+	TUR160 & Viene verificato che venga chiamato \texttt{addRole()} per registrare un nuovo studente & Superato \\ 
+	TUR161 & Viene verificato che venga chiamato \texttt{addRole()} per registrare un nuovo professore & Superato \\ 
+	TUR162 & Viene verificato che venga chiamato \texttt{addStudent()} per settare il corso di un nuovo studente & Superato \\ 
+	TUR163 & Viene verificato che vengano connesse le giuste props & Superato \\ 
+	TUR164 & Viene verificato che vengano lanciate le azioni corrette & Superato \\ 
+	TUR165 & Viene verificato che ritorni un array con tre elementi & Superato \\ 
+	TUR166 & Viene verificato che ritorni un array con quattro elementi & Superato \\ 
+	TUR167 & Viene verificato che ritorni un array con tre elementi & Superato \\ 
+	TUR168 & Viene verificato che ritorni un array con un elemento & Superato \\ 
+	TUR169 & Viene verificato che ritorni un array con tre elementi & Superato \\ 
+	TUR170 & Viene verificato che ritorni un array con tre elementi & Superato \\ 
+	TUR171 & Viene verificato che venga renderizzato il componente & Superato \\ 
+	TUR172 & Viene verificato che vengano salvate le props corrette e i valori corretti & Superato \\ 
+	TUR173 & Viene verificato che venga chiamato \texttt{refreshData()} & Superato \\ 
+	TUR174 & Viene verificato che venga chiamato \texttt{getRows()} & Superato \\ 
+	TUR175 & Viene verificato che venga chiamato \texttt{componentWillMount()} & Superato \\ 
+	TUR176 & Viene verificato che venga chiamato \texttt{getRow()} & Superato \\
+	TUR177 & Viene verificato che venga renderizzato l'index con il numero esatto di tessere & Superato \\
+	TUR178 & Viene verificato che venga renderizzato il componente di bootstrap corretto & Superato \\
+	TUR179 & Viene verificato che venga fatta la connessione corretta alle props & Superato \\
+	TUR180 & Viene verificato che vengano lanciate le azioni corrette & Superato \\
+	TUR181 & Viene verificato che venga renderizzato il componente semplice & Superato \\
+	TUR182 & Viene verificato che venga renderizzato il componente figlio & Superato \\
+	TUR183 & Viene verificato che abbia lo stato iniziale corretto & Superato \\
+	TUR184 & Viene verificato che venga fatta la connessione corretta alle props & Superato \\
+	TUR185 & Viene verificato che vengano lanciate le azioni corrette & Superato \\
+	TUR186 & Viene verificato che vengano lanciate le azioni corrette & Superato \\
+	TUR187 & Viene verificato che venga renderizzato il componente semplice & Superato \\
+	TUR188 & Viene verificato che venga renderizzato il componente figlio & Superato \\
+	TUR189 & Viene verificato che venga fatta la connessione corretta alle props & Superato \\
+	TUR190 & Viene verificato che vengano lanciate le azioni corrette & Superato \\
+	TUR191 & Viene verificato che renderizzi l'index con il numero giusto di tessere & Superato \\
+	TUR192 & Viene verificato che venga renderizzato il componente di bootstrap corretto & Superato \\
+	TUR193 & Viene verificato che mostri la tabella correttamente & Superato \\
+	TUR194 & Viene verificato che ottenga gli esami dall'indirizzo del professore fornito & Superato \\
+	TUR195 & Viene verificato che la connessione con le props sia fatta correttamente & Superato \\
+	TUR196 & Viene verificato che venga lanciata l'azione corretta & Superato \\
+	TUR197 & Viene verificato che venga mostrato ill modulo e la tabella in modo corretto in base allo stato & Superato \\
+	TUR198 & Viene verificato che \texttt{openModal()} setti in maniera corretta lo stato & Superato \\
+	TUR199 & Viene verificato che venga costruito il voto corretto da passare a Redux & Superato \\
+	TUR200 & Viene verificato che la connessione con le props sia fatta in maniera corretta & Superato \\
+	TUR201 & Viene verificato che venga lanciata l'azione giusta per ottenere la lista & Superato \\
+	TUR202 & Viene verificato che venga lanciata l'azione giusta per assegnare un voto & Superato \\
+	TUR203 & Viene verificato che venga renderizzato l'index con il numero corretto di tessere & Superato \\
+	TUR204 & Viene verificato che vengano mostrati il modulo e la tabella in maniera corretta secondo lo stato & Superato \\
+	TUR205 & Viene verificato che \texttt{viewDelete()} setti lo stato corretto & Superato \\
+	TUR206 & Viene verificato che venga chiuso il modale e venga resettato lo stato & Superato \\
+	TUR207 & Viene verificato che venga chiuso il modale e resettato lo stato senza cancellare lo store & Superato \\
+	TUR208 & Viene verificato che l'anno inviato dalla form sia validato come falso & Superato \\
+	TUR209 & Viene verificato che l'anno inviato dalla form sia validato come vero & Superato \\
+	TUR210 & Viene verificato che possa venir chiuso il messaggio d'errore & Superato \\
+	TUR211 & Viene verificato che la connessione alle props sia corretta & Superato \\
+	TUR212 & Viene verificato che venga lanciata l'azione giusta per ottenere tutti gli anni & Superato \\
+	TUR213 & Viene verificato che venga lanciata l'azione giusta per cancellare un anno & Superato \\
+	TUR214 & Viene verificato che venga lanciata l'azione giusta per aggiungere un anno & Superato \\
+	TUR215 & Viene verificato che la form e la tabella siano mostrati correttamente & Superato \\
+	TUR216 & Viene verificato che \texttt{viewDelete()} setti lo stato corretto & Superato \\
+	TUR217 & Viene verificato che \texttt{viewDelete()} setti lo stato corretto & Superato \\
+	TUR218 & Viene verificato che venga chiuso il modale e resettato lo stato & Superato \\
+	TUR219 & Viene verificato che venga chiuso il modale e venga resettato lo stato senza cancellare lo store & Superato \\
+	TUR220 & Viene verificato che la connessione alle props sia corretta & Superato \\
+	TUR221 & Viene verificato che venga lanciata l'azione giusta per ottenere gli admin & Superato \\
+	TUR222 & Viene verificato che venga lanciata l'azione giusta per cancellare un admin & Superato \\
+	TUR223 & Viene verificato che venga lanciata l'azione giusta per aggiungere un admin & Superato \\
+
 	\hhline{===}
-	TUX1 & Viene verificato che venga aggiunto correttamente l'admin fornito & Superato \\ 
-	TUX2 & Viene verificato che se viene aggiunto un admin che esiste già, questo fallisca in maniera controllata & Superato \\
-	TUX3 & Viene verificato che venga rimosso l'admin corretto & Superato \\
-	TUX4 & Viene verificato che non possa essere rimosso un admin che non esiste & Superato \\
-	TUX5 & Viene verificato che venga ritornata la lista degli admin & Superato \\
-	TUX6 & Viene verificato che se non ci sono corsi, venga ritornata una lista vuota & Superato \\
-	TUX7 & Viene verificato che venga ritornata la lista dei corsi corretta & Superato \\
-	TUX8 & Viene verificato che quando il fallimento della registrazione fallisce venga chiamato il reducer & Superato \\
-	TUX9 & Viene verificato che venga fatto il login di uno studente dopo che abbia fatto la registrazione & Superato \\
-	TUX10 & Viene verificato che venga fatto il login di un professore dopo che abbia fatto la registrazione & Superato \\
-	TUX11 & Viene verificato che venga lanciato un errore se uno studente non esiste & Superato \\
-	TUX12 & Viene verificato che i dati di uno studente, se esiste, vengano correttamente riuniti & Superato \\
-	TUX13 & Viene verificato che se non si riesce a ottenere uno studente, allora fallisca & Superato \\
-	TUX14 & Viene verificato che venga ritornata una lista vuota & Superato \\
-	TUX15 & Viene verificato che venga ritornata una lista & Superato \\
-	TUX16 & Viene verificato che se alcuni parametri non sono corretti, allora fallisca in modo controllato & Superato \\
-	TUX17 & Viene verificato che l'aggiornamento della lista sia fatto in modo corretto e che venga assegnato il voto & Superato \\
-	TUX18 & Viene verificato che venga ritornata la lista di tutti gli esami presenti nell'anno solare fornito & Superato \\
-	TUX19 & Viene verificato che venga ritornata la lista di tutti gli esami di un corso dato l'indirizzo & Superato \\
-	TUX20 & Viene verificato che venga ritornata la lista di tutti i professori attivi & Superato \\
-	TUX21 & Viene verificato che venga creato un nuovo esame e che venga notificato il successo dell'operazione & Superato \\
-	TUX22 & Viene verificato che possa venir assegnato un professore a un esame presente nella lista degli esami dei corsi & Superato \\
-	TUX23 & Viene verificato che possa venir associato un professore a un esame presente nella lista di tutti gli esami & Superato \\
-	TUX24 & Viene verificato che venga ritornata una lista vuota & Superato \\
-	TUX25 & Viene verificato che venga ritornata la lista corretta & Superato \\
-	TUX26 & Viene verificato che venga aggiunto l'anno dato & Superato \\
-	TUX27 & Viene verificato che venga rimosso un anno vuoto & Superato \\
-	TUX28 & Viene verificato che venga effettuato il login con il ruolo corretto & Superato \\
-	TUX29 & Viene verificato che se l'utente non ha il permesso l'azione fallisca & Superato \\
-	TUX30 & Viene verificato che venga lanciato un errore se il ritorno di dati di un esame fallisce & Superato \\
-	TUX31 & Viene verificato che vengano ritornati i dati corretti di un singolo esame & Superato \\
-	TUX32 & Viene verificato che se il ritorno di dati di un singolo esame fallisce, allora l'aziona fallisca in modo controllato & Superato \\
-	TUX33 & Viene verificato che vengano ritornati tutti gli esami & Superato \\
-	TUX34 & Viene verificato che venga aggiunto un corso & Superato \\
-	TUX35 & Viene verificato che non possa essere aggiunto un corso se è già nella lista dei corsi & Superato \\
-	TUX36 & Viene verificato che venga ritornata la lista dei corsi & Superato \\
-	TUX37 & Viene verificato che vengano caricati tutti gli esami & Superato \\
-	TUX38 & Viene verificato che vengano dati tutti i crediti dello studenti & Superato \\
-	TUX39 & Viene verificato che i crediti vengano settati a 0 & Superato \\
-	TUX40 & Viene verificato che uno studente possa iscriversi a un esame & Superato \\
-	TUX41 & Viene verificato che venga rimosso uno studente & Superato \\
-	TUX42 & Viene verificato che venga rimosso un professore & Superato \\
-	TUX43 & Viene verificato che venga rifiutato uno studente & Superato \\
-	TUX44 & Viene verificato che venga rifiutato un professore & Superato \\
-	TUX45 & Viene verificato che venga confermato lo studente selezionato & Superato \\
-	TUX46 & Viene verificato che venga confermato il professore selezionato & Superato \\
-	TUX47 & Viene verificato che fallisca l'accettazione di uno studente se non è in lista d'attesa & Superato \\
-	TUX48 & Viene verificato che fallisca l'accettazione di un professore se non è in lista d'attesa & Superato \\
-	TUX49 & Viene verificato che se web3 non è funzionante, fallisca in modo controllato & Superato \\
-	TUX50 & Viene verificato che se i parametri non sono validi venga lanciato un errore & Superato \\
-	TUX51 & Viene verificato che se non sono passati parametri, l'intervallo sia da 0 a 0 & Superato \\
-	TUX52 & Viene verificato che se viene passato un parametro, vengano ritornati mono intervalli  & Superato \\
-	TUX53 & Viene verificato che ritorni intervalli & Superato \\
-	TUX54 & Viene verificato che venga ritornata una copia identica dell'elemento se questo è \texttt{undefined} & Superato \\
-	TUX55 & Viene verificato che l'elemento venga inserito alla fine dell'array & Superato \\
-	TUX56 & Viene verificato che se il primo parametro non contiene una funzione push allora viene lanciata un'eccezione & Superato \\
-	TUX57 & Viene verificato che venga ritornata una copia identica se la funzione fornita ritorna \texttt{false} & Superato \\
-	TUX58 & Viene verificato che se la funzione fornita ritorna \texttt{true} allora venga tolto l'elemento dall'array & Superato \\
-	TUX59 & Viene verificato che se l'obiettivo non ha i metodi necessari allora venga lanciata un'eccezione & Superato \\
-	TUX60 & Viene verificato che se la funzione fornita ritorna \texttt{false} allora venga ritornata una copia identica & Superato \\
-	TUX61 & Viene verificato che se la funzione ritorna \texttt{true} vengano aggiornati solo i campi specificati & Superato \\
-	TUX62 & Viene verificato che venga lanciata un'eccezione \texttt{TypeError} se la funzione specificata non è una funzione & Superato \\
-	TUX63 & Viene verificato che venga lanciata un'eccezione \texttt{TypeError} se l'obiettivo specificato non ha il metodo \texttt{findIndex} & Superato \\
+	TUX1 & Viene verificato che se i parametri non sono validi venga lanciato un errore & Superato \\
+	TUX2 & Viene verificato che se non sono passati parametri, l'intervallo sia da 0 a 0 & Superato \\
+	TUX3 & Viene verificato che se viene passato un parametro, vengano ritornati mono intervalli  & Superato \\
+	TUX4 & Viene verificato che ritorni intervalli & Superato \\
+	TUX5 & Viene verificato che venga ritornata una copia identica dell'elemento se questo è \texttt{undefined} & Superato \\
+	TUX6 & Viene verificato che l'elemento venga inserito alla fine dell'array & Superato \\
+	TUX7 & Viene verificato che se il primo parametro non contiene una funzione push allora viene lanciata un'eccezione & Superato \\
+	TUX8 & Viene verificato che venga ritornata una copia identica se la funzione fornita ritorna \texttt{false} & Superato \\
+	TUX9 & Viene verificato che se la funzione fornita ritorna \texttt{true} allora venga tolto l'elemento dall'array & Superato \\
+	TUX10 & Viene verificato che se l'obiettivo non ha i metodi necessari allora venga lanciata un'eccezione & Superato \\
+	TUX11 & Viene verificato che se la funzione fornita ritorna \texttt{false} allora venga ritornata una copia identica & Superato \\
+	TUX12 & Viene verificato che se la funzione ritorna \texttt{true} vengano aggiornati solo i campi specificati & Superato \\
+	TUX13 & Viene verificato che venga lanciata un'eccezione \texttt{TypeError} se la funzione specificata non è una funzione & Superato \\
+	TUX14 & Viene verificato che venga lanciata un'eccezione \texttt{TypeError} se l'obiettivo specificato non ha il metodo \texttt{findIndex} & Superato \\
+	TUX15 & Viene verificato che vengano ritornati i dati corretti & Superato \\
+	TUX16 & Viene verificato che se qualcosa va male non venga catturato l'errore & Superato \\
+	TUX17 & Viene verificato che vengano ritornati i dati corretti anche senza un professore & Superato \\
+	TUX18 & Viene verificato che vengano ritornati i dati corretti & Superato \\
+	TUX19 & Viene verificato che se qualcosa va male non venga catturato l'errore & Superato \\
+	TUX20 & Viene verificato che venga ritornata una lista vuota & Superato \\
+	TUX21 & Viene verificato che venga ritornata una lista con più di un elemento & Superato \\
+	TUX22 & Viene verificato che venga ritornata una lista con più di un elemento & Superato \\
+	TUX23 & Viene verificato che se qualcosa va male non venga catturato l'errore & Superato \\
+	TUX24 & Viene verificato che vengano ritornati i dati corretti & Superato \\
+	TUX25 & Viene verificato che se qualcosa va male non venga catturato l'errore & Superato \\
+	TUX26 & Viene verificato che venga usato il flusso corretto & Superato \\
+	TUX27 & Viene verificato che vengano gestiti gli errori & Superato \\
+	TUX28 & Viene verificato che se tutto va bene vengano ritornati i dati del professore & Superato \\
+	TUX29 & Viene verificato che non venga catturato l'errore se qualcosa va male & Superato \\
+	TUX30 & Viene verificato che venga assegnato il voto all'utente corretto & Superato \\
+	TUX31 & Viene verificato che venga settata la lista corretta & Superato \\
+	TUX32 & Viene verificato che se la lista è \texttt{null} o \texttt{undefined} venga settata una lista vuota & Superato \\
+	TUX33 & Viene verificato che non fallisca se la lista è vuota & Superato \\
+	TUX34 & Viene verificato che ritorni la lista ordinata in ordine alfabetico per nome & Superato \\
+	TUX35 & Viene verificato che non fallisca se la lista è vuota & Superato \\
+	TUX36 & Viene verificato che ritorni la lista ordinata in ordine alfabetico per cognome & Superato \\
+	TUX37 & Viene verificato che non fallisca se la lista è vuota & Superato \\
+	TUX38 & Viene verificato che ritorni la lista ordinata per cognome in maniera discendente senza voto & Superato \\
+	TUX39 & Viene verificato che non fallisca se la lista è vuota & Superato \\
+	TUX40 & Viene verificato che ritorni la lista contenente voti non nulli ordinati per voto decrescente & Superato \\
+	TUX41 & Viene verificato che venga composta l'azione corretta & Superato \\
+	TUX42 & Viene verificato che lo stato venga aggiornato in maniera corretta & Superato \\
+	TUX43 & Viene verificato che se metamask non è presente, allora ritorni \texttt{false} & Superato \\
+	TUX44 & Viene verificato che se metamask è presente ma non viene fornito alcun account ritorni \texttt{false} & Superato \\
+	TUX45 & Viene verificato che se metamask non è presente ma viene fornito un account ritorni \texttt{false} & Superato \\
+	TUX46 & Viene verificato che se metamask è presente e viene fornito un account ritorni \texttt{true} & Superato \\
+	TUX47 & Viene verificato che venga ritornato l'\texttt{initialState} corretto & Superato \\
+	TUX48 & Viene verificato che quando viene fatto il dispatch dell'azione \texttt{NOT\_FOUND} il campo present venga settato a \texttt{false}  & Superato \\
+	TUX49 & Viene verificato che quando viene fatto il dispatch dell'azione \texttt{SET\_ADDRESS} venga settato l'indirizzo & Superato \\
+	TUX50 & Viene verificato che quando viene fatto il dispatch dell'azione \texttt{LOGOUT} venga settato lo stato allo stato iniziale & Superato \\
+	TUX51 & Viene verificato che quando viene fatto il dispatch dell'azione \texttt{LOGIN} venga settato il campo present a \texttt{true} & Superato \\
+	TUX52 & Viene verificato che quando non è fornito un indirizzo ritorni lo stato non mutato & Superato \\
+	TUX53 & Viene verificato che venga settata la lista corretta & Superato \\
+	TUX54 & Viene verificato che se la lista è \texttt{null} o \texttt{undefined} allora sia settata una lista vuota & Superato \\
+	TUX55 & Viene verificato che vengano ritornati gli esami ordinati per codice crescente & Superato \\
+	TUX56 & Viene verificato che vengano ritornati gli esami ordinati per codice decrescente & Superato \\
+	TUX57 & Viene verificato che vengano ritornati gli esami ordinati per corso in ordine crescente & Superato \\
+	TUX58 & Viene verificato che vengano ritornati gli esami ordinati per corso in ordine decrescente & Superato \\
+	
 	\hiderowcolors
 	\caption{Test di unità}
 \end{longtable}
@@ -258,70 +478,289 @@
 	TUS83 & Course::getExamNumber(), Course::addNewExam()\\
 	TUS84 & Course::addNewExam()\\
 	\hhline{==}
+	TUR1 & PageContainer::render() \\ 
+	TUR2 & PageContainer::render() \\ 
+	TUR3 & RoutesFactory::routes() \\ 
+	TUR4 & RoutesFactory::routes() \\ 
+	TUR5 & RoutesFactory::routes() \\ 
+	TUR6 & RoutesFactory::routes() \\ 
+	TUR7 & RoutesFactory::routes() \\ 
+	TUR8 & RoutesFactory::routes() \\ 
+	TUR9 & RoutesFactory::routes() \\ 
+	TUR10 & AdminCourseExams::render() \\ 
+	TUR11 & AdminCourseExams::constructor() \\ 
+	TUR12 & AdminCourseExams::showDetails() \\ 
+	TUR13 & AdminCourseExams::addExamBuilder() \\ 
+	TUR14 & AdminCourseExams::getExamsByAddress() \\ 
+	TUR15 & AdminCourseExams::connect() \\ 
+	TUR16 & AdminCourseExams::mapDispatchToProps() \\ 
+	TUR17 & AdminCourses::render() \\ 
+	TUR18 & AdminCourses::constructor() \\ 
+	TUR19 & AdminCourses::tableData() \\ 
+	TUR20 & AdminCourses::validateCourse() \\ 
+	TUR21 & AdminCourses::validateCourse() \\ 
+	TUR22 & AdminCourses::connect() \\ 
+	TUR23 & AdminCourses::mapDispatchToProps() \\ 
+	TUR24 & AdminExams::render() \\ 
+	TUR25 & AdminExams::render() \\ 
+	TUR26 & AdminExams::render() \\ 
+	TUR27 & AdminExams::constructor() \\ 
+	TUR28 & AdminExams::componentWillReceiveProps() \\ 
+	TUR29 & AdminExams::viewDetails() \\ 
+	TUR30 & AdminExams::connect() \\ 
+	TUR31 & AdminExams::mapDispatchToProps() \\ 
+	TUR32 & ConfirmStudentUser::render() \\ 
+	TUR33 & ConfirmStudentUser::render() \\ 
+	TUR34 & ConfirmStudentUser::constructor() \\ 
+	TUR35 & ConfirmStudentUser::viewConfirm()() \\ 
+	TUR36 & ConfirmStudentUser::closeConfirm()() \\ 
+	TUR37 & ConfirmStudentUser::viewDeny()() \\ 
+	TUR38 & ConfirmStudentUser::closeDeny()() \\ 
+	TUR39 & ConfirmStudentUser::connect() \\ 
+	TUR40 & ConfirmStudentUser::mapDispatchToProps() \\ 
+	TUR41 & ConfirmTeacherUser::render() \\ 
+	TUR42 & ConfirmTeacherUser::render() \\ 
+	TUR43 & ConfirmTeacherUser::constructor() \\ 
+	TUR44 & ConfirmTeacherUser::viewConfirm() \\ 
+	TUR45 & ConfirmTeacherUser::closeConfirm() \\ 
+	TUR46 & ConfirmTeacherUser::viewDeny() \\ 
+	TUR47 & ConfirmTeacherUser::closeDeny() \\ 
+	TUR48 & ConfirmTeacherUser::connect() \\ 
+	TUR49 & ConfirmTeacherUser::mapDispatchToProps() \\ 
+	TUR50 & ExamDetails::render() \\ 
+	TUR51 & ExamDetails::constructor() \\ 
+	TUR52 & ExamDetails::render() \\ 
+	TUR53 & ExamDetails::componentWillReceiveProps() \\ 
+	TUR54 & ExamDetails::teacher() \\ 
+	TUR55 & ExamDetails::teacher() \\ 
+	TUR56 & ExamDetails::showAssignTeacher() \\ 
+	TUR57 & ExamDetails::notDelete() \\ 
+	TUR58 & ExamDetails::assTeacher() \\ 
+	TUR59 & ExamDetails::moreDetails() \\ 
+	TUR60 & ExamDetails::connect() \\ 
+	TUR61 & ExamDetails::mapDispatchToProps() \\ 
+	TUR62 & Index::render() \\ 
+	TUR63 & SystemUsers::render() \\ 
+	TUR64 & SystemUsers::render() \\ 
+	TUR65 & SystemUsers::constructor() \\ 
+	TUR66 & SystemUsers::viewDeleteTeacher() \\ 
+	TUR67 & SystemUsers::closeDeleteTeacher() \\ 
+	TUR68 & SystemUsers::viewDeleteStudent() \\ 
+	TUR69 & SystemUsers::closeDeleteStudent() \\ 
+	TUR70 & SystemUsers::connect() \\ 
+	TUR71 & SystemUsers::mapDispatchToProps() \\ 
+	TUR72 & SystemUsers::mapDispatchToProps() \\ 
+	TUR73 & SystemUsers::mapDispatchToProps() \\ 
+	TUR74 & AlertDismissable::render() \\ 
+	TUR75 & AlertDismissable::render() \\ 
+	TUR76 & AlertDismissable::render() \\ 
+	TUR77 & AlertDismissable::render() \\ 
+	TUR78 & AlertDismissable::render() \\ 
+	TUR79 & AlertDismissable::handleDismiss() \\ 
+	TUR80 & CardWithIcon::render() \\ 
+	TUR81 & CardWithIcon::render() \\ 
+	TUR82 & CardWithIcon::render() \\ 
+	TUR83 & CardWithIcon::render() \\ 
+	TUR84 & CardWithIcon::render() \\ 
+	TUR85 & CardWithIcon::render() \\ 
+	TUR86 & ErrorTaker::render() \\ 
+	TUR87 & ErrorTaker::render() \\ 
+	TUR88 & ErrorTaker::componentDidCatch() \\ 
+	TUR89 & Field::render() \\ 
+	TUR90 & Field::render() \\ 
+	TUR91 & Field::render() \\ 
+	TUR92 & Field::render() \\ 
+	TUR93 & Field::getValidationStateString() \\ 
+	TUR94 & Footer::render() \\ 
+	TUR95 & Footer::render() \\ 
+	TUR96 & Form::render() \\ 
+	TUR97 & Form::allValidFields() \\ 
+	TUR98 & LoadingSpinner::render() \\ 
+	TUR99 & LoadingSpinner::render() \\ 
+	TUR100 & Message::render() \\ 
+	TUR101 & Message::render() \\ 
+	TUR102 & Message::render() \\ 
+	TUR103 & Message::render() \\ 
+	TUR104 & Message::render() \\ 
+	TUR105 & Message::render() \\ 
+	TUR106 & Message::render() \\ 
+	TUR107 & ModalForm::render() \\ 
+	TUR108 & ModalForm::constructor() \\ 
+	TUR109 & ModalForm::constructor() \\ 
+	TUR110 & ModalForm::componentWillReceiveProps() \\ 
+	TUR111 & ModalForm::handle() \\ 
+	TUR112 & ModalForm::close() \\ 
+	TUR113 & ModalForm::render() \\ 
+	TUR114 & ModalForm::render() \\ 
+	TUR115 & ModalForm::render() \\ 
+	TUR116 & NavbarCustom::() \\ 
+	TUR117 & NavbarCustom::() \\ 
+	TUR118 & NavbarCustom::() \\ 
+	TUR119 & NavbarCustom::() \\ 
+	TUR120 & NavbarCustom::() \\ 
+	TUR121 & TemplateButton::() \\ 
+	TUR122 & TemplateButton::() \\ 
+	TUR123 & TemplateButton::() \\ 
+	TUR124 & utils::generateKey() \\ 
+	TUR125 & utils::existValue() \\ 
+	TUR126 & utils::existValue() \\ 
+	TUR127 & utils::notNullValue() \\ 
+	TUR128 & utils::notNullValue() \\ 
+	TUR129 & utils::validEthAddress() \\ 
+	TUR130 & utils::moreThanCurrentYear() \\ 
+	TUR131 & utils::validGrade() \\ 
+	TUR132 & utils::alwaysTrue() \\ 
+	TUR133 & Help::render() \\ 
+	TUR134 & Index::render() \\ 
+	TUR135 & Index::render() \\ 
+	TUR136 & Index::render() \\ 
+	TUR137 & Index::render() \\ 
+	TUR138 & Index::connect() \\ 
+	TUR139 & Index::mapDispatchToProps() \\ 
+	TUR140 & License::render() \\ 
+	TUR141 & LoginPage::render() \\ 
+	TUR142 & LoginPage::render() \\ 
+	TUR143 & LoginPage::render() \\ 
+	TUR144 & LoginPage::render() \\ 
+	TUR145 & LoginPage::render() \\ 
+	TUR146 & LoginPage::render() \\ 
+	TUR147 & LoginPage::render() \\ 
+	TUR148 & LoginPage::connect() \\ 
+	TUR149 & LoginPage::mapDispatchToProps() \\ 
+	TUR150 & Logout::render() \\ 
+	TUR151 & NotFound::render() \\ 
+	TUR152 & Price::render() \\ 
+	TUR153 & Price::constructor() \\ 
+	TUR154 & Price::componentDidMount() \\ 
+	TUR155 & RedirectToHome::render() \\ 
+	TUR156 & RedirectToHome::componentDidMount() \\ 
+	TUR157 & Register::render() \\ 
+	TUR158 & Register::constructor() \\ 
+	TUR159 & Register::componentDidMount() \\ 
+	TUR160 & Register::addRole() \\ 
+	TUR161 & Register::addRole() \\ 
+	TUR162 & Register::addStudent() \\ 
+	TUR163 & Register::connect() \\ 
+	TUR164 & Register::mapDispatchToProps() \\ 
+	TUR165 & AdminRoutes() \\ 
+	TUR166 & CommonRoutes() \\ 
+	TUR167 & PublicRoutes() \\ 
+	TUR168 & StudentRoute() \\ 
+	TUR169 & TeacherRoutes() \\ 
+	TUR170 & UniversityRoutes() \\ 
+	TUR171 & PageTableForm::render() \\ 
+	TUR172 & PageTableForm::constructor() \\ 
+	TUR173 & PageTableForm::refreshData() \\ 
+	TUR174 & PageTableForm::getRows() \\ 
+	TUR175 & PageTableForm::componentWillMount() \\ 
+	TUR176 & PageTableForm::getRow() \\
+	TUR177 & Student::Index::render() \\
+	TUR178 & Student::Index::render() \\
+	TUR179 & Student::Index::connect() \\
+	TUR180 & Student::Index::mapDispatchToProps() \\
+	TUR181 & OptionalExams::render() \\
+	TUR182 & OptionalExams::render() \\
+	TUR183 & OptionalExams::constructor() \\
+	TUR184 & OptionalExams::connect() \\
+	TUR185 & OptionalExams::mapDispatchToProps() \\
+	TUR186 & OptionalExams::mapDispatchToProps() \\
+	TUR187 & StudentExam::render() \\
+	TUR188 & StudentExam::render() \\
+	TUR189 & StudentExam::connect() \\
+	TUR190 & StudentExam::mapDispatchToProps() \\
+	TUR191 & Teacher::Index::render() \\
+	TUR192 & Teacher::Index::render() \\
+	TUR193 & TeacherExams::render() \\
+	TUR194 & TeacherExams::getMyAssignedExamsAddr() \\
+	TUR195 & TeacherExams::connect() \\
+	TUR196 & TeacherExams::mapDispatchToProps() \\
+	TUR197 & TeacherExamStudents::render() \\
+	TUR198 & TeacherExamStudents::openModal() \\
+	TUR199 & TeacherExamStudents::addGradeBuilder() \\
+	TUR200 & TeacherExamStudents::connect() \\
+	TUR201 & TeacherExamStudents::mapDispatchToProps() \\
+	TUR202 & TeacherExamStudents::mapDispatchToProps() \\
+	TUR203 & University::Index::render() \\
+	TUR204 & UniversityAcademic::render() \\
+	TUR205 & UniversityAcademic::viewDelete() \\
+	TUR206 & UniversityAcademic::notDelete() \\
+	TUR207 & UniversityAcademic::closeDelete() \\
+	TUR208 & UniversityAcademic::validateYear() \\
+	TUR209 & UniversityAcademic::validateYear() \\
+	TUR210 & UniversityAcademic::closeErrorMessage() \\
+	TUR211 & UniversityAcademic::connect() \\
+	TUR212 & UniversityAcademic::mapDispatchToProps() \\
+	TUR213 & UniversityAcademic::mapDispatchToProps() \\
+	TUR214 & UniversityAcademic::mapDispatchToProps() \\
+	TUR215 & UniversityAdmin:render()  \\
+	TUR216 & UniversityAdmin:viewDelete() \\
+	TUR217 & UniversityAdmin:viewDelete() \\
+	TUR218 & UniversityAdmin:notDelete() \\
+	TUR219 & UniversityAdmin:closeDelete() \\
+	TUR220 & UniversityAdmin:connect() \\
+	TUR221 & UniversityAdmin:mapDispatchToProps() \\
+	TUR222 & UniversityAdmin:mapDispatchToProps() \\
+	TUR223 & UniversityAdmin:mapDispatchToProps() \\
+	
 	\hhline{==}
-	TUX1 & AdminEmployerSaga::addAdmin() \\
-	TUX2 & AdminEmployerSaga::addAdmin() \\
-	TUX3 & AdminEmployerSaga::removeAdmin() \\
-	TUX4 & AdminEmployerSaga::removeAdmin() \\
-	TUX5 & AdminEmployerSaga::getAllAdmins() \\
-	TUX6 & BookingSaga::loadCourses() \\
-	TUX7 & BookingSaga::loadCourses() \\
-	TUX8 & BookingSaga::signUp() \\
-	TUX9 & BookingSaga::signUp() \\
-	TUX10 & BookingSaga::signUp() \\
-	TUX11 & EvaluatorSaga::getStudentData() \\
-	TUX12 & EvaluatorSaga::getStudentData() \\
-	TUX13 & EvaluatorSaga::getList() \\
-	TUX14 & EvaluatorSaga::getList() \\
-	TUX15 & EvaluatorSaga::getList() \\
-	TUX16 & EvaluatorSaga::assignVote() \\
-	TUX17 & EvaluatorSaga::assignVote() \\
-	TUX18 & ManageExamsSaga::getAllExams() \\
-	TUX19 & ManageExamsSaga::getExamsByCourse() \\
-	TUX20 & ManageExamsSaga::getTeachers() \\
-	TUX21 & ManageExamsSaga::addNewExam() \\
-	TUX22 & ManageExamsSaga::associateProfessorToCourseExam() \\
-	TUX23 & ManageExamsSaga::associateProfessorToExam() \\
-	TUX24 & ManageYearsSaga::getAllYears() \\
-	TUX25 & ManageYearsSaga::getAllYears() \\
-	TUX26 & ManageYearsSaga::addYear() \\
-	TUX27 & ManageYearsSaga::removeEmptyYear() \\
-	TUX28 & SessionSaga::performLogin() \\
-	TUX29 & TeacherExamSaga::getList() \\
-	TUX30 & TeacherExamSaga::getExamData() \\
-	TUX31 & TeacherExamSaga::getExamData() \\
-	TUX32 & TeacherExamSaga::getList() \\
-	TUX33 & TeacherExamSaga::getList() \\
-	TUX34 & CourseSaga::addCourse() \\
-	TUX35 & CourseSaga::addCourse() \\
-	TUX36 & CourseSaga::getCourses() \\
-	TUX37 & StudentSaga::getExams() \\
-	TUX38 & StudentSaga::getExamsCredits() \\
-	TUX39 & StudentSaga::getExamsCredits() \\
-	TUX40 & StudentSaga::enrollToExam() \\
-	TUX41 & AdminSaga::deleteUser() \\
-	TUX42 & AdminSaga::deleteUser() \\
-	TUX43 & AdminSaga::denyUser() \\
-	TUX44 & AdminSaga::denyUser() \\
-	TUX45 & AdminSaga::approveUser() \\
-	TUX46 & AdminSaga::approveUser() \\
-	TUX47 & AdminSaga::approveUser() \\
-	TUX48 & AdminSaga::approveUser() \\
-	TUX49 & -- \\
-	TUX50 & js\_helpers::range() \\
-	TUX51 & js\_helpers::range() \\
-	TUX52 & js\_helpers::range() \\
-	TUX53 & js\_helpers::range() \\
-	TUX54 & js\_helpers::copyNPush() \\
-	TUX55 & js\_helpers::copyNPush() \\
-	TUX56 & js\_helpers::copyNPush() \\
-	TUX57 & js\_helpers::copyNPop() \\
-	TUX58 & js\_helpers::copyNPop() \\
-	TUX59 & js\_helpers::copyNPop() \\
-	TUX60 & js\_helpers::updateObjInArr() \\
-	TUX61 & js\_helpers::updateObjInArr() \\
-	TUX62 & js\_helpers::updateObjInArr() \\
-	TUX63 & js\_helpers::updateObjInArr() \\
+	TUX1 & js\_helpers::range() \\
+	TUX2 & js\_helpers::range() \\
+	TUX3 & js\_helpers::range() \\
+	TUX4 & js\_helpers::range() \\
+	TUX5 & js\_helpers::copyNPush() \\
+	TUX6 & js\_helpers::copyNPush() \\
+	TUX7 & js\_helpers::copyNPush() \\
+	TUX8 & js\_helpers::copyNPop() \\
+	TUX9 & js\_helpers::copyNPop() \\
+	TUX10 & js\_helpers::copyNPop() \\
+	TUX11 & js\_helpers::updateObjInArr() \\
+	TUX12 & js\_helpers::updateObjInArr() \\
+	TUX13 & js\_helpers::updateObjInArr() \\
+	TUX14 & js\_helpers::updateObjInArr() \\
+	TUX15 & getters::getExamData() \\
+	TUX16 & getters::getExamData() \\
+	TUX17 & getters::getExamData() \\
+	TUX18 & getters::getTeacherData() \\
+	TUX19 & getters::getTeacherData() \\
+	TUX20 & getters::getCourseExamsList() \\
+	TUX21 & getters::getCourseExamsList() \\
+	TUX22 & getters::getCourseExamsList() \\
+	TUX23 & getters::getCourseExamsList() \\
+	TUX24 & getters::getCourseData() \\
+	TUX25 & getters::getCourseData() \\
+	TUX26 & AdminEmployerSaga::getAllAdmins() \\
+	TUX27 & AdminEmployerSaga::getAllAdmins() \\
+	TUX28 & ManageExamsSaga::associateProfessor() \\
+	TUX29 & ManageExamsSaga::associateProfessor() \\
+	TUX30 & Evaluator::creators::setVote() \\
+	TUX31 & Evaluator::creators::setList() \\
+	TUX32 & Evaluator::creators::setList() \\
+	TUX33 & Evaluator::selectors::studentByName() \\
+	TUX34 & Evaluator::selectors::studentByName() \\
+	TUX35 & Evaluator::selectors::studentBySurname()\\
+	TUX36 & Evaluator::selectors::studentBySurname() \\
+	TUX37 & Evaluator::selectors::studentWithoutVote() \\
+	TUX38 & Evaluator::selectors::studentWithoutVote() \\
+	TUX39 & Evaluator::selectors::studentByVotePresence() \\
+	TUX40 & Evaluator::selectors::studentByVotePresence() \\
+	TUX41 & Evaluator::creators::setExam() \\
+	TUX42 & Evaluator::creators::setExam() \\
+	TUX43 & Metamask::selectors::logged() \\
+	TUX44 & Metamask::selectors::logged() \\
+	TUX45 & Metamask::selectors::logged() \\
+	TUX46 & Metamask::selectors::logged() \\
+	TUX47 & Metamask::reducer() \\
+	TUX48 & Metamask::reducer() \\
+	TUX49 & Metamask::reducer() \\
+	TUX50 & Metamask::reducer() \\
+	TUX51 & Metamask::reducer() \\
+	TUX52 & Metamask::reducer() \\
+	TUX53 & TeacherExam::creators::setList() \\
+	TUX54 & TeacherExam::creators::setList() \\
+	TUX55 & TeacherExam::selectors::examsByCode() \\
+	TUX56 & TeacherExam::selectors::examsByCode() \\
+	TUX57 & TeacherExam::selectors::examsByCourse() \\
+	TUX58 & TeacherExam::selectors::examsByCourse() \\
 	\hiderowcolors
 	\caption{Tracciamento test di unità - metodi}
 \end{longtable}

@@ -11,7 +11,56 @@
 	\color{CHeaderText}\textbf{Descrizione} & 
 	\color{CHeaderText}\textbf{Stato}\\
 	\endhead
-	TI1 & Ciao & Superato \\ 
+	TI1 & Viene verificato che venga aggiunto correttamente l'admin fornito & Superato \\ 
+	TI2 & Viene verificato che se viene aggiunto un admin che esiste già, questo fallisca in maniera controllata & Superato \\
+	TI3 & Viene verificato che venga rimosso l'admin corretto & Superato \\
+	TI4 & Viene verificato che non possa essere rimosso un admin che non esiste & Superato \\
+	TI5 & Viene verificato che venga ritornata la lista degli admin & Superato \\
+	TI6 & Viene verificato che se non ci sono corsi, venga ritornata una lista vuota & Superato \\
+	TI7 & Viene verificato che venga ritornata la lista dei corsi corretta & Superato \\
+	TI8 & Viene verificato che quando il fallimento della registrazione fallisce venga chiamato il \texttt{reducer} & Superato \\
+	TI9 & Viene verificato che venga fatto il login di uno studente dopo che abbia fatto la registrazione & Superato \\
+	TI10 & Viene verificato che venga fatto il login di un professore dopo che abbia fatto la registrazione & Superato \\
+	TI11 & Viene verificato che venga lanciato un errore se uno studente non esiste & Superato \\
+	TI12 & Viene verificato che i dati di uno studente, se esiste, vengano correttamente riuniti & Superato \\
+	TI13 & Viene verificato che se non si riesce a ottenere uno studente, allora fallisca & Superato \\
+	TI14 & Viene verificato che venga ritornata una lista vuota & Superato \\
+	TI15 & Viene verificato che venga ritornata una lista & Superato \\
+	TI16 & Viene verificato che se alcuni parametri non sono corretti, allora fallisca in modo controllato & Superato \\
+	TI17 & Viene verificato che l'aggiornamento della lista sia fatto in modo corretto e che venga assegnato il voto & Superato \\
+	TI18 & Viene verificato che venga ritornata la lista di tutti gli esami presenti nell'anno solare fornito & Superato \\
+	TI19 & Viene verificato che venga ritornata la lista di tutti gli esami di un corso dato l'indirizzo & Superato \\
+	TI20 & Viene verificato che venga ritornata la lista di tutti i professori attivi & Superato \\
+	TI21 & Viene verificato che venga creato un nuovo esame e che venga notificato il successo dell'operazione & Superato \\
+	TI22 & Viene verificato che possa venir assegnato un professore a un esame presente nella lista degli esami dei corsi & Superato \\
+	TI23 & Viene verificato che possa venir associato un professore a un esame presente nella lista di tutti gli esami & Superato \\
+	TI24 & Viene verificato che venga ritornata una lista vuota & Superato \\
+	TI25 & Viene verificato che venga ritornata la lista corretta & Superato \\
+	TI26 & Viene verificato che venga aggiunto l'anno dato & Superato \\
+	TI27 & Viene verificato che venga rimosso un anno vuoto & Superato \\
+	TI28 & Viene verificato che venga effettuato il login con il ruolo corretto & Superato \\
+	TI29 & Viene verificato che se l'utente non ha il permesso l'azione fallisca & Superato \\
+	TI30 & Viene verificato che venga lanciato un errore se il ritorno di dati di un esame fallisce & Superato \\
+	TI31 & Viene verificato che vengano ritornati i dati corretti di un singolo esame & Superato \\
+	TI32 & Viene verificato che se il ritorno di dati di un singolo esame fallisce, allora l'aziona fallisca in modo controllato & Superato \\
+	TI33 & Viene verificato che vengano ritornati tutti gli esami & Superato \\
+	TI34 & Viene verificato che venga aggiunto un corso & Superato \\
+	TI35 & Viene verificato che non possa essere aggiunto un corso se è già nella lista dei corsi & Superato \\
+	TI36 & Viene verificato che venga ritornata la lista dei corsi & Superato \\
+	TI37 & Viene verificato che vengano caricati tutti gli esami & Superato \\
+	TI38 & Viene verificato che vengano dati tutti i crediti dello studenti & Superato \\
+	TI39 & Viene verificato che i crediti vengano settati a 0 & Superato \\
+	TI40 & Viene verificato che uno studente possa iscriversi a un esame & Superato \\
+	TI41 & Viene verificato che venga rimosso uno studente & Superato \\
+	TI42 & Viene verificato che venga rimosso un professore & Superato \\
+	TI43 & Viene verificato che venga rifiutato uno studente & Superato \\
+	TI44 & Viene verificato che venga rifiutato un professore & Superato \\
+	TI45 & Viene verificato che venga confermato lo studente selezionato & Superato \\
+	TI46 & Viene verificato che venga confermato il professore selezionato & Superato \\
+	TI47 & Viene verificato che fallisca l'accettazione di uno studente se non è in lista d'attesa & Superato \\
+	TI48 & Viene verificato che fallisca l'accettazione di un professore se non è in lista d'attesa & Superato \\ 
+	TI49 & Viene verificato che se web3 non è funzionante, fallisca in modo controllato & Superato \\
+	TI50 & Viene verificato venga fatto il render senza andare in crash & Superato \\
 	\hiderowcolors
 	\caption{Test di integrazione}
 \end{longtable}
@@ -22,7 +71,56 @@
 	\color{CHeaderText}\textbf{Codice} & 
 	\color{CHeaderText}\textbf{Componente} \\
 	\endhead
-	TI1 & Ciao \\ 
+	TI1 & AdminEmployerSaga::addAdmin \\
+	TI2 & AdminEmployerSaga::addAdmin \\
+	TI3 & AdminEmployerSaga::removeAdmin \\
+	TI4 & AdminEmployerSaga::removeAdmin \\
+	TI5 & AdminEmployerSaga::getAllAdmins \\
+	TI6 & BookingSaga::loadCourses \\
+	TI7 & BookingSaga::loadCourses \\
+	TI8 & BookingSaga::signUp \\
+	TI9 & BookingSaga::signUp \\
+	TI10 & BookingSaga::signUp \\
+	TI11 & EvaluatorSaga::getStudentData \\
+	TI12 & EvaluatorSaga::getStudentData \\
+	TI13 & EvaluatorSaga::getList \\
+	TI14 & EvaluatorSaga::getList \\
+	TI15 & EvaluatorSaga::getList \\
+	TI16 & EvaluatorSaga::assignVote \\
+	TI17 & EvaluatorSaga::assignVote \\
+	TI18 & ManageExamsSaga::getAllExams \\
+	TI19 & ManageExamsSaga::getExamsByCourse \\
+	TI20 & ManageExamsSaga::getTeachers \\
+	TI21 & ManageExamsSaga::addNewExam \\
+	TI22 & ManageExamsSaga::associateProfessorToCourseExam \\
+	TI23 & ManageExamsSaga::associateProfessorToExam \\
+	TI24 & ManageYearsSaga::getAllYears \\
+	TI25 & ManageYearsSaga::getAllYears \\
+	TI26 & ManageYearsSaga::addYear \\
+	TI27 & ManageYearsSaga::removeEmptyYear \\
+	TI28 & SessionSaga::performLogin \\
+	TI29 & TeacherExamSaga::getList \\
+	TI30 & TeacherExamSaga::getExamData \\
+	TI31 & TeacherExamSaga::getExamData \\
+	TI32 & TeacherExamSaga::getList \\
+	TI33 & TeacherExamSaga::getList \\
+	TI34 & CourseSaga::addCourse \\
+	TI35 & CourseSaga::addCourse \\
+	TI36 & CourseSaga::getCourses \\
+	TI37 & StudentSaga::getExams \\
+	TI38 & StudentSaga::getExamsCredits \\
+	TI39 & StudentSaga::getExamsCredits \\
+	TI40 & StudentSaga::enrollToExam \\
+	TI41 & AdminSaga::deleteUser \\
+	TI42 & AdminSaga::deleteUser \\
+	TI43 & AdminSaga::denyUser \\
+	TI44 & AdminSaga::denyUser \\
+	TI45 & AdminSaga::approveUser \\
+	TI46 & AdminSaga::approveUser \\
+	TI47 & AdminSaga::approveUser \\
+	TI48 & AdminSaga::approveUser \\
+	TI49 & -- \\
+	TI50 & page::render \\
 	\hiderowcolors
 	\caption{Tracciamento test di integrazione - componenti}
 \end{longtable}

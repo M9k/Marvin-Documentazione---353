@@ -2,7 +2,11 @@
 
 \begin{document}
 
-\chapter{Test di sistema}
+\chapter{Test di sistema e validazione}
+A causa della componente Metamask, non accessibile, non è possibile effettuare test di sistema.
+Per i test di validazione, ogni scenario di setup presuppone che il server node di test sia avviato senza errori sulla porta 8080 e che il tester possegga diversi account metamask con crediti disponibili sulla blockchain fittizia.
+Il tester inoltre possiede l’account che ha effettuato il deploy dei contratti sulla rete, avendo la possibilità di effettuare il login come utente Universitario.
+La specifica degli Attori (utenti) e dei casi d’uso è descritta nel documento Analisi Dei Requisiti V4.0.0.
 
 \rowcolors{2}{CRighePari}{CRigheDispari}
 \begin{longtable}[H]{P{2cm}P{8.5cm}P{3cm}}
@@ -11,9 +15,9 @@
 	\color{CHeaderText}\textbf{Descrizione} & 
 	\color{CHeaderText}\textbf{Stato}\\
 	\endhead
-	TS1 & Ciao & Superato \\ 
+	TVnumerorequisito & Ciao & Superato \\ 
 	\hiderowcolors
-	\caption{Test di sistema}
+	\caption{Test di validazione}
 \end{longtable}
 
 \rowcolors{2}{CRighePari}{CRigheDispari}
@@ -22,9 +26,9 @@
 	\color{CHeaderText}\textbf{Codice} & 
 	\color{CHeaderText}\textbf{Requisito} \\
 	\endhead
-	TS1 & Ciao \\ 
+	TVnumerorequisito & Ciao \\ 
 	\hiderowcolors
-	\caption{Tracciamento test di sistema - requisito}
+	\caption{Tracciamento test di validazione - requisito}
 \end{longtable}
 
 \end{document}

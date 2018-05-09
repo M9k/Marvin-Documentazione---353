@@ -24,7 +24,7 @@
 	TUS11 & Viene verificato che il numero dell'admin sia quello corretto & Superato \\
 	TUS12 & Viene verificato che venga ritornato l'admin corretto & Superato \\
 	TUS13 & Viene verificato che l'admin venga rimosso & Superato \\
-	TUS14 & Viene verificato che non venga aggiunto un nuovo admin se un altro admin con lo stesso indirizzo è gia presente & Superato \\
+	TUS14 & Viene verificato che non venga aggiunto un nuovo admin se un altro admin con lo stesso indirizzo è già presente & Superato \\
 	TUS15 & Viene verificato che solo il fondatore possa aggiungere un admin  & Superato \\
 	TUS16 & Viene verificato che solo il fondatore possa rimuovere un admin & Superato \\
 	TUS17 & Viene verificato che non sia possibile rimuovere un admin non valido & Superato \\
@@ -95,23 +95,24 @@
 	TUS82 & Viene verificato ch il corso abbia i dati corretti & Superato \\
 	TUS83 & Viene verificato che possa essere aggiunto un esame & Superato \\
 	TUS84 & Viene verificato che solo l'admin possa aggiungere un esame & Superato \\
+	
 	\hhline{===}
-	TUR1 & React & Superato \\ 
-	TUR2 & React & Superato \\ 
-	TUR3 & React & Superato \\ 
-	TUR4 & React & Superato \\ 
-	TUR5 & React & Superato \\ 
-	TUR6 & React & Superato \\ 
-	TUR7 & React & Superato \\ 
-	TUR8 & React & Superato \\ 
-	TUR9 & React & Superato \\ 
-	TUR10 & React & Superato \\ 
-	TUR11 & React & Superato \\ 
-	TUR12 & React & Superato \\ 
-	TUR13 & React & Superato \\ 
-	TUR14 & React & Superato \\ 
-	TUR15 & React & Superato \\ 
-	TUR16 & React & Superato \\ 
+	TUR1 & Viene verificato che renderizzi il componente & Superato \\ 
+	TUR2 & Viene verificato che non renderizzi \texttt{AlertDismissable} se non sono settati i parametri della query & Superato \\ 
+	TUR3 & Viene verificato che vengano ritornate le university routes  & Superato \\ 
+	TUR4 & Viene verificato che vengano ritornate le admin routes  & Superato & Superato \\ 
+	TUR5 & Viene verificato che vengano ritornate le teacher routes  & Superato & Superato \\ 
+	TUR6 & Viene verificato che vengano ritornate le student routes  & Superato & Superato & Superato \\ 
+	TUR7 & Viene verificato che vengano ritornate le routes pubbliche & Superato & Superato & Superato \\ 
+	TUR8 & Viene verificato che vengano ritornate le routes pubbliche per \texttt{UNCONFIRMED\_STUDENT} & Superato & Superato & Superato \\ 
+	TUR9 & Viene verificato che vengano ritornate le routes pubbliche per \texttt{UNCONFIRMED\_TEACHER} & Superato \\ 
+	TUR10 & Viene verificato che venga renderizzato il componente & Superato \\ 
+	TUR11 & Viene verificato che abbia il corretto stato iniziale & Superato \\ 
+	TUR12 & Viene verificato che lo stato cambi quando il bottone \texttt{Details} viene cliccato & Superato \\ 
+	TUR13 & Viene verificato che venga chiamato \texttt{addExamBuilder(objForm)} & Superato \\ 
+	TUR14 & Viene verificato che venga chiamato \texttt{getExamsByAddress()} & Superato \\ 
+	TUR15 & Viene verificato che venga connesso in maniera corretta alle props & Superato \\ 
+	TUR16 & Viene verificato che venga eseguita l'azione corretta & Superato \\ 
 	TUR17 & React & Superato \\ 
 	TUR18 & React & Superato \\ 
 	TUR19 & React & Superato \\ 
@@ -430,22 +431,22 @@
 	TUS83 & Course::getExamNumber(), Course::addNewExam()\\
 	TUS84 & Course::addNewExam()\\
 	\hhline{==}
-	TUR1 & React \\ 
-	TUR2 & React \\ 
-	TUR3 & React \\ 
-	TUR4 & React \\ 
-	TUR5 & React \\ 
-	TUR6 & React \\ 
-	TUR7 & React \\ 
-	TUR8 & React \\ 
-	TUR9 & React \\ 
-	TUR10 & React \\ 
-	TUR11 & React \\ 
-	TUR12 & React \\ 
-	TUR13 & React \\ 
-	TUR14 & React \\ 
-	TUR15 & React \\ 
-	TUR16 & React \\ 
+	TUR1 & PageContainer::render() \\ 
+	TUR2 & PageContainer::render() \\ 
+	TUR3 & RoutesFactory::routes() \\ 
+	TUR4 & RoutesFactory::routes() \\ 
+	TUR5 & RoutesFactory::routes() \\ 
+	TUR6 & RoutesFactory::routes() \\ 
+	TUR7 & RoutesFactory::routes() \\ 
+	TUR8 & RoutesFactory::routes() \\ 
+	TUR9 & RoutesFactory::routes() \\ 
+	TUR10 & AdminCourseExams::render() \\ 
+	TUR11 & AdminCourseExams::showDetails() \\ 
+	TUR12 & AdminCourseExams::showDetails() \\ 
+	TUR13 & AdminCourseExams::addExamBuilder() \\ 
+	TUR14 & AdminCourseExams::getExamsByAddress() \\ 
+	TUR15 & AdminCourseExams::mapStateToProps() \\ 
+	TUR16 & AdminCourseExams::mapDispatchToProps() \\ 
 	TUR17 & React \\ 
 	TUR18 & React \\ 
 	TUR19 & React \\ 

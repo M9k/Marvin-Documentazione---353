@@ -5,13 +5,19 @@
 \graphicspath{{images/}{./images/}}
 %\usepackage{lipsum}
 %\usepackage{tabularx}
-%\usepackage{hyperref} 
+\usepackage{hyperref} 
 \usepackage{fancyhdr}
 \usepackage{eurosym}
 \usepackage{longtable}
 \usepackage[table,xcdraw]{xcolor}
 \usepackage[table]{xcolor}
 \usepackage{xspace}
+\hypersetup {
+	linkcolor = {black},
+	urlcolor = {blue},
+	menucolor = {black},
+	colorlinks = true,
+}
 
 %---------------------------- COPIATI DA STYLE.STY ------------------------------
 
@@ -35,6 +41,7 @@
 
 \newcommand{\setfoot}[2]{\newcommand{\@one}{#1}\newcommand{\@two}{#2}}
 
+\newcommand{\nURI}[1]{{\color{blue}\url{#1}}}
 %\makeatletter \@title \space \textit{v \ver{}.0.0} \makeatother
 \fancypagestyle{plain}{
 	\renewcommand{\headrulewidth}{0.4pt}
@@ -92,9 +99,12 @@
 			\item Verbali interni:
 			\begin{itemize}
 				\item VER-2018-04-29;
+				\item VER-2018-05-09.
 			\end{itemize}
 		\end{itemize}
-		
+		Il codice prodotto è presente al seguente indirizzo:\\
+		\nURI{https://github.com/353swe/Marvin-353}\\
+		Inoltre, all'indirizzo internet \nURI{http://marvin.surge.sh/} può reperire una versione già configurata e funzionante del prodotto.
 		
 		Il gruppo 353 consegna il prodotto richiesto il giorno 11/05/2018,
 		con relativo collaudo, salvo ulteriori accordi, per il giorno 14/05/2018.\\

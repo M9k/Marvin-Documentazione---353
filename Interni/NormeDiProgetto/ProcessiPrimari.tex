@@ -30,7 +30,7 @@ L'analisi dei requisiti ha l'obbiettivo di individuare ed elencare tutti i \citG
 	\item \textbf{Verbali di riunioni esterne};
 	\item \textbf{Casi d'uso}.
 \end{itemize}
-Il risultato di quest'analisi sarà il documento \adr \vruno redatto dagli \alisti, dopo essere stato verificato, al fine di:
+Il risultato di quest'analisi sarà il documento \adr \vrquattro redatto dagli \alisti, dopo essere stato verificato, al fine di:
 \begin{itemize}
 \item Descrivere l'obiettivo del lavoro del gruppo;
 \item Fornire ai Progettisti riferimenti precisi ed affidabili;
@@ -115,7 +115,7 @@ L'architettura definita dovrà avere le seguenti qualità:
 	\item \textbf{Comprensibilità:} affinché possa essere capita dagli stakeholder;
 	\item \textbf{Modularità:} deve essere suddivisa in parti chiare e ben distinte, così che possa essere facilmente manutenibile;
 	\item \textbf{Robustezza:} deve essere capace di sopportare ingressi diversi, sia da parte di utenti che dall'ambiente;
-	\item \textbf{Flessibilità:} deve poter permettere modifiche al variare o all'aggiunta di requisiti senza perdite di performance o doverla restaurare profondamente;
+	\item \textbf{Flessibilità:} deve poter permettere modifiche al variare o all'aggiunta di requisiti senza perdite di performance o senza doverla restaurare profondamente;
 	\item \textbf{Riusabilità:} le sue parti devono poter essere usate in altre applicazioni;
 	\item \textbf{Efficienza:} deve essere pensata in modo da poter ridurre gli sprechi di tempo e spazio;
 	\item \textbf{Affidabilità:} deve avere una elevata capacità di rispettare le specifiche nel tempo;
@@ -162,7 +162,7 @@ Lo scopo dei diagrammi delle classi può essere sintetizzato in:
 	\item Ingegneria diretta e inversa.
 \end{itemize}
 Per creare facilmente i diagrammi delle classi, deve essere creato un file per ogni classe o raggruppamento di classi che dovrà avere estensione \texttt{.iuml}. In questo modo saranno più facilmente manutenibili e modificabili.\\
-Per stabilire le relazioni tra le classi viene creato un'altro file con estensione \texttt{.puml} in modo da avere il diagramma completo.
+Per stabilire le relazioni tra le classi viene creato un altro file con estensione \texttt{.puml} in modo da avere il diagramma completo.
 \paragraph{React}
 Ogni componente React viene rappresentato attraverso un rettangolo tripartito orizzontalmente, così suddiviso:
 \begin{enumerate}
@@ -293,7 +293,7 @@ Ogni package verrà rappresentato tramite un rettangolo con un'etichetta per il 
 \end{figure}
 
 \subsubsection{Diagrammi di sequenza}
-Ogni diagramma di sequenza avrà un senso di lettura verticale dall'alto al basso (verso che indica lo scorrere del tempo). Gli oggetti coinvolti verranno rappresentati tramite un rettangolo, al cui interno si troverà un nome per identificarli nel formato istanza: \texttt{NomeClasse}. Sotto ad ogni istanza si troverà una linea della vita tratteggiata, che sarà sormontata in alcuni tratti da una barra di attivazione che indica i momenti in cui l'oggetto è attivo. Da una barra di attivazione partiranno delle frecce, che rappresentano un messaggio/segnale, verso la linea della vita di oggetti già instanziati o, in alternativa, verso una nuova istanza di classe per crearla. In particolare, verranno utilizzati i seguenti tipi di frecce:
+Ogni diagramma di sequenza avrà un senso di lettura verticale dall'alto al basso (verso che indica lo scorrere del tempo). Gli oggetti coinvolti verranno rappresentati tramite un rettangolo, al cui interno si troverà un nome per identificarli nel formato istanza: \texttt{NomeClasse}. Sotto ad ogni istanza si troverà una linea della vita tratteggiata, che sarà sormontata in alcuni tratti da una barra di attivazione che indica i momenti in cui l'oggetto è attivo. Da una barra di attivazione partiranno delle frecce, che rappresentano un messaggio/segnale, verso la linea della vita di oggetti già istanziati o, in alternativa, verso una nuova istanza di classe per crearla. In particolare, verranno utilizzati i seguenti tipi di frecce:
 \begin{itemize}
 \item  Freccia piena, per indicare un messaggio sincrono: corrisponde alla chiamata di un metodo. Sopra tale freccia si dovrà specificare il metodo invocato secondo il formato \texttt{nomeMetodo(lista parametri formali)};
 \item  Freccia, per indicare un messaggio asincrono (chi invoca il metodo non attende il return);
@@ -318,7 +318,7 @@ Potranno essere inseriti dei commenti nelle sezioni del diagramma che necessitan
 \subsubsection{Diagrammi di attività}
 I diagrammi delle attività conterranno i seguenti elementi collegati sempre da frecce, che verranno indicati con i formalismi indicati:
 \begin{itemize}
-\item  Nodo iniziale, rappresentato da un pallino pieno. \'E il punto da cui inizia l'esecuzione. Genera un token;
+\item  Nodo iniziale, rappresentato da un pallino pieno. \`E il punto da cui inizia l'esecuzione. Genera un token;
 \item  Activity, rappresentata da un rettangolo che ne contiene la descrizione. La descrizione dovrà essere il più breve e concisa possibile, è possibile una sintassi sincopata della frase, composta per lo più da parole chiave. Consuma e produce un token;
 \begin{figure}[H]
 	\centering
@@ -327,13 +327,13 @@ I diagrammi delle attività conterranno i seguenti elementi collegati sempre da 
 	\label{fig:activity}
 \end{figure}
 
-\item Subactivity, rappresentata da un rettangolo che ne contiene il nome (sempre indicato con la lettera maiuscola) e un piccolo tridente nell'angolo in basso a destra. \'E un riferimento ad una sotto attività il cui diagramma viene descritto separatamente. Ogni sottoattività ha un input ed un output;
+\item Subactivity, rappresentata da un rettangolo che ne contiene il nome (sempre indicato con la lettera maiuscola) e un piccolo tridente nell'angolo in basso a destra. \`E un riferimento ad una sotto attività il cui diagramma viene descritto separatamente. Ogni sotto attività ha un input ed un output;
 
-\item Branch, rappresentato da un rombo con una freccia in ingresso e n in uscita. \'E
+\item Branch, rappresentato da un rombo con una freccia in ingresso e n in uscita. \`E
 un punto in cui si può prendere solo uno degli n rami, ognuno dei quali deve avere
 scritta in prossimità la guardia, secondo il formato [guardia]. Consuma e produce
 un token;
-\item Merge, rappresentato da un rombo con n frecce in ingresso e una in uscita. \'E
+\item Merge, rappresentato da un rombo con n frecce in ingresso e una in uscita. \`E
 un punto in cui gli n rami generati da un Branch tornano ad unirsi. Consuma e produce un token;
 \begin{figure}[H]
 	\centering
@@ -342,8 +342,8 @@ un punto in cui gli n rami generati da un Branch tornano ad unirsi. Consuma e pr
 	\label{fig:activitybranch}
 \end{figure}
 
-\item Fork, rappresentato da una linea lunga orizzontale o verticale. \'E un punto in cui l'attività si parallelizza senza vincoli di esecuzione temporale, ha una freccia in ingresso e n in uscita. Consuma un token e ne genera n;
-\item Join, rappresentato da una linea lunga orizzontale o verticale. \'E un punto in cui avviene la sincronizzazione fra processi paralleli, ha n frecce in ingresso e una in uscita. Consuma n token e ne genera uno;
+\item Fork, rappresentato da una linea lunga orizzontale o verticale. \`E un punto in cui l'attività si parallelizza senza vincoli di esecuzione temporale, ha una freccia in ingresso e n in uscita. Consuma un token e ne genera n;
+\item Join, rappresentato da una linea lunga orizzontale o verticale. \`E un punto in cui avviene la sincronizzazione fra processi paralleli, ha n frecce in ingresso e una in uscita. Consuma n token e ne genera uno;
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.4\linewidth]{progettazione/activityparall}
@@ -362,9 +362,9 @@ l'emissione del segnale, la seconda (bloccante) per la ricezione dello stesso.
 \end{figure}
 
 \item Timeout, rappresentato da una clessidra, serve per modellare timeout o eventi ripetuti. I timeout hanno frecce entranti e frecce uscenti, al contrario degli eventi ripetuti che possono avere solo archi uscenti. Di fianco devono avere una descrizione così composta: i timeout devono cominciare con "wait" e le azioni ripetute con "every", di seguito dovrà trovarsi un indicazione temporale o una descrizione in linguaggio naturale breve e concisa;
-\item Nodo di fine flusso, rappresentato da un cerchio vuoto con una X al centro. \'E
+\item Nodo di fine flusso, rappresentato da un cerchio vuoto con una X al centro. \`E
 un punto in cui uno dei rami di esecuzione va a morire, ma l'esecuzione continua comunque sugli altri rami paralleli. Consuma un token;
-\item Nodo finale, rappresentato da due cerchi concentrici di cui il più esterno vuoto e il più interno pieno. \'E il punto da cui termina l'esecuzione. Consuma un token.
+\item Nodo finale, rappresentato da due cerchi concentrici di cui il più esterno vuoto e il più interno pieno. \`E il punto da cui termina l'esecuzione. Consuma un token.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.2\linewidth]{progettazione/endact}

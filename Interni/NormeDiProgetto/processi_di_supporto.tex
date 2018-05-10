@@ -389,10 +389,36 @@ Lo stato dei test può essere:
 	\section{Validazione}
 	\subsection{Descrizione}
 		Il processo di \citGloss{validazione} ha l'obiettivo di verificare che il prodotto sia conforme a quanto pianificato e sia abile nel gestire e minimizzare gli effetti degli errori.\\
-		I passi per compiere l'attività di \citGloss{validazione} sono i seguenti:
-		\begin{figure}[H]
-			\centering
-			\includegraphics[width=1\linewidth]{../../common/images/Validation}
-		\end{figure}
-
+		I passi per compiere l'attività di \citGloss{validazione} sono specificati all'interno del file Steps.pdf posto all'interno della cartella testnpm/validation situata sul repository del codice sorgente. \\
+		Il documento contiene informazioni in forma tabellare è diviso in due parti distinte:
+		\begin{itemize}
+			\item \textbf{Setup steps}: indica alcuni passi comuni per configurare l'ambiente dove verrano svolti i test;
+			\item \textbf{Test Cases}: indica i test da eseguire per validate il prodotto.
+		\end{itemize}
+	\subsection{Setup Steps}
+		Gli step di configurazione sono suddivisi in tabelle composte da:
+		\begin{itemize}
+			\item \textbf{Intestazione}: riga suddivisa in due colonne ove nella prima risiede il codice mentre nella seconda il nome di riferimento dello step;
+			\item \textbf{Contenuto}: riga composta da una sola colonna contenente una lista delle azioni da compiere scritte in modo descrittivo.
+		\end{itemize}
+		Il codice del setup step è formato nel seguente modo: Sx. \\
+		\begin{itemize}
+			\item \textbf{S}: abbreviativo per Setup Step;
+			\item \textbf{x}: numero progressivo.
+		\end{itemize}
+	\subsection{Test Cases}
+		I test cases (casi su cui effettuare validazioni) sono suddivisi in tabelle e contengono le seguenti informazioni:
+		\begin{itemize}
+			\item \textbf{Codice Test}: identificativo del test;
+			\item \textbf{UC}: identificativo del Caso d'uso che soddisfa (fare riferimento al documento AnalisiDeiRequisitiV4.0.0);
+			\item \textbf{Setup}: lista di azioni da effettuare per configurare l'ambiente di test;
+			\item \textbf{Azioni da svolgere}: lista di azioni da svolgere per effettuare il test;
+			\item \textbf{Risultato atteso}: risultato che il sistema deve produrre per considerare il test superato.
+		\end{itemize}
+		Il codice del test deve essere scritto nel formato: TVx, dove:
+		\begin{itemize}
+			\item \textbf{TV}: abbreviazione per Test di Validazione;
+			\item \textbf{x}: numero progressivo.
+		\end{itemize}
+		All'interno della sezione setup è possibile inserire come elemento della lista un riferimento ad uno o più Setup Step specificati nella sezione precedente, riferendosi ad esso con il codice o con il nome di riferimento.
 \end{document}

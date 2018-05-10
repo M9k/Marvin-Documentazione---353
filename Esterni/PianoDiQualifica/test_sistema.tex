@@ -55,18 +55,293 @@ La specifica degli Attori (utenti) e dei casi d’uso è descritta nel documento
 	\color{CHeaderText}\textbf{Descrizione} & 
 	\color{CHeaderText}\textbf{Stato}\\
 	\endhead
-	TVnumerorequisito & Ciao & Superato \\ 
+	TV0 & Viene verificata la visualizzazione della home page & Superato \\
+	TV1 & Viene verificata la visualizzazione della pagina contenente la guida per usare Marvin & Superato \\
+	TV2.1A & Viene verificata il redirect alla pagina home relativa al gestore dell'università & Superato \\
+	TV2.1B & Viene verificata il redirect alla pagina home relativa all'amministratore & Superato \\
+	TV2.1C & Viene verificata il redirect alla pagina home relativa al professore & Superato \\
+	TV2.1D & Viene verificata il redirect alla pagina home relativa allo studente & Superato \\
+	TV2.2 & Viene verificata la visualizzazione del messaggio di errore se l'utente non possiede una chiave & Superato \\ 
+	TV2.3 & Viene verificata la visualizzazione del messaggio di errore se l'utente non possiede Metamask & Superato \\ 
+	TV2.4 & Viene verificata la visualizzazione del messaggio di errore se la chiave dell'utente non è registrata & Superato \\ 
+	TV2.5 & Viene verificata la visualizzazione del messaggio di errore se l'utente non è ancora confermato & Superato \\ 
+	TV3A & Viene verificata la registrazione dell'utente nel ruolo di studente & Superato \\ 
+	TV3B & Viene verificata la registrazione dell'utente nel ruolo di professore & Superato \\ 
+	TV3.1 & Viene verificato il funzionamento del campo "name" & Superato \\ 
+	TV3.2 & Viene verificato il funzionamento del campo "surname" & Superato \\ 
+	TV3.3A & Viene verificato il funzionamento del campo "role" & Superato \\ 
+	TV3.3B & Viene verificato il funzionamento del campo "role" & Superato \\ 
+	TV3.4 & Viene verificato il funzionamento del campo "course" & Superato \\ 
+	TV3.5A & Viene verificata la visualizzazione dell'avviso relativo a un campo non compilato & Superato \\ 
+	TV3.5B & Viene verificata la visualizzazione dell'avviso relativo a un campo non compilato & Superato \\ 
+	TV3.6 & Viene verificata la visualizzazione del nella finestra di Metamask dell'errore relativo ad una operazione invalida & Superato \\ 
+	TV3.7A & Viene verificata la sottomissione di una registrazione invalida & Superato \\ 
+	TV3.7B & Viene verificata la sottomissione di una registrazione invalida & Superato \\ 
+	TV3.8 & Viene verificata la sottomissione di una registrazione errata & Superato \\ 
+	TV4 & Viene verificata la visualizzazione della pagina che descrive come eseguire il logout da Marvin & Superato \\ 
+	TV5 & Viene verificata la visualizzazione della home page di un amministratore & Superato \\ 
+	TV5.1 & Viene verificata la visualizzazione della lista degli utenti approvati & Superato \\ 
+	TV5.1.1 & Viene verificata la visualizzazione di un singolo utente approvato con indirizzo, nome, cognome & Superato \\ 
+	TV5.1.1.1 & Viene verificata la visualizzazione dell'indirizzo di un singolo utente approvato & Superato \\ 
+	TV5.1.1.2 & Viene verificata la visualizzazione del nome di un singolo utente approvato & Superato \\ 
+	TV5.1.1.3 & Viene verificata la visualizzazione del cognome di un singolo utente approvato & Superato \\ 
+	TV5.2 & Viene verificata la visualizzazione lista degli studenti approvati & Superato \\ 
+	TV5.2.1 & Viene verificata la visualizzazione di un singolo studente approvato & Superato \\ 
+	TV5.2.1.1 & Viene verificata la visualizzazione del nome del corso di un singolo studente approvato & Superato \\ 
+	TV5.3 & Viene verificata la visualizzazione della lista degli professori approvati & Superato \\ 
+	TV5.3.1 & Viene verificata la visualizzazione di un singolo professore approvato & Superato \\ 
+	TV5.4 & Viene verificata la visualizzazione della lista degli utenti in attesa di abilitazione & Superato \\ 
+	TV5.4.1 & Viene verificata la visualizzazione di un singolo utente in attesa di abilitazione & Superato \\ 
+	TV5.4.1.1 & Viene verificata la visualizzazione dell'indirizzo di un utente in attesa di abilitazione & Superato \\ 
+	TV5.4.1.2 & Viene verificata la visualizzazione del nome di un utente in attesa di abilitazione & Superato \\ 
+	TV5.4.1.3 & Viene verificata la visualizzazione del cognome di un utente in attesa di abilitazione & Superato \\ 
+	TV5.4.1.4 & Viene verificata la visualizzazione del ruolo di un utente in attesa di abilitazione & Superato \\ 
+	TV5.4.1.5 & Viene verificata la visualizzazione del nome del corso di un utente in attesa di abilitazione & Superato \\ 
+	TV5.5 & Viene verificata l'abilitazione di un utente nel sistema & Superato \\ 
+	TV6.1 & Viene verificata l'aggiunta di un anno accademico & Superato \\ 
+	TV6.1.1 & Viene verificata l'inserimento di un anno solare di riferimento & Superato \\ 
+	TV6.1.2 & Viene verificata la visualizzazione del messaggio di errore relativo ad un anno accademico già presente & Superato \\ 
+	TV6.1.3 & Viene verificata la visualizzazione di un avviso relativo ad un anno accademico non compilato & Superato \\ 
+	TV6.1.4 & Viene verificata la visualizzazione di un avviso relativo ad un anno mal formato & Superato \\ 
+	TV6.2 & Viene verificata la visualizzazione della lista di tutti gli anni accademici presenti nel sistema & Superato \\ 
+	TV6.2.1 & Viene verificata la visualizzazione della lista di tutti gli anni solari relativi agli accademici presenti nel sistema & Superato \\ 
+	TV6.3 & Viene verificata l'eliminazione di un anno accademico, solamente se esso è privo di corsi & Superato \\ 
+	TV7 & Viene verificata la visualizzazione della lista di corsi presenti nel sistema per permettere la loro gestione & Superato \\ 
+	TV7.1 & Viene verificata l'aggiunta di un corso di laurea relativo ad un anno accademico & Superato \\ 
+	TV7.1.1 & Viene verificato l'inserimento della sigla di un anno accademico & Superato \\ 
+	TV7.1.2 & Viene verificata la visualizzazione dell'avviso della sigla mal formata & Superato \\ 
+	TV7.2 & Viene verificata la visualizzazione della lista di corsi presenti nel sistema & Superato \\ 
+	TV7.2.1 & Viene verificata la visualizzazione di un singolo corso & Superato \\ 
+	TV7.2.1.1 & Viene verificato che nel campo "name" sia presente il nome del corso & Superato \\ 
+	TV7.2.1.2 & Viene verificato che nel campo "year" sia presente il l'anno solare del corso & Superato \\ 
+	TV7.3 & Viene verificata la visualizzazione della lista dei corsi di laurea per anno accademico & Superato \\ 
+	TV7.3.1 & Viene verificata la visualizzazione di un singolo corso della lista dei corsi filtrati per anno accademico & Superato \\ 
+	TV7.3.1.1 & Viene verificato che nel campo "name" sia presente il nome del corso di interesse & Superato \\ 
+	TV7.4 & Viene verificata l'aggiunta di un esame ad un corso di laurea & Superato \\ 
+	TV7.4.1 & Viene verificata l'aggiunta di un esame ad un corso di laurea con nome “Analisi” & Superato \\ 
+	TV7.4.2 & Viene verificata l'aggiunta di un esame da 9 CFU ad un corso di laurea & Superato \\ 
+	TV7.4.3 & Viene verificata l'aggiunta di un esame obbligatorio ad un corso di laurea & Superato \\ 
+	TV7.4.4 & Viene verificata la visualizzazione del messaggio di errore relativo ad un nome non valido & Superato \\ 
+	TV7.4.5 & Viene verificata la visualizzazione del messaggio di errore relativo ad un numero crediti non valido & Superato \\ 
+	TV7.5 & Viene verificata la visualizzazione della lista esami in un corso & Superato \\ 
+	TV7.5.1 & Viene verificata la visualizzazione di un singolo esame della lista esami in un corso & Superato \\ 
+	TV7.5.1.1 & Viene verificato che il campo "name" contenga il nome dell'esame di interesse & Superato \\ 
+	TV7.5.1.2 & Viene verificato che il campo "credits" contenga il numero di crediti dell'esame di interesse & Superato \\ 
+	TV7.5.1.3 & Viene verificato che il campo "teacher name" contenga il nome del docente (se presente) relativo all'esame di interesse & Superato \\ 
+	TV7.5.1.4 & Viene verificato che il campo "teacher surname" contenga il cognome del docente (se presente) relativo all'esame di interesse & Superato \\ 
+	TV7.6 & Viene verificata la visualizzazione della lista di tutti gli esami presenti nel sistema & Superato \\ 
+	TV7.6.1 & Viene verificata la visualizzazione di un singolo esame della lista di tutti gli esami presenti nel sistema & Superato \\ 
+	TV7.6.1.1 & Viene verificato che il campo "name" contenga il nome dell'esame di interesse & Superato \\ 
+	TV7.6.1.2 & Viene verificato che il campo “credits” della lista contenga il numero di crediti dell'esame di interesse & Superato \\ 
+	TV7.6.1.3 & Viene verificato che il campo "course name" contenga il nome del corso di laurea dell'esame & Superato \\ 
+	TV7.6.1.4 & Viene verificato che il campo "professor name" contenga il nome del docente (se presente) associato all'esame di interesse & Superato \\ 
+	TV7.6.1.5 & Viene verificato che il campo "professor surname" contenga il cognome del docente (se presente) associato all'esame di interesse & Superato \\ 
+	TV7.7 & Viene verificata la visualizzazione dei dettagli di un esame & Superato \\ 
+	TV7.7.1 & Viene verificato che il campo "name" contenga il nome dell'esame & Superato \\ 
+	TV7.7.2 & Viene verificato che il campo "credits" contenga il numero di crediti dell'esame & Superato \\ 
+	TV7.7.3 & Viene verificato che il campo "course name" contenga il nome del corso di laurea dell'esame & Superato \\ 
+	TV7.7.4 & Viene verificato che il campo "professor name" contenga il nome del docente associato all'esame & Superato \\ 
+	TV7.7.5 & Viene verificato che il campo "professor surname" contenga il cognome del docente associato all'esame & Superato \\ 
+	TV7.7.6 & Viene verificato che il campo "enrolled students" contenga il numero di studenti iscritti all'esame & Superato \\ 
+	TV7.7.7 & Viene verificato che il campo "teacher address" contenga l'indirizzo pubblico del docente associato all'esame & Superato \\ 
+	TV7.8 & Viene verificata la visualizzazione della lista degli anni accademici presenti nel sistema, al fine di filtrare le altre informazioni & Superato \\ 
+	TV7.8.1 & Viene verificata la visualizzazione di un anno accademico dalla lista degli anni accademici presenti nel sistema & Superato \\ 
+	TV7.8.1.1 & Viene verificata la visualizzazione di un anno solare relativo ad un anno accademico & Superato \\ 
+	TV7.9 & Viene verificata la visualizzazione della lista dei professori associabili ad un esame & Superato \\
+	TV7.9.1 & Viene verificata la visualizzazione del nome di un docente da assegnare ad un esame  & Superato \\
+	TV7.9.2 & Viene verificata la visualizzazione del cognome di un docente da assegnare ad un esame  
+	 & Superato \\
+	TV7.9.3 & Viene verificata la visualizzazione dell'indirizzo di un docente da assegnare ad un esame & Superato \\
+	TV8 & Viene verificata la visualizzazione la pagina iniziale del professore & Superato \\
+	TV8.1 & Viene verificata la visualizzazione della lista degli esami
+	 & Superato \\
+	TV8.1.1 & Viene verificata la visualizzazione dei dettagli di un esame & Superato \\
+	TV8.1.1.1 & Viene verificata la visualizzazione della sigla dell'esame sotto "code" & Superato \\
+	TV8.1.1.2 & Viene verificata la visualizzazione della sigla del corso di laurea & Superato \\
+	TV8.2 & Viene verificata la visualizzazione della lista degli studenti iscritti all'esame & Superato \\
+	TV8.2.1 & Viene verificata la visualizzazione di un singolo studente iscritto all'esame & Superato \\
+	TV8.2.1.1 & Viene verificata la visualizzazione dell'indirizzo dello studente & Superato \\
+	TV8.2.1.2 & Viene verificata la visualizzazione del nome dello studente iscritti all'esame & Superato \\
+	TV8.2.1.3 & Viene verificata la visualizzazione del cognome dello studente iscritto all'esame & Superato \\
+	TV8.3.1 & Viene verificato l'inserimento del voto numerico & Superato \\
+	TV8.3.2 & Viene verificata la visualizzazione della sigla del corso di laurea & Superato \\
+	TV8.3.3 & Viene verificata la visualizzazione dell'avviso relativo all'inserimento di un voto non numerico & Superato \\
+	TV8.1.1.2 & Viene verificata la visualizzazione la sigla del corso di laurea & Superato \\
+	TV9 & Viene verificata la visualizzazione della pagina iniziale dello studente & Superato \\
+	TV9.1 & Viene verificata la visualizzazione delle informazioni relative agli esami ai quali è iscritto & Superato \\
+	TV9.1.1 & Viene verificata la visualizzazione delle informazioni di un esame al quale è iscritto & Superato \\
+	TV9.1.1.1 & Viene verificata la visualizzazione della sigla dell'esame & Superato \\
+	TV9.1.1.2 & Viene verificata la visualizzazione del numero di crediti dell'esame & Superato \\
+	TV9.1.1.3 & Viene verificata la visualizzazione della obbligatorietà dell'esame & Superato \\
+	TV9.1.1.4 & Viene verificata la visualizzazione della valutazione ottenuta & Superato \\
+	TV9.2 & Viene verificata la visualizzazione della lista degli esami opzionali e dei loro crediti & Superato \\
+	TV9.2.1 & Viene verificata la visualizzazione dei dettagli di un esame opzionale & Superato \\
+	TV9.2.1.1 & Viene verificata la visualizzazione della sigla dell'esame opzionale & Superato \\
+	TV9.2.1.2 & Viene verificata la visualizzazione del numero di crediti dell'esame opzionale & Superato \\
+	TV9.3 & Viene verificata l'iscrizione a un esame opzionale & Superato \\
+	TV9.4 & Viene verificata la visualizzazione del riepilogo di crediti posseduti e mancanti & Superato \\
+	TV9.4.1 & Viene verificata la visualizzazione della somma di crediti totalizzati & Superato \\
+	TV9.4.2 & Viene verificata la visualizzazione del numero di crediti mancanti & Superato \\
+	TV9.4.3 & Viene verificata la visualizzazione del numero di crediti ottenibili dagli esami a cui è iscritto & Superato \\
+	TV10 & Viene verificata la visualizzazione della pagina per la gestione degli amministratori & Superato \\ 
+	TV10.1 & Viene verificata l'aggiunta di un amministratore & Superato \\ 
+	TV10.1.1 & Viene verificato l'inserimento della chiave pubblica di un nuovo amministratore & Superato \\ 
+	TV10.1.2 & Viene verificata la visualizzazione dell'avviso riguardo la chiave malformata & Superato \\ 
+	TV10.1.3 & Viene verificata la visualizzazione del messaggio di errore riguardo la chiave già registrata & Superato \\ 
+	TV10.2 & Viene verificata la visualizzazione della lista degli amministratori & Superato \\ 
+	TV10.2.1 & Viene verificata la visualizzazione di un singolo amministratore & Superato \\ 
+	TV10.2.1.1 & Viene verificata la visualizzazione dell'indirizzo di un amministratore & Superato \\ 
+	TV10.3 & Viene verificata la rimozione di un amministratore & Superato \\ 
+	TV11 & Viene verificata la visualizzazione della lista delle azioni eseguibili su Marvin e il costo associato & Superato \\ 
+
 	\hiderowcolors
 	\caption{Test di validazione}
 \end{longtable}
 
+\newpage
 \rowcolors{2}{CRighePari}{CRigheDispari}
 \begin{longtable}[H]{P{6.5cm}P{7cm}}
 	\rowcolor{CHeader} 
 	\color{CHeaderText}\textbf{Codice} & 
 	\color{CHeaderText}\textbf{Requisito} \\
 	\endhead
-	TVnumerorequisito & Ciao \\ 
+	TV0  & - \\
+	TV1  & R1F9 \\
+	TV2.1A  & R0F6.1 \\
+	TV2.1B  & R0F6.1 \\
+	TV2.1C  & R0F6.1 \\
+	TV2.1D  & R0F6.1 \\
+	TV2.2 &  R0F6.1 \\ 
+	TV2.3 &  R0F6.1 \\ 
+	TV2.4 &  R0F6.1 \\ 
+	TV2.5 &  R0F6.1 \\ 
+	TV3A  & R0F8 \\ 
+	TV3B  & R0F8 \\ 
+	TV3.1  & R0F8.1 \\ 
+	TV3.2  & R0F8.1 \\ 
+	TV3.3A  & R0F8.1 \\ 
+	TV3.3B  & R0F8.1 \\ 
+	TV3.4  & R0F8.1 \\ 
+	TV3.5A  & R0F8.1 \\ 
+	TV3.5B  & R0F8.1 \\ 
+	TV3.6  & R0F8.1 \\ 
+	TV3.7A  & R0F8.1 \\ 
+	TV3.7B  & R0F8.1 \\ 
+	TV3.8  & R0F8.1 \\ 
+	TV4  & R0F7 \\ 
+	TV5  & R0F1 \\ 
+	TV5.1  & R0F1.4 \\ 
+	TV5.1.1 &  R0F1.4  \\ 
+	TV5.1.1.1  &  R0F1.4.1 \\ 
+	TV5.1.1.2  & R0F1.4.2 \\ 
+	TV5.1.1.3  & R0F1.4.3 \\ 
+	TV5.2  & R0F1.4 \\ 
+	TV5.2.1  & R0F1.4 \\ 
+	TV5.2.1.1  & R0F1.4.4 \\ 
+	TV5.3  & R0F2.1 \\ 
+	TV5.3.1  & R0F2.1 \\ 
+	TV5.4  & R0F1.1 \\ 
+	TV5.4.1  & R0F1.1 \\ 
+	TV5.4.1.1  & R0F1.1.1 \\ 
+	TV5.4.1.2  & R0F1.1.2 \\ 
+	TV5.4.1.3  & R0F1.1.3 \\ 
+	TV5.4.1.4  & R0F1.1.4 \\ 
+	TV5.4.1.5  & R0F1.1.5 \\ 
+	TV5.5  & R0F1.2 \\ 
+	TV6.1  & R0F12.1 \\ 
+	TV6.1.1  & R0F12.1.1 \\ 
+	TV6.1.2  & R0F12.1.1 \\ 
+	TV6.1.3  & R0F12.1.1 \\ 
+	TV6.1.4  & R0F12.1.1 \\ 
+	TV6.2  & R0F12.3 \\ 
+	TV6.2.1  & R0F12.3.1 \\ 
+	TV6.3 &  R0F12.2 \\ 
+	TV7  & R0F3.1 \\ 
+	TV7.1  & R0F3.1.1 \\ 
+	TV7.1.1  & R0F3.1.1 \\ 
+	TV7.1.2  & R0F3.2 \\ 
+	TV7.2  & R0F3.2 \\ 
+	TV7.2.1  & R0F3.2 \\ 
+	TV7.2.1.1  & R0F3.2.2 \\ 
+	TV7.2.1.2  & R0F3.2.3 \\ 
+	TV7.3  & R0F3.2.1 \\ 
+	TV7.3.1  & R0F3.2.1 \\ 
+	TV7.3.1.1  & R0F3.2.2 \\ 
+	TV7.4  & R0F3.3 \\ 
+	TV7.4.1  & R0F3.3.1 \\ 
+	TV7.4.2  & R0F3.3.2 \\ 
+	TV7.4.3  & R0F3.3.3 \\ 
+	TV7.4.4  & R0F3.3.1 \\ 
+	TV7.4.5  & R0F3.3.2 \\ 
+	TV7.5  & R0F3.4 \\ 
+	TV7.5.1  & R0F3.4.1 \\ 
+	TV7.5.1.1  & R0F3.4.1 \\ 
+	TV7.5.1.2  & R0F3.4.2 \\ 
+	TV7.5.1.3 & R0F3.4.3\\ 
+	TV7.5.1.4 & R0F3.4.3 \\ 
+	TV7.6  & R0F3.4 \\ 
+	TV7.6.1  & R0F3.4 \\ 
+	TV7.6.1.1  & R0F3.4.1 \\ 
+	TV7.6.1.2  & R0F3.4.2 \\ 
+	TV7.6.1.3 & R0F3.4.5 \\ 
+	TV7.6.1.4 & R0F3.4.3 \\ 
+	TV7.6.1.5 & R0F3.4.3 \\ 
+	TV7.7 & R0F3.4 \\ 
+	TV7.7.1 & R0F3.4.1 \\ 
+	TV7.7.2 & R0F3.4.2 \\ 
+	TV7.7.3 & R0F3.4.5 \\ 
+	TV7.7.4 & R0F3.4.3 \\ 
+	TV7.7.5 & R0F3.4.3 \\ 
+	TV7.7.6 & R0F3.4.6 \\ 
+	TV7.7.7 & R0F3.4.7 \\ 
+	TV7.8 & R0F12.3 \\ 
+	TV7.8.1 & R0F12.3 \\ 
+	TV7.8.1.1 & R0F12.3.1 \\
+	TV7.9 & R0F3.4.3\\ 
+	TV7.9.1 & R0F3.4.3 \\ 
+	TV7.9.2 & R0F3.4.3 \\ 
+	TV7.9.3 & R0F3.4.4.1 \\ 
+	TV8 & R0F4 \\ 
+	TV8.1 & R0F4.1 \\ 
+	TV8.1.1 & R0F4.1 \\ 
+	TV8.1.1.1 & R0F4.1.1 \\ 
+	TV8.1.1.2 & R0F4.1.2\\
+	TV8.2 & R0F4.2 \\
+	TV8.2.1 & R0F4.2.1 \\
+	TV8.2.1.1 & R0F4.2.1 \\
+	TV8.2.1.2 & R0F4.2.2 \\
+	TV8.2.1.3 &  R0F4.2.3\\
+	TV8.3.1 & R0F4.3 \\
+	TV8.3.2 & R0F4.3 \\
+	TV8.3.3 & R0F4.3 \\
+	TV8.1.1.2 & R0F4.3 \\
+	TV9 & R0F5 \\
+	TV9.1 & R0F5.1 \\
+	TV9.1.1 & R0F5.1 \\
+	TV9.1.1.1 & R0F5.1 \\
+	TV9.1.1.2 & R0F5.1.1 \\
+	TV9.1.1.3 & R0F5.1.2 \\
+	TV9.1.1.4 & R0F5.1.3 \\
+	TV9.2 & R0F5.2 \\
+	TV9.2.1 & R0F5.2 \\
+	TV9.2.1.1 & R0F5.1.1 \\
+	TV9.2.1.2 & R0F5.1.1 \\
+	TV9.3 & R0F5.2.2 \\
+	TV9.4 & R0F5.1.4 \\
+	TV9.4.1 & R0F5.1.4 \\
+	TV9.4.2 & R0F5.1.5 \\
+	TV9.4.3 & R0F5.2.1 \\
+	TV10  & R0F11 \\ 
+	TV10.1  & R0F11.1 \\ 
+	TV10.1.1  & R0F11.1 \\ 
+	TV10.1.2  & R0F11.1 \\ 
+	TV10.1.3  & R0F11.1 \\ 
+	TV10.2  & R0F11.3 \\ 
+	TV10.2.1  & R0F11.3 \\ 
+	TV10.2.1.1  & R0F11.3.1 \\ 
+	TV10.3  & R0F11.2 \\ 
+	TV11  & R0F10 \\ 
+	
 	\hiderowcolors
 	\caption{Tracciamento test di validazione - requisito}
 \end{longtable}

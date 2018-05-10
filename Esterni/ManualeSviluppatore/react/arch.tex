@@ -3,13 +3,21 @@
 	
 	\section{Architecture}
 
-	React makes it easy to build UI by dividing into components each part of your frontend views.
-	Marvin is split up in 4 different types of components:
+	For making the front-end architecture we used the atomic design. Atomic design is methodology for creating design systems. There are five distinct levels in atomic design:
 	\begin{enumerate} 
-		\item \textbf{Bootstrap Components};
-		\item \textbf{Custom Components};
-		\item \textbf{Page templates and routes};
-		\item \textbf{User pages instances}.
+		\item \textbf{Atoms:} are the basic building blocks of matter. Applied to web interfaces, atoms are the most basic components, such as a form label, an input or a button;
+		\item \textbf{Molecules:} are groups of atoms bonded together and are the smallest fundamental units of a compound;
+		\item \textbf{Organisms:} are groups of molecules joined together to form a relatively complex, distinct section of an interface;
+		\item \textbf{Templates:} consist mostly of groups of organisms stitched together to form pages;
+		\item \textbf{Pages:} are specific instances of templates.
+	\end{enumerate} 
+	 React makes it easy to build UI by dividing into components each part of your front-end views and it's really easy to apply atomic design methodology with React.
+	So Marvin is split up in 4 different types of components:
+	\begin{enumerate} 
+		\item \textbf{Bootstrap Components:} are the atoms components. So they are the basic components of our application;
+		\item \textbf{Custom Components:} are the molecules and oraganisms components of Marvin;
+		\item \textbf{Page templates and routes:} are the template components of the atomic design. So they stitched together to form the application pages;
+		\item \textbf{User pages instances:} are the application pages for different users.
 	\end{enumerate} 
 
 	\subsection{Props}
@@ -32,13 +40,5 @@
 		\caption{Simple React Architecture}
 		\label{fig:Simple React Architecture}
 	\end{figure}
-	
-	\newpage
-	\textbf{Entire architecture overview}
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=1\linewidth]{"diagrammi/react/arch"}
-		\caption{Entire React Architecture}
-		\label{fig:Entire React Architecture}
-	\end{figure}
+
 \end{document}

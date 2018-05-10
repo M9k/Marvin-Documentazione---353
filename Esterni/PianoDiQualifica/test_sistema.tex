@@ -2,8 +2,48 @@
 
 \begin{document}
 
-\chapter{Test di sistema e validazione}
-A causa della componente Metamask, non accessibile, non è possibile effettuare test di sistema.
+\chapter{Test di sistema}
+A causa della componente Metamask, non accessibile mediante script o macro a causa di motivi di sicurezza, non è possibile effettuare test di sistema automatizzati riguardanti le funzionalità del prodotto. \\
+
+\rowcolors{2}{CRighePari}{CRigheDispari}
+\begin{longtable}[H]{P{2cm}P{8.5cm}P{3cm}}
+	\rowcolor{CHeader} 
+	\color{CHeaderText}\textbf{Codice} & 
+	\color{CHeaderText}\textbf{Descrizione} & 
+	\color{CHeaderText}\textbf{Stato}\\
+	\endhead
+	TS1 & Viene verificato che il bundle dei file avvenga correttamente sul sistema Ubuntu 17.04 & Superato \\ 
+	TS2 & Viene verificato che il bundle dei file avvenga correttamente sul sistema Microsoft Windows 7 e 10 & Superato \\ 
+	TS3 & Viene verificato che il bundle dei file avvenga correttamente sul sistema FreeBSD 11 & Superato \\ 
+	TS4 & Viene verificato che i file JavaScript prodotti siano correttamente caricati ed inizializzati dal browser web Mozilla Firefox 52 & Superato \\ 
+	TS5 & Viene verificato che i file JavaScript prodotti siano correttamente caricati ed inizializzati dal browser web Mozilla Firefox 61.0a1 & Superato \\ 
+	TS6 & Viene verificato che i file JavaScript prodotti siano correttamente caricati ed inizializzati dal browser web Google Chrome 57 & Superato \\ 
+	TS7 & Viene verificato che i file JavaScript prodotti siano correttamente caricati ed inizializzati dal browser web Google Chrome 68 & Superato \\ 
+	TS8 & Viene verificato che i file JavaScript prodotti siano correttamente caricati sulla piattaforma Surge.sh & Superato \\ 
+	\hiderowcolors
+	\caption{Test di sistema}
+\end{longtable}
+
+\rowcolors{2}{CRighePari}{CRigheDispari}
+\begin{longtable}[H]{P{6.5cm}P{7cm}}
+	\rowcolor{CHeader} 
+	\color{CHeaderText}\textbf{Codice} & 
+	\color{CHeaderText}\textbf{Requisito} \\
+	\endhead
+	TS1 & R0V1.1 \\ 
+	TS2 & R0V1.1 \\ 
+	TS3 & R0V1.1 \\ 
+	TS4 & R0V5 \\ 
+	TS5 & R0V5 \\ 
+	TS6 & R0V6 \\ 
+	TS7 & R0V6 \\ 
+	TS8 & R0V1.6 \\  
+	\hiderowcolors
+	\caption{Tracciamento test di sistema - requisito}
+\end{longtable}
+
+\chapter{Test di validazione}
+
 Per i test di validazione, ogni scenario di setup presuppone che il server node di test sia avviato senza errori sulla porta 8080 e che il tester possegga diversi account metamask con crediti disponibili sulla blockchain fittizia.
 Il tester inoltre possiede l’account che ha effettuato il deploy dei contratti sulla rete, avendo la possibilità di effettuare il login come utente Universitario.
 La specifica degli Attori (utenti) e dei casi d’uso è descritta nel documento Analisi Dei Requisiti V4.0.0.

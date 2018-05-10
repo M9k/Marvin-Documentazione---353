@@ -55,7 +55,98 @@ La specifica degli Attori (utenti) e dei casi d’uso è descritta nel documento
 	\color{CHeaderText}\textbf{Descrizione} & 
 	\color{CHeaderText}\textbf{Stato}\\
 	\endhead
-	TVnumerorequisito & Ciao & Superato \\ 
+	TV0 & Visualizzare la home page & Superato \\
+	TV1 & Visualizzazione pagina contenente la guida per usare Marvin & Superato \\
+	TV2.1A & Redirect alla pagina home relativa al gestore dell'università & Superato \\
+	TV2.1B & Redirect alla pagina home relativa all'amministratore & Superato \\
+	TV2.1C & Redirect alla pagina home relativa al professore & Superato \\
+	TV2.1D & Redirect alla pagina home relativa allo studente & Superato \\
+	TV2.2 & Visualizzazione messaggio di errore, l'utente non possiede una chiave & Superato \\ 
+	TV2.3 & Visualizzazione messaggio di errore, l'utente non possiede Metamask & Superato \\ 
+	TV2.4 & Visualizzazione messaggio di errore, la chiave dell'utente non è registrata & Superato \\ 
+	TV2.5 & Visualizzazione messaggio di errore, l'utente non è ancora confermato & Superato \\ 
+	TV3A & L'utente viene inserito tra gli studenti in attesa di approvazione con i dati da lui indicati & Superato \\ 
+	TV3B & L'utente viene inserito tra i professori in attesa di approvazione con i dati da lui indicati & Superato \\ 
+	TV3.1 & Nel campo “name” è presente la scritta “Mario” & Superato \\ 
+	TV3.2 & Nel campo “surname” è presente la scritta “Rossi” & Superato \\ 
+	TV3.3A & Nel campo “role” è presente la scritta “teacher” & Superato \\ 
+	TV3.3B & Nel campo “role” è presente la scritta “student” & Superato \\ 
+	TV3.4 & Nel campo “course” è presente il nome e l'indirizzo del corso aggiunto in fase di setup & Superato \\ 
+	TV3.5A & Visualizzazione dell'avviso di errore relativo a campo non compilato & Superato \\ 
+	TV3.5B & Visualizzazione dell'avviso di errore relativo a campo non compilato & Superato \\ 
+	TV3.6 & Visualizzazione nella finestra di Metamask dell'errore relativo ad una operazione invalida & Superato \\ 
+	TV3.7A & Operazione di registrazione non portata a termine & Superato \\ 
+	TV3.7B & Operazione di registrazione non portata a termine & Superato \\ 
+	TV3.8 & Operazione di registrazione non portata a termine & Superato \\ 
+	TV4 & Visualizzazione pagina che descrive come eseguire il logout da Marvin grazie a UI metamask & Superato \\ 
+	TV5 & Visualizzazione della home page di un amministratore & Superato \\ 
+	TV5.1 & Visualizzazione lista degli utenti approvati & Superato \\ 
+	TV5.1.1 & Visualizzazione di un singolo utente approvato con indirizzo, nome, cognome & Superato \\ 
+	TV5.1.1.1 & Visualizzazione dell'indirizzo di un singolo utente approvato & Superato \\ 
+	TV5.1.1.2 & Visualizzazione del nome di un singolo utente approvato & Superato \\ 
+	TV5.1.1.3 & Visualizzazione del cognome di un singolo utente approvato & Superato \\ 
+	TV5.2 & Visualizzazione lista degli studenti approvati & Superato \\ 
+	TV5.2.1 & Visualizzazione di un singolo studente approvato & Superato \\ 
+	TV5.2.1.1 & Visualizzazione nome del corso di un singolo studente approvato & Superato \\ 
+	TV5.3 & Visualizzazione lista degli professori approvati & Superato \\ 
+	TV5.3.1 & Visualizzazione di un singolo professore approvato & Superato \\ 
+	TV5.4 & Visualizzazione lista degli utenti in attesa di abilitazione & Superato \\ 
+	TV5.4.1 & Visualizzazione di un singolo utente in attesa di abilitazione & Superato \\ 
+	TV5.4.1.1 & Visualizzazione dell'indirizzo di un utente in attesa di abilitazione & Superato \\ 
+	TV5.4.1.2 & Visualizzazione del nome di un utente in attesa di abilitazione & Superato \\ 
+	TV5.4.1.3 & Visualizzazione del cognome di un utente in attesa di abilitazione & Superato \\ 
+	TV5.4.1.4 & Visualizzazione del ruolo di un utente in attesa di abilitazione & Superato \\ 
+	TV5.4.1.5 & Visualizzazione nome del corso di un utente in attesa di abilitazione & Superato \\ 
+	TV5.5 & Un utente viene abilitato & Superato \\ 
+	TV6.1 & Aggiunta di un anno accademico & Superato \\ 
+	TV6.1.1 & Inserimento anno solare di riferimento & Superato \\ 
+	TV6.1.2 & Visualizzazione errore anno accademico già presente & Superato \\ 
+	TV6.1.3 & Visualizzazione errore anno accademico non compilato & Superato \\ 
+	TV6.1.4 & Visualizzazione errore anno mal formato & Superato \\ 
+	TV6.2 & Visualizzazione lista di tutti gli anni accademici presenti nel sistema & Superato \\ 
+	TV6.2.1 & Visualizzazione lista di tutti gli anni solari relativi agli accademici presenti nel sistema & Superato \\ 
+	TV6.3 & Eliminazione di un anno accademico, solamente se esso è privo di corsi & Superato \\ 
+	TV7 & Visualizzazione della lista di corsi presenti nel sistema per permettere la loro gestione & Superato \\ 
+	TV7.1 & Aggiunta di un corso di laurea relativo ad un anno accademico & Superato \\ 
+	TV7.1.1 & Inserimento sigla anno accademico & Superato \\ 
+	TV7.1.2 & Visualizzazione errore sigla mal formata & Superato \\ 
+	TV7.2 & Visualizzazione della lista di corsi presenti nel sistema & Superato \\ 
+	TV7.2.1 & Visualizzazione singolo corso & Superato \\ 
+	TV7.2.1.1 & Nel campo “name” è presente il nome del corso & Superato \\ 
+	TV7.2.1.2 & Nel campo “year” è presente il l'anno solare del corso & Superato \\ 
+	TV7.3 & Visualizzazione lista dei corsi di laurea per anno accademico & Superato \\ 
+	TV7.3.1 & Visualizzazione di un singolo corso della lista dei corsi filtrati per anno accademico & Superato \\ 
+	TV7.3.1.1 & Nel campo “name” della lista è presente il nome del corso di interesse & Superato \\ 
+	TV7.4 & Aggiunta di un esame ad un corso di laurea & Superato \\ 
+	TV7.4.1 & Aggiunta di un esame ad un corso di laurea con nome “Analisi” & Superato \\ 
+	TV7.4.2 & Aggiunta di un esame da 9 CFU ad un corso di laurea & Superato \\ 
+	TV7.4.3 & Aggiunta di un esame obbligatorio ad un corso di laurea & Superato \\ 
+	TV7.4.4 & Visualizzazione errore nome non valido & Superato \\ 
+	TV7.4.5 & Visualizzazione errore numero crediti non valido & Superato \\ 
+	TV7.5 & Visualizzazione lista esami in un corso & Superato \\ 
+	TV7.5.1 & Visualizzazione singolo esame della lista esami in un corso & Superato \\ 
+	TV7.5.1.1 & il campo “name” contiene il nome dell'esame di interesse & Superato \\ 
+	TV7.5.1.2 & il campo “credits” contiene il numero di crediti dell'esame di interesse & Superato \\ 
+	TV7.5.1.3 & il campo “teacherName” contiene il nome del docente (se presente) relativo all'esame di interesse & Superato \\ 
+	TV7.5.1.4 & il campo “teacherSurname” contiene il cognome del docente (se presente) relativo all'esame di interesse & Superato \\ 
+	TV7.6 & visualizzazione della lista di tutti gli esami presenti nel sistema & Superato \\ 
+	TV7.6.1 & visualizzazione singolo esame della lista di tutti gli esami presenti nel sistema & Superato \\ 
+	TV7.6.1.1 & il campo “name” della lista contiene il nome dell'esame di interesse & Superato \\ 
+	TV7.6.1.2 & il campo “name” della lista contiene il nome dell'esame di interesse & Superato \\ 
+	% TODO & Superato \\ 
+	% TV 8 & Superato \\ 
+	% TV 9 & Superato \\ 
+	TV10 & Visualizzazione  della pagina per la gestione degli amministratori & Superato \\ 
+	TV10.1 & Un amministratore viene aggiunto & Superato \\ 
+	TV10.1.1 & Inserimento della chiave pubblica di un nuovo amministratore & Superato \\ 
+	TV10.1.2 & Visualizzazione del messaggio di errore riguardo la chiave malformata & Superato \\ 
+	TV10.1.3 & Visualizzazione del messaggio di errore riguardo la chiave già registrata & Superato \\ 
+	TV10.2 & Visualizzazione della lista degli amministratori & Superato \\ 
+	TV10.2.1 & Visualizzazione di un singolo amministratore & Superato \\ 
+	TV10.2.1.1 & Visualizzazione dell'indirizzo di un amministratore & Superato \\ 
+	TV10.3 & Rimozione di un amministratore & Superato \\ 
+	TV11 & Visualizzazione lista delle azioni eseguibili su Marvin e il costo associato & Superato \\ 
+
 	\hiderowcolors
 	\caption{Test di validazione}
 \end{longtable}
